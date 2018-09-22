@@ -1,13 +1,13 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "The Art of Not Asking Why"
 themesDir = "themes"
 theme = "hyde"
 
 name = "Hyde"
 license = "MIT"
 licenselink = "https://github.com/spf13/hyde/blob/master/LICENSE.md"
-description = "An elegant open source and mobile first theme"
+description = "hara kiri"
 tags = ["blog", "company"]
 features = ["blog", "themes", "disqus"]
 min_version = 0.21
@@ -21,3 +21,6 @@ min_version = 0.21
     author =  "mdo"
     homepage = "http://markdotto.com/"
     repo = "https://www.github.com/mdo/hyde"
+
+[params]
+    description = "An Attempt to Switch from WordPress"
