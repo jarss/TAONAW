@@ -3,6 +3,7 @@
 #+TODO: TODO(t) ACTIVE(a) WAITING(w) | PUBLISHED(p) CANCELLED(c)
 #+hugo_base_dir: .
 #+hugo_level_offset: 0y
+#+hugo_auto_set_lastmod: %Y-%m-%d
 
 * TAONAO Looks
 ** CSS Hacks
@@ -46,9 +47,23 @@ Currently rocking Ajaira by Rakib. It has elemets that I like:
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:
 :END:
-** POSTS
+
+** About
   :PROPERTIES:
-  :EXPORT_HUGO_SECTION: blog
+  :EXPORT_HUGO_SECTION: About
+  :END:
+
+*** About JR
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: About
+  :EXPORT_FILE_NAME: about
+  :END:
+
+This is about JR
+
+** Blog
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: Blog
   :END:
 
 *** PUBLISHED Libre and clothes                                   :Published:
@@ -434,6 +449,10 @@ been a week in the making). Here are some ideas about what's next.
  This template is triggered by "e" and shows as "Event". It uses Org's built in datetree feature, which automatically breaks an org file to headers that describe the year > month > day, or in my case, year > week > day. Since I review my work weekly and reflect every weekend, this format makes sense to me. A new entry for the day (including the time) is created each time I use this, all part of the datetree function. As such, the remainder is rather simple: New header, place cursor here (like before) to describe the header, and create a new line. The tree-type: week does what I explained above, changes from the monthly view to weekly one. 
 
 *** First Post on Hugo
+:PROPERTIES:
+  :EXPORT_HUGO_SECTION: posts
+  :EXPORT_FILE_NAME: First Hugo Post
+  :END:
 
  /taps microphone/
 
