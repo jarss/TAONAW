@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "The Art of Not Asking Why"
 themesDir = "themes"
 theme = "hyde"
+publishDir = "docs"
 
 name = "Hyde"
 license = "MIT"

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Art of Not Asking Why</title>
+    <link>http://example.org/</link>
+    <description>Recent content on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Sep 2018 08:41:49 -0400</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo - what takes so long?</title>
+      <link>http://example.org/blog/hugo-beginnings/</link>
+      <pubDate>Wed, 26 Sep 2018 08:41:49 -0400</pubDate>
+      
+      <guid>http://example.org/blog/hugo-beginnings/</guid>
+      <description>If you&amp;rsquo;ve been following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world Hugo.
+I&amp;rsquo;d imagine the people of in r/emacs would raise an eyebrow at the term &amp;ldquo;world of Hugo.&amp;rdquo; After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it&amp;rsquo;s Hugo that got me overwhelemed, not so much Emacs.</description>
+    </item>
+    
+    <item>
+      <title>About JR</title>
+      <link>http://example.org/about/about/</link>
+      <pubDate>Wed, 26 Sep 2018 08:34:38 -0400</pubDate>
+      
+      <guid>http://example.org/about/about/</guid>
+      <description>This is about JR</description>
+    </item>
+    
+    <item>
+      <title>Hugo - what takes so long?</title>
+      <link>http://example.org/posts/hugo-beginnings/</link>
+      <pubDate>Tue, 25 Sep 2018 23:06:00 -0400</pubDate>
+      
+      <guid>http://example.org/posts/hugo-beginnings/</guid>
+      <description>If you&amp;rsquo;ve been following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world Hugo.
+I&amp;rsquo;d imagine the people of in r/emacs would raise an eyebrow at the term &amp;ldquo;world of Hugo.&amp;rdquo; After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it&amp;rsquo;s Hugo that got me overwhelemed, not so much Emacs.</description>
+    </item>
+    
+  </channel>
+</rss>
