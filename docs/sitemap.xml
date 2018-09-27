@@ -3,50 +3,50 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/blog/hugo-beginnings/</loc>
+    <loc>https://jarss.github.io/TAONAW/blog/hugo-beginnings/</loc>
     <lastmod>2018-09-26T08:41:49-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/about/</loc>
+    <loc>https://jarss.github.io/TAONAW/about/about/</loc>
     <lastmod>2018-09-26T08:34:38-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/hugo-beginnings/</loc>
+    <loc>https://jarss.github.io/TAONAW/posts/hugo-beginnings/</loc>
     <lastmod>2018-09-25T23:06:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://jarss.github.io/TAONAW/about/</loc>
     <lastmod>2018-09-26T08:34:38-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/blog/</loc>
+    <loc>https://jarss.github.io/TAONAW/blog/</loc>
     <lastmod>2018-09-26T08:41:49-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://jarss.github.io/TAONAW/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://jarss.github.io/TAONAW/posts/</loc>
     <lastmod>2018-09-25T23:06:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://jarss.github.io/TAONAW/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://jarss.github.io/TAONAW/</loc>
     <lastmod>2018-09-26T08:41:49-04:00</lastmod>
     <priority>0</priority>
   </url>
