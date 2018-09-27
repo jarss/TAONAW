@@ -1,7 +1,7 @@
 +++
 title = "Hugo - what takes so long?"
 author = ["Josh Rollins"]
-lastmod = 2018-09-25T23:02:52-04:00
+lastmod = 2018-09-26T08:41:49-04:00
 draft = false
 +++
 
