@@ -465,6 +465,7 @@ been a week in the making). Here are some ideas about what's next.
  Makes me think I underestimate myself. I write frustrated toots on [[https://mastodon.technology/@jrss/100752549890521270][Mastodon]]   
 *** Hugo - what takes so long?
   :PROPERTIES:
+  :EXPORT_HUGO_SECTION: posts
   :EXPORT_FILE_NAME: Hugo: Beginnings
   :END:
 

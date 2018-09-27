@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>https://jarss.github.io/TAONAW/posts/hugo-beginnings/</loc>
-    <lastmod>2018-09-25T23:06:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jarss.github.io/TAONAW/about/</loc>
     <lastmod>2018-09-26T08:34:38-04:00</lastmod>
     <priority>0</priority>
@@ -31,12 +26,6 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jarss.github.io/TAONAW/posts/</loc>
-    <lastmod>2018-09-25T23:06:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
