@@ -51,12 +51,14 @@ html {
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
  * out above content in mobile and later moves to the side with wider viewports.
+ *
+ * Changes where added by JR to create the sand colors theme: sidebar color, sidebar a.
  */
 
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(0,0,0,.5);
   background-color: #202020;
 }
 @media (min-width: 48em) {
@@ -72,15 +74,18 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: #000;
 }
 
-/* About section */
+/* About section 
+Changes included here to use normal weight and capitalize, as I prefer: */
 .sidebar-about h1 {
-  color: #fff;
+  color: #000;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: "Righteous", serif;
+  font-size: 3.80rem;
+  font-weight: normal;
+  text-transform: capitalize;
 }
 
 /* Sidebar nav */
@@ -92,7 +97,7 @@ html {
   display: block;
 }
 a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+.sidebar-nav-item:focus {
   text-decoration: underline;
 }
 .sidebar-nav-item.active {
@@ -196,12 +201,12 @@ a.sidebar-nav-item:focus {
 }
 
 /* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
+.theme-base-0a .sidebar  {
+  background-color: #eee8d5;
 }
 .theme-base-0a .content a,
 .theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
+  color: #000000;
 }
 
 /* Green */
