@@ -26,3 +26,4 @@ min_version = 0.21
 
 [params]
     description = "An Attempt to Switch from WordPress"
+    themeColor = "theme-base-0a"
