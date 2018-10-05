@@ -62,5 +62,23 @@ So, here we are with Hugo. I use git, and well, the site is on Github. This post
 
 Oh, and speaking of helpful people: a big thank you to [[https://github.com/kaushalmodi][Kaushal Modi]], who kept answering my endless questions, who was there through my frustration, anywhere I went. This guy is passionate and compassionate about what he does. 
 
+*** Image test 
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: Blog
+  :EXPORT_FILE_NAME: Hugo: Beginnings
+  :END:
+
+Image 
+
+[[file:static/img1.png]]
+
+yes?
+
+
+
+
+
+
+
 
 
