@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on The Art of Not Asking Why</title>
+    <link>https://jarss.github.io/TAONAW/about/</link>
+    <description>Recent content in Abouts on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Oct 2018 16:24:55 -0400</lastBuildDate>
+    
+	<atom:link href="https://jarss.github.io/TAONAW/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TAONAW</title>
+      <link>https://jarss.github.io/TAONAW/about/the-art/</link>
+      <pubDate>Sun, 07 Oct 2018 16:24:55 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/about/the-art/</guid>
+      <description>Welcome to The Art Of Not Asking Why. TaoNaw for short.
+You probably came from Twitter, Medium, or Reddit. Whatever brought you here, you’d probably find more if you stick around. There’s the blog, with several posts that didn’t make it out of TaoNaw. There’s the Wiki, a constant work in progress, for the more technical stuff. And eventually, there would be some pictures and maybe some of my fiction pieces.</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s JR</title>
+      <link>https://jarss.github.io/TAONAW/about/jr/</link>
+      <pubDate>Sun, 07 Oct 2018 14:22:27 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/about/jr/</guid>
+      <description>Josh Rollins is one persistent bastard who was told by his teacher he would never be a writer, so naturally, he had to prove him wrong. Later, he was told by his supervisor he will never make a good IT guy, so he had to prove him wrong, too.
+As a non-native New Yorker, he cares too much about living in the city to lead a normal life, which is a good thing, because he has no idea what the word even means.</description>
+    </item>
+    
+  </channel>
+</rss>
