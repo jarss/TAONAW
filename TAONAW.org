@@ -2,7 +2,6 @@
 #+OPTIONS: num:nil toc:nil \n:nil
 #+TODO: TODO(t) CANCELLED(c) |  ACTIVE(a) PUBLISHED(p)
 #+hugo_base_dir: .
-#+hugo_level_offset: 0y
 #+hugo_auto_set_lastmod: %Y-%m-%d
 
 
@@ -16,7 +15,7 @@
   :EXPORT_HUGO_SECTION: About
   :END:
 
-*** About JR
+*** TODO About JR
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: About
   :EXPORT_FILE_NAME: about
@@ -34,6 +33,9 @@ This is about JR
   :EXPORT_HUGO_SECTION: Blog
   :EXPORT_FILE_NAME: Hugo: Beginnings
   :END:
+
+
+#+hugo_publishdate: 2018-10-04
 
  If you've been following me online for the last month or so (especially on reddit) you'd know I've been engaged in shifting away from WordPress and into the world [[https://gohugo.io/][Hugo]]. 
 

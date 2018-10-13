@@ -6,26 +6,26 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Oct 2018 20:05:29 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 13 Oct 2018 09:44:49 -0400</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Image test</title>
-      <link>https://jarss.github.io/TAONAW/blog/image-test/</link>
-      <pubDate>Thu, 04 Oct 2018 20:05:29 -0400</pubDate>
+      <title>Org Update</title>
+      <link>https://jarss.github.io/TAONAW/blog/org-update/</link>
+      <pubDate>Sat, 13 Oct 2018 09:44:49 -0400</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/blog/image-test/</guid>
-      <description>Image
-  Img two
-  yes?</description>
+      <guid>https://jarss.github.io/TAONAW/blog/org-update/</guid>
+      <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo - what takes so long?</title>
       <link>https://jarss.github.io/TAONAW/blog/hugo-beginnings/</link>
-      <pubDate>Thu, 04 Oct 2018 19:25:51 -0400</pubDate>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://jarss.github.io/TAONAW/blog/hugo-beginnings/</guid>
       <description>If you&amp;rsquo;ve been following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world Hugo.

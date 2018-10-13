@@ -1,7 +1,7 @@
 +++
 title = "Org Update"
 author = ["Josh Rollins"]
-lastmod = 2018-10-13T08:49:10-04:00
+lastmod = 2018-10-13T09:44:49-04:00
 draft = false
 +++
 
@@ -12,7 +12,7 @@ It’s been a while since I blogged about my Org activities. Overall, not a lot 
 {{< figure src="/OrgUpdate_1.png" >}}
 
 
-# Lighter Agenda: No Sub-Tasks {#lighter-agenda-no-sub-tasks}
+## Lighter Agenda: No Sub-Tasks {#lighter-agenda-no-sub-tasks}
 
 So, looking at my agenda sometimes less is more. I don’t rush to include every single detail in my agenda anymore, especially at work, becuase it’s redundant. We have a ticketing system that we _have_ to use, and the details are constantly updated by different team members. Because of that, updating technical details for myself again under each heading is not that appealing.
 
@@ -25,7 +25,7 @@ Sometimes I would even copy-paste from the ticket straight into Org just to remi
 A fun sidenote: Orgzly, my companion Andoird App, [now has the ability](http://www.orgzly.com/changelog) to start with Org headings collapsed. This means that when I’m on the go, I can open specifically the task on hand and view my notes which I often update just before I get up to do something.
 
 
-# Keeping Track Of Time Without Going Nuts {#keeping-track-of-time-without-going-nuts}
+## Keeping Track Of Time Without Going Nuts {#keeping-track-of-time-without-going-nuts}
 
 The Logbook contains estimated times. I almost never get to close a clock on a task once I started, because I almost never get the chance to keep working on one thing before I am called away, or have to do a prerequisite. Other times, I simply forget to start the clock. I estimate how much time I worked on something when I’m back at my desk. Now, since I don’t bother with sub-tasks and separate clocking times for these, it means I need to expend my agenda to view my logs (l in agenda view). This allows me to see the time I spent working on a certain task, even though it is marked as done later, sometimes even days (or weeks) later. This way I know when the whole task was finished, and I can see when (and for how long) I was working on it.
 
@@ -40,7 +40,7 @@ On the other hand, since I started using my journal again, which is based on wee
 In the past, I refiled events and tasks depending on what week they were to take place. If I was planning a vacation four weeks in advance, for example, I would open a new file for that week and place the event there. This lead to all kinds of problems when I worked on projects that stretched over more than just a weekly period. Let’s say I take a vacation from Friday to Monday of next week. Now what, which file do I choose? At the time, I opted for the completion date. But, this too wasn’t simple. Because certain projects (especially at work) could last even months, or re-surface from the past. That would mean I would have to move them to the appropriate week and think about what “done” really means. One day thinking about it out loud, I just started laughing at myself: “dude,” I said, as I like to refer anyone for some reason, “what are you doing? Org takes care of all of that for you automatically! That’s what’s the Agenda is for!” Who cares if I placed a project in week 20 or week 30, I don’t ever search it that way or know where it comes from anyway, I just see it on the agenda or search for it with the agenda anyway `(C-a s)`. That’s what it’s for. So I stopped caring about that, and events now naturally fall into the week I created them.
 
 
-# The Journal Revisited {#the-journal-revisited}
+## The Journal Revisited {#the-journal-revisited}
 
 I don’t use the journal as much as I used to when I had it earlier this year. I find that I use it capture experiences and emotions more than technical notes. For the later, I now have an org file called “wiki” which I keep organized as it grows further. The journal is good to keep moods and mental “patterns” I can look into on my weekly review. For this, I also use tags. This is a good exercise that allows me to recognize mental “traps” I get into more often than not.
 
