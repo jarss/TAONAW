@@ -6,15 +6,26 @@
     <description>Recent content in Blogs on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Oct 2018 09:44:49 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 15 Oct 2018 22:03:56 -0400</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Emacs Windows Managment</title>
+      <link>https://jarss.github.io/TAONAW/blog/emacs-windows-managment/</link>
+      <pubDate>Mon, 15 Oct 2018 22:03:56 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/blog/emacs-windows-managment/</guid>
+      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Org Update</title>
       <link>https://jarss.github.io/TAONAW/blog/org-update/</link>
-      <pubDate>Sat, 13 Oct 2018 09:44:49 -0400</pubDate>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://jarss.github.io/TAONAW/blog/org-update/</guid>
       <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;

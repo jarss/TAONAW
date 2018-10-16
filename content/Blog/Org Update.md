@@ -1,7 +1,8 @@
 +++
 title = "Org Update"
 author = ["Josh Rollins"]
-lastmod = 2018-10-13T09:44:49-04:00
+publishDate = 2018-10-13T00:00:00-04:00
+lastmod = 2018-10-15T22:00:24-04:00
 draft = false
 +++
 
@@ -23,6 +24,8 @@ But I do still include notes. Just differently. I start notes with an inactive t
 Sometimes I would even copy-paste from the ticket straight into Org just to remind myself what was done; other times I include references to other people and cases; yet other times, if I have to vent about something, there’s a link to my journal (more on that later).
 
 A fun sidenote: Orgzly, my companion Andoird App, [now has the ability](http://www.orgzly.com/changelog) to start with Org headings collapsed. This means that when I’m on the go, I can open specifically the task on hand and view my notes which I often update just before I get up to do something.
+
+A little test here. And here.
 
 
 ## Keeping Track Of Time Without Going Nuts {#keeping-track-of-time-without-going-nuts}

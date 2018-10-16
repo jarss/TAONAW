@@ -32,10 +32,8 @@ This is about JR
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blog
   :EXPORT_FILE_NAME: Hugo: Beginnings
+  :EXPORT_HUGO_PUBLISHDATE: 2018-10-04:
   :END:
-
-
-#+hugo_publishdate: 2018-10-04
 
  If you've been following me online for the last month or so (especially on reddit) you'd know I've been engaged in shifting away from WordPress and into the world [[https://gohugo.io/][Hugo]]. 
 
@@ -64,10 +62,11 @@ So, here we are with Hugo. I use git, and well, the site is on Github. This post
 
 Oh, and speaking of helpful people: a big thank you to [[https://github.com/kaushalmodi][Kaushal Modi]], who kept answering my endless questions, who was there through my frustration, anywhere I went. This guy is passionate and compassionate about what he does. 
 
-*** ACTIVE Org Update
+*** PUBLISHED Org Update
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blog
   :EXPORT_FILE_NAME: Org Update
+  :EXPORT_HUGO_PUBLISHDATE: 2018-10-13:
   :END:
 
 It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.
@@ -88,6 +87,8 @@ Sometimes I would even copy-paste from the ticket straight into Org just to remi
 
 A fun sidenote: Orgzly, my companion Andoird App, [[http://www.orgzly.com/changelog][now has the ability]] to start with Org headings collapsed. This means that when I’m on the go, I can open specifically the task on hand and view my notes which I often update just before I get up to do something.
 
+A little test here. And here.
+
 **** Keeping Track Of Time Without Going Nuts
 
 The Logbook contains estimated times. I almost never get to close a clock on a task once I started, because I almost never get the chance to keep working on one thing before I am called away, or have to do a prerequisite. Other times, I simply forget to start the clock. I estimate how much time I worked on something when I’m back at my desk. Now, since I don’t bother with sub-tasks and separate clocking times for these, it means I need to expend my agenda to view my logs (l in agenda view). This allows me to see the time I spent working on a certain task, even though it is marked as done later, sometimes even days (or weeks) later. This way I know when the whole task was finished, and I can see when (and for how long) I was working on it.
@@ -107,4 +108,46 @@ In the past, I refiled events and tasks depending on what week they were to take
 I don’t use the journal as much as I used to when I had it earlier this year. I find that I use it capture experiences and emotions more than technical notes. For the later, I now have an org file called “wiki” which I keep organized as it grows further. The journal is good to keep moods and mental “patterns” I can look into on my weekly review. For this, I also use tags. This is a good exercise that allows me to recognize mental “traps” I get into more often than not.
 
 The journal works nicely with my weekly reviews, which are essentially weekly videos I make reading back from my agenda and journal. With time, these became more of a personal “summary of summaries” where I highlight my week tasks and review, usually for a 10-minute segment or so. I keep these in a well-compressed mp4 format on an SD card ([[https://ffmpeg.org/][FFMPEG]] is awesome for that) and I can easily use one SSD for an entire year and still have additional room. I am now starting to name the videos based on the same weekly theme that I use for my weekly agenda files and journal.
+
+*** ACTIVE Emacs Windows Managment
+:PROPERTIES:
+  :EXPORT_HUGO_SECTION: Blog
+  :EXPORT_FILE_NAME: Emacs Windows Managment
+  :END:
+
+In his 5th Emacs podcast, [[https://emacscast.org/episode_5/][Rakhim]] discusses the difficulties of windows management in Emacs. I agree with him. Emacs' Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn't until this podcast that I realized that I'm much better off than I used to be. 
+
+#+hugo: more
+
+I don't use any extension that manages windows (unless you consider Ivy's switch buffer, which he uses too. [[https://oremacs.com/swiper/][Ivy]] is awesome). My method is based on bits and pieces I picked up. Here are a couple of lines from my settings.org, which I use to make Emacs' windows work better for me. 
+
+First, for my ultra-wide screen at home, it helps to enlarge the default frame size. After a few tests, I found this size satisfying: 
+#+BEGIN_SRC emacs-lisp 
+(setq default-frame-alist '((width . 90) (height . 50) (menu-bar-lines . 6)))
+#+END_SRC
+
+Then, we need to turn on the mouse vertical mouse divider. This will allow us to use the mouse to drag and adjust windows in our frame vertically as well. I actually don't use this as much anymore (the reason is coming up) but this is a basic feature that should be on by default, in my opinion: 
+#+BEGIN_SRC emacs-lisp
+(window-divider-mode +1)
+#+END_SRC
+
+Another basic feature, which I now use everywhere, is the [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Visual-Line-Mode.html][visual line mode]]. If you write more than you code on Emacs (which is true in my case) this mode just makes sense. 
+#+BEGIN_SRC emacs-lisp
+(global-visual-line-mode +1)
+#+END_SRC
+
+Those are all good and nice, but here's the biggest tip which I stumbled upon a few months back, from [[http://ergoemacs.org/emacs/emacs_effective_windows_management.html][Ergoemacs]]: just don't use windows. Use frames. Seriously, it's that simple. There are probably many Emacs experts out there with their windows functions and extensions and what not, but let's not reinvent the wheel here. If there's one thing a GUI is good for is to manage windows (or frames in Emacs). They are very easy to move with the mouse, they snap to each other, easy to resize. Besides, Emacs itself splits the frames to Windows often enough. I find that I use C-0 and C-1 very often to get rid of windows I don't need, and I can have them back quickly by switching back to the buffer with Ivy.
+
+One of the things that used to drive my bananas when I started using Org was how the agenda and its habit to kill my windows setup. One of the most helpful lines in my settings.org is the following: 
+
+#+BEGIN_SRC emacs-lisp
+(setq org-agenda-window-setup (quote other-frame))
+#+END_SRC
+
+This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
+
+
+ 
+
+
 
