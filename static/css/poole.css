@@ -48,8 +48,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Merriweather", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.5;
 }
 @media (min-width: 38em) {
@@ -69,13 +69,15 @@ body {
 a {
   color: #268bd2;
   text-decoration: none;
+  
 }
 /* `:focus` is linked to `:hover` for basic accessibility */
+/*  JRSS: I moved it because I think it looks better without. 
 a:hover,
 a:focus {
   text-decoration: underline;
 }
-
+*/
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
@@ -83,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
+  font-family: "PT Sans", arial;
 }
 h1 {
   font-size: 2rem;
@@ -103,8 +106,9 @@ h4, h5, h6 {
 /* Body text */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;  
 }
+
 
 strong {
   color: #303030;
@@ -304,22 +308,35 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
+  
+}
+
+.post p{
+    font-size: 16px;
+}
+
+.post p a{
+    text-decoration: underline;
+    text-decoration-style: solid;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+ color: #303030;
 }
+
 .page-title,
 .post-title {
-  margin-top: 0;
+    margin-top: 0;
+    font-family: "PT Sans";
 }
 
 /* Meta data line below post title */
 .post-date {
   display: block;
+  font-family: "PT Sans";
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;

@@ -32,11 +32,11 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Merriweather, Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
@@ -74,7 +74,7 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #000;
+    color: #000;
 }
 
 /* About section 
@@ -90,8 +90,10 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 
 /* Sidebar nav */
 .sidebar-nav {
-  padding-left: 0;
+    padding-left: 0;
   list-style: none;
+  font-family:"PT Sans";
+  font-size: 20px;
 }
 .sidebar-nav-item {
   display: block;
@@ -103,6 +105,13 @@ a.sidebar-nav-item:hover,
 .sidebar-nav-item.active {
   font-weight: bold;
 }
+
+.sidebar-nav a:hover:before {
+    position: absolute;
+    margin-left: -.8em;
+    content: '>';
+}
+
 
 /* Sticky sidebar
  *

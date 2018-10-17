@@ -2,11 +2,13 @@
 title = "Hugo - what takes so long?"
 author = ["Josh Rollins"]
 publishDate = 2018-10-04T00:00:00-04:00
-lastmod = 2018-10-15T21:59:38-04:00
+lastmod = 2018-10-16T22:52:10-04:00
 draft = false
 +++
 
 If you've been following me online for the last month or so (especially on reddit) you'd know I've been engaged in shifting away from WordPress and into the world [Hugo](https://gohugo.io/).
+
+<!--more-->
 
 I'd imagine the people of in [r/emacs](https://www.reddit.com/r/emacs/) would raise an eyebrow at the term "world of Hugo." After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it's Hugo that got me overwhelemed, not so much Emacs. What? Really?
 

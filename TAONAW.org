@@ -37,6 +37,8 @@ This is about JR
 
  If you've been following me online for the last month or so (especially on reddit) you'd know I've been engaged in shifting away from WordPress and into the world [[https://gohugo.io/][Hugo]]. 
 
+#+hugo: more 
+
  I'd imagine the people of in [[https://www.reddit.com/r/emacs/][r/emacs]] would raise an eyebrow at the term "world of Hugo." After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it's Hugo that got me overwhelemed, not so much Emacs. What? Really? 
 
  You see, it has to do with background and expectations. As a non-programmer (as in, someone who never wrote anything a bit more complicated then a few lines of shell script) Emacs was a mountain. Standing at the bottom, I gazed at the cloud shrowing its peek and told myself "well, you gotta take a first step somewhere..." so I did. For me, that was Org-mode. As a matter of fact, at the time, I didn't even know much about Emacs and how deep it can get. All I knew was that Org was cool, and I'm interested in learning more.
@@ -110,7 +112,7 @@ I don’t use the journal as much as I used to when I had it earlier this year. 
 The journal works nicely with my weekly reviews, which are essentially weekly videos I make reading back from my agenda and journal. With time, these became more of a personal “summary of summaries” where I highlight my week tasks and review, usually for a 10-minute segment or so. I keep these in a well-compressed mp4 format on an SD card ([[https://ffmpeg.org/][FFMPEG]] is awesome for that) and I can easily use one SSD for an entire year and still have additional room. I am now starting to name the videos based on the same weekly theme that I use for my weekly agenda files and journal.
 
 *** ACTIVE Emacs Windows Managment
-:PROPERTIES:
+  :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blog
   :EXPORT_FILE_NAME: Emacs Windows Managment
   :END:
@@ -145,9 +147,3 @@ One of the things that used to drive my bananas when I started using Org was how
 #+END_SRC
 
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
-
-
- 
-
-
-

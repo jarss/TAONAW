@@ -1,7 +1,7 @@
 +++
 title = "Emacs Windows Managment"
 author = ["Josh Rollins"]
-lastmod = 2018-10-15T22:03:56-04:00
+lastmod = 2018-10-16T06:37:37-04:00
 draft = false
 +++
 

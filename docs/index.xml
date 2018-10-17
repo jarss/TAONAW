@@ -6,7 +6,7 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Oct 2018 22:03:56 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 16 Oct 2018 06:37:37 -0400</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Emacs Windows Managment</title>
       <link>https://jarss.github.io/TAONAW/blog/emacs-windows-managment/</link>
-      <pubDate>Mon, 15 Oct 2018 22:03:56 -0400</pubDate>
+      <pubDate>Tue, 16 Oct 2018 06:37:37 -0400</pubDate>
       
       <guid>https://jarss.github.io/TAONAW/blog/emacs-windows-managment/</guid>
       <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;
@@ -39,8 +39,9 @@
       <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://jarss.github.io/TAONAW/blog/hugo-beginnings/</guid>
-      <description>If you&amp;rsquo;ve been following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world Hugo.
-I&amp;rsquo;d imagine the people of in r/emacs would raise an eyebrow at the term &amp;ldquo;world of Hugo.&amp;rdquo; After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it&amp;rsquo;s Hugo that got me overwhelemed, not so much Emacs.</description>
+      <description>&lt;p&gt;If you&amp;rsquo;ve been following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
