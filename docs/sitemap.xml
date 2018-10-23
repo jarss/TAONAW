@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jarss.github.io/TAONAW/blog/video_journal_evolved/</loc>
+    <lastmod>2018-10-23T08:30:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/of_people_and_money/</loc>
+    <lastmod>2018-10-23T08:26:50-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jarss.github.io/TAONAW/blog/emacs-windows-managment/</loc>
-    <lastmod>2018-10-16T06:37:37-04:00</lastmod>
+    <lastmod>2018-10-23T08:24:32-04:00</lastmod>
   </url>
   
   <url>
@@ -19,7 +29,7 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/blog/</loc>
-    <lastmod>2018-10-16T06:37:37-04:00</lastmod>
+    <lastmod>2018-10-23T08:30:31-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,7 +45,7 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/</loc>
-    <lastmod>2018-10-16T06:37:37-04:00</lastmod>
+    <lastmod>2018-10-23T08:30:31-04:00</lastmod>
     <priority>0</priority>
   </url>
   

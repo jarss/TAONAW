@@ -88,6 +88,11 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   text-transform: capitalize;
 }
 
+.sidebar-about img {
+    width: 50%;
+    margin: 30px;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
     padding-left: 0;
