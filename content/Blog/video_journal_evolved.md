@@ -1,12 +1,14 @@
 +++
-title = "Evolvement of video journal & Org"
+title = "Evolvement of Video Journal & Org"
 author = ["Josh Rollins"]
 publishDate = 2018-10-23T00:00:00-04:00
-lastmod = 2018-10-23T08:30:31-04:00
+lastmod = 2018-10-23T08:44:27-04:00
 draft = false
 +++
 
-Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I [discussed these](https://jarss.github.io/TAONAW/blog/org-update/) couple of times before: tasks, task notes, and journal. d
+Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I [discussed these](https://jarss.github.io/TAONAW/blog/org-update/) couple of times before: tasks, task notes, and journal.
+
+<!--more-->
 
 My tasks do rarely contain sub-tasks anymore. This is odd because sub-tasking was one of the reasons that got me into Org-mode initially. Over time I found that I rather leave notes to myself about where I left off and what needs to be done instead of using actual tasks.
 
@@ -20,7 +22,8 @@ I find that typing is just slow enough to make me process what I'm thinking. I c
 
 Yesterday, I noticed something interesting: with time, my rambling on videos was reduced from going on an on for an hour plus or so (and multiple videos) to shorter segments. Here's a visual:
 
-![](/videojournalevolved_1.png)
+{{< figure src="/videojournalevolved_1.png" >}}
+
 _Above: over time, my clips become shorter_
 
 Finally, last weekend, I reached the conclusion that my written journal is just _better_ at keeping track of my experiences. Since I re-created the way I save my achieve files now, it also means the links from the journal org file to the org and the events is never broken: I just have to make sure to refile an event from my "oh snap" thought-dump org into the current week org file, and I'm good.

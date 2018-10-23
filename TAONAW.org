@@ -155,6 +155,12 @@ This saved me from going insane. Since I start up my agenda every time I start u
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-18:
     :END:
 
+/Warning: This is not my usual geeky-tech rambling about Org or Emacs. This is a somewhat NSFW post about my life. If you're not into that and you're here for the geeky stuff, I'd skip this if I were you./
+
+#+hugo: more
+
+- - -
+
 When I was reaching my 30s, I hit a jackpot. I secured a deal for a rent-controlled apartment in Morningside Heights in Manhattan. I had a job that didn't quite pay the bills, even for that, so I drove almost 900 miles to Milwaukee, Wisconsin to fetch a friend whom I convinced to live with me in the city. 
 
 The apartment had three bedrooms, a living room, a dining area, a small kitchen (which I loved a lot) and a shower. It was packed with old furniture and dusty chachkies because its owner was about 80 years old. He asked me to wire rent money to his account every month, left me with a key, and left for Florida. 
@@ -170,7 +176,7 @@ It's funny how you think all you want is to be able to keep fucking everyone (fi
 You can't make a relationship out of thin air. That's because a relationship is forged from common experiences that you often try to avoid. Embarrassing little moments. Painful memories. The terrifying realization that at some point (you can't be sure when) caring about that person is more important than caring for yourself. Then, the peace that comes with accepting this realization. You can't find this sort of experience on Tinder, even if you pay their premium. 
 
 I never wanted to end up on my mother's sofa, and to be honest, I never wanted to end up in relationships with both of my partners. But just like the sofa, shit happens. This is who I am now, and who they are, and how we came to be. My partners, who I affectionately call patches, live with me now. We often enjoy a good movie sitting on that sofa, which is with us still.  I'm older, I'm scarred, I have way less patience than I used to have, and I like it all just the way it is, good and bad, sofa or no sofa. 
-*** ACTIVE Evolvement of video journal & Org 
+*** ACTIVE Evolvement of Video Journal & Org 
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blog
     :EXPORT_FILE_NAME: video_journal_evolved
@@ -178,7 +184,9 @@ I never wanted to end up on my mother's sofa, and to be honest, I never wanted t
     :END:
 
      
-Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I [[https://jarss.github.io/TAONAW/blog/org-update/][discussed these]] couple of times before: tasks, task notes, and journal. d
+Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I [[https://jarss.github.io/TAONAW/blog/org-update/][discussed these]] couple of times before: tasks, task notes, and journal.
+
+#+hugo: more
 
 My tasks do rarely contain sub-tasks anymore. This is odd because sub-tasking was one of the reasons that got me into Org-mode initially. Over time I found that I rather leave notes to myself about where I left off and what needs to be done instead of using actual tasks.
 
@@ -193,6 +201,7 @@ I find that typing is just slow enough to make me process what I'm thinking. I c
 Yesterday, I noticed something interesting: with time, my rambling on videos was reduced from going on an on for an hour plus or so (and multiple videos) to shorter segments. Here's a visual: 
 
 [[file:static/videojournalevolved_1.png]]
+
 /Above: over time, my clips become shorter/ 
 
 Finally, last weekend, I reached the conclusion that my written journal is just /better/ at keeping track of my experiences. Since I re-created the way I save my achieve files now, it also means the links from the journal org file to the org and the events is never broken: I just have to make sure to refile an event from my "oh snap" thought-dump org into the current week org file, and I'm good. 

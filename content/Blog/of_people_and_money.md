@@ -2,9 +2,15 @@
 title = "Of Relationships and Money"
 author = ["Josh Rollins"]
 publishDate = 2018-10-18T00:00:00-04:00
-lastmod = 2018-10-23T08:26:50-04:00
+lastmod = 2018-10-23T08:45:12-04:00
 draft = false
 +++
+
+_Warning: This is not my usual geeky-tech rambling about Org or Emacs. This is a somewhat NSFW post about my life. If you're not into that and you're here for the geeky stuff, I'd skip this if I were you._
+
+<!--more-->
+
+-   - -
 
 When I was reaching my 30s, I hit a jackpot. I secured a deal for a rent-controlled apartment in Morningside Heights in Manhattan. I had a job that didn't quite pay the bills, even for that, so I drove almost 900 miles to Milwaukee, Wisconsin to fetch a friend whom I convinced to live with me in the city.
 
