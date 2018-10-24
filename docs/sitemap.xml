@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jarss.github.io/TAONAW/blog/desktopwisdom/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jarss.github.io/TAONAW/blog/video_journal_evolved/</loc>
     <lastmod>2018-10-23T08:44:27-04:00</lastmod>
   </url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/blog/</loc>
-    <lastmod>2018-10-23T08:44:27-04:00</lastmod>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -45,7 +50,7 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/</loc>
-    <lastmod>2018-10-23T08:44:27-04:00</lastmod>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
     <priority>0</priority>
   </url>
   

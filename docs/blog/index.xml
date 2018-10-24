@@ -6,10 +6,22 @@
     <description>Recent content in Blogs on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 24 Oct 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Desktop Wisdom</title>
+      <link>https://jarss.github.io/TAONAW/blog/desktopwisdom/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/blog/desktopwisdom/</guid>
+      <description>&lt;p&gt;I asked my coworkers the following question:
+&amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Evolvement of Video Journal &amp; Org</title>

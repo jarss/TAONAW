@@ -148,7 +148,7 @@ One of the things that used to drive my bananas when I started using Org was how
 #+END_SRC
 
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
-*** ACTIVE Of Relationships and Money 
+*** PUBLISHED Of Relationships and Money 
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blog
     :EXPORT_FILE_NAME: of_people_and_money
@@ -176,7 +176,7 @@ It's funny how you think all you want is to be able to keep fucking everyone (fi
 You can't make a relationship out of thin air. That's because a relationship is forged from common experiences that you often try to avoid. Embarrassing little moments. Painful memories. The terrifying realization that at some point (you can't be sure when) caring about that person is more important than caring for yourself. Then, the peace that comes with accepting this realization. You can't find this sort of experience on Tinder, even if you pay their premium. 
 
 I never wanted to end up on my mother's sofa, and to be honest, I never wanted to end up in relationships with both of my partners. But just like the sofa, shit happens. This is who I am now, and who they are, and how we came to be. My partners, who I affectionately call patches, live with me now. We often enjoy a good movie sitting on that sofa, which is with us still.  I'm older, I'm scarred, I have way less patience than I used to have, and I like it all just the way it is, good and bad, sofa or no sofa. 
-*** ACTIVE Evolvement of Video Journal & Org 
+*** PUBLISHED Evolvement of Video Journal & Org 
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blog
     :EXPORT_FILE_NAME: video_journal_evolved
@@ -209,6 +209,26 @@ Finally, last weekend, I reached the conclusion that my written journal is just 
 I still record a short "weekly summary" on weekends, and now I find I'm actually looking forward to it. These are now 10-20 minutes long videos in which I briefly go through my agenda and logged events and explain what happened while my memories of this week are still fresh. I then give the week a "theme". 
 
 This works as a way for me to remember what happened far in the future if I want to reflect on my experiences but not looking for something specific, or not sure what it is. It's also a good way to reflect on the major events of the week after I had a weekend to slow down and process. It works. 
+*** ACTIVE Desktop Wisdom 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Blog
+    :EXPORT_FILE_NAME: DesktopWisdom
+    :EXPORT_HUGO_PUBLISHDATE: 2018-10-24:
+    :END:
+          
+I asked my coworkers the following question: 
+"What is the one truth, in a sentence, you've learned from being in a help desk position"? Here are the answers. 
 
+#+hugo: more
 
+*Chris (age:25, years in the job:3)*: "There are a lot, and I mean a /lot/, stupid people in the world." 
 
+*Nick (age:28, years in the job:10)*: "You got to have a lot of patience" 
+
+*Dave (age:63, years in the job:30)*: "You're only as good as the last person you've helped" 
+
+*Myself (years in the job:3)*: "If it was really to 'just work', we'd be out of a job"
+
+When looking at the nature of the job and the experience each one of us had, these facts make a lot of sense. 
+
+Chris is the youngest, very bright, and after money. He's tired of users forgetting to check the power cable or not knowing how to reset their computers before calling. Nick is a chill guy who never seems to get upset. He is used to the boss demanding things and he exercises every day, which definitely help to take out aggravations. Dave has seen it all in this job and been through a couple of management changes. His other favorite sentence is "tomorrow is another day." 
