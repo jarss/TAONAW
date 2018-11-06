@@ -250,7 +250,7 @@ For me, the game is just the right mixture of visual beauty, attention to detail
 Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
 *** ACTIVE Some Good Things 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Life
+    :EXPORT_HUGO_SECTION: Blog
     :EXPORT_FILE_NAME: some_things
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-30:
     :END:
