@@ -19,9 +19,25 @@
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: About
   :EXPORT_FILE_NAME: about
+  :EXPORT_HUGO_PUBLISHDATE: 2018-10-04:
   :END:
 
-This is about JR
+Josh Rollins is one persistent bastard who was told by his teacher he would never be a writer, so naturally, he had to prove him wrong. Later, he was told by his supervisor he will never make a good IT guy, so he had to prove him wrong, too.
+
+As a non-native New Yorker, he cares too much about living in the city to lead a normal life, which is a good thing, because he has no idea what the word even means.
+
+JR has been writing about sex, tech, and the many things in between for years. He recently woke up from daily grind induced coma. A polyamorist, privacy geek, and a wannabe health nut, he keeps littering the internet with his personal opinions and how-tos about all sorts of stuff mentioned above.
+
+
+*** TODO Contact
+:PROPERTIES:
+  :EXPORT_HUGO_SECTION: Contact
+  :EXPORT_FILE_NAME: about
+  :EXPORT_HUGO_PUBLISHDATE: 2018-10-04:
+  :END:
+To contact me, you can write an email: jarss[at]protonmail[dot]com
+Most of the time, I'm on [[https://twitter.com/Josh_Rollins][Twitter]], [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]]. 
+
 
 ** Blog
   :PROPERTIES:
@@ -271,7 +287,189 @@ This time I didn't game as an exercise in solitude and forgetfulness. It was a m
 Somewhere between the meditation, the game, the avocado salad/guacamole I've made, I found peace. Aunt Dee was gone, out of town, see-you-next-time. I've had a good day at work yesterday (not excellent, not awesome, just good). It's important that I mention it for myself, for next time, and for you, the other nephews of aunt Dee out there (or her relatives) who might find comfort in this.
 
 Have a good rest of the week!  
+*** TODO Poly Dating 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Blog
+    :EXPORT_FILE_NAME: Dating_Openly_Challanges
+    :EXPORT_HUGO_PUBLISHDATE: 2018-11-14:
+    :END:
+
+Last night I browsed Reddit, which is my much-adequate replacement for Facebook and the [[https://www.nytimes.com/2018/10/08/technology/google-plus-security-disclosure.html][now-officially-dead Google Plus]]. A post that captured my eye was "[[https://www.reddit.com/r/polyamory/comments/9wozci/for_the_recordits_way_easier_to_get_a_date_with_a/][For the record—it’s way easier to get a date with a man than with a woman]]" in the Polyamory subreddit. 
+
+I feel I can summarize the post in this statement the OP (original poster) made: 
+
+"Ive been using several apps, some of which (like 'Her') are women-only. What I’ve come to discover is that most women are EXTREMELY passive on dating apps." She is a bisexual 29 year old female.  
+
+My intension here is not to commet directly about the post itself (or the many comments under it it), but instead talk about my own experience as a CIS non-monogamous man nearing his 40s. 
+
+**** Age
+
+# The most difficult challange for me dating now than it used to be even 5 years ago is the age. Not my  age, but what age implies to the women I contact online. 
+
+It seems that women who are living a healthy polyamorous lifestyle after 35 are extremly rare when compared to women in their 20s and even early 30s. Most women that I talk to are looking for something "serious" and "long lasting," which from their definition would mean a monogamous, long-term relationship that would at least lead in the direction of marriage. 
+
+Even on Tinder, an app that is assumed to be more for hooking up and not for settling down, this pattern is very clear. Most women evaporate (they suddenly disapear from the app on my end altogether, which implies I'm being blocked) as soon as they understand I am a non-monogamist. This understanding comes, on Tinder at least, when they take the time to look at my profile (it's the first line) or when I explain it. We can sometimes have a converstion that extands to texts for a day or two, and then suddenly not a word when the understand of what the term means hits them. This last example is rare, but it happens; what important to note is that there's an extremly small portion of women who would carry on a conversation after what me (and other poly folks) call "drop the poly bomb". 
+
+On OKCupid, the crowd generally is more careful with profiles. Even then though, women who would match up well with me (92% and above) would often describe non-monogamy as not something they personally appose to, but at the same time, not for them. OKC has altarted its dating filtering to cater better for non-monogamous folks a couple of times. There "seeing someone" relationship status for those who date openly has been around for a while. More recently, the site made the realtionship status stand out more, making it easier to find people who marked their profile as "non-monogmaous". Still though, the number of women who mark themselves as non-monogmous in NYC is fairely small in my age group. I am not sure how much my own profile filters some due to low percentage, but I doubnt the imapct is so large that only one profile in about 10 shows as non-monogamous. 
 
 
+It's important to mention that I did not bother with all these details in the past. It seemed that women in general were much more willing to experiment, try new things, and date. Many times (but not always) this meant sexually. I think it's worth mentioning here that some of these women became friends even after we stopped dating romantically. I'm in touch with them to this day. If I am to guess (which is all I can do, this is my theory) I would say this has to do with what women (in general) are brought up to believe and, unfortuantely, "trained" for. Others still are looking for a "primary" partner who would treat them as the main anchor in the relationship and consider anyone else "seconadry." To me, this is not polyamory as much as it is a "reformed" monogamy of sorts. Many would appose, of course. To each their own. 
 
-  
+**** Priorities and Specifics
+
+Another important aspect is diciplines of life at this point. For many, me including, work takes a large chunk of time. For the most part, I like it this way. I am passionate about my job and the passion often bleeds into my personal life. People who are passionate about what they do is important in dating. From my experience, when I date women who love what they do, it shows in everything.  
+
+It so follows that women I want to date have similar priorities. In turn this leads to challanges, such as time managment, proximity (sometimes down to block radious in the city), certain amount of wealth, education and more. While I often feel I must be more flexible about my priorites, it seems the women I talk to do not. This is a simple case of supply and demand. I've talked to several women and I know that comparing my OKC inbox to theirs would be like comparing a flower in a pot in your living room to a meddow full vagitation, including the unwanted weed that grows everywhere. 
+
+I have previously asked in the polyamory reddit for advice from women regarding how to reach to more of them. I was positively surprised at the amount of comments I recieved: most women who responded mentioned that the big issue is time and commitment. In other words, the fact that I'm busy with work and already have fulltime partners mean that I have little time for a new partner. That would be very true if the women I speak to would /know/ I have two full time partners and that I am very busy, but generally, they do not My profile specifies that I'm a non-monogmaous and generally busy, but I stay away from details until asked later. There's no reference to my partners and my relationship with them. This is not because I hide this information (I would gladly talk about it with a person I date), but because my partners have their own private lives as well, and my dating profile is not and should not be tied to them. 
+
+However, In the past I used to connect to my partners' profile, and that made little to no difference. I found then that most women would not read as far into the profile to get to these details. They would just message me, curious about polyamory in general. I would often find myself in a position of explaining what it is and how it works. Times have changed.  
+
+**** Mainstream
+
+When I started dating as a non-monogamist, polyamory was a magical word. It was a term wispered at dark bars after a BDSM party died down, speaking of "another way" and a "lifestyle" that was never explained thoroughly. It would also be a term you would not dare mention for fear of being discovered at work and in the family. For some, this is still true, but the number is lowering every day.
+
+We live in a different world now. Polyamory is a term that officially exists in dating apps and TV shows. The number of people who haven't heard of it before is decreasing fast. The good side of this is that we can talk about it, we can make it better, we don't need to be afraid of being judged and even have the power to take countermeasures if we are descriminated against. 
+
+But the other part of going mainstream is the flatness. Polyamory is so common of a term now that it's being thrown around without care, and (in my opinion) without full understanding of what it means individually to each person. Where once you got the stage to discuss what polyamory means to you as a person over a drink with a facinated date, now you find that the person at the other side of the table, who sometimes never paracticed polyamory fully, already knows what polyamory is. Oh yes, they have a full definition, tied to judgment and a plan of action, just because you mention the word. You don't get to explain, they explain it /to you/. 
+
+What is left is often to shake my head and turn my back. There's no talking to a wall, or a glass that is already full, as the famous zen saying goes. When I meet someone who flat out insist they don't  want to be a "unicorn" or a "secondary" or (worst of all) a cheating secret without the patience to listen, I just walk away. I tried to talk some sense into these people, but I stopped wasting my time. It never ends well. 
+
+**** Attraction
+
+Physical attraction is a big factor. I find it funny  how far we go out of our way sometimes not to mention this. It would seem we are so careful not to hurt anyone's feelings, and by doing so we hurt oursevles in the long run. 
+
+The fact is, I don't find most of the women who are interested in me online attractive. There's hardly anything new or weird about this statement when you think about, yet, it just sounds so /bad/. Why is that? 
+
+I do not think I have high standards. I am not attracted to obese women, though in some cases overwight is OK. I think [[http://www.who.int/en/news-room/fact-sheets/detail/obesity-and-overweight][WHO's BMI calculations]] is overall a pretty good guide for what I call overweight, if you're curious. I've tried to force myself to date obese and overwight women before and ended up being miserable, or made them misrable as a result. the temption, due to despair, can be overwhelming at times.
+
+Other factors that go into attraction for me include less body hair in general, but I do not have any hard lines here. Smell and hygine are important to me. That's mostly it. It seems the women I date have far stricter requierments in this area, but I wouldn't know for sure. This is not often discussed as I hope it would,  even if I ask directly. My conclusion then is based on what I see on profiles, comments such as "please be fit," or "only groomed beards" and the like. Among the more hidden features (those are the kind that are not posted on the profile or discussed openely, sometimes never) the height issue seems to be a big deal: Most women want their partner to be taller than they are.
+
+I've dated a tall woman once who, after a few months and a couple of sexual intercourses, finally came to the conclusion that the height differene /does/ in fact bothers her. She was somewhat surprised herself, it was a discovery she has made and shared with me. We have developed a friendship strong enough by then to respect one another to admit such things (we still are friends). She mentioned that the real realizion was not the fact that the height difference bothered her; it was the fact that she had /resisted/ acknologing it is such a big deal for so long. She saw herself as accepting and open minded, and having a problem with a height was betraying this image of herself. In other words, she wouldn't allow herself to admint she is not attracted to shorter men.
+
+For calrification, I'm 5'6''. Definitely not the tallest out there, but there are many women my height or lower. This was never a real problem, I'm using it here as an example for a hidden feature as I explained earlier. 
+
+**** Sex
+
+Finally I want to address sex /means/. Most of us date with sex on the mind, to one degree or another. Of course there are asexual folks and those who use dating apps to create stirctly social connections, but in general this is rare. For a long time, I struggeld with the fact of bringing sex up on my profile. I have a somewhat of a BDSM background, and I'm not new to what is generally considered "kinky" sex. What this means, interestingly, is that I often bring sex up as a conversation topic. Because this is a personal and sensitive issue, I would ask a permission first, and naturally, I need to be comfortable myself. This doesn't usually happen on the first date, but it can. 
+
+As an average CIS male (whatever average means), it seems I usually crave sex more often then those I date. However, it seems women crave sex just as much but are hold back from bringing it up. This ties to a familiar pattern of what wanting sex means to a woman, or, as a friend of mine would often say when I talk to her, what it still unfortunately means to women to "admit" wanting sex. I strongly agree that we still judge women who openly seek sex too harshly, but for now, this reality means most women won't be comfortable discussing sex opently before we get intimate, which in my opinion, is a disadventage. I should also mention that there are women who offer sex (or sexual connection) right off the bat, basically the equivilant of "dick pictures" just with female parts. In each case this happened to me, the woman is desperate and unattractive - physically or mentally.
+
+When I was more involved in the "kink scene," sex was everywhere, and therefor, it was nowhere. Everyone had nude pictures on their profile and tell you what gets them off if you'd ask (with permission, of course). I found this libarating. I could know how someone would look like under their clothes and thus very simple to get laid if the interest was mutual. Interistingly though, usually there was /less/ of rush to get there.  You both knew what was down there, you both knew you want to get here eventually, so you both ended up getting a drink and talking it over and build something that would /include/ rather than lead to sex.  
+
+Unfortnately I since stopped being as active. Partly due to time constraints, but mostly due to age. Many of these groups are strongly enfourced by an age limit that wouldn't allow a man my age to join a group of people in their 20s, for example. This is a good rule, and is there for a good reason. Work is often another thing that gets in the way, especially if you like what you do. It's just not as appealing to be an hour late and show up with a hangover to work. Been there, done that, no thank you kind of deal. 
+
+In my opinion, Sex and its meaning is something we should definitely talk about more openly. If it's not on the table, which often means end of dating, so be it. If it is under certain understandings as it often is, it should be discussed. It is a topic that often disappears into a lingering question mark. Some like to call this a tease, but I don't. Teasing, I believe, is something that happens /after/ people are comfortable enough to put sex on the table. Otherwise, why waste feelings and time? Even at times where we're not sure sex will take place (this happens to me often enough), it is fine to say so. Something like "look, I don't want to get your hopes up, I'm just not sure yet. Can we take it easy one more time or two?" is perfectly fine. If it isn't, you'd better go look for someone else. I would. 
+
+**** Where are we 
+
+At this point in my life, dating people is at it's hardest. The only time in my life I recall dating being as challanging was my early 20s, where I was still a clueless virgin who tried to do everything "by the book." Life had different plans, as it often does, and I ended up the complete opposite direction which thankfully shocked me out of that stupid daze. 
+
+I am a consitant person, and I belive in keeping on trying a forumla that generally works. This is what I intend to keep on doing. One of the things I know I should start doing again though is turning back to the kink scene and find positive people in it. That has been the best becon in the past, and I believe it could once again in the future.  
+*** ACTIVE The Hub 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Blog
+    :EXPORT_FILE_NAME: Raspberry_Pi_Org_Hub
+    :EXPORT_HUGO_PUBLISHDATE: 2018-11-22:
+    :END:
+
+Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a "hub" that will always be on and host these files. This is a description of the setup of what I've done to make this work. I hope you'd find this useful! Feel free to contact me with any questions. 
+
+#+hugo: more
+
+**** Buying the Raspberry Pi. 
+
+For the setup I describe here, you need the RP itself, a power source, an SD card, a USB case for 2.5 inch HDD, and the HDD itself. You'll also need an Ethernet cord for this setup. If you don't have one, go grab yourself a [[https://www.amazon.com/AmazonBasics-RJ45-Cat-6-Ethernet-Patch-Cable-5-Feet-1-5-Meters/dp/B00N2VILDM/ref=lp_9938478011_1_1?s=pc&ie=UTF8&qid=1542991619&sr=1-1][CAT6 cord Amazon Basics]] cable, it's always good to have one around.  
+
+For the RP, you better off getting a package similar to [[https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/ref=sr_1_fkmr0_2?s=electronics&ie=UTF8&qid=1541986065&sr=1-2-fkmr0&keywords=canakit+raspberry+pi+3+b%252B+sd+card][this one]]. You could probably get something slightly cheaper by getting all the parts yourself, but not by much. Better to have everything you need at once without worrying about forgetting something. I didn't get the above package with the SD card, so I had to wait a couple of days for another order to come in. 
+
+The HDD I had laying around already, so I got [[https://www.amazon.com/gp/product/B01M08LCXW/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1][this case]] for it. 8 bucks. 
+
+**** Setting up the RP
+
+First, we're going to set up the SD card to run our RP. 
+
+Before we jump in, a note about my setup: I have Linux in a VM inside a Windows host. As it turns out, having Windows an alt-tab away (or in my case, ctrl+alt+left arrow away) can be very useful. 
+
+If switch between Windows programs and Linux commands without mentioning it, that's because this setup comes naturally to me at this point. I've been working this way (office and home) for almost four years, minute half a year of dual-booting with Linux-Mint as my daily OS. There's a whole story here about the switch to Linux and back, but that's for another time. 
+
+OK! Enough chatter. Let's get on with it.  
+
+ 1. Download [[https://www.raspberrypi.org/downloads/raspbian/][Raspbian]] (zip file).
+ 2. Format the SD to FAT32
+ 3. Unzip, and write the image to the SD using [[https://sourceforge.net/projects/win32diskimager/][Win32 diskimager]] or Underbootin. For me, the first option is better when I deal with SD cards and my USB-SD adapter, YMMV. 
+ 4. Create an empty file (no extension) on the SD root called SSH. 
+
+That last part is important. Creating the file (in windows, just create a new text file, rename to SSH and delete the extension) is what tells our RP to open port 22 for SSH.
+
+Then you insert the SD card and power the RP up. Log into your router to find the RP's IP address.  This is why you need to Ethernet connection for. You won't be able to access the RP with WiFi for this.
+
+Go ahead and SSH into the RP as pi: =ssh pi@[RP IP address here]=. your default password is raspberry. 
+
+Once in, you want to sudo into  RP config tool: =sudo raspi-config=. The setup tool is straightforward enough, but I found that remoting into the pi itself with VNC (coming up) is more convenient, so the only option we really care about now is to turn VNC on: 
+go to interface options (option 5 in my case, in the middle), and do that. 
+
+Save, get out, and then download [[https://www.realvnc.com/en/connect/download/vnc/linux/][RealVNC]]. I downloaded it for Linux because that's what I use to SSH and setup my Pi. It's also where later I will setup Syncthing (coming up), so it made sense. RealVNC is the recommended option for RPs. it's easy to install and run, and supports VNCing with a password, which is what you need for the RP. As a bonus, it automatically creates nice thumbnails of the last logins (IP addresses) which can be useful.
+
+With RealVNC, go ahead and connect to the RP using the same IP address and default password. The Raspbian will jump on you right away telling you need to change your default password and a bunch of other things. and that's all good. Follow these screens, and after updates are downloaded, /don't/ restart just yet. 
+
+You might have noticed you're working in a tiny little screen. Let's change that quickly by going to the preferences (click on the RP icon at the top left), then Raspberry Pi Configurations. Under resolution, choose something that works well for you. for my ultra wide screen, 1920x1080 was good enough to work in. Now you can restart. If you changed your password (you should have!) leave RealVNC on and it will inform you the password is wrong (because you changed it). All good, log in. 
+
+***** A note about passwords and password generators
+
+If you use a password manager (my favorite on Linux now is xpass, LastPass is another), I strongly recommend to copy-paste your password in plaintext somewhere first, then copy it to the RP password-change field, and click the eye icon to reveal it. /Make sure what you pasted is the same thing you think you pasted/. In my case, I messed this up twice and had to image my SD card all over again. Yes, [[https://howtoraspberrypi.com/recover-password-raspberry-pi/][there's a technique to reset up the password by booting into the root shell]], but this didn't work for me. And besides, it's annoying and requires to physically connect a screen and keyboard to the RP. 
+
+Because my RP is set up for SSH with a password for now, I made a random 32 character password for it. copy-paste is not a choice. 
+
+**** Encrypting the HDD
+
+I chose to use a separate HDD for a couple of reasons: 
+
+1. I can take it with me if I need to and mount to another machine
+2. I have unused HDDs laying around from computer repairs. In my case, the HDD is 500GB, more than enough for text files and occasional pictures I use in Org-mode.
+3. If the HDD dies, I still have a functional RP with the OS on the SD card. 
+
+The encryption tool of choice for me ended up being LUKS, the same thing that encrypts Linux machines at startup. Actually, my first choice was [[https://www.veracrypt.fr/en/Downloads.html][VeryCrypt]]. It comes with a convenient GUI and better options to handle containers. As it turns out, there's no updated version for ARM (which is what the RP is), and I'd have to compile from source. Possible, but not worth it for now.
+
+VNC into your RP.
+
+1. First, Install cryptsetup on the RP (apt-get). This is the LUKS suite.
+2. Figure out the USB-connected drive: =sudo fdisk -l=. this will show you where's your hdd in /dev. In my case, it was in /dev/sda (not sda1, etc.) 
+3. Format with LUKS:  =cryptsetup luksFormat /dev/[drive]= the default option was fine for me, but be aware that LUKS comes with many options if you so desire. When formatting, it should ask for a passphrase, so give it one. Then it should start doing its thing.
+4. When done, verify your drive is encrypted with  =cryptsetup luksDump /dev/[drive]=. You should see information about the encryption, along with the first key (LUKS can hold up to eight keys) and its hash. This means we're all good so far. 
+5. Now, create a mount point for your drive. for me, out of habit of using Mint, that was /media/pimount. So: =sudo mkdir /media/pimount=. 
+6. This is where things get a bit hazy since I'm writing this from memory. We need to open the encrypted drive with =cryptsetup luksOpen /dev/mapper/[name] [name]=. Notice we have *mapper* in the path after dev now. that's how LUKS work. The encryption is not being done on /dev/[drive] itself. I'm not sure why (I'm sure there's some Linux file system reason behind it), so feel free to educate me.
+7. Now, we need to format the drive with the file system of our choice. In my case, ext4. I believe this can also be done for FAT32 or even NTFS if you want to access your drive from Windows, but I haven't tested that. To format, you can download Gparted, which is good to have in general. However, this is easy to do with =mkfs.ext4 /dev/[name]=. In fact, that's exactly what Gparted would do for you anyway.
+8. Mount the freshly formatted drive: =mount /dev/mapper/[name] /media/[name]=  If we have "show mounted drives" option on the desktop in RP, it should show now. As a matter of fact, it's a good idea to enable this (right click on the RP desktop). 
+
+Before you start putting stuff on your HDD, it's a good idea to restart and practice mounting the drive again (step 6 and 8; you don't need to format again!). Then do it again. The unmount command is umount (no n), or you can simply restart the Pi.  There's a way to automate this using fstab, but messing your fstab could screw up your RP as it happened to me. I figured I never plan on really turning off the thing, so I will just keep doing it manually. Now, if someone happens to just grab your HDD and walk away, it will need to be mounter and decrypted. 
+
+**** Syncthing setup
+
+To me, [[https://en.wikipedia.org/wiki/Syncthing][Syncthing]] is the best solution for all my file-syncing needs. It works without a hitch until you need to change something tiny and meaningless. Then all hell breaks loose. I don't understand why that is, but I learned to accept it as a fact of life at this point. 
+
+During this RP weekend setup, I had to change my Syncthing setup so that the RP will become the central hub. What happened was a fruitless night of trying to figure out why Syncthing stopped syncing and  an messy Monday at work. It was such a bad setback, in fact, that I decided to create a process dubbed "downfall" for future cases just like this one when I can't use Org-mode at work. Yes, not having Syncthing basically means I can't use Org. But I digress... The important lesson here is this: 
+
+don't mess with Syncthing. Set it up, make sure it works, and /don't touch it/. 
+
+As intimidating as this sounds, Syncthing actually has a pretty simple setup process. Here's the plan: 
+
+[[file:static/hub.png]]
+
+The different colors represent the different folders in syncthing. To me these are personal, work, utilities (this is the only folder that does not have org files), and archive. 
+
+I use four devices, three daily, one (laptop) once in a while. The home VM, which is my main productivity box, gets everything. So does the laptop, it's meant to be used as my home away from home. My work VM (OpenSuse Linux) only contains work org files and the archive. On the phone, I skip media-heavy folders like DnD and some classical music flac files to save space. 
+
+The setup process:
+
+1. Install Syncthing on RP (apt-get). 
+2. Choose the first device to sync. Add the RP's ID to its Syncthing.
+3. /Wait/ for RP to acknowledge the device. Approve.
+4. From the connecting device, share the folders you want to sync with the RP.
+5. /Wait/ for RP to acknowledge folders. Approve each, choose path.
+6. Verify the sync work by altering the files a bit.
+7. Choose the second device to sync... repeat step 3-5.
+
+Now, folders that common to a couple of devices should be added first from one device (as stated above) with the RP, and then add that folder to the /other/ device. Device_A --> RP --> Device_B. This ensures you're sharing the same folder (same folder ID) and not creating duplicates. The reason you're doing it this way and not just sharing from one device to another is because you don't want the other devices to see each other; they should only "see" the RP. The RP is the only device that needs to see all of them. Fewer complications means Syncthing works better and faster. Remember what I said earlier: don't play with it, keep it simple and it will work. Complicate it, and you'll spend hours trying to figure out what's wrong.  
+
+So for example, if I first sync my home VM and share the "work" folder to the RP, after I'm done and verify the sync work, I am connecting the work VM to the RP, wait until it's recognized, and then send the work folder (which is now synced between home VM and RP) /to/ the work VM. 

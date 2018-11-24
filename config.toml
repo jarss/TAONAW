@@ -25,5 +25,5 @@ min_version = 0.21
     repo = "https://www.github.com/mdo/hyde"
 
 [params]
-    description = "An Attempt to Switch from WordPress"
+    description = "Tech, Life, and  the Stuff in Between."
     themeColor = "theme-base-0a"

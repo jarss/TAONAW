@@ -6,10 +6,21 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Oct 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Hub</title>
+      <link>https://jarss.github.io/TAONAW/blog/raspberry_pi_org_hub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/blog/raspberry_pi_org_hub/</guid>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Some Good Things</title>
@@ -17,17 +28,6 @@
       <pubDate>Tue, 30 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://jarss.github.io/TAONAW/blog/some_things/</guid>
-      <description>&lt;p&gt;Last Saturday I had an encounter with dear ol&amp;rsquo; Aunt Dee. She&amp;rsquo;s like a lifelong buddy of mine, never too far. She&amp;rsquo;s a shy quiet wall flower, sneaks up on you, undetected. You only realize she&amp;rsquo;s around after her long scrawny hands are wrapped around you, hugging, her perfume brings back a daze of nostalgia&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Some Good Things</title>
-      <link>https://jarss.github.io/TAONAW/life/some_things/</link>
-      <pubDate>Tue, 30 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://jarss.github.io/TAONAW/life/some_things/</guid>
       <description>&lt;p&gt;Last Saturday I had an encounter with dear ol&amp;rsquo; Aunt Dee. She&amp;rsquo;s like a lifelong buddy of mine, never too far. She&amp;rsquo;s a shy quiet wall flower, sneaks up on you, undetected. You only realize she&amp;rsquo;s around after her long scrawny hands are wrapped around you, hugging, her perfume brings back a daze of nostalgia&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
