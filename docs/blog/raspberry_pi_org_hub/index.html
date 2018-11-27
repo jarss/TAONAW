@@ -77,7 +77,7 @@
 
 <p>Before we jump in, a note about my setup: I have Linux in a VM inside a Windows host. As it turns out, having Windows an alt-tab away (or in my case, ctrl+alt+left arrow away) can be very useful.</p>
 
-<p>If switch between Windows programs and Linux commands without mentioning it, that&rsquo;s because this setup comes naturally to me at this point. I&rsquo;ve been working this way (office and home) for almost four years, minute half a year of dual-booting with Linux-Mint as my daily OS. There&rsquo;s a whole story here about the switch to Linux and back, but that&rsquo;s for another time.</p>
+<p>If switch between Windows programs and Linux commands without mentioning it, that&rsquo;s because this setup comes naturally to me at this point. I&rsquo;ve been working this way (office and home) for almost four years, minusaa half a year of dual-booting with Linux-Mint as my daily OS. There&rsquo;s a whole story here about the switch to Linux and back, but that&rsquo;s for another time.</p>
 
 <p>OK! Enough chatter. Let&rsquo;s get on with it.</p>
 
@@ -129,7 +129,7 @@ go to interface options (option 5 in my case, in the middle), and do that.</p>
 <li>Format with LUKS:  <code>cryptsetup luksFormat /dev/[drive]</code> the default option was fine for me, but be aware that LUKS comes with many options if you so desire. When formatting, it should ask for a passphrase, so give it one. Then it should start doing its thing.</li>
 <li>When done, verify your drive is encrypted with  <code>cryptsetup luksDump /dev/[drive]</code>. You should see information about the encryption, along with the first key (LUKS can hold up to eight keys) and its hash. This means we&rsquo;re all good so far.</li>
 <li>Now, create a mount point for your drive. for me, out of habit of using Mint, that was /media/pimount. So: <code>sudo mkdir /media/pimount</code>.</li>
-<li>This is where things get a bit hazy since I&rsquo;m writing this from memory. We need to open the encrypted drive with <code>cryptsetup luksOpen /dev/mapper/[name] [name]</code>. Notice we have <strong>mapper</strong> in the path after dev now. that&rsquo;s how LUKS work. The encryption is not being done on <em>dev</em>[drive] itself. I&rsquo;m not sure why (I&rsquo;m sure there&rsquo;s some Linux file system reason behind it), so feel free to educate me.</li>
+<li>This is where things get a bit hazy since I&rsquo;m writing this from memory. We need to open the encrypted drive with <code>cryptsetup luksOpen /dev/mapper/[drive name] [mounting point name]</code>. Notice we have <strong>mapper</strong> in the path after dev now. that&rsquo;s how LUKS work. The encryption is not being done on <em>dev</em>[drive] itself. I&rsquo;m not sure why (I&rsquo;m sure there&rsquo;s some Linux file system reason behind it), so feel free to educate me.</li>
 <li>Now, we need to format the drive with the file system of our choice. In my case, ext4. I believe this can also be done for FAT32 or even NTFS if you want to access your drive from Windows, but I haven&rsquo;t tested that. To format, you can download Gparted, which is good to have in general. However, this is easy to do with <code>mkfs.ext4 /dev/[name]</code>. In fact, that&rsquo;s exactly what Gparted would do for you anyway.</li>
 <li>Mount the freshly formatted drive: <code>mount /dev/mapper/[name] /media/[name]</code>  If we have &ldquo;show mounted drives&rdquo; option on the desktop in RP, it should show now. As a matter of fact, it&rsquo;s a good idea to enable this (right click on the RP desktop).</li>
 </ol>

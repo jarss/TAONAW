@@ -391,7 +391,7 @@ First, we're going to set up the SD card to run our RP.
 
 Before we jump in, a note about my setup: I have Linux in a VM inside a Windows host. As it turns out, having Windows an alt-tab away (or in my case, ctrl+alt+left arrow away) can be very useful. 
 
-If switch between Windows programs and Linux commands without mentioning it, that's because this setup comes naturally to me at this point. I've been working this way (office and home) for almost four years, minute half a year of dual-booting with Linux-Mint as my daily OS. There's a whole story here about the switch to Linux and back, but that's for another time. 
+If switch between Windows programs and Linux commands without mentioning it, that's because this setup comes naturally to me at this point. I've been working this way (office and home) for almost four years, minusaa half a year of dual-booting with Linux-Mint as my daily OS. There's a whole story here about the switch to Linux and back, but that's for another time. 
 
 OK! Enough chatter. Let's get on with it.  
 
@@ -438,7 +438,7 @@ VNC into your RP.
 3. Format with LUKS:  =cryptsetup luksFormat /dev/[drive]= the default option was fine for me, but be aware that LUKS comes with many options if you so desire. When formatting, it should ask for a passphrase, so give it one. Then it should start doing its thing.
 4. When done, verify your drive is encrypted with  =cryptsetup luksDump /dev/[drive]=. You should see information about the encryption, along with the first key (LUKS can hold up to eight keys) and its hash. This means we're all good so far. 
 5. Now, create a mount point for your drive. for me, out of habit of using Mint, that was /media/pimount. So: =sudo mkdir /media/pimount=. 
-6. This is where things get a bit hazy since I'm writing this from memory. We need to open the encrypted drive with =cryptsetup luksOpen /dev/mapper/[name] [name]=. Notice we have *mapper* in the path after dev now. that's how LUKS work. The encryption is not being done on /dev/[drive] itself. I'm not sure why (I'm sure there's some Linux file system reason behind it), so feel free to educate me.
+6. This is where things get a bit hazy since I'm writing this from memory. We need to open the encrypted drive with =cryptsetup luksOpen /dev/mapper/[drive name] [mounting point name]=. Notice we have *mapper* in the path after dev now. that's how LUKS work. The encryption is not being done on /dev/[drive] itself. I'm not sure why (I'm sure there's some Linux file system reason behind it), so feel free to educate me.
 7. Now, we need to format the drive with the file system of our choice. In my case, ext4. I believe this can also be done for FAT32 or even NTFS if you want to access your drive from Windows, but I haven't tested that. To format, you can download Gparted, which is good to have in general. However, this is easy to do with =mkfs.ext4 /dev/[name]=. In fact, that's exactly what Gparted would do for you anyway.
 8. Mount the freshly formatted drive: =mount /dev/mapper/[name] /media/[name]=  If we have "show mounted drives" option on the desktop in RP, it should show now. As a matter of fact, it's a good idea to enable this (right click on the RP desktop). 
 
