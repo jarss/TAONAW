@@ -2,7 +2,7 @@
 title = "Some Good Things"
 author = ["Josh Rollins"]
 publishDate = 2018-10-30T00:00:00-04:00
-lastmod = 2018-11-06T09:07:03-05:00
+lastmod = 2018-12-03T22:02:27-05:00
 draft = false
 +++
 

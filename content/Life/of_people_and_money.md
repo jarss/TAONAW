@@ -2,7 +2,7 @@
 title = "Of Relationships and Money"
 author = ["Josh Rollins"]
 publishDate = 2018-10-18T00:00:00-04:00
-lastmod = 2018-10-23T08:45:12-04:00
+lastmod = 2018-12-03T22:30:09-05:00
 draft = false
 +++
 

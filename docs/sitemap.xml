@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jarss.github.io/TAONAW/blog/switching_2_hugo_ft/</loc>
+    <lastmod>2018-12-05T12:36:07-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jarss.github.io/TAONAW/blog/raspberry_pi_org_hub/</loc>
     <lastmod>2018-11-26T20:33:03-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jarss.github.io/TAONAW/blog/some_things/</loc>
-    <lastmod>2018-11-06T09:07:03-05:00</lastmod>
+    <loc>https://jarss.github.io/TAONAW/life/some_things/</loc>
+    <lastmod>2018-12-03T22:02:27-05:00</lastmod>
   </url>
   
   <url>
@@ -23,8 +28,8 @@
   </url>
   
   <url>
-    <loc>https://jarss.github.io/TAONAW/blog/of_people_and_money/</loc>
-    <lastmod>2018-10-23T08:45:12-04:00</lastmod>
+    <loc>https://jarss.github.io/TAONAW/life/of_people_and_money/</loc>
+    <lastmod>2018-12-03T22:30:09-05:00</lastmod>
   </url>
   
   <url>
@@ -44,12 +49,18 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/blog/</loc>
-    <lastmod>2018-11-26T20:33:03-05:00</lastmod>
+    <lastmod>2018-12-05T12:36:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jarss.github.io/TAONAW/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/life/</loc>
+    <lastmod>2018-12-03T22:02:27-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,7 +71,7 @@
   
   <url>
     <loc>https://jarss.github.io/TAONAW/</loc>
-    <lastmod>2018-11-26T20:33:03-05:00</lastmod>
+    <lastmod>2018-12-05T12:36:07-05:00</lastmod>
     <priority>0</priority>
   </url>
   
