@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EmacsOrgs on The Art of Not Asking Why</title>
+    <link>https://jarss.github.io/TAONAW/emacsorg/</link>
+    <description>Recent content in EmacsOrgs on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Oct 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://jarss.github.io/TAONAW/emacsorg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Evolvement of Video Journal &amp; Org</title>
+      <link>https://jarss.github.io/TAONAW/emacsorg/video_journal_evolved/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/emacsorg/video_journal_evolved/</guid>
+      <description>&lt;p&gt;Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I &lt;a href=&#34;https://jarss.github.io/TAONAW/blog/org-update/&#34;&gt;discussed these&lt;/a&gt; couple of times before: tasks, task notes, and journal.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emacs Windows</title>
+      <link>https://jarss.github.io/TAONAW/emacsorg/emacs-windows-managment/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/emacsorg/emacs-windows-managment/</guid>
+      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Org Update</title>
+      <link>https://jarss.github.io/TAONAW/emacsorg/org-update/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/emacsorg/org-update/</guid>
+      <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
