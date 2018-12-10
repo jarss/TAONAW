@@ -25,5 +25,5 @@ min_version = 0.21
     repo = "https://www.github.com/mdo/hyde"
 
 [params]
-    description = "Tech, Life, and  the Stuff in Between."
+    description = "A Blog by Josh Rollins: Tech, Life, and the Stuff in Between."
     themeColor = "theme-base-0a"

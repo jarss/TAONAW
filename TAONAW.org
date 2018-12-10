@@ -38,50 +38,13 @@ JR has been writing about sex, tech, and the many things in between for years. H
 To contact me, you can write an email: jarss[at]protonmail[dot]com
 Most of the time, I'm on [[https://twitter.com/Josh_Rollins][Twitter]], [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]]. 
 
-** Blog
+** EmacsOrg
   :PROPERTIES:
-  :EXPORT_HUGO_SECTION: Blog
+  :EXPORT_HUGO_SECTION: EmacsOrg
   :END:
-
-*** PUBLISHED Hugo - what takes so long?
-  :PROPERTIES:
-  :EXPORT_HUGO_SECTION: Blog
-  :EXPORT_FILE_NAME: Hugo: Beginnings
-  :EXPORT_HUGO_PUBLISHDATE: 2018-10-04:
-  :END:
-
- If you've been following me online for the last month or so (especially on reddit) you'd know I've been engaged in shifting away from WordPress and into the world [[https://gohugo.io/][Hugo]]. 
-
-#+hugo: more 
-
- I'd imagine the people of in [[https://www.reddit.com/r/emacs/][r/emacs]] would raise an eyebrow at the term "world of Hugo." After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it's Hugo that got me overwhelemed, not so much Emacs. What? Really? 
-
- You see, it has to do with background and expectations. As a non-programmer (as in, someone who never wrote anything a bit more complicated then a few lines of shell script) Emacs was a mountain. Standing at the bottom, I gazed at the cloud shrowing its peek and told myself "well, you gotta take a first step somewhere..." so I did. For me, that was Org-mode. As a matter of fact, at the time, I didn't even know much about Emacs and how deep it can get. All I knew was that Org was cool, and I'm interested in learning more.
-
- After a couple of months, I got a bit more comfortable with Emacs and my level of doing things with it. I am still miles away from the top, and I'm fine with that. I got Emacs to do most of what I want it to do for me at this point, which is writing these posts, my journal entries, and of course my agenda and tasks both at work and at home. 
-
- Hugo, on the other hand, was meant to replace WordPress. As a person who used WordPress on and off a couple of years, I expected more or less the same thing. You know, going to my webiste online somewhere, log in with a username and password, navigate the GUI and post stuff, add plugins... As such, I didn't care for a change that much. WordPress was working more or less OK, so why change to something similar and learn things all over again? 
-
- I get frequent alerts that my website is down from my webhost, but I got used to shrug these off. I got it as a cheap deal, and for about $6 a month or so hosting, what do you expect? People in the Emacs reddit mentioned they see more spam from my site's URL instead of my posts, but again, with 1 person complaining out of 10 or so, it wasn't a big deal. After all, SSL and https is for professional website that can afford it, and I am just an amatuer-ish blogger. Perhaps the biggest hurdle was Github: I knew people who use Hugo usually use Github to publish their blog, but they were all programmers. Me, I didn't know anything about Github or git. That was for coders, people who write scripts for a living. This is not me. I am not a porgrammer. 
-
- To be honest, I'm not sure what changed that perspective. Perhaps it was a random tutorial I saw about Git which made me realize it's not /that/ crazy complicated. Perhaps it was the fact that someone advised me not to link to my website again if I don't have https. Maybe it was just my inner geek, itching for a change, and WordPress was getting too familiar and too boring. Whatever it was, I took the bait, and I started doing all of it at once. 
-
- First I watched some Lynda videos about git and read a few posts. Then, I learned more about Hugo. After that, it was [[https://ox-hugo.scripter.co/][ox-hugo]]'s turn (because I gotta write my posts from inside Emacs), and then it was [[https://magit.vc/][Magit]] (because I gotta use git from inside Emacs). I think I went through everything in a matter of about a month. I learned too much too fast. But that's how I roll. I don't know why I do that to myself, and I'm not sure how it makes sense to go from "git is for coders" to "ALL THE THINGS," but I do anyway. 
-
- Obviously, this attitude has terrible consequences. You learn everything on a very shallow level, which means the first tiny bump in the road sends you launching out of control. You get frustrated and you try again, just to hit another bump. Turns out, if I /learn everything/ I also expect to /know everything/ out of myself, which is of course nonsense. But not everything is futile. Knowing the big picture in advance is not a bad idea. Learning a couple of things at once make you realize how they work together, and helps you develop a mindset that is more skilled at solving specific problems. Later, when you go look at the official documents, certain things already make sense to you even though you haven't seen them before. 
-
- Be it as it may, it's not easy. I wouldn't recommend this method to anyone. it's doing damage control instead of learning. However, manuals never made sese to me. In the rare occessions where I do have the patience to read through the introduction, I'd forget what I wanted to do (or how to do it) by the time I get the real stuff. Besides, manuals are usually written by the people who made the program; as such, they are written from the inside, for insiders. Certain terms and syntax make aboslutely no sense to newcomers, who find that they struggle with basic terms that the veterans spit out as if they were born into it. Indeed, if there's one thing that I kept running into when learning Emacs is /not/ to bother with its documentation. As helpful as it is, and as much as everyone loves to say all the help you ever want is C-h v (or a or whatever) away, it was not true for me. It is much, much easier to Google something up and find a blog post (or a YouTube video) that explains it to you in plain English.
-
-Now I'm much further ahead than where I was when I started my Hugo ordeal. I have sucessfully launched a couple of testing websites on and off Github. I have whined, complained, and whined again to anyone who would listen.
-
-
-So, here we are with Hugo. I use git, and well, the site is on Github. This post was written with ox-hugo. I used Magit, but because there are so many issues I'm running into, I decided to make a decision not to use it for at least another month. It's very hard to hold myself back, for sure. On one hand, since I've done WordPress for so long, I'm aching to go back to my old website where I don't have problems learning how to create a new static page (that doesn't show on the front page of this blog), or how exactly images work with these posts, or how can I automate the long process of saving a post and updating my Hugo website compared to the simple "click to publish"  in WordPress. I'm sure some of you are aching to tell me just how to do some of these things. Don't worry, I'll get back to you.  
-
-Oh, and speaking of helpful people: a big thank you to [[https://github.com/kaushalmodi][Kaushal Modi]], who kept answering my endless questions, who was there through my frustration, anywhere I went. This guy is passionate and compassionate about what he does. 
-
 *** PUBLISHED Org Update
   :PROPERTIES:
-  :EXPORT_HUGO_SECTION: Blog
+  :EXPORT_HUGO_SECTION: EmacsOrg
   :EXPORT_FILE_NAME: Org Update
   :EXPORT_HUGO_PUBLISHDATE: 2018-10-13:
   :END:
@@ -126,9 +89,42 @@ I don’t use the journal as much as I used to when I had it earlier this year. 
 
 The journal works nicely with my weekly reviews, which are essentially weekly videos I make reading back from my agenda and journal. With time, these became more of a personal “summary of summaries” where I highlight my week tasks and review, usually for a 10-minute segment or so. I keep these in a well-compressed mp4 format on an SD card ([[https://ffmpeg.org/][FFMPEG]] is awesome for that) and I can easily use one SSD for an entire year and still have additional room. I am now starting to name the videos based on the same weekly theme that I use for my weekly agenda files and journal.
 
-*** PUBLISHED Emacs Windows Managment
+*** PUBLISHED Evolvement of Video Journal & Org 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_FILE_NAME: video_journal_evolved
+    :EXPORT_HUGO_PUBLISHDATE: 2018-10-23:
+    :END:
+
+     
+Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I [[https://jarss.github.io/TAONAW/blog/org-update/][discussed these]] couple of times before: tasks, task notes, and journal.
+
+#+hugo: more
+
+My tasks do rarely contain sub-tasks anymore. This is odd because sub-tasking was one of the reasons that got me into Org-mode initially. Over time I found that I rather leave notes to myself about where I left off and what needs to be done instead of using actual tasks.
+
+Task notes are usually brief (one paragraph with 3 to 5 lines) and are always timestamped with most recent on top. This quickly lets me know where I stopped a task and why. Interestingly, I use it also to indicate general mundane errands, like grocery shopping. In such cases, I can also include a checklist. 
+
+The journal is a different story. This is where I let myself spill the beans. I took a long break from using a journal because I felt there's so much recording done on a keyboard, and I wanted a quicker way to record my thoughts.
+
+But recording my thoughts was inconvenient. I had to take a break from my workflow, record a video, name it, compress it, and save it. It required that I'll find a quiet corner - nearly impossible to do during my day - to record for a few minutes. So out of necessity, I started to include more text in my task notes. Eventually, I felt they become too long, too personal, and just too heavy. I needed a separation and going back to my journal felt natural. 
+
+I find that typing is just slow enough to make me process what I'm thinking. I can edit what I'm trying to say, which means I can rethink of a better way of describing it. To prevent myself from going on and on, I journal on specific events only, never an entire day. My capture template takes the link of my event and makes it the title, and then continue to discuss only that event. 
+
+Yesterday, I noticed something interesting: with time, my rambling on videos was reduced from going on an on for an hour plus or so (and multiple videos) to shorter segments. Here's a visual: 
+
+[[file:static/videojournalevolved_1.png]]
+
+/Above: over time, my clips become shorter/ 
+
+Finally, last weekend, I reached the conclusion that my written journal is just /better/ at keeping track of my experiences. Since I re-created the way I save my achieve files now, it also means the links from the journal org file to the org and the events is never broken: I just have to make sure to refile an event from my "oh snap" thought-dump org into the current week org file, and I'm good. 
+
+I still record a short "weekly summary" on weekends, and now I find I'm actually looking forward to it. These are now 10-20 minutes long videos in which I briefly go through my agenda and logged events and explain what happened while my memories of this week are still fresh. I then give the week a "theme". 
+
+This works as a way for me to remember what happened far in the future if I want to reflect on my experiences but not looking for something specific, or not sure what it is. It's also a good way to reflect on the major events of the week after I had a weekend to slow down and process. It works. 
+*** PUBLISHED Emacs Windows 
   :PROPERTIES:
-  :EXPORT_HUGO_SECTION: Blog
+  :EXPORT_HUGO_SECTION: EmacsOrg
   :EXPORT_HUGO_PUBLISHDATE: 2018-10-13:
   :EXPORT_FILE_NAME: Emacs Windows Managment
   :END:
@@ -164,42 +160,81 @@ One of the things that used to drive my bananas when I started using Org was how
 
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
 
-*** PUBLISHED Evolvement of Video Journal & Org 
+** Blogging
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: Blogging
+  :END:
+*** PUBLISHED Hugo - what takes so long?
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: Blogging
+  :EXPORT_FILE_NAME: Hugo: Beginnings
+  :EXPORT_HUGO_PUBLISHDATE: 2018-10-04:
+  :END:
+
+If you've bseen following me online for the last month or so (especially on reddit) you'd know I've been engaged in shifting away from WordPress and into the world [[https://gohugo.io/][Hugo]]. 
+
+#+hugo: more 
+
+ I'd imagine the people of in [[https://www.reddit.com/r/emacs/][r/emacs]] would raise an eyebrow at the term "world of Hugo." After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it's Hugo that got me overwhelemed, not so much Emacs. What? Really? 
+
+ You see, it has to do with background and expectations. As a non-programmer (as in, someone who never wrote anything a bit more complicated then a few lines of shell script) Emacs was a mountain. Standing at the bottom, I gazed at the cloud shrowing its peek and told myself "well, you gotta take a first step somewhere..." so I did. For me, that was Org-mode. As a matter of fact, at the time, I didn't even know much about Emacs and how deep it can get. All I knew was that Org was cool, and I'm interested in learning more.
+
+ After a couple of months, I got a bit more comfortable with Emacs and my level of doing things with it. I am still miles away from the top, and I'm fine with that. I got Emacs to do most of what I want it to do for me at this point, which is writing these posts, my journal entries, and of course my agenda and tasks both at work and at home. 
+
+ Hugo, on the other hand, was meant to replace WordPress. As a person who used WordPress on and off a couple of years, I expected more or less the same thing. You know, going to my webiste online somewhere, log in with a username and password, navigate the GUI and post stuff, add plugins... As such, I didn't care for a change that much. WordPress was working more or less OK, so why change to something similar and learn things all over again? 
+
+ I get frequent alerts that my website is down from my webhost, but I got used to shrug these off. I got it as a cheap deal, and for about $6 a month or so hosting, what do you expect? People in the Emacs reddit mentioned they see more spam from my site's URL instead of my posts, but again, with 1 person complaining out of 10 or so, it wasn't a big deal. After all, SSL and https is for professional website that can afford it, and I am just an amatuer-ish blogger. Perhaps the biggest hurdle was Github: I knew people who use Hugo usually use Github to publish their blog, but they were all programmers. Me, I didn't know anything about Github or git. That was for coders, people who write scripts for a living. This is not me. I am not a porgrammer. 
+
+ To be honest, I'm not sure what changed that perspective. Perhaps it was a random tutorial I saw about Git which made me realize it's not /that/ crazy complicated. Perhaps it was the fact that someone advised me not to link to my website again if I don't have https. Maybe it was just my inner geek, itching for a change, and WordPress was getting too familiar and too boring. Whatever it was, I took the bait, and I started doing all of it at once. 
+
+ First I watched some Lynda videos about git and read a few posts. Then, I learned more about Hugo. After that, it was [[https://ox-hugo.scripter.co/][ox-hugo]]'s turn (because I gotta write my posts from inside Emacs), and then it was [[https://magit.vc/][Magit]] (because I gotta use git from inside Emacs). I think I went through everything in a matter of about a month. I learned too much too fast. But that's how I roll. I don't know why I do that to myself, and I'm not sure how it makes sense to go from "git is for coders" to "ALL THE THINGS," but I do anyway. 
+
+ Obviously, this attitude has terrible consequences. You learn everything on a very shallow level, which means the first tiny bump in the road sends you launching out of control. You get frustrated and you try again, just to hit another bump. Turns out, if I /learn everything/ I also expect to /know everything/ out of myself, which is of course nonsense. But not everything is futile. Knowing the big picture in advance is not a bad idea. Learning a couple of things at once make you realize how they work together, and helps you develop a mindset that is more skilled at solving specific problems. Later, when you go look at the official documents, certain things already make sense to you even though you haven't seen them before. 
+
+ Be it as it may, it's not easy. I wouldn't recommend this method to anyone. it's doing damage control instead of learning. However, manuals never made sese to me. In the rare occessions where I do have the patience to read through the introduction, I'd forget what I wanted to do (or how to do it) by the time I get the real stuff. Besides, manuals are usually written by the people who made the program; as such, they are written from the inside, for insiders. Certain terms and syntax make aboslutely no sense to newcomers, who find that they struggle with basic terms that the veterans spit out as if they were born into it. Indeed, if there's one thing that I kept running into when learning Emacs is /not/ to bother with its documentation. As helpful as it is, and as much as everyone loves to say all the help you ever want is C-h v (or a or whatever) away, it was not true for me. It is much, much easier to Google something up and find a blog post (or a YouTube video) that explains it to you in plain English.
+
+Now I'm much further ahead than where I was when I started my Hugo ordeal. I have sucessfully launched a couple of testing websites on and off Github. I have whined, complained, and whined again to anyone who would listen.
+
+
+So, here we are with Hugo. I use git, and well, the site is on Github. This post was written with ox-hugo. I used Magit, but because there are so many issues I'm running into, I decided to make a decision not to use it for at least another month. It's very hard to hold myself back, for sure. On one hand, since I've done WordPress for so long, I'm aching to go back to my old website where I don't have problems learning how to create a new static page (that doesn't show on the front page of this blog), or how exactly images work with these posts, or how can I automate the long process of saving a post and updating my Hugo website compared to the simple "click to publish"  in WordPress. I'm sure some of you are aching to tell me just how to do some of these things. Don't worry, I'll get back to you.  
+
+Oh, and speaking of helpful people: a big thank you to [[https://github.com/kaushalmodi][Kaushal Modi]], who kept answering my endless questions, who was there through my frustration, anywhere I went. This guy is passionate and compassionate about what he does. 
+
+*** PUBLISHED Switching to Hugo - Full Time 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
-    :EXPORT_FILE_NAME: video_journal_evolved
-    :EXPORT_HUGO_PUBLISHDATE: 2018-10-23:
+    :EXPORT_HUGO_SECTION: Blogging
+    :EXPORT_FILE_NAME: switching_2_hugo_ft
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-05:
     :END:
 
-     
-Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I [[https://jarss.github.io/TAONAW/blog/org-update/][discussed these]] couple of times before: tasks, task notes, and journal.
+PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr [[https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content][decided to shoot itself in the head]] (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog. 
 
 #+hugo: more
 
-My tasks do rarely contain sub-tasks anymore. This is odd because sub-tasking was one of the reasons that got me into Org-mode initially. Over time I found that I rather leave notes to myself about where I left off and what needs to be done instead of using actual tasks.
+**** The Issues With my Host
 
-Task notes are usually brief (one paragraph with 3 to 5 lines) and are always timestamped with most recent on top. This quickly lets me know where I stopped a task and why. Interestingly, I use it also to indicate general mundane errands, like grocery shopping. In such cases, I can also include a checklist. 
+My current host sucks. My WordPress blog continuously goes offline, so much so that I had to mute the alerts I got because they overwhelmed my inbox. My connection issues never got resolved. 
 
-The journal is a different story. This is where I let myself spill the beans. I took a long break from using a journal because I felt there's so much recording done on a keyboard, and I wanted a quicker way to record my thoughts.
+Another major issue with that website was the lack of https (this is not my host fault, actually, it's just yet another thing you need to buy) and the constant spam I got on the website. People would go to my link and find a totally different website trying to sell them something. That issue was not resolved either. 
 
-But recording my thoughts was inconvenient. I had to take a break from my workflow, record a video, name it, compress it, and save it. It required that I'll find a quiet corner - nearly impossible to do during my day - to record for a few minutes. So out of necessity, I started to include more text in my task notes. Eventually, I felt they become too long, too personal, and just too heavy. I needed a separation and going back to my journal felt natural. 
+There were other technical issues, from WordPress not functioning right due to database corruptions (the host had an automatic set up process), to my domain not being resolved correctly. In the past, such issues would die out in the first month or two when I switch to a new host -- but not this time. This time, as soon as I got the notification of renewal from PayPal, I immediately asked for cancellation. 
 
-I find that typing is just slow enough to make me process what I'm thinking. I can edit what I'm trying to say, which means I can rethink of a better way of describing it. To prevent myself from going on and on, I journal on specific events only, never an entire day. My capture template takes the link of my event and makes it the title, and then continue to discuss only that event. 
+**** More Work to be Done
 
-Yesterday, I noticed something interesting: with time, my rambling on videos was reduced from going on an on for an hour plus or so (and multiple videos) to shorter segments. Here's a visual: 
+There's a lot more work to do on this website. I am still not happy with it, and I believe my WordPress blog overall looked better still. But it is up to me to make this place better with my own set of growing skills. CSS, ox-Hugo, Go, and of course, the quality (and quantity) what I write matter. 
 
-[[file:static/videojournalevolved_1.png]]
+I'm also not entirely happy with the blog hosted on GitHub, which is now owned by Microsoft. It's no difference than Tumblr being bought out by Yahoo. I need to move to an actual host with a more liberal point of view about sexual content. Unfortunately, in this world of ours, this means I'm looking for a host that is OK with Pornography. They have to include everything in one blanket statement so it's easy to sort out in courts, in case someone gets offended. But I'm not going to go down that hole right now, there's a whole lot of it, more than enough, on the internet right now with people freaking out about Tumblr. 
 
-/Above: over time, my clips become shorter/ 
+So what's the solution...? 
 
-Finally, last weekend, I reached the conclusion that my written journal is just /better/ at keeping track of my experiences. Since I re-created the way I save my achieve files now, it also means the links from the journal org file to the org and the events is never broken: I just have to make sure to refile an event from my "oh snap" thought-dump org into the current week org file, and I'm good. 
-
-I still record a short "weekly summary" on weekends, and now I find I'm actually looking forward to it. These are now 10-20 minutes long videos in which I briefly go through my agenda and logged events and explain what happened while my memories of this week are still fresh. I then give the week a "theme". 
-
-This works as a way for me to remember what happened far in the future if I want to reflect on my experiences but not looking for something specific, or not sure what it is. It's also a good way to reflect on the major events of the week after I had a weekend to slow down and process. It works. 
+I believe AWS (Amazon hosting service) might be it for now. I find it hard to believe they'd bother chasing me if I mention a sexual encounter or show a picture of a breast. Still, even AWS is not a safe haven. Hmmm. 
+** TechDen
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: TechDen
+  :END:
 *** PUBLISHED Desktop Wisdom 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
+    :EXPORT_HUGO_SECTION: TechDen
     :EXPORT_FILE_NAME: DesktopWisdom
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-24:
     :END:
@@ -220,26 +255,9 @@ I asked my coworkers the following question:
 When looking at the nature of the job and the experience each one of us had, these facts make a lot of sense. 
 
 Chris is the youngest, very bright, and after money. He's tired of users forgetting to check the power cable or not knowing how to reset their computers before calling. Nick is a chill guy who never seems to get upset. He is used to the boss demanding things and he exercises every day, which definitely help to take out aggravations. Dave has seen it all in this job and been through a couple of management changes. His other favorite sentence is "tomorrow is another day." 
-*** TODO Zen & Cities Skylines 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
-    :EXPORT_FILE_NAME: Zen_&_Cities_Skylines
-    :EXPORT_HUGO_PUBLISHDATE: 2018-10-27:
-    :END:
-
-The best way to explain what am I talking about, is a quick visual. 
-
-# hello Vienmo??
-
-If you haven't heard of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]] before, the important thing to take from this video is that everything you see is located by the player (in this case, me). You can go as far deep as placing down each individual building and road down to the cracks in the aslphalt and the billboard signs if you want to. Some people [[https://i.redd.it/pta30b5n6lu11.png][go to that extent]] (you can see many amazing pictures like these in the [[https://www.reddit.com/r/CitiesSkylines][game's reddit]]), but such realism requires more attention to details (and PC power) than I have. After all, some of these guys have been spending months, even /years/, into their cities. Yes you read it right, years. 
-
-For me, the game is just the right mixture of visual beauty, attention to details, and peace of mind working on it. I can spend hours at a time into the night building parts of my city, listening to classic music. I emerge from my room after a long day at work smiling, humming to myself. 
-
-Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
-
 *** PUBLISHED The Hub 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
+    :EXPORT_HUGO_SECTION: TechDen
     :EXPORT_FILE_NAME: Raspberry_Pi_Org_Hub
     :EXPORT_HUGO_PUBLISHDATE: 2018-11-22:
     :END:
@@ -346,7 +364,7 @@ Now, folders that common to a couple of devices should be added first from one d
 So for example, if I first sync my home VM and share the "work" folder to the RP, after I'm done and verify the sync work, I am connecting the work VM to the RP, wait until it's recognized, and then send the work folder (which is now synced between home VM and RP) /to/ the work VM. 
 *** TODO AFPS Secure Token Active Directory Problems
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
+    :EXPORT_HUGO_SECTION: Tech
     :EXPORT_FILE_NAME: macOS Secure Token Trouble
     :EXPORT_HUGO_PUBLISHDATE: 2018-11-26:
     :END:
@@ -374,55 +392,52 @@ Today I managed to do some finaly testings, and sure enough, the user name in ma
 As soon as I populated the Display Name field and logged in again, everything worked. Name showed up, and the secure token remained. 
 
 The conclusion here is interesting: macOS pulls the user's name field from "Display Name" in AD. And it /needs/ this name for the secure token; somehow, without it, it doesn't work. the secure token is tied to the name of the user, not the user account itself... or at least, not completely. Interesting. 
-*** TODO Hugo Full Time
+** WIT
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: WIT
+  :END:
+*** TODO Zen & Cities Skylines 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
-    :EXPORT_FILE_NAME: Shutting_Down_Wordpress_Site
-    :EXPORT_HUGO_PUBLISHDATE: 2018-12-03:
+    :EXPORT_HUGO_SECTION: WIT
+    :EXPORT_FILE_NAME: Zen_&_Cities_Skylines
+    :EXPORT_HUGO_PUBLISHDATE: 2018-10-27:
     :END:
 
-Got an email from PayPal saying my host just charged me for $80 bucks and change for another year of service. Withing 30 seconds I was already cancelling the subscription. Hugo, this blog, has been working 10 times better off of Github than my previous website ever did. There were always issues with the site, which kept going off line several tiems a month. 
+The best way to explain what am I talking about, is a quick visual. 
 
-AWS on Amazon chargest me a dollar every month for hosting for an experimental wiki and my glacier account of around 10GB or so. A buck, and I can have my blog hosted there for as little as 12 dollars a year -- and it will be much faster, https including, and will probably never be down. 
+# hello Vienmo??
 
-So that's it folks, I guess I'm sold on the Hugo idea. It wasn't easy, and this blog is still somewhat limping, but it is a solid place for my thoughts.
-*** ACTIVE Switching to Hugo - Full Time 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blog
-    :EXPORT_FILE_NAME: switching_2_hugo_ft
-    :EXPORT_HUGO_PUBLISHDATE: 2018-12-05:
-    :END:
+If you haven't heard of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]] before, the important thing to take from this video is that everything you see is located by the player (in this case, me). You can go as far deep as placing down each individual building and road down to the cracks in the aslphalt and the billboard signs if you want to. Some people [[https://i.redd.it/pta30b5n6lu11.png][go to that extent]] (you can see many amazing pictures like these in the [[https://www.reddit.com/r/CitiesSkylines][game's reddit]]), but such realism requires more attention to details (and PC power) than I have. After all, some of these guys have been spending months, even /years/, into their cities. Yes you read it right, years. 
 
-**** As if by a Sign
+For me, the game is just the right mixture of visual beauty, attention to details, and peace of mind working on it. I can spend hours at a time into the night building parts of my city, listening to classic music. I emerge from my room after a long day at work smiling, humming to myself. 
 
-PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr [[https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content][decided to shoot itself in the head]] (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog. 
+Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
 
-#+hugo: more
-
-**** The Issues With my Host
-
-My current host sucks. My WordPress blog continuously goes offline, so much so that I had to mute the alerts I got because they overwhelmed my inbox. My connection issues never got resolved. 
-
-Another major issue with that website was the lack of https (this is not my host fault, actually, it's just yet another thing you need to buy) and the constant spam I got on the website. People would go to my link and find a totally different website trying to sell them something. That issue was not resolved either. 
-
-There were other technical issues, from WordPress not functioning right due to database corruptions (the host had an automatic set up process), to my domain not being resolved correctly. In the past, such issues would die out in the first month or two when I switch to a new host -- but not this time. This time, as soon as I got the notification of renewal from PayPal, I immediately asked for cancellation. 
-
-**** More Work to be Done
-
-There's a lot more work to do on this website. I am still not happy with it, and I believe my WordPress blog overall looked better still. But it is up to me to make this place better with my own set of growing skills. CSS, ox-Hugo, Go, and of course, the quality (and quantity) what I write matter. 
-
-I'm also not entirely happy with the blog hosted on GitHub, which is now owned by Microsoft. It's no difference than Tumblr being bought out by Yahoo. I need to move to an actual host with a more liberal point of view about sexual content. Unfortunately, in this world of ours, this means I'm looking for a host that is OK with Pornography. They have to include everything in one blanket statement so it's easy to sort out in courts, in case someone gets offended. But I'm not going to go down that hole right now, there's a whole lot of it, more than enough, on the internet right now with people freaking out about Tumblr. 
-
-So what's the solution...? 
-
-I believe AWS (Amazon hosting service) might be it for now. I find it hard to believe they'd bother chasing me if I mention a sexual encounter or show a picture of a breast. Still, even AWS is not a safe haven. Hmmm. 
-** Life
+** JRL
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Life
   :END:
+*** TODO  I, the Fixer
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: JRL
+    :EXPORT_FILE_NAME: I_the_fixer
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-07:
+    :END:
+
+20:39. My iWatch rings. Bigger boss is on the line. I know what it is and my instinct not to answer is there, but I reach for my phone and call back anyway. He asks if I solved the issue and if I contacted the rest of the team. I say I didn't; that is, didn't try further than I did at work - stayed almost an hour extra, informed everyone via emails and our messaging app. He asks that I call my co-workers and see if there's information about resetting the server on our work wiki. He knows how, but it's our job. It's our server.
+
+I sit in my chair for a second before I remote in. My palms spread, fingertips touching each other, thumbs slightly rubbing my forehead, eyes closed. I'm a bit scared of doing this because I haven't done this before. Not like this. Not completely on my own, and not at this place. I go ahead and remote into my work computer.
+
+My tech instinct, which I can't fully explain sometimes, tells me to look for the remote server administration tools. I never use the server tools directly, I usually just use print management, or AD tools, or group policy tools directly. But this time I need to reset a printing server, so somehow I know I need this tool. I figure out the print server name from the print management tool, easy enough. I see I have no servers listed, but I'm calm. I know that's because I never used this tool before, not because I can't connect to the server. I figure out how to search for servers on the domain, and within a second, I find the server and try to log in. It authenticates, allows me in. 
+
+So, I'm supposed to be here. The knowledge that the responsibility for this server is suddenly mine hits me. I just made it so by logging in. I right click on the server from a dropdown list, and there it is. the option to restart the server. Chill. 
+
+I call Bigger Boss again to confirm this is the right server to restart. We have hundreds of computers, and I need confirmation. He gives the go-ahead, so I click. A few seconds pass while I'm looking up more information, but I can't find it. It's OK, there are limits to learning your job after 9 PM. The server looks like it restarted, so I remote into one of the machines I had the problem with earlier and try to print. This time it looks like it worked. It seems like the problem is resolved. 100 or so doctors-to-be who couldn't print forms for their patients can now print again. Did I just do that? Thanks to my tech instincts,  maybe, but more importantly, because I picked up. That was the real decision that I  made; the rest was natural. 
+
+This sets me apart from what I used to be only a few weeks ago. I'm on call. I live in the backyard of my job. Bigger boss knows he can trust me because I'm there. It comes with the responsibility of being the "mom" of the team, I feel, and I don't like that part. But here I am. I ask myself, is it all because of the raise? And I answer myself: no. The reason I got the raise was because I was already appreciated. Because I pushed myself to say something. Because I got frustrated. Because I care. I care. That's why I picked up the phone. Not for Bigger Boss or the job as much as I care to fix something I believe I can fix. I'm a fixer, and this is what I do. 
 *** PUBLISHED Of Relationships and Money 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Life
+    :EXPORT_HUGO_SECTION: JRL
     :EXPORT_FILE_NAME: of_people_and_money
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-18:
     :END:
@@ -451,7 +466,7 @@ I never wanted to end up on my mother's sofa, and to be honest, I never wanted t
 
 *** PUBLISHED Some Good Things 
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Life
+    :EXPORT_HUGO_SECTION: JRL
     :EXPORT_FILE_NAME: some_things
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-30:
     :END:
