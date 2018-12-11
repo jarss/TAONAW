@@ -2,11 +2,11 @@
 title = "Some Recent Changes"
 author = ["Josh Rollins"]
 publishDate = 2018-12-09T00:00:00-05:00
-lastmod = 2018-12-10T07:42:53-05:00
+lastmod = 2018-12-10T20:56:06-05:00
 draft = true
 +++
 
-After I [moved joshrollinswrites.com from my (now dead) WordPress site over to my Hugo-created Github-hosted site](http://localhost:1313/TAONAW/blogging/switching%5F2%5Fhugo%5Fft/), I decided to work on some of the issues over the weekend.
+After I [moved joshrollinswrites.com](https://joshrollinswrites.com/blogging/switching%5F2%5Fhugo%5Fft/) from my (now dead) WordPress site over to my Hugo-created Github-hosted site]], I decided to work on some of the issues over the weekend.
 
 
 ## Navigational Changes {#navigational-changes}

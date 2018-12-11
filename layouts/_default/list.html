@@ -1,4 +1,6 @@
 {{ define "main" -}}
+{{.Content}}
+<hr>
 <ul class="posts">
 {{ range .Data.Pages -}}
   <li>
@@ -7,3 +9,5 @@
 {{- end }}
 </ul>
 {{- end }}
+
+

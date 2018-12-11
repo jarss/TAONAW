@@ -42,6 +42,17 @@ Most of the time, I'm on [[https://twitter.com/Josh_Rollins][Twitter]], [[https:
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: EmacsOrg
   :END:
+*** Emacs & Org
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_FILE_NAME: _index
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-11:
+    :END:
+
+**** Emacs & Org
+
+My methods and tips about using org-mode and Emacs. 
+
 *** PUBLISHED Org Update
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: EmacsOrg
@@ -164,6 +175,17 @@ This saved me from going insane. Since I start up my agenda every time I start u
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blogging
   :END:
+*** Blogging
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Blogging
+    :EXPORT_FILE_NAME: _index
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-11:
+    :END:
+
+**** Blogging
+
+Switching from WordPress to this [[https://gohugo.io/][Hugo]] site has been a serious undertaking. Causes, conclusions and parts of the process are described here. 
+
 *** PUBLISHED Hugo - what takes so long?
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blogging
@@ -235,7 +257,7 @@ I believe AWS (Amazon hosting service) might be it for now. I find it hard to be
     :EXPORT_HUGO_PUBLISHDATE: 2018-12-09:
     :END:
 
-After I [[http://localhost:1313/TAONAW/blogging/switching_2_hugo_ft/][moved joshrollinswrites.com from my (now dead) WordPress site over to my Hugo-created Github-hosted site]], I decided to work on some of the issues over the weekend. 
+After I [[https://joshrollinswrites.com/blogging/switching_2_hugo_ft/][moved joshrollinswrites.com]] from my (now dead) WordPress site over to my Hugo-created Github-hosted site]], I decided to work on some of the issues over the weekend. 
 
 **** Navigational Changes 
 
@@ -265,6 +287,18 @@ When you click on a section, you can see a list of posts specific to that sectio
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: TechDen
   :END:
+
+*** TechDen
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: TechDen
+    :EXPORT_FILE_NAME: _index
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-11:
+    :END:
+
+**** TechDen
+
+The main technology section. Every project starts here, eventually branching off to its own category. 
+
 *** PUBLISHED Desktop Wisdom 
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: TechDen
@@ -448,8 +482,19 @@ Cities Skylines is a good example of why I keep playing video games, and what ki
 
 ** JRL
   :PROPERTIES:
-  :EXPORT_HUGO_SECTION: Life
+  :EXPORT_HUGO_SECTION: JRL
   :END:
+*** The JR Life
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: JRL
+    :EXPORT_FILE_NAME: _index
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-11:
+    :END:
+
+**** The JR Life
+
+Personal events and experiences: relationships, depression, sex, polyamory, and all sorts of interesting things. Generally NSFW. 
+
 *** TODO  I, the Fixer
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: JRL

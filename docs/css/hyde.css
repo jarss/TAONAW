@@ -114,8 +114,8 @@ a.sidebar-nav-item:hover,
 
 .sidebar-nav a:hover:before {
     position: absolute;
-    margin-left: -.8em;
-    content: '>';
+    margin-left: -1.1em;
+    content: '➤';
 }
 
 .sidebar-nav h3 {
