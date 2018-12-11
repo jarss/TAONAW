@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EmacsOrgs on The Art of Not Asking Why</title>
+    <title>Emacs &amp; Org on The Art of Not Asking Why</title>
     <link>https://jarss.github.io/TAONAW/emacsorg/</link>
-    <description>Recent content in EmacsOrgs on The Art of Not Asking Why</description>
+    <description>Recent content in Emacs &amp; Org on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/emacsorg/index.xml" rel="self" type="application/rss+xml" />
     
