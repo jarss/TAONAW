@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teches on The Art of Not Asking Why</title>
+    <link>https://jarss.github.io/TAONAW/tech/</link>
+    <description>Recent content in Teches on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://jarss.github.io/TAONAW/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://jarss.github.io/TAONAW/tech/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/tech/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

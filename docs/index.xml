@@ -6,10 +6,21 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Dec 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Removing Company Software</title>
+      <link>https://jarss.github.io/TAONAW/techden/remove_company_software/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/techden/remove_company_software/</guid>
+      <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Switching to Hugo - Full Time</title>
@@ -18,6 +29,28 @@
       
       <guid>https://jarss.github.io/TAONAW/blogging/switching_2_hugo_ft/</guid>
       <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://jarss.github.io/TAONAW/tech/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/tech/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://jarss.github.io/TAONAW/techden/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/techden/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
