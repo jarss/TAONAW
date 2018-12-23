@@ -398,7 +398,7 @@ Now, folders that common to a couple of devices should be added first from one d
 So for example, if I first sync my home VM and share the "work" folder to the RP, after I'm done and verify the sync work, I am connecting the work VM to the RP, wait until it's recognized, and then send the work folder (which is now synced between home VM and RP) /to/ the work VM. 
 *** ACTIVE AFPS Secure Token Active Directory Problems                :apple:
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Tech
+    :EXPORT_HUGO_SECTION: TechDen
     :EXPORT_FILE_NAME: macOS Secure Token Trouble
     :EXPORT_HUGO_PUBLISHDATE: 2018-11-26:
     :END:
