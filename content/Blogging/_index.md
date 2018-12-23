@@ -2,7 +2,7 @@
 title = "Blogging"
 author = ["Josh Rollins"]
 publishDate = 2018-12-11T00:00:00-05:00
-lastmod = 2018-12-11T09:00:31-05:00
+lastmod = 2018-12-15T22:45:38-05:00
 draft = false
 +++
 

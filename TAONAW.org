@@ -250,39 +250,6 @@ I'm also not entirely happy with the blog hosted on GitHub, which is now owned b
 So what's the solution...? 
 
 I believe AWS (Amazon hosting service) might be it for now. I find it hard to believe they'd bother chasing me if I mention a sexual encounter or show a picture of a breast. Still, even AWS is not a safe haven. Hmmm. 
-*** TODO Some Recent Changes 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blogging
-    :EXPORT_FILE_NAME: recent_changes
-    :EXPORT_HUGO_PUBLISHDATE: 2018-12-09:
-    :END:
-
-After I [[https://joshrollinswrites.com/blogging/switching_2_hugo_ft/][moved joshrollinswrites.com]] from my (now dead) WordPress site over to my Hugo-created Github-hosted site]], I decided to work on some of the issues over the weekend. 
-
-**** Navigational Changes 
-
-As a personal blog, TAONAW does not only include tech bits but also personal thoughts. This was the most obvious seperation between topics. Personal stories are now stored in [[https://joshrollinswrites.com/jrl/][The JR Life]]. In ox-hugo, creating this section means just another header in the site's org file. 
-
-Technology-related posts started to be disorganized. I write about different projects, and I decided to start splitting them up to topics they generally fall under. For example, I've been blogging about emacs and org for quite some time, so these will be included in [[http://localhost:1313/TAONAW/emacsorg/][Emacs & Org]] section. I also need to see about collecting the old posts from my WordPress website and my wiki and throw them in this section. Other tech posts which do not have categories yet (this basically means that there's only one or two posts about these) will fall under the [[http://localhost:1313/TAONAW/techden/][TechDen]], a generic tech "stuff" bracket, at least for now. I hope that the rule of two-or-more-posts-means-new-section would prevent this from becoming just a new messy section. Finally under tech related stuff, [[http://localhost:1313/TAONAW/blogging/][Blogging]] is now its own section, since this very blog is a tech project of its own. 
-
-There are a few more sections that are not visable yet on the published site. These sections already containted drafts of posts I'm working on. In ox-hugo, all I need to do is to switch the keyword from "ToDo" to "ACTIVE" to allow these changes to take place on the site. This makes the whole blogging experience feel the same like the Org flow I use on a daily basis. It is a synergy that I've never epxerienced before when writing, and it definitely changes my writing frequency to the better. 
-
-**** Design changes
-
-Besides just creating sections and categorizing my posts, I've also added a section descriptor to the main blog homepage. This allows readers quickly know what the new posts fall under. If you were to visit  my site after this post is published, you will see the summary of this post along with the date and the category this is under (Blogging) so you know the latest post is about Blogging, not some tech project or my personal life. 
-
-Speaking of dates, I also changed the date format to be the same throughout the website: yyyy-mm-dd. I never fully agreed with the American way of describing dates (mm-dd-yyyy) and stuck the the rest-of-the-modern-world way (dd-mm-yyyy) which just makes more sense. When you start working with computers often, you learn to appriciate the yyyy-mm-dd format because that's how comptuers organize files automatically. 
-
-**** Cosmetic changes
-
-Additional changes include removing the little wrench picture (a tattoo pic of Zen and The Art of Motorcycle Maintainance, a book that influenced TAONAW). The picture pushed the title out of the sreen, and just didn't fit that well. It might be restored later with some CSS magic. 
-
-A "navagation" title was added above the sidebar links with a decoration that is nothing more than fancy html symbols (I enjoy using those instead of pictures). 
-
-**** Next: Section Descriptions
-
-When you click on a section, you can see a list of posts specific to that section. These list (of posts) pages are created by Hugo automatically, depending on my theme. It is possible to include a short description (along with whatever else you want) to these pages, so each section is described. However, I could not figure this out yet from reading the official documentation. This change will come as soon as I figure this next part out. 
-
 ** TechDen
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: TechDen
@@ -429,36 +396,120 @@ The setup process:
 Now, folders that common to a couple of devices should be added first from one device (as stated above) with the RP, and then add that folder to the /other/ device. Device_A --> RP --> Device_B. This ensures you're sharing the same folder (same folder ID) and not creating duplicates. The reason you're doing it this way and not just sharing from one device to another is because you don't want the other devices to see each other; they should only "see" the RP. The RP is the only device that needs to see all of them. Fewer complications means Syncthing works better and faster. Remember what I said earlier: don't play with it, keep it simple and it will work. Complicate it, and you'll spend hours trying to figure out what's wrong.  
 
 So for example, if I first sync my home VM and share the "work" folder to the RP, after I'm done and verify the sync work, I am connecting the work VM to the RP, wait until it's recognized, and then send the work folder (which is now synced between home VM and RP) /to/ the work VM. 
-*** TODO AFPS Secure Token Active Directory Problems
+*** ACTIVE AFPS Secure Token Active Directory Problems                :apple:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Tech
     :EXPORT_FILE_NAME: macOS Secure Token Trouble
     :EXPORT_HUGO_PUBLISHDATE: 2018-11-26:
     :END:
 
-Most chances are, you won't even hear about Secure Token unless you happen to manage Macs for your company. Even then, Secure Token seems to be only an issue with Active Directory (I might be wrong), so depending on how you manage these macs also. 
+Most chances are, you won't even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.
 
-Because Apple doesn't talk much about Secure Token, I suggest your read about  it on [[https://derflounder.wordpress.com/2018/01/20/secure-token-and-filevault-on-apple-file-system/][Der Flounder]]. There's a pretty good explination of what it does and why. 
+#+hugo:more
 
-My story begins with a delivery of an iMac. It usually takes me 1.5 hours to prep a Mac from start to finish since we don't have a working image yet; that's a whole issue in itself. The prepped iMac gets to the user bound to the domain so all they have to do is log in. I then connect them to their user's share drive (as a startup item so they always have it) and see if they need access to any printers that we don't have on the server, and there is always at least one. 
+Because Apple doesn't talk much about Secure Token, I suggest you read about it on [[https://derflounder.wordpress.com/2018/01/20/secure-token-and-filevault-on-apple-file-system/][Der Flounder]]. There's a pretty good explanation of what it does and why. 
 
-I have to log in first (as the iMac's admin) to unlock FileVault. So far, so good. Then, using the fast switching menu, I get back to the login screen and ask the user to log in using their domain credentials. On AFPS, like the one here, I get the Security Token window. Fine no problem. I put in the admin credentials, the user is approved, and after adding said printers and share drive, we restart to make sure everything is in working order. 
+My story begins with the delivery of an iMac. It usually takes me 1.5 hours to prep a Mac from start to finish since we don't have a working image yet; that's a whole issue in itself. The prepped iMac gets to the user bound to the domain so all they have to do is log in. I then connect them to their user's share drive (as a startup item so they always have it) and see if they need access to any printers that we don't have on the server, There is usually at least one. 
 
-But it wasn't. 
+I have to log in first (as the iMac's admin) to unlock FileVault. So far, so good. Then, using the fast switching menu, I get back to the login screen and ask the user to log in using their domain credentials. On AFPS, like the one here, I get the Security Token window. Mo problem. I put in the admin credentials, the user is approved, and after adding said printers and share drive, we restart to make sure everything is in working order. 
 
-The user that I just authenticated is not on the login screen. My admin account is there, my test account is there, his account... nope. This is odd, since I know we just went through authenticated with the secure token. I log into my admin account and check the security settings, since I it will tell me if anyone is not allowed to log in because of FileVault... but nothing. I run =fdesetup list=, which shows the list of approved FileVault users, and sure enough, it's there. 
+Last week though, it didn't. 
 
-In the next couple of days, I've had a couple of people log into this iMac to test. I also had the user log into a different iMac, one that I setup a week previsouly, with the exact same setup. Everyone could sign in and /stay/ approved (they'd show up after approved with the secure token and restart) on the iMac besides this one person. On the other iMac, we ran into the same issue with this user. I realized that the problem must be with the account. 
+The user that I just authenticated was not on the login screen. My admin account was there, my test account was there, his account... nope. This was odd since I knew we just went through authenticated with the secure token. I logged into my admin account and check the security settings since I know it will tell me if anyone is not allowed to log in because of FileVault... but nothing. I ran =fdesetup list=, which shows the list of approved FileVault users, and sure enough, he was there. 
 
-Because I saw the user log in and out so many times and checked the users list, I noticed something odd: the user's name was omitted. There was nothing at the top right corner (fast switching) and in the list of users, the icon for a user showed up without a name. I've never seen anything like that. 
+In the next couple of days, I've had a couple of users log into this iMac to test. I also had the user log into a different iMac, one that I set up a week previously using the exact same procedure. Everyone could sign in and /stay/ approved (they'd show up after approved with the secure token and restart) on the iMac besides this one person. On the other iMac, we ran into the same issue with this user. The problem then was with the account. 
 
-Back at my desk I looked into the account and couldn't find anything odd at first. I even copied the account to create another test user... and then I saw it: the Display Name field for this user was blank for some reason. The Display Name field in AD is populated automatically when we create a new user, but not here. 
+Because I saw the user log in and out so many times and checked the users list, I noticed something odd: the user's name was omitted. There was nothing at the top right corner (fast switching) and in the list of users, the icon for a user showed up without a name. I've never seen anything like that before on a mac.
 
-Today I managed to do some finaly testings, and sure enough, the user name in macOS (at least for 10.13 AFPS) is pulled form this Display Name field. I repeated the same test - signed in with admin, gave my test user with the blank Display Name field access with secure token, and restarted. Sure enough, the test user could not be seen on the login screen. Only after my admin account was signed in, that test user was able to sign in as well. 
+Back at my desk I looked into the account and couldn't find anything odd at first. I even copied the account to create another test user... and then I saw it: the Display Name field for that user was blank for some reason. The Display Name field in AD is populated automatically when a new user is created, but not here. 
 
-As soon as I populated the Display Name field and logged in again, everything worked. Name showed up, and the secure token remained. 
+Today I managed to do final testing. I repeated the same test: signed in with admin, gave my test user with the blank Display Name field access with secure token, and restarted. Sure enough, the test user could not be seen on the login screen. Only after my admin account was signed in the test user was able to sign in as well. 
 
-The conclusion here is interesting: macOS pulls the user's name field from "Display Name" in AD. And it /needs/ this name for the secure token; somehow, without it, it doesn't work. the secure token is tied to the name of the user, not the user account itself... or at least, not completely. Interesting. 
+As soon as I populated the Display Name field and logged in again, everything worked. The name showed up, and the secure token remained. 
+
+The conclusion: macOS pulls the user's name field from "Display Name" in AD. And it /needs/ this name for the secure token. Without it, it doesn't work. the secure token is tied to the display name of the user, not the user account itself... or at least, not completely. 
+*** ACTIVE About Removing Company Software                          :privacy:
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: TechDen
+    :EXPORT_FILE_NAME: remove_company_software
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-07:
+    :END:
+
+When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is "we can if we want to." It bothers me this question comes only from so few individuals.
+
+#+hugo:more
+
+A few days ago, A client gave me her under-performing BYOD laptop for general cleanup before switching it back for strictly personal use. She knew about the different bits of software we install because she asked me when she first brought it in. She was curious and worried about her privacy and she got the full story from me. I have no doubt that the conversation was motivating enough for her to come back for a cleanup -- and for the right reasons. I dare hope that she sought me out specifically to clean her laptop because she trusted me a bit more after that conversation.  
+
+How many people leave us with their personal laptop without ever bothering checking in with us to make sure our software is removed? A few of them will take the time to wipe their laptops, but so many more, the majority for sure, will never bother.  
+
+Among our most intrusive software is an Anti Virus client that dials home to our management environment and an inventory management software that gives us full details about the hardware and software installed on the device. We also effectively have root privileges on BYOD devices, basically a backdoor on their system.  
+
+There's nothing unique about what we do. The same practices are followed by virtually every respectful IT company that deals with BYODs. Nothing we do have sinister intentions, and I trust everyone on my team not to abuse root privileges on BYOD devices which are often one of the most personal things a person owns. But that doesn't mean our clients should just trust us blindly.  
+
+*** TODO 5 Month Review of Org-mode 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_FILE_NAME: 5months
+    :EXPORT_HUGO_PUBLISHDATE: 2018-12-17:
+    :END:
+
+ According to my notes, I started using Org seriously mid August of this years. I was thinking it will be interesting to see what I learned and where I am today. 
+
+**** Beginnings: costumizing Org and journaling
+
+ At the beginning, my main concerns were regarding wokring with Org the way I used to previously, and journaling. Before using Org and Emacs, I used [[https://typora.io/][Typora]], which I still think is one of the best tools I've seen to writing Markdown. It was a minimalist and pretty application which I enjoyed writing my journal notes in. I tried to copy this experience into Emacs, but of course, Org comes with many organizational options Typora is not desgined to  have. 
+
+ It took some time to get used to letting Org dealing with dates and then eventually shift to its date format (I used to write dates and times without hyphens, like 20180101:1521). I then took a nautral turn to start my transformation into a weekly mindset with org. I always prefered to work in a weekly mindset and journaled about my week going back, but now I also started to organized my todos this way and slowly started counting on my Aenda rather then just an org file for work and for personal life. This is how I stayed until today. 
+
+**** Improving Technical Skills
+
+Using Emacs meant looking into some techical elements that I was familair yet not comfortable with. To make Emacs mine, I had to dig deeper into its init file, learn to use org-capture, set up and use my computer as SSH server for TRAMP, and eventually, create a VM at work. All the above skills were needed to make Org mode useful for me at work, which I knew from the beginning would be the big test. 
+
+***** Init into Org: 
+
+The Emacs init file still looks somewhat alien and hostile to me without comments explaining what exactly each snippet of code does. Only when I shifted to Org, a task which took at least two weekends, I started being more comfortable with changing parts of my settings for different computers. This, in turn, is what allowed me to work on Emacs from a dedicated VM at work. 
+
+Different things in my org  settings, such as the capture templates, are revisted for minior tweaks with relative ease which was not possible within the inital init file for me. I had to explain terms in my own way, not the Emacs way, to really "get it". 
+
+***** Org Capture
+
+Org capture
+
+*** TODO Of Distractions and Interruptions                          :privacy:
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: TechDen
+    :EXPORT_FILE_NAME: distractions_at_work
+    :EXPORT_HUGO_PUBLISHDATE: 2018-11-28:
+    :END:
+
+**** Going down from 50 to 20 tickets
+
+It was a Wednesday, and I was wondering how I cut down about half of my tickets in two days. The week started out with abotu 50 tickets, and I was now looking at 26 that were still active. Even though usually I hope to leave my desk for the weekend with no more than 20 active tickets, the most that would show on one page without clicking "next", this was definitely progress in the right direction.   
+
+**** What helped, and why
+
+There were a couple of helpful factors since Monday that I wanted to note for myself. 
+
+First, management hired a temp who worked with us before. The guy was not only fast and hard-working, he also had a general understanding of our environment. It wasn't his knowledge that helped the most (though, it definitely came in handy), but the fact that he served as a "buffer" between us and the "fires" managment and customers had us take over. We all have rules we learn through our jobs, and in my case the rule is "it's never as simple as at looks." Basically, it means that if I'm dragged out of my dask for some rudimentary task, I'm going to spend 90% of the time getting to the root of the problem and 10% to fix the issue itself. 
+
+Second, also thanks to the temp, I had someone to send to "probe" an existing task. It is often the case that a customer doesn't respond back, either allowing us to close the task as complete or get back to us with more necessary details, like you know, which computer out of our fleet has an issue. That alone allowed me to close around 10 tasks that were duplicates of others or were just hanging in the air with a question mark. 
+
+Third, bigger boss was out, which means less pressure or boss to give side tasks. With no new projects, I was able to focus on my present issues dig out many stale incidents. 
+
+Fourth, my other co-worker who had the second biggest queue was back in office and able to attend to tickets. This usually doesn't affect me as much because I don't cover his cases (unless its an emergency), but then again, it does. 
+
+Fifth, Org-mode was working beatifully after my [[https://joshrollinswrites.com/techden/raspberry_pi_org_hub/][Pi setup]]. Everything I changed on my work VM synced beatifully to my home VM without issues, and my personal files (which include my wiki and journal, both of which I use at work) where accessible even though my home desktop was behind a VPN that blocks SSH. That's because my Pi is the only device now accessible to the outside world.  
+
+**** How does Org help (mgt doesn't get it)
+
+Org mode has long become my pillar of stability in an highly hectic environment. This is a repeated theme in this blog, I realize. This week is yet another fine example of working by my own order of things. With Org, I have an agenda that goes from hour to hour, from day to day. I know what ticket I need to look at before lunch, which incident needs a review before I leave for the day. I have titles that make sense to me the next day when I come in, and details that tell me exactly where I left off and what I should do next. With org, I have both personal and work related issue written down with me wherever I go, so my priorites are really /my/ priorities. 
+
+I often think that a good manager should know how to align work priorties with that of his workers, not /force/ them. An excellent manager should be able to help train his workers to work like soliders in the battlefield. Each solider is obident and works according to instructions, but at the same time, can function completely independently if needs be. It's the opposite of micromanagment which freezes employees in their track without managment intevention and oftne give up and go home. 
+
+This last part if what org is to me. It is my personal order of functions and my how-tos. At first glance, it looks like I'm giving myself extra work by copying every active issue over to this seemingly archaic text-only system. The truth is of course, that once it's in my system, I can follow through with it to completion with all the information I need available to me at all times, even after work hours. That, in my opinion, what makes me more productive than a mindless drone. 
+
+
 ** WIT
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: WIT
@@ -495,24 +546,6 @@ Cities Skylines is a good example of why I keep playing video games, and what ki
 
 Personal events and experiences: relationships, depression, sex, polyamory, and all sorts of interesting things. Generally NSFW. 
 
-*** TODO  I, the Fixer
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: I_the_fixer
-    :EXPORT_HUGO_PUBLISHDATE: 2018-12-07:
-    :END:
-
-20:39. My iWatch rings. Bigger boss is on the line. I know what it is and my instinct not to answer is there, but I reach for my phone and call back anyway. He asks if I solved the issue and if I contacted the rest of the team. I say I didn't; that is, didn't try further than I did at work - stayed almost an hour extra, informed everyone via emails and our messaging app. He asks that I call my co-workers and see if there's information about resetting the server on our work wiki. He knows how, but it's our job. It's our server.
-
-I sit in my chair for a second before I remote in. My palms spread, fingertips touching each other, thumbs slightly rubbing my forehead, eyes closed. I'm a bit scared of doing this because I haven't done this before. Not like this. Not completely on my own, and not at this place. I go ahead and remote into my work computer.
-
-My tech instinct, which I can't fully explain sometimes, tells me to look for the remote server administration tools. I never use the server tools directly, I usually just use print management, or AD tools, or group policy tools directly. But this time I need to reset a printing server, so somehow I know I need this tool. I figure out the print server name from the print management tool, easy enough. I see I have no servers listed, but I'm calm. I know that's because I never used this tool before, not because I can't connect to the server. I figure out how to search for servers on the domain, and within a second, I find the server and try to log in. It authenticates, allows me in. 
-
-So, I'm supposed to be here. The knowledge that the responsibility for this server is suddenly mine hits me. I just made it so by logging in. I right click on the server from a dropdown list, and there it is. the option to restart the server. Chill. 
-
-I call Bigger Boss again to confirm this is the right server to restart. We have hundreds of computers, and I need confirmation. He gives the go-ahead, so I click. A few seconds pass while I'm looking up more information, but I can't find it. It's OK, there are limits to learning your job after 9 PM. The server looks like it restarted, so I remote into one of the machines I had the problem with earlier and try to print. This time it looks like it worked. It seems like the problem is resolved. 100 or so doctors-to-be who couldn't print forms for their patients can now print again. Did I just do that? Thanks to my tech instincts,  maybe, but more importantly, because I picked up. That was the real decision that I  made; the rest was natural. 
-
-This sets me apart from what I used to be only a few weeks ago. I'm on call. I live in the backyard of my job. Bigger boss knows he can trust me because I'm there. It comes with the responsibility of being the "mom" of the team, I feel, and I don't like that part. But here I am. I ask myself, is it all because of the raise? And I answer myself: no. The reason I got the raise was because I was already appreciated. Because I pushed myself to say something. Because I got frustrated. Because I care. I care. That's why I picked up the phone. Not for Bigger Boss or the job as much as I care to fix something I believe I can fix. I'm a fixer, and this is what I do. 
 *** PUBLISHED Of Relationships and Money 
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: JRL
@@ -644,4 +677,6 @@ In my opinion, Sex and its meaning is something we should definitely talk about 
 At this point in my life, dating people is at it's hardest. The only time in my life I recall dating being as challanging was my early 20s, where I was still a clueless virgin who tried to do everything "by the book." Life had different plans, as it often does, and I ended up the complete opposite direction which thankfully shocked me out of that stupid daze. 
 
 I am a consitant person, and I belive in keeping on trying a forumla that generally works. This is what I intend to keep on doing. One of the things I know I should start doing again though is turning back to the kink scene and find positive people in it. That has been the best becon in the past, and I believe it could once again in the future.  
+
+
 
