@@ -61,6 +61,7 @@ html {
   color: rgba(0,0,0,.5);
   background-color: #202020;
 }
+
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;
@@ -70,7 +71,7 @@ html {
     width: 18rem;
     text-align: left;
   }
-}
+
 
 /* Sidebar links */
 .sidebar a {
@@ -82,10 +83,11 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 .sidebar-about h1 {
   color: #000;
   margin-top: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-family: "Righteous", serif;
-  font-size: 3.80rem;
+  font-size: 3.8rem;
   font-weight: normal;
+  line-height: 3.5rem;
   text-transform: capitalize;
 }
 
@@ -96,7 +98,10 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 
 /* Sidebar nav */
 .sidebar-nav {
-    padding-left: 0;
+  position: fixed;
+  bottom: 0;
+  width: 16em;
+  padding-left: 0;
   list-style: none;
   font-family:"PT Sans";
   font-size: 18px;
@@ -127,16 +132,17 @@ a.sidebar-nav-item:hover,
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
  * contents to the bottom of the sidebar in tablets and up.
+ *
+ * 
+ * @media (min-width: 48em) {
+ * .sidebar-sticky {
+ *   position: absolute;
+ *   right:  1rem;
+ *   bottom: 1rem;
+ *   left:   1rem;
+ * }
+ *}
  */
-
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
-}
 
 
 /* Container

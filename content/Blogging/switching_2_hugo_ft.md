@@ -2,7 +2,7 @@
 title = "Switching to Hugo - Full Time"
 author = ["Josh Rollins"]
 publishDate = 2018-12-05T00:00:00-05:00
-lastmod = 2018-12-09T09:47:31-05:00
+lastmod = 2018-12-30T10:31:12-05:00
 draft = false
 +++
 

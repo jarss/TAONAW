@@ -6,10 +6,32 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 27 Dec 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://jarss.github.io/TAONAW/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bad Tech News</title>
+      <link>https://jarss.github.io/TAONAW/badnews/bad_technews/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/badnews/bad_technews/</guid>
+      <description>&lt;p&gt;OK bad tech news, it&amp;rsquo;s time to get grumpy. Announcing a new category for stupid teach news headlines and articles!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How I Write Posts for my Blog</title>
+      <link>https://jarss.github.io/TAONAW/blogging/drafting_a_post/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://jarss.github.io/TAONAW/blogging/drafting_a_post/</guid>
+      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>About Removing Company Software</title>
@@ -29,17 +51,6 @@
       
       <guid>https://jarss.github.io/TAONAW/blogging/switching_2_hugo_ft/</guid>
       <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>AFPS Secure Token Active Directory Problems</title>
-      <link>https://jarss.github.io/TAONAW/tech/macos-secure-token-trouble/</link>
-      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://jarss.github.io/TAONAW/tech/macos-secure-token-trouble/</guid>
-      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

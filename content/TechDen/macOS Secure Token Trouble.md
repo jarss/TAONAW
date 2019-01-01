@@ -2,7 +2,7 @@
 title = "AFPS Secure Token Active Directory Problems"
 author = ["Josh Rollins"]
 publishDate = 2018-11-26T00:00:00-05:00
-lastmod = 2018-12-23T09:14:47-05:00
+lastmod = 2019-01-01T12:04:58-05:00
 tags = ["apple"]
 draft = false
 +++

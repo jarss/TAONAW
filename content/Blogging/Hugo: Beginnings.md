@@ -2,7 +2,7 @@
 title = "Hugo - what takes so long?"
 author = ["Josh Rollins"]
 publishDate = 2018-10-04T00:00:00-04:00
-lastmod = 2018-12-09T09:47:22-05:00
+lastmod = 2019-01-01T01:10:45-05:00
 draft = false
 +++
 

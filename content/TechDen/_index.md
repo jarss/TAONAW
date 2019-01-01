@@ -1,11 +1,8 @@
 +++
-title = "TechDen"
+title = "INTRO"
 author = ["Josh Rollins"]
-publishDate = 2018-12-11T00:00:00-05:00
-lastmod = 2018-12-11T08:54:51-05:00
+lastmod = 2019-01-01T11:48:44-05:00
 draft = false
 +++
-
-## TechDen {#techden}
 
 The main technology section. Every project starts here, eventually branching off to its own category.
