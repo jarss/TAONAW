@@ -145,17 +145,6 @@
     </item>
     
     <item>
-      <title>Org Update</title>
-      <link>https://joshrollinswrites.com/emacsorg/org-update/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/org-update/</guid>
-      <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Hugo - what takes so long?</title>
       <link>https://joshrollinswrites.com/blogging/hugo-beginnings/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
