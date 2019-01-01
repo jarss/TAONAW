@@ -2,7 +2,7 @@
 title = "Evolvement of Video Journal & Org"
 author = ["Josh Rollins"]
 publishDate = 2018-10-23T00:00:00-04:00
-lastmod = 2018-12-09T09:53:15-05:00
+lastmod = 2019-01-01T13:32:29-05:00
 draft = false
 +++
 

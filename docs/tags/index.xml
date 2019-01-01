@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Art of Not Asking Why</title>
-    <link>https://jarss.github.io/TAONAW/tags/</link>
+    <link>https://joshrollinswrites.com/tags/</link>
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Nov 2018 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="https://jarss.github.io/TAONAW/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apple</title>
-      <link>https://jarss.github.io/TAONAW/tags/apple/</link>
+      <link>https://joshrollinswrites.com/tags/apple/</link>
       <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/tags/apple/</guid>
+      <guid>https://joshrollinswrites.com/tags/apple/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogging</title>
-      <link>https://jarss.github.io/TAONAW/tags/blogging/</link>
+      <link>https://joshrollinswrites.com/tags/blogging/</link>
       <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/tags/blogging/</guid>
+      <guid>https://joshrollinswrites.com/tags/blogging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Privacy</title>
-      <link>https://jarss.github.io/TAONAW/tags/privacy/</link>
+      <link>https://joshrollinswrites.com/tags/privacy/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/tags/privacy/</guid>
+      <guid>https://joshrollinswrites.com/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Writing</title>
-      <link>https://jarss.github.io/TAONAW/tags/writing/</link>
+      <link>https://joshrollinswrites.com/tags/writing/</link>
       <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/tags/writing/</guid>
+      <guid>https://joshrollinswrites.com/tags/writing/</guid>
       <description></description>
     </item>
     

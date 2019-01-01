@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Privacy on The Art of Not Asking Why</title>
-    <link>https://jarss.github.io/TAONAW/tags/privacy/</link>
+    <link>https://joshrollinswrites.com/tags/privacy/</link>
     <description>Recent content in Privacy on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Dec 2018 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="https://jarss.github.io/TAONAW/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshrollinswrites.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Removing Company Software</title>
-      <link>https://jarss.github.io/TAONAW/techden/remove_company_software/</link>
+      <link>https://joshrollinswrites.com/techden/remove_company_software/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/techden/remove_company_software/</guid>
+      <guid>https://joshrollinswrites.com/techden/remove_company_software/</guid>
       <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

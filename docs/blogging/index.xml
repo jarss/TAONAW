@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intro on The Art of Not Asking Why</title>
-    <link>https://jarss.github.io/TAONAW/blogging/</link>
+    <link>https://joshrollinswrites.com/blogging/</link>
     <description>Recent content in Intro on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jan 2019 11:49:18 -0500</lastBuildDate>
     
-	<atom:link href="https://jarss.github.io/TAONAW/blogging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joshrollinswrites.com/blogging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How I Write Posts for my Blog</title>
-      <link>https://jarss.github.io/TAONAW/blogging/drafting_a_post/</link>
+      <link>https://joshrollinswrites.com/blogging/drafting_a_post/</link>
       <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/blogging/drafting_a_post/</guid>
+      <guid>https://joshrollinswrites.com/blogging/drafting_a_post/</guid>
       <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Switching to Hugo - Full Time</title>
-      <link>https://jarss.github.io/TAONAW/blogging/switching_2_hugo_ft/</link>
+      <link>https://joshrollinswrites.com/blogging/switching_2_hugo_ft/</link>
       <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/blogging/switching_2_hugo_ft/</guid>
+      <guid>https://joshrollinswrites.com/blogging/switching_2_hugo_ft/</guid>
       <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>Hugo - what takes so long?</title>
-      <link>https://jarss.github.io/TAONAW/blogging/hugo-beginnings/</link>
+      <link>https://joshrollinswrites.com/blogging/hugo-beginnings/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
-      <guid>https://jarss.github.io/TAONAW/blogging/hugo-beginnings/</guid>
+      <guid>https://joshrollinswrites.com/blogging/hugo-beginnings/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve bseen following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

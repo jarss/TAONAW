@@ -12,7 +12,6 @@
 ** TechDen
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: TechDen
-  :EXPORT_FILE_NAME: _index 
   :END:
 
 *** INTRO
@@ -266,8 +265,11 @@ I often think that a good manager should know how to align work priorties with t
 
 This last part if what org is to me. It is my personal order of functions and my how-tos. At first glance, it looks like I'm giving myself extra work by copying every active issue over to this seemingly archaic text-only system. The truth is of course, that once it's in my system, I can follow through with it to completion with all the information I need available to me at all times, even after work hours. That, in my opinion, what makes me more productive than a mindless drone. 
 ** EmacsOrg
-
-*** Intro     
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: EmacsOrg
+  :END:
+ 
+*** INTRO     
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: EmacsOrg
   :EXPORT_FILE_NAME: _index
@@ -278,7 +280,7 @@ My methods and tips about using org-mode and Emacs.
 *** PUBLISHED Org Update
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: EmacsOrg
-    :EXPORT_FILE_NAME: Org Update
+    :EXPORT_FILE_NAME: Org-Update
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-13:
     :END:
 
@@ -325,7 +327,7 @@ The journal works nicely with my weekly reviews, which are essentially weekly vi
 *** PUBLISHED Evolvement of Video Journal & Org 
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: EmacsOrg
-    :EXPORT_FILE_NAME: video_journal_evolved
+    :EXPORT_FILE_NAME: video-journal-evolved
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-23:
     :END:
 
@@ -393,14 +395,17 @@ One of the things that used to drive my bananas when I started using Org was how
 
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
 ** Blogging
-*** Intro
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: Blogging
+  :END:
+
+*** INTRO
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blogging
     :EXPORT_FILE_NAME: _index
     :END:
     
 Switching from WordPress to this [[https://gohugo.io/][Hugo]] site has been a serious undertaking. Causes, conclusions and parts of the process are described here. 
-
 *** PUBLISHED Hugo - what takes so long?
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blogging
@@ -412,7 +417,7 @@ If you've bseen following me online for the last month or so (especially on redd
 
 #+hugo: more 
 
- I'd imagine the people of in [[https://www.reddit.com/r/emacs/][r/emacs]] would raise an eyebrow at the term "world of Hugo." After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it's Hugo that got me overwhelemed, not so much Emacs. What? Really? 
+I'd imagine the people of in [[https://www.reddit.com/r/emacs/][r/emacs]] would raise an eyebrow at the term "world of Hugo." After all, Hugo is a relatively simple program, not a deep rabbit-hole like Emacs. Yet, it's Hugo that got me overwhelemed, not so much Emacs. What? Really? 
 
  You see, it has to do with background and expectations. As a non-programmer (as in, someone who never wrote anything a bit more complicated then a few lines of shell script) Emacs was a mountain. Standing at the bottom, I gazed at the cloud shrowing its peek and told myself "well, you gotta take a first step somewhere..." so I did. For me, that was Org-mode. As a matter of fact, at the time, I didn't even know much about Emacs and how deep it can get. All I knew was that Org was cool, and I'm interested in learning more.
 
@@ -501,8 +506,11 @@ Org-mode is a huge topic in itself which I've spent hours writing about in other
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
 ** BadNews
- 
-*** Intro
+ : PROPERTIES:
+  :EXPORT_HUGO_SECTION: BadNews
+  :END:
+
+*** INTRO
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: BadNews
   :EXPORT_FILE_NAME: _index
@@ -536,7 +544,11 @@ So, basically everything.
 
 Look folks, I'm far from being the final authority in telling you what's true or false. However, if I find something stupid to rant about online, it's usually because of experience with said something stupid. 
 ** JRL
-*** Intro
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: JRL
+  :END:
+
+*** INTRO
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: JRL
   :EXPORT_FILE_NAME: _index
