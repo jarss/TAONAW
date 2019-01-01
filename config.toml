@@ -1,4 +1,4 @@
-baseurl = "https://joshrollinswrites.com"
+baseurl = "https://joshrollinswrites.com/"
 publishDir = "docs"
 languageCode = "en-us"
 title = "The Art of Not Asking Why"
