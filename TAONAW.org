@@ -470,7 +470,7 @@ I'm also not entirely happy with the blog hosted on GitHub, which is now owned b
 So what's the solution...? 
 
 I believe AWS (Amazon hosting service) might be it for now. I find it hard to believe they'd bother chasing me if I mention a sexual encounter or show a picture of a breast. Still, even AWS is not a safe haven. Hmmm. 
-*** WIP How I Write Posts for my Blog                      :writing:blogging:
+*** PUBLISHED How I Write Posts for my Blog                :writing:blogging:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blogging
     :EXPORT_FILE_NAME: drafting_a_post
@@ -505,9 +505,9 @@ I started looking into [[https://gohugo.io/][Hugo]] about three months ago as a 
 Org-mode is a huge topic in itself which I've spent hours writing about in other places. Speaking from a blogging perspective, I use a "bridging" piece called [[https://ox-hugo.scripter.co/][Ox-hugo]] which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I'm talking about, here's a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc. 
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
-** BadNews
+** TechNews
  : PROPERTIES:
-  :EXPORT_HUGO_SECTION: BadNews
+  :EXPORT_HUGO_SECTION: TechNews
   :END:
 
 *** INTRO
@@ -518,23 +518,26 @@ These tools keep my writing easy and natural. What I write on my blog looks the 
 
 Bad tech news Section
 
-*** WIP Bad Tech News 
+*** CANCELLED Bad Tech News 
+
+# This is a teenage, spew-your-shit kind of post. Do you really want it on your blog? Grow up. Edit and make it meaningful. 
+
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: BadNews
+    :EXPORT_HUGO_SECTION: TechNews
     :EXPORT_FILE_NAME: bad_technews
     :EXPORT_HUGO_PUBLISHDATE: 2018-12-27:
     :END:
-         
-OK bad tech news, it's time to get grumpy. Announcing a new category for stupid teach news headlines and articles! 
+    
+It's time to get grumpy. Announcing a new category for tech news headlines and articles! 
  
    #+hugo: more
 
-  I guess I'm staying true to my grumpy whiny tech guy persona. Today I found not one, not two, but three tech articles I have issues with. This made me think, hey, why not write posts about crappy tech articles and explain /why/ they're crappy? 
+Today I read three different bad tech articles. This made me think, "hey, why not write posts about tech articles and explain /why/ they are not accurate? 
 
-  What usually ticks me off? Glad you asked: 
+What does usually tick me off? Glad you asked. Mostly: 
 
-  1. Usually anything Apple these days
-  2. Usually anything Google these days
+  1. Anything Apple these days
+  2. Aanything Google these days
   3. Quick panicky-like headlines we all know about or
   4. Quick panicky-like articles that tell you nothing new
   5. Quick panicky-like articles that give you stupid advice as a fix
@@ -543,6 +546,25 @@ OK bad tech news, it's time to get grumpy. Announcing a new category for stupid 
 So, basically everything. 
 
 Look folks, I'm far from being the final authority in telling you what's true or false. However, if I find something stupid to rant about online, it's usually because of experience with said something stupid. 
+*** PUBLISHED Apple is a Hardware Second Company 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: TechNews
+    :EXPORT_FILE_NAME: apple-hardware-second
+    :EXPORT_HUGO_PUBLISHDATE: 2019-01-07:
+    :END:
+         
+You don't need to look hard to find the holes in this Emperor's clothes. Apple has been heading downhill for a couple of years, but it's only recently that the public at large started to take notice.  
+
+#+hugo: more
+
+Two good articles last week, one by [[https://www.wired.com/story/silver-lining-apples-very-bad-iphone-news/][Brian Barett]] in Wired and the other by [[https://www.nytimes.com/2019/01/05/technology/apple-iphone-replacement-mom.html][Kevin Roose]] in the NYT. Both explain the issue behind Apple's disappointing sales are closer to home than what Steve Cook would like us to think: consumers don't rush in to buy expensive new iPhones when their older ones are almost just as capable and work fine. " 'It used to be that for $650, you got all new features, a better screen, everything,” ' says one tech analyst in the Times' article. Now the phone costs at least $100 more (and the cost goes up easily since you need to buy parts and upgrades) for not much new. 
+
+There's more going on than just smarter customers and humdrum technology from Apple, and you don't need to go digging to find the issue. Tim Cook is basically [[https://www.apple.com/newsroom/2019/01/letter-from-tim-cook-to-apple-investors/][saying]] it himself: Apple is a services company now. Tech pundits including famed [[https://daringfireball.net/2019/01/apples_terrible_no_good_very_bad_earnings_warning][John Gruber]] agree. 
+
+But While Cook and Gruber believe in the "services first" future for Apple, the public is starting to digest the "hardware is second" present. Apple's hardware is mediocre at best, easily compare able with other leading tech company like Microsoft, Google, and Samsung. And, like these companies, Apple's products are prone to defects that are highlighted by Cook's more apologetic (and, I believe, increasingly frightened) reactions. The era of "You're holding it wrong" is over. 
+
+Apple used to be untouchable in its innovative software /and/ hardware quality. Today, the remains of the glorious past is a hefty price tag. 
+ 
 ** JRL
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: JRL

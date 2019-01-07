@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://joshrollinswrites.com/jrl/</loc>
-    <lastmod>2019-01-01T14:12:59-05:00</lastmod>
+    <loc>https://joshrollinswrites.com/technews/apple-hardware-second/</loc>
+    <lastmod>2019-01-07T08:03:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/badnews/</loc>
-    <lastmod>2019-01-01T14:12:50-05:00</lastmod>
+    <loc>https://joshrollinswrites.com/jrl/</loc>
+    <lastmod>2019-01-01T14:12:59-05:00</lastmod>
   </url>
   
   <url>
@@ -25,11 +25,6 @@
   <url>
     <loc>https://joshrollinswrites.com/techden/</loc>
     <lastmod>2019-01-01T11:48:44-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/badnews/bad_technews/</loc>
-    <lastmod>2019-01-01T12:11:38-05:00</lastmod>
   </url>
   
   <url>
@@ -132,8 +127,14 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/technews/</loc>
+    <lastmod>2019-01-07T08:03:48-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-01-01T12:11:38-05:00</lastmod>
+    <lastmod>2019-01-07T08:03:48-05:00</lastmod>
     <priority>0</priority>
   </url>
   
