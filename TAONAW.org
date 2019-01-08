@@ -552,18 +552,18 @@ Look folks, I'm far from being the final authority in telling you what's true or
     :EXPORT_FILE_NAME: apple-hardware-second
     :EXPORT_HUGO_PUBLISHDATE: 2019-01-07:
     :END:
-        
+         
 You don't need to look hard to find the holes in this Emperor's clothes. Apple has been heading downhill for a couple of years, but it's only recently that the public at large started to take notice.  
 
 #+hugo: more
 
-Two good articles last week, one by [[https://www.wired.com/story/silver-lining-apples-very-bad-iphone-news/][Brian Barett]] in Wired and the other by [[https://www.nytimes.com/2019/01/05/technology/apple-iphone-replacement-mom.html][Kevin Roose]] in the NYT. Both explain the issue behind Apple's disappointing sales are closer to home than what Tim Cook would like us to think: consumers don't rush in to buy expensive new iPhones when their older ones are almost just as capable and work fine. " 'It used to be that for $650, you got all new features, a better screen, everything," ' says one tech analyst in the Times' article. Now iPhone cost at least $100 more (and the cost goes up easily since you need to purchase a case and a calbe for your laptop) for anything that new. 
+Two good articles last week, one by [[https://www.wired.com/story/silver-lining-apples-very-bad-iphone-news/][Brian Barett]] in Wired and the other by [[https://www.nytimes.com/2019/01/05/technology/apple-iphone-replacement-mom.html][Kevin Roose]] in the NYT. Both explain the issue behind Apple's disappointing sales are closer to home than what Steve Cook would like us to think: consumers don't rush in to buy expensive new iPhones when their older ones are almost just as capable and work fine. " 'It used to be that for $650, you got all new features, a better screen, everything,” ' says one tech analyst in the Times' article. Now the phone costs at least $100 more (and the cost goes up easily since you need to buy parts and upgrades) for not much new. 
 
 There's more going on than just smarter customers and humdrum technology from Apple, and you don't need to go digging to find the issue. Tim Cook is basically [[https://www.apple.com/newsroom/2019/01/letter-from-tim-cook-to-apple-investors/][saying]] it himself: Apple is a services company now. Tech pundits including famed [[https://daringfireball.net/2019/01/apples_terrible_no_good_very_bad_earnings_warning][John Gruber]] agree. 
 
-But While Cook and Gruber believe in the "services first" future for Apple, the public is starting to digest the "hardware is second" present. Apple's hardware is mediocre at best, easily comparable with other leading tech companies like Microsoft, Google, and Samsung. And, like these companies, Apple's products are prone to defects that are highlighted by Cook's more apologetic (and, I believe, increasingly frightened) reactions. The era of "You're holding it wrong" is over. 
+But While Cook and Gruber believe in the "services first" future for Apple, the public is starting to digest the "hardware is second" present. Apple's hardware is mediocre at best, easily compare able with other leading tech company like Microsoft, Google, and Samsung. And, like these companies, Apple's products are prone to defects that are highlighted by Cook's more apologetic (and, I believe, increasingly frightened) reactions. The era of "You're holding it wrong" is over. 
 
-Apple used to be untouchable in its innovative software /and/ hardware quality. Today the only thing that seem to remain is a hefty price tag. 
+Apple used to be untouchable in its innovative software /and/ hardware quality. Today, the remains of the glorious past is a hefty price tag. 
  
 ** JRL
   :PROPERTIES:
