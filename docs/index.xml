@@ -6,10 +6,24 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 07:29:31 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jan 2019 08:42:37 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Of Subnautica and Fear</title>
+      <link>https://joshrollinswrites.com/wit/subnautica-and-fear/</link>
+      <pubDate>Thu, 17 Jan 2019 08:42:37 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/wit/subnautica-and-fear/</guid>
+      <description>&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/subnautica_jrss.jpg&#34;/&gt; &lt;/figure&gt;
+
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>My Org Capture Templates - Part 1</title>
@@ -18,20 +32,6 @@
       
       <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Of Subnautica and Fear</title>
-      <link>https://joshrollinswrites.com/wit/subnautica-and-fear/</link>
-      <pubDate>Sat, 12 Jan 2019 08:23:18 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/wit/subnautica-and-fear/</guid>
-      <description>&lt;figure&gt;
-    
-        &lt;img src=&#34;https://joshrollinswrites.com/subnautica_jrss.jpg&#34;/&gt; &lt;/figure&gt;
-
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
