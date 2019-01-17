@@ -394,6 +394,148 @@ One of the things that used to drive my bananas when I started using Org was how
 #+END_SRC
 
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
+*** WIP My Org Capture Templates - Part 1
+ :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_PUBLISHDATE:
+    :EXPORT_FILE_NAME: Org-capture-template-1
+    :END:
+
+[[https://mastodon.social/@emsenn][emsenn]] [[https://mastodon.social/@emsenn/101387457090836368][asked]] Org-mode users for their day-to-day capture templates in the [[https://mastodon.technology][technology Mastodon]] (which you should join and follow if you haven't yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I'm starting to edit out details because the post is getting too long. So instead, I'm going to explain each template at a time. Hopefully you find this interesting!  
+
+#+hugo: more
+
+First, Here's the code for the capture templates I'm going to cover:
+
+#+BEGIN_SRC emacs-lisp
+        ("i" "INC" entry (file+headline "~/Documents/Archive/OhSnap!.org" "Incidents")
+        "** TODO %? \n  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n")
+        ("j" "Journal" entry (file+datetree "~/Documents/Personal/journal.org")
+        "**** %U%?%a \n" :tree-type week)
+        ("t" "ToDo" entry (file+headline "~/Documents/Archive/OhSnap!.org" "Tasks")
+        "** TODO %? \n SCHEDULED: %^T \n")
+        ("e" "Event" entry (file+headline "~/Documents/Archive/OhSnap!.org" "Event")
+        "** %? \n %^T \n")
+#+END_SRC
+
+Going into details below, I broke the code down so it makes sense to people starting out with Org-mode in hope this would help new-commers like I was not too long ago. If these steps do not sound right (especially for those of you who know Emacs lisp better than me, which is probably 99% of you...) please let me know so I can correct and learn. Thanks! 
+
+Ok, here we go.  
+
+**** Part 1 - The INC Template 
+1
+#+BEGIN_SRC emacs-lisp
+("i" "INC" entry 
+  (file+headline "~/Documents/Archive/OhSnap!.org" "Incidents")
+
+"** TODO %? \n  
+  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n
+")
+#+END_SRC
+
+1. For key-press "i" initiate "INC" template as follows: 
+2. Create a headline "Incidents" in file  =~/Documents/Archive/#OhSnap!.org=...
+3. ...As a second level header. Create a TODO keyword, space, place cursor here, new line.
+6. Create Property "Ticket" and ask for input.
+7. Create Property "PIN" and ask for input
+8. Create Property "Computer" and ask for input
+9. Create Property "Location" and ask for input
+10. Space, New line
+11. Finish
+
+
+I use the above template for ticket creation at work. The file "OhSnap.org" is my "dumping grounds" for everything before I sort it out- usually in front of a desktop. This is useful to me because many times I'm running around using my phone with [[http://www.orgzly.com][Orgzly]], a very minimal version of Org-mode. I click the add note widget, speak or write out my note in a few words, and save. Later I add details. (By the way, going on a tangent here: you can use Google Assistant on your phone with Orgzly like any other note taking app: "OK Google, make note: buy eggs today" - and bam, you have a quick header in your org file.)
+
+The properties help me keep my work-related issues organized. I have the ticket number for the issue, which is also the fastest way to find it in our ticketing system. Then I have the person's ID, to quickly identify the person's name and email from the directory if I need to. The computer property is the hostname, so I can remote in or know where it is. Location is helpful because we span over different buildings and even parts of the city. In turn, this also makes Column view beneficial if I want to quickly see all the tickets formatted in a nice table. I don't use it often, but it's there.  
+
+I don't always have all the properties filled in (though I do try to at least have a ticket and a person's name entered), but I do use this template for anything work related. This is because I have a "work" category property inside the Incident tree, which quickly shows me my work related things on my agenda. This means I can also quickly filter into just work-related stuff if I need to, say, when I show something to my co-workers. 
+
+Let me expand on that last at the risk of going into a somewhat unrelated tangent: one of the huge things about Org-mode efficiency in my case is the ability to mix work and personal items in the same place. I have different apps, difference accounts, and different devices, and Org-mode is the first place where I'm comfortable mixing all of them into one agenda because I still have individual org files. This /very/ helpful to keep me organized. 
+
+This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading. 
+
+*** TODO My Org Capture Templates - Part 2
+ :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_PUBLISHDATE:
+    :EXPORT_FILE_NAME: Org-capture-template-2
+    :END:
+
+
+
+#+begin_src emacs-lisp
+("j" "Journal" entry 
+  (file+datetree "~/Documents/Personal/journal.org")
+  
+  "**** %U%?%a \n" :tree-type week)
+#+end_src
+
+1. For key-press "j" initiate "Journal" template, which as as follows:
+2. Go to =~/Documents/Personal/journal.org= and create a [[https://orgmode.org/manual/Template-elements.html#DOCF82][dateree]] entry there
+3. Create a subtheader (level 4) under the day header, under the week header, under the year header
+4. Enter an inactive timestamp,place cursor right after it, place a link to file you were just in.
+5. new line
+6. Make this a /weekly/ datetree (default is monthly)
+7. Finish
+
+I prefer a weekly format in my journal over a monthly format. I Have the weeks in the year numbered (from 1 to 50 something). The week is a "productivity unit" which always made sense to me, and this mindset integrates beatifully into Org-mode. 
+
+The reason the timestamp and the link are so condenced together is because I delete most of the timestamp, and just leave the hour. This way the cursor is where I need to start erasing the timestamp from to do that. I haven't found a way yet to create an hourly timestamp without a full timestamp, and I don't want to forget to put in the hour, so this is the best solution for now. 
+
+Finally, I use a link to connect me back to w##.org file (week number of the year) from which I created the journal entry. I create a new weekly org file every week (I just save-as the previous week and delete its subtrees) which contains the incidents or events (comming up) I created that week. The incidents or events themselves contain very little dtails - usually only what is my next action (next thing to do) and the logbook. If I want to discuss something, I create a journal entry for it, and the link takes me back to that event or incident.
+
+*** TODO My Org Capture Templates - Part 3
+ :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_PUBLISHDATE:
+    :EXPORT_FILE_NAME: Org-capture-template-3
+    :END:
+
+
+#+begin_src emacs-lisp
+ ("t" "ToDo" entry 
+   (file+headline "~/Documents/Archive/OhSnap!.org" "Tasks")
+
+     "** TODO %? \n SCHEDULED: %^T \n"
+ )
+#+end_src
+
+1. For key-press "t" initiate "ToDo" template as follows:
+2. Create a headline "tasks" in file =~/Documents/Archive/OhSnap!.org=
+3. Add a TODO keyword as a second level header. Place curosr here. New line.
+4. Add the word "=SCHEDULED:=", space, and add prompt for a complete timestamp (with time)
+5. New line
+6. Finish
+
+To create a regular "todo" item, I want to have it scheduled right away so it's on my agenda. The addition of the word =SCHEDULED:= is what initiates the scheduling. I only do scheduled tasks, and I try to schedule everything I want to do. Things often get shifted around, but when they do the scheduling time changes and they remain on my agenda. That's all there is to this template, it's rather simple. 
+
+*** TODO My Org Capture Templates - Part 4
+ :PROPERTIES:
+    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_PUBLISHDATE:
+    :EXPORT_FILE_NAME: Org-capture-template-4
+    :END:
+
+
+#+begin_src emacs-lisp
+ ("e" "Event" entry 
+   (file+headline "~/Documents/Archive/OhSnap!.org" "Event")
+        "** %? \n %^T \n"
+ )
+#+end_src
+
+1. For key-press "e" initiate "event" template as follows:
+2. Create a headline "Event" in file ="~/Documents/Archive/OhSnap!.org"=
+3. As a second level header. Place curosr here. New line.
+4. Prompt for a complete timestamp. New line.
+5. Finish
+
+Even simpler than the previous tmeplate, this one asks for a timestamp completed with a time. The active timestamp alone means that this event will simple show on my agenda. I use these "concrete" events for meeting with other people or something that is happening to other people in my life that is important to me. 
+
+I usually follow the event title with a @ sign and a link to the Google maps as to where it takes place if I can. This creates a nice way for me to reflect back later in my journal, which I mentioned earlier linsk to these events. For example, an event could be "=<2019-01-13 Sun 19:00-21:00> dinner with Marcy @ The Green Inn=" and The Green Inn would be a link to the location. 
+
+Later, I will place the cursor on this event in my agenda and initiate the journal capture template, which will link to this even. 
+
 ** Blogging
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blogging
@@ -712,6 +854,46 @@ I am a consitant person, and I belive in keeping on trying a forumla that genera
 
 
 
+** WIT
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: WIT
+  :END:
+*** TODO Zen & Cities Skylines 
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: WIT
+    :EXPORT_FILE_NAME: Zen_&_Cities_Skylines
+    :EXPORT_HUGO_PUBLISHDATE: 2018-10-27:
+    :END:
+
+The best way to explain what am I talking about, is a quick visual. 
+
+# hello Vienmo??
+
+If you haven't heard of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]] before, the important thing to take from this video is that everything you see is located by the player (in this case, me). You can go as far deep as placing down each individual building and road down to the cracks in the aslphalt and the billboard signs if you want to. Some people [[https://i.redd.it/pta30b5n6lu11.png][go to that extent]] (you can see many amazing pictures like these in the [[https://www.reddit.com/r/CitiesSkylines][game's reddit]]), but such realism requires more attention to details (and PC power) than I have. After all, some of these guys have been spending months, even /years/, into their cities. Yes you read it right, years. 
+
+For me, the game is just the right mixture of visual beauty, attention to details, and peace of mind working on it. I can spend hours at a time into the night building parts of my city, listening to classic music. I emerge from my room after a long day at work smiling, humming to myself. 
+
+Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
+
+*** WIP Of Subnautica and Fear
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: WIT
+    :EXPORT_FILE_NAME: Subnautica-and-fear
+    :EXPORT_HUGO_PUBLISHDATE: 
+    :END:
+
+[[file:static/subnautica_jrss.jpg]]
+
+#+hugo: more
+
+When it was time to build a base on my second attempt at [[https://en.wikipedia.org/wiki/Subnautica][Subnautica]], I picked a location near the [[http://subnautica.wikia.com/wiki/Blood_Kelp_Zone][Blood Kelp Zone]]. Its cliff walls spread in front of me into the endless blue, and deep down I could see the pale [[http://subnautica.wikia.com/wiki/Bloodvine][bloodvines]] reaching up toward me like the claws of a forgotten demon. As if by queue, scary dramatic music started playing, and my PDA's AI announced that the zone "matches 7 of the 9 preconditions for stimulating terror in humans." I was thankful the game creators didn't include the two other ones, whatever these may be.  
+
+The reason I chose this location for my home was because of fear. Subnautica is a game about fear, and it was teaching me to face it one step at a time. The first time I played, the game had the element of surprise. I remember my first [[http://subnautica.wikia.com/wiki/Reaper_Leviathan][reaper]], came out of nowhere and grabbed my [[http://subnautica.wikia.com/wiki/Seamoth][Seamoth]] like a plaything. I  yelped, slammed the ctrl+F4 keys, and stomped out of my room white like the hallway wall I was leaning ageist, mumbling "oh my god" over and over. Now I know better. I know where they are, I can see them in the distance, and... I'm still scared. But I go ahead anyway. The fear is not pushing me away; it's teaching me about being prepared. The only thing that's really scary is fear itself.
+
+Now, the base is furnished complete with a [[http://subnautica.wikia.com/wiki/Moonpool][Moonpool]] for my Seamoth which I call "Discovery." It is powered by a nuclear reactor I built from fraction retrieved be brave explorations. A single glass corridor connects my living area to a bubble-like observatory room which hovers directly over the dark abyss. There's a chair in the middle of that observatory, so I can sit and read my PDA's contents while staring fear in the face. 
+
+I've found something at the bottom of the abyss. "Something that shouldn't be there." It's a dark, green-hellish looking place with bones of creatures the size of an apartment building. Each day I explore further. Each day I push further and the game never fails to scare me. Winning these small battles against myself bit by bit becomes addictive. I look back at what scared me before and I know I've conquered it. I know that now if one of these monsters chooses to attack my base, I will fight it. The base hanging over the cliff that once terrorized me is now my home, transformed into my new comfort zone. I know every fold in the ground, every floaters-covered rock, every hole in the ground. You can't be scared of what you know. Subnautica is an excellent teacher of this lesson.
+
 
 ** About
   :PROPERTIES:
@@ -740,24 +922,3 @@ JR has been writing about sex, tech, and the many things in between for years. H
   :END:
 To contact me, you can write an email: jarss[at]protonmail[dot]com
 Most of the time, I'm on [[https://twitter.com/Josh_Rollins][Twitter]], [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]]. 
-** WIT
-  :PROPERTIES:
-  :EXPORT_HUGO_SECTION: WIT
-  :END:
-*** TODO Zen & Cities Skylines 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: WIT
-    :EXPORT_FILE_NAME: Zen_&_Cities_Skylines
-    :EXPORT_HUGO_PUBLISHDATE: 2018-10-27:
-    :END:
-
-The best way to explain what am I talking about, is a quick visual. 
-
-# hello Vienmo??
-
-If you haven't heard of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]] before, the important thing to take from this video is that everything you see is located by the player (in this case, me). You can go as far deep as placing down each individual building and road down to the cracks in the aslphalt and the billboard signs if you want to. Some people [[https://i.redd.it/pta30b5n6lu11.png][go to that extent]] (you can see many amazing pictures like these in the [[https://www.reddit.com/r/CitiesSkylines][game's reddit]]), but such realism requires more attention to details (and PC power) than I have. After all, some of these guys have been spending months, even /years/, into their cities. Yes you read it right, years. 
-
-For me, the game is just the right mixture of visual beauty, attention to details, and peace of mind working on it. I can spend hours at a time into the night building parts of my city, listening to classic music. I emerge from my room after a long day at work smiling, humming to myself. 
-
-Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
-
