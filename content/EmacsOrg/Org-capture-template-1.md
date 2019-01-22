@@ -1,7 +1,8 @@
 +++
 title = "My Org Capture Templates - Part 1"
 author = ["Josh Rollins"]
-lastmod = 2019-01-17T07:29:31-05:00
+publishDate = 2019-01-17T00:00:00-05:00
+lastmod = 2019-01-21T19:19:02-05:00
 draft = false
 +++
 

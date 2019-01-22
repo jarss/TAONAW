@@ -1,7 +1,8 @@
 +++
 title = "Of Subnautica and Fear"
 author = ["Josh Rollins"]
-lastmod = 2019-01-18T06:44:29-05:00
+publishDate = 2019-01-16T00:00:00-05:00
+lastmod = 2019-01-21T19:17:58-05:00
 draft = false
 +++
 
