@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "The Art of Not Asking Why"
 themesDir = "themes"
 theme = "hyde"
-
+disqusShortname = "josh_rollins"
 
 name = "Hyde"
 license = "MIT"
@@ -16,7 +16,7 @@ min_version = 0.21
 
 [author]
     name = "Josh Rollins"
-    homepage = ""
+    homepage = "joshrollinswrites.com"
 
 # If Porting existing theme
 [original]
