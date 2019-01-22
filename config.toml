@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "The Art of Not Asking Why"
 themesDir = "themes"
 theme = "hyde"
-disqusShortname = "the-art-of-not-asking-why.disqus.com"
+disqusShortname = "the-art-of-not-asking-why"
 
 name = "Hyde"
 license = "MIT"
