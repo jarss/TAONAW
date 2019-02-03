@@ -663,6 +663,16 @@ I started looking into [[https://gohugo.io/][Hugo]] about three months ago as a 
 Org-mode is a huge topic in itself which I've spent hours writing about in other places. Speaking from a blogging perspective, I use a "bridging" piece called [[https://ox-hugo.scripter.co/][Ox-hugo]] which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I'm talking about, here's a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc. 
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
+*** WIP CSS Updates                                            :blogging:git:
+ :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Blogging
+    :EXPORT_FILE_NAME: css-updates-1
+    :EXPORT_HUGO_PUBLISHDATE: 2019-02-02:
+    :END:
+
+Some CSS Updates. 
+
+
 ** TechNews
  : PROPERTIES:
   :EXPORT_HUGO_SECTION: TechNews
