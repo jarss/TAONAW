@@ -6,10 +6,19 @@
     <description>Recent content in Blogging on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Dec 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS Updates</title>
+      <link>https://joshrollinswrites.com/blogging/css-updates-1/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/blogging/css-updates-1/</guid>
+      <description>&lt;p&gt;Some CSS Updates&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How I Write Posts for my Blog</title>
