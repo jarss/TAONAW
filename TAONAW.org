@@ -670,8 +670,11 @@ These tools keep my writing easy and natural. What I write on my blog looks the 
     :EXPORT_HUGO_PUBLISHDATE: 2019-02-02:
     :END:
 
-Some CSS Updates. 
+Some CSS Updates...
 
+#+hugo: more
+
+I'm working on some CSS updates and got myself lost between the branches of git (or more accurately magit). I think I'm back on track now, with this version still up while I'm working on the new one. 
 
 ** TechNews
  : PROPERTIES:
