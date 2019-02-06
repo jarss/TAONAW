@@ -663,7 +663,7 @@ I started looking into [[https://gohugo.io/][Hugo]] about three months ago as a 
 Org-mode is a huge topic in itself which I've spent hours writing about in other places. Speaking from a blogging perspective, I use a "bridging" piece called [[https://ox-hugo.scripter.co/][Ox-hugo]] which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I'm talking about, here's a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc. 
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
-*** WIP CSS Updates                                            :blogging:git:
+*** PUBLISHED CSS Updates                                      :blogging:git:
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blogging
     :EXPORT_FILE_NAME: css-updates-1
@@ -917,7 +917,7 @@ For me, the game is just the right mixture of visual beauty, attention to detail
 
 Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
 
-*** WIP Of Subnautica and Fear
+*** PUBLISHED Of Subnautica and Fear
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: WIT
     :EXPORT_FILE_NAME: Subnautica-and-fear
@@ -935,6 +935,50 @@ The reason I chose this location for my home was because of fear. Subnautica is 
 Now, the base is furnished complete with a [[http://subnautica.wikia.com/wiki/Moonpool][Moonpool]] for my Seamoth which I call "Discovery." It is powered by a nuclear reactor I built from fractions retrieved from brave explorations. A single glass corridor connects my living area to a bubble-like observatory room which hovers directly over the dark abyss. There's a chair in the middle of that observatory, so I can sit and read my PDA's contents while staring fear in the face. 
 
 I've found something at the bottom of the abyss. "Something that shouldn't be there." It's a dark, green-hellish looking place with bones of creatures the size of an apartment building. Each day I explore further. Each day I push further and the game never fails to scare me. Winning these small battles against myself bit by bit becomes addictive. I look back at what scared me before and I know I've conquered it. I know that now if one of these monsters chooses to attack my base, I will fight it. The base hanging over the cliff that once terrorized me is now my home, transformed into my new comfort zone. I know every fold in the ground, every floaters-covered rock, every hole to the mushroom cave. You can't be scared of what you know. Subnautica is an excellent teacher of this lesson.
+
+*** WIP Watching Star Wars  
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: WIT
+    :EXPORT_FILE_NAME: rewatching-starwars
+    :EXPORT_HUGO_PUBLISHDATE: 2019-02-06:
+    :END:
+
+I'm basing my viewing on [[https://scifi.stackexchange.com/questions/1520/in-what-order-should-the-star-wars-movies-be-watched][this guide]] from stackexchange with slight modifications:
+
+[[file:static/rewatching-starwars.jpg]]
+
+according to the comments, Rouge One fits after New Hope, and I felt Solo fits after The Empire Strikes Back. 
+
+So here's what I've watched so far, and what I thought: 
+
+# Continue New Hope below
+
+**** New Hope 
+
+There's not much to say, because there's so much to say. This is the movie that started it all, and it does Star Wars justice to start here. The story is mostly concentrated on Luke Skywalker, but also puts into place the essential Star Wars story blocks: the Force, Jedis, the Empire and the Rebelion.
+
+
+One of the things I love about Star Wars in general is how the Force combines the idea of a religion as I feel it should be. It's a strict practice that requires dedication and development, 
+
+**** Rouge One
+Rouge One was a good surprise. I didn't expect this movie to be as good as it felt it was. It seems it just a space filler for a trival story, but it turned out to be more complicated in a good way.
+
+First, it's not just a simple story of good vs evil. This is a movie about making decisions. Just like in real life, many decisions are not pure bad or pure good, but a mix of both. While this is all happening, the movie also tells us more about the Empire and its ambions. 
+
+The one thing in this movie that was a bit over the top for me was that everyone dies. The movie drives the "heros that die for a cause" a bit too far, and death became an empty emphasis making you think when's the next hero's turn is up. 
+
+Rouge one fits best at the second place. It tells an unexpectidly good story, and it does so relatively well without getting trapped in too many character-driven cliche's. It's the story that moves this movie a long, not over-focus on the characters which are not all too important at this point.  
+ 
+**** The Empire Strikes Back
+
+**** Solo
+I can sum this movie in one word: "meh". And sometimes the "meh" turned "eck," and "eck" means I usually pause the movie and go do something else because it feels too much like a chore. 
+
+I don't know if it's because I watched The Empire Strikes Back before with all of its 80s cinimatic social norms of the time that made Solo's norms stand out so much, but they did. Of this, L3-37 is a godo example: a robot with a bit attitude, making a giant, unavoidable nod to all rebels today. Perhaps I'm just getting old (it feels more like an excuse the more I say it) but I long ran out of patient for the rebel kinds around me. Watch a sci-fi movie is supposed to be a certain escape for me, but that droid made that impossible. 
+
+Since I'm already here, let's talk about other things that /could/ have been mentioned and weren't, if we're already taking a rebelious stand point. Most notibly, the cliche love story of a boy goes back to save a girl. Wouldn't it be great if Solo went back to meet an adult no BS Qi'ra that just moved on? Maybe she got a ship herself, kicks ass on her own right, and just doesn't have interest to ignight teenage love. 
+
+This movie is too loaded with social cliche's of our time, and I recognize that they are cliche's because I'm surrounded by them all the time, unlike the ones from the older movies. 
 
 
 ** About
