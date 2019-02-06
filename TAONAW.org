@@ -936,7 +936,7 @@ Now, the base is furnished complete with a [[http://subnautica.wikia.com/wiki/Mo
 
 I've found something at the bottom of the abyss. "Something that shouldn't be there." It's a dark, green-hellish looking place with bones of creatures the size of an apartment building. Each day I explore further. Each day I push further and the game never fails to scare me. Winning these small battles against myself bit by bit becomes addictive. I look back at what scared me before and I know I've conquered it. I know that now if one of these monsters chooses to attack my base, I will fight it. The base hanging over the cliff that once terrorized me is now my home, transformed into my new comfort zone. I know every fold in the ground, every floaters-covered rock, every hole to the mushroom cave. You can't be scared of what you know. Subnautica is an excellent teacher of this lesson.
 
-*** WIP Watching Star Wars  
+*** TODO Watching Star Wars  
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: WIT
     :EXPORT_FILE_NAME: rewatching-starwars

@@ -2,8 +2,8 @@
 title = "Watching Star Wars"
 author = ["Josh Rollins"]
 publishDate = 2019-02-06T00:00:00-05:00
-lastmod = 2019-02-06T07:43:33-05:00
-draft = false
+lastmod = 2019-02-06T18:22:58-05:00
+draft = true
 +++
 
 I'm basing my viewing on [this guide](https://scifi.stackexchange.com/questions/1520/in-what-order-should-the-star-wars-movies-be-watched) from stackexchange with slight modifications:
