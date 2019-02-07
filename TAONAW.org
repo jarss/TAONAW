@@ -454,7 +454,7 @@ Let me expand on that last at the risk of going into a somewhat unrelated tangen
 
 This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading. 
 
-*** WIP My Org Capture Templates - Part 2
+*** PUBLISHED My Org Capture Templates - Part 2
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: EmacsOrg
     :EXPORT_HUGO_PUBLISHDATE: 2019-01-21:
@@ -663,6 +663,7 @@ I started looking into [[https://gohugo.io/][Hugo]] about three months ago as a 
 Org-mode is a huge topic in itself which I've spent hours writing about in other places. Speaking from a blogging perspective, I use a "bridging" piece called [[https://ox-hugo.scripter.co/][Ox-hugo]] which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I'm talking about, here's a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc. 
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
+
 *** PUBLISHED CSS Updates                                      :blogging:git:
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: Blogging
@@ -748,7 +749,34 @@ There's more going on than just smarter customers and humdrum technology from Ap
 But While Cook and Gruber believe in the "services first" future for Apple, the public is starting to digest the "hardware is second" present. Apple's hardware is mediocre at best, easily compare able with other leading tech company like Microsoft, Google, and Samsung. And, like these companies, Apple's products are prone to defects that are highlighted by Cook's more apologetic (and, I believe, increasingly frightened) reactions. The era of "You're holding it wrong" is over. 
 
 Apple used to be untouchable in its innovative software /and/ hardware quality. Today, the remains of the glorious past is a hefty price tag. 
- 
+*** The moral case for Imessage on Adnroid
+
+[[https://twitter.com/backlon][Dieter Bohn]] of the Verge wrote about [[https://www.theverge.com/2019/1/6/18171021/moral-case-imessage-android?utm_campaign=backlon&utm_content=chorus&utm_medium=social&utm_source=twitter][The moral case for iMessage on Android]] two Sundays ago, and I wanted to talk about that a little. 
+
+First off, in the words of Bohm, himself: 
+
+#+BEGIN_QUOTE
+Before you rattle off a tweet, let me be crystal clear about a few things. I understand that:
+
+1. It will likely never happen.
+2. It’s not in Apple’s business interest for it to happen because it would hurt Apple’s iPhone profits.
+3. There’s a myriad of options for people on Android who want to have secure, end-to-end encrypted chats.
+4. Really, only people in America care about iMessage. Everywhere else in the world, people use alternate texting apps.
+5. There are (usually, vaguely stated) technical reasons why iMessage on Android wouldn’t work or wouldn’t be fully secure.
+6. It is better to have people standardize on [insert your favorite secure messaging app here].
+#+END_QUOTE
+
+The article itself goes into efforts disarming critics from arguing the obvious against this piece, because Bohn is interested in discussing the philosophy of it. I see what he's trying to do. Bohn is a good journalist and has been doing what he's been doing for a long time. 
+
+One of the big problems out there for people who understand tech a bit more than the avarage user is convertion. It's not that there aren't other great options out there for people to use, it's the fact that people won't try them. As Bohn says: "getting all of your friends and family to switch over to another app is hard. Getting them all to agree on one app and stick with it is nearly impossible." As a person who insistingly uses Android while everyone around me (family, friends and work connections) use an iPhone, I get it. I carry an iPhone (and recently, an iWatch) that is basically work property and I use these products every day. Getting my sister to listen to more than one sentance about Signal when all of her friends and family use iMassage is simple futile, period. 
+
+When someone comes to me for a personal tech advice (part of my job), and most of the time these folks are not tech-savvy, I still recommend iPhones even though I would never use them for personal needs. Why? Because I believe that in general, people who don't understand what they're doing with their tech are better off with Apple products. In general, these will keep them more secure and will survive longer. These are the people who determine what's our security and privacy standards, because they are the majority. 
+
+The argument of iMessage and its security/privacy implications is ultimately nothing more than a popularity contest. I believe that Apple cares about its customers' privacy as long as it pays. Standing up to the FBI and promoting privacy is not a moral obligation to Apple, it's just good business. At the end of the day, this leads to the same result - and this is why I'd still recommend Apple products to the average customer. I know that as long as Apple's main product is the iPhone and its in the best interest of the company to keep it this way, they will do whatever they can to push forward the privacy agenda, and that's as good as it gets. 
+
+
+
+
 ** JRL
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: JRL

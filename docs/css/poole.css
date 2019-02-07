@@ -48,11 +48,11 @@ body {
 }
 
 html {
-  font-family: "Merriweather", Helvetica, Arial, sans-serif;
+  font-family: "Noticia Text", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
-@media (min-width: 38em) {
+@media (min-width: 800px) {
   html {
     font-size: 20px;
   }
@@ -106,7 +106,8 @@ h4, h5, h6 {
 /* Body text */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
+  font-family: "Noticia Text", arial; 
 }
 
 
@@ -197,7 +198,7 @@ blockquote {
 blockquote p:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 800px) {
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
@@ -236,8 +237,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-    font-size: 1.25rem;
-    text-align: center;
+    font-size: 1rem;
+    font-family: "PT Sans";
     font-weight: 300;
 }
 
@@ -407,7 +408,7 @@ a.pagination-item:hover {
   background-color: #f5f5f5;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 800px) {
   .pagination {
     margin: 3rem 0;
   }

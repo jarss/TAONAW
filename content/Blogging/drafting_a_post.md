@@ -2,7 +2,7 @@
 title = "How I Write Posts for my Blog"
 author = ["Josh Rollins"]
 publishDate = 2018-12-26T00:00:00-05:00
-lastmod = 2019-01-01T12:13:16-05:00
+lastmod = 2019-02-06T19:13:57-05:00
 tags = ["writing", "blogging"]
 draft = false
 +++

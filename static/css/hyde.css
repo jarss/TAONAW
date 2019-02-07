@@ -29,19 +29,20 @@
  * Global resets
  *
  * Update the foundational and global aspects of the page.
+ * Notice, since we use @media, the size we set here for the font 
+ * will change many elements of the page, since they use 'em' width.
+ * em - size relative to nearst font size
+ * rem - "reset" font size, whatever was set for the whole html
+ * below will effect all rem and the coming ems (until nested).
  */
 
 html {
   font-family: Merriweather, Helvetica, Arial, sans-serif;
 }
-@media (min-width: 48em) {
+
+@media (min-width: 800px) {
   html {
-    font-size: 14px;
-  }
-}
-@media (min-width: 58em) {
-  html {
-    font-size: 20px;
+    font-size: 12pt;
   }
 }
 
@@ -57,18 +58,23 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem .1rem;
   color: rgba(0,0,0,.5);
-  background-color: #202020;
+  background-color: #eee8d5;
 }
 
-@media (min-width: 48em) {
+
+/*
+ * @media means blow means: "if screen is at least 48em, do the following"
+ */
+
+@media (min-width: 800px) {
   .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 11rem;
     text-align: left;
   }
 
@@ -85,9 +91,10 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   margin-top: 0;
   margin-bottom: 2rem;
   font-family: "Righteous", serif;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
+  text-align: left;
   font-weight: normal;
-  line-height: 3.5rem;
+  line-height: 3rem;
   text-transform: capitalize;
 }
 
@@ -100,16 +107,15 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 .sidebar-nav {
   position: fixed;
   bottom: 0;
-  width: 16em;
-  padding-left: 0;
+  padding-left: 1em;
   list-style: none;
   font-family:"PT Sans";
-  font-size: 18px;
+  font-size: 1rem;
 }
 .sidebar-nav-item {
-  display: block;
+    display: block;
 }
-a.sidebar-nav-item:hover,
+
 .sidebar-nav-item:focus {
   text-decoration: underline;
 }
@@ -119,13 +125,14 @@ a.sidebar-nav-item:hover,
 
 .sidebar-nav a:hover:before {
     position: absolute;
-    margin-left: -1.1em;
+    margin-left: -1.3em;
     content: '➤';
 }
 
 .sidebar-nav h3 {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
+    padding-left: -2em;
 }
 
 /* Sticky sidebar
@@ -152,21 +159,14 @@ a.sidebar-nav-item:hover,
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  padding-bottom: 10rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 800px) {
   .content {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
+    margin-left: 12rem;
     margin-right: 4rem;
   }
 }
@@ -178,7 +178,7 @@ a.sidebar-nav-item:hover,
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 800px) {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
@@ -189,7 +189,7 @@ a.sidebar-nav-item:hover,
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 800px) {
   .layout-reverse .content {
     margin-left: 4rem;
     margin-right: 22rem;
