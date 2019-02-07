@@ -61,7 +61,7 @@
     <div class="post">
   <h1>CSS Updates</h1>
   <time datetime=2019-02-02T00:00:00-0500 class="post-date">Sat, Feb 2, 2019</time>
-  <p>About some CSS Updates&hellip; and why I haven&rsquo;t posted in the last two weeks or so.</p>
+  <p>About some CSS Updates&hellip; and why I haven&rsquo;t posted in the last two weeks or so. (Changes are now complete!)</p>
 
 <p>Last week I started making some changes for my current Hugo theme, <a href="https://themes.gohugo.io/hyde/">Hyde</a>. This was after I tried out the <a href="https://themes.gohugo.io/hermit/">Hermit</a> theme and found out the hard way that my site is already &ldquo;committed&rdquo; to Hyde. Some of my customizations did not work well in Hermit and required more tweaking, while other parts of the theme didn&rsquo;t look as good to me as they did on first impression.</p>
 
@@ -76,6 +76,24 @@
 <p>a whole menu of options is a question mark away, and everything has a hotkey. Magit was something I stayed away from in the past because I&rsquo;m still scared of Git. After my last experience tough, I should keep using Magit for my work on this site. Magit is more effective and visual, and to me, the later is crucial.</p>
 
 <p>I will babble some more about my tweaks and CSS as I work on things. I will keep updates in this category (<a href="https://joshrollinswrites.com/blogging/">Blogging</a>) so you can follow up, or ignore them.</p>
+
+<h2 id="changes-now-merged--2019-02-06">Changes now merged (2019-02-06)</h2>
+
+<p>I completed some initial changes to the CSS and merged with back with my main site version.</p>
+
+<p>Those of you who understand git won&rsquo;t think much of it: all I did was marge a branch. Those of you who don&rsquo;t understand git won&rsquo;t think of it at all.</p>
+
+<p>To me however, this is quite a big deal. I have successfully finished my first merge, in Magit none-the-less, after implementing changes on another branch.</p>
+
+<h2 id="changes-implemented">Changes implemented</h2>
+
+<p>Most of the complaints I got about my current layout is the width of the sidebar to the left. It takes a lot of space, and for people who like to work with small screens, this was very annoying. The other issues I found was that this theme has three layout versions (we can call them extra wide, wide, and narrow). They were also indicated in ems and rems in the CSS, which I didn&rsquo;t like.</p>
+
+<p>When it comes to screen width, I prefer to use pixels. So the site now has two versions: more than 800px and less than 800px. I will tweak with these some more (I think 600 as a max is better). The sidebar was tweaked to be narrower, as well as the site&rsquo;s title font.</p>
+
+<p>Next, I think I will turn my attention to the navigation links themselves (under Topics) and make them more obvious with pure CSS; I have no intention of uploading fancy images. I also want to break the empty white at the right of the content in a way that doesn&rsquo;t make it all look so empty. We will see what happens there.</p>
+
+<p>If anything looks off to you, please let me know in the comments! Thank you.</p>
 </div>
 <h2>Comments</h2>
 <div id="disqus_thread"></div>
