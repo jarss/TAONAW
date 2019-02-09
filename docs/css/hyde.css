@@ -58,9 +58,13 @@ html {
 
 .sidebar {
   text-align: center;
+  border-right-style: solid;
+  border-width: .13em;
+  border-color: black;
   padding: 1rem .1rem;
   color: rgba(0,0,0,.5);
   background-color: #eee8d5;
+
 }
 
 
@@ -161,7 +165,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 .content {
   padding-top:    1rem;
   padding-bottom: 1rem;
-  padding-bottom: 10rem;
+  
 }
 
 @media (min-width: 800px) {
@@ -170,6 +174,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
     margin-right: 4rem;
   }
 }
+
 
 
 /*
