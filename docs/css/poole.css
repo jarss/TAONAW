@@ -88,7 +88,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", arial;
 }
 h1 {
-  font-size: 2rem;
+    font-size: 2rem;
+    border-bottom-style: dotted;
+    border-width: 2px;
+    border-color: #eee8d5;
 }
 h2 {
   margin-top: 1rem;
@@ -120,6 +123,7 @@ strong {
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: "Noticia Text", arial; 
 }
 
 dt {
@@ -333,13 +337,18 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
- color: #303030;
+    color: #303030;
+    font-family: "PT Sans";
+    
 }
 
 .page-title,
 .post-title {
     margin-top: 0;
     font-family: "PT Sans";
+    border-bottom-style: dotted;
+    border-width: 2px;
+    border-color: #eee8d5;
 }
 
 /* Meta data line below post title */
