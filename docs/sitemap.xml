@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</loc>
+    <lastmod>2019-02-09T07:54:11-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/blogging/css-updates-1/</loc>
     <lastmod>2019-02-06T19:48:28-05:00</lastmod>
   </url>
@@ -14,7 +19,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</loc>
-    <lastmod>2019-01-21T19:19:02-05:00</lastmod>
+    <lastmod>2019-02-09T07:52:02-05:00</lastmod>
   </url>
   
   <url>
@@ -49,7 +54,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/blogging/drafting_a_post/</loc>
-    <lastmod>2019-02-06T19:13:57-05:00</lastmod>
+    <lastmod>2019-02-09T07:49:34-05:00</lastmod>
   </url>
   
   <url>
@@ -130,6 +135,12 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
+    <lastmod>2019-02-09T07:54:11-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/git/</loc>
     <lastmod>2019-02-06T19:48:28-05:00</lastmod>
     <priority>0</priority>
@@ -137,6 +148,12 @@
   
   <url>
     <loc>https://joshrollinswrites.com/life/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
+    <lastmod>2019-02-09T07:54:11-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,7 +177,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-02-06T19:48:28-05:00</lastmod>
+    <lastmod>2019-02-09T07:54:11-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -172,7 +189,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/writing/</loc>
-    <lastmod>2019-02-06T19:13:57-05:00</lastmod>
+    <lastmod>2019-02-09T07:49:34-05:00</lastmod>
     <priority>0</priority>
   </url>
   

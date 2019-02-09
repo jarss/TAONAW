@@ -30,11 +30,29 @@
     </item>
     
     <item>
+      <title>Emacs</title>
+      <link>https://joshrollinswrites.com/tags/emacs/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>https://joshrollinswrites.com/tags/git/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orgmode</title>
+      <link>https://joshrollinswrites.com/tags/orgmode/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
       <description></description>
     </item>
     

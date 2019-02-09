@@ -2,7 +2,7 @@
 title = "My Org Capture Templates - Part 1"
 author = ["Josh Rollins"]
 publishDate = 2019-01-17T00:00:00-05:00
-lastmod = 2019-01-21T19:19:02-05:00
+lastmod = 2019-02-09T07:52:02-05:00
 draft = false
 +++
 
@@ -29,8 +29,6 @@ Ok, here we go.
 
 
 ## Part 1 - The INC Template {#part-1-the-inc-template}
-
-1
 
 ```emacs-lisp
 ("i" "INC" entry
