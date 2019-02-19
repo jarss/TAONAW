@@ -48,15 +48,6 @@
     </item>
     
     <item>
-      <title>Macos</title>
-      <link>https://joshrollinswrites.com/tags/macos/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Orgmode</title>
       <link>https://joshrollinswrites.com/tags/orgmode/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
@@ -75,11 +66,29 @@
     </item>
     
     <item>
+      <title>Regex</title>
+      <link>https://joshrollinswrites.com/tags/regex/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/regex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Security</title>
       <link>https://joshrollinswrites.com/tags/security/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>System Management</title>
+      <link>https://joshrollinswrites.com/tags/system-management/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/system-management/</guid>
       <description></description>
     </item>
     

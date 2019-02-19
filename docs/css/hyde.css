@@ -107,7 +107,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 }
 
 .sidebar-about h1::first-letter {
-    color: #bf616a;
+    color: #DE4651;
     font-size: 3.2rem;
 }
 
@@ -121,10 +121,18 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   position: fixed;
   bottom: 0;
   padding-left: 1em;
-  list-style: none;
   font-family:"PT Sans";
   font-size: 1rem;
+  list-style-type: none;
 }
+
+.sidebar-nav a {
+    display: block;
+    font-family: "PT Sans", ariel;
+    font-size: 1rem;
+}
+
+
 .sidebar-nav-item {
     display: block;
 }
@@ -245,7 +253,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 }
 .theme-base-0a .content a,
 .theme-base-0a .related-posts li a:hover {
-  color: #000000;
+
 }
 
 /* Green */
