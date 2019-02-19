@@ -264,7 +264,7 @@ Org mode has long become my pillar of stability in an highly hectic environment.
 I often think that a good manager should know how to align work priorties with that of his workers, not /force/ them. An excellent manager should be able to help train his workers to work like soliders in the battlefield. Each solider is obident and works according to instructions, but at the same time, can function completely independently if needs be. It's the opposite of micromanagment which freezes employees in their track without managment intevention and oftne give up and go home. 
 
 This last part if what org is to me. It is my personal order of functions and my how-tos. At first glance, it looks like I'm giving myself extra work by copying every active issue over to this seemingly archaic text-only system. The truth is of course, that once it's in my system, I can follow through with it to completion with all the information I need available to me at all times, even after work hours. That, in my opinion, what makes me more productive than a mindless drone. 
-*** WIP From LastPass to KeePass  
+*** PUBLISHED From LastPass to KeePass                     :privacy:security:
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: TechDen
    :EXPORT_FILE_NAME: lastpass-to-keepass
@@ -315,7 +315,50 @@ LastPass is another tool I didn't think about replacing when I transitioned into
 # The Chromebook was my idea of helping her bridging the gap of using touch screen and having a new fast hardware on the cheaper end. I'm a strong advocate of these devices, which allow people to access good hardware on the cheap, while keeping things secure and organized. This is not a post about how good Chromebooks are, but if you still believe Chromebooks are plastic toys that can't function without internet connection, you should probably get updated. 
 
 # There was one unexpected problem with the Chromebook - LastPass. 
+*** WIP Using Regex for Old macOS Models            :system_management:regex:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: TechDen
+    :EXPORT_FILE_NAME:  finding-non-macos14-compatible-macs
+    :EXPORT_HUGO_PUBLISHDATE: 2019-02-17:
+    :END:
 
+**** Identifying macOS 10.14 minimum requirements
+
+At work, we are a small team serving a large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance. 
+
+One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple's newest macOS, which at the time of this writing is [[https://itunes.apple.com/us/app/macos-mojave/id1398502828][macOS Mojavi (10.14)]]. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it's many times using the tools  you already have. 
+
+Here's Apple's official [[https://support.apple.com/en-us/HT201475][compatible model list]], which contains models by their release date in a buyer-friendly format, such as "MacBook Air introduced in mid 2012 or later." The problem is that this imibgious description doesn't work with  systme management tools, which use the specific  model identifiers (as it should). Given the popularity of Macs, however, it's not hard to find a list of the model identifiers matched with Apple's official list. Here's EveryMac.com's [[https://everymac.com/mac-answers/macos-mojave-faq/macos-mojave-1014-compatible-macs-system-requirements.html][compatible model identifer list]].
+
+Using the above list, we can use this [[https://everymac.com/systems/by_capability/mac-specs-by-machine-model-machine-id.html][full list]] from the same site to fine the first model identifier that will /not/ work for macOS10.14. This model would be the newest model on our "non-compatible list". We need to find each model of the different major Mac families. 
+
+**** Loading it into KACE:  
+
+KACE lists model identifiers under "System Model". It the case here, we are looking at a MacBook Pro 14,2 (which is mid 2017, according to the list above). This is the key we will use to create our filter:
+
+[[file:/mnt/hgfs/Space/hallway/finding-non-macos14-compatible-macs2.png]]
+
+
+One of KACE's killer features is its smart lables, which allows us to build very detailed filters to profile hardware. Smart labels comb through the entire inventory and capture devices that fit our desired filter. There is a basic wizard built into KACE which allows us to create basic labels, but if we need to dive in deeper we need to use Regex or straight up SQL. 
+
+To create the smart label, I used [[https://www.itninja.com/blog/view/using-regex-in-smart-labels-to-find-lower-versioned-software-w-java-example][this helpful article]]. I suspect KACE's Regex is nothing special, but this was my first time trying to get my hands dirty with it. It was fun! Here's what it looks like: 
+
+[[file:/mnt/hgfs/Space/hallway/finding-non-macos14-compatible-macs1.png]]
+
+As we can see, the filter uses conditions for eahc one of the six family models. Let's take a look at =^(MacBookAir[1-4],)= as an example, keep in mind how the System Model (above) looks like. 
+
+1. Our complete Regex statement needs to be included inside a parenthesis
+2. Going back, we use =^= as a starting point. It declares that this is the start of the string, and nothing should come before it.
+3. We spell out =MacBookAir= because that's just the text string of the model.
+4. Next, square brackets call a range of numbers; in this case, 1 through 4. This goes back to the minimum requirement mentioned previously. Using our lists above, we know that the lowest compatible MacBook Air model for 10.14 is MacBook Air 5,1. This means MacBook Air 4,2 is the first /non-compatible/ Mac we need to capture. This is why any Model Identifiers that include 4,2 and below (4,1 3,2 3,1 etc.)
+5. the comman after the number range is just a text string, as we have it in the System Model field in KACE.
+
+**** Creating the report
+KACE has the ability to create an automatic report for machiens that answer specific creteria. The reports also come with a built in filter and a wizard, even though not as customizable as the one in smart labels. 
+
+It's generally a good idea to create a report that is based on a smart label because the smart label can be applied to other actions in KACE. For example, if we'd like to later send an alert to the users of these old Macs, telling them to come to IT with their Macs for inspection. Smart Labels also work immidetly with KACE's databse, where reports are built only from new results, meaning we need to wait for Macs to connect and update on KACE before we see results. If someone has a work Mac they generally keep at home and don't connect to our network, we will wait a long time before we know about it. 
+
+in KACE reporting tools, there's an option to base the report directly on a Smart Label, which is what we'll do here. I won't cover the report in this post, but it's important to mention that while the smart label is good to /capture/ the information, the report is much better at /presenting/ it. Use the report to specifiy things like the user's full name, last login to KACE, IP address, etc. The report can also be created as a CSV or HTML file among others, and can be emailed. 
 
 
 ** EmacsOrg
@@ -448,7 +491,7 @@ One of the things that used to drive my bananas when I started using Org was how
 #+END_SRC
 
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
-*** PUBLISHED My Org Capture Templates - Part 1
+*** PUBLISHED My Org Capture Templates - Part 1               :orgmode:emacs:
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: EmacsOrg
     :EXPORT_HUGO_PUBLISHDATE: 2019-01-17:
@@ -508,7 +551,7 @@ Let me expand on that last at the risk of going into a somewhat unrelated tangen
 
 This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading. 
 
-*** PUBLISHED My Org Capture Templates - Part 2
+*** PUBLISHED My Org Capture Templates - Part 2               :orgmode:emacs:
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: EmacsOrg
     :EXPORT_HUGO_PUBLISHDATE: 2019-01-21:
@@ -612,7 +655,6 @@ Events usually have an ending time, even if it's speculative. I go back in later
 I usually follow the event title with a @ sign and link to the location on Google maps if I can. This creates a nice way for me to reflect back later in my journal, which links to these events. For example, an event could be "=<2019-01-13 Sun 19:00-21:00> dinner with Marcy @ The Green Inn=" and The Green Inn would be a link to the location. A quick =C-c o= and the browser opens to the right location, and I can look up directions. The location links also work from Orgzly on my phone, though I'm looking into integrating this whole thing with Google Calendar, which should work better. 
 
 After an event took place, I place the cursor on it in my agenda and initiate the journal capture template, as I explained above. Something I started doing lately is to store the link of the journal entry while there =(C-c C-l)=, and then enter a [J] at the end of the title of the event on the agenda, linking to the journal entry. If this works well, I will look into creating a macro or a function to create this journal link automatically. Shouldn't be too hard. 
-
 ** Blogging
   :PROPERTIES:
   :EXPORT_HUGO_SECTION: Blogging

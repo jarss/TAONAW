@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Using Regex for Old macOS Models</title>
+      <link>https://joshrollinswrites.com/techden/finding-non-macos14-compatible-macs/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/techden/finding-non-macos14-compatible-macs/</guid>
+      <description>Identifying macOS 10.14 minimum requirements At work, we are a small team serving a large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.
+One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is macOS Mojavi (10.</description>
+    </item>
+    
+    <item>
       <title>From LastPass to KeePass</title>
       <link>https://joshrollinswrites.com/techden/lastpass-to-keepass/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>

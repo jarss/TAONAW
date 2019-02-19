@@ -6,10 +6,21 @@
     <description>Recent content in Privacy on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>From LastPass to KeePass</title>
+      <link>https://joshrollinswrites.com/techden/lastpass-to-keepass/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/techden/lastpass-to-keepass/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
+
+&lt;p&gt;But it seems like even LastPass&amp;rsquo;s time has come.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>About Removing Company Software</title>

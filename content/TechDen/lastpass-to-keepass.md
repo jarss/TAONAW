@@ -2,7 +2,8 @@
 title = "From LastPass to KeePass"
 author = ["Josh Rollins"]
 publishDate = 2019-02-11T00:00:00-05:00
-lastmod = 2019-02-13T07:06:13-05:00
+lastmod = 2019-02-14T05:58:38-05:00
+tags = ["privacy", "security"]
 draft = false
 +++
 
