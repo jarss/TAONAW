@@ -2,16 +2,19 @@
 title = "Using Regex for Old macOS Models"
 author = ["Josh Rollins"]
 publishDate = 2019-02-17T00:00:00-05:00
-lastmod = 2019-02-17T15:15:49-05:00
+lastmod = 2019-02-22T19:30:53-05:00
 tags = ["system-management", "regex"]
 draft = false
 +++
 
+At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.
+
+One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple's newest macOS, which at the time of this writing is [macOS Mojavi (10.14)](https://itunes.apple.com/us/app/macos-mojave/id1398502828). the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it's many times using the tools you already have.
+
+<!--more-->
+
+
 ## Identifying macOS 10.14 minimum requirements {#identifying-macos-10-dot-14-minimum-requirements}
-
-At work, we are a small team serving a large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.
-
-One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple's newest macOS, which at the time of this writing is [macOS Mojavi (10.14)](https://itunes.apple.com/us/app/macos-mojave/id1398502828). the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it's many times using the tools  you already have.
 
 Here's Apple's official [compatible model list](https://support.apple.com/en-us/HT201475), which contains models by their release date in a buyer-friendly format, such as "MacBook Air introduced in mid 2012 or later." The problem is that this imibgious description doesn't work with  systme management tools, which use the specific  model identifiers (as it should). Given the popularity of Macs, however, it's not hard to find a list of the model identifiers matched with Apple's official list. Here's EveryMac.com's [compatible model identifer list](https://everymac.com/mac-answers/macos-mojave-faq/macos-mojave-1014-compatible-macs-system-requirements.html).
 

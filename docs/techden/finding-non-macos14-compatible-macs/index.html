@@ -106,13 +106,11 @@
       / <a href="https://joshrollinswrites.com/tags/system-management/">system-management</a>
       / <a href="https://joshrollinswrites.com/tags/regex/">regex</a>
 </time>
- 
+ <p>At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.</p>
+
+<p>One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&rsquo;s newest macOS, which at the time of this writing is <a href="https://itunes.apple.com/us/app/macos-mojave/id1398502828">macOS Mojavi (10.14)</a>. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&rsquo;s many times using the tools you already have.</p>
 
 <h2 id="identifying-macos-10-dot-14-minimum-requirements">Identifying macOS 10.14 minimum requirements</h2>
-
-<p>At work, we are a small team serving a large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.</p>
-
-<p>One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&rsquo;s newest macOS, which at the time of this writing is <a href="https://itunes.apple.com/us/app/macos-mojave/id1398502828">macOS Mojavi (10.14)</a>. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&rsquo;s many times using the tools  you already have.</p>
 
 <p>Here&rsquo;s Apple&rsquo;s official <a href="https://support.apple.com/en-us/HT201475">compatible model list</a>, which contains models by their release date in a buyer-friendly format, such as &ldquo;MacBook Air introduced in mid 2012 or later.&rdquo; The problem is that this imibgious description doesn&rsquo;t work with  systme management tools, which use the specific  model identifiers (as it should). Given the popularity of Macs, however, it&rsquo;s not hard to find a list of the model identifiers matched with Apple&rsquo;s official list. Here&rsquo;s EveryMac.com&rsquo;s <a href="https://everymac.com/mac-answers/macos-mojave-faq/macos-mojave-1014-compatible-macs-system-requirements.html">compatible model identifer list</a>.</p>
 
@@ -159,7 +157,6 @@
 <p>It&rsquo;s generally a good idea to create a report that is based on a smart label because the smart label can be applied to other actions in KACE. For example, if we&rsquo;d like to later send an alert to the users of these old Macs, telling them to come to IT with their Macs for inspection. Smart Labels also work immidetly with KACE&rsquo;s databse, where reports are built only from new results, meaning we need to wait for Macs to connect and update on KACE before we see results. If someone has a work Mac they generally keep at home and don&rsquo;t connect to our network, we will wait a long time before we know about it.</p>
 
 <p>in KACE reporting tools, there&rsquo;s an option to base the report directly on a Smart Label, which is what we&rsquo;ll do here. I won&rsquo;t cover the report in this post, but it&rsquo;s important to mention that while the smart label is good to <em>capture</em> the information, the report is much better at <em>presenting</em> it. Use the report to specifiy things like the user&rsquo;s full name, last login to KACE, IP address, etc. The report can also be created as a CSV or HTML file among others, and can be emailed.</p>
-
 </div>
 <hr>
 <h2>Comments</h2>

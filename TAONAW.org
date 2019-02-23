@@ -315,18 +315,20 @@ LastPass is another tool I didn't think about replacing when I transitioned into
 # The Chromebook was my idea of helping her bridging the gap of using touch screen and having a new fast hardware on the cheaper end. I'm a strong advocate of these devices, which allow people to access good hardware on the cheap, while keeping things secure and organized. This is not a post about how good Chromebooks are, but if you still believe Chromebooks are plastic toys that can't function without internet connection, you should probably get updated. 
 
 # There was one unexpected problem with the Chromebook - LastPass. 
-*** WIP Using Regex for Old macOS Models            :system_management:regex:
+*** PUBLISHED Using Regex for Old macOS Models      :system_management:regex:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: TechDen
     :EXPORT_FILE_NAME:  finding-non-macos14-compatible-macs
     :EXPORT_HUGO_PUBLISHDATE: 2019-02-17:
     :END:
 
+At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance. 
+
+One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple's newest macOS, which at the time of this writing is [[https://itunes.apple.com/us/app/macos-mojave/id1398502828][macOS Mojavi (10.14)]]. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it's many times using the tools you already have. 
+
+#+hugo: more
+
 **** Identifying macOS 10.14 minimum requirements
-
-At work, we are a small team serving a large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance. 
-
-One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple's newest macOS, which at the time of this writing is [[https://itunes.apple.com/us/app/macos-mojave/id1398502828][macOS Mojavi (10.14)]]. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it's many times using the tools  you already have. 
 
 Here's Apple's official [[https://support.apple.com/en-us/HT201475][compatible model list]], which contains models by their release date in a buyer-friendly format, such as "MacBook Air introduced in mid 2012 or later." The problem is that this imibgious description doesn't work with  systme management tools, which use the specific  model identifiers (as it should). Given the popularity of Macs, however, it's not hard to find a list of the model identifiers matched with Apple's official list. Here's EveryMac.com's [[https://everymac.com/mac-answers/macos-mojave-faq/macos-mojave-1014-compatible-macs-system-requirements.html][compatible model identifer list]].
 
