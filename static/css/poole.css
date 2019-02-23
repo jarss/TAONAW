@@ -245,8 +245,10 @@ tbody tr:nth-child(odd) th {
 
 .lead {
     font-size: 1rem;
-    font-family: "PT Sans";
-    font-weight: 300;
+    font-family: "Noticia Text", arial;
+    text-align: left;
+    font-weight: bold;
+    
 }
 
 

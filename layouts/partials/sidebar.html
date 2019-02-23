@@ -1,14 +1,22 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="{{ .Site.BaseURL }}"><h1>The</h1><h1>Art</h1><h1>Of</h1><h1>Not</h1><h1>Asking</h1><h1>Why</h1></a>
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title}}</h1></a>
       <p class="lead">
       {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
       </p>
     </div>
     <nav>
       <ul class="sidebar-nav">
-	<h3>⊰ Topics ⊱</h3>
+	<h3>Tags</h3>
+	{{ range $.Site.Taxonomies.tags.ByCount }}
+	{{ if gt .Count 1 }}
+	<li>
+	  <a href="/tags/{{ .Name }}"> {{ .Name }} <small>({{ .Count }})</small></a>
+	</li>
+	{{ end }}
+	{{end}}
+	<h3>Sections</h3>
 	<li><a href="{{ .Site.BaseURL }}techden">TechDen</a> </li>
 	<li><a href="{{ .Site.BaseURL }}emacsorg">Emacs & Org</a> </li>
 	<li><a href="{{ .Site.BaseURL }}blogging">Blogging</a> </li>

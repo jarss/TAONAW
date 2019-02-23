@@ -58,9 +58,9 @@ html {
 
 .sidebar {
   text-align: center;
-  border-right-style: solid;
-  border-width: .13em;
-  border-color: black;
+  border-right-style: ridge;
+  border-width: 1rem;
+  border-color: rgba(0,0,0,.35);
   padding: 1rem .1rem;
   color: rgba(0,0,0,.5);
   background-color: #eee8d5;
@@ -78,7 +78,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 11rem;
+    width: 12rem;
     text-align: left;
   }
 
@@ -97,18 +97,17 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   margin-top: 0;
   margin-bottom: 2rem;
   padding-right: .5rem;
+  padding-bottom: .8rem;
   font-family: "Righteous", serif;
-  font-size: 3rem;
-  text-align: left;
+  font-size: 3.1rem;
+  text-align:  left;
   font-weight: normal;
-  line-height: 1rem;
+  line-height: 3rem;
   text-transform: capitalize;
   margin-left: -.5rem;
-}
-
-.sidebar-about h1::first-letter {
-    color: #DE4651;
-    font-size: 3.2rem;
+  border-top: solid .2rem #000;
+  border-bottom: solid .2rem #000;
+		     
 }
 
 .sidebar-about img {
@@ -118,8 +117,9 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 
 /* Sidebar nav */
 .sidebar-nav {
-  position: fixed;
+  position: relative;
   bottom: 0;
+  margin-left: -1em;
   padding-left: 1em;
   font-family:"PT Sans";
   font-size: 1rem;
@@ -130,7 +130,15 @@ Changes included here to use normal weight and capitalize, as I prefer: */
     display: block;
     font-family: "PT Sans", ariel;
     font-size: 1rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
 }
+
+.sidebar-nav a:hover {
+    background-color: rgba(0,0,0,.5);
+    color: #eee8d5;
+}
+
 
 
 .sidebar-nav-item {
@@ -140,20 +148,18 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 .sidebar-nav-item:focus {
   text-decoration: underline;
 }
+
+
+
 .sidebar-nav-item.active {
   font-weight: bold;
 }
 
-.sidebar-nav a:hover:before {
-    position: absolute;
-    margin-left: -1.3em;
-    content: '➤';
-}
-
 .sidebar-nav h3 {
-    font-size: 1.2rem;
-    text-align: center;
-    padding-left: -2em;
+     font-size: 1.2rem;
+     padding-left: -2em;
+     border-bottom: dotted .2rem #000;
+
 }
 
 /* Sticky sidebar
