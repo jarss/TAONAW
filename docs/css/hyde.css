@@ -69,7 +69,7 @@ html {
 
 
 /*
- * @media means blow means: "if screen is at least 48em, do the following"
+ * @media means blow means: "if screen is at least 800px, do the following"
  */
 
 @media (min-width: 800px) {
@@ -78,7 +78,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 12rem;
+    width: 12.5rem;
     text-align: left;
   }
 
@@ -93,7 +93,7 @@ html {
 /* About section 
 Changes included here to use normal weight and capitalize, as I prefer: */
 .sidebar-about h1 {
-  color: #000;
+  color: #8B0000;
   margin-top: 0;
   margin-bottom: 2rem;
   padding-right: .5rem;
@@ -105,11 +105,10 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   line-height: 3rem;
   text-transform: capitalize;
   margin-left: -.5rem;
-  border-top: solid .2rem #000;
-  border-bottom: solid .2rem #000;
-		     
-}
-
+  border-top: double .15rem #000;
+  border-bottom: solid .15rem #000;		     
+}    
+		   
 .sidebar-about img {
   width: 50%;
   margin: 30px;
@@ -193,7 +192,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
 
 @media (min-width: 800px) {
   .content {
-    margin-left: 12rem;
+    margin-left: 13rem;
     margin-right: 4rem;
   }
 }

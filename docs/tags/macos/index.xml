@@ -6,19 +6,18 @@
     <description>Recent content in Macos on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Using Regex for Old macOS Models</title>
-      <link>https://joshrollinswrites.com/techden/finding-non-macos14-compatible-macs/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
       
-      <guid>https://joshrollinswrites.com/techden/finding-non-macos14-compatible-macs/</guid>
-      <description>Identifying macOS 10.14 minimum requirements At work, we are a small team serving a large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.
-One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is macOS Mojavi (10.</description>
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;</description>
     </item>
     
   </channel>

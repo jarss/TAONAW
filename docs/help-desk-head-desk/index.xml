@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Help Desk Head Desks on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/help-desk-head-desk/</link>
+    <description>Recent content in Help Desk Head Desks on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/help-desk-head-desk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Password Managers Hacks</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</guid>
+      <description>&lt;p&gt;News that surfaced last week report of a &lt;a href=&#34;https://www.securityevaluators.com/casestudies/password-manager-hacking/&#34;&gt;security flaw&lt;/a&gt; that exists in the most popular password managers out there like LastPass, KeePass, and 1Password among others. Does this mean people should stop using them? No. Will people use this news as yet another excuse not to use password managers? Sure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Regex for Old macOS Models</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</link>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</guid>
+      <description>&lt;p&gt;At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.&lt;/p&gt;
+
+&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&amp;rsquo;s many times using the tools you already have.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>From LastPass to KeePass</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
+
+&lt;p&gt;But it seems like even LastPass&amp;rsquo;s time has come.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS Updates</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</guid>
+      <description>&lt;p&gt;About some CSS Updates&amp;hellip; and why I haven&amp;rsquo;t posted in the last two weeks or so. (Changes are now complete!)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Of Subnautica and Fear</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/subnautica-and-fear/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/subnautica-and-fear/</guid>
+      <description>&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/subnautica_jrss.jpg&#34;/&gt; &lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apple is a Hardware Second Company</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</guid>
+      <description>&lt;p&gt;You don&amp;rsquo;t need to look hard to find the holes in this Emperor&amp;rsquo;s clothes. Apple has been heading downhill for a couple of years, but it&amp;rsquo;s only recently that the public at large started to take notice.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How I Write Posts for my Blog</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</guid>
+      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Removing Company Software</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</guid>
+      <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Switching to Hugo - Full Time</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/switching_2_hugo_ft/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/switching_2_hugo_ft/</guid>
+      <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Hub</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</guid>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Desktop Wisdom</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</guid>
+      <description>&lt;p&gt;I asked my coworkers the following question:
+ &amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

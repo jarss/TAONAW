@@ -2,7 +2,8 @@
 title = "Org Update"
 author = ["Josh Rollins"]
 publishDate = 2018-10-13T00:00:00-04:00
-lastmod = 2019-01-01T13:56:45-05:00
+lastmod = 2019-02-23T23:30:15-05:00
+tags = ["orgmode"]
 draft = false
 +++
 

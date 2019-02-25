@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>INTRO on The Art of Not Asking Why</title>
+    <title>EmacsOrgs on The Art of Not Asking Why</title>
     <link>https://joshrollinswrites.com/emacsorg/</link>
-    <description>Recent content in INTRO on The Art of Not Asking Why</description>
+    <description>Recent content in EmacsOrgs on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 14:11:54 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 09 Feb 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/emacsorg/index.xml" rel="self" type="application/rss+xml" />
     
@@ -38,24 +38,6 @@
       
       <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Evolvement of Video Journal &amp; Org</title>
-      <link>https://joshrollinswrites.com/emacsorg/video-journal-evolved/</link>
-      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/video-journal-evolved/</guid>
-      <description>&lt;p&gt;Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I &lt;a href=&#34;https://jarss.github.io/TAONAW/blog/org-update/&#34;&gt;discussed these&lt;/a&gt; couple of times before: tasks, task notes, and journal.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emacs Windows</title>
-      <link>https://joshrollinswrites.com/emacsorg/emacs-windows-managment/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/emacs-windows-managment/</guid>
-      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;</description>
     </item>
     
     <item>

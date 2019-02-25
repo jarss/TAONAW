@@ -2,7 +2,8 @@
 title = "My Org Capture Templates - Part 2"
 author = ["Josh Rollins"]
 publishDate = 2019-01-21T00:00:00-05:00
-lastmod = 2019-01-22T08:56:53-05:00
+lastmod = 2019-02-23T23:29:26-05:00
+tags = ["orgmode", "emacs"]
 draft = false
 +++
 
@@ -40,6 +41,6 @@ Finally, I use a link to connect me back to `w[##].org` file (week number of the
 
 {{< figure src="/Org-capture-template-2.1.png" >}}
 
-My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM's capture template, so when I want to capture something in my journal from work, I'm prompted to log into my file server with a password, without saving anything at work.
+My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM's capture template, so when I want to capture something in my journal from work, I'm prompted to log into my file server with a password, without saving anything at work.
 
 This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night.
