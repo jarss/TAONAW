@@ -2,7 +2,7 @@
 title = "Password Managers Hacks"
 author = ["Josh Rollins"]
 publishDate = 2019-02-25T00:00:00-05:00
-lastmod = 2019-02-25T07:25:24-05:00
+lastmod = 2019-03-03T16:37:32-05:00
 tags = ["security"]
 draft = false
 +++
