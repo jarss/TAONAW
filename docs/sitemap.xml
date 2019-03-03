@@ -3,8 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/elite-dangerous-beginnings/</loc>
+    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/jrl/</loc>
+    <lastmod>2019-02-27T08:45:42-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</loc>
-    <lastmod>2019-02-25T07:25:24-05:00</lastmod>
+    <lastmod>2019-03-03T16:37:32-05:00</lastmod>
   </url>
   
   <url>
@@ -45,11 +55,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</loc>
     <lastmod>2019-02-23T23:27:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/jrl/</loc>
-    <lastmod>2019-01-01T14:12:59-05:00</lastmod>
   </url>
   
   <url>
@@ -115,6 +120,12 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/tags/elitedangerous/</loc>
+    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/emacs/</loc>
     <lastmod>2019-02-23T23:29:30-05:00</lastmod>
     <priority>0</priority>
@@ -140,7 +151,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-02-25T07:25:24-05:00</lastmod>
+    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -188,7 +199,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/security/</loc>
-    <lastmod>2019-02-25T07:25:24-05:00</lastmod>
+    <lastmod>2019-03-03T16:37:32-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -212,7 +223,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-02-25T07:25:24-05:00</lastmod>
+    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
     <priority>0</priority>
   </url>
   
