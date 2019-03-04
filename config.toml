@@ -1,3 +1,5 @@
+enableRobotsTXT = true
+canonifyURLs = true
 baseurl = "https://joshrollinswrites.com/"
 publishDir = "docs"
 languageCode = "en-us"

@@ -7,7 +7,9 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!-- SEO schema as shown at https://keithpblog.org/post/hugo-website-seo/ -->
+  {{ partial "seo_schema" . }}
+  <!-- Original template continues here -->
   {{ if .IsHome -}}
   <title>{{ .Site.Title }}</title>
   {{- else -}}
