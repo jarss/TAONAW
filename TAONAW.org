@@ -22,7 +22,7 @@
 
 The main technology section. Every project starts here, eventually branching off to its own category.
 
-*** PUBLISHED Libre and Clothes
+*** PUBLISHED Libre and Clothes                               :orgmode:emacs:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: libre-and-clothes
@@ -105,7 +105,7 @@ The main technology section. Every project starts here, eventually branching off
 *** PUBLISHED Agenda, and the Benfit of Having Multiple Files       :orgmode:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: libre-and-clothes
+    :EXPORT_FILE_NAME: agenda-multiple-files
     :EXPORT_HUGO_PUBLISHDATE: 2018-08-02:
     :END:
 
