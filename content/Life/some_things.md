@@ -1,0 +1,19 @@
++++
+title = "Some Good Things"
+author = ["Josh Rollins"]
+publishDate = 2018-10-30T00:00:00-04:00
+lastmod = 2018-10-30T07:00:23-04:00
+draft = true
++++
+
+Last Saturday I had reminder of dear ol' depression. It's a life long buddy of mine, someone (something?) who's always in the background of things. I was playing another round of [Cities Skylines](https://en.wikipedia.org/wiki/Cities:%5FSkylines), and realized I'm not much into the game anymore. As a matter of fact, I was forcing it for the last hour. I promised myself to go to gym, and a part of me was trying to use any possible excuse to keep me glued to that chair. It was gray and cold, it was a weekend after a hard week, I wasn't in the mood, I didn't eat enough, I ate too much, bla bla bla. I recognized this train of thoughts: "ah! I know you... you depression you, how have you been?" and checked my list. I think anyone who's been with dear aunt Dee for long enough has list like that.
+
+Sunday was different because I started it different. The first thing I did was going back to my elements. This means, without getting all fancy about my life philosophy, that I did my morning exercise (few streches, pull ups, little weights) and meditation. I took my time before I set at the computer: first there was one round of exercise, then I made coffee, then second round of exercise. Then there was meditation. It was a  powerful mind-dump. I talked to myself about things that are important to me, that I've neglected. There were a bunch of them. Then the meditation itself, a seriease of breathing deeply in and out while counting. When meditation is really needed, there's always strong resistance to it at start and by the end I don't want to finish and go back. Putting my mind on a state of neutral after emphasizing to myself things I care about is powerful. I'm not some Zen master and I never really read any serious books on the matter, but this always seemed to be natural to me.
+
+After that, Sunday started taking shape. I know because my room started taking shape. First (it's always first) the bed. Then laundry. Then the closet, which was something I haven't dealt with in a while. Cleaning my room is similar to cleaning my head. It's odd, a made bed makes me feel so much better. I don't know why, but I don't argue, it works. Later on I went to gym again, this time without a long struggle. Later still, I enjoyed sharing a different video game, [The Return of the Obra Dinn](https://en.wikipedia.org/wiki/Return%5Fof%5Fthe%5FObra%5FDinn), with my partner.
+
+Unlike the previous night, this was not an exercise in solitude and forgetfullness; it was a mutual experience of puzzle solving. In retro respect, it reminds me of my grandparents playing bridge togetgher, only with more high fives and laughs. There's something special about sharing something as intimate as a video game with someone who's been around long enough to share such an intimate thing with. Those of you who game know what I'm talking about: getting someone into your bed is not as nearly as intimate as having someone by your side while you play a video game, let along take active part of it. My partners are the only people alive who can grab the mouse or the phone out of my hand mid-action and not encounter the scorn of the disdain on my face.
+
+Somewhere between the meditation, the game, the avocado salad/guacamole I've made, I found peace. Aunt Dee was gone, out of town, see-you-next-time. I've had a good day at work yesterday (not excellent, not awesome, just good). And it's important. It's important that I mention it for myself, for next time, and for you, other nephews of Aunt Dee out there (or her relatives) who might find comfort in this. It's always the small things in life, I find, that are the most important. I think sharing these moments perserves them, so there ya go.
+
+Have a good rest of the week!

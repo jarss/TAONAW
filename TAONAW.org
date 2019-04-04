@@ -1212,9 +1212,115 @@ So you know. I thought it wouldn't hurt to try it...
 In other [[https://en.wikipedia.org/wiki/Massively_multiplayer_online_game][MMOGs]], you see them as soon as you log in. The annoying jumping-strafe-lean dance that happens in any [[https://en.wikipedia.org/wiki/PlayerUnknown%2527s_Battlegrounds][PUBG]] like game. Skill  is measured in how well you can jump to duge bullets, how well you can manipulate game physics, and just generally trains you to be an asshole toward other people. The experience of playing with a bunch of 10-year-olds hits you in the face like a cold shower as soon as I log in, generally keeping me away from trying any MMOGs. Elite Dangerous has an execellent defence mechanism against such [[https://www.urbandictionary.com/define.php?term=griefer][griefers]]: docking. 
 
 Docking your ship in Elite is where the jump-strafe asshats lose their patience. 
+*** TODO Irreal's all eggs
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: irreal-iphone-to-rule-all
+    :EXPORT_HUGO_PUBLISHDATE: 2019-03-15:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :END:
+  
+[[https://irreal.org/blog/?p=7903][Irreal's response to almost going completey paperless]] was bothering me some, and I felt a comment would be to constrained to include my thoughts. The main issue for me was not the original post on [[https://irreal.org/blog/?p=7899][going digital]], but the explination. 
+
+**** risks of all eggs in one basket: missing the point
+
+need to be careful of calling it "risks". To me, it's less about a risk and more of the idea of giving my data, and giving it to one entity. The argument for me is privacy. Sure, we all give up privacy in one way (I have Android and google), but to what point. I try to make an effort to get /away/ from it, where Irreal seems to make an effort to get more /into/ it. 
+
+**** about having money
+
+This goes into brands and products. Irreal is an Apple guy. He mostly uses an iPhone and writes on an Apple device. To me, there was always something a bit "off" about people using their Macs to run Emacs, and I think now I understand why: Emacs is free and availble to everyone, Macs are the exact opposite. 
+
+This goes back to my days as a teacher in a charter shcool, where the teachers were given Macbook Airs (back when these were excellent machines) and students were given Chromebooks. Personally, I consider both to be excellent machines. The students got cheap Chromebooks, but that's because many students abused these machines and destroyed them. As a teacher that works with students who often came from poor familes who could not afford food, I felt ashamed carrying around a shiny machine that eventually just needed to run the same Google Apps that worked just as well on the Chromebooks. 
+
+I now work at a large institution where many of our US-based customers have more afluent backgrounds, and it shows with their new shiny Macbook Pros. Even though I'm considered the go-to person for Mac issues in my team, and even though I carry an iPhone and work on a Mac regularly, I don't feel at home on these the same way I don't feel myself when I wear a suite and a tie. To me, this is not what technology /should/ be. 
+
+**** The real risks 
+
+The idea of going paperless is not new to me. I first learned about it from [[https://www.jamierubin.net/going-paperless/][Jamie Rubin]] who was (is?) Evernote embessasdor. Back in 2014, I too used Evernote for everything and I love thast product. Until I didn't. 
+
+Today Evernote increased it's premiums and with it limitations on free accounts. It's CEO, [[https://en.wikipedia.org/wiki/Phil_Libin][Phil Libin]], has long left Evernote to chase more lucertive opprtunities in a Silicon Vally focused on investments. And my account, which contains a few gigs of my memories, had to be librated by paying money first to afford the premium of downloading it all. 
+
+It's not that I don't have the money. It's not that I was shocked to learn that Evernote was after this money the whole time. It's the fact that this company could and did whatever it wanted with my data. /My/ data. Apple has the same ability, on a much larger scale, and they're already abusing it. Google does as well, of course, and so does Facebook, and the list goes on. 
+
+The dilema of all eggs in one basket is not physical risks to losing it; it's the dilema of losing your ideas and identity to some virtual entity. 
+
+- - - 
+
+# stuff that didn't make it:
 
 
-   
+It's something else entirely the fact that I need to /buy/ the ability to express my own ideas. This is why I use Linux, this is why my blog runs on Hugo and not on a paid Wordpress service (even though there's still work to do to get off of github), and this is why I will never be able to use Apple machines for long periods. 
+
+
+
+
+
+As an IT guy at the same school later, I fet bad knowing how poor the security is on these Macs (human compoent) and indeed, some students took adventage of this. The Chromebooks, on the other hand, where much harder to temper with. 
+
+
+
+
+
+
+ Two months ago I bought my mother a new Chromebook, and it's a gourgerous beatiful machine with a touch screen and backlit keyboard that puts her old Mac to shame. At the time though, I couldn't run scripts on the Chromebook, MS RMD is minimal at best on a Chromebook, and other reasons that made it hard to use. 
+
+# Link to Chromebook
+
+
+
+
+I follow Irreal regularly, and often enjoy their posts. 
+ 
+ #+hugo: more
+*** TODO Upgrading my Audio Game
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: upgrading-audio-game
+    :EXPORT_HUGO_PUBLISHDATE: 2019-03-26:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :END:
+ 
+After a few months of on-and-of research and saving some money aside, I finally upgraded my Audio system on my PC to something worthy of a audiophile-wannabe. As it turns out, it wasn't as expensive as I feared.
+ 
+ #+hugo: more
+
+**** Store 
+
+**** The Source: FLAC Files and Re-Discovering Music
+
+As a teenager, I was first introduced to sound on a computer with [[https://en.wikipedia.org/wiki/Sound_Blaster][Sound Blaster]] back in the 90s in the first [[https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)][Prince of Persia]] game. Until that moment, I was not aware computers could produce better sounds than 8-bit beeps. Music, up to that point, was either somewhat of low quality on the radio or high quality through a stero system which my dad owned at the time. 
+
+this experience made me believe that if I want to be serious, I shouldn't start my journy by looking at better headsets. As [[https://www.rousette.org.uk/][one of my favorite bloggers]] (and self identifiying- audiophile) BSIAG wrote to me in an email: "the best way is to start with improving the source, and work your way towards the output (speakers or headphones)."
+
+The first step was easy enough to follow: start using lossless [[https://en.wikipedia.org/wiki/FLAC][FLAC]] files instead of MP3s and other lossy-compressed formats that are usually availble on popular streaming services. But, if the popular streaming services (like Spotify, Apple Music and Google Music) do not provide lossless audio, where do you get the good stuff? 
+
+The Library. Armed with my card, I ordered a couple of CDs from the online catalog to be dlievered to my local branch. I picked up a few CDs, and after a quick research settled on [[https://abcde.einval.com/wiki/][ABCDE]] (that's "A Better CD Encouder". Catchy, eh?) to rip the CDs into FLAC format. It did a fine job, [[http://www.andrews-corner.org/linux/abcde/abcde_lossless.html][connecting to CDDB to find artists names and downloading album art as well]]. I repeated the proccess for a few classical CDs, exploring different sounds. I also tried a few CDs I already owned and learned an important lesson: many modern CDs are already created flat and primed for loudness, so that using FLAC format did not really matter. In other words, if you listen to Marlyn Manson's beatiful people on a streaming service or a CD, there's virtually no difference in the richness of the sound. That's because that reachness is present in the varation of different volume levels of parts of the track. For example, the artist's breathing, their finger sliding on the strings, certain bass sounds etc have different level volumes which makes the track more whole and "mutli-dimensional" where a proccessed recording often flattens it out and increases the important bits for you, drowning the other sounds out. This is why, perhaps, some people swear by live recordings where this proccessing is mostly absent. 
+
+I'm also lucky to have a sound engineer in the family who loves and works with local indie artists. When I told him about my quest toward better music plan and asked him for advice, he quickly suggested [[https://bandcamp.com/][bandcamp]]. 
+
+Bandcamp is a site that pays artists directly and much more than streaming serivies do. At the same time it keeps this digital works in FLAC format for download. You pay for a CD, usually as much as you want, and the Music is yours to save on your computer with the artist's thanks and blessing. Bandcamp remembers what CDs you bought and slowly suggests new artits and people who follow them for more music. For the last month or so I found myself doing something I haven't done since I was a teenager: buying albums. My growing collection already includes 10 digital albums that make want to come back home and do nothing more than sit in my chair, close my eyes, and listen to music. 
+
+**** Equipment: DACs, AMPs, and Getting my Headset
+
+Another thing BSIAG did for me is to solidify the concept of a DAC ([[https://www.whathifi.com/advice/dacs-everything-you-need-to-know][Digital to Audio Converter]]). Until that point, I knew there's this "box" serious music lovers and sound engineers seem to connect their ultra-expensive headset to at their computers. As it turns out, there's a whole world of technology behind DACs and AMPs. 
+
+I can't go deep into it here because I have only basic understanding of it myself, but the general idea is that DACs convert the digital information (think 1s and 0s) in your computer to analog (wave-like, the stuff we can actually hear) information. All modern computers and phones come with a built in DACs (which is why you can just plug in a pair of earphones directly into your iPhone, for example), but these are very basic. an AMP (or simply an amplifier) is a device that amplifies certain signals - in our case, sound signals. Why would you need all this volume pushing into your head? Isn't it a bad idea? 
+
+Well, as it turns out, high-quality headphones /resist/ the electrical current more than cheap ones. I'm not sure about the exact sciense behing this, but it's measured in impedance. Better (and usually more expensive) headphones = higher resistance (impedance) = more power (stronger AMP). There's much more to this than I'm explaning here. take a look at this [[https://www.youtube.com/watch?v=MDbh7yDVFL8][YouTune video]] that explains some (but not all) of these concepts. 
+
+By the time I was ready to buy the DAC and the headphones, my partner got a job offer from a professional audio store in mid-town Manhattan, [[https://audio46.com/][Audio46]]. I've heard good things about this place from the same guy who told me about bandcamp, and now that that came with a lunch date, I had to check it out myself. I don't want to just blast them with priases (obvioulsy I'm not objective) but a few things are important to note. First, they didn't move a dollar beyond the budget I specified. These things are expensive, and as a person who's only entering this world of sound I'm probably a good target for folks to get me to buy expensive equipment I may or may not need. Not here. Second, I was able to choose and try on several headphones with my own music before committing to anything, and let me tell you, I took my time. Their patience and ability to gracesly work with other customers while still checking on is a different experience than you get in Best Buy for sure. Third, the knowledge. Some of the things I explained above were completely alien to me before I walked into this store. It wasn't just a shopping experience, it was a learning experience as well. 
+
+I ended up buying the basic but popular [[https://audio46.com/products/fiio-q1-mark-ii-native-dsd-dac-amp-headphone-amplifier-for-iphone-ipod-ipad][FIIO Q1]] for a DAC, which works on my phone just as well as it works on my computer, and a pair of the [[https://audio46.com/products/beyerdynamic-dt-880-600-ohm-premium-headphones][Beyerdynamic DT-880]]. Because I'm starting out, I wanted something that would also work on my phone when I'm traveling or want to listen to music on the go and not just at home. This defenitely qualifies. 
+
+
+
+
+# Expand in source
+
+# in the [[https://www.npr.org/sections/therecord/2015/06/02/411473508/how-well-can-you-hear-audio-quality][NPR test]] I wasn't able to tell the difference between non-compressed and 320MP3, though 128MP3 stood out in suckness. 
+
+**** Source (Bandcamp)
+
+
+But getting hifi good indie music on the cheap is not the only benefit of the site. As I started using it more and more, I discovered it has a daily and a weekly newsletter (on the site itself) with new and listen-worthy artists. As you learn which artists you like more, you can get more similar music from artists that follow and recomment the artist you like. This resulted in some great music I would have never dicovered from streaming services, which seem to always repeate a select few "seed" songs that create random play lists (not to mention, the streaming music on these sites is of lower quality, usually 128kbs MP3s).  
 
 ** JRL
    :PROPERTIES:
@@ -1398,7 +1504,7 @@ At this point in my life, dating people is at it's hardest. The only time in my 
 
 I am a consitant person, and I belive in keeping on trying a forumla that generally works. This is what I intend to keep on doing. One of the things I know I should start doing again though is turning back to the kink scene and find positive people in it. That has been the best becon in the past, and I believe it could once again in the future.  
 
-*** WIP About Emotional Exhaustions :psychology:exhustion:depression:selfimprovement:
+*** PUBLISHED About Emotional Exhaustions :psychology:exhustion:depression:selfimprovement:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: JRL
     :EXPORT_FILE_NAME: about_burnouts
@@ -1466,10 +1572,24 @@ Finally, it's important to leave some empty time on your calendar. Some folks pe
 
 It's always important to look back and reflect on emotional events that take place to learn from them and improve for the next time - good or bad. We are all learning creatures, and we can always "self-upgrade". Personally, writing this post already helped me quite a bit. I hope this would help someone else reading it in the future. 
 
-*** To my 20-year-old-something polyamorous self
-    :PROPERTIES:
+*** WIP What has Been Going on                                         :life:
+:PROPERTIES:
     :EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: about-being-poly
-    :EXPORT_HUGO_PUBLISHDATE: 2019-02-26:
+    :EXPORT_FILE_NAME: updates
+    :EXPORT_HUGO_PUBLISHDATE: 2019-04-03:
     :END:
+
+I always dislike it when I read a post explaining why there's been a break in posting. It's usually a sign that the next post will be the last if it will happen at all, and it's always some excuse about being busy, life getting in the way, etc. etc. So I guess now it's my turn to write one of these posts. 
+
+#+hugo: more
+
+I've been away for a week, traveling overseas to see family. The trip in itself was fine and not as eventful as I anticipated (which is a good thing). When I got back, I immediately bought two things: a HOTAS for Elite Dangerous, and a good headset with a DAC to experience music better. I am almost done writing a post about the later. 
+
+My mornings, which were once completely empty and dedicated to writing, now share time with going to the gym. As it turns out, it's much easier to keep a gym routine in the morning. 
+
+Emacs and Org mode - not much changed there, as a matter of fact. I tried the [[https://github.com/myuhe/org-gcal.el][Gcal]] for Emacs and ended up disappointed after I figured out how to set it up. [[http://www.orgzly.com/][Orgzly]], on the other hand, keeps evolving and becomes a must-have tool for all org-mode users with Android devices in my opinion. 
+
+So there's quite a bit to talk about and expand on. I hope to get back on track soon with a new post. In the meantime, feel free to say hello or read my older posts.  
+
+
 

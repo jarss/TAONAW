@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/desktopwisdom/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/video_journal_evolved/</loc>
+    <lastmod>2018-10-23T08:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/of_people_and_money/</loc>
+    <lastmod>2018-10-23T08:45:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/emacs-windows-managment/</loc>
+    <lastmod>2018-10-23T08:24:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/org-update/</loc>
+    <lastmod>2018-10-16T17:47:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/hugo-beginnings/</loc>
+    <lastmod>2018-10-16T22:52:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/blog/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jarss.github.io/TAONAW/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

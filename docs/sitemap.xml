@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/jrl/updates/</loc>
+    <lastmod>2019-04-03T21:38:19-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/jrl/about_burnouts/</loc>
     <lastmod>2019-03-11T08:20:37-04:00</lastmod>
   </url>
@@ -93,8 +98,23 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/blog/desktopwisdom/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</loc>
     <lastmod>2019-02-24T22:45:16-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/video_journal_evolved/</loc>
+    <lastmod>2018-10-23T08:44:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/of_people_and_money/</loc>
+    <lastmod>2018-10-23T08:45:12-04:00</lastmod>
   </url>
   
   <url>
@@ -103,8 +123,23 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/blog/emacs-windows-managment/</loc>
+    <lastmod>2018-10-23T08:24:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/org-update/</loc>
+    <lastmod>2018-10-16T17:47:49-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/emacsorg/org-update/</loc>
     <lastmod>2019-02-23T23:30:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/hugo-beginnings/</loc>
+    <lastmod>2018-10-16T22:52:10-04:00</lastmod>
   </url>
   
   <url>
@@ -131,6 +166,12 @@
   <url>
     <loc>https://joshrollinswrites.com/blogging/</loc>
     <lastmod>2019-02-23T23:29:42-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -185,6 +226,12 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/hugo/</loc>
     <lastmod>2019-02-23T23:29:45-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/life/</loc>
+    <lastmod>2019-04-03T21:38:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -262,7 +309,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-03-11T08:20:37-04:00</lastmod>
+    <lastmod>2019-04-03T21:38:19-04:00</lastmod>
     <priority>0</priority>
   </url>
   
