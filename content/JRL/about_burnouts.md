@@ -2,8 +2,8 @@
 title = "About Emotional Exhaustions"
 author = ["Josh Rollins"]
 publishDate = 2019-03-09T00:00:00-05:00
-lastmod = 2019-03-11T08:20:37-04:00
-tags = ["psychology", "exhustion", "depression", "selfimprovement"]
+lastmod = 2019-04-04T07:24:16-04:00
+tags = ["selfimprovement", "life"]
 draft = false
 +++
 

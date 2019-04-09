@@ -3,18 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/</loc>
+    <lastmod>2019-04-09T06:55:54-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/jrl/updates/</loc>
     <lastmod>2019-04-03T21:38:19-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/jrl/about_burnouts/</loc>
-    <lastmod>2019-03-11T08:20:37-04:00</lastmod>
+    <lastmod>2019-04-04T07:24:16-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/elite-dangerous-beginnings/</loc>
-    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
+    <lastmod>2019-04-04T07:23:28-04:00</lastmod>
   </url>
   
   <url>
@@ -176,14 +181,8 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/depression/</loc>
-    <lastmod>2019-03-11T08:20:37-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/tags/elitedangerous/</loc>
-    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
+    <lastmod>2019-04-04T07:23:28-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -196,12 +195,6 @@
   <url>
     <loc>https://joshrollinswrites.com/emacsorg/</loc>
     <lastmod>2019-02-23T23:29:30-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/exhustion/</loc>
-    <lastmod>2019-03-11T08:20:37-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -219,7 +212,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-03-03T17:29:54-05:00</lastmod>
+    <lastmod>2019-04-09T06:55:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -242,6 +235,12 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/tags/music/</loc>
+    <lastmod>2019-04-09T06:55:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/network/</loc>
     <lastmod>2019-02-23T23:30:02-05:00</lastmod>
     <priority>0</priority>
@@ -256,12 +255,6 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/privacy/</loc>
     <lastmod>2019-02-23T23:29:52-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/psychology/</loc>
-    <lastmod>2019-03-11T08:20:37-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -285,7 +278,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/selfimprovement/</loc>
-    <lastmod>2019-03-11T08:20:37-04:00</lastmod>
+    <lastmod>2019-04-04T07:24:16-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -309,7 +302,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-04-03T21:38:19-04:00</lastmod>
+    <lastmod>2019-04-09T06:55:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   

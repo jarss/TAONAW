@@ -2,7 +2,7 @@
 title = "Elite Dangerous: Beginning"
 author = ["Josh Rollins"]
 publishDate = 2019-03-01T00:00:00-05:00
-lastmod = 2019-03-03T17:29:54-05:00
+lastmod = 2019-04-04T07:23:28-04:00
 tags = ["elitedangerous"]
 draft = false
 +++
