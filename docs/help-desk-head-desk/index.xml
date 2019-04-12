@@ -6,10 +6,19 @@
     <description>Recent content in Help Desk Head Desks on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Apr 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 12 Apr 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/help-desk-head-desk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why Gcal Failed</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</guid>
+      <description>&lt;p&gt;I recently tried &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;Org-Gcal&lt;/a&gt; a second time just to turn it off again. I was following the (now slightly outdated) &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;instructions&lt;/a&gt; on &lt;a href=&#34;https://cestlaz.github.io/&#34;&gt;Mike Zamansky&amp;rsquo;s&lt;/a&gt; blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Upgrading my Audio Game</title>

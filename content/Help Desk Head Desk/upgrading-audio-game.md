@@ -2,7 +2,7 @@
 title = "Upgrading my Audio Game"
 author = ["Josh Rollins"]
 publishDate = 2019-04-09T00:00:00-04:00
-lastmod = 2019-04-09T06:55:54-04:00
+lastmod = 2019-04-11T06:26:40-04:00
 tags = ["music"]
 draft = false
 +++
@@ -29,7 +29,7 @@ Bandcamp is a site that pays artists directly and much more than streaming servi
 
 ## Equipment: DACs, AMPs, and Getting my Headset {#equipment-dacs-amps-and-getting-my-headset}
 
-Another thing BSIAG helped me with is to solidify the concept of a DAC ([Digital to Audio Converter](https://www.whathifi.com/advice/dacs-everything-you-need-to-know)). Until that point, I knew there's this "box" serious music lovers and sound engineers connect their ultra-expensive headset. As it turns out, there's a whole world of technology behind DACs and AMPs.
+Another thing BSIAG helped me with is to solidify the concept of a DAC ([Digital to Aanalog Converter](https://www.whathifi.com/advice/dacs-everything-you-need-to-know)). Until that point, I knew there's this "box" serious music lovers and sound engineers connect their ultra-expensive headset. As it turns out, there's a whole world of technology behind DACs and AMPs.
 
 I can't go deep into it here because I have only basic understanding of it myself, but the general idea is that DACs convert the digital information (think 1s and 0s) in your computer to analog (wave-like, the stuff we can actually hear) information. All modern computers and phones come with a built-in DACs (which is why you can just plug in a pair of earphones directly into your iPhone, for example), but these are very basic. an AMP (or simply an amplifier) is a device that amplifies certain signals - in our case, sound signals. Why would you need all this volume pushing into your head? Isn't it a bad idea?
 
