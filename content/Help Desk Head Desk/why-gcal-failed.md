@@ -2,7 +2,7 @@
 title = "Why Gcal Failed"
 author = ["Josh Rollins"]
 publishDate = 2019-04-12T00:00:00-04:00
-lastmod = 2019-04-12T08:20:35-04:00
+lastmod = 2019-04-13T10:06:25-04:00
 tags = ["orgmode"]
 draft = false
 +++

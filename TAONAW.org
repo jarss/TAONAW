@@ -1320,7 +1320,7 @@ After almost two weeks with my new equipment, I think the biggest self-upgrade I
 # ** Source (Bandcamp)
 # But getting hifi good indie music on the cheap is not the only benefit of the site. As I started using it more and more, I discovered it has a daily and a weekly newsletter (on the site itself) with new and listen-worthy artists. As you learn which artists you like more, you can get more similar music from artists that follow and recomment the artist you like. This resulted in some great music I would have never dicovered from streaming services, which seem to always repeate a select few "seed" songs that create random play lists (not to mention, the streaming music on these sites is of lower quality, usually 128kbs MP3s).  
 
-*** WIP Why Gcal Failed                                             :orgmode:
+*** PUBLISHED Why Gcal Failed                                       :orgmode:
 :PROPERTIES:
     :EXPORT_FILE_NAME: why-gcal-failed
     :EXPORT_HUGO_PUBLISHDATE: 2019-04-12:
@@ -1348,6 +1348,76 @@ Second, and this is a harder issue to fix, is the lack of details I got from eve
 [[file:static/why-gcal-failed.png]]
 <br>
 This style difference is a pretty big gap to cross. Org-mode is private, quiet, at-my-computer (usually) planning, where Google assistant is not private (Google can say whatever they want). The Calendar, in a weird way, is also not really personal: it's usually intended to share with a different person. What I have on Org-mode is an event. An event can be personal, often enough summed up in my journal with my impressions. The difference is big enough philosophically speaking that I can create the same occurrence twice: once on my Google Calendar, and once in Org. Sure, this is mostly a waste of time. The difference is not always so black-and-white, but it's there. For now, I am creating my Google events manually after creating the Org-mode events.
+*** TODO Switching to Majaro                                          :linux:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: switching-to-manjaro
+    :EXPORT_HUGO_PUBLISHDATE: 2019-05-12:
+    :END:
+ 
+
+The smile that spreak on my face was authentic pleasure. [[https://flameshot.js.org/#/][Flameshot]], the lastest addition to my Manjaro Linux switch, was now capable of displaying text in my annotations. Like everything else in the last week, it felt buttery-smooth and responsive like the beatiful piano tune ([[https://andyiorio.bandcamp.com/album/awakening-2][Awakening by Andy Lorio]]) playing in my ears. If Linux Mint on my VM was a lean productivity machine, Manjaro on my old Dell Latitude fits like a slik glove. 
+
+#+hugo: more
+*** WIP Everenote - Behind the Scenes                              :evernote:
+    :PROPERTIES:
+    :EXPORT_FILE_NAME: Everenote-behind-the-scenes
+    :EXPORT_HUGO_PUBLISHDATE: 2019-05-18:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :END:
+ 
+A few years back, I was an avid user of Evernote. That was a period of information "innocence" for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files -- though they have been since downloaded and converted from the App's native format.
+
+#+hugo: more
+
+This morning, YouTube's algorithm picked up [[https://www.youtube.com/watch?v=5rNUpXYCcrA][a video from Evernote]] and threw it my way as a suggestion. It's a short introduction to a promised upcoming series from Evernote, called Behind the Scenes. Introduced directly by Evernote's current CEO, Ian Small, this seems to be an honest attempt to "take us behind the scenes... and show us what [Evernote] is working on."
+
+Evernote is a for-profit company with a product that is very different than org-mode. While I have no desire or need to switch from org in the near future, it would be interesting to see what kind of challenges the makers of a popular note-taking app come up with. Who knows, perhaps I could learn a thing or two.  
+
+
+** What happend to my Linux Mint VM? 
+
+Nothing, actually. It still lives on my Windows desktop in it VMware instance, where it has always been, ready to go. 
+
+I've been using Linux as my daily drive for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don't think I will ever get back to using either one for my personal stuff. As a matter of fact, it's Linux which makes it's apperence at work: without my VM and my loyal Org-agenda, I would probably drown under hips of emails, and calendar events like the rest of my teammates. No thank you. 
+
+It was always clear to me that I have things a bit backwards: Linux Mint, which I use all the time, trapped in a vM in a Windows-host which I affectively only use for Games and entertainment. When you're a gamer though, Linux is not there yet. I've had an old [[https://en.wikipedia.org/wiki/Dell_Latitude][Dell Lattitude 6430u]] laying around for a while as a backup, sure. Big and bulky, it had Ubuntu installed, and never really liked that setup. I just kept using my VM.  
+
+Then, A few weeks ago during a shower (where creativity meets logic) It suddenly dawned on me that the real reason I prefer to use my VM is because of my Ultra-wide screen and loud clacky mechanical keyboard. I knew it for a long time, but I never considered such a seemingly trivial fact too seriously. And suddenly I also had an answer: a KVM switch. 
+
+Install Linux Mint was never easy. For as long as I remember, on both my desktops and my laptop, there were always boot issue. Linux Mint would install just fine, but when I'd restart my computer I will be staring at a grub shell and couldn't go further. I've attempted difference things, starting from switching between Legacy and EFI boot to using [[https://help.ubuntu.com/community/Boot-Repair][Ubuntu's boot repair tool]], but nothing worked. I've spend hours on IRC trying to get help and I grew tired of repeating the same proccess again and gain in various forums to figure out what's wrong, which is why my laptop had Ubuntu to begin with. Only thing is, I never liked Ubuntu's "feel," and that Amazon symbol at the middle of my dock (yes, I know you can turn it off) was sticking out like a rusty monatery nail.
+
+So after I tried to install Linux Mint on my laptop and failed yet again, I asked for help polietly on the forum yet again. I was ready to sit back and wait for a couple of days until I get the help I need and solve this issue once and foreall. So of course, I  threw it all to hell and decided I want to try Manjaro. And let me tell you right off the bat... I don't think I'm coming back. 
+
+** What's so good about Manjaro? 
+
+This question is somewhat unfair, but only somewhat. 
+
+The first thing about Manjaro that immidetly worked was the install. While I always had issues with Mint, Manjaro from the live CD just worked after install without any issues. I chose the [[https://manjaro.org/download/kde/][Plamsma KDE version]], which is where the somewhat unfairness comes in. 
+
+Mint, you see, has always been Cinnamon for  me. And while Mint offers Plasma as well, I never tried it on Mint. I was testing Plamsa briefly with Xubuntu, but generally wasn't that impressed. Manjaro, on the other hand, seems to be amazing with it. Many of the the things I'm quickly learning to love with Manjaro (but not all) are Plasma related, such as KDE connect (syncs notifications and texts with my phone), "hot corners" (one of the things I liked about macOS), Yakuake for quick pull-down terminal needs, the slik modern design of the dark theme, and more. It just looks /good/. 
+
+Then there are other things I'm learning to appriciate as I go. I can install almost any app that exists on Debian (if it's missing on   
+
+- saw it's popular
+- aching for something new
+- Plasma, wanted to give it a second go
+
+** What I like
+
+- worked out of the box, no issue (encryption, but work around which is better)
+- Plasme:
+  - slik and modern
+  - KDE connect (android)
+  - Nice touch with themes, widgets, even time and date and 
+- Manjaro:
+  - Octopi and package management (includes Dibian!) includes software I even had issues with before (veracrypt) everything availble from package manager
+  - newest of everything (emacs 26.2 baby)
+  - works great with the new screen, seemless intetgration back to laptop
+  - every day I'm adding new things make it more person (layouts) and it feels nice
+
+ 
+
 
 ** JRL
    :PROPERTIES:
