@@ -6,10 +6,19 @@
     <description>Recent content in Help Desk Head Desks on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/help-desk-head-desk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Switching to Manjaro</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</guid>
+      <description>I&amp;rsquo;ve been using Linux as my daily driver for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don&amp;rsquo;t think I will ever go back to using either one for my personal data. As a matter of fact, it&amp;rsquo;s Linux which made an appearance at work: without my VM and Org-mode, I would probably be drowning under hips of emails, meeting invites, support tickets, and the constant in-person walk-ins into our work environment.</description>
+    </item>
     
     <item>
       <title>Why Managing Email in Emacs is not for me</title>
