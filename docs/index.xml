@@ -6,10 +6,21 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 25 May 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Best Tools for the job: Flameshot</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/</guid>
+      <description>&lt;p&gt;Every now and then I discover (or re-discover) a tool in Linux that does exactly what I need it to do. Some examples include ffmpeg, to shrink down my self-recorded webcam journal session while increasing the volume; abcde, to rip a classical music CD to flac and find its exact title and name; youtube-dl, which downloads any video online I need along with aria to speed these downloads, and more.&lt;/p&gt;
+
+&lt;p&gt;Today I want to praise a new excellent tool, this time for screenshots: &lt;a href=&#34;https://flameshot.js.org/#/&#34;&gt;Flameshot&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Switching to Manjaro</title>
