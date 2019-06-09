@@ -1441,6 +1441,8 @@ It's an elegant tool, with an intuitive UI: right-click to choose a color; scrol
 
 I've talked about [[http://www.orgzly.com/][Orgzly]] several times on this blog, but I haven't dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly's usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I'm happy to present my first interview on this blog.
 
+#+hugo: more
+
 First, for those of you who are not familiar with Orgzly, a quick intro. Those of you who are, just skip the next paragraph.
   
 Org-mode, as awesome as it is, has one glaring problem which keeps many users from using it all day: it's inability to be mobile. Org-mode is built into Emacs, which in turn is built into Linux (or, with some alternations, into macOS). This means you can't take Org-mode with you on the go. For Android, Org-mode's official tool was [[https://github.com/matburt/mobileorg-android][MobileOrg]], which is no longer active. While workarounds exist, it's probably safe to say the only Android tool worth your time out there is Orgzly. As I mentioned several times before, it was actually Orgzly that got me into Org-mode and then into Emacs. I use Orgzly every day, all day. It is easily the main reason why Org-mode is even an option for me at work: it is what allows me to access my agenda and todo's with all their details on my running-around routine.

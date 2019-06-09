@@ -2,12 +2,14 @@
 title = "Orgzly: An Interview"
 author = ["Josh Rollins"]
 publishDate = 2019-06-07T00:00:00-04:00
-lastmod = 2019-06-08T22:17:48-04:00
+lastmod = 2019-06-08T22:21:19-04:00
 tags = ["orgzly", "orgmode"]
 draft = false
 +++
 
 I've talked about [Orgzly](http://www.orgzly.com/) several times on this blog, but I haven't dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly's usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I'm happy to present my first interview on this blog.
+
+<!--more-->
 
 First, for those of you who are not familiar with Orgzly, a quick intro. Those of you who are, just skip the next paragraph.
 
