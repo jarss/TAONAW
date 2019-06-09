@@ -1431,7 +1431,7 @@ As you stretch the frame, the different tools buttons re-arrange themselves depe
 Flameshot comes with all the basic tools you need from an annotation application: arrows, lines, and now (finally) a text tool, which needs to first be activated from the tools configuration menu: (=$ flameshot config=). There's also a text-blur and upload to Imgur tool. Flameshot is minimal: there's no eraser button, for example, because it's not needed. You can only undo and re-do. The color palette is basic, without a large color wheel. You can't rotate and flip images; it trusts you to use a more "heavy guns" editing tool for that, reminding you it's there only for a screenshot.
 
 It's an elegant tool, with an intuitive UI: right-click to choose a color; scroll to make the lines wider or thinner. When you choose the upload to Imgur button, for example, it automatically does that in the background and opens a window for you to either save, copy the freshly-created link to the clipboard or delete the image from the site, which opens another tab in your browser for that. This is the kind of application that makes you feel proud using it. 
-*** WIP Orgzly                                               :orgzly:orgmode:
+*** WIP Orgzly: An Interview                                 :orgzly:orgmode:
 :PROPERTIES:
     :EXPORT_FILE_NAME: orgzly-neven-interview
     :EXPORT_HUGO_PUBLISHDATE: 2019-06-07:
