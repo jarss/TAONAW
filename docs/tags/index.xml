@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>orgmode</title>
+      <link>https://joshrollinswrites.com/tags/orgmode/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orgzly</title>
+      <link>https://joshrollinswrites.com/tags/orgzly/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/orgzly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
@@ -53,15 +71,6 @@
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/evernote/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>orgmode</title>
-      <link>https://joshrollinswrites.com/tags/orgmode/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
       <description></description>
     </item>
     
