@@ -2,7 +2,7 @@
 title = "Orgzly: An Interview"
 author = ["Josh Rollins"]
 publishDate = 2019-06-07T00:00:00-04:00
-lastmod = 2019-06-08T22:21:19-04:00
+lastmod = 2019-06-21T12:32:11-04:00
 tags = ["orgzly", "orgmode"]
 draft = false
 +++
