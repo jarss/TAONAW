@@ -1431,7 +1431,7 @@ As you stretch the frame, the different tools buttons re-arrange themselves depe
 Flameshot comes with all the basic tools you need from an annotation application: arrows, lines, and now (finally) a text tool, which needs to first be activated from the tools configuration menu: (=$ flameshot config=). There's also a text-blur and upload to Imgur tool. Flameshot is minimal: there's no eraser button, for example, because it's not needed. You can only undo and re-do. The color palette is basic, without a large color wheel. You can't rotate and flip images; it trusts you to use a more "heavy guns" editing tool for that, reminding you it's there only for a screenshot.
 
 It's an elegant tool, with an intuitive UI: right-click to choose a color; scroll to make the lines wider or thinner. When you choose the upload to Imgur button, for example, it automatically does that in the background and opens a window for you to either save, copy the freshly-created link to the clipboard or delete the image from the site, which opens another tab in your browser for that. This is the kind of application that makes you feel proud using it. 
-*** PUBLISHED Orgzly: An Interview                           :orgzly:orgmode:
+*** WIP Orgzly: An Interview                                 :orgzly:orgmode:
 :PROPERTIES:
     :EXPORT_FILE_NAME: orgzly-neven-interview
     :EXPORT_HUGO_PUBLISHDATE: 2019-06-07:
@@ -1509,10 +1509,10 @@ The second thing is [[https://syncthing.net/][Syncthing]]. Neven mentioned Dropb
 A few weeks ago
  
  #+hugo: more
-*** PUBLISHED Of Emacs and Chutzpah                           :emacs:orgmode:
+*** TODO Of Writing and Tools
     :PROPERTIES:
     :EXPORT_FILE_NAME: of-writing
-    :EXPORT_HUGO_PUBLISHDATE: 2019-06-21:
+    :EXPORT_HUGO_PUBLISHDATE: 2019-06-14:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
 
@@ -1522,135 +1522,40 @@ My answer to that, considering the theme of this blog and how I'm writing it,  i
 
 #+hugo: more
 
-Emacs is not accessible for most writers today. Most of them probably never heard of the thing, or any other tools besides Word and, at least the lucky ones, Scrivener. Emacs isn't really known outside of the seriously-geeky folks because it's written by computer geeks for computer geeks. Search for any instructions, tutorials and/or reviews of Emacs, and 99% of the folks you'd encounter would be computer programmers. No fiction writers. Chances are that if you put Emacs in front of a writer today, they won't even know how to install the thing, let along use it. 
+Emacs is not accessible for most writers today. Most of them probably never heard of the thing, or any other tools besides Word and, at least the lucky ones, Scrivener. Emacs isn't really known outside of the seriously-geeky folks because it's written by computer computer geeks for computer geeks. Search for any instructions, tutorials and/or reviews of Emacs, and 99% of the folks you'd encounter would be computer programmers. No fiction writers. Chances are that if you put Emacs in front of a writer today, they won't even know how to install the thing, let along use it. 
 
-I don't think people who use Emacs understand how complicated and cumbersome it looks to the average person. They probably think we, Emacs users, are the ones who are crazy. 
+I don't think people who use Emacs understand how complicated and cumbursome it looks to the avrage person. They probably think we, Emacs users, are the ones who are crazy. 
 
 How come Word is so well-known (and usually hated) by writers for all its distractions, while better tools for the job such are barely heard of? 
 
-For one, you can consider marketing. The advertising Microsoft throws at its products is something the free-source community cannot even start to compete with. For another, you can consider history and reputation. Microsoft Word (and Outlook and Excel and PowerPoint) have been a core component of office software for quite a few years. It is even called, justfully so, "Office," because what else would you use in your office? 
+For one, you can consider marketing. The advertising Microsoft throws at its products is something the free-source community cannot even start to compete with. For another, you can cosndier history and reputation. Microsoft Word (and Outlook and Excel and PowerPoint) have been a core component of office software for quite a few years. It is even called, justfully so, "Office," because what else would you use in your office? 
 
 But there's another reason wannabe writers would not find out about Emacs, and if they do, never pick up the habit of using it. It's the same reason wannabe runners won't travel too far out of the gym, or people who wish to meditate won't experiment other techniques beyond the ones they've learned in a Yoga class.  
 
-There's nothing wrong with any of the three methods I grossly mashed together here. Running on a treadmill is a very good form of exercise, which can be measured and improved. It allows folks who otherwise won't run because of the weather or time of day to still get their exercise. Likewise, there are writers who have been using Word for their entire professional career. And I can tell you there's a lot to learn from a good yoga meditation class which will supply you with discipline and motivation to continue. 
+There's nothing wrong with any of the three methods I grossly mashed together here. Running on a tredmill is a very good form of exercize, which can be measured and improved. It allows folks who otherwise won't run because of the weather or time of day to still get their exercise. Likewise, there are writers who have been using Word for their entire professional career. And I can tell you there's a lot to learn from a good yoga meditation class which will supply you with dicipline and motivation to continue. 
 
-However, there's a component missing in all of those. An element of the human spirit that, thinking back, can be described perfectly in one Jewish word I know: Chutzpah. If you're not familiar with the word and just look it up on [[https://en.wikipedia.org/wiki/Chutzpah][Wikipedia]], for example, you won't quite get it. The definition explained there is audacity, bloated self-esteem, and ego. This is all true, but that's the kind of definition that makes you think of an over-confident obnoxious teenager. That's not what I'm talking about. Chutzpah, the way I mean it here, is to dare. To know there's a way hundreds have been doing a certain thing for decades, yet question it. Far too many people don't question things. 
+However, there's a component missing in all of those. An element of human spirit that, thinking back, can described perfectly in one Jewish word I know: Chutzpah. If you're not familar with the word and just look it up on [[https://en.wikipedia.org/wiki/Chutzpah][Wikipedia]], for example, you won't quite get it. The definition explained there is audacity, bloated self-esteem, and ego. This is all true, but that's the kind of definition that makes you think of an over-confident abnoxious teenager. That's not what I'm talking about. Chutzpah, the way I mean it here, is to dare. To know there's a way hundreds have been doing a certain thing for decades, yet question it. Far too many people don't question things. 
 
-One of my biggest inspirations to use Emacs and Org-mode was [[https://www.youtube.com/watch?v=FtieBc3KptU][this YouTube video]] by Jay Dixit, a writer who kept saying he's "not a programmer" and shamelessly admitted to copy code and ask others to write code for him where he needs it. Dixit's  Emacs methods are nothing too special, yet he presented this lecture in front of experience Emacs users (programmers even!) who asked /him/ questions. Dixit is the kind of writer who dared to wonder about something very specific his software couldn't do, until he encountered Emacs. When he realized there's a "bit" of a learning curve to Emacs, he didn't think much about it and started learning. Not because he's a masochist, or because he has tons of times, or because he's a genius, but because his desire to write the way /he wants to/ was bigger than any alternations the comfort of the "this-is-how-it-is" software offered him. So he dared, persisted, and well, as far as I know, he still uses Emacs today. 
+One of my biggest inspirations to use Emacs and Org-mode was [[https://www.youtube.com/watch?v=FtieBc3KptU][this YouTube video]] by Jay Dixit, a writer who kept saying he's "not a programmer" and shamelessly admitted to copy code and ask others to write code for him where he needs it. Dixit's  Emacs methods are nothing too special, yet he presented this lecture in front of experience Emacs users (programmers even!) who asked /him/ questions. Dixit is the kind of writer who dared to wonder about something very specific his software couldn't do, until he encountered Emacs. When he realized there's a "bit" of a learning curve to Emacs, he didn't think much about it and started learning. Not because he's a masochist, or because he has tons of times, or because he's a genious, but because his desire to write the way /he wants to/ was bigger than any alternations the comfort of the "this-is-how-it-is" software offered him. So he dared, presisted, and well, as far as I know, he still uses Emacs today. 
 
-Not too long ago, [[https://medium.com/@Josh_Rollins/writing-post-d044aac72d0][I took my first steps]] toward leaving Google Documents, which has been my go-to writing tool for a while. At the time, I haven't even heard of Emacs. Google Docs was very convenient, especially on the Chromebook I had. I've been using Bullet points in posts for a while (as evident in the post mentioned) and Org-mode was something that "clicked" loudly in my head, with a few exclamation marks, and I just /had/ to try it. Did I have Chutzpah? You could say so, I'd call it an obsession with writing apps. At the time, you never know. People who keep talking about who daring they are not daring at all.
+Not too long ago, [[https://medium.com/@Josh_Rollins/writing-post-d044aac72d0][I took my first steps]] toward leaving Google Documents, which has been my go-to writing tool for a while. At the time, I haven't even heard of Emacs. Google Docs was very convinient, especially on the Chromebook I had. I've been using Bullet points in posts for a while (as evident in the post mentioned) and Org-mode was something that "clicked" loudly in my head, with a few excalmation marks, and I just /had/ to try it. Did I have Chutzpah? You could say so, I'd call it obsession with writing apps. At the time, you never know. People who keep talking about who daring they are not daring at all.
 
-Like many others who use Emacs today, I want it to be more accessible to the public at large. But, also like many other who use Emacs today, I realize that the "quest for Emacs" is not something you can throw at people through a marketing campaign. There's nothing easy, pretty, or "sexy" about Emacs. You have to earn using Emacs through  months of careful customization. My current setup, for example, includes these customizations from vanilla Emacs:
+Like many others who use Emacs today, I want it to be more accessible to the public at large. But, also like many other who use Emacs today, I realize that the "quest for Emacs" is not something you can throw at people through a marketing campign. There's nothing easy, pretty, or "sexy" about Emacs. You have ot earn using Emacs through  monsths of careful customization. My current setup, for example, includes these customizations from vanilla Emacs:
 
 1. My Window size is configured to be bigger than Emac's default for my Ultra-Wide screen
-2. I use company-mode to auto-complete words
+2. I use company-mode to autocomplete words
 3. I use Emac's Abrrev (which I customized) to include common words and phrases
-4. I write posts in Org-mode and publish directly to GitHub through [[https://ox-hugo.scripter.co/][ox-hugo]] and [[https://magit.vc/][magit]]
+4. I write posts in Org-mode and publish directly to Github through [[https://ox-hugo.scripter.co/][ox-hugo]] and [[https://magit.vc/][magit]]
 5. I have [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Visual-Line-Mode.html][visual lines mode]] on
 6. There are no icons in my tool bar (though I find the menu itself still useful)
 7. I've added many words to the built-in dictionary
 8. custom key shortcuts for spellchecking, refreshing buffer, and others
 
-And there are more (Ivy, which comes with Swiper...) and still more to come. I use /my/ Emacs so much and so often that it's hard to break it apart back to the different pieces that make it. It's memorized by my fingers more than my brain. It's all a careful process of picking and choosing what I want and where I want it. 
+And there are more (Ivy, which comes with Swiper...) and still more to come. I use /my/ Emacs so much and so often that it's hard to break it apart back to the different pieces that make it. It's memorized by my fingers more than my brain. It's all a careful proccess of picking and choosing what I want and where I want it. 
 
-Emacs is not something you give to someone. It's something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I'd argue that nothing /requires/ customization like as Emacs does. that's what makes Emacs a lifetime-long tool, and why (I think) after all these years, it's still given out in a package that is pretty much the same.
+Emacs is not something you give to someone. It's something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I'd argue that nothing /requires/ customziation like Emacs does. that's what makes Emacs a lifetime-long tool, and why (I think) after all these years, it's still given out in a package that is pretty much the same.
 
-All of the above is necessary (at least I'd like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the "writing tools that get in the way of writing." In Emacs, the things that stand in the way of your writing are things you haven't changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is... You. There cannot be anything else because every single part of Emacs is designed to be broken down to do /exactly/ what you want it to do. 
-*** TODO Capture in Files
-    :PROPERTIES:
-    :EXPORT_FILE_NAME: of-writing
-    :EXPORT_HUGO_PUBLISHDATE: 2019-06-22:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
-    :END:
-
-
-#+hugo: more
-
-intro: 
-- Files as templates
-
-# then: 
-# - Why need?
-
-Why do I need a template based in a file? To understand that, I need to explained some of the work I do as a help desk person in a large organization. 
-
-Among other things, my work includes prepping desktop and laptop computers for clients. For the most part, this is done from a clone or an image, and all software is installed remotely. But there are still many cases where the automatic system fails and we have to do hands-on deployment. Some scenarios include: 
-
-- BYOD device, which was not imaged with our image
-- Prepping Macs (part of my role is to automate these)
-- Replacement of old computer (which have data stored locally, and require a cumborsome DLP proccess)
-
-And there are more, like Malware removal proccesses, adding a new printer to our server, etc. Because we're a big company, many times I find that the technical checklist is half of the proccess. Communication with the clients, managers, and the purchasing people (and getting the right information from everyone as well as documenting it) is a big part of the checklist. 
-
-# - Why manual no good
-
-I've had a long checklist handy in a "setups.org" file which I used to copy-paste into new projects. The idea of having a file as a template for capture occured to me in the past, but because I've never seen a real-world example and didn't see a clear reference to it in the manual made me dismiss this idea as figure of my imagination. 
-
-At one point I asked about this on Reddit but didn't get answers. The question was mostly left ananswered, I believe, because folks didn't understand what I'm asking exactly. That's because I didn't know what I was looking for. After all, if I had a more concrete idea, I'd probably find this in Org manual: 
-
-#+BEGIN_QUOTE
-template
-
-    The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. The string with escapes may be loaded from a template file, using the special syntax ‘(file "template filename")’. See below for more details.
-#+END_QUOTE
-
-This little paragraph of text can be found about half a page down [[https://orgmode.org/manual/Template-elements.html#Template-elements][in the manual]]. I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn't know I can use a /file/ as a template reading it. 
-
-There's no clear statement that says you can load a capture from a file; rather, it states that "/the string with escapes/ may be loaded from a file...". To me, this means that if I want to include my template's definition in a file I can do so instead of using my init. For example, here's a code from my template: 
-
-#+BEGIN_SRC
-          ("j" "Journal" entry (file+datetree "~/Documents/Work/Setups.org")
-        "**** %<%H:%M> about %a \n%?" :tree-type week)
-#+END_SRC
-
-So if for some reason I wouldn't want the /above snippet/ in my init (or in my case, my org file), I could throw it into a different file. I didn't bother with it because I'm comfortable with having my capture template /"string with escapes"/ where it is. Further, the manual says "see below for more details," and indeed, there are details: of properties which are part of the "string with escapes." There's nothing that tells me I can have my whole template, huge checklists and all, in another file. And, as far as I know, there's no other reference to files as template anywhere in the manual. So I just figured I'm imagining things and moved on.
-
-I would have kept going in circles and dismiss this idea as non-existant again, if it wasn't for a note somewhere in my journal that I've seen someone pulling a template from a file. I /knew/ it is possible, and because of this I went looking for a solution to a specific problem. I couldn't find that example in my journal then nor can I now (which is why I didn't post it), but I searched online more agressively this time, using different queries. I managed to find a couple of questions related to org-mode in emacs.stackexchange.com that were not directly related to my issue, but had the following lines in the code (I cut out the paths as the do not matter here)
-
-#+BEGIN_SRC
-       ("j" "Journal" entry (file+datetree "...")
-       (file "..."))
-#+END_SRC
-
-And then, I found [[https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf][this talk]] by [[https://twitter.com/yonkeltron][Jonathan E. Magen]]. Of particular interest was slide 6. Right there, in front of me, the title was "Template stored in file," and below it, a very simple /example/ that tells org-mode to read the template's content from a file. So, it is true. Org-mode /can/ read templates from other org files, even though the manual (so far) has failed to tell me that 20 times or so. 
-
-I wrote the code as I understood it from the examples I found and added ~(file "~/Documents/Personal/journal-tmpl.org")~ instead of that "string with escapes", and got a an error: "org-capture: Capture template ‘j’: Template is not a valid Org entry or tree". 
-
-In the past when I saw this error at a certain point, it was another proof I can't use org files as templates. After all, journal-tmpl.org was a good org file that opens otherwise, just not through capture. The conclusion then was, capture can't do it. But now I was convinced the concept of a template-file exists, and I looked at the error differently: Org-mode (or emacs for that matter) should open /any/ file if I tell it to, even if it's mp4 or a doc. I would see gybrish on my screen, but it would open. It follow then that if I see this error it means it is meant to work, but not in this particular case. This error now became an encouragement that I am headed in the right direction. 
-
-The error was not the conspet, or even the syntax of my capture template. The problem was my org file. What I should have asked was "what's wrong with my org template file" and paste the code, but I didn't know to ask that. I didn't know this was possible to ask it. Now, that I finally knew what the real error was, I was in the right mindset to work it out. And work it out I did. 
-
-As it turns out (for reasons I'm still trying to understand), ny regular or file that starts with certain options like ~#+TITLE:~ and ~#+TODO:~ with several headers already nested inside of it fails to work. However, if I simplify the file down to the headers I want and the checklist itself, it did work. Right in front of me, I had a long checklist I always wanted inside org capture:   
-
- 
-
-
-
-then: 
-- Now I need 2 letter template?
-- Why manual no good again
-now need:
-- properties includes
-- not bothering with manual
-
-*** WIP Quick Updates: June                                   :orgmode:linux:
-:PROPERTIES:
-:EXPORT_FILE_NAME: quick-updates-June
-:EXPORT_HUGO_PUBLISHDATE: 2019-06-30:
-:EXPORT_HUGO_SECTION: Help Desk Head Desk 
-:END:
-
-Even though I don't have any means of tracking how many readers I have on this blog, I can't help but feel a little bit responsible for my audience. This is an attempt to see how a quick "here's what's up" post while the blog is otherwise idle.
-
-So, a few quick updates about what's coming up:
-
-#+hugo: more
-
-I discovered I can use .org files as templates for capture. This opens the possibilities to create highly complex templates, like checklists with several headers, accessible from capture. It took me a year(!) to finally figure out even though it's dead simple. I want to discuss why this took so long, and how Org-manual could use more visual examples. I also want to discuss how I use these checklists at work, and why they're useful.
-
-As a result of the above, I am also changing my workflow in org-mode, or precisely, how I'm using my files. I've decided to scale back from my [[https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/][multi-file approach]] and use only two or three major files, and I'm in the process of testing this. 
-
-Mike Elgan writes [[https://www.computerworld.com/article/3405559/google-needs-to-pull-itself-together.html][about Google products that should be merged]], and it made me remember how I used to have the same issues until I switched over to Linux and Emacs. People who use Linux have it better in terms of productivity. I want to discuss why. 
+All of the above is necessary (at lesat I'd like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the "writing tools that get in the way of writing." In Emacs, the things that stand in the way of your writing are things you haven't changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is... You. And maybe the lack of Chutzpa. 
 
 ** JRL
    :PROPERTIES:

@@ -6,24 +6,24 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Jun 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>emacs</title>
-      <link>https://joshrollinswrites.com/tags/emacs/</link>
-      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
+      <title>linux</title>
+      <link>https://joshrollinswrites.com/tags/linux/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
       
-      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
+      <guid>https://joshrollinswrites.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>orgmode</title>
       <link>https://joshrollinswrites.com/tags/orgmode/</link>
-      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
       <description></description>
@@ -35,15 +35,6 @@
       <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/orgzly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://joshrollinswrites.com/tags/linux/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -152,6 +143,15 @@
       <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://joshrollinswrites.com/tags/emacs/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
       <description></description>
     </item>
     

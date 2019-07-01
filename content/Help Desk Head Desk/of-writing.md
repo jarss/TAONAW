@@ -1,49 +1,69 @@
 +++
-title = "Of Emacs and Chutzpah"
+title = "Capture in Files"
 author = ["Josh Rollins"]
-publishDate = 2019-06-21T00:00:00-04:00
-lastmod = 2019-06-21T12:30:10-04:00
-tags = ["emacs", "orgmode"]
-draft = false
+publishDate = 2019-06-22T00:00:00-04:00
+lastmod = 2019-06-24T09:05:26-04:00
+draft = true
 +++
-
-Says [Jamie T. Rubin](https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments): "As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?"
-
-My answer to that, considering the theme of this blog and how I'm writing it,  is obvious. But the question is going deeper than that, and so should be the answer.
 
 <!--more-->
 
-Emacs is not accessible for most writers today. Most of them probably never heard of the thing, or any other tools besides Word and, at least the lucky ones, Scrivener. Emacs isn't really known outside of the seriously-geeky folks because it's written by computer geeks for computer geeks. Search for any instructions, tutorials and/or reviews of Emacs, and 99% of the folks you'd encounter would be computer programmers. No fiction writers. Chances are that if you put Emacs in front of a writer today, they won't even know how to install the thing, let along use it.
+intro:
 
-I don't think people who use Emacs understand how complicated and cumbersome it looks to the average person. They probably think we, Emacs users, are the ones who are crazy.
+-   Files as templates
 
-How come Word is so well-known (and usually hated) by writers for all its distractions, while better tools for the job such are barely heard of?
+Why do I need a template based in a file? To understand that, I need to explained some of the work I do as a help desk person in a large organization.
 
-For one, you can consider marketing. The advertising Microsoft throws at its products is something the free-source community cannot even start to compete with. For another, you can consider history and reputation. Microsoft Word (and Outlook and Excel and PowerPoint) have been a core component of office software for quite a few years. It is even called, justfully so, "Office," because what else would you use in your office?
+Among other things, my work includes prepping desktop and laptop computers for clients. For the most part, this is done from a clone or an image, and all software is installed remotely. But there are still many cases where the automatic system fails and we have to do hands-on deployment. Some scenarios include:
 
-But there's another reason wannabe writers would not find out about Emacs, and if they do, never pick up the habit of using it. It's the same reason wannabe runners won't travel too far out of the gym, or people who wish to meditate won't experiment other techniques beyond the ones they've learned in a Yoga class.
+-   BYOD device, which was not imaged with our image
+-   Prepping Macs (part of my role is to automate these)
+-   Replacement of old computer (which have data stored locally, and require a cumborsome DLP proccess)
 
-There's nothing wrong with any of the three methods I grossly mashed together here. Running on a treadmill is a very good form of exercise, which can be measured and improved. It allows folks who otherwise won't run because of the weather or time of day to still get their exercise. Likewise, there are writers who have been using Word for their entire professional career. And I can tell you there's a lot to learn from a good yoga meditation class which will supply you with discipline and motivation to continue.
+And there are more, like Malware removal proccesses, adding a new printer to our server, etc. Because we're a big company, many times I find that the technical checklist is half of the proccess. Communication with the clients, managers, and the purchasing people (and getting the right information from everyone as well as documenting it) is a big part of the checklist.
 
-However, there's a component missing in all of those. An element of the human spirit that, thinking back, can be described perfectly in one Jewish word I know: Chutzpah. If you're not familiar with the word and just look it up on [Wikipedia](https://en.wikipedia.org/wiki/Chutzpah), for example, you won't quite get it. The definition explained there is audacity, bloated self-esteem, and ego. This is all true, but that's the kind of definition that makes you think of an over-confident obnoxious teenager. That's not what I'm talking about. Chutzpah, the way I mean it here, is to dare. To know there's a way hundreds have been doing a certain thing for decades, yet question it. Far too many people don't question things.
+I've had a long checklist handy in a "setups.org" file which I used to copy-paste into new projects. The idea of having a file as a template for capture occured to me in the past, but because I've never seen a real-world example and didn't see a clear reference to it in the manual made me dismiss this idea as figure of my imagination.
 
-One of my biggest inspirations to use Emacs and Org-mode was [this YouTube video](https://www.youtube.com/watch?v=FtieBc3KptU) by Jay Dixit, a writer who kept saying he's "not a programmer" and shamelessly admitted to copy code and ask others to write code for him where he needs it. Dixit's  Emacs methods are nothing too special, yet he presented this lecture in front of experience Emacs users (programmers even!) who asked _him_ questions. Dixit is the kind of writer who dared to wonder about something very specific his software couldn't do, until he encountered Emacs. When he realized there's a "bit" of a learning curve to Emacs, he didn't think much about it and started learning. Not because he's a masochist, or because he has tons of times, or because he's a genius, but because his desire to write the way _he wants to_ was bigger than any alternations the comfort of the "this-is-how-it-is" software offered him. So he dared, persisted, and well, as far as I know, he still uses Emacs today.
+At one point I asked about this on Reddit but didn't get answers. The question was mostly left ananswered, I believe, because folks didn't understand what I'm asking exactly. That's because I didn't know what I was looking for. After all, if I had a more concrete idea, I'd probably find this in Org manual:
 
-Not too long ago, [I took my first steps](https://medium.com/@Josh%5FRollins/writing-post-d044aac72d0) toward leaving Google Documents, which has been my go-to writing tool for a while. At the time, I haven't even heard of Emacs. Google Docs was very convenient, especially on the Chromebook I had. I've been using Bullet points in posts for a while (as evident in the post mentioned) and Org-mode was something that "clicked" loudly in my head, with a few exclamation marks, and I just _had_ to try it. Did I have Chutzpah? You could say so, I'd call it an obsession with writing apps. At the time, you never know. People who keep talking about who daring they are not daring at all.
+> template
+>
+> The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. The string with escapes may be loaded from a template file, using the special syntax ‘(file "template filename")’. See below for more details.
 
-Like many others who use Emacs today, I want it to be more accessible to the public at large. But, also like many other who use Emacs today, I realize that the "quest for Emacs" is not something you can throw at people through a marketing campaign. There's nothing easy, pretty, or "sexy" about Emacs. You have to earn using Emacs through  months of careful customization. My current setup, for example, includes these customizations from vanilla Emacs:
+This little paragraph of text can be found about half a page down [in the manual](https://orgmode.org/manual/Template-elements.html#Template-elements). I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn't know I can use a _file_ as a template reading it.
 
-1.  My Window size is configured to be bigger than Emac's default for my Ultra-Wide screen
-2.  I use company-mode to auto-complete words
-3.  I use Emac's Abrrev (which I customized) to include common words and phrases
-4.  I write posts in Org-mode and publish directly to GitHub through [ox-hugo](https://ox-hugo.scripter.co/) and [magit](https://magit.vc/)
-5.  I have [visual lines mode](https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Visual-Line-Mode.html) on
-6.  There are no icons in my tool bar (though I find the menu itself still useful)
-7.  I've added many words to the built-in dictionary
-8.  custom key shortcuts for spellchecking, refreshing buffer, and others
+There's no clear statement that says you can load a capture from a file; rather, it states that "_the string with escapes_ may be loaded from a file...". To me, this means that if I want to include my template's definition in a file I can do so instead of using my init. For example, here's a code from my template:
 
-And there are more (Ivy, which comes with Swiper...) and still more to come. I use _my_ Emacs so much and so often that it's hard to break it apart back to the different pieces that make it. It's memorized by my fingers more than my brain. It's all a careful process of picking and choosing what I want and where I want it.
+```nil
+  ("j" "Journal" entry (file+datetree "~/Documents/Work/Setups.org")
+"**** %<%H:%M> about %a \n%?" :tree-type week)
+```
 
-Emacs is not something you give to someone. It's something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I'd argue that nothing _requires_ customization like as Emacs does. that's what makes Emacs a lifetime-long tool, and why (I think) after all these years, it's still given out in a package that is pretty much the same.
+So if for some reason I wouldn't want the _above snippet_ in my init (or in my case, my org file), I could throw it into a different file. I didn't bother with it because I'm comfortable with having my capture template _"string with escapes"_ where it is. Further, the manual says "see below for more details," and indeed, there are details: of properties which are part of the "string with escapes." There's nothing that tells me I can have my whole template, huge checklists and all, in another file. And, as far as I know, there's no other reference to files as template anywhere in the manual. So I just figured I'm imagining things and moved on.
 
-All of the above is necessary (at least I'd like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the "writing tools that get in the way of writing." In Emacs, the things that stand in the way of your writing are things you haven't changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is... You. There cannot be anything else because every single part of Emacs is designed to be broken down to do _exactly_ what you want it to do.
+I would have kept going in circles and dismiss this idea as non-existant again, if it wasn't for a note somewhere in my journal that I've seen someone pulling a template from a file. I _knew_ it is possible, and because of this I went looking for a solution to a specific problem. I couldn't find that example in my journal then nor can I now (which is why I didn't post it), but I searched online more agressively this time, using different queries. I managed to find a couple of questions related to org-mode in emacs.stackexchange.com that were not directly related to my issue, but had the following lines in the code (I cut out the paths as the do not matter here)
+
+```nil
+("j" "Journal" entry (file+datetree "...")
+(file "..."))
+```
+
+And then, I found [this talk](https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf) by [Jonathan E. Magen](https://twitter.com/yonkeltron). Of particular interest was slide 6. Right there, in front of me, the title was "Template stored in file," and below it, a very simple _example_ that tells org-mode to read the template's content from a file. So, it is true. Org-mode _can_ read templates from other org files, even though the manual (so far) has failed to tell me that 20 times or so.
+
+I wrote the code as I understood it from the examples I found and added `(file "~/Documents/Personal/journal-tmpl.org")` instead of that "string with escapes", and got a an error: "org-capture: Capture template ‘j’: Template is not a valid Org entry or tree".
+
+In the past when I saw this error at a certain point, it was another proof I can't use org files as templates. After all, journal-tmpl.org was a good org file that opens otherwise, just not through capture. The conclusion then was, capture can't do it. But now I was convinced the concept of a template-file exists, and I looked at the error differently: Org-mode (or emacs for that matter) should open _any_ file if I tell it to, even if it's mp4 or a doc. I would see gybrish on my screen, but it would open. It follow then that if I see this error it means it is meant to work, but not in this particular case. This error now became an encouragement that I am headed in the right direction.
+
+The error was not the conspet, or even the syntax of my capture template. The problem was my org file. What I should have asked was "what's wrong with my org template file" and paste the code, but I didn't know to ask that. I didn't know this was possible to ask it. Now, that I finally knew what the real error was, I was in the right mindset to work it out. And work it out I did.
+
+As it turns out (for reasons I'm still trying to understand), ny regular or file that starts with certain options like `#+TITLE:` and `#+TODO:` with several headers already nested inside of it fails to work. However, if I simplify the file down to the headers I want and the checklist itself, it did work. Right in front of me, I had a long checklist I always wanted inside org capture:
+
+then:
+
+-   Now I need 2 letter template?
+-   Why manual no good again
+
+now need:
+
+-   properties includes
+-   not bothering with manual

@@ -4,36 +4,36 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-06-21T12:32:11-04:00</lastmod>
+    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</loc>
-    <lastmod>2019-06-21T12:30:10-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</loc>
+    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2019-06-21T12:32:11-04:00</lastmod>
+    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-06-21T12:32:11-04:00</lastmod>
+    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
-    <lastmod>2019-06-21T12:30:10-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/tags/linux/</loc>
+    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
-    <lastmod>2019-06-21T12:32:11-04:00</lastmod>
+    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -56,12 +56,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</loc>
     <lastmod>2019-05-23T20:39:32-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/linux/</loc>
-    <lastmod>2019-05-23T20:39:32-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -200,6 +194,12 @@
   <url>
     <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</loc>
     <lastmod>2019-02-23T23:29:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
+    <lastmod>2019-03-12T07:49:37-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
