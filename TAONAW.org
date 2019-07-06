@@ -1556,84 +1556,111 @@ And there are more (Ivy, which comes with Swiper...) and still more to come. I u
 Emacs is not something you give to someone. It's something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I'd argue that nothing /requires/ customization like as Emacs does. that's what makes Emacs a lifetime-long tool, and why (I think) after all these years, it's still given out in a package that is pretty much the same.
 
 All of the above is necessary (at least I'd like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the "writing tools that get in the way of writing." In Emacs, the things that stand in the way of your writing are things you haven't changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is... You. There cannot be anything else because every single part of Emacs is designed to be broken down to do /exactly/ what you want it to do. 
-*** TODO Capture in Files
+*** WIP Org-capture in Files                                        :orgmode:
     :PROPERTIES:
-    :EXPORT_FILE_NAME: of-writing
-    :EXPORT_HUGO_PUBLISHDATE: 2019-06-22:
+    :EXPORT_FILE_NAME: org-capture-in-files
+    :EXPORT_HUGO_PUBLISHDATE: 2019-07-06:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
+
+I've been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there's so much to explain, I can't include it all in one go. Here you go, part one of my latest adventure in org mode: org-capture from org files. 
 
 
 #+hugo: more
 
-intro: 
-- Files as templates
-
-# then: 
-# - Why need?
+**** Why a File as a Capture Template?
 
 Why do I need a template based in a file? To understand that, I need to explained some of the work I do as a help desk person in a large organization. 
 
-Among other things, my work includes prepping desktop and laptop computers for clients. For the most part, this is done from a clone or an image, and all software is installed remotely. But there are still many cases where the automatic system fails and we have to do hands-on deployment. Some scenarios include: 
+Among other things, my work includes prepping desktop and laptop computers. For the most part, this is done from an image, and all software that is not included is installed remotely from our SMA. However, there are still many cases where the automation fails or does not apply and hands-on deployment is needed. Some scenarios include: 
 
-- BYOD device, which was not imaged with our image
-- Prepping Macs (part of my role is to automate these)
-- Replacement of old computer (which have data stored locally, and require a cumborsome DLP proccess)
+- BYOD devices, which need to be evaluated and prepared for our environment.
+- Macbooks, which we can't automate yet for political-human reasons.
+- Replacements of old computers, which come in different models and different usage (and abuse) scenarios.
 
-And there are more, like Malware removal proccesses, adding a new printer to our server, etc. Because we're a big company, many times I find that the technical checklist is half of the proccess. Communication with the clients, managers, and the purchasing people (and getting the right information from everyone as well as documenting it) is a big part of the checklist. 
+These scenarios are complex but similar: a natural perfect place to use checklists. We're a big company, and many times I find that checklists is half of the job. Communication with clients, managers, purchasing staff, as well as getting the right information from everyone and documenting it, is also a big part of the checklist. The difference between a job that was done with a checklist and one that was done without is so obvious that my checklists have been adopted throughout the team and I was asked several time to guide others (especially new comers) because of "my" organization. I find this humorous, because if you know me, you'd know I've  always been /far/ from organized. It's all org-mode, to which I'm very thankful. 
 
 # - Why manual no good
 
-I've had a long checklist handy in a "setups.org" file which I used to copy-paste into new projects. The idea of having a file as a template for capture occured to me in the past, but because I've never seen a real-world example and didn't see a clear reference to it in the manual made me dismiss this idea as figure of my imagination. 
+In the past, I've had a long checklist "template" in a header in "setups.org" file which I used to copy-paste into new projects. The idea of having a file as a template for capture occurred to me in the past, but because I've never seen a real-world example and didn't see a clear reference to it in the manual, I dismissed the idea as wishful thinking.
 
-At one point I asked about this on Reddit but didn't get answers. The question was mostly left ananswered, I believe, because folks didn't understand what I'm asking exactly. That's because I didn't know what I was looking for. After all, if I had a more concrete idea, I'd probably find this in Org manual: 
+**** Why Finding the Answer Took so Long?
+
+I asked about using other org files as templates on Reddit in the past too, but didn't get answers. That's because, I believe, folks didn't understand what I'm asking exactly. And that, in turn, was because I didn't know what I was looking for exactly. After all, if I had a more concrete idea, I'd probably read this in Org manual for what it was: 
 
 #+BEGIN_QUOTE
 template
 
-    The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. The string with escapes may be loaded from a template file, using the special syntax ‘(file "template filename")’. See below for more details.
+    The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. *The string with escapes may be loaded from a template file, using the special syntax ‘(file "template filename")’.* See below for more details.
 #+END_QUOTE
 
-This little paragraph of text can be found about half a page down [[https://orgmode.org/manual/Template-elements.html#Template-elements][in the manual]]. I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn't know I can use a /file/ as a template reading it. 
+This little paragraph of text can be found about half a page down [[https://orgmode.org/manual/Template-elements.html#Template-elements][in the manual]]. I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn't know I can use a /file/ as a template just from reading it. But why?
 
-There's no clear statement that says you can load a capture from a file; rather, it states that "/the string with escapes/ may be loaded from a file...". To me, this means that if I want to include my template's definition in a file I can do so instead of using my init. For example, here's a code from my template: 
+There's no clear statement that says you can load a capture from a file; rather, it states that "/the string with escapes/ may be loaded from a file...". To me, this means that I can include my template's definition in a separate file instead of specifying it in my init file. For example, here's a code from my template: 
 
 #+BEGIN_SRC
           ("j" "Journal" entry (file+datetree "~/Documents/Work/Setups.org")
         "**** %<%H:%M> about %a \n%?" :tree-type week)
 #+END_SRC
 
-So if for some reason I wouldn't want the /above snippet/ in my init (or in my case, my org file), I could throw it into a different file. I didn't bother with it because I'm comfortable with having my capture template /"string with escapes"/ where it is. Further, the manual says "see below for more details," and indeed, there are details: of properties which are part of the "string with escapes." There's nothing that tells me I can have my whole template, huge checklists and all, in another file. And, as far as I know, there's no other reference to files as template anywhere in the manual. So I just figured I'm imagining things and moved on.
+So, if for some reason I wouldn't want the /above snippet/ in my init file, I could throw it into a different dedicated file. I didn't bother with it because I'm comfortable with having my capture template /"string with escapes"/ where it is. Further, the manual says "see below for more details," and there aren't any. Not of usage in a file, that is, but what is referred as "string with escapes." There's nothing that tells me I can have my /whole/ template, huge checklist and all, in another file. And, as far as I know, there's no other reference to files as template anywhere in the manual. So I just figured this cannot be done, unless I want to specify a whole checklist in the string above, such as ~[ ] checklist item one /n [ ] checklist item two /n~ and so forth. I also didn't know how to tell org-capture to reserve the indent for the sub-lists I needed for some of the items on my complex checklists. This looked very cumbersome to do inside the code itself when I already had an org file with the checklist to copy-paste from.
 
-I would have kept going in circles and dismiss this idea as non-existant again, if it wasn't for a note somewhere in my journal that I've seen someone pulling a template from a file. I /knew/ it is possible, and because of this I went looking for a solution to a specific problem. I couldn't find that example in my journal then nor can I now (which is why I didn't post it), but I searched online more agressively this time, using different queries. I managed to find a couple of questions related to org-mode in emacs.stackexchange.com that were not directly related to my issue, but had the following lines in the code (I cut out the paths as the do not matter here)
+But there was a note somewhere in my journal that said I've seen someone pulling a template from a file. I wrote down that I /know/ it is possible. So two weeks ago I went looking around for this elusive option again, with a somewhat different attitude - I figured that if I find nothing, at least I'll learn other people's work around and could find a way to get what I want. 
+
+**** How I Finally Found the Solution
+
+I searched online more aggressively this time, using different queries. I managed to find a couple of questions related to org-mode in emacs.stackexchange.com that were not directly related to my issue, but had the following lines in the code (I cut out the paths as they do not matter here)
 
 #+BEGIN_SRC
        ("j" "Journal" entry (file+datetree "...")
        (file "..."))
 #+END_SRC
 
-And then, I found [[https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf][this talk]] by [[https://twitter.com/yonkeltron][Jonathan E. Magen]]. Of particular interest was slide 6. Right there, in front of me, the title was "Template stored in file," and below it, a very simple /example/ that tells org-mode to read the template's content from a file. So, it is true. Org-mode /can/ read templates from other org files, even though the manual (so far) has failed to tell me that 20 times or so. 
+And then, I found [[https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf][this talk]] by [[https://twitter.com/yonkeltron][Jonathan E. Magen]]. Of particular interest was slide 6. Right there, in front of me, the title was "Template stored in file," and below it, a very simple /example/ that tells org-mode to read the template's content from a file. It was as it is in the manual, but this time, the slide was very specific, tell me: "this is how you tell org to read from a file." It was that simple. So simple that it was right under my nose the whole time, but I kept missing it because there was no clear example or scenario; it was another option that was mentioned briefly as a head nod, and here, someone finally pointed a finger it at for me. So, this was true. Org-mode /can/ read templates from other org files. 
 
-I wrote the code as I understood it from the examples I found and added ~(file "~/Documents/Personal/journal-tmpl.org")~ instead of that "string with escapes", and got a an error: "org-capture: Capture template ‘j’: Template is not a valid Org entry or tree". 
+I wrote the code as I understood it from the examples I found and added ~(file "~/Documents/Personal/journal-tmpl.org")~ to the code above instead of that "string with escapes", and got a an error: =org-capture: Capture template ‘j’: Template is not a valid Org entry or tree=. 
 
-In the past when I saw this error at a certain point, it was another proof I can't use org files as templates. After all, journal-tmpl.org was a good org file that opens otherwise, just not through capture. The conclusion then was, capture can't do it. But now I was convinced the concept of a template-file exists, and I looked at the error differently: Org-mode (or emacs for that matter) should open /any/ file if I tell it to, even if it's mp4 or a doc. I would see gybrish on my screen, but it would open. It follow then that if I see this error it means it is meant to work, but not in this particular case. This error now became an encouragement that I am headed in the right direction. 
+I saw this in the past, I remembered. Somehow I did got this far before. However, when I saw this error then, it was yet another proof I couldn't use org files as templates. After all, journal-tmpl.org was a good org file that opens otherwise, just not through capture. The conclusion /then/ was, wrongly, that capture can't do it. 
 
-The error was not the conspet, or even the syntax of my capture template. The problem was my org file. What I should have asked was "what's wrong with my org template file" and paste the code, but I didn't know to ask that. I didn't know this was possible to ask it. Now, that I finally knew what the real error was, I was in the right mindset to work it out. And work it out I did. 
+Now, through the eyes of someone who's looking at work-arounds, my attitude was different. Org-mode, I knew, (or Emacs for that matter) should open /any/ file if I tell it to, even if an mp4 or a JPEG file. I would see gibberish on my screen, yes, but it would open. It follow then that if I see this error, it means that capture /should/ work, and what I wrote /does/ tell it to open the template from a file, but something in this file specifically is wrong. Suddenly, this error became an encouragement that I am headed in the right direction. The error was telling me, "hey, I want to do this for you, but your file is messed up, sorry." What I should have asked folks should have been "what's wrong with my org template file" and paste the code in Reddit, but I didn't know to ask that. Now, that I finally knew what the real problem was, I was in the right mindset to work it out. And work it out I did. 
 
-As it turns out (for reasons I'm still trying to understand), ny regular or file that starts with certain options like ~#+TITLE:~ and ~#+TODO:~ with several headers already nested inside of it fails to work. However, if I simplify the file down to the headers I want and the checklist itself, it did work. Right in front of me, I had a long checklist I always wanted inside org capture:   
+As it turns out (for reasons +I'm still trying to+ I do understand now), my regular org file started with certain options like ~#+TITLE:~ and ~#+TODO:~ with several headers already nested inside of it failed to work. However, if I simplify the file down to the headers I want and the checklist itself, it did work. The reason for that, I know now, is exactly what the manual said all along: "*this is a string with escape codes*, which will be replaced depending on time and context of the capture call..." Org-capture needs specifically org-capture syntax to work with, and the org-mode options at the top of the file specified above are not org-/capture/ syntax; they are /org-mode/ syntax. I need to get them out of the way and feed org-capture org-capture syntax, just like I did in my init. As a matter of fact, as I now know, I can specify the entire syntax (or "strings with escapes") under my first header and it will work just fine. I don't even need to specify it in my init. Yes, this is what the manual said. But no, this is not what it said to /me/. I just couldn't see it. 
 
- 
+**** What Does it Look Like?
 
+Here's an example of one of my org files templates. Notice how the very first thing is the header itself. Turns out it /must/ be the first thing in org-capture syntax. Then the second line specifies what the template does just like it did in my init. Finally, the checklist itself:
 
+#+BEGIN_SRC
+* Setup Proccess [0%] 
+%^{Ticket}p %^{ID}p %^{Computer}p
+- [ ] Rename (SLS-ID-MAC)
+- [ ] Check OS Updates
+- [ ] Encryption
+- [ ] A/V
+  - [ ] Install
+  - [ ] Manage (overwrite XML file)
+- [ ] SMA
+- [ ] Restart 
+- [ ] WiFi
+- [ ] VPN 
+- [ ] Another App
+  - [ ] Install
+  - [ ] Test
+  - [ ] Test w/ VPN
+- [ ] Asset Registration
+#+END_SRC 
 
-then: 
-- Now I need 2 letter template?
-- Why manual no good again
-now need:
-- properties includes
-- not bothering with manual
+The header has a percentage that changes as I fill in the checklist items. This allows me to see how close I am to be done straight from the agenda view. The second line tells org-capture to prompt me for the ticket number, ID number of the person, and the computer name. Then I have a blank list ahead of me, which I can fill up according to whatever is already done, before I capture it. 
 
-*** WIP Quick Updates: June                                   :orgmode:linux:
+This particular list is summoned by a very similar line like the one I have above regarding my journal. I just have a different file specified (say mac-checklist.org instead of journal-tmpl.org
+
+**** Conclusions
+
+The result are four checklists I'm now working with and tweaking to perfection, summoned directly from org-capture. Because I was now encouraged to work with different checklists all in one place, that meant I needed to look for a way to have "sub menus" inside org-capture; that is, to tell org I want to capture a checklist, and it should then take me to a checklist capture menu, and then I wanted to choose one of my checklists. From there, I also learned of more org mode capture options that completely changed how I saw my org-capture usage to the point of re-inventing it in my work flow. This is too much to include in one post, so I hope to specify on that soon. For now, the big lesson I learned, and I hope anyone who every starts using org-mode is this:
+
+If you think something is possible, it probably is. One way or another, it is. Rather behind a few paragraphs of code or a mysterious hint in a manual, it's worth exploring with an open mind. And for those of you who used org-mode for years, especially from programming background, I hope this post serves to show that some of us struggle not with the code, but lack of good, clear examples. We need a story, a scenario, a /reason/ to explore. Please give us more.  
+
+*** PUBLISHED Quick Updates: June                             :orgmode:linux:
 :PROPERTIES:
 :EXPORT_FILE_NAME: quick-updates-June
 :EXPORT_HUGO_PUBLISHDATE: 2019-06-30:
