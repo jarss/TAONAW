@@ -6,10 +6,19 @@
     <description>Recent content in Help Desk Head Desks on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Jun 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jul 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/help-desk-head-desk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org-capture in Files</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&amp;rsquo;s so much to explain, I can&amp;rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Quick Updates: June</title>
