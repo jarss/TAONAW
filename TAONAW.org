@@ -1556,7 +1556,7 @@ And there are more (Ivy, which comes with Swiper...) and still more to come. I u
 Emacs is not something you give to someone. It's something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I'd argue that nothing /requires/ customization like as Emacs does. that's what makes Emacs a lifetime-long tool, and why (I think) after all these years, it's still given out in a package that is pretty much the same.
 
 All of the above is necessary (at least I'd like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the "writing tools that get in the way of writing." In Emacs, the things that stand in the way of your writing are things you haven't changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is... You. There cannot be anything else because every single part of Emacs is designed to be broken down to do /exactly/ what you want it to do. 
-*** WIP Org-capture in Files                                        :orgmode:
+*** PUBLISHED Org-capture in Files                                  :orgmode:
     :PROPERTIES:
     :EXPORT_FILE_NAME: org-capture-in-files
     :EXPORT_HUGO_PUBLISHDATE: 2019-07-06:
@@ -1677,6 +1677,83 @@ I discovered I can use .org files as templates for capture. This opens the possi
 As a result of the above, I am also changing my workflow in org-mode, or precisely, how I'm using my files. I've decided to scale back from my [[https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/][multi-file approach]] and use only two or three major files, and I'm in the process of testing this. 
 
 Mike Elgan writes [[https://www.computerworld.com/article/3405559/google-needs-to-pull-itself-together.html][about Google products that should be merged]], and it made me remember how I used to have the same issues until I switched over to Linux and Emacs. People who use Linux have it better in terms of productivity. I want to discuss why. 
+
+*** WIP Submenus in org-mode Capture                                :orgmode:
+:PROPERTIES:
+    :EXPORT_FILE_NAME: org-capture-in-files
+    :EXPORT_HUGO_PUBLISHDATE: 2019-07-14:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :END:
+
+[[https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/][In my last post]], I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn't give it enough exposure in my opinion. Turns out it [[https://irreal.org/blog/?p=8161][wasn't just me]] either.
+
+As I was expanding my checklists and learning more "trivial" org-capture features, I discovered more useful things, but ran out of time to write about them. It's now time to get back to more "basics" of org-capture again for some helpful tips.
+
+#+hugo: more
+
+When you build your org-mode templates, it's possible to create sub-menus for better organization. Another way to explain it is to think of "categories" in your capture. 
+
+Says [[https://orgmode.org/manual/Template-elements.html#Template-elements][the manual]]:
+
+#+Begin_quote
+Keys
+
+The keys that selects the template, as a string, characters only, for example ‘"a"’, for a template to be selected with a single key, or *‘"bt"’ for selection with two keys. When using several keys, keys using the same prefix key must be sequential in the list and preceded by a 2-element entry explaining the prefix key*, for example.
+#+End_quote
+
+The bold part was another part that I had to read several times to understand. I knew there's something different because two letters are used, but my capture template failed to work the first couple of times. I figured it out, and here it is: 
+
+#+Begin_src
+ (setq org-capture-templates
+  (quote (
+          ("s" "Manual Laptop Setups")
+          ("sd" "Staff Dell Laptops" entry 
+          (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "Staff Dells") 
+	  (file "/mnt/veracrypt1/Work/setup-dells.org"))
+	  ("sa" "Staff Apple Laptops" entry 
+          (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "Staff MacBooks") 
+	  (file "/mnt/veracrypt1/Work/setup-macs.org"))
+          ("sm" "SLS-Mac" entry
+	  (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "SLS-Mac")
+	  (file "/mnt/veracrypt1/Work/setup-SLS-Mac.org"))
+	  ("sw" "SLS-Windows" entry
+	  (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "SLS-Windows")
+	  (file "/mnt/veracrypt1/Work/setup-SLS-Mac.org"))
+... 
+#+End_src
+
+Let's take it piece by piece from the top. Keep in mind this is not the entire template, just the relevant part. If you just copy-paste it, it will fail (it's incomplete). 
+
+First, as soon as I start the capture templates, it seems as if I am starting to create another one /inside/ the first one. That's what the manual means. In my opinion, it stumbles on its own words. Another case where an example (like the above) would go a long way. What I did is basically created a /sub-menu/ for "Manual Laptop Setups."
+
+The result is that when I call org-capture, I get the following:
+
+#+Begin_src
+Select a capture template
+===========================
+
+[s]... Manual Laptop Setups...
+[i] INC (my incident template)
+[e] Event (my event and journal template)
+#+End_src
+
+I have more templates going down, but I want you to look at the very first one. That =[s]= with the three dots after it indicates pressing =s= will take me to a sub-menu of the capture template, which looks like this: 
+
+#+Begin_src
+Select a capture template
+===========================
+
+s [d] Staff Dell Laptops
+s [a] Staff Apple Laptops
+s [m] SLS-Mac
+s [w] SLS-Windows
+#+End_src
+
+You can see form how the menu looks like that all of these items start with an =s= but this time without the brackets. The brackets indicate what you can press /now/ after you've already pressed s to get into the sub-menu you're currently in. That is, d for Dell checklist, a for Apple checklist, and so on. 
+
+Each one of these sub-templates is a checklist based in an org file like I explained in the previous post. The templates are all org files (like ~setup-SLS-Mac.org~ for example, the third template) which are nothing but checklists like I pointed out in the previous post. 
+
+This way I can have an entire "category" of capture templates, with S for setup, without having a long list with letters that won't seem related. 
 
 ** JRL
    :PROPERTIES:
@@ -1823,7 +1900,7 @@ Finally, it's important to leave some empty time on your calendar. Some folks pe
 
 It's always important to look back and reflect on emotional events that take place to learn from them and improve for the next time - good or bad. We are all learning creatures, and we can always "self-upgrade". Personally, writing this post already helped me quite a bit. I hope this would help someone else reading it in the future. 
 
-*** WIP What has Been Going on                                         :life:
+*** PUBLISHED What has Been Going on                                   :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: JRL
     :EXPORT_FILE_NAME: updates
@@ -1841,6 +1918,34 @@ My mornings, which were once completely empty and dedicated to writing, now shar
 Emacs and Org mode - not much changed there, as a matter of fact. I tried the [[https://github.com/myuhe/org-gcal.el][Gcal]] for Emacs and ended up disappointed after I figured out how to set it up. [[http://www.orgzly.com/][Orgzly]], on the other hand, keeps evolving and becomes a must-have tool for all org-mode users with Android devices in my opinion. 
 
 So there's quite a bit to talk about and expand on. I hope to get back on track soon with a new post. In the meantime, feel free to say hello or read my older posts.  
+
+
+*** TODO Running
+:EXPORT_HUGO_SECTION: JRL
+    :EXPORT_FILE_NAME: of-running
+    :EXPORT_HUGO_PUBLISHDATE: 2019-07-11:
+    :END:
+
+I managed to wake up at 5:30 today (this used to be my regular time before it shifted to 6:30) which gave me enough time to go for a run. It was glorious. My apartment is conviniently located next to good tracks just waiting to be used. 
+
+There are many things I want to mention when it comes to running, but I want to keep this post simple. I want to focus on a couple of tips that, I hope, would help those who have considered running and failed even though they know already it's enjoyable and they want to do it. 
+
+First, as a person who's getting back on this horse a third time in his life, let me state the obvious: it's a proccess. It's not something you just do one day, or at least, do /well/ in one day. It requires patience, which I don't always have as a person who used to run and you may be lacking as well. Preppering to run requires that you build certain lung capacity and - I think many guys forget this - leg muscle. 
+
+The obvious place to start working on those is the gym. Even if you're completely out of shape, all you need to do to start is get on the elipitcal (that's my favorite) or another cardio machine that lets you keep relatively stationary (this rules running tracks and rowing machines out). From there, watch your favorite YouTube videos or even read a book. Build your lung capacity slowly buy going for longer and longer time period first, and then increase the difficulties. As for the leg musckle, use the machines availble to you, and work especially on the muscles the reinforce your knees. Always mind your knees, and be as kind to them as possible (hint: running is usually /not/ being kind to your knees). 
+
+The best runs are the ones where you're free to take in the sounds and sighs, even the smells. It's fine listening to music at the gym or at practice runs, those that you do to practice and run in loops, but when you really run outside in the early morning, running becomes a sort of a religious experience almost. You want to tune in, not out. Leave the earphones at home. 
+
+Speaking of leaving stuff, you can't leave the keys and your phone. Your keys is obvious, phone -- depends if you want to record your run (and what you use) and how much in touch you want to be /able to/ be with the world. I find that the best way to carry a phone and a set of keys is still with a fanny pack which I adjust to my smaller-than-avrage figure. 
+
+Another thing I discover is about sweat. When you run and sweat, rubbing your brow hard to get it out of your eyes is not a good idea. What you want to do is to wipe it gently, so the forehead remains wet, just without drops. This prevents the sweat from rushing back to the completely dry gap and pour back toward your eyes. The breeze you create automatically when you run, along with the thing lair of wetness, causes this sweat to harden and become sticky (I know it's gross but stay with me) and this helps preventing additional sweat from going into your eyes. Of course, if you sweat a whole lot, this won't work. 
+
+Running uphil and downill: when running uphill, lean forawrd into the rise, and "claw" into the air with your palms. This will help with the balance. When running down, lean back slightly and "push" aways from you slightly with your hands. This is also the only time you want to run with your feet fully on the ground, ball of the anckle hitting the road, to aid with the knees: when you're leaning back, your calfs take more of the weight this way. Be careful - I find that running with your anckles down to the road like this puts /more/ weight on your knees except when you're running downhill. It can also hurt your back. Normally, you want to use the front of your feet, your anckles should not touch the road. Get shoes that aid you to do that. 
+
+Speaking of knees: if they start hurting, stop. Just stop. Your knees are not a muscle, and you will damage them. Pains should come from your muscles, not from your bones. 
+
+Lastly, enjoy the run and do what you think you should to make it enjoyable. If a certain path looks interesting, take it. Worse that happens you have to go back. If you feel you need to slow down to catch your breath, that's OK. Make a visual sign to yourself (say the third tree coming, or a sign up ahead) that would tell you to try again at that location, and slow down to rest a bit. 
+
 
 
 
