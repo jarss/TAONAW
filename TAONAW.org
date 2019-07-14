@@ -1678,9 +1678,9 @@ As a result of the above, I am also changing my workflow in org-mode, or precise
 
 Mike Elgan writes [[https://www.computerworld.com/article/3405559/google-needs-to-pull-itself-together.html][about Google products that should be merged]], and it made me remember how I used to have the same issues until I switched over to Linux and Emacs. People who use Linux have it better in terms of productivity. I want to discuss why. 
 
-*** WIP Submenus in org-mode Capture                                :orgmode:
+*** PUBLISHED Submenus in org-mode Capture                          :orgmode:
 :PROPERTIES:
-    :EXPORT_FILE_NAME: org-capture-in-files
+    :EXPORT_FILE_NAME: sub-menus-in-org
     :EXPORT_HUGO_PUBLISHDATE: 2019-07-14:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
