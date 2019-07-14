@@ -13,17 +13,6 @@
     
     <item>
       <title>Submenus in org-mode Capture</title>
-      <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
-
-&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Submenus in org-mode Capture</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</link>
       <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
       
@@ -31,6 +20,15 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
 
 &lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Org-capture in Files</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&amp;rsquo;s so much to explain, I can&amp;rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;</description>
     </item>
     
     <item>
