@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/bmc/</loc>
-    <lastmod>2019-07-14T17:50:53-04:00</lastmod>
+    <lastmod>2019-07-14T17:53:58-04:00</lastmod>
   </url>
   
   <url>
@@ -19,46 +19,57 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-07-14T13:21:59-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</loc>
-    <lastmod>2019-07-14T13:21:59-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2019-07-14T13:21:59-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-07-14T13:21:59-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
-    <lastmod>2019-07-14T13:21:59-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</loc>
-    <lastmod>2019-07-14T13:21:32-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</loc>
-    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:41-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/linux/</loc>
-    <lastmod>2019-07-01T08:05:47-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:41-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</loc>
+    <lastmod>2019-07-28T07:21:27-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
+    <lastmod>2019-07-28T07:21:27-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -75,7 +86,19 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/</loc>
-    <lastmod>2019-05-25T14:13:02-04:00</lastmod>
+    <lastmod>2019-07-28T07:21:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/flameshot/</loc>
+    <lastmod>2019-07-28T07:21:04-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/tools/</loc>
+    <lastmod>2019-07-28T07:21:04-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -91,18 +114,18 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/mu4e-not-for-me/</loc>
-    <lastmod>2019-05-23T20:33:53-04:00</lastmod>
+    <lastmod>2019-07-28T07:20:59-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/email/</loc>
-    <lastmod>2019-05-23T20:33:53-04:00</lastmod>
+    <lastmod>2019-07-28T07:20:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/mu4e/</loc>
-    <lastmod>2019-05-23T20:33:53-04:00</lastmod>
+    <lastmod>2019-07-28T07:20:59-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,7 +142,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</loc>
-    <lastmod>2019-04-13T10:06:25-04:00</lastmod>
+    <lastmod>2019-07-28T07:20:46-04:00</lastmod>
   </url>
   
   <url>
@@ -201,8 +224,13 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/privacy/</loc>
-    <lastmod>2019-02-23T23:29:56-05:00</lastmod>
+    <lastmod>2019-07-28T07:17:25-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</loc>
+    <lastmod>2019-07-28T07:14:38-04:00</lastmod>
   </url>
   
   <url>
@@ -212,7 +240,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/blogging/</loc>
-    <lastmod>2019-02-24T08:51:57-05:00</lastmod>
+    <lastmod>2019-07-28T07:19:02-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -235,7 +263,12 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</loc>
-    <lastmod>2019-02-23T23:27:30-05:00</lastmod>
+    <lastmod>2019-07-28T07:19:28-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</loc>
+    <lastmod>2019-07-28T07:19:11-04:00</lastmod>
   </url>
   
   <url>
@@ -250,8 +283,18 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</loc>
+    <lastmod>2019-07-28T07:17:25-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</loc>
     <lastmod>2019-02-23T23:29:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</loc>
+    <lastmod>2019-07-28T07:19:02-04:00</lastmod>
   </url>
   
   <url>
@@ -261,7 +304,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/hugo/</loc>
-    <lastmod>2019-02-23T23:29:45-05:00</lastmod>
+    <lastmod>2019-07-28T07:19:02-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -271,9 +314,19 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</loc>
+    <lastmod>2019-07-28T07:16:45-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/macos/</loc>
-    <lastmod>2019-02-23T23:29:59-05:00</lastmod>
+    <lastmod>2019-07-28T07:16:45-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</loc>
+    <lastmod>2019-07-28T07:16:20-04:00</lastmod>
   </url>
   
   <url>
@@ -283,13 +336,13 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/network/</loc>
-    <lastmod>2019-02-23T23:30:02-05:00</lastmod>
+    <lastmod>2019-07-28T07:16:20-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/raspberry-pi/</loc>
-    <lastmod>2019-02-23T23:30:02-05:00</lastmod>
+    <lastmod>2019-07-28T07:16:20-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -299,35 +352,24 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/blog/</loc>
-    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/blog/desktopwisdom/</loc>
-    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</loc>
     <lastmod>2019-02-24T22:45:16-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</loc>
+    <lastmod>2019-07-28T07:15:32-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/support/</loc>
-    <lastmod>2019-02-24T22:45:16-05:00</lastmod>
+    <lastmod>2019-07-28T07:15:32-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/blog/video_journal_evolved/</loc>
-    <lastmod>2018-10-23T08:44:27-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/blog/of_people_and_money/</loc>
-    <lastmod>2018-10-23T08:45:12-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</loc>
+    <lastmod>2019-07-28T07:18:11-04:00</lastmod>
   </url>
   
   <url>
@@ -336,29 +378,18 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/blog/emacs-windows-managment/</loc>
-    <lastmod>2018-10-23T08:24:32-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</loc>
+    <lastmod>2019-07-28T07:18:21-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/blog/org-update/</loc>
-    <lastmod>2018-10-16T17:47:49-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</loc>
+    <lastmod>2019-07-28T07:18:45-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/blogging/</loc>
-    <lastmod>2019-02-23T23:29:42-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/blog/hugo-beginnings/</loc>
-    <lastmod>2018-10-16T22:52:10-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/blogging/hugo-beginnings/</loc>
-    <lastmod>2019-02-23T23:29:42-05:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</loc>
+    <lastmod>2019-07-28T07:14:59-04:00</lastmod>
   </url>
   
   <url>
@@ -369,12 +400,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</loc>
     <lastmod>2019-03-12T07:49:37-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
-    <lastmod>2019-03-12T07:49:37-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

@@ -43,6 +43,17 @@
     </item>
     
     <item>
+      <title>Of Emacs and Chutzpah</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</guid>
+      <description>&lt;p&gt;Says &lt;a href=&#34;https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments&#34;&gt;Jamie T. Rubin&lt;/a&gt;: &amp;ldquo;As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;My answer to that, considering the theme of this blog and how I&amp;rsquo;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Orgzly: An Interview</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
@@ -148,6 +159,17 @@
     </item>
     
     <item>
+      <title>My Org Capture Templates - Part 3</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
+      <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
+
+&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>CSS Updates</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
@@ -178,6 +200,15 @@
     
     <item>
       <title>How I Write Posts for my Blog</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</guid>
+      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How I Write Posts for my Blog</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</link>
       <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
       
@@ -187,11 +218,29 @@
     
     <item>
       <title>About Removing Company Software</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</guid>
+      <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Removing Company Software</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</guid>
       <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Switching to Hugo - Full Time</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</guid>
+      <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -213,6 +262,24 @@
     </item>
     
     <item>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Hub</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>The Hub</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
@@ -229,6 +296,52 @@
       <guid>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</guid>
       <description>&lt;p&gt;I asked my coworkers the following question:
  &amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Desktop Wisdom</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</guid>
+      <description>&lt;p&gt;I asked my coworkers the following question:
+ &amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Evolvement of Video Journal &amp; Org</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</guid>
+      <description>&lt;p&gt;Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I &lt;a href=&#34;https://jarss.github.io/TAONAW/blog/org-update/&#34;&gt;discussed these&lt;/a&gt; couple of times before: tasks, task notes, and journal.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emacs Windows</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</guid>
+      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo - what takes so long?</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve bseen following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo - what takes so long?</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve bseen following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

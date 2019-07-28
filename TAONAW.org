@@ -1609,6 +1609,8 @@ In order to access my personal org files from work (mostly my journal), I use [[
 
 [[file:static/basic-ssh-security.png]]
 
+
+
 ** BMC
 :PROPERTIES:
    :EXPORT_HUGO_SECTION: BMC
