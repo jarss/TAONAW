@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/bmc/</loc>
+    <lastmod>2019-07-14T17:50:53-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/bmc/</loc>
+    <lastmod>2019-07-14T17:17:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/jrl/</loc>
+    <lastmod>2019-07-14T17:03:01-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
     <lastmod>2019-07-14T13:21:59-04:00</lastmod>
     <priority>0</priority>
@@ -152,11 +167,6 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/jrl/</loc>
-    <lastmod>2019-02-27T08:45:42-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</loc>
     <lastmod>2019-03-03T16:37:32-05:00</lastmod>
   </url>
@@ -196,23 +206,6 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/emacsorg/</loc>
-    <lastmod>2019-02-23T23:30:15-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</loc>
-    <lastmod>2019-02-23T23:29:30-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
-    <lastmod>2019-03-12T07:49:37-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</loc>
     <lastmod>2019-02-24T08:51:57-05:00</lastmod>
   </url>
@@ -227,16 +220,6 @@
     <loc>https://joshrollinswrites.com/tags/git/</loc>
     <lastmod>2019-02-24T08:51:57-05:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-2/</loc>
-    <lastmod>2019-02-23T23:29:26-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</loc>
-    <lastmod>2019-02-23T23:29:22-05:00</lastmod>
   </url>
   
   <url>
@@ -363,11 +346,6 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/emacsorg/org-update/</loc>
-    <lastmod>2019-02-23T23:30:15-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/blogging/</loc>
     <lastmod>2019-02-23T23:29:42-05:00</lastmod>
     <priority>0</priority>
@@ -391,6 +369,12 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</loc>
     <lastmod>2019-03-12T07:49:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
+    <lastmod>2019-03-12T07:49:37-04:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

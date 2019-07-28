@@ -147,15 +147,6 @@
     </item>
     
     <item>
-      <title>emacs</title>
-      <link>https://joshrollinswrites.com/tags/emacs/</link>
-      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>blogging</title>
       <link>https://joshrollinswrites.com/tags/blogging/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
@@ -233,6 +224,15 @@
       <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/support/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://joshrollinswrites.com/tags/emacs/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
       <description></description>
     </item>
     

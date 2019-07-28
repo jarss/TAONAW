@@ -2,7 +2,7 @@
 title = "Quick Updates: June"
 author = ["Josh Rollins"]
 publishDate = 2019-06-30T00:00:00-04:00
-lastmod = 2019-07-01T08:05:47-04:00
+lastmod = 2019-07-28T07:21:41-04:00
 tags = ["orgmode", "linux"]
 draft = false
 +++

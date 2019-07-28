@@ -2,7 +2,7 @@
 title = "Submenus in org-mode Capture"
 author = ["Josh Rollins"]
 publishDate = 2019-07-14T00:00:00-04:00
-lastmod = 2019-07-14T13:21:59-04:00
+lastmod = 2019-07-28T07:21:46-04:00
 tags = ["orgmode"]
 draft = false
 +++

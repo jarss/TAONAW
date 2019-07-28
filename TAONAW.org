@@ -287,7 +287,7 @@ The main technology section. Every project starts here, eventually branching off
 *** PUBLISHED Desktop Wisdom                                        :support:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: DesktopWisdom
+    :EXPORT_FILE_NAME: desktop-wisdom
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-24:
     :END:
           
@@ -310,7 +310,7 @@ I asked my coworkers the following question:
 *** PUBLISHED The Hub                                  :network:raspberry_pi:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: Raspberry_Pi_Org_Hub
+    :EXPORT_FILE_NAME: Raspberry-Pi-Org-Hub
     :EXPORT_HUGO_PUBLISHDATE: 2018-11-22:
     :END:
 
@@ -417,7 +417,7 @@ So for example, if I first sync my home VM and share the "work" folder to the RP
 *** PUBLISHED AFPS Secure Token Active Directory Problems             :macos:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: macOS Secure Token Trouble
+    :EXPORT_FILE_NAME: macOS-secure-token-trouble
     :EXPORT_HUGO_PUBLISHDATE: 2018-11-26:
     :END:
 
@@ -449,7 +449,7 @@ The conclusion: macOS pulls the user's name field from "Display Name" in AD. And
 *** PUBLISHED About Removing Company Software                       :privacy:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: remove_company_software
+    :EXPORT_FILE_NAME: remove-company-software
     :EXPORT_HUGO_PUBLISHDATE: 2018-12-07:
     :END:
 
@@ -465,67 +465,6 @@ Among our most intrusive software is an Anti Virus client that dials home to our
 
 There's nothing unique about what we do. The same practices are followed by virtually every respectful IT company that deals with BYODs. Nothing we do have sinister intentions, and I trust everyone on my team not to abuse root privileges on BYOD devices which are often one of the most personal things a person owns. But that doesn't mean our clients should just trust us blindly.  
 
-*** TODO 5 Month Review of Org-mode 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: EmacsOrg
-    :EXPORT_FILE_NAME: 5months
-    :EXPORT_HUGO_PUBLISHDATE: 2018-12-17:
-    :END:
-
- According to my notes, I started using Org seriously mid August of this years. I was thinking it will be interesting to see what I learned and where I am today. 
-
-**** Beginnings: costumizing Org and journaling
-
- At the beginning, my main concerns were regarding wokring with Org the way I used to previously, and journaling. Before using Org and Emacs, I used [[https://typora.io/][Typora]], which I still think is one of the best tools I've seen to writing Markdown. It was a minimalist and pretty application which I enjoyed writing my journal notes in. I tried to copy this experience into Emacs, but of course, Org comes with many organizational options Typora is not desgined to  have. 
-
- It took some time to get used to letting Org dealing with dates and then eventually shift to its date format (I used to write dates and times without hyphens, like 20180101:1521). I then took a nautral turn to start my transformation into a weekly mindset with org. I always prefered to work in a weekly mindset and journaled about my week going back, but now I also started to organized my todos this way and slowly started counting on my Aenda rather then just an org file for work and for personal life. This is how I stayed until today. 
-
-**** Improving Technical Skills
-
-Using Emacs meant looking into some techical elements that I was familair yet not comfortable with. To make Emacs mine, I had to dig deeper into its init file, learn to use org-capture, set up and use my computer as SSH server for TRAMP, and eventually, create a VM at work. All the above skills were needed to make Org mode useful for me at work, which I knew from the beginning would be the big test. 
-
-***** Init into Org: 
-
-The Emacs init file still looks somewhat alien and hostile to me without comments explaining what exactly each snippet of code does. Only when I shifted to Org, a task which took at least two weekends, I started being more comfortable with changing parts of my settings for different computers. This, in turn, is what allowed me to work on Emacs from a dedicated VM at work. 
-
-Different things in my org  settings, such as the capture templates, are revisted for minior tweaks with relative ease which was not possible within the inital init file for me. I had to explain terms in my own way, not the Emacs way, to really "get it". 
-
-***** Org Capture
-
-Org capture
-
-*** CANCELLED Of Distractions and Interruptions                     :privacy:
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: distractions_at_work
-    :EXPORT_HUGO_PUBLISHDATE: 2018-11-28:
-    :END:
-
-**** Going down from 50 to 20 tickets
-
-It was a Wednesday, and I was wondering how I cut down about half of my tickets in two days. The week started out with abotu 50 tickets, and I was now looking at 26 that were still active. Even though usually I hope to leave my desk for the weekend with no more than 20 active tickets, the most that would show on one page without clicking "next", this was definitely progress in the right direction.   
-
-**** What helped, and why
-
-There were a couple of helpful factors since Monday that I wanted to note for myself. 
-
-First, management hired a temp who worked with us before. The guy was not only fast and hard-working, he also had a general understanding of our environment. It wasn't his knowledge that helped the most (though, it definitely came in handy), but the fact that he served as a "buffer" between us and the "fires" managment and customers had us take over. We all have rules we learn through our jobs, and in my case the rule is "it's never as simple as at looks." Basically, it means that if I'm dragged out of my dask for some rudimentary task, I'm going to spend 90% of the time getting to the root of the problem and 10% to fix the issue itself. 
-
-Second, also thanks to the temp, I had someone to send to "probe" an existing task. It is often the case that a customer doesn't respond back, either allowing us to close the task as complete or get back to us with more necessary details, like you know, which computer out of our fleet has an issue. That alone allowed me to close around 10 tasks that were duplicates of others or were just hanging in the air with a question mark. 
-
-Third, bigger boss was out, which means less pressure or boss to give side tasks. With no new projects, I was able to focus on my present issues dig out many stale incidents. 
-
-Fourth, my other co-worker who had the second biggest queue was back in office and able to attend to tickets. This usually doesn't affect me as much because I don't cover his cases (unless its an emergency), but then again, it does. 
-
-Fifth, Org-mode was working beatifully after my [[https://joshrollinswrites.com/techden/raspberry_pi_org_hub/][Pi setup]]. Everything I changed on my work VM synced beatifully to my home VM without issues, and my personal files (which include my wiki and journal, both of which I use at work) where accessible even though my home desktop was behind a VPN that blocks SSH. That's because my Pi is the only device now accessible to the outside world.  
-
-**** How does Org help (mgt doesn't get it)
-
-Org mode has long become my pillar of stability in an highly hectic environment. This is a repeated theme in this blog, I realize. This week is yet another fine example of working by my own order of things. With Org, I have an agenda that goes from hour to hour, from day to day. I know what ticket I need to look at before lunch, which incident needs a review before I leave for the day. I have titles that make sense to me the next day when I come in, and details that tell me exactly where I left off and what I should do next. With org, I have both personal and work related issue written down with me wherever I go, so my priorites are really /my/ priorities. 
-
-I often think that a good manager should know how to align work priorties with that of his workers, not /force/ them. An excellent manager should be able to help train his workers to work like soliders in the battlefield. Each solider is obident and works according to instructions, but at the same time, can function completely independently if needs be. It's the opposite of micromanagment which freezes employees in their track without managment intevention and oftne give up and go home. 
-
-This last part if what org is to me. It is my personal order of functions and my how-tos. At first glance, it looks like I'm giving myself extra work by copying every active issue over to this seemingly archaic text-only system. The truth is of course, that once it's in my system, I can follow through with it to completion with all the information I need available to me at all times, even after work hours. That, in my opinion, what makes me more productive than a mindless drone. 
 *** PUBLISHED From LastPass to KeePass                     :privacy:security:
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -673,7 +612,7 @@ The journal works nicely with my weekly reviews, which are essentially weekly vi
 
 *** PUBLISHED Evolvement of Video Journal & Org                     :orgmode:
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: video-journal-evolved
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-23:
     :END:
@@ -706,7 +645,7 @@ I still record a short "weekly summary" on weekends, and now I find I'm actually
 This works as a way for me to remember what happened far in the future if I want to reflect on my experiences but not looking for something specific, or not sure what it is. It's also a good way to reflect on the major events of the week after I had a weekend to slow down and process. It works. 
 *** PUBLISHED Emacs Windows                                           :emacs:
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-13:
     :EXPORT_FILE_NAME: Emacs Windows Managment
     :END:
@@ -743,7 +682,7 @@ One of the things that used to drive my bananas when I started using Org was how
 This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now. 
 *** PUBLISHED My Org Capture Templates - Part 1               :orgmode:emacs:
  :PROPERTIES:
-    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_HUGO_PUBLISHDATE: 2019-01-17:
     :EXPORT_FILE_NAME: Org-capture-template-1
     :END:
@@ -803,7 +742,7 @@ This concludes part 1. As you can see I went into other areas that are not direc
 
 *** PUBLISHED My Org Capture Templates - Part 2               :orgmode:emacs:
  :PROPERTIES:
-    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_HUGO_PUBLISHDATE: 2019-01-21:
     :EXPORT_FILE_NAME:  Org-capture-template-2 
     :END:
@@ -845,10 +784,9 @@ My journal is another feature of Org-mode that fits my workflow effortlessly. Th
 
 This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night. 
 
-
 *** PUBLISHED My Org Capture Templates - Part 3               :orgmode:emacs:
  :PROPERTIES:
-    :EXPORT_HUGO_SECTION: EmacsOrg
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_HUGO_PUBLISHDATE: 2019-02-09:
     :EXPORT_FILE_NAME: Org-capture-template-3
     :END:
@@ -907,8 +845,8 @@ After an event took place, I place the cursor on it in my agenda and initiate th
 
 *** PUBLISHED Hugo - what takes so long?                      :hugo:blogging:
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Blogging
-    :EXPORT_FILE_NAME: Hugo: Beginnings
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: Hugo-beginnings
     :EXPORT_HUGO_PUBLISHDATE: 2018-10-04:
     :END:
 
@@ -944,7 +882,7 @@ Oh, and speaking of helpful people: a big thank you to [[https://github.com/kaus
 *** PUBLISHED Switching to Hugo - Full Time                   :hugo:blogging:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: switching_2_hugo_ft
+    :EXPORT_FILE_NAME: switching-to-hugo
     :EXPORT_HUGO_PUBLISHDATE: 2018-12-05:
     :END:
 
@@ -972,7 +910,7 @@ I believe AWS (Amazon hosting service) might be it for now. I find it hard to be
 *** PUBLISHED How I Write Posts for my Blog                         :orgmode:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: drafting_a_post
+    :EXPORT_FILE_NAME: drafting-a-post
     :EXPORT_HUGO_PUBLISHDATE: 2018-12-26:
     :END:
 
@@ -1069,23 +1007,6 @@ But While Cook and Gruber believe in the "services first" future for Apple, the 
 
 Apple used to be untouchable in its innovative software /and/ hardware quality. Today, the remains of the glorious past is a hefty price tag. 
  
-*** CANCELLED Zen & Cities Skylines 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: Zen_&_Cities_Skylines
-    :EXPORT_HUGO_PUBLISHDATE: 2018-10-27:
-    :END:
-
-The best way to explain what am I talking about, is a quick visual. 
-
-# hello Vienmo??
-
-If you haven't heard of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]] before, the important thing to take from this video is that everything you see is located by the player (in this case, me). You can go as far deep as placing down each individual building and road down to the cracks in the aslphalt and the billboard signs if you want to. Some people [[https://i.redd.it/pta30b5n6lu11.png][go to that extent]] (you can see many amazing pictures like these in the [[https://www.reddit.com/r/CitiesSkylines][game's reddit]]), but such realism requires more attention to details (and PC power) than I have. After all, some of these guys have been spending months, even /years/, into their cities. Yes you read it right, years. 
-
-For me, the game is just the right mixture of visual beauty, attention to details, and peace of mind working on it. I can spend hours at a time into the night building parts of my city, listening to classic music. I emerge from my room after a long day at work smiling, humming to myself. 
-
-Cities Skylines is a good example of why I keep playing video games, and what kind of games I keep getting back to. 
-
 *** PUBLISHED Of Subnautica and Fear                                  :games:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -1150,9 +1071,9 @@ Since I'm already here, let's talk about other things that /could/ have been men
 This movie is too loaded with social cliche's of our time, and I recognize that they are cliche's because I'm surrounded by them all the time, unlike the ones from the older movies. 
 *** PUBLISHED Password Managers Hacks                              :security:
     :PROPERTIES:
+    :EXPORT_hugo_section: Help Desk Head Desk
     :EXPORT_FILE_NAME: password-manager-hacking
     :EXPORT_HUGO_PUBLISHDATE: 2019-02-25:
-    :EXPORT_hugo_section: Help Desk Head Desk
     :END:
  
 News that surfaced last week report of a [[https://www.securityevaluators.com/casestudies/password-manager-hacking/][security flaw]] that exists in the most popular password managers out there like LastPass, KeePass, and 1Password among others. Does this mean people should stop using them? No. Will people use this news as yet another excuse not to use password managers? Sure. 
@@ -1181,9 +1102,9 @@ Sigh.
  
 *** PUBLISHED Elite Dangerous: Beginning               :elitedangerous:games:
     :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: elite-dangerous-beginnings
     :EXPORT_HUGO_PUBLISHDATE: 2019-03-01:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :END:
    
 17:42. Almost time to go home. I've been trying to hold on a bit longer, to tell myself I should around more before I buy it. Elite is complex, with a steep learning and no real objectives in sight. I was worried it'll be more work after work. So of course, I bought it. 
@@ -1202,80 +1123,11 @@ When a game creates streamers like Pave, you know something must be right about 
 
 So you know. I thought it wouldn't hurt to try it... 
 
-*** TODO Landing
-    :PROPERTIES:
-    :EXPORT_FILE_NAME: elite-dangerous-docking
-    :EXPORT_HUGO_PUBLISHDATE: 2019-03-03:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :END:
-
-In other [[https://en.wikipedia.org/wiki/Massively_multiplayer_online_game][MMOGs]], you see them as soon as you log in. The annoying jumping-strafe-lean dance that happens in any [[https://en.wikipedia.org/wiki/PlayerUnknown%2527s_Battlegrounds][PUBG]] like game. Skill  is measured in how well you can jump to duge bullets, how well you can manipulate game physics, and just generally trains you to be an asshole toward other people. The experience of playing with a bunch of 10-year-olds hits you in the face like a cold shower as soon as I log in, generally keeping me away from trying any MMOGs. Elite Dangerous has an execellent defence mechanism against such [[https://www.urbandictionary.com/define.php?term=griefer][griefers]]: docking. 
-
-Docking your ship in Elite is where the jump-strafe asshats lose their patience. 
-*** TODO Irreal's all eggs
-    :PROPERTIES:
-    :EXPORT_FILE_NAME: irreal-iphone-to-rule-all
-    :EXPORT_HUGO_PUBLISHDATE: 2019-03-15:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
-    :END:
-  
-[[https://irreal.org/blog/?p=7903][Irreal's response to almost going completey paperless]] was bothering me some, and I felt a comment would be to constrained to include my thoughts. The main issue for me was not the original post on [[https://irreal.org/blog/?p=7899][going digital]], but the explination. 
-
-**** risks of all eggs in one basket: missing the point
-
-need to be careful of calling it "risks". To me, it's less about a risk and more of the idea of giving my data, and giving it to one entity. The argument for me is privacy. Sure, we all give up privacy in one way (I have Android and google), but to what point. I try to make an effort to get /away/ from it, where Irreal seems to make an effort to get more /into/ it. 
-
-**** about having money
-
-This goes into brands and products. Irreal is an Apple guy. He mostly uses an iPhone and writes on an Apple device. To me, there was always something a bit "off" about people using their Macs to run Emacs, and I think now I understand why: Emacs is free and availble to everyone, Macs are the exact opposite. 
-
-This goes back to my days as a teacher in a charter shcool, where the teachers were given Macbook Airs (back when these were excellent machines) and students were given Chromebooks. Personally, I consider both to be excellent machines. The students got cheap Chromebooks, but that's because many students abused these machines and destroyed them. As a teacher that works with students who often came from poor familes who could not afford food, I felt ashamed carrying around a shiny machine that eventually just needed to run the same Google Apps that worked just as well on the Chromebooks. 
-
-I now work at a large institution where many of our US-based customers have more afluent backgrounds, and it shows with their new shiny Macbook Pros. Even though I'm considered the go-to person for Mac issues in my team, and even though I carry an iPhone and work on a Mac regularly, I don't feel at home on these the same way I don't feel myself when I wear a suite and a tie. To me, this is not what technology /should/ be. 
-
-**** The real risks 
-
-The idea of going paperless is not new to me. I first learned about it from [[https://www.jamierubin.net/going-paperless/][Jamie Rubin]] who was (is?) Evernote embessasdor. Back in 2014, I too used Evernote for everything and I love thast product. Until I didn't. 
-
-Today Evernote increased it's premiums and with it limitations on free accounts. It's CEO, [[https://en.wikipedia.org/wiki/Phil_Libin][Phil Libin]], has long left Evernote to chase more lucertive opprtunities in a Silicon Vally focused on investments. And my account, which contains a few gigs of my memories, had to be librated by paying money first to afford the premium of downloading it all. 
-
-It's not that I don't have the money. It's not that I was shocked to learn that Evernote was after this money the whole time. It's the fact that this company could and did whatever it wanted with my data. /My/ data. Apple has the same ability, on a much larger scale, and they're already abusing it. Google does as well, of course, and so does Facebook, and the list goes on. 
-
-The dilema of all eggs in one basket is not physical risks to losing it; it's the dilema of losing your ideas and identity to some virtual entity. 
-
-- - - 
-
-# stuff that didn't make it:
-
-
-It's something else entirely the fact that I need to /buy/ the ability to express my own ideas. This is why I use Linux, this is why my blog runs on Hugo and not on a paid Wordpress service (even though there's still work to do to get off of github), and this is why I will never be able to use Apple machines for long periods. 
-
-
-
-
-
-As an IT guy at the same school later, I fet bad knowing how poor the security is on these Macs (human compoent) and indeed, some students took adventage of this. The Chromebooks, on the other hand, where much harder to temper with. 
-
-
-
-
-
-
- Two months ago I bought my mother a new Chromebook, and it's a gourgerous beatiful machine with a touch screen and backlit keyboard that puts her old Mac to shame. At the time though, I couldn't run scripts on the Chromebook, MS RMD is minimal at best on a Chromebook, and other reasons that made it hard to use. 
-
-# Link to Chromebook
-
-
-
-
-I follow Irreal regularly, and often enjoy their posts. 
- 
- #+hugo: more
 *** PUBLISHED Upgrading my Audio Game                                 :music:
     :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: upgrading-audio-game
     :EXPORT_HUGO_PUBLISHDATE: 2019-04-09:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
  
 After a few months of research, I finally upgraded my Audio system on my PC. As it turns out, it wasn't as expensive as I feared. The renewed interest in music took me in rewarding directions of sound exploration I did not anticipate.
@@ -1322,9 +1174,9 @@ After almost two weeks with my new equipment, I think the biggest self-upgrade I
 
 *** PUBLISHED Why Gcal Failed                                       :orgmode:
 :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: why-gcal-failed
     :EXPORT_HUGO_PUBLISHDATE: 2019-04-12:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
   
 I recently tried [[https://github.com/myuhe/org-gcal.el][Org-Gcal]] a second time just to turn it off again. I was following the (now slightly outdated) [[https://cestlaz.github.io/posts/using-emacs-26-gcal/][instructions]] on [[https://cestlaz.github.io/][Mike Zamansky's]] blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.   
@@ -1391,9 +1243,9 @@ Evernote is a for-profit company with a product that is very different than org-
 
 *** PUBLISHED Why Managing Email in Emacs is not for me          :email:mu4e:
 :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: mu4e-not-for-me
     :EXPORT_HUGO_PUBLISHDATE: 2019-05-22:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
  
 I had [[https://irreal.org/blog/?p=8004][irreal's post]] about [[https://www.reddit.com/r/emacs/comments/bfsck6/mu4e_for_dummies/][mu4e for dummies]] on my todo list for a week before I decided to give it up. At first, I thought it was because setting the time and following through the guide was too much of a "cloud" in my head to tackle, so I broke it down. Then, as I looked at the individual components, I realized it's more complicated then technicalities alone.
@@ -1410,9 +1262,9 @@ I didn't instead to have four active email accounts, but this is how it is. Whil
 
 *** PUBLISHED Best Tools for the job: Flameshot             :flameshot:tools:
     :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: best-tools-flameshot
     :EXPORT_HUGO_PUBLISHDATE: 2019-05-25:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
 
 Every now and then I discover (or re-discover) a tool in Linux that does exactly what I need it to do. Some examples include ffmpeg, to shrink down my self-recorded webcam journal session while increasing the volume; abcde, to rip a classical music CD to flac and find its exact title and name; youtube-dl, which downloads any video online I need along with aria to speed these downloads, and more. 
@@ -1498,22 +1350,11 @@ Neven said that in a mobile app, you don't want to think much about what informa
 
 The second thing is [[https://syncthing.net/][Syncthing]]. Neven mentioned Dropbox, which works fine, but for the more privacy and space-aware folks out there, Syncthing is a godsend. I [[https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/][wrote about it in length before]], so I won't get into my system here. If Orgzly is what allows me to work with Org-mode everywhere, Syncthing is the glue that makes it possible. An update on my phone from the field will show up in a second on my VM at work and my Linux box at home, and vice versa. 
 
-*** TODO Org-mode and emacs for geeks only?
-*** TODO Palomitas in Space
-    :PROPERTIES:
-    :EXPORT_FILE_NAME: palomitas-in-space
-    :EXPORT_HUGO_PUBLISHDATE: 2019-06-11:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
-    :END:
- 
-A few weeks ago
- 
- #+hugo: more
 *** PUBLISHED Of Emacs and Chutzpah                           :emacs:orgmode:
     :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: of-writing
     :EXPORT_HUGO_PUBLISHDATE: 2019-06-21:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
 
 Says [[https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments][Jamie T. Rubin]]: "As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?" 
@@ -1558,9 +1399,9 @@ Emacs is not something you give to someone. It's something they have to take and
 All of the above is necessary (at least I'd like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the "writing tools that get in the way of writing." In Emacs, the things that stand in the way of your writing are things you haven't changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is... You. There cannot be anything else because every single part of Emacs is designed to be broken down to do /exactly/ what you want it to do. 
 *** PUBLISHED Org-capture in Files                                  :orgmode:
     :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: org-capture-in-files
     :EXPORT_HUGO_PUBLISHDATE: 2019-07-06:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
 
 I've been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there's so much to explain, I can't include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files. 
@@ -1661,9 +1502,9 @@ If you think something is possible, it probably is. One way or another, it is. R
 
 *** PUBLISHED Quick Updates: June                             :orgmode:linux:
 :PROPERTIES:
+:EXPORT_HUGO_SECTION: Help Desk Head Desk 
 :EXPORT_FILE_NAME: quick-updates-June
 :EXPORT_HUGO_PUBLISHDATE: 2019-06-30:
-:EXPORT_HUGO_SECTION: Help Desk Head Desk 
 :END:
 
 Even though I don't have any means of tracking how many readers I have on this blog, I can't help but feel a little bit responsible for my audience. This is an attempt to see how a quick "here's what's up" post while the blog is otherwise idle.
@@ -1680,9 +1521,9 @@ Mike Elgan writes [[https://www.computerworld.com/article/3405559/google-needs-t
 
 *** PUBLISHED Submenus in org-mode Capture                          :orgmode:
 :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: sub-menus-in-org
     :EXPORT_HUGO_PUBLISHDATE: 2019-07-14:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :END:
 
 [[https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/][In my last post]], I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn't give it enough exposure in my opinion. Turns out it [[https://irreal.org/blog/?p=8161][wasn't just me]] either.
@@ -1754,6 +1595,42 @@ You can see form how the menu looks like that all of these items start with an =
 Each one of these sub-templates is a checklist based in an org file like I explained in the previous post. The templates are all org files (like ~setup-SLS-Mac.org~ for example, the third template) which are nothing but checklists like I pointed out in the previous post. 
 
 This way I can have an entire "category" of capture templates, with S for setup, without having a long list with letters that won't seem related. 
+
+*** TODO Basic SSH Security
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :EXPORT_FILE_NAME: basic-ssh-security
+    :EXPORT_HUGO_PUBLISHDATE: 2019-07-28:
+    :END:
+
+In order to access my personal org files from work (mostly my journal), I use [[https://www.emacswiki.org/emacs/TrampMode][TRAMP]]. Since my TAMP access in this case is based on SSH, I need to have an SSH server up and running.  
+
+#+hugo: more
+
+[[file:static/basic-ssh-security.png]]
+
+** BMC
+:PROPERTIES:
+   :EXPORT_HUGO_SECTION: BMC
+   :END:
+*** INTRO
+  :PROPERTIES:
+  :EXPORT_HUGO_SECTION: BMC
+  :EXPORT_FILE_NAME: _index
+  :END:
+
+**** Buy Me Coffee?
+
+Here, this should work:
+Test 1 2 3
+
+your mom!!!! yes
+
+
+
+{{< rawhtml >}}
+<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/I2HmaZYGh"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me Coffee</span></a>
+{{< /rawhtml >}}
 
 ** JRL
    :PROPERTIES:

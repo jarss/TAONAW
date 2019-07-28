@@ -2,7 +2,7 @@
 title = "Why Managing Email in Emacs is not for me"
 author = ["Josh Rollins"]
 publishDate = 2019-05-22T00:00:00-04:00
-lastmod = 2019-05-23T20:33:53-04:00
+lastmod = 2019-07-28T07:20:59-04:00
 tags = ["email", "mu4e"]
 draft = false
 +++

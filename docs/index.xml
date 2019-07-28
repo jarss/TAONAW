@@ -166,41 +166,12 @@
     </item>
     
     <item>
-      <title>My Org Capture Templates - Part 3</title>
-      <link>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</link>
-      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</guid>
-      <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
-
-&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>CSS Updates</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</guid>
       <description>&lt;p&gt;About some CSS Updates&amp;hellip; and why I haven&amp;rsquo;t posted in the last two weeks or so. (Changes are now complete!)&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My Org Capture Templates - Part 2</title>
-      <link>https://joshrollinswrites.com/emacsorg/org-capture-template-2/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-2/</guid>
-      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My Org Capture Templates - Part 1</title>
-      <link>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -339,15 +310,6 @@
       <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/blog/org-update/</guid>
-      <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Org Update</title>
-      <link>https://joshrollinswrites.com/emacsorg/org-update/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/emacsorg/org-update/</guid>
       <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;</description>
     </item>
     
