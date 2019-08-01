@@ -2,7 +2,7 @@
 title = "The Hub"
 author = ["Josh Rollins"]
 publishDate = 2018-11-22T00:00:00-05:00
-lastmod = 2019-07-28T07:16:20-04:00
+lastmod = 2019-07-28T07:36:43-04:00
 tags = ["network", "raspberry-pi"]
 draft = false
 +++

@@ -6,10 +6,29 @@
     <description>Recent content in security on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Feb 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Basic SSH Security</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</guid>
+      <description>&lt;p&gt;They say a picture is worth a thousand words:&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/basic-ssh-security.png&#34;/&gt; &lt;/figure&gt;
+
+
+&lt;p&gt;This is my SSH server&amp;rsquo;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Password Managers Hacks</title>

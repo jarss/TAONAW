@@ -6,10 +6,46 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>emacs</title>
+      <link>https://joshrollinswrites.com/tags/emacs/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://joshrollinswrites.com/tags/security/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://joshrollinswrites.com/tags/ssh/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tramp</title>
+      <link>https://joshrollinswrites.com/tags/tramp/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/tramp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>orgmode</title>
@@ -26,15 +62,6 @@
       <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs</title>
-      <link>https://joshrollinswrites.com/tags/emacs/</link>
-      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
       <description></description>
     </item>
     
@@ -138,15 +165,6 @@
     </item>
     
     <item>
-      <title>security</title>
-      <link>https://joshrollinswrites.com/tags/security/</link>
-      <pubDate>Mon, 25 Feb 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>regex</title>
       <link>https://joshrollinswrites.com/tags/regex/</link>
       <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
@@ -197,15 +215,6 @@
       <pubDate>Wed, 16 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/games/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>writing</title>
-      <link>https://joshrollinswrites.com/tags/writing/</link>
-      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/writing/</guid>
       <description></description>
     </item>
     
