@@ -3,26 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</loc>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/linux/</loc>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/macos/</loc>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</loc>
+    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
   </url>
   
   <url>
@@ -83,12 +100,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</loc>
     <lastmod>2019-07-28T07:21:41-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/linux/</loc>
-    <lastmod>2019-07-28T07:21:41-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -317,12 +328,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</loc>
     <lastmod>2019-07-28T07:16:45-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/macos/</loc>
-    <lastmod>2019-07-28T07:16:45-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

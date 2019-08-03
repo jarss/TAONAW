@@ -6,10 +6,19 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 03 Aug 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why do They Use a Mac?</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</link>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</guid>
+      <description>&lt;p&gt;Macs are evil. Macs are expensive pieces of toy hardware, which is often not up to par with what&amp;rsquo;s offered on the market (my personal biggest annoyances are the keyboards and the touchpad). Everything you do on a Mac you can do on Linux better&amp;hellip; and so on. If that&amp;rsquo;s true, why are so many professionals in IT environments (which are otherwise Windows-based) use Macs? I want to see if my perspective changed.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Basic SSH Security</title>
