@@ -7,6 +7,7 @@ title = "The Art of Not Asking Why"
 themesDir = "themes"
 theme = "hyde"
 disqusShortname = "taonaw"
+footnoteReturnLinkContents = "[^ back]"
 
 name = "Hyde"
 license = "MIT"

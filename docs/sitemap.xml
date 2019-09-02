@@ -4,19 +4,30 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</loc>
+    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/writing/</loc>
+    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,36 +50,31 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-14T08:32:35-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/emacs/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-28T06:42:52-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/security/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-14T08:32:35-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/ssh/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-14T08:32:35-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/tramp/</loc>
-    <lastmod>2019-08-01T06:39:15-04:00</lastmod>
+    <lastmod>2019-08-14T08:32:35-04:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/bmc/</loc>
-    <lastmod>2019-07-14T17:53:58-04:00</lastmod>
   </url>
   
   <url>
@@ -88,7 +94,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
-    <lastmod>2019-07-28T07:43:06-04:00</lastmod>
+    <lastmod>2019-08-28T06:42:52-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -104,7 +110,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</loc>
-    <lastmod>2019-07-28T07:21:27-04:00</lastmod>
+    <lastmod>2019-08-28T06:42:52-04:00</lastmod>
   </url>
   
   <url>

@@ -2,7 +2,7 @@
 title = "Of Emacs and Chutzpah"
 author = ["Josh Rollins"]
 publishDate = 2019-06-21T00:00:00-04:00
-lastmod = 2019-07-28T07:21:27-04:00
+lastmod = 2019-08-28T06:42:52-04:00
 tags = ["emacs", "orgmode"]
 draft = false
 +++

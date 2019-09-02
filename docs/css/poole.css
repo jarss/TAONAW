@@ -73,6 +73,33 @@ a {
   font-family: "Noticia Text", arial; 
   
 }
+
+/* The following define footnotes links. In order to work with the back link from the footnotes, we need to add footnoteReturnLinkContents = "[text here]" to config.toml*/
+
+
+/* This is the return text (that takes us back to the post) */
+
+.footnote-return {
+  color: #ac4142;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Noticia Text", arial; 
+  
+}
+
+/* This adds space between the list items in the footnotes, to make them more clear */
+
+.footnotes li {
+  margin: 0 0 1rem 0;
+}
+
+/* This is the anchor link. I have to use important because otherwise the general link takes over. */
+
+.footnote-ref a {
+  color: #ac4142 !important;
+  font-size: .75rem !important;  
+}
+
 /* `:focus` is linked to `:hover` for basic accessibility */
 /*  JRSS: I moved it because I think it looks better without. 
 a:hover,
@@ -164,7 +191,7 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #DE4651;
+  color: #ac4142;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -335,7 +362,6 @@ tbody tr:nth-child(odd) th {
     font-size: 1rem;
     color: #515151;
 }
-
 
 /* Here is the part for the lists in the posts */
 
