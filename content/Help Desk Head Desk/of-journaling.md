@@ -2,7 +2,7 @@
 title = "Of Journaling"
 author = ["Josh Rollins"]
 publishDate = 2019-08-29T00:00:00-04:00
-lastmod = 2019-09-01T20:22:38-04:00
+lastmod = 2019-09-07T08:55:45-04:00
 tags = ["writing"]
 draft = false
 +++

@@ -6,10 +6,23 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scripting in Bash 102</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</guid>
+      <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. This is also the longest post I&amp;rsquo;ve ever written.&lt;/p&gt;
+
+&lt;p&gt;I always say I&amp;rsquo;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
+
+&lt;p&gt;My elementray scripts are a dynamic work in progress. I keep tweaking them as I learn and create new ones. I&amp;rsquo;d love to hear from experienced scripters just as I&amp;rsquo;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Of Journaling</title>

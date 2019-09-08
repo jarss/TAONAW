@@ -4,48 +4,47 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-09-08T17:00:47-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</loc>
-    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
-    <priority>0</priority>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</loc>
+    <lastmod>2019-09-08T17:00:47-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2019-09-08T17:00:47-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</loc>
+    <lastmod>2019-09-07T08:55:45-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/</loc>
+    <lastmod>2019-09-07T08:55:45-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/writing/</loc>
-    <lastmod>2019-09-01T20:22:38-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</loc>
-    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
+    <lastmod>2019-09-07T08:55:45-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/linux/</loc>
     <lastmod>2019-08-03T09:21:48-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/macos/</loc>
     <lastmod>2019-08-03T09:21:48-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</loc>
+    <lastmod>2019-08-03T09:21:48-04:00</lastmod>
   </url>
   
   <url>
@@ -56,25 +55,21 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/emacs/</loc>
     <lastmod>2019-08-28T06:42:52-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/security/</loc>
     <lastmod>2019-08-14T08:32:35-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/ssh/</loc>
     <lastmod>2019-08-14T08:32:35-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/tramp/</loc>
     <lastmod>2019-08-14T08:32:35-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -88,14 +83,13 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</loc>
-    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
+    <lastmod>2019-08-28T06:42:52-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
-    <lastmod>2019-08-28T06:42:52-04:00</lastmod>
-    <priority>0</priority>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</loc>
+    <lastmod>2019-07-28T07:21:46-04:00</lastmod>
   </url>
   
   <url>
@@ -114,14 +108,13 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</loc>
+    <loc>https://joshrollinswrites.com/tags/orgzly/</loc>
     <lastmod>2019-06-21T12:32:11-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/orgzly/</loc>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</loc>
     <lastmod>2019-06-21T12:32:11-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -132,13 +125,16 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/flameshot/</loc>
     <lastmod>2019-07-28T07:21:04-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/tools/</loc>
     <lastmod>2019-07-28T07:21:04-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/manjaro/</loc>
+    <lastmod>2019-05-23T20:39:32-04:00</lastmod>
   </url>
   
   <url>
@@ -147,26 +143,18 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/manjaro/</loc>
-    <lastmod>2019-05-23T20:39:32-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/mu4e-not-for-me/</loc>
-    <lastmod>2019-07-28T07:20:59-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/tags/email/</loc>
     <lastmod>2019-07-28T07:20:59-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/mu4e/</loc>
     <lastmod>2019-07-28T07:20:59-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/mu4e-not-for-me/</loc>
+    <lastmod>2019-07-28T07:20:59-04:00</lastmod>
   </url>
   
   <url>
@@ -177,7 +165,6 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/evernote/</loc>
     <lastmod>2019-05-18T10:08:24-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -186,25 +173,23 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/tags/music/</loc>
+    <lastmod>2019-04-11T06:26:40-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/</loc>
     <lastmod>2019-04-11T06:26:40-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/music/</loc>
-    <lastmod>2019-04-11T06:26:40-04:00</lastmod>
-    <priority>0</priority>
+    <loc>https://joshrollinswrites.com/tags/life/</loc>
+    <lastmod>2019-05-22T19:03:46-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/jrl/updates/</loc>
     <lastmod>2019-05-22T19:03:46-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/life/</loc>
-    <lastmod>2019-05-22T19:03:46-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -215,7 +200,6 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/selfimprovement/</loc>
     <lastmod>2019-04-04T07:24:16-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -226,7 +210,6 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/elitedangerous/</loc>
     <lastmod>2019-04-04T07:23:28-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -235,20 +218,18 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</loc>
-    <lastmod>2019-02-23T23:17:38-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/tags/regex/</loc>
     <lastmod>2019-02-23T23:17:38-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/system-management/</loc>
     <lastmod>2019-02-23T23:17:38-05:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</loc>
+    <lastmod>2019-02-23T23:17:38-05:00</lastmod>
   </url>
   
   <url>
@@ -259,7 +240,6 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/privacy/</loc>
     <lastmod>2019-07-28T07:17:25-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -268,20 +248,18 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/tags/blogging/</loc>
+    <lastmod>2019-07-28T07:28:58-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</loc>
     <lastmod>2019-02-24T08:51:57-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/blogging/</loc>
-    <lastmod>2019-07-28T07:28:58-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/tags/git/</loc>
     <lastmod>2019-02-24T08:51:57-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -295,14 +273,13 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/subnautica-and-fear/</loc>
+    <loc>https://joshrollinswrites.com/tags/games/</loc>
     <lastmod>2019-02-24T08:45:01-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/games/</loc>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/subnautica-and-fear/</loc>
     <lastmod>2019-02-24T08:45:01-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -321,14 +298,13 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</loc>
-    <lastmod>2019-07-28T07:19:02-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/tags/hugo/</loc>
+    <lastmod>2019-07-28T07:28:58-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/hugo/</loc>
-    <lastmod>2019-07-28T07:28:58-04:00</lastmod>
-    <priority>0</priority>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</loc>
+    <lastmod>2019-07-28T07:19:02-04:00</lastmod>
   </url>
   
   <url>
@@ -337,20 +313,18 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</loc>
-    <lastmod>2019-07-28T07:36:43-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/tags/network/</loc>
     <lastmod>2019-07-28T07:36:43-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/raspberry-pi/</loc>
     <lastmod>2019-07-28T07:36:43-04:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</loc>
+    <lastmod>2019-07-28T07:36:43-04:00</lastmod>
   </url>
   
   <url>
@@ -366,7 +340,6 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/support/</loc>
     <lastmod>2019-07-28T07:15:32-04:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
