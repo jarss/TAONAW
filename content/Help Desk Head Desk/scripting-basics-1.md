@@ -2,7 +2,8 @@
 title = "Scripting in Bash 102"
 author = ["Josh Rollins"]
 publishDate = 2019-09-03T00:00:00-04:00
-lastmod = 2019-09-10T11:08:16-04:00
+lastmod = 2019-10-02T06:23:12-04:00
+tags = ["bash", "automation"]
 draft = false
 +++
 

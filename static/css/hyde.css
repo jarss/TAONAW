@@ -108,8 +108,14 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   margin-left: -.5rem;
   border-top: double .15rem #000;
   border-bottom: solid .15rem #000;		     
-}    
+}
 		   
+		   
+.sidebar-about a {
+  text-decoration: none;
+}
+
+
 .sidebar-about img {
   width: 50%;
   margin: 30px;
@@ -130,6 +136,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
     display: block;
     font-family: "PT Sans", ariel;
     font-size: 1rem;
+    text-decoration: none;
     padding-left: .2rem;
     padding-right: .2rem;
 }

@@ -6,10 +6,19 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tools in Windows</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</guid>
+      <description>&lt;p&gt;My &lt;a href=&#34;https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f&#34;&gt;first public video&lt;/a&gt; introduced me to new challanges I didn&amp;rsquo;t face until now. Case in point: displaying milliseconds in VLC. I looked online in various places for a solution with my tools of choice, VLC player and ffmpeg. Workarounds do exist, but not nearly as simple as what exists for me in Windows. This happened to me before. As I was starting to get stuck, I realized that sometimes it&amp;rsquo;s ok not to wrack my head over every single hurdle. This is a reminder for myself, and hopefully save you some time to.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Scripting in Bash 102</title>
@@ -28,7 +37,7 @@
       <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</guid>
-      <description>I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>

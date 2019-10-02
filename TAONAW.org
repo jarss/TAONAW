@@ -10,7 +10,7 @@
 :END:
 
 ** Help Desk Head Desk
-  :PROPERTIES:
+ :PROPERTIES:
   :EXPORT_HUGO_SECTION: Help Desk Head Desk
   :END:
   
@@ -1519,7 +1519,7 @@ As a result of the above, I am also changing my workflow in org-mode, or precise
 
 Mike Elgan writes [[https://www.computerworld.com/article/3405559/google-needs-to-pull-itself-together.html][about Google products that should be merged]], and it made me remember how I used to have the same issues until I switched over to Linux and Emacs. People who use Linux have it better in terms of productivity. I want to discuss why. 
 
-*** PUBLISHED Submenus in org-mode Capture                          :orgmode:
+*** PUBLISHED Submenus in org-mode Capture               :orgmode:automation:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: sub-menus-in-org
@@ -1771,7 +1771,9 @@ How does it look like?
     :EXPORT_HUGO_PUBLISHDATE: 2019-08-29:
     :END:
 
-I've kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I'm not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal. 
+I've kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I'm not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal...
+
+#+hugo: more 
 
 Interestingly, the old paper journals are the ones that survived and moved homes with me (for the most part) while the digital ones are lost somewhere in the cloud.[fn:5] I've tried many different applications, more than I can remember. My thoughts are spread across Google, Microsoft Evernote and Apple products, some defunct and cannot be restored. My journal today, in org-mode, is resistant to that - at least, that's my hope. I enjoy keeping a journal here, on the same platform I use for blogging and organizing my day.
 
@@ -1805,7 +1807,7 @@ For me, a person who uses org-mode on a day-to-day basis to keep track of tasks 
 [fn:3] Many writing applications come with spell-checking options which can be highly distracting. This is a habit that I believe started with Word's red zigzag. It forces you to stop your train of thought and focus on the mistakes highlighted in angry red. Emacs doesn't have this problem. Spell-checking takes place only after I highlight a segment of my text and ask for to spellcheck. Having spellchecking separate from the writing process is important! I didn't realize how disturbing this can be before transitioning to org-mode. 
 [fn:4] These being mostly lack of sleep, insomnia of some sort. 
 
-*** PUBLISHED Scripting in Bash 102
+*** PUBLISHED Scripting in Bash 102                         :bash:automation:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: scripting-basics-1
@@ -1975,6 +1977,55 @@ Thank you for reading!
 [fn:8]  When scripting, certain special characters (like our $ above) are reserved. This means that if we wanted to call our variable "$usd" for example, we couldn't. There are certain ways to tell Bash we want to use the character as a character, not as a "special signal." As a matter of fact, the period in my .org is a bit dangerous because the period also has a special meaning. I should have typed out something more specific telling Bash the period here is meant as just a period, not a signal -- but at this point I'm not sure how the syntax would look like. I'm learning these things myself, after all.
 
 [fn:9]  Those of you who look carefully might find yourself asking, "OK, but the quotation marks /include/ the command syntax, not just the text we want to use, what's up with that? Why isn't it ~1s/^/"#+TITLE: Week Starting...~"?  And I have a good answer: I don't know. It doesn't make sense to me either at the moment, but in all documentation I find, this is how the syntax works.
+
+*** WIP Tools in Windows                                      :tools:windows:
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :EXPORT_FILE_NAME: windows-tools
+    :EXPORT_HUGO_PUBLISHDATE: 2019-09-28:
+    :END:
+
+My [[https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f][first public video]] introduced me to new challanges I didn't face until now. Case in point: displaying milliseconds in VLC. I looked online in various places for a solution with my tools of choice, VLC player and ffmpeg. Workarounds do exist, but not nearly as simple as what exists for me in Windows. This happened to me before. As I was starting to get stuck, I realized that sometimes it's ok not to wrack my head over every single hurdle. This is a reminder for myself, and hopefully save you some time to. 
+
+#+hugo: more
+
+**** Millseconds? Why?
+
+While going over my video and deciding on parts to cut out (you guys don't need to see me reading from my notes and going "uhhh, that doesn't make any sense...") it became clear that the cuts are sharp and unpolished. I start to say something, and then the video cuts to me looking at a different direction starting a new sentence. It's jarring and makes me cringe. 
+
+FFMPEG allows sepcifying which sagments you want to isolate down to the millisecond to prevent this from happening. Figuring out the point of cutting percisely on that level though proved to be too hard in VLC. I'm sure I can tune VLC to move frame by frame and somehow display the exact timestamp I'm on, but after a day and a half of looking into different solutions and two extensions, I gave up. 
+
+**** Windows and MPC-HC
+
+[[https://mpc-hc.org/][Media Player Classic: Home Cinema]] is exactly what I needed. I remembered it from my pre-linux days, when I used it to watch different exotic video codecs that would not play on any other player. 
+
+It's a lightweight tool that doesn't do much else (as far as I know) besides playing videos and, if you right-click on the timestamp and choose "high precision". Bang. A day and a half of looking into complicated solutions resolved in a single rightclick. The fact that I sometimes record and always edit my videos on my Windows desktop (which is my much stronger gaming-oriented machine) helps. 
+
+Unfortuantely, WPC-HC is [[https://mpc-hc.org/2017/07/16/1.7.13-released-and-farewell/][discontinued]]. After all, who needs such a niche product when you have something as rubust and full-featured like VLC...? So while it runs great for now, I probably need to keep my eyes open for a replacement (any recommendtations are warmly welcome). 
+
+**** But for Everything Else, Linux is Awesome... Right?
+
+For the most part, yes. But there are a few exceptions. 
+
+Another good tool without a Linux alternative that jumps to mind is [[https://getgreenshot.org/][Greenshot]]. Yes, I blogged about [[https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/][Flameshot]] before, but I since stopped using it due to an [[https://github.com/lupoDharkael/flameshot/issues/563#issuecomment-526918408][annoying locale issue]] deep in my Manajro's configuration. It's replacement, [[https://store.kde.org/p/1156408/][Ksnip]][fn:14], is not as good. While I can forgive flameshot's lack of features in favor of lightness and elegance, ksnip is way "bulkier" but lacks many good features compared to greenshot and a good amount of polish. 
+
+While I'm at the graphics department: another great tool in Windows is [[https://www.getpaint.net/index.html][paint.net]]. It's a light photo-editing tool which walks the thin line of "photoshop light" like no other app I've used. There's GIMP of course, but I never use it. It comes with its own learning curve and plethora of features I almost never need beyond my Android's [[https://play.google.com/store/apps/details?id=com.niksoftware.snapseed&hl=en][Snapspeed]] (here are two [[https://pixelfed.social/p/JR121/74693748268863488][recent]] [[https://pixelfed.social/p/JR121/82812393729691648][examples]]). 
+
+I'll skip the loaded issue of gaming on Linux, since the fact that I have a Windows desktop built mostly for that speaks for itself, and continue into other forms of entertainment: hosting my movies, music, and Ebooks. Linux does have the top hand when it comes to running a good server, but installing PLEX and managing file permissions for a NTFS hard drive shared with Windows is an experience I'm willing to pass on. When I eventually graduate to a NAS, it will probably be Linux based.
+
+So this mostly leaves us with Windows for entertainment and video editing, Linux for productivity and work[fn:15]. Sounds about right to me.
+
+What about you? Do you use different systems side by side like this, or are you the laptop warrior kind? Maybe a Windows guru? A mac-all-the-way person?
+
+**** Footnotes
+
+[fn:14] Seems like this [[https://community.kde.org/Incubator/Projects/Ksnip#Status][project has been killed]] in favor of [[https://github.com/DamirPorobic/KImageAnnotator][KimageAnnonator]], which looks exactly the same to me. 
+
+[fn:15] Actually, since I use Backblaze to backup my files, my Windows machine is also my dedicated "backup server-client" as well. However it's my Raspberry Pi that does the automation and uploads a compressed backup file every night without fail. You can't beat Linux when it comes to automations of "set up and forget" like these.
+
+
+
+
 
 ** BMC
 :PROPERTIES:

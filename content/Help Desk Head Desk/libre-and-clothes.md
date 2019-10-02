@@ -2,7 +2,7 @@
 title = "Libre and Clothes"
 author = ["Josh Rollins"]
 publishDate = 2018-08-01T00:00:00-04:00
-lastmod = 2019-03-12T07:49:37-04:00
+lastmod = 2019-09-30T20:55:17-04:00
 tags = ["orgmode", "emacs"]
 draft = false
 +++
@@ -54,7 +54,7 @@ Two things are needed on my Emacs (version 25.2.1) for that:
     dispatcher:
 
     `` `(eval-after-load "org"
-       '(require 'ox-odt nil t))` ``
+          '(require 'ox-odt nil t))` ``
 
 Now I can create the .dot file, which I can open in Libre Writer I
 just downloaded. Ooof. Hello GUI word proccessing, with weird paper

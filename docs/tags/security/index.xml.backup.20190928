@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/tags/security/</link>
+    <description>Recent content in security on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basic SSH Security</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</guid>
+      <description>&lt;p&gt;They say a picture is worth a thousand words:&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/basic-ssh-security.png&#34;/&gt; &lt;/figure&gt;
+
+
+&lt;p&gt;This is my SSH server&amp;rsquo;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Password Managers Hacks</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</link>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</guid>
+      <description>&lt;p&gt;News that surfaced last week report of a &lt;a href=&#34;https://www.securityevaluators.com/casestudies/password-manager-hacking/&#34;&gt;security flaw&lt;/a&gt; that exists in the most popular password managers out there like LastPass, KeePass, and 1Password among others. Does this mean people should stop using them? No. Will people use this news as yet another excuse not to use password managers? Sure.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>From LastPass to KeePass</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
+
+&lt;p&gt;But it seems like even LastPass&amp;rsquo;s time has come.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

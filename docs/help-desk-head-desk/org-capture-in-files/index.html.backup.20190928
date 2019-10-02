@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "Org-capture in Files",
+    "headline" : "Org-capture in Files",
+    "description" : "\x3cp\x3eI\x26rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there\x26rsquo;s so much to explain, I can\x26rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-07-06 00:00:00 -0400 EDT",
+    "dateModified" : "2019-07-06 00:00:00 -0400 EDT",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/org-capture-in-files\/",
+    "wordCount" : "2086",
+    "keywords" : [ "orgmode","Blog" ]
+}
+</script>
+
+  
+  <title>Org-capture in Files &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Montserrat|Noticia+Text|PT+Sans:400,400i,700">
+
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+      <p class="lead">
+       A Blog by Josh Rollins: Tech, Life, and the Stuff in Between. 
+      </p>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Tags</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(13)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(3)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/security"> security <small>(3)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/hugo"> hugo <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/macos"> macos <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/privacy"> privacy <small>(2)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h3>Sections</h3>
+	<li><a href="https://joshrollinswrites.com/help-desk-head-desk">HelpDesk/HeadDesk</a> </li>
+	<li><a href="https://joshrollinswrites.com/jrl">The JR Life</a> </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>Org-capture in Files</h1>
+ <time datetime=2019-07-06T00:00:00-0400 class="post-date">2019-07-06  
+
+
+
+    
+      / <a href="https://joshrollinswrites.com/tags/orgmode/">orgmode</a>
+</time>
+ <p>I&rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&rsquo;s so much to explain, I can&rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.</p>
+
+<h2 id="why-a-file-as-a-capture-template">Why a File as a Capture Template?</h2>
+
+<p>Why do I need a template based in a file? To understand that, I need to explain some of the work I do as a help desk person in a large organization.</p>
+
+<p>Among other things, my work includes prepping desktop and laptop computers. For the most part, this is done from an image, and all software that is not included is installed remotely from our SMA. However, there are still many cases where the automation fails or does not apply and hands-on deployment is needed. Some scenarios include:</p>
+
+<ul>
+<li>BYOD devices, which need to be evaluated and prepared for our environment.</li>
+<li>Macbooks, which we can&rsquo;t automate yet for political-human reasons.</li>
+<li>Replacements of old computers, which come in different models and different usage (and abuse) scenarios.</li>
+</ul>
+
+<p>These scenarios are complex but similar: a natural perfect place to use checklists. We&rsquo;re a big company, and many times I find that checklists are half of the job. Communication with clients, managers, purchasing staff, as well as getting the right information from everyone and documenting it, is also a big part of the checklist. The difference between a job that was done with a checklist and one that was done without is so obvious that my checklists have been adopted throughout the team and I was asked several times to guide others (especially newcomers) because of &ldquo;my&rdquo; organization. I find this humorous because if you know me, you&rsquo;d know I&rsquo;ve always been <em>far</em> from organized. It&rsquo;s all org-mode, to which I&rsquo;m very thankful.</p>
+
+<p>In the past, I&rsquo;ve had a long checklist &ldquo;template&rdquo; in a header in &ldquo;setups.org&rdquo; file which I used to copy-paste into new projects. The idea of having a file as a template for capture occurred to me in the past, but because I&rsquo;ve never seen a real-world example and didn&rsquo;t see a clear reference to it in the manual, I dismissed the idea as wishful thinking.</p>
+
+<h2 id="why-finding-the-answer-took-so-long">Why Finding the Answer Took so Long?</h2>
+
+<p>I asked about using other org files as templates on Reddit in the past to, but didn&rsquo;t get answers. I believe that&rsquo;s because folks didn&rsquo;t understand what I&rsquo;m asking exactly. And that, in turn, was because I didn&rsquo;t know what I was looking for exactly. After all, if I had a more concrete idea, I&rsquo;d probably read this in Org manual for what it was:</p>
+
+<blockquote>
+<p>template</p>
+
+<p>The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. <strong>The string with escapes may be loaded from a template file, using the special syntax ‘(file &ldquo;template filename&rdquo;)’.</strong> See below for more details.</p>
+</blockquote>
+
+<p>This little paragraph of text can be found about half a page down <a href="https://orgmode.org/manual/Template-elements.html#Template-elements">in the manual</a>. I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn&rsquo;t know I can use a <em>file</em> as a template just from reading it. But why?</p>
+
+<p>There&rsquo;s no clear statement that says you can load a capture from a file; rather, it states that &ldquo;<em>the string with escapes</em> may be loaded from a file&hellip;&ldquo;. To me, this means that I can include my template&rsquo;s definition in a separate file instead of specifying it in my init file. For example, here&rsquo;s a code from my template:</p>
+
+<pre><code class="language-nil">  (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/Documents/Work/Setups.org&quot;)
+&quot;**** %&lt;%H:%M&gt; about %a \n%?&quot; :tree-type week)
+</code></pre>
+
+<p>So, if for some reason I wouldn&rsquo;t want the <em>above snippet</em> in my init file, I could throw it into a different dedicated file. I didn&rsquo;t bother with it because I&rsquo;m comfortable with having my capture template <em>&ldquo;string with escapes&rdquo;</em> where it is. Further, the manual says &ldquo;see below for more details,&rdquo; and there aren&rsquo;t really any. There are only details about what is referred to as &ldquo;string with escapes.&rdquo; There&rsquo;s nothing that tells me I can have my <em>whole</em> template, huge checklist and all, in another file. And, as far as I know, there&rsquo;s no other reference to files as template anywhere in the manual. So I just figured this cannot be done, unless I want to specify a whole checklist in the string above, such as <code>[ ] checklist item one /n [ ] checklist item two /n</code> and so forth. I also didn&rsquo;t know how to tell org-capture to reserve the indent for the sub-lists I needed for some of the items on my complex checklists. This looked very cumbersome to do inside the code itself when I already had an org file with the checklist to copy-paste from.</p>
+
+<p>But there was a note somewhere in my journal that said I&rsquo;ve seen someone pulling a template from a file. I wrote down that I <em>know</em> it is possible. So two weeks ago I went looking around for this elusive option again, with a somewhat different attitude - I figured that if I find nothing, at least I&rsquo;ll learn other people&rsquo;s work around and could find a way to get what I want.</p>
+
+<h2 id="how-i-finally-found-the-solution">How I Finally Found the Solution</h2>
+
+<p>I searched online more aggressively this time, using different queries. I managed to find a couple of questions related to org-mode in emacs.stackexchange.com that were not directly related to my issue but had the following lines in the code (I cut out the paths as they do not matter here)</p>
+
+<pre><code class="language-nil">(&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;...&quot;)
+(file &quot;...&quot;))
+</code></pre>
+
+<p>And then, I found <a href="https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf">this talk</a> by <a href="https://twitter.com/yonkeltron">Jonathan E. Magen</a>. Of particular interest was slide 6. Right there, in front of me, the title was &ldquo;Template stored in file,&rdquo; and below it, a very simple <em>example</em> that tells org-mode to read the template&rsquo;s content from a file. It was as it is in the manual, but this time, the slide was very specific, tell me: &ldquo;this is how you tell org to read from a file.&rdquo; It was that simple. So simple that it was right under my nose the whole time, but I kept missing it because there was no clear example or scenario; it was another option that was mentioned briefly as a head nod, and here, someone finally pointed a finger it at for me. So, this was true. Org-mode <em>can</em> read templates from other org files.</p>
+
+<p>I wrote the code as I understood it from the examples I found and added <code>(file &quot;~/Documents/Personal/journal-tmpl.org&quot;)</code> to the code above instead of that &ldquo;string with escapes&rdquo;, and got an error: <code>org-capture: Capture template ‘j’: Template is not a valid Org entry or tree</code>.</p>
+
+<p>I saw this in the past, I remembered. Somehow I did get this far before. However, when I saw this error then, it was yet another proof I couldn&rsquo;t use org files as templates. After all, journal-tmpl.org was a good org file that opens otherwise, just not through capture. The conclusion <em>then</em> was, wrongly, that capture can&rsquo;t do it.</p>
+
+<p>Now, through the eyes of someone who&rsquo;s looking at workarounds, my attitude was different. Org-mode, I knew, (or Emacs for that matter) should open <em>any</em> file if I tell it to, even if an mp4 or a JPEG file. I would see gibberish on my screen, yes, but it would open. It follows then that if I see this error, it means that capture <em>should</em> work, and what I wrote <em>does</em> tell it to open the template from a file, but something in this file specifically is wrong. Suddenly, this error became an encouragement that I am headed in the right direction. The error was telling me, &ldquo;hey, I want to do this for you, but your file is messed up, sorry.&rdquo; What I should have asked folks should have been &ldquo;what&rsquo;s wrong with my org template file&rdquo; and paste the code in Reddit, but I didn&rsquo;t know to ask that. Now, that I finally knew what the real problem was, I was in the right mindset to work it out. And work it out I did.</p>
+
+<p>As it turns out (for reasons <del>I&rsquo;m still trying to</del> I do understand now), my regular org file started with certain options like <code>#+TITLE:</code> and <code>#+TODO:</code> with several headers already nested inside of it failed to work. However, if I simplify the file down to the headers I want and the checklist itself, it did work. The reason for that, I know now, is exactly what the manual said all along: &ldquo;<strong>this is a string with escape codes</strong>, which will be replaced depending on time and context of the capture call&hellip;&rdquo; Org-capture needs specifically org-capture syntax to work with, and the org-mode options at the top of the file specified above are not org-<em>capture</em> syntax; they are <em>org-mode</em> syntax. I need to get them out of the way and feed org-capture org-capture syntax, just like I did in my init. As a matter of fact, as I now know, I can specify the entire syntax (or &ldquo;strings with escapes&rdquo;) under my first header and it will work just fine. I don&rsquo;t even need to specify it in my init. Yes, this is what the manual said. But no, this is not what it said to <em>me</em>. I just couldn&rsquo;t see it.</p>
+
+<h2 id="what-does-it-look-like">What Does it Look Like?</h2>
+
+<p>Here&rsquo;s an example of one of my org files templates. Notice how the very first thing is the header itself. Turns out it <em>must</em> be the first thing in org-capture syntax. Then the second line specifies what the template does just like it did in my init. Finally, the checklist itself:</p>
+
+<pre><code class="language-nil">* Setup Proccess [0%]
+%^{Ticket}p %^{ID}p %^{Computer}p
+- [ ] Rename (SLS-ID-MAC)
+- [ ] Check OS Updates
+- [ ] Encryption
+- [ ] A/V
+  - [ ] Install
+  - [ ] Manage (overwrite XML file)
+- [ ] SMA
+- [ ] Restart
+- [ ] WiFi
+- [ ] VPN
+- [ ] Another App
+  - [ ] Install
+  - [ ] Test
+  - [ ] Test w/ VPN
+- [ ] Asset Registration
+
+</code></pre>
+
+<p>The header has a percentage that changes as I fill in the checklist items. This allows me to see how close I am to be done straight from the agenda view. The second line tells org-capture to prompt me for properties for the ticket number, ID number of the person, and the computer name. Then I have a blank list ahead of me, which I can fill up according to whatever is already done.</p>
+
+<p>This particular list is summoned by a very similar line like the one I have above regarding my journal. I just have a different file specified (say mac-checklist.org instead of journal-tmpl.org</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>The result is four checklists I&rsquo;m now working with and tweaking to perfection, summoned directly from org-capture. Because I was now encouraged to work with different checklists all in one place, that meant I needed to look for a way to have &ldquo;submenus&rdquo; inside org-capture; that is, to tell org I want to capture a checklist, and it should then take me to a checklist capture menu, and then I wanted to choose one of my checklists. From there, I also learned of more org-mode capture options that completely changed how I saw my org-capture usage to the point of re-inventing it in my workflow. This is too much to include in one post, so I hope to specify on that soon. For now, the big lesson I learned, and I hope anyone who every starts using org-mode is this:</p>
+
+<p>If you think something is possible, it probably is. One way or another, it is. Rather behind a few paragraphs of code or a mysterious hint in a manual, it&rsquo;s worth exploring with an open mind. And for those of you who used org-mode for years, especially from a programming background, I hope this post serves to show that some of us struggle not with the code, but lack of good, clear examples. We need a story, a scenario, a <em>reason</em> to explore. Please give us more.</p>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

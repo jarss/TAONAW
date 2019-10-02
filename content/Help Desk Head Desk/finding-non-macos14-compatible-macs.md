@@ -2,8 +2,8 @@
 title = "Using Regex for Old macOS Models"
 author = ["Josh Rollins"]
 publishDate = 2019-02-17T00:00:00-05:00
-lastmod = 2019-02-23T23:17:38-05:00
-tags = ["system-management", "regex"]
+lastmod = 2019-10-02T06:22:57-04:00
+tags = ["automation", "regex"]
 draft = false
 +++
 
@@ -25,13 +25,13 @@ Using the above list, we can use this [full list](https://everymac.com/systems/b
 
 KACE lists model identifiers under "System Model". It the case here, we are looking at a MacBook Pro 14,2 (which is mid 2017, according to the list above). This is the key we will use to create our filter:
 
-{{< figure src="/ox-hugo/finding-non-macos14-compatible-macs2.png" >}}
+{{< figure src="/mnt/hgfs/Space/hallway/finding-non-macos14-compatible-macs2.png" >}}
 
 One of KACE's killer features is its smart lables, which allows us to build very detailed filters to profile hardware. Smart labels comb through the entire inventory and capture devices that fit our desired filter. There is a basic wizard built into KACE which allows us to create basic labels, but if we need to dive in deeper we need to use Regex or straight up SQL.
 
 To create the smart label, I used [this helpful article](https://www.itninja.com/blog/view/using-regex-in-smart-labels-to-find-lower-versioned-software-w-java-example). I suspect KACE's Regex is nothing special, but this was my first time trying to get my hands dirty with it. It was fun! Here's what it looks like:
 
-{{< figure src="/ox-hugo/finding-non-macos14-compatible-macs1.png" >}}
+{{< figure src="/mnt/hgfs/Space/hallway/finding-non-macos14-compatible-macs1.png" >}}
 
 As we can see, the filter uses conditions for eahc one of the six family models. Let's take a look at `^(MacBookAir[1-4],)` as an example, keep in mind how the System Model (above) looks like.
 

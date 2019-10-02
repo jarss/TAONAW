@@ -6,10 +6,46 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tools</title>
+      <link>https://joshrollinswrites.com/tags/tools/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://joshrollinswrites.com/tags/windows/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://joshrollinswrites.com/tags/automation/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://joshrollinswrites.com/tags/bash/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/bash/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>writing</title>
@@ -102,15 +138,6 @@
     </item>
     
     <item>
-      <title>tools</title>
-      <link>https://joshrollinswrites.com/tags/tools/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>manjaro</title>
       <link>https://joshrollinswrites.com/tags/manjaro/</link>
       <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
@@ -188,15 +215,6 @@
       <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/regex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>system-management</title>
-      <link>https://joshrollinswrites.com/tags/system-management/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/system-management/</guid>
       <description></description>
     </item>
     

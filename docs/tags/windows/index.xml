@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/tags/windows/</link>
+    <description>Recent content in windows on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tools in Windows</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</guid>
+      <description>&lt;p&gt;My &lt;a href=&#34;https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f&#34;&gt;first public video&lt;/a&gt; introduced me to new challanges I didn&amp;rsquo;t face until now. Case in point: displaying milliseconds in VLC. I looked online in various places for a solution with my tools of choice, VLC player and ffmpeg. Workarounds do exist, but not nearly as simple as what exists for me in Windows. This happened to me before. As I was starting to get stuck, I realized that sometimes it&amp;rsquo;s ok not to wrack my head over every single hurdle. This is a reminder for myself, and hopefully save you some time to.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "BMC",
+    "name" : "INTRO",
+    "headline" : "INTRO",
+    "description" : "",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-07-14 17:17:55 -0400 EDT",
+    "dateModified" : "2019-07-14 17:17:55 -0400 EDT",
+    "url" : "https:\/\/joshrollinswrites.com\/bmc\/",
+    "wordCount" : "115",
+    "keywords" : [ "Blog" ]
+}
+</script>
+
+  
+  <title>INTRO &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Montserrat|Noticia+Text|PT+Sans:400,400i,700">
+
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="https://joshrollinswrites.com/bmc/index.xml" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+      <p class="lead">
+       A Blog by Josh Rollins: Tech, Life, and the Stuff in Between. 
+      </p>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Tags</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(13)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(3)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/security"> security <small>(3)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/hugo"> hugo <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/macos"> macos <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/privacy"> privacy <small>(2)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h3>Sections</h3>
+	<li><a href="https://joshrollinswrites.com/help-desk-head-desk">HelpDesk/HeadDesk</a> </li>
+	<li><a href="https://joshrollinswrites.com/jrl">The JR Life</a> </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+    <main class="content container">
+    
+<h2>Buy Me Coffee?</h2>
+
+Here, this should work:
+<p>
+<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="<https://fonts.googleapis.com/css?family=Cookie>" rel="stylesheet"><a class="bmc-button" target="\_blank" href="<https://www.buymeacoffee.com/I2HmaZYGh>"><img src="![](https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg)" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+
+<hr>
+<ul class="posts">
+
+</ul>
+    </main>
+
+    
+  </body>
+</html>

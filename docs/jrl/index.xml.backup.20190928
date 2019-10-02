@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>INTRO on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/jrl/</link>
+    <description>Recent content in INTRO on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Jul 2019 17:03:01 -0400</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/jrl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What has Been Going on</title>
+      <link>https://joshrollinswrites.com/jrl/updates/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/jrl/updates/</guid>
+      <description>&lt;p&gt;I always dislike it when I read a post explaining why there&amp;rsquo;s been a break in posting. It&amp;rsquo;s usually a sign that the next post will be the last if it will happen at all, and it&amp;rsquo;s always some excuse about being busy, life getting in the way, etc. etc. So I guess now it&amp;rsquo;s my turn to write one of these posts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Emotional Exhaustions</title>
+      <link>https://joshrollinswrites.com/jrl/about_burnouts/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/jrl/about_burnouts/</guid>
+      <description>&lt;p&gt;This past week has been a good example of emotional exhaustion. Because influences overall productivity, relationships, and health (both mental and physical) I&amp;rsquo;d like to discuss it here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some Good Things</title>
+      <link>https://joshrollinswrites.com/jrl/some_things/</link>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/jrl/some_things/</guid>
+      <description>&lt;p&gt;Last Saturday I had an encounter with dear ol&amp;rsquo; Aunt Dee. She&amp;rsquo;s like a lifelong buddy of mine, never too far. She&amp;rsquo;s a shy quiet wall flower, sneaks up on you, undetected. You only realize she&amp;rsquo;s around after her long scrawny hands are wrapped around you, hugging, her perfume brings back a daze of nostalgia&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Of Relationships and Money</title>
+      <link>https://joshrollinswrites.com/jrl/of_people_and_money/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/jrl/of_people_and_money/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Warning: This is not my usual geeky-tech rambling about Org or Emacs. This is a somewhat NSFW post about my life. If you&amp;rsquo;re not into that and you&amp;rsquo;re here for the geeky stuff, I&amp;rsquo;d skip this if I were you.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

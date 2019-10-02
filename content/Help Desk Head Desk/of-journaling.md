@@ -2,12 +2,14 @@
 title = "Of Journaling"
 author = ["Josh Rollins"]
 publishDate = 2019-08-29T00:00:00-04:00
-lastmod = 2019-09-07T08:55:45-04:00
+lastmod = 2019-10-02T06:12:37-04:00
 tags = ["writing"]
 draft = false
 +++
 
-I've kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I'm not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal.
+I've kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I'm not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal...
+
+<!--more-->
 
 Interestingly, the old paper journals are the ones that survived and moved homes with me (for the most part) while the digital ones are lost somewhere in the cloud.[^fn:1] I've tried many different applications, more than I can remember. My thoughts are spread across Google, Microsoft Evernote and Apple products, some defunct and cannot be restored. My journal today, in org-mode, is resistant to that - at least, that's my hope. I enjoy keeping a journal here, on the same platform I use for blogging and organizing my day.
 

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.58.3" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "Best Tools for the job: Flameshot",
+    "headline" : "Best Tools for the job: Flameshot",
+    "description" : "\x3cp\x3eEvery now and then I discover (or re-discover) a tool in Linux that does exactly what I need it to do. Some examples include ffmpeg, to shrink down my self-recorded webcam journal session while increasing the volume; abcde, to rip a classical music CD to flac and find its exact title and name; youtube-dl, which downloads any video online I need along with aria to speed these downloads, and more.\x3c\/p\x3e\n\n\x3cp\x3eToday I want to praise a new excellent tool, this time for screenshots: \x3ca href=\x22https:\/\/flameshot.js.org\/#\/\x22\x3eFlameshot\x3c\/a\x3e.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-05-25 00:00:00 -0400 EDT",
+    "dateModified" : "2019-05-25 00:00:00 -0400 EDT",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/best-tools-flameshot\/",
+    "wordCount" : "439",
+    "keywords" : [ "flameshot","tools","Blog" ]
+}
+</script>
+
+  
+  <title>Best Tools for the job: Flameshot &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Montserrat|Noticia+Text|PT+Sans:400,400i,700">
+
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+      <p class="lead">
+       A Blog by Josh Rollins: Tech, Life, and the Stuff in Between. 
+      </p>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Tags</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(13)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(3)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/security"> security <small>(3)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/hugo"> hugo <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/macos"> macos <small>(2)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/privacy"> privacy <small>(2)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h3>Sections</h3>
+	<li><a href="https://joshrollinswrites.com/help-desk-head-desk">HelpDesk/HeadDesk</a> </li>
+	<li><a href="https://joshrollinswrites.com/jrl">The JR Life</a> </li>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>Best Tools for the job: Flameshot</h1>
+ <time datetime=2019-05-25T00:00:00-0400 class="post-date">2019-05-25  
+
+
+
+    
+      / <a href="https://joshrollinswrites.com/tags/flameshot/">flameshot</a>
+      / <a href="https://joshrollinswrites.com/tags/tools/">tools</a>
+</time>
+ <p>Every now and then I discover (or re-discover) a tool in Linux that does exactly what I need it to do. Some examples include ffmpeg, to shrink down my self-recorded webcam journal session while increasing the volume; abcde, to rip a classical music CD to flac and find its exact title and name; youtube-dl, which downloads any video online I need along with aria to speed these downloads, and more.</p>
+
+<p>Today I want to praise a new excellent tool, this time for screenshots: <a href="https://flameshot.js.org/#/">Flameshot</a>.</p>
+
+<figure>
+    
+        <img src="https://joshrollinswrites.com/2019-05-25.jpg"/> </figure>
+
+
+<p>Flameshot is walking the thin line between being a heavy future-rich screen capture tool with all kinds of features (think  and the minimal screen-capture one that usually comes bundled with your distro. I think it manages to be &ldquo;just enough&rdquo; to do exactly what it needs to do. Nothing more, nothing less.</p>
+
+<p>It was easy enough to tie Flameshot to my print-screen button. When summoned, the entire screen becomes dark, and a little message asks me to drag my selection with the mouse. The resulting window, which you can see in the picture above, is a frame that can be adjusted by dragging its sides to crop exactly what you need.</p>
+
+<p>As you stretch the frame, the different tools buttons re-arrange themselves depending on the frame&rsquo;s size. It&rsquo;s a really nice feature which makes the whole application feel smooth and responsive. The wider the frame is, the more tools on the bottom. If the frame is really small, the tools will wrap all around the frame, creating a second row, as needed.</p>
+
+<p>Flameshot comes with all the basic tools you need from an annotation application: arrows, lines, and now (finally) a text tool, which needs to first be activated from the tools configuration menu: (<code>$ flameshot config</code>). There&rsquo;s also a text-blur and upload to Imgur tool. Flameshot is minimal: there&rsquo;s no eraser button, for example, because it&rsquo;s not needed. You can only undo and re-do. The color palette is basic, without a large color wheel. You can&rsquo;t rotate and flip images; it trusts you to use a more &ldquo;heavy guns&rdquo; editing tool for that, reminding you it&rsquo;s there only for a screenshot.</p>
+
+<p>It&rsquo;s an elegant tool, with an intuitive UI: right-click to choose a color; scroll to make the lines wider or thinner. When you choose the upload to Imgur button, for example, it automatically does that in the background and opens a window for you to either save, copy the freshly-created link to the clipboard or delete the image from the site, which opens another tab in your browser for that. This is the kind of application that makes you feel proud using it.</p>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>
