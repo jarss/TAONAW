@@ -77,10 +77,16 @@ a {
 /* The following define footnotes links. In order to work with the back link from the footnotes, we need to add footnoteReturnLinkContents = "[text here]" to config.toml*/
 
 
-/* This is the return text (that takes us back to the post) */
+/* We need this so links in footnotes are not red... */
+.footnotes a {
+    color: #515151;
+}
 
-.footnote-return {
-  color: #ac4142;
+
+/* ...Only links at the end that takes us back should be red. This is the return text (that takes us back to the post) */
+
+a.footnote-return {
+  color: #8B0000;
   text-decoration: none;
   font-size: 1rem;
   font-family: "Noticia Text", arial; 
@@ -372,32 +378,28 @@ tbody tr:nth-child(odd) th {
     color: #515151;
 }
 
+.post .read-more-link a {
+     color: #8B0000;
+}
+
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-    color: #303030;
-    font-family: "PT Sans";
-    font-size: 2rem;
-    
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-size: 2rem;    
 }
 
 .page-title,
 .post-title {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: "Montserrat";
-    font-size: 2rem;
     border-bottom-style: dotted;
     border-width: 2px;
     border-color: #eee8d5;
 }
-
-.post-title a {
-    font-family: "Montserrat";
-    text-decoration: none;
-    font-size: 2rem;
 
 
 /* Meta data line below post title */
@@ -409,11 +411,11 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
-.post-date a {
+.post .post-date a{
   font-family: "PT Sans";
   font-size: 1.1rem;
   text-decoration: underline;
-  color: #9a9a9a;
+  color: #8B0000;
 }
 
 
@@ -441,6 +443,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+
+.dsq-brlink a {
+    color: #515151;
 }
 
 

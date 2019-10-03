@@ -6,10 +6,19 @@
     <description>Recent content in orgmode on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Of Journaling</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Submenus in org-mode Capture</title>
@@ -60,6 +69,15 @@
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve talked about &lt;a href=&#34;http://www.orgzly.com/&#34;&gt;Orgzly&lt;/a&gt; several times on this blog, but I haven&amp;rsquo;t dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly&amp;rsquo;s usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I&amp;rsquo;m happy to present my first interview on this blog.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Everenote - Behind the Scenes</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</guid>
+      <description>&lt;p&gt;A few years back, I was an avid user of Evernote. That was a period of information &amp;ldquo;innocence&amp;rdquo; for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files &amp;ndash; though they have been since downloaded and converted from the App&amp;rsquo;s native format.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>windows</title>
-      <link>https://joshrollinswrites.com/tags/windows/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>automation</title>
       <link>https://joshrollinswrites.com/tags/automation/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
@@ -39,20 +30,20 @@
     </item>
     
     <item>
-      <title>bash</title>
-      <link>https://joshrollinswrites.com/tags/bash/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
+      <title>life</title>
+      <link>https://joshrollinswrites.com/tags/life/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
       
-      <guid>https://joshrollinswrites.com/tags/bash/</guid>
+      <guid>https://joshrollinswrites.com/tags/life/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>writing</title>
-      <link>https://joshrollinswrites.com/tags/writing/</link>
+      <title>orgmode</title>
+      <link>https://joshrollinswrites.com/tags/orgmode/</link>
       <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
       
-      <guid>https://joshrollinswrites.com/tags/writing/</guid>
+      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
       <description></description>
     </item>
     
@@ -93,83 +84,11 @@
     </item>
     
     <item>
-      <title>ssh</title>
-      <link>https://joshrollinswrites.com/tags/ssh/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tramp</title>
-      <link>https://joshrollinswrites.com/tags/tramp/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/tramp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>orgmode</title>
-      <link>https://joshrollinswrites.com/tags/orgmode/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>orgzly</title>
-      <link>https://joshrollinswrites.com/tags/orgzly/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/orgzly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flameshot</title>
-      <link>https://joshrollinswrites.com/tags/flameshot/</link>
-      <pubDate>Sat, 25 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/flameshot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>manjaro</title>
-      <link>https://joshrollinswrites.com/tags/manjaro/</link>
-      <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/manjaro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>email</title>
       <link>https://joshrollinswrites.com/tags/email/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/email/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mu4e</title>
-      <link>https://joshrollinswrites.com/tags/mu4e/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/mu4e/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>evernote</title>
-      <link>https://joshrollinswrites.com/tags/evernote/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/evernote/</guid>
       <description></description>
     </item>
     
@@ -183,38 +102,11 @@
     </item>
     
     <item>
-      <title>life</title>
-      <link>https://joshrollinswrites.com/tags/life/</link>
-      <pubDate>Wed, 03 Apr 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>selfimprovement</title>
-      <link>https://joshrollinswrites.com/tags/selfimprovement/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/selfimprovement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elitedangerous</title>
-      <link>https://joshrollinswrites.com/tags/elitedangerous/</link>
+      <title>games</title>
+      <link>https://joshrollinswrites.com/tags/games/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://joshrollinswrites.com/tags/elitedangerous/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regex</title>
-      <link>https://joshrollinswrites.com/tags/regex/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/regex/</guid>
+      <guid>https://joshrollinswrites.com/tags/games/</guid>
       <description></description>
     </item>
     
@@ -237,20 +129,11 @@
     </item>
     
     <item>
-      <title>git</title>
-      <link>https://joshrollinswrites.com/tags/git/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
+      <title>apple</title>
+      <link>https://joshrollinswrites.com/tags/apple/</link>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://joshrollinswrites.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>games</title>
-      <link>https://joshrollinswrites.com/tags/games/</link>
-      <pubDate>Wed, 16 Jan 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/games/</guid>
+      <guid>https://joshrollinswrites.com/tags/apple/</guid>
       <description></description>
     </item>
     
@@ -260,33 +143,6 @@
       <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network</title>
-      <link>https://joshrollinswrites.com/tags/network/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/network/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>raspberry-pi</title>
-      <link>https://joshrollinswrites.com/tags/raspberry-pi/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>support</title>
-      <link>https://joshrollinswrites.com/tags/support/</link>
-      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/support/</guid>
       <description></description>
     </item>
     

@@ -40,5 +40,14 @@
       <description>I&amp;rsquo;ve been using Linux as my daily driver for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don&amp;rsquo;t think I will ever go back to using either one for my personal data. As a matter of fact, it&amp;rsquo;s Linux which made an appearance at work: without my VM and Org-mode, I would probably be drowning under hips of emails, meeting invites, support tickets, and the constant in-person walk-ins into our work environment.</description>
     </item>
     
+    <item>
+      <title>The Hub</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

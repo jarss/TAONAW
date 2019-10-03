@@ -411,7 +411,7 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
-.posts .post-date a{
+.post .post-date a{
   font-family: "PT Sans";
   font-size: 1.1rem;
   text-decoration: underline;
