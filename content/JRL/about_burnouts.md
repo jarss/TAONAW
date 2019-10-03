@@ -2,8 +2,8 @@
 title = "About Emotional Exhaustions"
 author = ["Josh Rollins"]
 publishDate = 2019-03-09T00:00:00-05:00
-lastmod = 2019-04-04T07:24:16-04:00
-tags = ["selfimprovement", "life"]
+lastmod = 2019-10-03T07:05:45-04:00
+tags = ["life"]
 draft = false
 +++
 
@@ -28,7 +28,7 @@ We can conclude that emotional exhaustion is a symptom or a part of a burnout. E
 
 ## Why Discussing Exhaustion is Important {#why-discussing-exhaustion-is-important}
 
-Attending certain activities require energy while others "charge" such energy. As a mostly introverted person who values quiet and privacy, social interactions require that I spend energy. Several activities on my personal calendar, such as attending a [DnD](https://en.wikipedia.org/wiki/Dungeons%5F%2526%5FDragons) session with friends, requires I spend a relatively high level of mental energy. Other activities, like working out at the gym, requires a different kind of mental energy and a level of physical energy. In sate of emotional exhaustion, both are depleted and prevent me from doing these activities. In turn, giving up on something that is highly important to me (going to the gym) leads to a feeling of guilt and self-blame which is another step toward overall burnout.
+Attending certain activities require energy while others "charge" such energy. As a mostly introverted person who values quiet and privacy, social interactions require that I spend energy. Several activities on my personal calendar, such as attending a [DnD](https://en.wikipedia.org/wiki/Dungeons%5F&%5FDragons) session with friends, requires I spend a relatively high level of mental energy. Other activities, like working out at the gym, requires a different kind of mental energy and a level of physical energy. In sate of emotional exhaustion, both are depleted and prevent me from doing these activities. In turn, giving up on something that is highly important to me (going to the gym) leads to a feeling of guilt and self-blame which is another step toward overall burnout.
 
 To make a long story short, exhaustion means you're doing less overall and could lead to further physical and mental problems that in turn mean you're even less productive.
 

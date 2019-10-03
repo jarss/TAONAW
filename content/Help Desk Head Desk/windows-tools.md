@@ -2,8 +2,8 @@
 title = "Tools in Windows"
 author = ["Josh Rollins"]
 publishDate = 2019-09-28T00:00:00-04:00
-lastmod = 2019-10-02T06:17:46-04:00
-tags = ["tools", "windows"]
+lastmod = 2019-10-03T06:57:48-04:00
+tags = ["tools"]
 draft = false
 +++
 

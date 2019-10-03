@@ -2,7 +2,7 @@
 title = "Why do They Use a Mac?"
 author = ["Josh Rollins"]
 publishDate = 2019-08-03T00:00:00-04:00
-lastmod = 2019-08-03T09:21:48-04:00
+lastmod = 2019-10-03T06:57:38-04:00
 tags = ["macos", "linux"]
 draft = false
 +++

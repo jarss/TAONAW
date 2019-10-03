@@ -2,8 +2,8 @@
 title = "CSS Updates"
 author = ["Josh Rollins"]
 publishDate = 2019-02-02T00:00:00-05:00
-lastmod = 2019-02-24T08:51:57-05:00
-tags = ["blogging", "git"]
+lastmod = 2019-10-03T07:04:17-04:00
+tags = ["blogging"]
 draft = false
 +++
 

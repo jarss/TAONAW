@@ -2,8 +2,8 @@
 title = "Using Regex for Old macOS Models"
 author = ["Josh Rollins"]
 publishDate = 2019-02-17T00:00:00-05:00
-lastmod = 2019-10-02T06:22:57-04:00
-tags = ["automation", "regex"]
+lastmod = 2019-10-03T07:04:46-04:00
+tags = ["automation"]
 draft = false
 +++
 

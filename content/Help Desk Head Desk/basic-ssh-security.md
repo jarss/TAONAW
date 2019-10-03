@@ -2,8 +2,8 @@
 title = "Basic SSH Security"
 author = ["Josh Rollins"]
 publishDate = 2019-07-28T00:00:00-04:00
-lastmod = 2019-08-14T08:32:35-04:00
-tags = ["security", "emacs", "tramp", "ssh"]
+lastmod = 2019-10-03T06:57:34-04:00
+tags = ["security", "emacs"]
 draft = false
 +++
 

@@ -2,8 +2,8 @@
 title = "Elite Dangerous: Beginning"
 author = ["Josh Rollins"]
 publishDate = 2019-03-01T00:00:00-05:00
-lastmod = 2019-04-04T07:23:28-04:00
-tags = ["elitedangerous"]
+lastmod = 2019-10-03T07:04:57-04:00
+tags = ["games"]
 draft = false
 +++
 
@@ -11,7 +11,7 @@ draft = false
 
 <!--more-->
 
-The first time I heard about Elite was on [Twitter, from one of the famed infosec folks I follow](https://twitter.com/SwiftOnSecurity/status/990638636763840513). Then I heard about a bunch of players on an [epic journey to the other side of the galaxy](https://www.pcgamer.com/over-8000-elite-dangerous-pilots-are-embarking-on-an-incredible-18-week-journey/), especially when I realized this was a gamer-community driven event. This was also around the time I started watching Twitch streams more often, looking for a game that is more than just another hack and slash. Eventually, a few weeks ago, I started watching [Elite streamers](https://www.twitch.tv/directory/game/Elite:%2520Dangerous).
+The first time I heard about Elite was on [Twitter, from one of the famed infosec folks I follow](https://twitter.com/SwiftOnSecurity/status/990638636763840513). Then I heard about a bunch of players on an [epic journey to the other side of the galaxy](https://www.pcgamer.com/over-8000-elite-dangerous-pilots-are-embarking-on-an-incredible-18-week-journey/), especially when I realized this was a gamer-community driven event. This was also around the time I started watching Twitch streams more often, looking for a game that is more than just another hack and slash. Eventually, a few weeks ago, I started watching [Elite streamers](https://www.twitch.tv/directory/game/Elite: Dangerous).
 
 I had no idea how beautiful the game was. I didn't prepare myself to watch streamers for long periods (something I didn't know before), glued to the screen and asking questions. And then I found [Pave](https://www.twitch.tv/thepavehawker/videos).
 

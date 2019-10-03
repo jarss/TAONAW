@@ -284,7 +284,7 @@ The main technology section. Every project starts here, eventually branching off
     list of things I'm doing, since it's misleading. The agenda is what
     reflects that now.
 
-*** PUBLISHED Desktop Wisdom                                        :support:
+*** PUBLISHED Desktop Wisdom					       :life:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: desktop-wisdom
@@ -307,7 +307,7 @@ I asked my coworkers the following question:
  When looking at the nature of the job and the experience each one of us had, these facts make a lot of sense. 
 
  Chris is the youngest, very bright, and after money. He's tired of users forgetting to check the power cable or not knowing how to reset their computers before calling. Nick is a chill guy who never seems to get upset. He is used to the boss demanding things and he exercises every day, which definitely help to take out aggravations. Dave has seen it all in this job and been through a couple of management changes. His other favorite sentence is "tomorrow is another day." 
-*** PUBLISHED The Hub                                  :network:raspberry_pi:
+*** PUBLISHED The Hub				  :automation:security:linux:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: Raspberry-Pi-Org-Hub
@@ -414,7 +414,7 @@ The setup process:
 Now, folders that common to a couple of devices should be added first from one device (as stated above) with the RP, and then add that folder to the /other/ device. Device_A --> RP --> Device_B. This ensures you're sharing the same folder (same folder ID) and not creating duplicates. The reason you're doing it this way and not just sharing from one device to another is because you don't want the other devices to see each other; they should only "see" the RP. The RP is the only device that needs to see all of them. Fewer complications means Syncthing works better and faster. Remember what I said earlier: don't play with it, keep it simple and it will work. Complicate it, and you'll spend hours trying to figure out what's wrong.  
 
 So for example, if I first sync my home VM and share the "work" folder to the RP, after I'm done and verify the sync work, I am connecting the work VM to the RP, wait until it's recognized, and then send the work folder (which is now synced between home VM and RP) /to/ the work VM. 
-*** PUBLISHED AFPS Secure Token Active Directory Problems             :macos:
+*** PUBLISHED AFPS Secure Token Active Directory Problems	      :apple:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: macOS-secure-token-trouble
@@ -516,7 +516,7 @@ LastPass is another tool I didn't think about replacing when I transitioned into
 # The Chromebook was my idea of helping her bridging the gap of using touch screen and having a new fast hardware on the cheaper end. I'm a strong advocate of these devices, which allow people to access good hardware on the cheap, while keeping things secure and organized. This is not a post about how good Chromebooks are, but if you still believe Chromebooks are plastic toys that can't function without internet connection, you should probably get updated. 
 
 # There was one unexpected problem with the Chromebook - LastPass. 
-*** PUBLISHED Using Regex for Old macOS Models             :automation:regex:
+*** PUBLISHED Using Regex for Old macOS Models			 :automation:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME:  finding-non-macos14-compatible-macs
@@ -943,7 +943,7 @@ Org-mode is a huge topic in itself which I've spent hours writing about in other
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
 
-*** PUBLISHED CSS Updates                                      :blogging:git:
+*** PUBLISHED CSS Updates					   :blogging:
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: css-updates-1
@@ -988,7 +988,7 @@ Next, I think I will turn my attention to the navigation links themselves (under
 
 If anything looks off to you, please let me know in the comments! Thank you.  
 
-*** PUBLISHED Apple is a Hardware Second Company 
+*** PUBLISHED Apple is a Hardware Second Company                      :apple:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: apple-hardware-second
@@ -1026,49 +1026,6 @@ Now, the base is furnished complete with a [[http://subnautica.wikia.com/wiki/Mo
 
 I've found something at the bottom of the abyss. "Something that shouldn't be there." It's a dark, green-hellish looking place with bones of creatures the size of an apartment building. Each day I explore further. Each day I push further and the game never fails to scare me. Winning these small battles against myself bit by bit becomes addictive. I look back at what scared me before and I know I've conquered it. I know that now if one of these monsters chooses to attack my base, I will fight it. The base hanging over the cliff that once terrorized me is now my home, transformed into my new comfort zone. I know every fold in the ground, every floaters-covered rock, every hole to the mushroom cave. You can't be scared of what you know. Subnautica is an excellent teacher of this lesson.
 
-*** CANCELLED Watching Star Wars  
-:PROPERTIES:
-    :EXPORT_HUGO_SECTION: WIT
-    :EXPORT_FILE_NAME: rewatching-starwars
-    :EXPORT_HUGO_PUBLISHDATE: 2019-02-06:
-    :END:
-
-I'm basing my viewing on [[https://scifi.stackexchange.com/questions/1520/in-what-order-should-the-star-wars-movies-be-watched][this guide]] from stackexchange with slight modifications:
-
-[[file:static/rewatching-starwars.jpg]]
-
-according to the comments, Rouge One fits after New Hope, and I felt Solo fits after The Empire Strikes Back. 
-
-So here's what I've watched so far, and what I thought: 
-
-# Continue New Hope below
-
-**** New Hope 
-
-There's not much to say, because there's so much to say. This is the movie that started it all, and it does Star Wars justice to start here. The story is mostly concentrated on Luke Skywalker, but also puts into place the essential Star Wars story blocks: the Force, Jedis, the Empire and the Rebelion.
-
-
-One of the things I love about Star Wars in general is how the Force combines the idea of a religion as I feel it should be. It's a strict practice that requires dedication and development, 
-
-**** Rouge One
-Rouge One was a good surprise. I didn't expect this movie to be as good as it felt it was. It seems it just a space filler for a trival story, but it turned out to be more complicated in a good way.
-
-First, it's not just a simple story of good vs evil. This is a movie about making decisions. Just like in real life, many decisions are not pure bad or pure good, but a mix of both. While this is all happening, the movie also tells us more about the Empire and its ambions. 
-
-The one thing in this movie that was a bit over the top for me was that everyone dies. The movie drives the "heros that die for a cause" a bit too far, and death became an empty emphasis making you think when's the next hero's turn is up. 
-
-Rouge one fits best at the second place. It tells an unexpectidly good story, and it does so relatively well without getting trapped in too many character-driven cliche's. It's the story that moves this movie a long, not over-focus on the characters which are not all too important at this point.  
- 
-**** The Empire Strikes Back
-
-**** Solo
-I can sum this movie in one word: "meh". And sometimes the "meh" turned "eck," and "eck" means I usually pause the movie and go do something else because it feels too much like a chore. 
-
-I don't know if it's because I watched The Empire Strikes Back before with all of its 80s cinimatic social norms of the time that made Solo's norms stand out so much, but they did. Of this, L3-37 is a godo example: a robot with a bit attitude, making a giant, unavoidable nod to all rebels today. Perhaps I'm just getting old (it feels more like an excuse the more I say it) but I long ran out of patient for the rebel kinds around me. Watch a sci-fi movie is supposed to be a certain escape for me, but that droid made that impossible. 
-
-Since I'm already here, let's talk about other things that /could/ have been mentioned and weren't, if we're already taking a rebelious stand point. Most notibly, the cliche love story of a boy goes back to save a girl. Wouldn't it be great if Solo went back to meet an adult no BS Qi'ra that just moved on? Maybe she got a ship herself, kicks ass on her own right, and just doesn't have interest to ignight teenage love. 
-
-This movie is too loaded with social cliche's of our time, and I recognize that they are cliche's because I'm surrounded by them all the time, unlike the ones from the older movies. 
 *** PUBLISHED Password Managers Hacks                              :security:
     :PROPERTIES:
     :EXPORT_hugo_section: Help Desk Head Desk
@@ -1100,7 +1057,7 @@ But who's going to listen anyway. I keep trying to get my partners on password m
 
 Sigh.
  
-*** PUBLISHED Elite Dangerous: Beginning               :elitedangerous:games:
+*** PUBLISHED Elite Dangerous: Beginning			      :games:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: elite-dangerous-beginnings
@@ -1201,7 +1158,7 @@ Second, and this is a harder issue to fix, is the lack of details I got from eve
 <br>
 This style difference is a pretty big gap to cross. Org-mode is private, quiet, at-my-computer (usually) planning, where Google assistant is not private (Google can say whatever they want). The Calendar, in a weird way, is also not really personal: it's usually intended to share with a different person. What I have on Org-mode is an event. An event can be personal, often enough summed up in my journal with my impressions. The difference is big enough philosophically speaking that I can create the same occurrence twice: once on my Google Calendar, and once in Org. Sure, this is mostly a waste of time. The difference is not always so black-and-white, but it's there. For now, I am creating my Google events manually after creating the Org-mode events.
 
-*** PUBLISHED Switching to Manjaro                            :linux:manjaro:
+*** PUBLISHED Switching to Manjaro				      :linux:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: switching-to-manjaro
@@ -1226,7 +1183,7 @@ Mint has always been Cinnamon (which is a version of GNOME) for me. While Mint o
 
 I'm still working on the setup. For one, I need to re-wire everything and hide all the cords from sight. I also want to run an Ethernet cable from the laptop (having a bulky heavy laptop has advantages...) directly to the router for increased speeds and stable LAN connectivity for my SMB shares on my Windows machine, when I set them up. I also want to purchase another battery from eBay just in case. I've been running it without a battery connected directly to a power source. Currently, the CPU widget points at less than 25% usage (that is until I fire up Chrome...) and the laptop's lid is closed, in its "docked" state on my desk. If I want to go somewhere all I have to do is to attach the battery and disconnect it from the wires, and I have my Linux productivity setup with me ready to go in my backpack. No need for a thin sexy under-powered over-priced device here, we're doing juuuuust fine. 
  
-*** PUBLISHED Everenote - Behind the Scenes                        :evernote:
+*** PUBLISHED Everenote - Behind the Scenes                   :orgmode:tools:
     :PROPERTIES:
     :EXPORT_FILE_NAME: Everenote-behind-the-scenes
     :EXPORT_HUGO_PUBLISHDATE: 2019-05-18:
@@ -1241,7 +1198,7 @@ This morning, YouTube's algorithm picked up [[https://www.youtube.com/watch?v=5r
 
 Evernote is a for-profit company with a product that is very different than org-mode. While I have no desire or need to switch from org in the near future, it would be interesting to see what kind of challenges the makers of a popular note-taking app come up with. Who knows, perhaps I could learn a thing or two.  
 
-*** PUBLISHED Why Managing Email in Emacs is not for me          :email:mu4e:
+*** PUBLISHED Why Managing Email in Emacs is not for me		      :email:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: mu4e-not-for-me
@@ -1260,7 +1217,7 @@ You're probably starting to see the issue here, and it doesn't really have to do
 
 I didn't instead to have four active email accounts, but this is how it is. While it's possible that others have no more than two email accounts which might fall into nice buckets of "personal" and "work," for me, these buckets happen within Org-mode. This is why it's such a critical part of my organization. Life is chaos. My job bleeds into my personal life. My technological passions bleed into work. I /need/ the barrier between emails and calendar for my Org-agenda, which contains /everything/ I want to do. Once I decide to put something on my agenda, it doesn't matter anymore where it came from. What matters is that it gets done. That's all. 
 
-*** PUBLISHED Best Tools for the job: Flameshot             :flameshot:tools:
+*** PUBLISHED Best Tools for the job: Flameshot			      :tools:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: best-tools-flameshot
@@ -1283,7 +1240,7 @@ As you stretch the frame, the different tools buttons re-arrange themselves depe
 Flameshot comes with all the basic tools you need from an annotation application: arrows, lines, and now (finally) a text tool, which needs to first be activated from the tools configuration menu: (=$ flameshot config=). There's also a text-blur and upload to Imgur tool. Flameshot is minimal: there's no eraser button, for example, because it's not needed. You can only undo and re-do. The color palette is basic, without a large color wheel. You can't rotate and flip images; it trusts you to use a more "heavy guns" editing tool for that, reminding you it's there only for a screenshot.
 
 It's an elegant tool, with an intuitive UI: right-click to choose a color; scroll to make the lines wider or thinner. When you choose the upload to Imgur button, for example, it automatically does that in the background and opens a window for you to either save, copy the freshly-created link to the clipboard or delete the image from the site, which opens another tab in your browser for that. This is the kind of application that makes you feel proud using it. 
-*** PUBLISHED Orgzly: An Interview                           :orgzly:orgmode:
+*** PUBLISHED Orgzly: An Interview			      :orgmode:tools:
 :PROPERTIES:
     :EXPORT_FILE_NAME: orgzly-neven-interview
     :EXPORT_HUGO_PUBLISHDATE: 2019-06-07:
@@ -1596,7 +1553,7 @@ Each one of these sub-templates is a checklist based in an org file like I expla
 
 This way I can have an entire "category" of capture templates, with S for setup, without having a long list with letters that won't seem related. 
 
-*** PUBLISHED Basic SSH Security                   :security:emacs:tramp:ssh:
+*** PUBLISHED Basic SSH Security			     :security:emacs:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: basic-ssh-security
@@ -1644,8 +1601,6 @@ where the xxx is the first and second octet of the IP address we want to allow. 
 
 Again, this works for me but may not work for you. For one, you might be using a laptop for work and have a wider range of IPs as you move around. For this, I would consider using the laptop itself to store the files and sync with Syncthing. You may also decide to use one machine, in which case you might want to allow all IPs, but use a PGP key, which is much longer to guess than a password and will automatically reject connections trying to guess a password. This is a preferred method to what I use, try to implement it first if you can. 
 
-
-
 *** PUBLISHED Why do They Use a Mac?                            :macos:linux:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
@@ -1667,104 +1622,7 @@ There's still also the Apple brand. People save up to buy a new computer and it'
 
 While I've been using Linux as a personal choice for years, I came to realize the /reasons/ for this have changed. At start, it was mostly out of sheer curiosity and Microsoft-forced-updates trauma. Every computer I installed Linux on had a different distro and different flavored desktop. As time passed, I started enjoying the consistency and efficiency of running processes through the command line. If I wanted, I could find these two easily within macOS, but there's another form of consistency at place here. I can potentially take any old computer and install Linux on it and have it run exactly the way I'm used to, be it next year or 20 years from now. I can't say the same thing about Macs (and definitely never about Windows). As I'm looking forward, I believe I will keep preferring Linux machines, and if forced, will feel "OK" on a Mac. It's pretty safe to say though that I'll probably never use Windows again as a personal productivity machine. 
 
-*** CANCELLED Repeated Tasks                                        :orgmode:
-
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
-    :EXPORT_FILE_NAME: repeated-tasks-in-orgmode
-    :EXPORT_HUGO_PUBLISHDATE: 2019-08-14:
-    :END:
-
-#+hugo: more
-
-
-- clone with time shift
-- .w or .d kind of thing
-- habits
-
-*** CANCELLED Journal in Org                                        :orgmode:
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
-    :EXPORT_FILE_NAME: repeated-tasks-in-orgmode
-    :EXPORT_HUGO_PUBLISHDATE: 2019-08-14:
-    :END:
-
-October 11, 2019, 8:02AM. That's the first datestamp in my org-mode journal, and as far as I'm concerned, the first day I really started using org-mode (and Emacs, for that matter).
-
-Journaling was one of the things that sucked me deeper into org-mode and Emacs to begin with. In my opinion, journaling and org-mode were made for each other.
-
-#+hugo: more
-
-Why use Org?
-
-By the time I started journaling in org-mode Emacs, I was already knee deep in Emacs productivity obsession. Indeed, my journal setup is deeply intigrated with my org-mode system, and might not make much sense without it. I won't expand much on it in this post, but a couple of highlights are important to understand my system: 
-
-1. I depend on a lean agenda which reflects all my daily todos and events, personal and professional.
-
-2. There's a seperation between tasks and an events. A task is usually not time-sensitive and defines an /action/ that should be clear as soon as I look at it ("call, check, talk to, etc.) An event, on the other hand, is usually time sensitive and can't be changed (or shouldn't). Events are usually what you'd consider an item on your calendar, where a task would be an item on your todo list. 
-
-3. An event, which I'm going to focus more here, describes an /activity/ (like dinner, meeting, visiting, etc.) a location, and sometime tagged to a person.
-
-4. Finally, events are usually followed up by journal entries while tasks do not[fn:1]. Because the events contain information about the time, place and the people involved, it makes sense that the journal's entry becomes a link back to the event that took place. 
-
-**** How Does it Work:
-
-Taking these points to mind, you can already get a clear idea of how my journal entries look like. Here's my current capture template for it: 
-
-#+BEGIN_SRC
-          ("j" "Journal" entry (file+datetree+prompt "/mnt/veracrypt1/Personal/journal.org")
-        "**** About: %a %^G \n\n %T:\n%?" :tree-type week)
-#+END_SRC
-
-I [[https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/][explained my templates before]], so I'm just going to heighlight what changed. First, you probably noticed the ~file+datetree+prompt~. This means org-mode capture asks me for the date I want to include in my journal. This is useful because it helps if the entry shows after the actual event. I can reflect on a certain event the next day if I want to, but I will still include the journal entry in the same day as the event. There's the "About: " which start every journal entry. This helps to make it stand out on the agenda as such and has a nice touch to it as a journal entry. The active time stamp, ~%T,~ (so it shows on the agenda), and a request for tag, ~%^G~, if the entry has to do with a "known" person. A known person is someone from sagnificant others and family members to a long-time friend. 
-
-Because my agenda is the key to everything else in org-mode, I want my journal entries to be visable on my agenda. This allows me to go back in time later and see what I was journaling about. When I just want to journal about something general that is not tied to an event, I select the day's title on the agenda which does not capture a link, and just give it a name. I sometimes do not give it a specific time but just scheduled it to the day in general, so it shows at the top of the day which helps quing me visually that this is a generic journal entry.
-
-Since my journal is in the "Personal" folder that is not synced and not indexed on my VM at work, the journal entries will never show on my agenda at work, which is another nice feature. Any notes I need to view at work should be included in the tasks and projects, not my personal journal.  
-
-Here's a look at my agenda with some journal entries: 
-
-# image here
-
-**** Images in the journal:
-
-Even though Emacs is gnerally intended to use as text-only environment, I enjoy using images in my journal. It is fun to capture an image of the event that took place if possible.
-
-I add images to my journal in two ways. First, the [[https://orgmode.org/manual/In_002dbuffer-settings.html][required]] ~#+STARTUP: inlineimages~ at the top of my journal.org file (with C-u C-c C-l). Second, a little script[fn:2] I wrote for [[https://imagemagick.org/index.php][imagemagick]], which resizes the image to 700px (roughly the width of my Emacs frame) and adds a "banner" at the bottom with a text of my choosing as a caption. The script also places the images in my personal folder with the journal.org. 
-
-Because of the nature of images scrolling in Emacs, it's best to include images at the top of the image, as an "opener." I like the affect of expanding a header of a certain day and have a large image greeting me of a nice memory of that day.
-
-**** Journaling methodology
-
-Each person is different and your journaling needs may be different than mine. Here are are some tips I find helpful: 
-
-1. Tagging: the journal includes certain topics that I tend to think about often, on top of just people. For example, if you look through my journal you'd find "org" as a tag. I have tendency so suffer from deprssion here and there, and a title these entries as "aunt D," as a code name. These helps finding the posts you want to read later on.
-
-2. I journal in weeks rather than months: weeks make more sense than months to me. The agenda is built around the week, and the week is a constant unit with set number of days that has a nice cycle to it. A week is a good unit of time ot measure projects and events, where a month may be too big. Try to stick to week numbers, see how this works for you.
-
-3. Journal often, journal little: I used to journal semi-daily for quite some time about the events of the day. While this may work for some, I found it's much better to journal quickly about things that took place. org-mode is built for quick captures like these. Even at work I have my capture template (above) set up to SSH back home via TRAMP if I want to journal something more personal about something that just happened at work: I highly recommend it. Write your thoughts and feelings down as soon as you can, you can always delete or organize later. Don't wait.
-
-
-
-
-
-
- 
- 
-
-
-
-
-
-
-How does it look like?
-
-
-[fn:1] Tasks may contain additional details, such as phone numbers, links, etc. inside the task itself. Some tasks that become a project grow organically this way, witch each sub-task containing its own relavent notes. 
-
-[fn:2] The script is a bit too long to include here, but is nothing fancy. I need to get around to upload some of my scripts to github already.  
-
-*** PUBLISHED Of Journaling                                         :writing:
+*** PUBLISHED Of Journaling				       :life:orgmode:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: of-journaling
@@ -1807,7 +1665,7 @@ For me, a person who uses org-mode on a day-to-day basis to keep track of tasks 
 [fn:3] Many writing applications come with spell-checking options which can be highly distracting. This is a habit that I believe started with Word's red zigzag. It forces you to stop your train of thought and focus on the mistakes highlighted in angry red. Emacs doesn't have this problem. Spell-checking takes place only after I highlight a segment of my text and ask for to spellcheck. Having spellchecking separate from the writing process is important! I didn't realize how disturbing this can be before transitioning to org-mode. 
 [fn:4] These being mostly lack of sleep, insomnia of some sort. 
 
-*** PUBLISHED Scripting in Bash 102                         :bash:automation:
+*** PUBLISHED Scripting in Bash 102				 :automation:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: scripting-basics-1
@@ -1978,7 +1836,7 @@ Thank you for reading!
 
 [fn:9]  Those of you who look carefully might find yourself asking, "OK, but the quotation marks /include/ the command syntax, not just the text we want to use, what's up with that? Why isn't it ~1s/^/"#+TITLE: Week Starting...~"?  And I have a good answer: I don't know. It doesn't make sense to me either at the moment, but in all documentation I find, this is how the syntax works.
 
-*** WIP Tools in Windows                                      :tools:windows:
+*** WIP Tools in Windows					      :tools:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: windows-tools
@@ -2127,7 +1985,7 @@ This time I didn't game as an exercise in solitude and forgetfulness. It was a m
 Somewhere between the meditation, the game, the avocado salad/guacamole I've made, I found peace. Aunt Dee was gone, out of town, see-you-next-time. I've had a good day at work yesterday (not excellent, not awesome, just good). It's important that I mention it for myself, for next time, and for you, the other nephews of aunt Dee out there (or her relatives) who might find comfort in this.
 
 Have a good rest of the week!  
-*** PUBLISHED About Emotional Exhaustions              :selfimprovement:life:
+*** PUBLISHED About Emotional Exhaustions              :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: JRL
     :EXPORT_FILE_NAME: about_burnouts

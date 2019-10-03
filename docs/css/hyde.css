@@ -79,7 +79,7 @@ html {
     left: 0;
     overflow-y: auto;
     bottom: 0;
-    width: 12.5rem;
+    width: 14rem;
     text-align: left;
   }
 
@@ -100,10 +100,11 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   padding-right: .5rem;
   padding-bottom: .8rem;
   font-family: "Righteous", serif;
-  font-size: 3.1rem;
+  font-size: 3.2rem;
   text-align:  left;
   font-weight: normal;
   line-height: 3rem;
+  letter-spacing: .1rem;
   text-transform: capitalize;
   margin-left: -.5rem;
   border-top: double .15rem #000;

@@ -2,8 +2,8 @@
 title = "The Hub"
 author = ["Josh Rollins"]
 publishDate = 2018-11-22T00:00:00-05:00
-lastmod = 2019-07-28T07:36:43-04:00
-tags = ["network", "raspberry-pi"]
+lastmod = 2019-10-03T07:02:44-04:00
+tags = ["automation", "security", "linux"]
 draft = false
 +++
 
@@ -16,7 +16,7 @@ Having a consisted, stable server for my org files has been on my mind for a whi
 
 For the setup I describe here, you need the RP itself, a power source, an SD card, a USB case for 2.5 inch HDD, and the HDD itself. You'll also need an Ethernet cord for this setup. If you don't have one, go grab yourself a [CAT6 cord Amazon Basics](https://www.amazon.com/AmazonBasics-RJ45-Cat-6-Ethernet-Patch-Cable-5-Feet-1-5-Meters/dp/B00N2VILDM/ref=lp%5F9938478011%5F1%5F1?s=pc&ie=UTF8&qid=1542991619&sr=1-1) cable, it's always good to have one around.
 
-For the RP, you better off getting a package similar to [this one](https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/ref=sr%5F1%5Ffkmr0%5F2?s=electronics&ie=UTF8&qid=1541986065&sr=1-2-fkmr0&keywords=canakit+raspberry+pi+3+b%2B+sd+card). You could probably get something slightly cheaper by getting all the parts yourself, but not by much. Better to have everything you need at once without worrying about forgetting something. I didn't get the above package with the SD card, so I had to wait a couple of days for another order to come in.
+For the RP, you better off getting a package similar to [this one](https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/ref=sr%5F1%5Ffkmr0%5F2?s=electronics&ie=UTF8&qid=1541986065&sr=1-2-fkmr0&keywords=canakit+raspberry+pi+3+b++sd+card). You could probably get something slightly cheaper by getting all the parts yourself, but not by much. Better to have everything you need at once without worrying about forgetting something. I didn't get the above package with the SD card, so I had to wait a couple of days for another order to come in.
 
 The HDD I had laying around already, so I got [this case](https://www.amazon.com/gp/product/B01M08LCXW/ref=oh%5Faui%5Fdetailpage%5Fo00%5Fs00?ie=UTF8&psc=1) for it. 8 bucks.
 

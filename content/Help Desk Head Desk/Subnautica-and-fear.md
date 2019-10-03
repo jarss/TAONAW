@@ -2,7 +2,7 @@
 title = "Of Subnautica and Fear"
 author = ["Josh Rollins"]
 publishDate = 2019-01-16T00:00:00-05:00
-lastmod = 2019-02-24T08:45:01-05:00
+lastmod = 2019-10-03T06:56:39-04:00
 tags = ["games"]
 draft = false
 +++

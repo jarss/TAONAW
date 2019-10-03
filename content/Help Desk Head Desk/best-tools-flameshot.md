@@ -2,8 +2,8 @@
 title = "Best Tools for the job: Flameshot"
 author = ["Josh Rollins"]
 publishDate = 2019-05-25T00:00:00-04:00
-lastmod = 2019-07-28T07:21:04-04:00
-tags = ["flameshot", "tools"]
+lastmod = 2019-10-03T06:57:57-04:00
+tags = ["tools"]
 draft = false
 +++
 

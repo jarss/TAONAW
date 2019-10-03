@@ -2,8 +2,8 @@
 title = "Submenus in org-mode Capture"
 author = ["Josh Rollins"]
 publishDate = 2019-07-14T00:00:00-04:00
-lastmod = 2019-07-28T07:21:46-04:00
-tags = ["orgmode"]
+lastmod = 2019-10-03T06:57:29-04:00
+tags = ["orgmode", "automation"]
 draft = false
 +++
 
@@ -29,16 +29,16 @@ The bold part was another part that I had to read several times to understand. I
 	  ("s" "Manual Laptop Setups")
 	  ("sd" "Staff Dell Laptops" entry
 	  (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "Staff Dells")
-	  (file "/mnt/veracrypt1/Work/setup-dells.org"))
-	  ("sa" "Staff Apple Laptops" entry
+	(file "/mnt/veracrypt1/Work/setup-dells.org"))
+	("sa" "Staff Apple Laptops" entry
 	  (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "Staff MacBooks")
-	  (file "/mnt/veracrypt1/Work/setup-macs.org"))
+	(file "/mnt/veracrypt1/Work/setup-macs.org"))
 	  ("sm" "SLS-Mac" entry
-	  (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "SLS-Mac")
-	  (file "/mnt/veracrypt1/Work/setup-SLS-Mac.org"))
-	  ("sw" "SLS-Windows" entry
-	  (file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "SLS-Windows")
-	  (file "/mnt/veracrypt1/Work/setup-SLS-Mac.org"))
+	(file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "SLS-Mac")
+	(file "/mnt/veracrypt1/Work/setup-SLS-Mac.org"))
+	("sw" "SLS-Windows" entry
+	(file+headline "/mnt/veracrypt1/Archive/OhSnap!.org" "SLS-Windows")
+	(file "/mnt/veracrypt1/Work/setup-SLS-Mac.org"))
 ...
 ```
 

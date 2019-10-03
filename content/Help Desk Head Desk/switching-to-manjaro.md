@@ -2,8 +2,8 @@
 title = "Switching to Manjaro"
 author = ["Josh Rollins"]
 publishDate = 2019-05-23T00:00:00-04:00
-lastmod = 2019-05-23T20:39:32-04:00
-tags = ["linux", "manjaro"]
+lastmod = 2019-10-03T07:07:08-04:00
+tags = ["linux"]
 draft = false
 +++
 

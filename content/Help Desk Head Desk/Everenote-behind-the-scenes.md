@@ -2,8 +2,8 @@
 title = "Everenote - Behind the Scenes"
 author = ["Josh Rollins"]
 publishDate = 2019-05-18T00:00:00-04:00
-lastmod = 2019-05-18T10:08:24-04:00
-tags = ["evernote"]
+lastmod = 2019-10-03T07:06:52-04:00
+tags = ["orgmode", "tools"]
 draft = false
 +++
 

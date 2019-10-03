@@ -2,7 +2,8 @@
 title = "Apple is a Hardware Second Company"
 author = ["Josh Rollins"]
 publishDate = 2019-01-07T00:00:00-05:00
-lastmod = 2019-07-28T07:19:28-04:00
+lastmod = 2019-10-03T07:03:48-04:00
+tags = ["apple"]
 draft = false
 +++
 
