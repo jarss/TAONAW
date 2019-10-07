@@ -1836,7 +1836,7 @@ Thank you for reading!
 
 [fn:9]  Those of you who look carefully might find yourself asking, "OK, but the quotation marks /include/ the command syntax, not just the text we want to use, what's up with that? Why isn't it ~1s/^/"#+TITLE: Week Starting...~"?  And I have a good answer: I don't know. It doesn't make sense to me either at the moment, but in all documentation I find, this is how the syntax works.
 
-*** WIP Tools in Windows					      :tools:
+*** PUBLISHED Tools in Windows					      :tools:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: windows-tools
@@ -1884,6 +1884,43 @@ What about you? Do you use different systems side by side like this, or are you 
 
 
 
+*** WIP Blog Updates: 2019-10                                 :blogging:hugo:
+     :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: blog-updates-2
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-04:
+    :END:
+
+I've been working on A few additional subtle CSS updates to this website. 
+
+#+hugo: more
+
+**** Tags to Topics
+
+The "tags" title changed to "Popular Topics". This list now displays any topics that have been featured at least 3 times on TAONAW from the highest to lowest. A new "All Topics" link at the bottom leads to the tag page (which I need to change to "topics" now) to view all the other topics, sorted by latest addition. I am planning to add a short summary to this page later on, something that was inspired a bit by [[https://karl-voit.at/][Karl Voit]]. 
+
+The "Sections" portion of the sidebar will be eliminated. More personal posts are now tagged as "[[https://joshrollinswrites.com/tags/life/][life]]" ([[https://joshrollinswrites.com/help-desk-head-desk/][HelpDesk/HeadDesk]] is the main section of the blog, the one you're viewing now).
+
+As a preparation to go sections-less, the tags were cleaned and condensed to reflect broader topics. Popular topics that emerge will receive their own  tags as they become more popular. 
+
+**** Cosmetics
+
+The sidebar [[https://github.com/jarss/TAONAW/blob/master/static/css/hyde.css][is now 14rem wide]] to contain the "Popular Topics" heading without a break. This caused the words "Art Of" at red title at the sidebar to come together, something I intend to change. 
+
+Post titles have a new font, [[https://fonts.google.com/specimen/Montserrat][Montserrat]]. If you don't see this font, please let me know. 
+
+Colors for the tags under the titles and the "Read More" links on the main page were changed to the same red as the Title's red. Other links in the posts and remain the same[fn:1].
+
+**** Fixing the Homepage
+
+My homepage, which displays a list of summaries of posts, broke after a recent Hugo update. That was because of a [[https://gohugo.io/news/0.58.0-relnotes/][specific Hugo change in version .58]].  This was fixed after a day of diving into Hugo, something I should probably do more often. 
+
+
+**** Footnotes
+
+[fn:1] This was harder than it should have been... these links are nested inside a class which is also nested inside a class. The right syntax in CSS is ~[parent-class] [child-class] [html-tag]~ with spacing being important: three spaces, no more. However, because my CSS was messy, the rules I've added were re-defined again later in the CSS file; I wasn't aware I called the same elements in two different places. As it turns out, cleaning your code (CSS, bash, or whatever) is important - and so as adding comments.
+
+[fn:2] As a barista, I appreciated and getting tips and I've considered adding a tips page to the blog before. Unlike donations, tips are small, meant to be tokens of appreciation of good content and not a way to make serious income out of the website. Unlike subscriptions (like [[https://en.wikipedia.org/wiki/Patreon][Patreon]]), they are one time deals. This will encourage me to work for good content without asking for support too bluntly, which I don't like. 
 
 ** BMC
 :PROPERTIES:
@@ -2097,6 +2134,7 @@ Running uphil and downill: when running uphill, lean forawrd into the rise, and 
 Speaking of knees: if they start hurting, stop. Just stop. Your knees are not a muscle, and you will damage them. Pains should come from your muscles, not from your bones. 
 
 Lastly, enjoy the run and do what you think you should to make it enjoyable. If a certain path looks interesting, take it. Worse that happens you have to go back. If you feel you need to slow down to catch your breath, that's OK. Make a visual sign to yourself (say the third tree coming, or a sign up ahead) that would tell you to try again at that location, and slow down to rest a bit. 
+
 
 
 
