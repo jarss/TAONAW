@@ -2,7 +2,7 @@
 title = "Upgrading my Audio Game"
 author = ["Josh Rollins"]
 publishDate = 2019-04-09T00:00:00-04:00
-lastmod = 2019-04-11T06:26:40-04:00
+lastmod = 2019-10-08T06:46:37-04:00
 tags = ["music"]
 draft = false
 +++

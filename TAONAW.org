@@ -4,11 +4,11 @@
 #+hugo_base_dir: .
 #+hugo_auto_set_lastmod: %Y-%m-%d
 
-* Content
+
 :PROPERTIES:
 :EXPORT_HUGO_SECTION:
 :END:
-
+* Content
 ** Help Desk Head Desk
  :PROPERTIES:
   :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -284,6 +284,29 @@ The main technology section. Every project starts here, eventually branching off
     list of things I'm doing, since it's misleading. The agenda is what
     reflects that now.
 
+*** PUBLISHED Some Good Things                                         :life:
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: JRL
+    :EXPORT_FILE_NAME: some_things
+    :EXPORT_HUGO_PUBLISHDATE: 2018-10-30:
+    :END:
+ 
+
+Last Saturday I had an encounter with dear ol' Aunt Dee. She's like a lifelong buddy of mine, never too far. She's a shy quiet wall flower, sneaks up on you, undetected. You only realize she's around after her long scrawny hands are wrapped around you, hugging, her perfume brings back a daze of nostalgia...  
+
+#+hugo: more
+
+I was playing another round of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]], and realized I'm not much into the game anymore. As a matter of fact, I was forcing it for the last hour. I promised myself to go to gym, and a part of me was trying to use any possible excuse to keep me glued to that chair. It was gray and cold, it was a weekend after a hard week, I wasn't in the mood, I didn't eat enough, bla bla bla. I recognized this train of thoughts: "ah! I know you... you depression you, how have you been?" and checked my list. I think anyone who's been with dear aunt Dee for long enough has a similar list.
+
+Sunday was different because I started it differently. The first thing I did was going back to my elements. This means, without getting all fancy about my life philosophy, that I did my morning exercise (few stretches, pull-ups, little weights) and meditation. I took my time before I set at the computer: first there was one round of exercise, then I made coffee, then a second round of exercise. Then there was meditation, which was a powerful mind-dump. I talked to myself about things that are important to me, things that I've neglected. Then the meditation itself, a series of deep breaths while counting. This is one of my life facts: when meditation is really needed, there's always strong resistance to it at start. By the end I don't want to finish it. Putting my mind on a state of neutral after emphasizing to myself things I care about is powerful. I'm far from being a meditation master and I don't read much on the matter, but this form of meditation always came naturally to me.
+
+After that, Sunday started taking shape. I know so because my room started looking like my room again. First (it's always first) the bed. Then laundry. Then the closet, which was something I haven't dealt with in a while. Cleaning my room is similar to cleaning my head. It's odd, a made bed makes me feel so much better. I don't know why, but I don't argue, it works. Later on I went to gym again, this time without a long struggle. Later still, I enjoyed sharing a different video game, [[https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn][The Return of the Obra Dinn]], with my partner. 
+
+This time I didn't game as an exercise in solitude and forgetfulness. It was a mutual experience of puzzle solving. In retro respect, it reminds me of my grandparents playing bridge together, only with more high fives and laughs. There's something special about sharing something as intimate as a video game with someone who's been around long enough to share such an intimate thing with. Those of you who game know what I'm talking about: getting someone into your bed is not as nearly as intimate as having someone by your side while you play a video game, let along take an active part of it. My partners are the only people alive who can grab the mouse or the phone out of my hand mid-action and not encounter the scorning disdain on my face. 
+
+Somewhere between the meditation, the game, the avocado salad/guacamole I've made, I found peace. Aunt Dee was gone, out of town, see-you-next-time. I've had a good day at work yesterday (not excellent, not awesome, just good). It's important that I mention it for myself, for next time, and for you, the other nephews of aunt Dee out there (or her relatives) who might find comfort in this.
+
+Have a good rest of the week!  
 *** PUBLISHED Desktop Wisdom					       :life:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -1079,6 +1102,93 @@ Armed with his mug of Joe, a classic story-teller voice, and patience tougher th
 When a game creates streamers like Pave, you know something must be right about it. When a game has been in existence (in one shape or another) since 1984, you know you're looking at a true classic. And when players form a group that [[https://www.rockpapershotgun.com/2019/02/18/elite-dangerous-rescue-mission-commander-deluvian/][goes on epic journeys to save other players]], you know you got a game that brings the best out in people. 
 
 So you know. I thought it wouldn't hurt to try it... 
+
+*** PUBLISHED About Emotional Exhaustions              :life:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: about_burnouts
+    :EXPORT_HUGO_PUBLISHDATE: 2019-03-09:
+    :END:
+ 
+This past week has been a good example of emotional exhaustion. Because influences overall productivity, relationships, and health (both mental and physical) I'd like to discuss it here.
+
+#+hugo: more
+
+**** Defining What it is
+
+I started this post looking for a good definition for a burnout, which is what I thought I was experiencing. Turns out, I was wrong. Like other terms that describe a relative and immeasurable state of emotions, burnout is a definition of a situation that gets overused and eventually dismissed as a dramatic conversation emphasis. After a short research, I found the following definition from [[http://dictionary.sensagent.com/][Sensagent]]:
+
+#+Begin_quote
+The most well-studied measurement of burnout in the literature is the Maslach Burnout Inventory. Maslach and her colleague Jackson first identified the construct "burnout" in the 1970s, and developed a measure that weighs the effects of emotional exhaustion and reduced sense of personal accomplishment. This indicator has become the standard tool for measuring burnout in research on the syndrome. The Maslach Burnout Inventory uses a three dimensional description of exhaustion, cynicism, and inefficacy. Some researchers and practitioners have argued for an "exhaustion only" model that sees that symptom as the hallmark of burnout.
+#+end_quote 
+
+This definition and the link above led me to more research which focused on additional causes of burnouts, most notably depression and a sense of lack of accomplishment and/or purpose. Because I'm familiar with these emotional states as well, I recognized these feelings were /not/ present this week. I felt very tired and drained, but I did not feel sad or lacking a purpose. As a matter of fact, I felt focused (to the point of overdoing things, part of the reason for exhaustion) and very productive at work. I was pleased with my achievements this week and my interactions with colleagues were better than usual. 
+I then settled on this definition, from [[https://en.wikipedia.org/wiki/Emotional_exhaustion][Wikipedia]]: 
+
+#+begin_quote
+Emotional exhaustion is a chronic state of physical and emotional depletion that results from excessive job demands and continuous stress. It describes a feeling of being emotionally overextended and exhausted by one's work. It is manifested by both physical fatigue and a sense of feeling psychologically and emotionally "drained".
+#+end_quote
+
+We can conclude that emotional exhaustion is a symptom or a part of a burnout. Exhaustion /can lead/ to a burnout, which has the additional effects that were earlier discussed (like a sense of lack of purpose, cynicism, depression, etc.) This is important because it serves as a way to contain the problem so other areas that do not require examination at this point are left out.
+
+**** Why Discussing Exhaustion is Important 
+
+Attending certain activities require energy while others "charge" such energy. As a mostly introverted person who values quiet and privacy, social interactions require that I spend energy. Several activities on my personal calendar, such as attending a [[https://en.wikipedia.org/wiki/Dungeons_%2526_Dragons][DnD]] session with friends, requires I spend a relatively high level of mental energy. Other activities, like working out at the gym, requires a different kind of mental energy and a level of physical energy. In sate of emotional exhaustion, both are depleted and prevent me from doing these activities. In turn, giving up on something that is highly important to me (going to the gym) leads to a feeling of guilt and self-blame which is another step toward overall burnout. 
+
+To make a long story short, exhaustion means you're doing less overall and could lead to further physical and mental problems that in turn mean you're even less productive.
+
+**** Causes
+
+Before we can talk about "fixing" exhaustion, we should probably discuss what is the source of the problem. In my case, the source of emotional exhaustion is work. This is very common, and again, may be overused and overstated. Therefore, I turn to concrete symptoms. A simple series of yes/no questions: 
+
+1. Have I worked extra time?
+2. Did I have additional responsibilities at work than usual?
+3. Do I feel physically tired, to the point of napping or going to sleep extra early?
+4. Is there increasing need to be left alone and rest (recharging)? 
+
+For the week that passed, the answer for all of the above is yes. 
+
+**** Fixing the Issue
+
+How do you "fix" your car when you run out of gas? How do you "fix" your phone when the battery is drained? The answer is indeed obvious. The problem is that recharging is not always an option. 
+
+It may be the weekend (finally) but there are other responsibilities and plans that are waiting since you did not have time to deal with these during the week. For me, it is also very possible to fall back on habits that waste time rather than recharge or recharge efficiently. that are not necessarily as recharging as they are just a cause of exhaustion. For example, playing video games until very late at night might feel like recharging, when in reality what is really needed is sleep and a physical/mental break from the computer screen. In turn, this also requires energy (discipline) which I may already be lacking because of the exhaustion. What do we do then? 
+
+1. Divide activities into time segments: Instead of just ignoring the world and watching 5 episodes of a TV show, break it to watch only one before getting up, walking around a bit, evaluating things.
+2. Recognize true recharging activities: like sleep. Recognize that I need to be in bed at a certain time and finish with other activities.
+3. Use friends / significant others: if you're lucky to live in with people who care about you, it's easy to reach out for a point of reference and have them help you and prevent you from sinking into something else completely. Have some tea time together. Talk. Cuddle. Take a walk with them.
+4. Vent productively - find a way to let out your feelings in a way that feels productive and is worth your time. In my case, this post is that particular item.
+
+**** Conclusion and Prevention
+
+Sometimes, emotional exhaustion happens or can be triggered because of an environmental element that is not tied to your own habits. It is important to recognize that prevention is not as important as having a way to cope and work out of a situation when it does happen. Being prepared and having a plan to work with when needed is the most important thing.
+
+Prevention may comes second but is also important. it's important to know what's coming and plan for it. This is one reason why I love [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]]. Having a good tool is part of the job, using it is the other. For me, a good routine is to remote into my VM at work before I come in, turn on Org-mode, and sync my personal tasks. I then work from home looking at my day and evaluate what needs to be done. While this changes during the day, knowing what's coming gives me a top-down view of what a successful day should look like. In turn, this prevents a sense of lack-of-purpose and directly prevents me from sliding into burnout, as mentioned earlier. 
+
+Another important prevention technique that I rediscovered is to disconnect several times during the workday. For me, a minimal break of 10 minutes is needed to "reset" and be able get out of the "tunnel vision" that I sometimes get while working. I work in a large enough environment that allows me to take walks inside the buildings regardless of the weather. I use the time to find a quiet corner and look outside and daydream a bit. In addition. the power of napping has amazing benefits. It's not always possible to find a spot to nap, but if I do, a quick dose of even 5 minutes around 15:00 (this is usually when the "crash" comes) can be immensely helpful. 
+
+Finally, it's important to leave some empty time on your calendar. Some folks pencil in every possible day with activities, including the weekend. I know, for instance, that using my Saturday for activities with partners and family means I won't have Saturday to myself, so I give myself time Sunday. This is a luxury not many adults can afford, especially those with a family, But for me this is thankfully not an issue.
+
+It's always important to look back and reflect on emotional events that take place to learn from them and improve for the next time - good or bad. We are all learning creatures, and we can always "self-upgrade". Personally, writing this post already helped me quite a bit. I hope this would help someone else reading it in the future. 
+
+*** PUBLISHED What has Been Going on                                   :life:
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: updates
+    :EXPORT_HUGO_PUBLISHDATE: 2019-04-03:
+    :END:
+
+I always dislike it when I read a post explaining why there's been a break in posting. It's usually a sign that the next post will be the last if it will happen at all, and it's always some excuse about being busy, life getting in the way, etc. etc. So I guess now it's my turn to write one of these posts. 
+
+#+hugo: more
+
+I've been away for a week, traveling overseas to see family. The trip in itself was fine and not as eventful as I anticipated (which is a good thing). When I got back, I immediately bought two things: a HOTAS for Elite Dangerous, and a good headset with a DAC to experience music better. I am almost done writing a post about the later. 
+
+My mornings, which were once completely empty and dedicated to writing, now share time with going to the gym. As it turns out, it's much easier to keep a gym routine in the morning. 
+
+Emacs and Org mode - not much changed there, as a matter of fact. I tried the [[https://github.com/myuhe/org-gcal.el][Gcal]] for Emacs and ended up disappointed after I figured out how to set it up. [[http://www.orgzly.com/][Orgzly]], on the other hand, keeps evolving and becomes a must-have tool for all org-mode users with Android devices in my opinion. 
+
+So there's quite a bit to talk about and expand on. I hope to get back on track soon with a new post. In the meantime, feel free to say hello or read my older posts.  
 
 *** PUBLISHED Upgrading my Audio Game                                 :music:
     :PROPERTIES:
@@ -1883,12 +1993,11 @@ What about you? Do you use different systems side by side like this, or are you 
 
 
 
-
-*** WIP Blog Updates: 2019-10                                 :blogging:hugo:
+*** PUBLISHED Blog Updates: 2019-10                           :blogging:hugo:
      :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: blog-updates-2
-    :EXPORT_HUGO_PUBLISHDATE: 2019-10-04:
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-07:
     :END:
 
 I've been working on A few additional subtle CSS updates to this website. 
@@ -1914,7 +2023,6 @@ Colors for the tags under the titles and the "Read More" links on the main page 
 **** Fixing the Homepage
 
 My homepage, which displays a list of summaries of posts, broke after a recent Hugo update. That was because of a [[https://gohugo.io/news/0.58.0-relnotes/][specific Hugo change in version .58]].  This was fixed after a day of diving into Hugo, something I should probably do more often. 
-
 
 **** Footnotes
 
@@ -1945,197 +2053,26 @@ your mom!!!! yes
 <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/I2HmaZYGh"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me Coffee</span></a>
 {{< /rawhtml >}}
 
-** JRL
+* About Josh Rollins
    :PROPERTIES:
-   :EXPORT_HUGO_SECTION: JRL
+   :EXPORT_HUGO_SECTION: About
+   :EXPORT_FILE_NAME: _index
+   :EXPORT_HUGO_LAYOUT: single
    :END:
 
-*** INTRO
-  :PROPERTIES:
-  :EXPORT_HUGO_SECTION: JRL
-  :EXPORT_FILE_NAME: _index
-  :END:
+Josh Rollins is an NYC based self-made-techie who works with humans and machines and enjoys interacting with both. He explores automation, privacy, and affordability in tech, and most of the time finds himself tangled in the blurred lines between the real and the ideal.  
 
-**** Who's Josh Rollins 
+Rollins has broken his technology - this website included - many times over. While he sees himself disqualified to give any /good/ advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle. 
 
-Josh Rollins is one persistent bastard who was told by his teacher he would never be a writer, so naturally, he had to prove him wrong. Later, he was told by his supervisor he will never make a good IT guy, so he had to prove him wrong, too.
+As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find these days, but he can be reached at jarss at protonmail dot com, [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]].  
 
-As a non-native New Yorker, he cares too much about living in the city to lead a normal life, which is a good thing, because he has no idea what the word even means.
 
-JR has been writing about sex, tech, and the many things in between for years. He recently woke up from daily grind induced coma. A polyamorist, privacy geek, and a wannabe health nut, he keeps littering the internet with his personal opinions and how-tos about all sorts of stuff mentioned above.
 
-# Personal events and experiences: relationships, depression, sex, polyamory, and all sorts of interesting things. Generally NSFW.
 
-**** Contact
- To contact me, you can write an email: jarss[at]protonmail[dot]com
- Most of the time, I'm on [[https://twitter.com/Josh_Rollins][Twitter]], [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]]. 
 
-*** PUBLISHED Of Relationships and Money 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: of_people_and_money
-    :EXPORT_HUGO_PUBLISHDATE: 2018-10-18:
-    :END:
 
-/Warning: This is not my usual geeky-tech rambling about Org or Emacs. This is a somewhat NSFW post about my life. If you're not into that and you're here for the geeky stuff, I'd skip this if I were you./
 
-#+hugo: more
 
-- - -
-
-When I was reaching my 30s, I hit a jackpot. I secured a deal for a rent-controlled apartment in Morningside Heights in Manhattan. I had a job that didn't quite pay the bills, even for that, so I drove almost 900 miles to Milwaukee, Wisconsin to fetch a friend whom I convinced to live with me in the city. 
-
-The apartment had three bedrooms, a living room, a dining area, a small kitchen (which I loved a lot) and a shower. It was packed with old furniture and dusty chachkies because its owner was about 80 years old. He asked me to wire rent money to his account every month, left me with a key, and left for Florida. 
-
-I've met, dated, and enjoyed many women during that period. I had professional dominatrix taking photos naked on my dinner table (I had to help them put on corsets), and I had a high school girl who I was afraid was underage (she wasn't) take a shower with me. I had a woman come over to have sex with both me and my friend-turned-roommate, and another who had an orgasm telling me I'm gay while penetrating me with her fingers. All remarkable, all faded out of my life as quickly as they came. 
-
-A few years later, in a different apartment, I wasn't able to keep paying the rent. For the first time in decade, I had to move in with my mother, who moved to Manhattan by then. My mother's apartment had only one bedroom, a long hallway, and a living room. The kitchen was a corner carved out of the hallway and had strong fluorescent lights. I remember this because the lights and the noise of dishes woke me up every morning when my mother started making coffee a few inches away from the sofa on which I slept.
-
-I've dated almost no one during that time. As a matter of fact, I can remember only two. That's because when I moved (with my mother) to another apartment, the relationships I started forming on top of the sofa with these two moved with it.  I graduated from the sofa to the bedroom. My mother, coincidentally, found a boyfriend in Pennsylvania and was away or most of the week. I noticed how slowly, with a stable job, better clothes, and the aforementioned status upgrade, I started dating more people again. Not as many - there wasn't much time and less energy - but it was a steady rising slope. The new people I've dated came and went. The job, also, quickly transformed into a new career. The two partners and the sofa remained.
-
-It's funny how you think all you want is to be able to keep fucking everyone (figuratively and literally) but what you actually want is companionship. It's something we as a society keep shoving into everyone's throat, yet somehow, doesn't seem to stay in anyone's skull. Yet, it's the fear of being alone, completely alone, that we often afraid the most. I know because I'm an as introvert as they come, but even I have to admit that my life is a hollow shade of gray without the color these two relationships brought to my life. These connections shape us, make us who we are as adults, and eventually, these connections are also what is remembered when we are gone. there's nothing as painful as losing such a connection. 
-
-You can't make a relationship out of thin air. That's because a relationship is forged from common experiences that you often try to avoid. Embarrassing little moments. Painful memories. The terrifying realization that at some point (you can't be sure when) caring about that person is more important than caring for yourself. Then, the peace that comes with accepting this realization. You can't find this sort of experience on Tinder, even if you pay their premium. 
-
-I never wanted to end up on my mother's sofa, and to be honest, I never wanted to end up in relationships with both of my partners. But just like the sofa, shit happens. This is who I am now, and who they are, and how we came to be. My partners, who I affectionately call patches, live with me now. We often enjoy a good movie sitting on that sofa, which is with us still.  I'm older, I'm scarred, I have way less patience than I used to have, and I like it all just the way it is, good and bad, sofa or no sofa. 
-
-*** PUBLISHED Some Good Things 
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: some_things
-    :EXPORT_HUGO_PUBLISHDATE: 2018-10-30:
-    :END:
  
 
-Last Saturday I had an encounter with dear ol' Aunt Dee. She's like a lifelong buddy of mine, never too far. She's a shy quiet wall flower, sneaks up on you, undetected. You only realize she's around after her long scrawny hands are wrapped around you, hugging, her perfume brings back a daze of nostalgia...  
-
-#+hugo: more
-
-I was playing another round of [[https://en.wikipedia.org/wiki/Cities:_Skylines][Cities Skylines]], and realized I'm not much into the game anymore. As a matter of fact, I was forcing it for the last hour. I promised myself to go to gym, and a part of me was trying to use any possible excuse to keep me glued to that chair. It was gray and cold, it was a weekend after a hard week, I wasn't in the mood, I didn't eat enough, bla bla bla. I recognized this train of thoughts: "ah! I know you... you depression you, how have you been?" and checked my list. I think anyone who's been with dear aunt Dee for long enough has a similar list.
-
-Sunday was different because I started it differently. The first thing I did was going back to my elements. This means, without getting all fancy about my life philosophy, that I did my morning exercise (few stretches, pull-ups, little weights) and meditation. I took my time before I set at the computer: first there was one round of exercise, then I made coffee, then a second round of exercise. Then there was meditation, which was a powerful mind-dump. I talked to myself about things that are important to me, things that I've neglected. Then the meditation itself, a series of deep breaths while counting. This is one of my life facts: when meditation is really needed, there's always strong resistance to it at start. By the end I don't want to finish it. Putting my mind on a state of neutral after emphasizing to myself things I care about is powerful. I'm far from being a meditation master and I don't read much on the matter, but this form of meditation always came naturally to me.
-
-After that, Sunday started taking shape. I know so because my room started looking like my room again. First (it's always first) the bed. Then laundry. Then the closet, which was something I haven't dealt with in a while. Cleaning my room is similar to cleaning my head. It's odd, a made bed makes me feel so much better. I don't know why, but I don't argue, it works. Later on I went to gym again, this time without a long struggle. Later still, I enjoyed sharing a different video game, [[https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn][The Return of the Obra Dinn]], with my partner. 
-
-This time I didn't game as an exercise in solitude and forgetfulness. It was a mutual experience of puzzle solving. In retro respect, it reminds me of my grandparents playing bridge together, only with more high fives and laughs. There's something special about sharing something as intimate as a video game with someone who's been around long enough to share such an intimate thing with. Those of you who game know what I'm talking about: getting someone into your bed is not as nearly as intimate as having someone by your side while you play a video game, let along take an active part of it. My partners are the only people alive who can grab the mouse or the phone out of my hand mid-action and not encounter the scorning disdain on my face. 
-
-Somewhere between the meditation, the game, the avocado salad/guacamole I've made, I found peace. Aunt Dee was gone, out of town, see-you-next-time. I've had a good day at work yesterday (not excellent, not awesome, just good). It's important that I mention it for myself, for next time, and for you, the other nephews of aunt Dee out there (or her relatives) who might find comfort in this.
-
-Have a good rest of the week!  
-*** PUBLISHED About Emotional Exhaustions              :life:
-:PROPERTIES:
-    :EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: about_burnouts
-    :EXPORT_HUGO_PUBLISHDATE: 2019-03-09:
-    :END:
  
-This past week has been a good example of emotional exhaustion. Because influences overall productivity, relationships, and health (both mental and physical) I'd like to discuss it here.
-
-#+hugo: more
-
-**** Defining What it is
-
-I started this post looking for a good definition for a burnout, which is what I thought I was experiencing. Turns out, I was wrong. Like other terms that describe a relative and immeasurable state of emotions, burnout is a definition of a situation that gets overused and eventually dismissed as a dramatic conversation emphasis. After a short research, I found the following definition from [[http://dictionary.sensagent.com/][Sensagent]]:
-
-#+Begin_quote
-The most well-studied measurement of burnout in the literature is the Maslach Burnout Inventory. Maslach and her colleague Jackson first identified the construct "burnout" in the 1970s, and developed a measure that weighs the effects of emotional exhaustion and reduced sense of personal accomplishment. This indicator has become the standard tool for measuring burnout in research on the syndrome. The Maslach Burnout Inventory uses a three dimensional description of exhaustion, cynicism, and inefficacy. Some researchers and practitioners have argued for an "exhaustion only" model that sees that symptom as the hallmark of burnout.
-#+end_quote 
-
-This definition and the link above led me to more research which focused on additional causes of burnouts, most notably depression and a sense of lack of accomplishment and/or purpose. Because I'm familiar with these emotional states as well, I recognized these feelings were /not/ present this week. I felt very tired and drained, but I did not feel sad or lacking a purpose. As a matter of fact, I felt focused (to the point of overdoing things, part of the reason for exhaustion) and very productive at work. I was pleased with my achievements this week and my interactions with colleagues were better than usual. 
-I then settled on this definition, from [[https://en.wikipedia.org/wiki/Emotional_exhaustion][Wikipedia]]: 
-
-#+begin_quote
-Emotional exhaustion is a chronic state of physical and emotional depletion that results from excessive job demands and continuous stress. It describes a feeling of being emotionally overextended and exhausted by one's work. It is manifested by both physical fatigue and a sense of feeling psychologically and emotionally "drained".
-#+end_quote
-
-We can conclude that emotional exhaustion is a symptom or a part of a burnout. Exhaustion /can lead/ to a burnout, which has the additional effects that were earlier discussed (like a sense of lack of purpose, cynicism, depression, etc.) This is important because it serves as a way to contain the problem so other areas that do not require examination at this point are left out.
-
-**** Why Discussing Exhaustion is Important 
-
-Attending certain activities require energy while others "charge" such energy. As a mostly introverted person who values quiet and privacy, social interactions require that I spend energy. Several activities on my personal calendar, such as attending a [[https://en.wikipedia.org/wiki/Dungeons_%2526_Dragons][DnD]] session with friends, requires I spend a relatively high level of mental energy. Other activities, like working out at the gym, requires a different kind of mental energy and a level of physical energy. In sate of emotional exhaustion, both are depleted and prevent me from doing these activities. In turn, giving up on something that is highly important to me (going to the gym) leads to a feeling of guilt and self-blame which is another step toward overall burnout. 
-
-To make a long story short, exhaustion means you're doing less overall and could lead to further physical and mental problems that in turn mean you're even less productive.
-
-**** Causes
-
-Before we can talk about "fixing" exhaustion, we should probably discuss what is the source of the problem. In my case, the source of emotional exhaustion is work. This is very common, and again, may be overused and overstated. Therefore, I turn to concrete symptoms. A simple series of yes/no questions: 
-
-1. Have I worked extra time?
-2. Did I have additional responsibilities at work than usual?
-3. Do I feel physically tired, to the point of napping or going to sleep extra early?
-4. Is there increasing need to be left alone and rest (recharging)? 
-
-For the week that passed, the answer for all of the above is yes. 
-
-**** Fixing the Issue
-
-How do you "fix" your car when you run out of gas? How do you "fix" your phone when the battery is drained? The answer is indeed obvious. The problem is that recharging is not always an option. 
-
-It may be the weekend (finally) but there are other responsibilities and plans that are waiting since you did not have time to deal with these during the week. For me, it is also very possible to fall back on habits that waste time rather than recharge or recharge efficiently. that are not necessarily as recharging as they are just a cause of exhaustion. For example, playing video games until very late at night might feel like recharging, when in reality what is really needed is sleep and a physical/mental break from the computer screen. In turn, this also requires energy (discipline) which I may already be lacking because of the exhaustion. What do we do then? 
-
-1. Divide activities into time segments: Instead of just ignoring the world and watching 5 episodes of a TV show, break it to watch only one before getting up, walking around a bit, evaluating things.
-2. Recognize true recharging activities: like sleep. Recognize that I need to be in bed at a certain time and finish with other activities.
-3. Use friends / significant others: if you're lucky to live in with people who care about you, it's easy to reach out for a point of reference and have them help you and prevent you from sinking into something else completely. Have some tea time together. Talk. Cuddle. Take a walk with them.
-4. Vent productively - find a way to let out your feelings in a way that feels productive and is worth your time. In my case, this post is that particular item.
-
-**** Conclusion and Prevention
-
-Sometimes, emotional exhaustion happens or can be triggered because of an environmental element that is not tied to your own habits. It is important to recognize that prevention is not as important as having a way to cope and work out of a situation when it does happen. Being prepared and having a plan to work with when needed is the most important thing.
-
-Prevention may comes second but is also important. it's important to know what's coming and plan for it. This is one reason why I love [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]]. Having a good tool is part of the job, using it is the other. For me, a good routine is to remote into my VM at work before I come in, turn on Org-mode, and sync my personal tasks. I then work from home looking at my day and evaluate what needs to be done. While this changes during the day, knowing what's coming gives me a top-down view of what a successful day should look like. In turn, this prevents a sense of lack-of-purpose and directly prevents me from sliding into burnout, as mentioned earlier. 
-
-Another important prevention technique that I rediscovered is to disconnect several times during the workday. For me, a minimal break of 10 minutes is needed to "reset" and be able get out of the "tunnel vision" that I sometimes get while working. I work in a large enough environment that allows me to take walks inside the buildings regardless of the weather. I use the time to find a quiet corner and look outside and daydream a bit. In addition. the power of napping has amazing benefits. It's not always possible to find a spot to nap, but if I do, a quick dose of even 5 minutes around 15:00 (this is usually when the "crash" comes) can be immensely helpful. 
-
-Finally, it's important to leave some empty time on your calendar. Some folks pencil in every possible day with activities, including the weekend. I know, for instance, that using my Saturday for activities with partners and family means I won't have Saturday to myself, so I give myself time Sunday. This is a luxury not many adults can afford, especially those with a family, But for me this is thankfully not an issue.
-
-It's always important to look back and reflect on emotional events that take place to learn from them and improve for the next time - good or bad. We are all learning creatures, and we can always "self-upgrade". Personally, writing this post already helped me quite a bit. I hope this would help someone else reading it in the future. 
-
-*** PUBLISHED What has Been Going on                                   :life:
-:PROPERTIES:
-    :EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: updates
-    :EXPORT_HUGO_PUBLISHDATE: 2019-04-03:
-    :END:
-
-I always dislike it when I read a post explaining why there's been a break in posting. It's usually a sign that the next post will be the last if it will happen at all, and it's always some excuse about being busy, life getting in the way, etc. etc. So I guess now it's my turn to write one of these posts. 
-
-#+hugo: more
-
-I've been away for a week, traveling overseas to see family. The trip in itself was fine and not as eventful as I anticipated (which is a good thing). When I got back, I immediately bought two things: a HOTAS for Elite Dangerous, and a good headset with a DAC to experience music better. I am almost done writing a post about the later. 
-
-My mornings, which were once completely empty and dedicated to writing, now share time with going to the gym. As it turns out, it's much easier to keep a gym routine in the morning. 
-
-Emacs and Org mode - not much changed there, as a matter of fact. I tried the [[https://github.com/myuhe/org-gcal.el][Gcal]] for Emacs and ended up disappointed after I figured out how to set it up. [[http://www.orgzly.com/][Orgzly]], on the other hand, keeps evolving and becomes a must-have tool for all org-mode users with Android devices in my opinion. 
-
-So there's quite a bit to talk about and expand on. I hope to get back on track soon with a new post. In the meantime, feel free to say hello or read my older posts.  
-
-*** TODO Running
-:EXPORT_HUGO_SECTION: JRL
-    :EXPORT_FILE_NAME: of-running
-    :EXPORT_HUGO_PUBLISHDATE: 2019-07-11:
-    :END:
-
-I managed to wake up at 5:30 today (this used to be my regular time before it shifted to 6:30) which gave me enough time to go for a run. It was glorious. My apartment is conviniently located next to good tracks just waiting to be used. 
-
-There are many things I want to mention when it comes to running, but I want to keep this post simple. I want to focus on a couple of tips that, I hope, would help those who have considered running and failed even though they know already it's enjoyable and they want to do it. 
-
-First, as a person who's getting back on this horse a third time in his life, let me state the obvious: it's a proccess. It's not something you just do one day, or at least, do /well/ in one day. It requires patience, which I don't always have as a person who used to run and you may be lacking as well. Preppering to run requires that you build certain lung capacity and - I think many guys forget this - leg muscle. 
-
-The obvious place to start working on those is the gym. Even if you're completely out of shape, all you need to do to start is get on the elipitcal (that's my favorite) or another cardio machine that lets you keep relatively stationary (this rules running tracks and rowing machines out). From there, watch your favorite YouTube videos or even read a book. Build your lung capacity slowly buy going for longer and longer time period first, and then increase the difficulties. As for the leg musckle, use the machines availble to you, and work especially on the muscles the reinforce your knees. Always mind your knees, and be as kind to them as possible (hint: running is usually /not/ being kind to your knees). 
-
-The best runs are the ones where you're free to take in the sounds and sighs, even the smells. It's fine listening to music at the gym or at practice runs, those that you do to practice and run in loops, but when you really run outside in the early morning, running becomes a sort of a religious experience almost. You want to tune in, not out. Leave the earphones at home. 
-
-Speaking of leaving stuff, you can't leave the keys and your phone. Your keys is obvious, phone -- depends if you want to record your run (and what you use) and how much in touch you want to be /able to/ be with the world. I find that the best way to carry a phone and a set of keys is still with a fanny pack which I adjust to my smaller-than-avrage figure. 
-
-Another thing I discover is about sweat. When you run and sweat, rubbing your brow hard to get it out of your eyes is not a good idea. What you want to do is to wipe it gently, so the forehead remains wet, just without drops. This prevents the sweat from rushing back to the completely dry gap and pour back toward your eyes. The breeze you create automatically when you run, along with the thing lair of wetness, causes this sweat to harden and become sticky (I know it's gross but stay with me) and this helps preventing additional sweat from going into your eyes. Of course, if you sweat a whole lot, this won't work. 
-
-Running uphil and downill: when running uphill, lean forawrd into the rise, and "claw" into the air with your palms. This will help with the balance. When running down, lean back slightly and "push" aways from you slightly with your hands. This is also the only time you want to run with your feet fully on the ground, ball of the anckle hitting the road, to aid with the knees: when you're leaning back, your calfs take more of the weight this way. Be careful - I find that running with your anckles down to the road like this puts /more/ weight on your knees except when you're running downhill. It can also hurt your back. Normally, you want to use the front of your feet, your anckles should not touch the road. Get shoes that aid you to do that. 
-
-Speaking of knees: if they start hurting, stop. Just stop. Your knees are not a muscle, and you will damage them. Pains should come from your muscles, not from your bones. 
-
-Lastly, enjoy the run and do what you think you should to make it enjoyable. If a certain path looks interesting, take it. Worse that happens you have to go back. If you feel you need to slow down to catch your breath, that's OK. Make a visual sign to yourself (say the third tree coming, or a sign up ahead) that would tell you to try again at that location, and slow down to rest a bit. 
-
-
-
-
-

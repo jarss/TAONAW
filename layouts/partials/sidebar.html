@@ -3,7 +3,7 @@
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title}}</h1></a>
       <p class="lead">
-      {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
+      Tech, Life, and the Stuff in Between: A blog by <a href="{{ .Site.BaseURL }}/about">Josh Rollins</a>. 
       </p>
     </div>
     <nav>
@@ -17,9 +17,6 @@
 	{{ end }}
 	{{end}}
 	<h4><a href="/tags/">All Topics →</a></h4>
-	<h3>Sections</h3>
-	<li><a href="{{ .Site.BaseURL }}help-desk-head-desk">HelpDesk/HeadDesk</a> </li>
-	<li><a href="{{ .Site.BaseURL }}jrl">The JR Life</a> </li>
         {{ range .Site.Menus.main -}}
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
         {{- end }}

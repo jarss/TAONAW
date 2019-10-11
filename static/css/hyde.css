@@ -92,7 +92,11 @@ html {
 
 
 /* About section 
-Changes included here to use normal weight and capitalize, as I prefer: */
+Changes included here to use normal weight and capitalize, as I prefer. A few notes: 
+1. word-spacing to force the words to "break" one word per line.
+2. padding to put the line (border) top and bottom in place.
+3. letter-spacing because this font is too close, looks bad without.
+ */
 .sidebar-about h1 {
   color: #8B0000;
   margin-top: 0;
@@ -101,6 +105,7 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   padding-bottom: .8rem;
   font-family: "Righteous", serif;
   font-size: 3.2rem;
+  word-spacing: 2rem;
   text-align:  left;
   font-weight: normal;
   line-height: 3rem;
@@ -116,6 +121,9 @@ Changes included here to use normal weight and capitalize, as I prefer: */
   text-decoration: none;
 }
 
+.lead a {
+    text-decoration: underline;
+}
 
 .sidebar-about img {
   width: 50%;

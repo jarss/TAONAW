@@ -3,33 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/about/</loc>
+    <lastmod>2019-10-11T18:05:46-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/</loc>
-    <lastmod>2019-10-06T20:13:42-04:00</lastmod>
+    <lastmod>2019-10-08T06:42:30-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/blogging/</loc>
-    <lastmod>2019-10-06T20:13:42-04:00</lastmod>
+    <lastmod>2019-10-08T06:42:30-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2019-10-06T20:13:42-04:00</lastmod>
+    <lastmod>2019-10-08T06:52:44-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/hugo/</loc>
-    <lastmod>2019-10-06T20:13:42-04:00</lastmod>
+    <lastmod>2019-10-08T06:42:30-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2019-10-06T20:13:42-04:00</lastmod>
+    <lastmod>2019-10-08T06:52:44-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2019-10-06T20:13:42-04:00</lastmod>
+    <lastmod>2019-10-08T06:52:44-04:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +49,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/automation/</loc>
-    <lastmod>2019-10-03T07:04:46-04:00</lastmod>
+    <lastmod>2019-10-08T06:51:24-04:00</lastmod>
   </url>
   
   <url>
@@ -54,22 +59,22 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/life/</loc>
-    <lastmod>2019-10-03T07:05:45-04:00</lastmod>
+    <lastmod>2019-10-08T06:52:44-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</loc>
-    <lastmod>2019-10-03T06:57:41-04:00</lastmod>
+    <lastmod>2019-10-08T06:52:44-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
-    <lastmod>2019-10-03T07:06:52-04:00</lastmod>
+    <lastmod>2019-10-08T06:52:44-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/tags/linux/</loc>
-    <lastmod>2019-10-03T07:07:08-04:00</lastmod>
+    <lastmod>2019-10-08T06:51:24-04:00</lastmod>
   </url>
   
   <url>
@@ -94,17 +99,12 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/security/</loc>
-    <lastmod>2019-10-03T07:02:44-04:00</lastmod>
+    <lastmod>2019-10-08T06:51:24-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/bmc/</loc>
     <lastmod>2019-07-14T17:17:55-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/jrl/</loc>
-    <lastmod>2019-07-14T17:03:01-04:00</lastmod>
   </url>
   
   <url>
@@ -164,22 +164,22 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/music/</loc>
-    <lastmod>2019-04-11T06:26:40-04:00</lastmod>
+    <lastmod>2019-10-08T06:46:37-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/</loc>
-    <lastmod>2019-04-11T06:26:40-04:00</lastmod>
+    <lastmod>2019-10-08T06:46:37-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/jrl/updates/</loc>
-    <lastmod>2019-05-22T19:03:46-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/updates/</loc>
+    <lastmod>2019-10-08T06:52:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/jrl/about_burnouts/</loc>
-    <lastmod>2019-10-03T07:05:45-04:00</lastmod>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/about_burnouts/</loc>
+    <lastmod>2019-10-08T06:52:14-04:00</lastmod>
   </url>
   
   <url>
@@ -269,12 +269,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</loc>
-    <lastmod>2019-10-03T07:02:44-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/jrl/some_things/</loc>
-    <lastmod>2018-12-09T09:48:31-05:00</lastmod>
+    <lastmod>2019-10-08T06:51:24-04:00</lastmod>
   </url>
   
   <url>
@@ -285,11 +280,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</loc>
     <lastmod>2019-07-28T07:18:11-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/jrl/of_people_and_money/</loc>
-    <lastmod>2018-12-09T09:48:22-05:00</lastmod>
   </url>
   
   <url>
