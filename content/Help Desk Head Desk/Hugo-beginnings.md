@@ -2,7 +2,7 @@
 title = "Hugo - what takes so long?"
 author = ["Josh Rollins"]
 publishDate = 2018-10-04T00:00:00-04:00
-lastmod = 2019-07-28T07:28:58-04:00
+lastmod = 2019-10-11T20:13:54-04:00
 tags = ["hugo", "blogging"]
 draft = false
 +++

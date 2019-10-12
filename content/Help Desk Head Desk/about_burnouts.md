@@ -2,7 +2,7 @@
 title = "About Emotional Exhaustions"
 author = ["Josh Rollins"]
 publishDate = 2019-03-09T00:00:00-05:00
-lastmod = 2019-10-08T06:52:14-04:00
+lastmod = 2019-10-11T20:07:31-04:00
 tags = ["life"]
 draft = false
 +++

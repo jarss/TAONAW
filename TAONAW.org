@@ -1103,7 +1103,7 @@ When a game creates streamers like Pave, you know something must be right about 
 
 So you know. I thought it wouldn't hurt to try it... 
 
-*** PUBLISHED About Emotional Exhaustions              :life:
+*** PUBLISHED About Emotional Exhaustions                              :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: about_burnouts
@@ -1990,7 +1990,6 @@ What about you? Do you use different systems side by side like this, or are you 
 [fn:14] Seems like this [[https://community.kde.org/Incubator/Projects/Ksnip#Status][project has been killed]] in favor of [[https://github.com/DamirPorobic/KImageAnnotator][KimageAnnonator]], which looks exactly the same to me. 
 
 [fn:15] Actually, since I use Backblaze to backup my files, my Windows machine is also my dedicated "backup server-client" as well. However it's my Raspberry Pi that does the automation and uploads a compressed backup file every night without fail. You can't beat Linux when it comes to automations of "set up and forget" like these.
-
 
 
 *** PUBLISHED Blog Updates: 2019-10                           :blogging:hugo:
