@@ -1991,31 +1991,49 @@ What about you? Do you use different systems side by side like this, or are you 
 
 [fn:15] Actually, since I use Backblaze to backup my files, my Windows machine is also my dedicated "backup server-client" as well. However it's my Raspberry Pi that does the automation and uploads a compressed backup file every night without fail. You can't beat Linux when it comes to automations of "set up and forget" like these.
 
+*** WIP Blog Updates Posts
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk 
+    :EXPORT_FILE_NAME: blog-updates-posts
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-14:
+    :END:
+
+As I wrote the [[http://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/][October Updates]] post, I came to realize that having a "what's new" kind of post regularly is a good idea. Usually, updating one thing causes me to want another change or to break something that worked. These are learning experiences that I believe could be beneficial other bloggers out there (I know they are to me). For those interested, here are some of my thoughts on that.
+
+#+hugo: more
+
+I've discussed my general plans after passing the Security+ exam on [[https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f][my video]]. Unlike what I believe is the generic direction most folks would take at this point, like advancing their career, going further into information security, higher salary, etc., I wanted to take a step back and focus more on my website. 
+
+The desire comes from the recognition that studying for the exam put many other things I wanted to explore on hold due to lack of time and wanting to get this exam over with. Toward the end of my studying, I even stopped caring if I pass or not. I just wanted to be done. I don't want to have this attitude toward my interests, but this is what happens when you're trying to push through a deadline. 
+
+I enjoy writing and explaining technology, so my website is usually a natural playground for constant development. I've taken large steps forward with Hugo and [[https://ox-hugo.scripter.co/][ox-hugo]], which allows me to write my post directly from my favorite writing environment: org-mode. [[https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/][Since then]], I've added a few bits and pieces here and there, mostly to CSS and layout (I call these "cosmetics") and some functionality with Disqus for comments and tags to categorize my posts. All of these, to one extent or another, were new or introduced a higher level of complexity that I've dealt with in the past.
+
+Going back to work on my website was slow at start, but quickly became more involved when I encountered a few problems. First with simple CSS issues, later with Hugo, these issues had me looking more critically into my site, understand Hugo and its components, and remind myself how things worked. Hugo is a very powerful tool with a simple way of doing things, but it's not always easy to get into its mindset. Like a skill that requires honing, if you don't work at it often, you lose the sharpness of it. It's not a matter of writing how to do things down either: this state of mind is different. It's one thing to follow instructions blindly to get things to work, it's another to understand /how/ it works and why. To me, this is a good feeling, a certain "high" when something clicks, a good motivation to keep on learning. It is one of the reasons why I enjoy working in IT and constantly be exposed to new things.
+
+The October Update post (and those coming up in the future) is dynamic. As I work on new features, I'll try to explain what I've done and how. I hope to get more engagement and ideas for those reading. 
 
 *** PUBLISHED Blog Updates: 2019-10                           :blogging:hugo:
      :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: blog-updates-2
-    :EXPORT_HUGO_PUBLISHDATE: 2019-10-07:
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-12:
     :END:
 
-I've been working on A few additional subtle CSS updates to this website. 
+I've been fairly active with the website this month, but most of the changes are behind the scenes.  
 
 #+hugo: more
 
 **** Tags to Topics
 
-The "tags" title changed to "Popular Topics". This list now displays any topics that have been featured at least 3 times on TAONAW from the highest to lowest. A new "All Topics" link at the bottom leads to the tag page (which I need to change to "topics" now) to view all the other topics, sorted by latest addition. I am planning to add a short summary to this page later on, something that was inspired a bit by [[https://karl-voit.at/][Karl Voit]]. 
+The "tags" title changed to "Popular Topics". This list now displays any topics that have been featured at least 3 times on TAONAW from the highest to lowest. A new "All Topics" link at the bottom leads to the tag page (which I need to change to "topics" now - work in progress) to view all the other topics, sorted by latest addition. I am planning to add an introduction the page later on, inspired a bit by [[https://karl-voit.at/][Karl Voit]]. 
 
-The "Sections" portion of the sidebar will be eliminated. More personal posts are now tagged as "[[https://joshrollinswrites.com/tags/life/][life]]" ([[https://joshrollinswrites.com/help-desk-head-desk/][HelpDesk/HeadDesk]] is the main section of the blog, the one you're viewing now).
-
-As a preparation to go sections-less, the tags were cleaned and condensed to reflect broader topics. Popular topics that emerge will receive their own  tags as they become more popular. 
+The "Sections" portion of the sidebar +will be+  was eliminated. More personal posts are now tagged as "[[https://joshrollinswrites.com/tags/life/][life]]". As a preparation to go sections-less, the tags were cleaned and condensed to reflect broader topics. Popular topics that emerge will receive their own  tags as they become more popular. 
 
 **** Cosmetics
 
-The sidebar [[https://github.com/jarss/TAONAW/blob/master/static/css/hyde.css][is now 14rem wide]] to contain the "Popular Topics" heading without a break. This caused the words "Art Of" at red title at the sidebar to come together, something I intend to change. 
+The sidebar [[https://github.com/jarss/TAONAW/blob/master/static/css/hyde.css][is now 14rem wide]] to contain the "Popular Topics" heading without a break. This caused the words "Art Of" in the red title at the sidebar to come together, something I +intend to+ changed. I learned that it's probably smarted to increase the spaces between words in the title using the [[https://www.w3schools.com/cssref/pr_text_word-spacing.asp][word-spacing]] CSS property instead of changing the width of the sidebar. 
 
-Post titles have a new font, [[https://fonts.google.com/specimen/Montserrat][Montserrat]]. If you don't see this font, please let me know. 
+Post titles have a new font, [[https://fonts.google.com/specimen/Montserrat][Montserrat]]. If you don't see this font, please let me know. This change was implemented previously, but later deleted by mistake in the CSS file. This is a Google Font that is enabled for free using the head_fonts.html in Hugo. 
 
 Colors for the tags under the titles and the "Read More" links on the main page were changed to the same red as the Title's red. Other links in the posts and remain the same[fn:1].
 
@@ -2023,11 +2041,35 @@ Colors for the tags under the titles and the "Read More" links on the main page 
 
 My homepage, which displays a list of summaries of posts, broke after a recent Hugo update. That was because of a [[https://gohugo.io/news/0.58.0-relnotes/][specific Hugo change in version .58]].  This was fixed after a day of diving into Hugo, something I should probably do more often. 
 
+**** Trimming Down the fat 
+
+As it turns out, there are a lot of unused files inside the builds of this website. For example, when I changed my tagging and got rid of the old tags, it turned out the old tags still have HTML files inside the site. The original theme I used to build this site is still stored intact inside the theme folders, +and I don't really need it+[fn:16]. There are other examples, probably one of the known side effects of having a static website that builds HTML webpages for everything. 
+
+Clearing the old files is tricky, and I ended up deleting files I didn't know I need until I tried to publish the site again. Not a big problem since everything is backed up many times over, but something I can live without.
+
+**** Netifly - Coming Soon
+
+As Kaushal Modi, my Hugo mentor [[https://mastodon.technology/@kaushalmodi/102949264377765642][pointed out]], the answer to all these annoyances is Netifly. I knew about this service previously, but this time because of a specific issue[fn:17] I had with git, I learned that Netifly bypasses the entire build Hugo creates. That is, it reads the md files directly. 
+
+Because the md files are created on the fly for me thanks to ox-hugo, it's almost as if I have a dynamic website. I would still need to push the changes to github, but Netifly would take care of everything from there. No more old dead HTML files or forgetting to build my website before pushing to github - something I do more often than I'd like to, for sure. 
+
+Getting a website to build on Netifly is pretty easy, but I'll need to change the DNS records to point to Netifly's servers instead of github. That's not a hard thing to do, but there's a chance something would break and my website will be down, and I'm running out of time as I'm writing this. I will wait on Netifly a bit longer, but this is a change that is pretty sure to happen. 
+
+**** About Section
+
+I've added an [[http://joshrollinswrites.com/about/][about section]] to the blog. Creating a section that uses the posts' template was a learning experience since Hugo's default is to treat all sections' main pages (index.html pages) as a "list" template. To resolve this, I needed to use ~layout: "single"~ in the [[https://gohugo.io/content-management/front-matter/][front-matter]] for the index page. In ox-hugo, this is done by adding a ~ ~:EXPORT_HUGO_LAYOUT: single~ property under the header. 
+
+I'm still not sure how to fit the link to the about section in the sidebar. For now, it's just a linked from my name in the site's description.
+
 **** Footnotes
 
 [fn:1] This was harder than it should have been... these links are nested inside a class which is also nested inside a class. The right syntax in CSS is ~[parent-class] [child-class] [html-tag]~ with spacing being important: three spaces, no more. However, because my CSS was messy, the rules I've added were re-defined again later in the CSS file; I wasn't aware I called the same elements in two different places. As it turns out, cleaning your code (CSS, bash, or whatever) is important - and so as adding comments.
 
 [fn:2] As a barista, I appreciated and getting tips and I've considered adding a tips page to the blog before. Unlike donations, tips are small, meant to be tokens of appreciation of good content and not a way to make serious income out of the website. Unlike subscriptions (like [[https://en.wikipedia.org/wiki/Patreon][Patreon]]), they are one time deals. This will encourage me to work for good content without asking for support too bluntly, which I don't like. 
+
+[fn:16] When I tried to publish the site to Netifly (see below) it turned out I /do/ need the original theme of the site. I am unsure why at this point, since all the essential files I use are stored outside of the theme's folder. I believe this has to do with the site's theme setting which specifies the theme's name, which probably points to that folder.
+
+[fn:17] I included the word "hugo" in my git ignore file. This was because I used to store a hugo binary in the site's root folder, because a newer version was not available on Linux Mint, at the time.  
 
 ** BMC
 :PROPERTIES:
