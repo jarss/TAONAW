@@ -2071,7 +2071,7 @@ I'm still not sure how to fit the link to the about section in the sidebar. For 
 
 [fn:17] I included the word "hugo" in my git ignore file. This was because I used to store a hugo binary in the site's root folder, because a newer version was not available on Linux Mint, at the time.  
 
-*** WIP Emacs & Org From the Beginning: Part 1
+*** CANCELLED Emacs & Org From the Beginning: Part 1
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: back-to-beginnings

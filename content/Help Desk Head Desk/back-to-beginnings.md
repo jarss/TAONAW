@@ -2,8 +2,8 @@
 title = "Emacs & Org From the Beginning: Part 1"
 author = ["Josh Rollins"]
 publishDate = 2019-10-18T00:00:00-04:00
-lastmod = 2019-10-20T07:53:39-04:00
-draft = false
+lastmod = 2019-11-06T22:25:11-05:00
+draft = true
 +++
 
 intro here
