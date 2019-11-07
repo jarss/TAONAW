@@ -1991,7 +1991,7 @@ What about you? Do you use different systems side by side like this, or are you 
 
 [fn:15] Actually, since I use Backblaze to backup my files, my Windows machine is also my dedicated "backup server-client" as well. However it's my Raspberry Pi that does the automation and uploads a compressed backup file every night without fail. You can't beat Linux when it comes to automations of "set up and forget" like these.
 
-*** WIP Blog Updates Posts
+*** PUBLISHED Blog Updates Posts                                   :blogging:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
     :EXPORT_FILE_NAME: blog-updates-posts
@@ -2070,6 +2070,113 @@ I'm still not sure how to fit the link to the about section in the sidebar. For 
 [fn:16] When I tried to publish the site to Netifly (see below) it turned out I /do/ need the original theme of the site. I am unsure why at this point, since all the essential files I use are stored outside of the theme's folder. I believe this has to do with the site's theme setting which specifies the theme's name, which probably points to that folder.
 
 [fn:17] I included the word "hugo" in my git ignore file. This was because I used to store a hugo binary in the site's root folder, because a newer version was not available on Linux Mint, at the time.  
+
+*** WIP Emacs & Org From the Beginning: Part 1
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: back-to-beginnings
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-18:
+    :END:
+
+intro here
+
+#+hugo: more
+
+**** How to Read the Keys
+
+One of the early realizations that I'm looking into something "weird" happened when I started looking into Emacs key "shortcuts[fn:18]". I came across things like saving (=C-x C-s=) and aborting (=C-g=) and suspected "C" was for control, but got thrown off by execute command (=M-x=). Only after reading more "normal folks" explinations like [[https://masteringemacs.org/book][Mastering Emacs]] I understood this crazines. 
+
+Capital C is indeed the Control key, but capital M turns out to be the [[https://en.wikipedia.org/wiki/Meta_key][Meta key]], which is mostly replaced by the Alt key on a regular PC keyboard of the Command key on a Mac. This means that the above command, =C-x C-s=, means "press Control-X and then press S while still pressing the Control key." That last bit is important, because it's different from =C-x s=, for example, which means "press Control-X, let go, and press s", which will invoke a different command altogether. 
+
+In the beginning, Emacs weird key combinations was the hardest part to get over. It does take time, but after I've dopted these combos and started using them, they started to make more and more sense. Still there are exceptions. For example, I still don't use Emacs's built in move up (=C-p=) or down (=C-n=) and prefer the arrows instead except special cases[fn:19]. 
+
+**** Overrated: Emacs Built-in Help System
+
+I'm probably going to get a good amount of pushback for this, but I'm just being honest when I say the built-in help system was little to no use to me back when I started using Emacs.
+
+The Emacs built-in tutorial (=C-h t=) is very through and teaches you the basics one step at a time, but I was never the kind of person who would open a thick textbook and start reading cover to cover[fn:20]. Emacs also comes with an extensive help system, and these are some of the pupular combos for it:
+
+=C-h a=: apropos-command: "is there such a thing as [search term] and what does it do?"
+=C-h k=: describe-key: "what does this key do?"
+=C-h f=: describe-function: "what does this function or command do?"
+=C-h v=: describe-veriable: "what does this variable does?" 
+
+But as you can see, you need to at least have a generic idea of what you're looking for in order to get the help you need. 
+
+For instance, if you want to quit a command or escape something, usually by  pressing the "Esc" key anywhere else, you'd be clueless to know it's the =C-g= key combo. You won't know to search for this key combo (=C-h k=) because this is exactly what you're looking for. You won't know what the function is that would cancel a command (is it cancel? escape? quit? and then there are variants of those, like quit-proccess, quit-window...) called, because you have no idea what it is in "Emacs speak". It's not a variable (that much I knew when I started) so =C-h v= is usless here, and even the friendlier "search all" =C-h a= seems to fall short here since you'll be presented with a large list of anything that contains the word "quit" (if that's what you're looking for) in differnent functions and packages, if you have any installed. In short, you'd be lost. 
+
+Having to look up new key-combos like that when I started every single time I wanted to finish a paragraph was terrible, and I believe it's the wrong (and terribly boring) way to learn Emacs. 
+
+So, even with all its good intentions, I didn't use Emacs help system as much as many folks told me I should. Instead I turned to Google and many different forums where folks as confused as me posted these questions. The book I mentioned above also helped a great deal, since Mickey Petersen explains things to you as another /normal/ computer user. I will get back to this point again and again.
+
+**** This is Where you Should Start
+
+OK, so I explained how to read Emacs' weird key systems and then encouraged you /not/ to  use the built-in help system. Great. Now what?  
+
+Since Emacs' biggest issue when you start are the keys, we want to do something about making the environment more familiar. Again, many veteran Emacsers would yell at me here, and I myself cringe at the thought of using CUA mode these days, but you got to start somewhere familar, and this is a good place. 
+
+CUA mode, AKA Common User Access mode, is what you're probably familiar with in most Word proccessing programs. Control+C to copy, Control+X to cut, Control+v to paste, etc. To turn this on, Click the "Options" menu at the top of the Emacs window (yes, with your mouse...) and check the box next to "Use CUA Keys". Then from the same menu all the way at the botton, click "Save Options" if you want this to be turned on every time you start Emacs. Congradualtions, you've just saved yourself the mental pain of looking for "paste" in Emacs for 20 minutes and then realizing it doesn't exist (in Emacs speak, paste is "yank"). 
+
+Now that you've made Emacs a bit "stupider" to fit your needs (as you become better at Emacs, you'll learn quickly why CUA mode is not that good later on), it's time to tweak yourself a bit for Emacs. 
+
+Look down at your keyboard, at that Caps key. See it? Do you remember when's the last time you've used it? Did you ever wonder why such a useless key is so big and pronouced? Well then, congradulations. Time to kiss it goodbye. From now on, your Caps key will function is a secondary control key. 
+
+Emacs uses the control key a lot. And I mean, a /lot/. Today's modern keyboards are simply not meant for frequent control presses (remember, Emacs was invented back when a Meta key was a thing and "paste" did not exist in the computer user's lexicon). Emacs users developed a terrible condition called "Emacs Pinky." And yes, I can tell you from personal experience (I have smaller hands), it's a real thing. Many Emacs guros wrote pages on avoiding the Emacs pinky ([[http://ergoemacs.org/emacs/emacs_pinky.html][here's a good one]]), but using your Caps key as control is probably one of the eaisest. 
+
+This is easy to do in Linux and Macs, but somewhat tricker in Windows. The best tool I found for that is [[https://docs.microsoft.com/en-us/sysinternals/downloads/ctrl2cap][Ctrl2Cap]]. Take care of this now. Don't be that person who knows better. Don't be me. Just do it. Emacs has very smart ways of turning any words or letter to upper-cases in ways that will blow your socks off later.  
+
+
+**** Footnotes
+
+[fn:18] Back then, pressing keys instead of using the mouse was refered to as "shortcuts." I knew Emacs works directly from the keyboard, but I didn't know how to refer to this odd practice which is second nature now.
+
+[fn:19] Sometimes pressing the up arrow key is taken by another, more familiar function. When I ran shell inside emacs (I don't do that much anymore), pressing =C-p= became important because it would take the cursor and move it inside the text window, /not/ repeat the last command, which is what the up arrow key meant.
+
+[fn:20] This was never the way for me to learn anything, particularly computer stuff. As a matter of fact, this is one of a few big reasons I did not do well in college in computer programming calsses and decided to put computers behind me for later in life.
+
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: you-are-on-sale
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-18:
+    :END:
+
+The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greated with all kinds of windows opening on me, intruding on my space, notifying me on updates, of new games sales, of emails... "click me! No! Click me!!" I heard them yell in the back of my head. I put my coffee down and shut my Windows PC off again, shaking my head. 
+
+
+*** WIP Too Many Notifications
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: too-many-notifications
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-20:
+    :END:
+
+
+The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greeted with windows opening on me notifying me on updates, of new games sales, of emails... "click me! No! Click me!" Yeeeesh. I put my coffee down and shut down my Windows PC off again. How did I get to this point again?
+
+#+hugo: more
+
+Windows allows all kinds of apps to be launched at login (autostart) and throw notifications at you without asking for permission. Because my Windows PC is used for gaming, the [[https://en.wikipedia.org/wiki/Epic_Games_Store][Epic store]] announces free new games, and Steam's client keeps updating every few days for whatever reason. NVIDIA's updated includes bloatware, wrapping new driver updates with news bulletins I care very little of. Windows itself informs me every time an update is waiting for me to restart, which I do as soon as possible because I don't trust the system to wait for me as it claims to do: if it decides it's time to update then it's time to update, then it's time to update, and there's nothing I can do about it. Even Chrome browser launches automatically with [[https://emby.media/][Emby]], and with it all the notifications built into Chrome.
+
+I'm not new to this and I shouldn't be surprised, yet, somehow, this behavior keeps sneaking up on me bit by bit until it's suddenly too much. While Windows is notorious for this kind of behavior, things in Linuxland are also getting out of hand. In particular, Firefox and [[https://community.kde.org/KDEConnect][KDE-Connect]]. 
+
+Take WhatsApp for example, which I have to use to communicate with 95% of my friends and family[fn:21]. It's open in Firefox, where it's quick and convenient to type messages while my phone is charging, so Firefox informs me of new messages coming in. My phone, connected by KDE-Connect, also sends notifications. And if I ignore these because I'm busy, my Fitbit ionic vibrates on my wrist with yet a third attempt to grab my attention. 
+
+This all seems annoying and unnecessary as I write this, but during the last two weeks, it was vital. My dad was in the hospital undergoing surgery, and my family members across-seas were talking to each other in a chat room. I wanted to be involved, but not to the point where WhatsApp will show on my browser at work since my privacy (and that of my family) is important to me. Because running around a lot is a normal part of my job I don't always sense the phone vibrating in my pocket. The watch was the best option to be notified. The big hoopla is mostly over now, and it's time to tune it down. 
+
+Another good example is email. I moved personal emails (family and friends) to Protonmail about a year ago: I wanted to give Google a little bit less info to work with and encrypting communications with important people give me a warm fuzzy feeling. My main money/health/adult-stuff email though is still Gmail, while Outlook has autonomy at the office. 
+
+I currently use Thunderbird for my Gmail, and I find that the /lack/ of notifications is potentially a problem: if one of my apps happily subscribed me again automatically, I want PayPal to inform me I was just charged. The occasional newsletter from [[https://en.wikipedia.org/wiki/Bandcamp][Bandcamp]] is something worth skimming for good new music [[https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/][I re-learned to appreciate]]. However, I get no notifications unless Thunderbird is running. This is good because the thought of being notified of /every single email/ makes me want to puke, but it's all or nothing kind of deal which is not that great. 
+
+I know I need to get in there and tailor my notifications to my specific needs, but who has the time to do that /and/ keep things under control? I know I don't. I'm on the verge of contaminating my peaceful Linux environment with notification and information overload I don't want. 
+
+The solution for now seems to be in Gmail. I haven't tweaked my filters and labels there in a long time. It should be easy enough to either tame Gmail what's important or at least create an automatic workflow and then worry only about specific labels - these can translate into folders in Thunderbird, and from there, be notified /just/ for that folder. I can see this work. 
+
+At least in Linux information overload is /my/ choice, not some operating system's default behavior.
+
+*** Footnotes
+
+[fn:21] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.  
+
 
 ** BMC
 :PROPERTIES:
