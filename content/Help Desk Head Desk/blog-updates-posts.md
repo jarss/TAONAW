@@ -2,7 +2,8 @@
 title = "Blog Updates Posts"
 author = ["Josh Rollins"]
 publishDate = 2019-10-14T00:00:00-04:00
-lastmod = 2019-10-14T08:30:30-04:00
+lastmod = 2019-11-20T07:50:59-05:00
+tags = ["blogging"]
 draft = false
 +++
 

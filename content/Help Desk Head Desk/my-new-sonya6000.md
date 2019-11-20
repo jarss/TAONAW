@@ -2,7 +2,8 @@
 title = "A new Camera Instead of Pixel4"
 author = ["Josh Rollins"]
 publishDate = 2019-11-08T00:00:00-05:00
-lastmod = 2019-11-19T23:00:48-05:00
+lastmod = 2019-11-20T07:50:07-05:00
+tags = ["photography"]
 draft = false
 +++
 
