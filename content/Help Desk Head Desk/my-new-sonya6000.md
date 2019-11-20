@@ -2,7 +2,7 @@
 title = "A new Camera Instead of Pixel4"
 author = ["Josh Rollins"]
 publishDate = 2019-11-08T00:00:00-05:00
-lastmod = 2019-11-20T07:50:07-05:00
+lastmod = 2019-11-20T08:00:48-05:00
 tags = ["photography"]
 draft = false
 +++
@@ -36,4 +36,4 @@ Three weeks later, I'm happy to report I managed to carry the camera with me to 
 
 ## Footnotes {#footnotes}
 
-[^fn:1]: One difference between cameras and phone that
+[^fn:1]: One difference between cameras and smartphones that I learned early on: there's no huge difference between a 2 year old, a 5 year old and even a 10 year old cameras. I'm sure for professional photographers there are some important factors to consider, but at the same time I have a feeling that folks who have been taking photos for years know how to get great photos from old and new cameras. With a phone, you're expect to buy a new one every 2 or 3 years, with cameras, it's more about investing in what you already have.
