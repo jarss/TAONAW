@@ -2172,6 +2172,12 @@ The solution for now seems to be in Gmail. I haven't tweaked my filters and labe
 
 At least in Linux information overload is /my/ choice, not some operating system's default behavior.
 
+**** Footnotes
+
+[fn:21] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.  
+
+
+
 *** PUBLISHED A new Camera Instead of Pixel4                    :photography:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2210,9 +2216,30 @@ Three weeks later, I'm happy to report I managed to carry the camera with me to 
 
 [fn:22] One difference between cameras and smartphones that I learned early on: there's no huge difference between a 2 year old, a 5 year old and even a 10 year old cameras. I'm sure for professional photographers there are some important factors to consider, but at the same time I have a feeling that folks who have been taking photos for years know how to get great photos from old and new cameras. With a phone, you're expect to buy a new one every 2 or 3 years, with cameras, it's more about investing in what you already have. 
 
-*** Footnotes
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: my-new-sonya6000
+    :EXPORT_HUGO_PUBLISHDATE: 2019-11-08:
+    :END:
 
-[fn:21] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.  
+*** WIP Happpy Thanksgiving
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 2019-11-28
+    :EXPORT_HUGO_PUBLISHDATE: 2019-11-28:
+    :END:
+
+My family and I (those of us in the US, that is) have a micro version of Thanksgiving. There's no Turkey (we're not exactly big on meat), there are no large family encounters that break into their homogeneous splinters as time progresses. I usually bring my one partner with me over to my sister's, where we thaw our awkwardness next to the fireplace and watch my little niece run around like a leg-seeking missile, homing to the nearest standing person. 
+
+This time around I'm going to bring [[https://joshrollinswrites.com/help-desk-head-desk/my-new-sonya6000/][my new camera]] and for the first time, I'll be snapping pictures of people. Up until now, I aimed my lenses at plants, squirrels, and birds. It's been a welcome distraction from work, which has been particularly reiterating for the last month.   
+
+I find that it gets harder to sit down and write when I'm away from my writing for long periods, yet, as soon as I sit down in front of the soft beige window of my Emacs, the writing comes to me. There's also a difference between writing in my journal vs writing for the blog. The first is more raw, quick, with less caution. The second is slower, descriptive, with a dose of metaphors. 
+
+Writing like I'm writing now, without an outline or a specific goal, is risky. Many times I end up without a message to deliver, much like a passenger boarding the train for the ride, not for the destination. Sometimes, this is OK. There's something nice to these posts, they tend to be more personal and inviting. There's more life between the lines of text, and the paragraphs seem to connect better. 
+
+I do have more things I want to write about, but much like before a run on cold weather, I need to stretch first. I want to check the workflow, from my typing fingers through org-mode through Emacs through GitHub to webpage you're hopefully reading now without an issue. There are parts of me participating in this that need to be re-tuned before I go on the next big topic, and this is a warm-up. 
+
+This then seems like a good place to stop and wish you all a happy Thanksgiving. I hope you enjoy the little moments with your family and friends and stir clear from black Friday deals of more stuff you don't need. Let me know how yours went if you feel like it. 
 
 
 ** BMC

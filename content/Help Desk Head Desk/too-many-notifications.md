@@ -2,7 +2,7 @@
 title = "Too Many Notifications"
 author = ["Josh Rollins"]
 publishDate = 2019-10-20T00:00:00-04:00
-lastmod = 2019-11-20T07:50:00-05:00
+lastmod = 2019-11-28T07:18:29-05:00
 tags = ["windows", "linux"]
 draft = false
 +++
@@ -28,5 +28,8 @@ I know I need to get in there and tailor my notifications to my specific needs, 
 The solution for now seems to be in Gmail. I haven't tweaked my filters and labels there in a long time. It should be easy enough to either tame Gmail what's important or at least create an automatic workflow and then worry only about specific labels - these can translate into folders in Thunderbird, and from there, be notified _just_ for that folder. I can see this work.
 
 At least in Linux information overload is _my_ choice, not some operating system's default behavior.
+
+
+## Footnotes {#footnotes}
 
 [^fn:1]: In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.
