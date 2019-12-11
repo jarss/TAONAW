@@ -2177,7 +2177,6 @@ At least in Linux information overload is /my/ choice, not some operating system
 [fn:21] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.  
 
 
-
 *** PUBLISHED A new Camera Instead of Pixel4                    :photography:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2222,7 +2221,7 @@ Three weeks later, I'm happy to report I managed to carry the camera with me to 
     :EXPORT_HUGO_PUBLISHDATE: 2019-11-08:
     :END:
 
-*** WIP Happpy Thanksgiving
+*** PUBLISHED Happpy Thanksgiving
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 2019-11-28
@@ -2241,6 +2240,48 @@ I do have more things I want to write about, but much like before a run on cold 
 
 This then seems like a good place to stop and wish you all a happy Thanksgiving. I hope you enjoy the little moments with your family and friends and stir clear from black Friday deals of more stuff you don't need. Let me know how yours went if you feel like it. 
 
+*** WIP The Long Goodbye to Windows
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20191208
+    :EXPORT_HUGO_PUBLISHDATE: 2019-12-08:
+    :END:
+
+The idea of switching "Completely" Linux has been in my head since I wrote
+about [[https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/][having too many notifications]] thrown at me whenever I log into Windows... 
+
+Wait. Isn't this entire blog written from Linux? Haven't I already switched to work from Linux? Almost 100% of the posts here concern Emacs, org-mode and Linux. "What do you mean", you'd ask me, "switch completely? Haven't you already?" Yes. Kind of. Not really. 
+
+Let me back off a second, and tell you about Hedwig.
+
+#+hugo: more
+
+Hedwig, for those of you who don't know, is [[https://en.wikipedia.org/wiki/Magical_creatures_in_Harry_Potter#Hedwig][Harry Potter's owl]]. In the movie series, it is a large snowy owl that delivers Harry his mail. It is an obedient, yet confused owl. It's a bit of a mess, but you learn to like its character and weirdness. 
+
+[[file:images/snow_owl.jpg]]
+/above: a snowy owl, straight from the books/
+
+My electronic devices (phone, laptop, and desktop) are usually named after the owls from Harry Potter. The Raspberry Pi which syncs all my org-mode files is called Hogwarts; the desktop is Hedwig, the phone is [[https://harrypotter.fandom.com/wiki/Pigwidgeon][Pigwidgeon (pig)]], the laptop is [[https://harrypotter.fandom.com/wiki/Hermes][Hermes]]. I am not sure when I came up with this naming scheme, but my liking to owls and Harry Potter clicked some time ago. 
+
+Just like the "real" Hedwig, my Desktop is a large (full tower, soon to be full ATX) machine. It is somewhat "confused" about certain things, like the time (I replaced a CMOS battery a couple of times), the state of Windows updates (aren't we all), and in general, its identity. Hedwig's been through Windows, Linux (various distros), and even a full Hackintosh at one point. It's the first computer I built completely from ordered parts, the case, motherboard, PSU, CPU, GPU (all the Us), optical and hard drives. This happened about 6 years ago, before I switched careers to IT.
+
+Since the beginning of December, Hedwig is again a duel-boot machine: Windows and [[https://en.wikipedia.org/wiki/OpenSUSE][openSUSE]] Linux. I decided to switch to openSUSE from Manjaro (which I use on my laptop) because I've been using openSUSE at work on my VM and it has been rock-solid; I also grown to like [[https://en.wikipedia.org/wiki/YaST][YaST]] which helps when I don't remember how to change a setting from the command line. The idea is to eventually throw Windows out completely, and interact with it only in a VM on a full Linux machine. This is something I tried to tackle in the past but failed to do in the days before Emacs and Steam on Linux. Now, with my few favorite games available through Steam[fn:23] and Emacs leaving Windows and Office tools in the dust when it comes to file manipulations and writing, I think I will stay committed.
+
+But I am writing these lines on my laptop. Hedwig's fresh Hugo installation, which I use for this blog, is not working yet. This is just one example of many: [[https://github.com/jonls/redshift/releases][Redshift]], Linux's trusted version of [[https://justgetflux.com/][f.lux]] (or nightshift, if you speak Apple), [[https://www.veracrypt.fr/en/Home.html][veracrypt]], which is a cross-platform encryption solution I use daily, and various codecs required to watch videos and compress videos[fn:24] with ffmpeg all require special configuration.
+
+I've grown accustomed to these kinds of workarounds (Manjaro had it's own) on Linux. As much as I love the productivity and stability it brings with it, configuring a machine to work in Linux the way I want it to is never a quick process. In contrast, when I had to restore Hedwig to Windows in the past, all it took was signing into my Microsoft account; withing a minute, all my configurations including the wallpaper was in place. But that's the price you pay for having Microsoft (or Google, or Apple) having a probe up your behind and knowing everything you do. This eerie feeling of "we know what's good for you" is built into every OS, and exists outside of the technology word alone.
+
+Everything fits into nice neat boxes, and so do you, so shut up and move along, I feel they tell me. Even though I find that I have less and less patience for folks who invents "new ways" and think "originally" these days, I also have less patience toward those who tell /me/ to stick to the common ways of doing things. If we are all special none of us is unique, right? 
+
+For now, I find that overall there's little difference in my workflow from Manjaro in openSUSE. Most of my more per-machine tweaks happen in KDE, my preferred desktop environment, and Emacs's file paths which I still can't get to be the same when encrypting (would it kill someone to have the same mounting point for veracrypt in each distro?) Overall, I hope to stick to one distro so I can simply install from a pre-configured backup whenever I need to move to a new computer or a new VM. Using one (or two, one for work and one for home) init files for Emacs would also be great instead of having 5 slightly-different versions floating around.  
+
+But. While this sounds ideal, I don't think it'll ever happen. That's because I find that I /like/ the little differences in how each machine looks and feels. A small XPS running Tumbleweed, openSUSE's rolling release, with white-on-black theme, neon-colored panel with Late and a top panel for system notifications to imitate a Mac like all the cool kids fits, while Hedwig is far more "responsible" with SUSE's Leap and a traditional black-on-white theme. I need at least a bit of personality on each machine. That's the bit the creative non-conforming dude inside the IT guy in me. Or perhaps I'm just nuts. 
+
+**** Footnotes
+
+[fn:23] in case you're interested, these four games are currently [[https://en.wikipedia.org/wiki/YaST][Cities Skylines]], [[https://store.steampowered.com/app/231430/Company_of_Heroes_2/][Company of Heroes 2]], [[https://store.steampowered.com/search/?term=oxygen+not+inc][Oxygen not Included]], and [[https://store.steampowered.com/app/262060/Darkest_Dungeon/][Darkest Dungeon]]. Over time (and age, I suppose) I discovered I'm less interested in FPSs and more interested in detailed-oriented games. I all-heatedly recommend you take a good long look at Oxygen not Included, especially if you're reading this blog regularly - it's perfect for problem-solvers who are looking to sync into a fun, cute, but very thought-provoking kind of game. 
+
+[fn:24] as [[https://www.reddit.com/r/ffmpeg/comments/e79qv8/maxium_mp4_compression_only_in_opensuse/][I found out]], openSUSE doesn't come with [[https://www.videolan.org/developers/x264.html][libx264]], a codec used to compress videos into mp4 formats. It is so common-place in other distros and programs many (me included) don't even know it exists and does a fantastic job. 
 
 ** BMC
 :PROPERTIES:

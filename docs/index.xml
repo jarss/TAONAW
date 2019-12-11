@@ -6,10 +6,24 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Long Goodbye to Windows</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20191208/</link>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20191208/</guid>
+      <description>&lt;p&gt;The idea of switching &amp;ldquo;Completely&amp;rdquo; Linux has been in my head since I wrote
+about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/&#34;&gt;having too many notifications&lt;/a&gt; thrown at me whenever I log into Windows&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Wait. Isn&amp;rsquo;t this entire blog written from Linux? Haven&amp;rsquo;t I already switched to work from Linux? Almost 100% of the posts here concern Emacs, org-mode and Linux. &amp;ldquo;What do you mean&amp;rdquo;, you&amp;rsquo;d ask me, &amp;ldquo;switch completely? Haven&amp;rsquo;t you already?&amp;rdquo; Yes. Kind of. Not really.&lt;/p&gt;
+
+&lt;p&gt;Let me back off a second, and tell you about Hedwig.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Happpy Thanksgiving</title>
