@@ -21,13 +21,11 @@
 
 
 
-
 &lt;figure&gt;
     
         &lt;img src=&#34;https://joshrollinswrites.com/basic-ssh-security.png&#34;/&gt; &lt;/figure&gt;
 
-
-&lt;p&gt;This is my SSH server&amp;rsquo;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
+&lt;p&gt;This is my SSH server&#39;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,9 +43,8 @@
       <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
-
-&lt;p&gt;But it seems like even LastPass&amp;rsquo;s time has come.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
+&lt;p&gt;But it seems like even LastPass&#39;s time has come.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,7 +53,7 @@
       <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
-      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&#39;ve done to make this work. I hope you&#39;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
     </item>
     
   </channel>

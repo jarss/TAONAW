@@ -6,10 +6,23 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Update</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20191229/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20191229/</guid>
+      <description>&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/2019-12-29_09-24.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;I have a habit chaining in org-mode for this blog which shows me I&#39;m passed due on updating. 4 days, to be exact. I&#39;m rushing to update with this little post as I&#39;m sitting here gulping coffee in my boxers before a shower I need to take&amp;hellip; so bear with me.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>The Long Goodbye to Windows</title>
@@ -19,9 +32,7 @@
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20191208/</guid>
       <description>&lt;p&gt;The idea of switching &amp;ldquo;Completely&amp;rdquo; Linux has been in my head since I wrote
 about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/&#34;&gt;having too many notifications&lt;/a&gt; thrown at me whenever I log into Windows&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Wait. Isn&amp;rsquo;t this entire blog written from Linux? Haven&amp;rsquo;t I already switched to work from Linux? Almost 100% of the posts here concern Emacs, org-mode and Linux. &amp;ldquo;What do you mean&amp;rdquo;, you&amp;rsquo;d ask me, &amp;ldquo;switch completely? Haven&amp;rsquo;t you already?&amp;rdquo; Yes. Kind of. Not really.&lt;/p&gt;
-
+&lt;p&gt;Wait. Isn&#39;t this entire blog written from Linux? Haven&#39;t I already switched to work from Linux? Almost 100% of the posts here concern Emacs, org-mode and Linux. &amp;ldquo;What do you mean&amp;rdquo;, you&#39;d ask me, &amp;ldquo;switch completely? Haven&#39;t you already?&amp;rdquo; Yes. Kind of. Not really.&lt;/p&gt;
 &lt;p&gt;Let me back off a second, and tell you about Hedwig.&lt;/p&gt;</description>
     </item>
     
@@ -31,7 +42,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Thu, 28 Nov 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/2019-11-28/</guid>
-      <description>My family and I (those of us in the US, that is) have a micro version of Thanksgiving. There&amp;rsquo;s no Turkey (we&amp;rsquo;re not exactly big on meat), there are no large family encounters that break into their homogeneous splinters as time progresses. I usually bring my one partner with me over to my sister&amp;rsquo;s, where we thaw our awkwardness next to the fireplace and watch my little niece run around like a leg-seeking missile, homing to the nearest standing person.</description>
+      <description>My family and I (those of us in the US, that is) have a micro version of Thanksgiving. There&#39;s no Turkey (we&#39;re not exactly big on meat), there are no large family encounters that break into their homogeneous splinters as time progresses. I usually bring my one partner with me over to my sister&#39;s, where we thaw our awkwardness next to the fireplace and watch my little niece run around like a leg-seeking missile, homing to the nearest standing person.</description>
     </item>
     
     <item>
@@ -58,7 +69,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Mon, 14 Oct 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-posts/</guid>
-      <description>&lt;p&gt;As I wrote the &lt;a href=&#34;http://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/&#34;&gt;October Updates&lt;/a&gt; post, I came to realize that having a &amp;ldquo;what&amp;rsquo;s new&amp;rdquo; kind of post regularly is a good idea. Usually, updating one thing causes me to want another change or to break something that worked. These are learning experiences that I believe could be beneficial other bloggers out there (I know they are to me). For those interested, here are some of my thoughts on that.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As I wrote the &lt;a href=&#34;http://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/&#34;&gt;October Updates&lt;/a&gt; post, I came to realize that having a &amp;ldquo;what&#39;s new&amp;rdquo; kind of post regularly is a good idea. Usually, updating one thing causes me to want another change or to break something that worked. These are learning experiences that I believe could be beneficial other bloggers out there (I know they are to me). For those interested, here are some of my thoughts on that.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -67,7 +78,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 12 Oct 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been fairly active with the website this month, but most of the changes are behind the scenes.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve been fairly active with the website this month, but most of the changes are behind the scenes.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,7 +87,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</guid>
-      <description>&lt;p&gt;My &lt;a href=&#34;https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f&#34;&gt;first public video&lt;/a&gt; introduced me to new challanges I didn&amp;rsquo;t face until now. Case in point: displaying milliseconds in VLC. I looked online in various places for a solution with my tools of choice, VLC player and ffmpeg. Workarounds do exist, but not nearly as simple as what exists for me in Windows. This happened to me before. As I was starting to get stuck, I realized that sometimes it&amp;rsquo;s ok not to wrack my head over every single hurdle. This is a reminder for myself, and hopefully save you some time to.&lt;/p&gt;</description>
+      <description>&lt;p&gt;My &lt;a href=&#34;https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f&#34;&gt;first public video&lt;/a&gt; introduced me to new challanges I didn&#39;t face until now. Case in point: displaying milliseconds in VLC. I looked online in various places for a solution with my tools of choice, VLC player and ffmpeg. Workarounds do exist, but not nearly as simple as what exists for me in Windows. This happened to me before. As I was starting to get stuck, I realized that sometimes it&#39;s ok not to wrack my head over every single hurdle. This is a reminder for myself, and hopefully save you some time to.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,9 +96,8 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</guid>
-      <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&amp;rsquo;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
-
-&lt;p&gt;My elementary scripts are work in progress. I keep tweaking them as I learn and create new ones. I&amp;rsquo;d love to hear from experienced scripters just as I&amp;rsquo;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&#39;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
+&lt;p&gt;My elementary scripts are work in progress. I keep tweaking them as I learn and create new ones. I&#39;d love to hear from experienced scripters just as I&#39;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -96,7 +106,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&#39;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -105,7 +115,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 03 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</guid>
-      <description>&lt;p&gt;Macs are evil. Macs are expensive pieces of toy hardware, which is often not up to par with what&amp;rsquo;s offered on the market (my personal biggest annoyances are the keyboards and the touchpad). Everything you do on a Mac you can do on Linux better&amp;hellip; and so on. If that&amp;rsquo;s true, why are so many professionals in IT environments (which are otherwise Windows-based) use Macs? I want to see if my perspective changed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Macs are evil. Macs are expensive pieces of toy hardware, which is often not up to par with what&#39;s offered on the market (my personal biggest annoyances are the keyboards and the touchpad). Everything you do on a Mac you can do on Linux better&amp;hellip; and so on. If that&#39;s true, why are so many professionals in IT environments (which are otherwise Windows-based) use Macs? I want to see if my perspective changed.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,13 +128,11 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
 
 
 
-
 &lt;figure&gt;
     
         &lt;img src=&#34;https://joshrollinswrites.com/basic-ssh-security.png&#34;/&gt; &lt;/figure&gt;
 
-
-&lt;p&gt;This is my SSH server&amp;rsquo;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
+&lt;p&gt;This is my SSH server&#39;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -133,9 +141,8 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
-
-&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&#39;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&#39;t just me&lt;/a&gt; either.&lt;/p&gt;
+&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&#39;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -144,7 +151,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 06 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&amp;rsquo;s so much to explain, I can&amp;rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&#39;s so much to explain, I can&#39;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -153,9 +160,8 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</guid>
-      <description>&lt;p&gt;Even though I don&amp;rsquo;t have any means of tracking how many readers I have on this blog, I can&amp;rsquo;t help but feel a little bit responsible for my audience. This is an attempt to see how a quick &amp;ldquo;here&amp;rsquo;s what&amp;rsquo;s up&amp;rdquo; post while the blog is otherwise idle.&lt;/p&gt;
-
-&lt;p&gt;So, a few quick updates about what&amp;rsquo;s coming up:&lt;/p&gt;</description>
+      <description>&lt;p&gt;Even though I don&#39;t have any means of tracking how many readers I have on this blog, I can&#39;t help but feel a little bit responsible for my audience. This is an attempt to see how a quick &amp;ldquo;here&#39;s what&#39;s up&amp;rdquo; post while the blog is otherwise idle.&lt;/p&gt;
+&lt;p&gt;So, a few quick updates about what&#39;s coming up:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -165,8 +171,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</guid>
       <description>&lt;p&gt;Says &lt;a href=&#34;https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments&#34;&gt;Jamie T. Rubin&lt;/a&gt;: &amp;ldquo;As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;My answer to that, considering the theme of this blog and how I&amp;rsquo;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;</description>
+&lt;p&gt;My answer to that, considering the theme of this blog and how I&#39;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -175,7 +180,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve talked about &lt;a href=&#34;http://www.orgzly.com/&#34;&gt;Orgzly&lt;/a&gt; several times on this blog, but I haven&amp;rsquo;t dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly&amp;rsquo;s usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I&amp;rsquo;m happy to present my first interview on this blog.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve talked about &lt;a href=&#34;http://www.orgzly.com/&#34;&gt;Orgzly&lt;/a&gt; several times on this blog, but I haven&#39;t dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly&#39;s usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I&#39;m happy to present my first interview on this blog.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -185,7 +190,6 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/</guid>
       <description>&lt;p&gt;Every now and then I discover (or re-discover) a tool in Linux that does exactly what I need it to do. Some examples include ffmpeg, to shrink down my self-recorded webcam journal session while increasing the volume; abcde, to rip a classical music CD to flac and find its exact title and name; youtube-dl, which downloads any video online I need along with aria to speed these downloads, and more.&lt;/p&gt;
-
 &lt;p&gt;Today I want to praise a new excellent tool, this time for screenshots: &lt;a href=&#34;https://flameshot.js.org/#/&#34;&gt;Flameshot&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -195,7 +199,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</guid>
-      <description>I&amp;rsquo;ve been using Linux as my daily driver for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don&amp;rsquo;t think I will ever go back to using either one for my personal data. As a matter of fact, it&amp;rsquo;s Linux which made an appearance at work: without my VM and Org-mode, I would probably be drowning under hips of emails, meeting invites, support tickets, and the constant in-person walk-ins into our work environment.</description>
+      <description>I&#39;ve been using Linux as my daily driver for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don&#39;t think I will ever go back to using either one for my personal data. As a matter of fact, it&#39;s Linux which made an appearance at work: without my VM and Org-mode, I would probably be drowning under hips of emails, meeting invites, support tickets, and the constant in-person walk-ins into our work environment.</description>
     </item>
     
     <item>
@@ -204,7 +208,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Wed, 22 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/mu4e-not-for-me/</guid>
-      <description>&lt;p&gt;I had &lt;a href=&#34;https://irreal.org/blog/?p=8004&#34;&gt;irreal&amp;rsquo;s post&lt;/a&gt; about &lt;a href=&#34;https://www.reddit.com/r/emacs/comments/bfsck6/mu4e%5Ffor%5Fdummies/&#34;&gt;mu4e for dummies&lt;/a&gt; on my todo list for a week before I decided to give it up. At first, I thought it was because setting the time and following through the guide was too much of a &amp;ldquo;cloud&amp;rdquo; in my head to tackle, so I broke it down. Then, as I looked at the individual components, I realized it&amp;rsquo;s more complicated then technicalities alone.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I had &lt;a href=&#34;https://irreal.org/blog/?p=8004&#34;&gt;irreal&#39;s post&lt;/a&gt; about &lt;a href=&#34;https://www.reddit.com/r/emacs/comments/bfsck6/mu4e%5Ffor%5Fdummies/&#34;&gt;mu4e for dummies&lt;/a&gt; on my todo list for a week before I decided to give it up. At first, I thought it was because setting the time and following through the guide was too much of a &amp;ldquo;cloud&amp;rdquo; in my head to tackle, so I broke it down. Then, as I looked at the individual components, I realized it&#39;s more complicated then technicalities alone.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -213,7 +217,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</guid>
-      <description>&lt;p&gt;A few years back, I was an avid user of Evernote. That was a period of information &amp;ldquo;innocence&amp;rdquo; for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files &amp;ndash; though they have been since downloaded and converted from the App&amp;rsquo;s native format.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A few years back, I was an avid user of Evernote. That was a period of information &amp;ldquo;innocence&amp;rdquo; for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files &amp;ndash; though they have been since downloaded and converted from the App&#39;s native format.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -222,7 +226,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Fri, 12 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</guid>
-      <description>&lt;p&gt;I recently tried &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;Org-Gcal&lt;/a&gt; a second time just to turn it off again. I was following the (now slightly outdated) &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;instructions&lt;/a&gt; on &lt;a href=&#34;https://cestlaz.github.io/&#34;&gt;Mike Zamansky&amp;rsquo;s&lt;/a&gt; blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I recently tried &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;Org-Gcal&lt;/a&gt; a second time just to turn it off again. I was following the (now slightly outdated) &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;instructions&lt;/a&gt; on &lt;a href=&#34;https://cestlaz.github.io/&#34;&gt;Mike Zamansky&#39;s&lt;/a&gt; blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -231,7 +235,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Tue, 09 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/</guid>
-      <description>&lt;p&gt;After a few months of research, I finally upgraded my Audio system on my PC. As it turns out, it wasn&amp;rsquo;t as expensive as I feared. The renewed interest in music took me in rewarding directions of sound exploration I did not anticipate.&lt;/p&gt;</description>
+      <description>&lt;p&gt;After a few months of research, I finally upgraded my Audio system on my PC. As it turns out, it wasn&#39;t as expensive as I feared. The renewed interest in music took me in rewarding directions of sound exploration I did not anticipate.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -240,7 +244,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Wed, 03 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/updates/</guid>
-      <description>&lt;p&gt;I always dislike it when I read a post explaining why there&amp;rsquo;s been a break in posting. It&amp;rsquo;s usually a sign that the next post will be the last if it will happen at all, and it&amp;rsquo;s always some excuse about being busy, life getting in the way, etc. etc. So I guess now it&amp;rsquo;s my turn to write one of these posts.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I always dislike it when I read a post explaining why there&#39;s been a break in posting. It&#39;s usually a sign that the next post will be the last if it will happen at all, and it&#39;s always some excuse about being busy, life getting in the way, etc. etc. So I guess now it&#39;s my turn to write one of these posts.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -249,7 +253,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/about_burnouts/</guid>
-      <description>&lt;p&gt;This past week has been a good example of emotional exhaustion. Because influences overall productivity, relationships, and health (both mental and physical) I&amp;rsquo;d like to discuss it here.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This past week has been a good example of emotional exhaustion. Because influences overall productivity, relationships, and health (both mental and physical) I&#39;d like to discuss it here.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,7 +262,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/elite-dangerous-beginnings/</guid>
-      <description>&lt;p&gt;17:42. Almost time to go home. I&amp;rsquo;ve been trying to hold on a bit longer, to tell myself I should around more before I buy it. Elite is complex, with a steep learning and no real objectives in sight. I was worried it&amp;rsquo;ll be more work after work. So of course, I bought it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;17:42. Almost time to go home. I&#39;ve been trying to hold on a bit longer, to tell myself I should around more before I buy it. Elite is complex, with a steep learning and no real objectives in sight. I was worried it&#39;ll be more work after work. So of course, I bought it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -277,8 +281,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</guid>
       <description>&lt;p&gt;At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.&lt;/p&gt;
-
-&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&amp;rsquo;s many times using the tools you already have.&lt;/p&gt;</description>
+&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&#39;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&#39;s many times using the tools you already have.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -287,9 +290,8 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
-
-&lt;p&gt;But it seems like even LastPass&amp;rsquo;s time has come.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&#39;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
+&lt;p&gt;But it seems like even LastPass&#39;s time has come.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -298,9 +300,8 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
-      <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
-
-&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
+      <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&#39;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
+&lt;p&gt;Since the last two templates are rather short, I&#39;m putting them both here together. Here we go:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -309,7 +310,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</guid>
-      <description>&lt;p&gt;About some CSS Updates&amp;hellip; and why I haven&amp;rsquo;t posted in the last two weeks or so. (Changes are now complete!)&lt;/p&gt;</description>
+      <description>&lt;p&gt;About some CSS Updates&amp;hellip; and why I haven&#39;t posted in the last two weeks or so. (Changes are now complete!)&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -318,7 +319,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</guid>
-      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&#39;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&#39;ve used in a while. Every time I read something Org-mode related somewhere else it&#39;s as if I&#39;m invited over for a discussion over a cup of coffee.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -327,7 +328,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Thu, 17 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&#39;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&#39;m starting to edit out details because the post is getting too long. So instead, I&#39;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -347,7 +348,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Mon, 07 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</guid>
-      <description>&lt;p&gt;You don&amp;rsquo;t need to look hard to find the holes in this Emperor&amp;rsquo;s clothes. Apple has been heading downhill for a couple of years, but it&amp;rsquo;s only recently that the public at large started to take notice.&lt;/p&gt;</description>
+      <description>&lt;p&gt;You don&#39;t need to look hard to find the holes in this Emperor&#39;s clothes. Apple has been heading downhill for a couple of years, but it&#39;s only recently that the public at large started to take notice.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -356,7 +357,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</guid>
-      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Even though it doesn&#39;t show on this blog (yet), I&#39;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&#39;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -383,7 +384,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</guid>
-      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Most chances are, you won&#39;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -392,7 +393,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
-      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&#39;ve done to make this work. I hope you&#39;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -402,7 +403,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</guid>
       <description>&lt;p&gt;I asked my coworkers the following question:
- &amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;</description>
+&amp;ldquo;What is the one truth, in a sentence, you&#39;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -420,7 +421,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</guid>
-      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&#39;t until this podcast that I realized that I&#39;m much better off than I used to be.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -429,7 +430,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;ve bseen following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;If you&#39;ve bseen following me online for the last month or so (especially on reddit) you&#39;d know I&#39;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -439,7 +440,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/</guid>
       <description>I used to write all my tasks, personal and work, into one tasks.org file.
-On Sunday night, this was good. I had 5 tasks on my list, and I was ready to start my work week. But it didn&amp;rsquo;t take long (two days actually) for tasks.org to become monster.org. It didn&amp;rsquo;t happen because of the number of tasks, which I kept (more or less) under control. It happened because of the size of the projects I was working on.</description>
+On Sunday night, this was good. I had 5 tasks on my list, and I was ready to start my work week. But it didn&#39;t take long (two days actually) for tasks.org to become monster.org. It didn&#39;t happen because of the number of tasks, which I kept (more or less) under control. It happened because of the size of the projects I was working on.</description>
     </item>
     
     <item>
@@ -449,7 +450,7 @@ On Sunday night, this was good. I had 5 tasks on my list, and I was ready to sta
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</guid>
       <description>When I write, I live in Emacs (with the awesome Solorized theme) inside Org-Mode.
-With time, I found that Org has already made me more effienet writer and note taker. I write notes in every meeting now, rather it&amp;rsquo;s my &amp;ldquo;turn&amp;rdquo; or not. I write notes as I work, about every solution and every problem I&amp;rsquo;m facing. I write first thing in the morning, usually about org-related thoughts I had as I wake up, over a cup of Sumatra cofee (little almond milk, one pack of sugar).</description>
+With time, I found that Org has already made me more effienet writer and note taker. I write notes in every meeting now, rather it&#39;s my &amp;ldquo;turn&amp;rdquo; or not. I write notes as I work, about every solution and every problem I&#39;m facing. I write first thing in the morning, usually about org-related thoughts I had as I wake up, over a cup of Sumatra cofee (little almond milk, one pack of sugar).</description>
     </item>
     
   </channel>

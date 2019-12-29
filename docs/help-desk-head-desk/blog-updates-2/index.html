@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "Blog Updates: 2019-10",
     "headline" : "Blog Updates: 2019-10",
-    "description" : "\x3cp\x3eI\x26rsquo;ve been fairly active with the website this month, but most of the changes are behind the scenes.\x3c\/p\x3e",
+    "description" : "\x3cp\x3eI\x27ve been fairly active with the website this month, but most of the changes are behind the scenes.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -30,7 +30,7 @@
     "datePublished": "2019-10-12 00:00:00 -0400 EDT",
     "dateModified" : "2019-10-12 00:00:00 -0400 EDT",
     "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/blog-updates-2\/",
-    "wordCount" : "976",
+    "wordCount" : "973",
     "keywords" : [ "blogging","hugo","Blog" ]
 }
 </script>
@@ -163,60 +163,41 @@
       / <a href="https://joshrollinswrites.com/tags/blogging/">blogging</a>
       / <a href="https://joshrollinswrites.com/tags/hugo/">hugo</a>
 </time>
- <p>I&rsquo;ve been fairly active with the website this month, but most of the changes are behind the scenes.</p>
-
+ <p>I've been fairly active with the website this month, but most of the changes are behind the scenes.</p>
 <h2 id="tags-to-topics">Tags to Topics</h2>
-
 <p>The &ldquo;tags&rdquo; title changed to &ldquo;Popular Topics&rdquo;. This list now displays any topics that have been featured at least 3 times on TAONAW from the highest to lowest. A new &ldquo;All Topics&rdquo; link at the bottom leads to the tag page (which I need to change to &ldquo;topics&rdquo; now - work in progress) to view all the other topics, sorted by latest addition. I am planning to add an introduction the page later on, inspired a bit by <a href="https://karl-voit.at/">Karl Voit</a>.</p>
-
-<p>The &ldquo;Sections&rdquo; portion of the sidebar <del>will be</del>  was eliminated. More personal posts are now tagged as &ldquo;<a href="https://joshrollinswrites.com/tags/life/">life</a>&rdquo;. As a preparation to go sections-less, the tags were cleaned and condensed to reflect broader topics. Popular topics that emerge will receive their own  tags as they become more popular.</p>
-
+<p>The &ldquo;Sections&rdquo; portion of the sidebar <del>will be</del>  was eliminated. More personal posts are now tagged as &ldquo;<a href="https://joshrollinswrites.com/tags/life/">life</a>&quot;. As a preparation to go sections-less, the tags were cleaned and condensed to reflect broader topics. Popular topics that emerge will receive their own  tags as they become more popular.</p>
 <h2 id="cosmetics">Cosmetics</h2>
-
-<p>The sidebar <a href="https://github.com/jarss/TAONAW/blob/master/static/css/hyde.css">is now 14rem wide</a> to contain the &ldquo;Popular Topics&rdquo; heading without a break. This caused the words &ldquo;Art Of&rdquo; in the red title at the sidebar to come together, something I <del>intend to</del> changed. I learned that it&rsquo;s probably smarted to increase the spaces between words in the title using the <a href="https://www.w3schools.com/cssref/pr%5Ftext%5Fword-spacing.asp">word-spacing</a> CSS property instead of changing the width of the sidebar.</p>
-
-<p>Post titles have a new font, <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>. If you don&rsquo;t see this font, please let me know. This change was implemented previously, but later deleted by mistake in the CSS file. This is a Google Font that is enabled for free using the head_fonts.html in Hugo.</p>
-
-<p>Colors for the tags under the titles and the &ldquo;Read More&rdquo; links on the main page were changed to the same red as the Title&rsquo;s red. Other links in the posts and remain the same<sup class="footnote-ref" id="fnref:fn-1"><a href="#fn:fn-1">1</a></sup>.</p>
-
+<p>The sidebar <a href="https://github.com/jarss/TAONAW/blob/master/static/css/hyde.css">is now 14rem wide</a> to contain the &ldquo;Popular Topics&rdquo; heading without a break. This caused the words &ldquo;Art Of&rdquo; in the red title at the sidebar to come together, something I <del>intend to</del> changed. I learned that it's probably smarted to increase the spaces between words in the title using the <a href="https://www.w3schools.com/cssref/pr%5Ftext%5Fword-spacing.asp">word-spacing</a> CSS property instead of changing the width of the sidebar.</p>
+<p>Post titles have a new font, <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>. If you don't see this font, please let me know. This change was implemented previously, but later deleted by mistake in the CSS file. This is a Google Font that is enabled for free using the head_fonts.html in Hugo.</p>
+<p>Colors for the tags under the titles and the &ldquo;Read More&rdquo; links on the main page were changed to the same red as the Title's red. Other links in the posts and remain the same<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <h2 id="fixing-the-homepage">Fixing the Homepage</h2>
-
 <p>My homepage, which displays a list of summaries of posts, broke after a recent Hugo update. That was because of a <a href="https://gohugo.io/news/0.58.0-relnotes/">specific Hugo change in version .58</a>.  This was fixed after a day of diving into Hugo, something I should probably do more often.</p>
-
 <h2 id="trimming-down-the-fat">Trimming Down the fat</h2>
-
-<p>As it turns out, there are a lot of unused files inside the builds of this website. For example, when I changed my tagging and got rid of the old tags, it turned out the old tags still have HTML files inside the site. The original theme I used to build this site is still stored intact inside the theme folders, <del>and I don&rsquo;t really need it</del><sup class="footnote-ref" id="fnref:fn-2"><a href="#fn:fn-2">2</a></sup>. There are other examples, probably one of the known side effects of having a static website that builds HTML webpages for everything.</p>
-
-<p>Clearing the old files is tricky, and I ended up deleting files I didn&rsquo;t know I need until I tried to publish the site again. Not a big problem since everything is backed up many times over, but something I can live without.</p>
-
+<p>As it turns out, there are a lot of unused files inside the builds of this website. For example, when I changed my tagging and got rid of the old tags, it turned out the old tags still have HTML files inside the site. The original theme I used to build this site is still stored intact inside the theme folders, <del>and I don't really need it</del><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. There are other examples, probably one of the known side effects of having a static website that builds HTML webpages for everything.</p>
+<p>Clearing the old files is tricky, and I ended up deleting files I didn't know I need until I tried to publish the site again. Not a big problem since everything is backed up many times over, but something I can live without.</p>
 <h2 id="netifly-coming-soon">Netifly - Coming Soon</h2>
-
-<p>As Kaushal Modi, my Hugo mentor <a href="https://mastodon.technology/@kaushalmodi/102949264377765642">pointed out</a>, the answer to all these annoyances is Netifly. I knew about this service previously, but this time because of a specific issue<sup class="footnote-ref" id="fnref:fn-3"><a href="#fn:fn-3">3</a></sup> I had with git, I learned that Netifly bypasses the entire build Hugo creates. That is, it reads the md files directly.</p>
-
-<p>Because the md files are created on the fly for me thanks to ox-hugo, it&rsquo;s almost as if I have a dynamic website. I would still need to push the changes to github, but Netifly would take care of everything from there. No more old dead HTML files or forgetting to build my website before pushing to github - something I do more often than I&rsquo;d like to, for sure.</p>
-
-<p>Getting a website to build on Netifly is pretty easy, but I&rsquo;ll need to change the DNS records to point to Netifly&rsquo;s servers instead of github. That&rsquo;s not a hard thing to do, but there&rsquo;s a chance something would break and my website will be down, and I&rsquo;m running out of time as I&rsquo;m writing this. I will wait on Netifly a bit longer, but this is a change that is pretty sure to happen.</p>
-
+<p>As Kaushal Modi, my Hugo mentor <a href="https://mastodon.technology/@kaushalmodi/102949264377765642">pointed out</a>, the answer to all these annoyances is Netifly. I knew about this service previously, but this time because of a specific issue<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> I had with git, I learned that Netifly bypasses the entire build Hugo creates. That is, it reads the md files directly.</p>
+<p>Because the md files are created on the fly for me thanks to ox-hugo, it's almost as if I have a dynamic website. I would still need to push the changes to github, but Netifly would take care of everything from there. No more old dead HTML files or forgetting to build my website before pushing to github - something I do more often than I'd like to, for sure.</p>
+<p>Getting a website to build on Netifly is pretty easy, but I'll need to change the DNS records to point to Netifly's servers instead of github. That's not a hard thing to do, but there's a chance something would break and my website will be down, and I'm running out of time as I'm writing this. I will wait on Netifly a bit longer, but this is a change that is pretty sure to happen.</p>
 <h2 id="about-section">About Section</h2>
-
-<p>I&rsquo;ve added an <a href="http://joshrollinswrites.com/about/">about section</a> to the blog. Creating a section that uses the posts&rsquo; template was a learning experience since Hugo&rsquo;s default is to treat all sections&rsquo; main pages (index.html pages) as a &ldquo;list&rdquo; template. To resolve this, I needed to use <code>layout: &quot;single&quot;</code> in the <a href="https://gohugo.io/content-management/front-matter/">front-matter</a> for the index page. In ox-hugo, this is done by adding a ~ <code>:EXPORT_HUGO_LAYOUT: single</code> property under the header.</p>
-
-<p>I&rsquo;m still not sure how to fit the link to the about section in the sidebar. For now, it&rsquo;s just a linked from my name in the site&rsquo;s description.</p>
-
+<p>I've added an <a href="http://joshrollinswrites.com/about/">about section</a> to the blog. Creating a section that uses the posts&rsquo; template was a learning experience since Hugo's default is to treat all sections&rsquo; main pages (index.html pages) as a &ldquo;list&rdquo; template. To resolve this, I needed to use <code>layout: &quot;single&quot;</code> in the <a href="https://gohugo.io/content-management/front-matter/">front-matter</a> for the index page. In ox-hugo, this is done by adding a ~ <code>:EXPORT_HUGO_LAYOUT: single</code> property under the header.</p>
+<p>I'm still not sure how to fit the link to the about section in the sidebar. For now, it's just a linked from my name in the site's description.</p>
 <h2 id="footnotes">Footnotes</h2>
-<div class="footnotes">
-
-<hr />
-
+<section class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li id="fn:fn-1">This was harder than it should have been&hellip; these links are nested inside a class which is also nested inside a class. The right syntax in CSS is <code>[parent-class] [child-class] [html-tag]</code> with spacing being important: three spaces, no more. However, because my CSS was messy, the rules I&rsquo;ve added were re-defined again later in the CSS file; I wasn&rsquo;t aware I called the same elements in two different places. As it turns out, cleaning your code (CSS, bash, or whatever) is important - and so as adding comments.
- <a class="footnote-return" href="#fnref:fn-1">[^ back]</a></li>
-<li id="fn:fn-2">When I tried to publish the site to Netifly (see below) it turned out I <em>do</em> need the original theme of the site. I am unsure why at this point, since all the essential files I use are stored outside of the theme&rsquo;s folder. I believe this has to do with the site&rsquo;s theme setting which specifies the theme&rsquo;s name, which probably points to that folder.
- <a class="footnote-return" href="#fnref:fn-2">[^ back]</a></li>
-<li id="fn:fn-3">I included the word &ldquo;hugo&rdquo; in my git ignore file. This was because I used to store a hugo binary in the site&rsquo;s root folder, because a newer version was not available on Linux Mint, at the time.
- <a class="footnote-return" href="#fnref:fn-3">[^ back]</a></li>
+<li id="fn:1" role="doc-endnote">
+<p>This was harder than it should have been&hellip; these links are nested inside a class which is also nested inside a class. The right syntax in CSS is <code>[parent-class] [child-class] [html-tag]</code> with spacing being important: three spaces, no more. However, because my CSS was messy, the rules I've added were re-defined again later in the CSS file; I wasn't aware I called the same elements in two different places. As it turns out, cleaning your code (CSS, bash, or whatever) is important - and so as adding comments. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>When I tried to publish the site to Netifly (see below) it turned out I <em>do</em> need the original theme of the site. I am unsure why at this point, since all the essential files I use are stored outside of the theme's folder. I believe this has to do with the site's theme setting which specifies the theme's name, which probably points to that folder. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>I included the word &ldquo;hugo&rdquo; in my git ignore file. This was because I used to store a hugo binary in the site's root folder, because a newer version was not available on Linux Mint, at the time. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
-</div>
+</section>
 </div>
 <hr>
 <h2>Comments</h2>

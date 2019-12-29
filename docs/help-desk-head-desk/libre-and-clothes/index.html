@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.59.1" />
+  <meta name="generator" content="Hugo 0.62.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "Libre and Clothes",
     "headline" : "Libre and Clothes",
-    "description" : "When I write, I live in Emacs (with the awesome Solorized theme) inside Org-Mode.\nWith time, I found that Org has already made me more effienet writer and note taker. I write notes in every meeting now, rather it\x26rsquo;s my \x26ldquo;turn\x26rdquo; or not. I write notes as I work, about every solution and every problem I\x26rsquo;m facing. I write first thing in the morning, usually about org-related thoughts I had as I wake up, over a cup of Sumatra cofee (little almond milk, one pack of sugar).",
+    "description" : "When I write, I live in Emacs (with the awesome Solorized theme) inside Org-Mode.\nWith time, I found that Org has already made me more effienet writer and note taker. I write notes in every meeting now, rather it\x27s my \x26ldquo;turn\x26rdquo; or not. I write notes as I work, about every solution and every problem I\x27m facing. I write first thing in the morning, usually about org-related thoughts I had as I wake up, over a cup of Sumatra cofee (little almond milk, one pack of sugar).",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -165,25 +165,22 @@
 </time>
  <p>When I write, I live in Emacs (with the awesome <a href="https://github.com/altercation/solarized">Solorized</a> theme)
 inside Org-Mode.</p>
-
 <p>With time, I found that Org has already made me more effienet writer
-and note taker. I write notes in every meeting now, rather it&rsquo;s my
+and note taker. I write notes in every meeting now, rather it's my
 &ldquo;turn&rdquo; or not. I write notes as I work, about every solution and every
-problem I&rsquo;m facing. I write first thing in the morning, usually about
+problem I'm facing. I write first thing in the morning, usually about
 org-related thoughts I had as I wake up, over a cup of Sumatra cofee
 (little almond milk, one pack of sugar). Quite honestly, Org makes me
-<em>feel</em> good, because it&rsquo;s transparent. It&rsquo;s an extensions of my
+<em>feel</em> good, because it's transparent. It's an extensions of my
 thoughts, continuing on one long line, uninterrupted, before I stop to
 think a second and relfect one what I was thinking (<code>X-q</code>).</p>
-
-<p>There&rsquo;s no pretending in Org. No fancy text, fonts, or even
-images. Style is only applied to function. It&rsquo;s a delicate balance
+<p>There's no pretending in Org. No fancy text, fonts, or even
+images. Style is only applied to function. It's a delicate balance
 which, with the Solirized theme, work extremly well (by the way, the
 <a href="http://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/">story of the man who created Solorized</a> is quite interesting and worth
-reading). There&rsquo;s also an inviting segue here about Linux, which is
-the Org-writing mindset extended into an operating system. But I&rsquo;m
+reading). There's also an inviting segue here about Linux, which is
+the Org-writing mindset extended into an operating system. But I'm
 joyfully digress.</p>
-
 <p>Alright then. But every now on then you need to present stuff, and
 this means you need to &ldquo;dress up&rdquo; so other people can talk to you and
 relate. The &ldquo;Normals,&rdquo; so to speak, do not understand my Org
@@ -191,29 +188,26 @@ dedication and often give me concerned looks when I type away, a
 single long line into a blank screen. The purity is empty, the lack of
 buttons and distracting elements feels threatening withough GUI
 guidance. Fine then, I can do fancy schmancy.</p>
-
-<p>Most Org-folk I&rsquo;ve read and listened to talk about LaTex. In my case,
+<p>Most Org-folk I've read and listened to talk about LaTex. In my case,
 that meant a full installation, which is huge. Over 2GB huge. Not
 worth it for concessional usage, especially since I work in Microsoft
-environment at work, and most people I&rsquo;ll share with will need .docx
+environment at work, and most people I'll share with will need .docx
 or .ppt format anyway. So for me, <a href="https://en.wikipedia.org/wiki/OpenDocument">.odt</a> seems like a better answer.</p>
-
 <p>Two things are needed on my Emacs (version 25.2.1) for that:</p>
-
 <ol>
-<li><p><strong>Download and install Libre Office</strong>. It comes built in with many
+<li>
+<p><strong>Download and install Libre Office</strong>. It comes built in with many
 personal desktop-geared Ubuntu distros, but in my version (Mint) I
 chose to opt out at start. OK, not biggie, full Libre office suite
 is only 100MB, and I can do that. I see myself edit the
-concessional Word file or producing a PDF.</p></li>
-
-<li><p><strong>Add the following</strong> to .emacs to turn on .odt option in the export
+concessional Word file or producing a PDF.</p>
+</li>
+<li>
+<p><strong>Add the following</strong> to .emacs to turn on .odt option in the export
 dispatcher:</p>
-
-<p><code>`(eval-after-load &quot;org&quot;
-      '(require 'ox-odt nil t))`</code></p></li>
+<p><code>`(eval-after-load &quot;org&quot; '(require 'ox-odt nil t))`</code></p>
+</li>
 </ol>
-
 <p>Now I can create the .dot file, which I can open in Libre Writer I
 just downloaded. Ooof. Hello GUI word proccessing, with weird paper
 screen restrictions look. And the white, the white! It burnsss
@@ -223,18 +217,16 @@ format without leaving Linux. Then again, if I really need to produce
 a document, I might as well save my .odt in Writer to a .docx and
 remote remote into my work computer, where Mirosoft reigns
 supreme. Options. We like having them, yes?</p>
-
 <p>Even another option I was considering is to use <a href="https://typora.io/">Typora</a>, which is a
 pretty markdown writer. It comes with <a href="https://en.wikipedia.org/wiki/Pandoc">Pandoc</a>, and can handle Word and
 PDF files. Typora does not exactly feel &ldquo;Linux free&rdquo; to me and seems
 heavily inspired by different &ldquo;minimalist&rdquo; Mac word processing apps,
-if that&rsquo;s your thing. It probably won&rsquo;t show in your distro&rsquo;s and
+if that's your thing. It probably won't show in your distro's and
 require installation from a ppa. I used Typora for a while for
-markdown, but we&rsquo;ve parted ways now.</p>
-
-<p>I&rsquo;m curious how this will stand out when I present my notes (since
-I&rsquo;ve became the unofficial note taker at work, for reasons mentioned
-above). But for now, I&rsquo;m more than happy to take off the fancy clothes
+markdown, but we've parted ways now.</p>
+<p>I'm curious how this will stand out when I present my notes (since
+I've became the unofficial note taker at work, for reasons mentioned
+above). But for now, I'm more than happy to take off the fancy clothes
 and slide back to my comfortable t-shirt and shorts and write in Org.</p>
 
 </div>

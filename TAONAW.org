@@ -2176,7 +2176,6 @@ At least in Linux information overload is /my/ choice, not some operating system
 
 [fn:21] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.  
 
-
 *** PUBLISHED A new Camera Instead of Pixel4                    :photography:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2240,7 +2239,7 @@ I do have more things I want to write about, but much like before a run on cold 
 
 This then seems like a good place to stop and wish you all a happy Thanksgiving. I hope you enjoy the little moments with your family and friends and stir clear from black Friday deals of more stuff you don't need. Let me know how yours went if you feel like it. 
 
-*** WIP The Long Goodbye to Windows
+*** PUBLISHED The Long Goodbye to Windows
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20191208
@@ -2277,11 +2276,91 @@ For now, I find that overall there's little difference in my workflow from Manja
 
 But. While this sounds ideal, I don't think it'll ever happen. That's because I find that I /like/ the little differences in how each machine looks and feels. A small XPS running Tumbleweed, openSUSE's rolling release, with white-on-black theme, neon-colored panel with Late and a top panel for system notifications to imitate a Mac like all the cool kids fits, while Hedwig is far more "responsible" with SUSE's Leap and a traditional black-on-white theme. I need at least a bit of personality on each machine. That's the bit the creative non-conforming dude inside the IT guy in me. Or perhaps I'm just nuts. 
 
-**** Footnotes
+**** Footnotes                                                :windows:linux:
 
 [fn:23] in case you're interested, these four games are currently [[https://en.wikipedia.org/wiki/YaST][Cities Skylines]], [[https://store.steampowered.com/app/231430/Company_of_Heroes_2/][Company of Heroes 2]], [[https://store.steampowered.com/search/?term=oxygen+not+inc][Oxygen not Included]], and [[https://store.steampowered.com/app/262060/Darkest_Dungeon/][Darkest Dungeon]]. Over time (and age, I suppose) I discovered I'm less interested in FPSs and more interested in detailed-oriented games. I all-heatedly recommend you take a good long look at Oxygen not Included, especially if you're reading this blog regularly - it's perfect for problem-solvers who are looking to sync into a fun, cute, but very thought-provoking kind of game. 
 
 [fn:24] as [[https://www.reddit.com/r/ffmpeg/comments/e79qv8/maxium_mp4_compression_only_in_opensuse/][I found out]], openSUSE doesn't come with [[https://www.videolan.org/developers/x264.html][libx264]], a codec used to compress videos into mp4 formats. It is so common-place in other distros and programs many (me included) don't even know it exists and does a fantastic job. 
+
+
+*** TODO Photoshoot
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20191215
+    :EXPORT_HUGO_PUBLISHDATE: 2019-12-08:
+    :END:
+
+I haven't picked up my camera for more than a week, and I was itching to take
+photos. It's a feeling I've known since I could remember feelings. A mix of
+unrest and uncertainty, much like a dog circling a room before a
+walk. Well, a walk was necessary. 
+
+It was an un-inviting misty gray day. The sort of day when rain hasn't fully
+given up to the fog, threatening in little needles; nothing like the
+golden hour recommended in tutorials. It was midday and the sun
+was nowhere to be seen. 
+
+I turned into a side street, leaving the constant "whoosh" sound of the cars passing by. The street lead to a nicer part of the neighborhood, and a building I passed many times before was shrouded in fog to my left. A tree stood naked in the driveway, covering some of the windows with dark zigzagging branches. The car in the driveway was parked diagonally, blocking the gate. Something
+about this setting made me reach for my camera, and the dance began.
+
+The first photo is usually not interesting. I know something made me want to snap a picture, but I'm not sure what that something was. The feeling is odd at first, almost like it's not there at all. I don't know if what I see is worth a shot or if I'm imagining I'm seeing something that is not really there. But after the camera's out, the mind starts getting more confident about seeing things a little bit differently. I starts my photowalk in a straight line, with a destination in mind, but by the time I'm back I walks in zigzags, climb on top of trash heaps and tree stumps, crouching behind cars, circling around seemingly meaningless objects. 
+
+A few hours later when I got home, the magic escalated to another level. Looking at the pictures, I started to get a feeling, as if the photos were whispering to me something. The more I looked through them, the more I started to be aware of what I'm saying, the  of it,
+
+
+
+
+ the photos stopped being individual samples of frozen time and started to merge and create a theme. I realized it wasn't the first time I'm "seeing" this way, but up to that point, it was quick glimpses. Now it was powerful enough to stand above everything else. 
+
+There was a hand in the shapes of the trees; long fingers in naked tree brunches; the squirrels I capture were black this time; the colors almost naturally black and white. I felt like writing a short story just from looking at the images, and I tried to capture some of it into Instagram. It was an amazing feeling, like electricity. I was laughing out loud, enjoying the fact I could get such stories out of photos. 
+
+The next week I was worried I won't be able to take such great photos again. It may sound silly, but my fear was based on the fact that I didn't know what I did, it just "happened". There was an idea when I took the photos; there was a subject, an idea of what I'm focusing on, but I didn't see the concept when I took the photos - that happened later in front of the computer. It was this part I was worried won't visit me again, and no photos would come as great. My urge to want to go out there again and see things overcame this fear eventually, and I went ahead. I managed to capture a few more good shots this time as well, and slowly calmed down. 
+
+If there's one thing photography is teaching me is this: you can't control everything you want. The weather, subjects of interest, even the amount of time you have. Those you can control are limited by the camera you carry and to a degree, your experience. You can't force a perfect shot, you can just chase it. You don't know what you're going to get at the end of the day, it's a bit of gamble, a game. I'm really enjoying this new expanding area of my life.  
+
+*** WIP Update
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20191229
+    :EXPORT_HUGO_PUBLISHDATE: 2019-12-29:
+    :END:
+
+[[file:images/2019-12-29_09-24.png]]
+
+I have a habit chaining in org-mode for this blog which shows me I'm passed due on updating. 4 days, to be exact. I'm rushing to update with this little post as I'm sitting here gulping coffee in my boxers before a shower I need to take... so bear with me. 
+
+#+hugo: more
+
+I've been working on a post about photography for over a week. It proved to be challenging to put together because every time I put it back on my screen, there are updates and more things I want to talk about. Over the past month, there were a few good points I discussed with different people which I wanted to include, and I just don't seem to have the time, which is the excuse I hate the most. Usually, it just means you need a slightly different angle to think of things. 
+
+So I've been reconsidering and I'd like to work on a video again, recording some of my thoughts. After all, part of getting the camera was recording videos and getting better at these -- not to mention that I can use visual examples. So I hope to get to that even tonight. 
+
+In the meantime, I just wanted to update and tell you all I'm still here, still alive and kicking, just behind. Thanks for sticking around! 
+
+
+*** Lessons from a Huge Project at Work
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20191223
+    :EXPORT_HUGO_PUBLISHDATE: 2019-12-23:
+    :END:
+
+At work, we've been overly busy slowly testing our new production environment. It's been almost two months of contast communications, workflows that need to be tweaked time and time again, and many meetings to keep track of. At start, I was foolish enough to reduce my workload writing things down by using the tools around us, these are mostly Office suit applications like Teams and Excel. 
+
+There's an unwritten rule out there that states that the amount of documents your need to keep up with for a project is roughly equivelent to half the number of people working on the project. Our department alone is about 20 folks, and we have to work with other devisions. 
+
+This is a story of trying to work with other tools, and running away scared and anxious back to the safety of org-mode. 
+
+#+hugo: more
+
+At the beginning, there was on email and one spreadsheet. Things were managable. The spreadsheet had a list of our inventory that needed to be confirmed and tested; the email had an attachment to a generic workflow for testing.
+
+Problems start emerging when I tested the workflow and found it to be inaccurate and flawed for our work environment. That meant I had to communicate it to another department, going through appropiate channels. Communication, being human, failed. I should have picked on the signles then. It's the usual organic mess I'm so accustumed to, and, one of the major reasons why keeping my own notes isolated and in org-mode is such a good solution. But I was lazy and didn't resort to org-mode like I should have. Instead I did the minimum I needed - reporting the problem - and that's where I failed. 
+
+org-mode is not just a tool, it's a lifestyle. You don't just use org-mode to mantain a todo list, or to create a project list, or to know what's on your agenda, or to update your knowledge bage. Org-mode is for /all of these/. I need to be able to capture the quikest thought into org, just as I need to have access to my wiki with information from two years ago. Point is, that project was supposed to become a project on org-mode from day one, but it didn't. 
+
+
+
 
 ** BMC
 :PROPERTIES:
@@ -2317,7 +2396,7 @@ Josh Rollins is an NYC based self-made-techie who works with humans and machines
 
 Rollins has broken his technology - this website included - many times over. While he sees himself disqualified to give any /good/ advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle. 
 
-As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find these days, but he can be reached at jarss at protonmail dot com, [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]].  
+As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find these days, but he can be reached at jarss at protonmail dot com, [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]].
 
 
 
