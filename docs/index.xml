@@ -6,10 +6,20 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lessons from a Huge Project at Work</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200103/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200103/</guid>
+      <description>&lt;p&gt;There&#39;s probably an unwritten rule (and if not, there should be) that the amount of documents needed for a project is roughly equivalent to half the number of people working on the project. Our department alone is about 20 folks, and for a recent big project we need to work with other divisions, so at this point I can&#39;t even tell you how many documents we need to keep track of.&lt;/p&gt;
+&lt;p&gt;Usually, I use org-mode for everything. But this time I was foolish enough not to&amp;hellip;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Update</title>
