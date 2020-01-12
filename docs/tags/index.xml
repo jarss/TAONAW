@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>linux</title>
+      <link>https://joshrollinswrites.com/tags/linux/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orgmode</title>
+      <link>https://joshrollinswrites.com/tags/orgmode/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blogging</title>
@@ -17,15 +35,6 @@
       <pubDate>Sun, 29 Dec 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/blogging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://joshrollinswrites.com/tags/linux/</link>
-      <pubDate>Sun, 08 Dec 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -80,15 +89,6 @@
       <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>orgmode</title>
-      <link>https://joshrollinswrites.com/tags/orgmode/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
       <description></description>
     </item>
     

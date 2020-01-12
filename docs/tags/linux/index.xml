@@ -6,10 +6,23 @@
     <description>Recent content in linux on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Switching to Kubuntu over opneSuSE</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200108/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200108/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;After giving openSuSE a try&lt;/a&gt;, I decided to switch to Kubuntu. So far it&#39;s been a month or so since the switch, and everything I want works to the point that I havne&#39;t booted into Windows once.&lt;/p&gt;
+&lt;p&gt;I ran into several issues with openSuSE and finally decided to call it quits when Company of Heroes 2, one of the few games I play, refused to work. When I contacted Linux support for it, the answer I got was along the lines &amp;ldquo;sorry, we don&#39;t support this version of Linux.&amp;rdquo; My new Desktop Linux setup is not geared toward hardcore gaming is it was first intended when I built it, but I still want to spend some time gaming here and there. There were other issues, of course, mostly the need to download a specifically tailored software for something I needed.&lt;/p&gt;
+&lt;p&gt;With Kubuntu installed, I looked into installing windows on a VM. I ended up choosing &lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;Oracle&#39;s Virtual Box&lt;/a&gt; for its better integration with the Linux Kernel (latest version) and indeed, it runs pretty well. Windows now is in a confined frame used for occasional downloads and remoting to computers at work - this completely satisfies any need I need out of Windows at this point. After a bit of a hardware upgrade which hopefully will happen soon, I wouldn&#39;t even need to turn off the VM when I&#39;m done.&lt;/p&gt;
+&lt;p&gt;The VM caused several &amp;ldquo;hijacking&amp;rdquo; issues of my keyboard and mouse, so I disconnected my &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/&#34;&gt;KVM swtich&lt;/a&gt; and stored it away. Having a powerful desktop means my laptop is no longer in use unless I travel or need a backup. It still runs Manjaro and I think I will keep it this way.&lt;/p&gt;
+&lt;p&gt;I feel like my Linux setup is mostly complete at this point. My desktop (&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;which I call Hedwig&lt;/a&gt;) is used for writing or productivity, photography and gaming.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>The Long Goodbye to Windows</title>
