@@ -2379,8 +2379,7 @@ Usually, my projects end at step 3. I later go in and change from "ACTIVE" to "D
 
 
 
-
-*** WIP Switching to Kubuntu over opneSuSE                            :linux:
+*** PUBLISHED Switching to Kubuntu over opneSuSE                      :linux:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200108
@@ -2388,6 +2387,8 @@ Usually, my projects end at step 3. I later go in and change from "ACTIVE" to "D
     :END:
 
 [[https://joshrollinswrites.com/help-desk-head-desk/20191208/][After giving openSuSE a try]], I decided to switch to Kubuntu. So far it's been a month or so since the switch, and everything I want works to the point that I havne't booted into Windows once. 
+
+#+hugo: more
 
 I ran into several issues with openSuSE and finally decided to call it quits when Company of Heroes 2, one of the few games I play, refused to work. When I contacted Linux support for it, the answer I got was along the lines "sorry, we don't support this version of Linux." My new Desktop Linux setup is not geared toward hardcore gaming is it was first intended when I built it, but I still want to spend some time gaming here and there. There were other issues, of course, mostly the need to download a specifically tailored software for something I needed. 
 
@@ -2402,6 +2403,42 @@ I feel like my Linux setup is mostly complete at this point. My desktop ([[https
 
 #+hugo: more
 
+*** WIP How I Tackle Projects With org-mode                         :orgmode:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200123
+    :EXPORT_HUGO_PUBLISHDATE: 2020-01-24:
+    :END:
+
+Over the time I've been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven't felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I've discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode. 
+
+#+hugo: more
+
+This system is rather simple and straight forward, without many bells and whistles. To understand it though, I need to first discuss my methodology in org-mode.
+
+Most tasks are created in one of two ways: through a capture template on my desktop (either at home or at work), or through a tap on the "+" on my [[http://www.orgzly.com/help][Orgzly widget]] on my phone. I've discussed both of these a couple of times on my blog under the [[https://joshrollinswrites.com/tags/orgmode/][org-mode tag]]. 
+
+A task is usually nothing more than a quick reminder ("pick up clothes from the dry cleaner"). Sometimes, especially at work, a task can become more complex: ("Create a consistent guest user-template on office iMac") which then develops sub-tasks ("Auto-launch Safari: ticket creation page") and ("log user out within 5 minutes of inactivity") and ("Keep same wallpaper for all guest log-ins").
+
+When this happens, my method is to switch the first task's [[https://orgmode.org/manual/Workflow-states.html#Workflow-states][Keyword]] (which is now the parent task) from =TODO= to =ACTIVE=  and remove the "Scheduled" property. Then, I create a sub-task under it ("Auto-launch Safari: ticket creation page") and /that/ sub-tasks gets its own "Scheduled" property. 
+
+Here's how it looks like laid out:
+
+[[file:images/2020-01-23_06-22.png]]
+
+You'd notice I use agenda-visible timestamps to express the duration of the project as I work on it. This also means that the project will show at the top of my agenda [fn:25], so I see my in-progress big projects first. When all sub-tasks are done for the projects, I mark the parent task as DONE and move on. 
+
+large projects, ones that can end up taking weeks and months, are too big to fit in my [[http://localhost:1313/help-desk-head-desk/agenda-multiple-files/][weekly org file]]. Thankfully I don't have too many such projects [fn:26]. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a "Log" sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to "OP: ..." something. I find that calling a large project something like "OP: iMac walk-ins terminator" instead of "Create a consistent guest user-template on office iMac" is more memorable and just plain fun. 
+
+While I have an active journal file, I find that more and more I gravitate toward breaking off journal "chunks" into respective projects I'm working on. This is faster (my thoughts about the project are right there, not in a separate journal that needs to be linked correctly) and easier to retrieve later (instead of thinking "what was it that I did..." staring at a large journal thinking what to search for, I have a project with related thoughts). 
+
+I don't have a clear-cut requirement of switching from multi-level tasks to a full project, nor a point where I switch from writing in my generic journal to starting a log in a specific project, but I'd say it's a mix of how much time I've worked on something (is it been a few weeks? Do I keep getting back to it?) and how complex it is. 
+
+**** Footnotes:
+
+[fn:25] This is done with =(setq org-sort-agenda-notime-is-late nil)=.
+
+[fn:26] This is more a state of mind than a technical limitation. I don't like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I'm absolutely sure I need to have such a project up (for example, if we're working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don't see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it's often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top. 
 
 ** BMC
 :PROPERTIES:

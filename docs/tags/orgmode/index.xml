@@ -6,10 +6,19 @@
     <description>Recent content in orgmode on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How I Tackle Projects With org-mode</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200123/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200123/</guid>
+      <description>&lt;p&gt;Over the time I&#39;ve been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven&#39;t felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I&#39;ve discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Lessons from a Huge Project at Work</title>

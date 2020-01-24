@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.62.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "How I Tackle Projects With org-mode",
+    "headline" : "How I Tackle Projects With org-mode",
+    "description" : "\x3cp\x3eOver the time I\x27ve been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven\x27t felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I\x27ve discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-01-24 00:00:00 -0500 EST",
+    "dateModified" : "2020-01-24 00:00:00 -0500 EST",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/20200123\/",
+    "wordCount" : "776",
+    "keywords" : [ "orgmode","Blog" ]
+}
+</script>
+
+  
+  <title>How I Tackle Projects With org-mode &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Fatface:400,400i,700">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Montserrat|Noticia+Text|PT+Sans:400,400i,700">
+
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+      <p class="lead">
+      Tech, Life, and the Stuff in Between: A blog by <a href="https://joshrollinswrites.com//about">Josh Rollins</a>. 
+      </p>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Popular Topics</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(17)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(6)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/automation"> automation <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/security"> security <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/tools"> tools <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/hugo"> hugo <small>(3)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h4><a href="https://joshrollinswrites.com/tags/">All Topics →</a></h4>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>How I Tackle Projects With org-mode</h1>
+ <time datetime=2020-01-24T00:00:00-0500 class="post-date">2020-01-24  
+
+
+
+    
+      / <a href="https://joshrollinswrites.com/tags/orgmode/">orgmode</a>
+</time>
+ <p>Over the time I've been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven't felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I've discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode.</p>
+<p>This system is rather simple and straight forward, without many bells and whistles. To understand it though, I need to first discuss my methodology in org-mode.</p>
+<p>Most tasks are created in one of two ways: through a capture template on my desktop (either at home or at work), or through a tap on the &ldquo;+&rdquo; on my <a href="http://www.orgzly.com/help">Orgzly widget</a> on my phone. I've discussed both of these a couple of times on my blog under the <a href="https://joshrollinswrites.com/tags/orgmode/">org-mode tag</a>.</p>
+<p>A task is usually nothing more than a quick reminder (&ldquo;pick up clothes from the dry cleaner&rdquo;). Sometimes, especially at work, a task can become more complex: (&ldquo;Create a consistent guest user-template on office iMac&rdquo;) which then develops sub-tasks (&ldquo;Auto-launch Safari: ticket creation page&rdquo;) and (&ldquo;log user out within 5 minutes of inactivity&rdquo;) and (&ldquo;Keep same wallpaper for all guest log-ins&rdquo;).</p>
+<p>When this happens, my method is to switch the first task's <a href="https://orgmode.org/manual/Workflow-states.html#Workflow-states">Keyword</a> (which is now the parent task) from <code>TODO</code> to <code>ACTIVE</code>  and remove the &ldquo;Scheduled&rdquo; property. Then, I create a sub-task under it (&ldquo;Auto-launch Safari: ticket creation page&rdquo;) and <em>that</em> sub-tasks gets its own &ldquo;Scheduled&rdquo; property.</p>
+<p>Here's how it looks like laid out:</p>
+
+
+
+<figure>
+    
+        <img src="https://joshrollinswrites.com/ox-hugo/2020-01-23_06-22.png"/> </figure>
+
+<p>You'd notice I use agenda-visible timestamps to express the duration of the project as I work on it. This also means that the project will show at the top of my agenda <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, so I see my in-progress big projects first. When all sub-tasks are done for the projects, I mark the parent task as DONE and move on.</p>
+<p>large projects, ones that can end up taking weeks and months, are too big to fit in my <a href="http://localhost:1313/help-desk-head-desk/agenda-multiple-files/">weekly org file</a>. Thankfully I don't have too many such projects <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a &ldquo;Log&rdquo; sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to &ldquo;OP: &hellip;&rdquo; something. I find that calling a large project something like &ldquo;OP: iMac walk-ins terminator&rdquo; instead of &ldquo;Create a consistent guest user-template on office iMac&rdquo; is more memorable and just plain fun.</p>
+<p>While I have an active journal file, I find that more and more I gravitate toward breaking off journal &ldquo;chunks&rdquo; into respective projects I'm working on. This is faster (my thoughts about the project are right there, not in a separate journal that needs to be linked correctly) and easier to retrieve later (instead of thinking &ldquo;what was it that I did&hellip;&rdquo; staring at a large journal thinking what to search for, I have a project with related thoughts).</p>
+<p>I don't have a clear-cut requirement of switching from multi-level tasks to a full project, nor a point where I switch from writing in my generic journal to starting a log in a specific project, but I'd say it's a mix of how much time I've worked on something (is it been a few weeks? Do I keep getting back to it?) and how complex it is.</p>
+<h2 id="footnotes">Footnotes:</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>This is done with <code>(setq org-sort-agenda-notime-is-late nil)</code>. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>This is more a state of mind than a technical limitation. I don't like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I'm absolutely sure I need to have such a project up (for example, if we're working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don't see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it's often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>
