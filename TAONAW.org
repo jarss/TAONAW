@@ -2428,7 +2428,7 @@ Here's how it looks like laid out:
 
 You'd notice I use agenda-visible timestamps to express the duration of the project as I work on it. This also means that the project will show at the top of my agenda [fn:25], so I see my in-progress big projects first. When all sub-tasks are done for the projects, I mark the parent task as DONE and move on. 
 
-large projects, ones that can end up taking weeks and months, are too big to fit in my [[http://localhost:1313/help-desk-head-desk/agenda-multiple-files/][weekly org file]]. Thankfully I don't have too many such projects [fn:26]. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a "Log" sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to "OP: ..." something. I find that calling a large project something like "OP: iMac walk-ins terminator" instead of "Create a consistent guest user-template on office iMac" is more memorable and just plain fun. 
+large projects, ones that can end up taking weeks and months, are too big to fit in my [[https://joshrollinswrites.com/help-desk-head-desk/20200123/][weekly org file]]. Thankfully I don't have too many such projects [fn:26]. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a "Log" sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to "OP: ..." something. I find that calling a large project something like "OP: iMac walk-ins terminator" instead of "Create a consistent guest user-template on office iMac" is more memorable and just plain fun. 
 
 While I have an active journal file, I find that more and more I gravitate toward breaking off journal "chunks" into respective projects I'm working on. This is faster (my thoughts about the project are right there, not in a separate journal that needs to be linked correctly) and easier to retrieve later (instead of thinking "what was it that I did..." staring at a large journal thinking what to search for, I have a project with related thoughts). 
 
@@ -2440,14 +2440,8 @@ I don't have a clear-cut requirement of switching from multi-level tasks to a fu
 
 [fn:26] This is more a state of mind than a technical limitation. I don't like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I'm absolutely sure I need to have such a project up (for example, if we're working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don't see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it's often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top. 
 
-*** TODO Photo Test
-:PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: 20200130
-    :EXPORT_HUGO_PUBLISHDATE: 2020-01-30:
-    :END:
 
-Testing Photo here:
+
 ** BMC
 :PROPERTIES:
    :EXPORT_HUGO_SECTION: BMC
