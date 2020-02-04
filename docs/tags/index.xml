@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>life</title>
+      <link>https://joshrollinswrites.com/tags/life/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photography</title>
+      <link>https://joshrollinswrites.com/tags/photography/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/photography/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>orgmode</title>
@@ -48,15 +66,6 @@
     </item>
     
     <item>
-      <title>photography</title>
-      <link>https://joshrollinswrites.com/tags/photography/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>https://joshrollinswrites.com/tags/hugo/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 -0400</pubDate>
@@ -80,15 +89,6 @@
       <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>life</title>
-      <link>https://joshrollinswrites.com/tags/life/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/life/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,19 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The joy of Taking Photos</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200201/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200201/</guid>
+      <description>&lt;p&gt;I&#39;ve been enjoying taking photos since October and decided to start recording videos, expanding the way I publish content. As it turns out, recording, editing, and storing videos is not as simple as I thought. The outcome has been holding back on discussing one of my biggest passions these days. I want to change that today.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How I Tackle Projects With org-mode</title>

@@ -2282,41 +2282,6 @@ But. While this sounds ideal, I don't think it'll ever happen. That's because I 
 
 [fn:24] as [[https://www.reddit.com/r/ffmpeg/comments/e79qv8/maxium_mp4_compression_only_in_opensuse/][I found out]], openSUSE doesn't come with [[https://www.videolan.org/developers/x264.html][libx264]], a codec used to compress videos into mp4 formats. It is so common-place in other distros and programs many (me included) don't even know it exists and does a fantastic job. 
 
-*** TODO Photoshoot
-:PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: 20191215
-    :EXPORT_HUGO_PUBLISHDATE: 2019-12-08:
-    :END:
-
-I haven't picked up my camera for more than a week, and I was itching to take
-photos. It's a feeling I've known since I could remember feelings. A mix of
-unrest and uncertainty, much like a dog circling a room before a
-walk. Well, a walk was necessary. 
-
-It was an un-inviting misty gray day. The sort of day when rain hasn't fully
-given up to the fog, threatening in little needles; nothing like the
-golden hour recommended in tutorials. It was midday and the sun
-was nowhere to be seen. 
-
-I turned into a side street, leaving the constant "whoosh" sound of the cars passing by. The street lead to a nicer part of the neighborhood, and a building I passed many times before was shrouded in fog to my left. A tree stood naked in the driveway, covering some of the windows with dark zigzagging branches. The car in the driveway was parked diagonally, blocking the gate. Something
-about this setting made me reach for my camera, and the dance began.
-
-The first photo is usually not interesting. I know something made me want to snap a picture, but I'm not sure what that something was. The feeling is odd at first, almost like it's not there at all. I don't know if what I see is worth a shot or if I'm imagining I'm seeing something that is not really there. But after the camera's out, the mind starts getting more confident about seeing things a little bit differently. I starts my photowalk in a straight line, with a destination in mind, but by the time I'm back I walks in zigzags, climb on top of trash heaps and tree stumps, crouching behind cars, circling around seemingly meaningless objects. 
-
-A few hours later when I got home, the magic escalated to another level. Looking at the pictures, I started to get a feeling, as if the photos were whispering to me something. The more I looked through them, the more I started to be aware of what I'm saying, the  of it,
-
-
-
-
- the photos stopped being individual samples of frozen time and started to merge and create a theme. I realized it wasn't the first time I'm "seeing" this way, but up to that point, it was quick glimpses. Now it was powerful enough to stand above everything else. 
-
-There was a hand in the shapes of the trees; long fingers in naked tree brunches; the squirrels I capture were black this time; the colors almost naturally black and white. I felt like writing a short story just from looking at the images, and I tried to capture some of it into Instagram. It was an amazing feeling, like electricity. I was laughing out loud, enjoying the fact I could get such stories out of photos. 
-
-The next week I was worried I won't be able to take such great photos again. It may sound silly, but my fear was based on the fact that I didn't know what I did, it just "happened". There was an idea when I took the photos; there was a subject, an idea of what I'm focusing on, but I didn't see the concept when I took the photos - that happened later in front of the computer. It was this part I was worried won't visit me again, and no photos would come as great. My urge to want to go out there again and see things overcame this fear eventually, and I went ahead. I managed to capture a few more good shots this time as well, and slowly calmed down. 
-
-If there's one thing photography is teaching me is this: you can't control everything you want. The weather, subjects of interest, even the amount of time you have. Those you can control are limited by the camera you carry and to a degree, your experience. You can't force a perfect shot, you can just chase it. You don't know what you're going to get at the end of the day, it's a bit of gamble, a game. I'm really enjoying this new expanding area of my life.  
-
 *** PUBLISHED Update                                               :blogging:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2376,8 +2341,6 @@ I should have used org-mode and I didn't. So, here is a reminder for myself, and
 5. If a project contains a log and several sub-tasks, I will create a separate org file just for it. This will keep it in context and possibly can be used later to export should I need it to. 
 
 Usually, my projects end at step 3. I later go in and change from "ACTIVE" to "DONE" when the project is finished. Steps 4 and 5 are reserved for larger projects which are usually measured in months, not weeks. 
-
-
 
 *** PUBLISHED Switching to Kubuntu over openSuSE                      :linux:
 :PROPERTIES:
@@ -2439,6 +2402,47 @@ I don't have a clear-cut requirement of switching from multi-level tasks to a fu
 [fn:25] This is done with =(setq org-sort-agenda-notime-is-late nil)=.
 
 [fn:26] This is more a state of mind than a technical limitation. I don't like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I'm absolutely sure I need to have such a project up (for example, if we're working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don't see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it's often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top. 
+
+*** WIP The joy of Taking Photos                           :photography:life:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200201
+    :EXPORT_HUGO_PUBLISHDATE: 2020-02-04:
+    :END:
+
+I've been enjoying taking photos since October and decided to start recording videos, expanding the way I publish content. As it turns out, recording, editing, and storing videos is not as simple as I thought. The outcome has been holding back on discussing one of my biggest passions these days. I want to change that today.
+
+#+hugo: more
+
+I've already [[https://joshrollinswrites.com/help-desk-head-desk/my-new-sonya6000/][discussed my camera]] before my trip earlier this year. Since then I've learned more about photography enjoyed seeing my skill improving. Here's one of the first photos I took to demonstrate this:
+
+[[file:images/20200201_1.jpg]]
+
+The above image is an experiment in trying to focus on an object with a 16mm lens. I was trying to see if I can get the blurry effect with the stock lenses, and I succeeded, though I basically almost had to have the fruits in the picture touch the lens to get it. The composition in this image was done a few weeks later (it's all about cropping). 
+
+One of the elements of photography as an art form is seeing things that are not really there. It requires creativity I admire in other photos. My own take:  
+
+[[file:images/20200201_2.jpg]]
+
+The figure of the hand in this photo was almost missed when I was focusing on the water drops after the rain. It captured the mood of the day perfectly: gloom and melancholy. It was taken much more recently. 
+
+I often go to a park nearby to relax and enjoy a bit of nature in the midst of the busy city. Animals are a constant sight, and as I improved the flow in my movements and became somewhat less clumsy, I stopped scaring the little ones off. First, there were squirrels: 
+
+[[file:images/20200201_3.jpg]]
+
+Eventually, as I became more still, birds stopped flying away as I took my time changing my lenses: 
+
+[[file:images/20200201_4.jpg]]
+
+In both the above cases, I took plenty of photos and selected these two. I find that squirrels are fairly easy to snap. They're not really afraid of humans and can actually be [[https://gothamist.com/news/nyc-park-visitors-warned-about-hangry-squirrels-out-for-blood][quite intimidating]]. Birds, on the other hand, are a different story. They are everywhere, and you have to be perfectly still for a while for them to come closer. 
+
+There's a lot in photography that is both different and similar to the work I do every day. In a way, it's highly technical with much to learn about lighting and composition elements. In another way, it takes me out to explore, often to long walks of several hours, alone with nature and with my thoughts. I have to take my time and slow down on these walks to take good photos and I appreciate many things from different angles as I re-evaluate them in a different light, quite literally. The technical and the art mix in a way that fits well into my current lifestyle. 
+
+The images you see here are all on my [[https://www.instagram.com/jrss12/][Instagram]], which is why they have such a bad quality. I do have the larger, high quality versions with me of course and recently started printing some of them to keep around my home.
+
+Some of you may scuff about Instagram. Why use Facebook's commercial platform on a site that stands for free software? The answer is reach, discovery.  [[https://pixelfed.social/][Other options]] exist, but they are nowhere close with their use-base and have a limitation on how many images can be stored. I do hope to find a better solution as I take more photos and grow in skill and content.    
+
+Let me know what you think, especially if you're a regular reader of this site!
 
 
 
