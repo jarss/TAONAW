@@ -6,10 +6,19 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Feb 2020 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 12 Feb 2020 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Best Tools for the job: Duplicati</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200212/</link>
+      <pubDate>Wed, 12 Feb 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200212/</guid>
+      <description>&lt;p&gt;One of the things I&#39;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&#39;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>The joy of Taking Photos</title>

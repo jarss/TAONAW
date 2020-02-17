@@ -1743,11 +1743,11 @@ I've kept a journal (though infrequently) since my early 20s. A thick notebook w
 
 #+hugo: more 
 
-Interestingly, the old paper journals are the ones that survived and moved homes with me (for the most part) while the digital ones are lost somewhere in the cloud.[fn:5] I've tried many different applications, more than I can remember. My thoughts are spread across Google, Microsoft Evernote and Apple products, some defunct and cannot be restored. My journal today, in org-mode, is resistant to that - at least, that's my hope. I enjoy keeping a journal here, on the same platform I use for blogging and organizing my day.
+Interestingly, the old paper journals are the ones that survived and moved homes with me (for the most part) while the digital ones are lost somewhere in the cloud.[fn:1] I've tried many different applications, more than I can remember. My thoughts are spread across Google, Microsoft Evernote and Apple products, some defunct and cannot be restored. My journal today, in org-mode, is resistant to that - at least, that's my hope. I enjoy keeping a journal here, on the same platform I use for blogging and organizing my day.
 
 Compared to a written notebook, a digital journal offers a couple of big benefits: 
 
-1. I can read my notes: my handwriting is horrible. English and Latin letters are not what I grew up writing (my early journals in my native language are not exactly neat either). This used to be a problem: Combined with spelling mistakes I've had early on, my writing was often a serious deciphering challenge. Digital text obviously fixes this issue.[fn:3]
+1. I can read my notes: my handwriting is horrible. English and Latin letters are not what I grew up writing (my early journals in my native language are not exactly neat either). This used to be a problem: Combined with spelling mistakes I've had early on, my writing was often a serious deciphering challenge. Digital text obviously fixes this issue.[fn:2]
 
 2. I Can write more: I have more room to write and I don't struggle with turning the notebook around to fit sentences into corners. My hand gets tired writing for long period of times, especially if I get excited or angry and press harder on the paper. I can also type faster than writing by hand and fit much more content in.
 
@@ -1763,17 +1763,19 @@ Here's how my journal looks like today:
 
 [[file:static/2019-08-29.png]]
 
-As I was preparing this post (which took forever for other reasons[fn:4]) I went through several of my former posts. The overall "feel" of the journal is very welcoming. In org-mode each entry is folded neatly into its day, which is folded into its week number, which in turn is folded into its year. The whole journal, easily the largest file among my personal text files, looks like 10 lines of text when it's first opened. You can see this effect above, where the entry on Monday is on a fourth level (you can't see the year in the picture, which is the first level). 
+As I was preparing this post (which took forever for other reasons[fn:3]) I went through several of my former posts. The overall "feel" of the journal is very welcoming. In org-mode each entry is folded neatly into its day, which is folded into its week number, which in turn is folded into its year. The whole journal, easily the largest file among my personal text files, looks like 10 lines of text when it's first opened. You can see this effect above, where the entry on Monday is on a fourth level (you can't see the year in the picture, which is the first level). 
 
 To be honest, I wouldn't recommend org-mode to journaling newbies or for those unfamiliar with Emacs already; it's like going to a culinary school to learn how to make a simple salad. There are far simpler software for this purpose, and if you want to pick on the habit of journaling in general, I would recommend a notebook first. 
 
 For me, a person who uses org-mode on a day-to-day basis to keep track of tasks and writing this blog, this is a no-brainer. It looks fantastic and functions even better.  
 
-**** Footnotes
+[fn:1] Today I cringe at the thought that my most personal notes are buried somewhere deep in a company's server. Back then, I didn't know better.
 
-[fn:5] Today I cringe at the thought that my most personal notes are buried somewhere deep in a company's server. Back then, I didn't know better.
-[fn:3] Many writing applications come with spell-checking options which can be highly distracting. This is a habit that I believe started with Word's red zigzag. It forces you to stop your train of thought and focus on the mistakes highlighted in angry red. Emacs doesn't have this problem. Spell-checking takes place only after I highlight a segment of my text and ask for to spellcheck. Having spellchecking separate from the writing process is important! I didn't realize how disturbing this can be before transitioning to org-mode. 
-[fn:4] These being mostly lack of sleep, insomnia of some sort. 
+[fn:2] Many writing applications come with spell-checking options which can be highly distracting. This is a habit that I believe started with Word's red zigzag. It forces you to stop your train of thought and focus on the mistakes highlighted in angry red. Emacs doesn't have this problem. Spell-checking takes place only after I highlight a segment of my text and ask for to spellcheck. Having spellchecking separate from the writing process is important! I didn't realize how disturbing this can be before transitioning to org-mode.
+
+[fn:3] These being mostly lack of sleep, insomnia of some sort.
+
+**** Footnotes
 
 *** PUBLISHED Scripting in Bash 102				 :automation:
 :PROPERTIES:
@@ -1796,13 +1798,19 @@ Before we dive in, a few scripting points to cover:
 
 + Speaking text editors: if you use Linux (or a Mac), you have Nano built-in. Just type "nano" in terminal to bring it up. It has a slight learning curve with its weird key bindings, so [[https://www.lifewire.com/beginners-guide-to-nano-editor-3859002][Here's a quick guide]] to get you started.
 
-+ In Linux, it doesn't matter what extension your file has. That world belongs to Windows and MacOs. You can save your script as  "myfirstscript" and it will run fine without an extension.[fn:10]
++ In Linux, it doesn't matter what extension your file has. That world belongs to Windows and MacOs. You can save your script as  "myfirstscript" and it will run fine without an extension.[fn:4]
 
-+ What /is/ important though is permissions in Linux, a whole topic in itself. In order to allow a text file to run as an executable chain of commands, you need to permit it to do so. To do this, type in your terminal "chmod +x [your script path and name here]"[fn:11] to tell Linux this is an executable file.
++ What /is/ important though is permissions in Linux, a whole topic in itself. In order to allow a text file to run as an executable chain of commands, you need to permit it to do so. To do this, type in your terminal "chmod +x [your script path and name here]"[fn:5] to tell Linux this is an executable file.
 
-+ You can't just run your script by typing it in your terminal and hit Enter. That's because it's not part of your system's path configuration, which tells Linux where are the scripts and programs you can run are.[fn:12] You have to be specific and write out the entire path "~[path/to/your/script/script here]~" or be in the same directory as the script and execute it with "~./[script name here]~". 
++ You can't just run your script by typing it in your terminal and hit Enter. That's because it's not part of your system's path configuration, which tells Linux where are the scripts and programs you can run are.[fn:6] You have to be specific and write out the entire path "~[path/to/your/script/script here]~" or be in the same directory as the script and execute it with "~./[script name here]~". 
 
 Hopefully the above makes sense. If not, don't worry about it for now, just try to follow the instructions. 
+
+[fn:4]  If you ever write scripts to execute in Mac or Windows (say, in another program) you'll notice these files has a ".sh" extension. But again, in Linux, this doesn't matter. Later you will notice that the script creates a file with a .org extension. What's this hypocrisy you ask? It has to do with the way Emacs is built. Emacs can open /any/ file, but org-mode files (this is the "plug-in" in Emacs that opens org files) are identified by .org extension for sake of convenience. You can include a special line in a file that would tell Emacs this is an org-mode file as well, but using .org is just more natural.
+
+[fn:5]  *chmod* (change file mode) is a powerful and important command in Linux, outside of the scope of this post. You should check the manual for it (you should know how if you read through this post). This will take you down a rabbit hole regarding Linux file permissions, and you can [[https://devconnected.com/linux-file-permissions-complete-guide/][read more about it]] here (one of many links available). Wikipedia [[https://en.wikipedia.org/wiki/File_system_permissions#Traditional_Unix_permissions][also has a good section]] to get you started.
+
+[fn:6]  The path in Linux is a variable (you'll learn about those in a bit) which contains all the directories where your Linux knows to finds scripts and commands. OK, but what does that mean? I can't get into it here (because I'll never get to publish this post) but enough to say that the script you're writing is not a part of the "Linux default" commands package, so Linux doesn't know it's a command. Imagine telling a person who never shook hands before to just "shake hands." You'd have to explain it, and then that person could remember how to shake hands. Linux's way to remember how to shake hands (in this example) is to add it to the list of directories that include such constrictions. This list is the path.
 
 **** The Script
 
@@ -1825,7 +1833,7 @@ I'll go line by line to explain what it does and hopefully how it works.
 
 *What does it do?*
 
-A practical little thing, this script creates a new .org file every week[fn:13] from a template and changes its title to "Week Starting Monday [date]" where the date is updated based on that week's date. 
+A practical little thing, this script creates a new .org file every week[fn:7] from a template and changes its title to "Week Starting Monday [date]" where the date is updated based on that week's date. 
 
 So for example, on 02-09-2019 (at 3:00 AM specifically), my Raspberry Pi created a new org file. The first line in that file, which is the title, reads "Week Starting Monday 2019-09-02" (I like my dates in a yyyy-mm-dd format).  
 
@@ -1833,15 +1841,19 @@ So for example, on 02-09-2019 (at 3:00 AM specifically), my Raspberry Pi created
 
 Ah. Well, this is what this post is about. Let's dive in: 
 
+[fn:7]  Automating tasks in Linux are done by a different component, called cron. It takes a specific set of instructions written out in a string and translates it to a specific time loop (for me when using this script, on Monday, 3AM, every week). Cron is something I hope to expand on in a future post.
+
 **** The Shebang
 
 The very first line, ~#!/bin/bash~, is called shebang (or hashbang, but shebang seems to be more popular). Every script in Linux should (though there are ways around it, it's just good practice) start with a shebang. What does this cryptic line do? We're just on the first line and it already seems like we need to learn another language! 
 
 No worries. Everything looks big and scary at first, that's why you break it down to parts you understand.
 
-The ~#~ sign is usually used to enter a comment into your script. This means this line is not meant to be run as a command and should be skipped. When combined with a ~!~ it creates a special combo[fn:6] called the [[https://en.wikipedia.org/wiki/Interpreter_directive][interpreter directive]], which tells Linux how to interpret the script we're about to write - or more precisely, where is the interpreter located so the computer can find it and use it to interpret the command.
+The ~#~ sign is usually used to enter a comment into your script. This means this line is not meant to be run as a command and should be skipped. When combined with a ~!~ it creates a special combo[fn:8] called the [[https://en.wikipedia.org/wiki/Interpreter_directive][interpreter directive]], which tells Linux how to interpret the script we're about to write - or more precisely, where is the interpreter located so the computer can find it and use it to interpret the command.
 
 Since we're about to write a script in Bash, we need to tell our computer: "OK, this file is written in Bash, here's where you find bash" which is exactly what the next part is: ~/bin/bash~.  this is where bash is, in your ~/etc/bash~ folder. If it was in a folder named giraffe, for example, it would be ~#!/giraffe/bash~. 
+
+[fn:8]  This special combo is called a "magic number", a unique value in ASCII that the computer understands as a direct command. I am not sure how many magic numbers like these exist. Sounds like something interesting to find out.
 
 **** Variables
 
@@ -1863,15 +1875,19 @@ To be sure, let's run the manual command (man) for the date command. Type "man d
 
 The most important bits of info to get from the manual are the name and the synopsis. The name tells us what the command does right there: "print or set the system date and time", and then the description which is the same thing. Go ahead and run "date" without any format options (that is, without the "+%" something) part and see what it prints out by default; you'd notice it's the same as specified under the "Synopsis" part of the manual.
 
-In our case, we use the date command with specific formatting options. In the manual for the command, scroll down to "Format" to find these. Do you see how many options the date command has? You can print out the current century or even the number of seconds since the beginning of 1970[fn:7]. The options used in the script, %V and %y, give out the week number in the year and the year's last two digits. The underscore in between is nothing but a separator that will later show in the file name, to get the following format: [week number]_[year's two digits], which gets us something like "12_19.org".
+In our case, we use the date command with specific formatting options. In the manual for the command, scroll down to "Format" to find these. Do you see how many options the date command has? You can print out the current century or even the number of seconds since the beginning of 1970[fn:9]. The options used in the script, %V and %y, give out the week number in the year and the year's last two digits. The underscore in between is nothing but a separator that will later show in the file name, to get the following format: [week number]_[year's two digits], which gets us something like "12_19.org".
 
 The other variable, init_mon, is another way to get output from the date command. Go ahead and try to figure out the options used on your own this time. Why do I need this second date? We will find out shortly.
+
+[fn:9]  Turns out that this date (1/1/1970) is known as "The Unix [[https://en.wikipedia.org/wiki/Epoch_(computing)][Epoch]]." A quick search led me to this [[https://stackoverflow.com/questions/2533563/why-are-dates-calculated-from-january-1st-1970][this discussion]]. Turns out such dates are common in the computing world... read and learn!
 
 **** The Copy Command and Using Variables
 
 the next line starts with "cp". This is simply us writing out a command, nothing fancy. cp stands for copy in Linux, a command that copies files and directories. Don't take my word for it, check the manual!
 
-The command then says to copy my weekly org template (I talked about org files as templates [[https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/][previously]]) from the origin directory to the destination directory (this format, of writing the origin location first, space, target location, is also noted in the manual. You have to follow this order), as a file named... "filename".org. And filename is the name of our variable, from earlier. We tell Bash we want to use the data in a variable (remember, it's just a container) by writing a dollar sign in front of the name of the variable we want to use. I added ".org[fn:8]" at the end because - you got it - this is going to be a .org file. 
+The command then says to copy my weekly org template (I talked about org files as templates [[https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/][previously]]) from the origin directory to the destination directory (this format, of writing the origin location first, space, target location, is also noted in the manual. You have to follow this order), as a file named... "filename".org. And filename is the name of our variable, from earlier. We tell Bash we want to use the data in a variable (remember, it's just a container) by writing a dollar sign in front of the name of the variable we want to use. I added ".org[fn:10]" at the end because - you got it - this is going to be a .org file. 
+
+[fn:10]  When scripting, certain special characters (like our $ above) are reserved. This means that if we wanted to call our variable "$usd" for example, we couldn't. There are certain ways to tell Bash we want to use the character as a character, not as a "special signal." As a matter of fact, the period in my .org is a bit dangerous because the period also has a special meaning. I should have typed out something more specific telling Bash the period here is meant as just a period, not a signal -- but at this point I'm not sure how the syntax would look like. I'm learning these things myself, after all.
 
 **** The sed Command
 
@@ -1882,7 +1898,9 @@ We call the command, sed, with option ~-i~ which tells it not to produce output.
 The rest looks a bit crazy, but hang on, it makes sense: 
 
 ***** sed: Using Quotation Marks
-We're going to use the quotation marks to include our entire stream and options (you can see it ends at the very end of the line). It's our way of telling the script to take "this" where "this" is everything included in quotation lines[fn:9]. We need to use it here because our substation includes spaces, and these usually interpret as a workflow instruction. Remember the cp command, and how it uses space to differentiate between the origin and the target? Well, something similar happens in sed, so if we just include spaces without the quotation marks, sed will do something else.
+We're going to use the quotation marks to include our entire stream and options (you can see it ends at the very end of the line). It's our way of telling the script to take "this" where "this" is everything included in quotation lines[fn:11]. We need to use it here because our substation includes spaces, and these usually interpret as a workflow instruction. Remember the cp command, and how it uses space to differentiate between the origin and the target? Well, something similar happens in sed, so if we just include spaces without the quotation marks, sed will do something else.
+
+[fn:11]  Those of you who look carefully might find yourself asking, "OK, but the quotation marks /include/ the command syntax, not just the text we want to use, what's up with that? Why isn't it ~1s/^/"#+TITLE: Week Starting...~"?  And I have a good answer: I don't know. It doesn't make sense to me either at the moment, but in all documentation I find, this is how the syntax works.
 
 ***** sed: Selecting the Right Text
 Next, we have ~1s/~. This is actually two in one combo. ~1~ for first line and ~s~ which tells sed we want to do a substitution. Then we have a forward slash which is how we tell sed this is the expression we want to replace. In other words, we are selecting the text from here going forward, until the next forward slash. 
@@ -1930,22 +1948,6 @@ Thank you for reading!
 
 **** Footnotes
 
-[fn:10]  If you ever write scripts to execute in Mac or Windows (say, in another program) you'll notice these files has a ".sh" extension. But again, in Linux, this doesn't matter. Later you will notice that the script creates a file with a .org extension. What's this hypocrisy you ask? It has to do with the way Emacs is built. Emacs can open /any/ file, but org-mode files (this is the "plug-in" in Emacs that opens org files) are identified by .org extension for sake of convenience. You can include a special line in a file that would tell Emacs this is an org-mode file as well, but using .org is just more natural.     
-
-[fn:11]  *chmod* (change file mode) is a powerful and important command in Linux, outside of the scope of this post. You should check the manual for it (you should know how if you read through this post). This will take you down a rabbit hole regarding Linux file permissions, and you can [[https://devconnected.com/linux-file-permissions-complete-guide/][read more about it]] here (one of many links available). Wikipedia [[https://en.wikipedia.org/wiki/File_system_permissions#Traditional_Unix_permissions][also has a good section]] to get you started. 
-
-[fn:12]  The path in Linux is a variable (you'll learn about those in a bit) which contains all the directories where your Linux knows to finds scripts and commands. OK, but what does that mean? I can't get into it here (because I'll never get to publish this post) but enough to say that the script you're writing is not a part of the "Linux default" commands package, so Linux doesn't know it's a command. Imagine telling a person who never shook hands before to just "shake hands." You'd have to explain it, and then that person could remember how to shake hands. Linux's way to remember how to shake hands (in this example) is to add it to the list of directories that include such constrictions. This list is the path.  
-
-[fn:13]  Automating tasks in Linux are done by a different component, called cron. It takes a specific set of instructions written out in a string and translates it to a specific time loop (for me when using this script, on Monday, 3AM, every week). Cron is something I hope to expand on in a future post.
-
-[fn:6]  This special combo is called a "magic number", a unique value in ASCII that the computer understands as a direct command. I am not sure how many magic numbers like these exist. Sounds like something interesting to find out. 
-
-[fn:7]  Turns out that this date (1/1/1970) is known as "The Unix [[https://en.wikipedia.org/wiki/Epoch_(computing)][Epoch]]." A quick search led me to this [[https://stackoverflow.com/questions/2533563/why-are-dates-calculated-from-january-1st-1970][this discussion]]. Turns out such dates are common in the computing world... read and learn!
-
-[fn:8]  When scripting, certain special characters (like our $ above) are reserved. This means that if we wanted to call our variable "$usd" for example, we couldn't. There are certain ways to tell Bash we want to use the character as a character, not as a "special signal." As a matter of fact, the period in my .org is a bit dangerous because the period also has a special meaning. I should have typed out something more specific telling Bash the period here is meant as just a period, not a signal -- but at this point I'm not sure how the syntax would look like. I'm learning these things myself, after all.
-
-[fn:9]  Those of you who look carefully might find yourself asking, "OK, but the quotation marks /include/ the command syntax, not just the text we want to use, what's up with that? Why isn't it ~1s/^/"#+TITLE: Week Starting...~"?  And I have a good answer: I don't know. It doesn't make sense to me either at the moment, but in all documentation I find, this is how the syntax works.
-
 *** PUBLISHED Tools in Windows					      :tools:
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk 
@@ -1975,21 +1977,21 @@ Unfortuantely, WPC-HC is [[https://mpc-hc.org/2017/07/16/1.7.13-released-and-far
 
 For the most part, yes. But there are a few exceptions. 
 
-Another good tool without a Linux alternative that jumps to mind is [[https://getgreenshot.org/][Greenshot]]. Yes, I blogged about [[https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/][Flameshot]] before, but I since stopped using it due to an [[https://github.com/lupoDharkael/flameshot/issues/563#issuecomment-526918408][annoying locale issue]] deep in my Manajro's configuration. It's replacement, [[https://store.kde.org/p/1156408/][Ksnip]][fn:14], is not as good. While I can forgive flameshot's lack of features in favor of lightness and elegance, ksnip is way "bulkier" but lacks many good features compared to greenshot and a good amount of polish. 
+Another good tool without a Linux alternative that jumps to mind is [[https://getgreenshot.org/][Greenshot]]. Yes, I blogged about [[https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/][Flameshot]] before, but I since stopped using it due to an [[https://github.com/lupoDharkael/flameshot/issues/563#issuecomment-526918408][annoying locale issue]] deep in my Manajro's configuration. It's replacement, [[https://store.kde.org/p/1156408/][Ksnip]][fn:12], is not as good. While I can forgive flameshot's lack of features in favor of lightness and elegance, ksnip is way "bulkier" but lacks many good features compared to greenshot and a good amount of polish. 
 
 While I'm at the graphics department: another great tool in Windows is [[https://www.getpaint.net/index.html][paint.net]]. It's a light photo-editing tool which walks the thin line of "photoshop light" like no other app I've used. There's GIMP of course, but I never use it. It comes with its own learning curve and plethora of features I almost never need beyond my Android's [[https://play.google.com/store/apps/details?id=com.niksoftware.snapseed&hl=en][Snapspeed]] (here are two [[https://pixelfed.social/p/JR121/74693748268863488][recent]] [[https://pixelfed.social/p/JR121/82812393729691648][examples]]). 
 
 I'll skip the loaded issue of gaming on Linux, since the fact that I have a Windows desktop built mostly for that speaks for itself, and continue into other forms of entertainment: hosting my movies, music, and Ebooks. Linux does have the top hand when it comes to running a good server, but installing PLEX and managing file permissions for a NTFS hard drive shared with Windows is an experience I'm willing to pass on. When I eventually graduate to a NAS, it will probably be Linux based.
 
-So this mostly leaves us with Windows for entertainment and video editing, Linux for productivity and work[fn:15]. Sounds about right to me.
+So this mostly leaves us with Windows for entertainment and video editing, Linux for productivity and work[fn:13]. Sounds about right to me.
 
 What about you? Do you use different systems side by side like this, or are you the laptop warrior kind? Maybe a Windows guru? A mac-all-the-way person?
 
+[fn:12] Seems like this [[https://community.kde.org/Incubator/Projects/Ksnip#Status][project has been killed]] in favor of [[https://github.com/DamirPorobic/KImageAnnotator][KimageAnnonator]], which looks exactly the same to me.
+
+[fn:13] Actually, since I use Backblaze to backup my files, my Windows machine is also my dedicated "backup server-client" as well. However it's my Raspberry Pi that does the automation and uploads a compressed backup file every night without fail. You can't beat Linux when it comes to automations of "set up and forget" like these.
+
 **** Footnotes
-
-[fn:14] Seems like this [[https://community.kde.org/Incubator/Projects/Ksnip#Status][project has been killed]] in favor of [[https://github.com/DamirPorobic/KImageAnnotator][KimageAnnonator]], which looks exactly the same to me. 
-
-[fn:15] Actually, since I use Backblaze to backup my files, my Windows machine is also my dedicated "backup server-client" as well. However it's my Raspberry Pi that does the automation and uploads a compressed backup file every night without fail. You can't beat Linux when it comes to automations of "set up and forget" like these.
 
 *** PUBLISHED Blog Updates Posts                                   :blogging:
 :PROPERTIES:
@@ -2035,7 +2037,9 @@ The sidebar [[https://github.com/jarss/TAONAW/blob/master/static/css/hyde.css][i
 
 Post titles have a new font, [[https://fonts.google.com/specimen/Montserrat][Montserrat]]. If you don't see this font, please let me know. This change was implemented previously, but later deleted by mistake in the CSS file. This is a Google Font that is enabled for free using the head_fonts.html in Hugo. 
 
-Colors for the tags under the titles and the "Read More" links on the main page were changed to the same red as the Title's red. Other links in the posts and remain the same[fn:1].
+Colors for the tags under the titles and the "Read More" links on the main page were changed to the same red as the Title's red. Other links in the posts and remain the same[fn:14].
+
+[fn:14] This was harder than it should have been... these links are nested inside a class which is also nested inside a class. The right syntax in CSS is ~[parent-class] [child-class] [html-tag]~ with spacing being important: three spaces, no more. However, because my CSS was messy, the rules I've added were re-defined again later in the CSS file; I wasn't aware I called the same elements in two different places. As it turns out, cleaning your code (CSS, bash, or whatever) is important - and so as adding comments.
 
 **** Fixing the Homepage
 
@@ -2043,17 +2047,21 @@ My homepage, which displays a list of summaries of posts, broke after a recent H
 
 **** Trimming Down the fat 
 
-As it turns out, there are a lot of unused files inside the builds of this website. For example, when I changed my tagging and got rid of the old tags, it turned out the old tags still have HTML files inside the site. The original theme I used to build this site is still stored intact inside the theme folders, +and I don't really need it+[fn:16]. There are other examples, probably one of the known side effects of having a static website that builds HTML webpages for everything. 
+As it turns out, there are a lot of unused files inside the builds of this website. For example, when I changed my tagging and got rid of the old tags, it turned out the old tags still have HTML files inside the site. The original theme I used to build this site is still stored intact inside the theme folders, +and I don't really need it+[fn:15]. There are other examples, probably one of the known side effects of having a static website that builds HTML webpages for everything. 
 
 Clearing the old files is tricky, and I ended up deleting files I didn't know I need until I tried to publish the site again. Not a big problem since everything is backed up many times over, but something I can live without.
 
+[fn:15] When I tried to publish the site to Netifly (see below) it turned out I /do/ need the original theme of the site. I am unsure why at this point, since all the essential files I use are stored outside of the theme's folder. I believe this has to do with the site's theme setting which specifies the theme's name, which probably points to that folder.
+
 **** Netifly - Coming Soon
 
-As Kaushal Modi, my Hugo mentor [[https://mastodon.technology/@kaushalmodi/102949264377765642][pointed out]], the answer to all these annoyances is Netifly. I knew about this service previously, but this time because of a specific issue[fn:17] I had with git, I learned that Netifly bypasses the entire build Hugo creates. That is, it reads the md files directly. 
+As Kaushal Modi, my Hugo mentor [[https://mastodon.technology/@kaushalmodi/102949264377765642][pointed out]], the answer to all these annoyances is Netifly. I knew about this service previously, but this time because of a specific issue[fn:16] I had with git, I learned that Netifly bypasses the entire build Hugo creates. That is, it reads the md files directly. 
 
 Because the md files are created on the fly for me thanks to ox-hugo, it's almost as if I have a dynamic website. I would still need to push the changes to github, but Netifly would take care of everything from there. No more old dead HTML files or forgetting to build my website before pushing to github - something I do more often than I'd like to, for sure. 
 
 Getting a website to build on Netifly is pretty easy, but I'll need to change the DNS records to point to Netifly's servers instead of github. That's not a hard thing to do, but there's a chance something would break and my website will be down, and I'm running out of time as I'm writing this. I will wait on Netifly a bit longer, but this is a change that is pretty sure to happen. 
+
+[fn:16] I included the word "hugo" in my git ignore file. This was because I used to store a hugo binary in the site's root folder, because a newer version was not available on Linux Mint, at the time.
 
 **** About Section
 
@@ -2062,14 +2070,6 @@ I've added an [[http://joshrollinswrites.com/about/][about section]] to the blog
 I'm still not sure how to fit the link to the about section in the sidebar. For now, it's just a linked from my name in the site's description.
 
 **** Footnotes
-
-[fn:1] This was harder than it should have been... these links are nested inside a class which is also nested inside a class. The right syntax in CSS is ~[parent-class] [child-class] [html-tag]~ with spacing being important: three spaces, no more. However, because my CSS was messy, the rules I've added were re-defined again later in the CSS file; I wasn't aware I called the same elements in two different places. As it turns out, cleaning your code (CSS, bash, or whatever) is important - and so as adding comments.
-
-[fn:2] As a barista, I appreciated and getting tips and I've considered adding a tips page to the blog before. Unlike donations, tips are small, meant to be tokens of appreciation of good content and not a way to make serious income out of the website. Unlike subscriptions (like [[https://en.wikipedia.org/wiki/Patreon][Patreon]]), they are one time deals. This will encourage me to work for good content without asking for support too bluntly, which I don't like. 
-
-[fn:16] When I tried to publish the site to Netifly (see below) it turned out I /do/ need the original theme of the site. I am unsure why at this point, since all the essential files I use are stored outside of the theme's folder. I believe this has to do with the site's theme setting which specifies the theme's name, which probably points to that folder.
-
-[fn:17] I included the word "hugo" in my git ignore file. This was because I used to store a hugo binary in the site's root folder, because a newer version was not available on Linux Mint, at the time.  
 
 *** CANCELLED Emacs & Org From the Beginning: Part 1
     :PROPERTIES:
@@ -2084,17 +2084,21 @@ intro here
 
 **** How to Read the Keys
 
-One of the early realizations that I'm looking into something "weird" happened when I started looking into Emacs key "shortcuts[fn:18]". I came across things like saving (=C-x C-s=) and aborting (=C-g=) and suspected "C" was for control, but got thrown off by execute command (=M-x=). Only after reading more "normal folks" explinations like [[https://masteringemacs.org/book][Mastering Emacs]] I understood this crazines. 
+One of the early realizations that I'm looking into something "weird" happened when I started looking into Emacs key "shortcuts[fn:17]". I came across things like saving (=C-x C-s=) and aborting (=C-g=) and suspected "C" was for control, but got thrown off by execute command (=M-x=). Only after reading more "normal folks" explinations like [[https://masteringemacs.org/book][Mastering Emacs]] I understood this crazines. 
 
 Capital C is indeed the Control key, but capital M turns out to be the [[https://en.wikipedia.org/wiki/Meta_key][Meta key]], which is mostly replaced by the Alt key on a regular PC keyboard of the Command key on a Mac. This means that the above command, =C-x C-s=, means "press Control-X and then press S while still pressing the Control key." That last bit is important, because it's different from =C-x s=, for example, which means "press Control-X, let go, and press s", which will invoke a different command altogether. 
 
-In the beginning, Emacs weird key combinations was the hardest part to get over. It does take time, but after I've dopted these combos and started using them, they started to make more and more sense. Still there are exceptions. For example, I still don't use Emacs's built in move up (=C-p=) or down (=C-n=) and prefer the arrows instead except special cases[fn:19]. 
+In the beginning, Emacs weird key combinations was the hardest part to get over. It does take time, but after I've dopted these combos and started using them, they started to make more and more sense. Still there are exceptions. For example, I still don't use Emacs's built in move up (=C-p=) or down (=C-n=) and prefer the arrows instead except special cases[fn:18]. 
+
+[fn:17] Back then, pressing keys instead of using the mouse was refered to as "shortcuts." I knew Emacs works directly from the keyboard, but I didn't know how to refer to this odd practice which is second nature now.
+
+[fn:18] Sometimes pressing the up arrow key is taken by another, more familiar function. When I ran shell inside emacs (I don't do that much anymore), pressing =C-p= became important because it would take the cursor and move it inside the text window, /not/ repeat the last command, which is what the up arrow key meant.
 
 **** Overrated: Emacs Built-in Help System
 
 I'm probably going to get a good amount of pushback for this, but I'm just being honest when I say the built-in help system was little to no use to me back when I started using Emacs.
 
-The Emacs built-in tutorial (=C-h t=) is very through and teaches you the basics one step at a time, but I was never the kind of person who would open a thick textbook and start reading cover to cover[fn:20]. Emacs also comes with an extensive help system, and these are some of the pupular combos for it:
+The Emacs built-in tutorial (=C-h t=) is very through and teaches you the basics one step at a time, but I was never the kind of person who would open a thick textbook and start reading cover to cover[fn:19]. Emacs also comes with an extensive help system, and these are some of the pupular combos for it:
 
 =C-h a=: apropos-command: "is there such a thing as [search term] and what does it do?"
 =C-h k=: describe-key: "what does this key do?"
@@ -2108,6 +2112,16 @@ For instance, if you want to quit a command or escape something, usually by  pre
 Having to look up new key-combos like that when I started every single time I wanted to finish a paragraph was terrible, and I believe it's the wrong (and terribly boring) way to learn Emacs. 
 
 So, even with all its good intentions, I didn't use Emacs help system as much as many folks told me I should. Instead I turned to Google and many different forums where folks as confused as me posted these questions. The book I mentioned above also helped a great deal, since Mickey Petersen explains things to you as another /normal/ computer user. I will get back to this point again and again.
+
+[fn:19] This was never the way for me to learn anything, particularly computer stuff. As a matter of fact, this is one of a few big reasons I did not do well in college in computer programming calsses and decided to put computers behind me for later in life.
+
+    :PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: you-are-on-sale
+    :EXPORT_HUGO_PUBLISHDATE: 2019-10-18:
+    :END:
+
+The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greated with all kinds of windows opening on me, intruding on my space, notifying me on updates, of new games sales, of emails... "click me! No! Click me!!" I heard them yell in the back of my head. I put my coffee down and shut my Windows PC off again, shaking my head.
 
 **** This is Where you Should Start
 
@@ -2128,20 +2142,6 @@ This is easy to do in Linux and Macs, but somewhat tricker in Windows. The best 
 
 **** Footnotes
 
-[fn:18] Back then, pressing keys instead of using the mouse was refered to as "shortcuts." I knew Emacs works directly from the keyboard, but I didn't know how to refer to this odd practice which is second nature now.
-
-[fn:19] Sometimes pressing the up arrow key is taken by another, more familiar function. When I ran shell inside emacs (I don't do that much anymore), pressing =C-p= became important because it would take the cursor and move it inside the text window, /not/ repeat the last command, which is what the up arrow key meant.
-
-[fn:20] This was never the way for me to learn anything, particularly computer stuff. As a matter of fact, this is one of a few big reasons I did not do well in college in computer programming calsses and decided to put computers behind me for later in life.
-
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: you-are-on-sale
-    :EXPORT_HUGO_PUBLISHDATE: 2019-10-18:
-    :END:
-
-The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greated with all kinds of windows opening on me, intruding on my space, notifying me on updates, of new games sales, of emails... "click me! No! Click me!!" I heard them yell in the back of my head. I put my coffee down and shut my Windows PC off again, shaking my head. 
-
 *** PUBLISHED Too Many Notifications                          :windows:linux:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2158,7 +2158,7 @@ Windows allows all kinds of apps to be launched at login (autostart) and throw n
 
 I'm not new to this and I shouldn't be surprised, yet, somehow, this behavior keeps sneaking up on me bit by bit until it's suddenly too much. While Windows is notorious for this kind of behavior, things in Linuxland are also getting out of hand. In particular, Firefox and [[https://community.kde.org/KDEConnect][KDE-Connect]]. 
 
-Take WhatsApp for example, which I have to use to communicate with 95% of my friends and family[fn:21]. It's open in Firefox, where it's quick and convenient to type messages while my phone is charging, so Firefox informs me of new messages coming in. My phone, connected by KDE-Connect, also sends notifications. And if I ignore these because I'm busy, my Fitbit ionic vibrates on my wrist with yet a third attempt to grab my attention. 
+Take WhatsApp for example, which I have to use to communicate with 95% of my friends and family[fn:20]. It's open in Firefox, where it's quick and convenient to type messages while my phone is charging, so Firefox informs me of new messages coming in. My phone, connected by KDE-Connect, also sends notifications. And if I ignore these because I'm busy, my Fitbit ionic vibrates on my wrist with yet a third attempt to grab my attention. 
 
 This all seems annoying and unnecessary as I write this, but during the last two weeks, it was vital. My dad was in the hospital undergoing surgery, and my family members across-seas were talking to each other in a chat room. I wanted to be involved, but not to the point where WhatsApp will show on my browser at work since my privacy (and that of my family) is important to me. Because running around a lot is a normal part of my job I don't always sense the phone vibrating in my pocket. The watch was the best option to be notified. The big hoopla is mostly over now, and it's time to tune it down. 
 
@@ -2172,9 +2172,9 @@ The solution for now seems to be in Gmail. I haven't tweaked my filters and labe
 
 At least in Linux information overload is /my/ choice, not some operating system's default behavior.
 
-**** Footnotes
+[fn:20] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.
 
-[fn:21] In communications apps there's not much of a choice: you use what your friends and family use, and that's it. You can sing the praises of Signal or what-have-you as much as you'd like, but you'd end up talking to yourself.  
+**** Footnotes
 
 *** PUBLISHED A new Camera Instead of Pixel4                    :photography:
 :PROPERTIES:
@@ -2205,20 +2205,20 @@ The a6000 answered all the above. Five years on the market, it is still widely s
 
 Because I was about to leave on a vacation to the Bay Area in California, I had a limited number of days ahead of me. To make things more complicated, I friend from work suggested to bring over his [[https://www.dpreview.com/products/canon/slrs/canon_eos7d][Cannon 7D]]. He was considering selling it to me since my sudden enthusiasm in photography surfaced and suggested I take it for a spin, so I did. 
 
-The 10-year-old Cannon camera[fn:22] came with a full-size backpack full of lenses of professional-grade which I got to play with over the weekend. I didn't know what I was doing exactly and I had limited time to try all the goodies, so after a weekend with it I decided to give it back to him and stick to the basics with the a6000. I'm happy I did. The Cannon 7D's plathora of professional lenses were way over my budget and my budding skills. The next weekend I was already in [[https://www.bhphotovideo.com/][B&H]], and a couple of hours later, I got my a600 with a starter kit and an additional 55-210mm lens. 
+The 10-year-old Cannon camera[fn:21] came with a full-size backpack full of lenses of professional-grade which I got to play with over the weekend. I didn't know what I was doing exactly and I had limited time to try all the goodies, so after a weekend with it I decided to give it back to him and stick to the basics with the a6000. I'm happy I did. The Cannon 7D's plathora of professional lenses were way over my budget and my budding skills. The next weekend I was already in [[https://www.bhphotovideo.com/][B&H]], and a couple of hours later, I got my a600 with a starter kit and an additional 55-210mm lens. 
 
 Three weeks later, I'm happy to report I managed to carry the camera with me to work every day. I take photo-walk lunches whenever possible and snapshots of different things I find walking: dogs in dog parks, birdhouses, trees and color-changing leaves, co-workers, myself talking excitedly about photography (an interesting side-affect: I got myself familiar with [[https://www.openshot.org/][OpenShot]] again as an interesting side-quest). I used to take walks on weekends, but now I do so with the camera and it makes me examine each object from different angles and situations that I didn't do before. It's a lot of fun, and I'm excited to do something more artistic with my time. 
 
-
-**** Footnotes
-
-[fn:22] One difference between cameras and smartphones that I learned early on: there's no huge difference between a 2 year old, a 5 year old and even a 10 year old cameras. I'm sure for professional photographers there are some important factors to consider, but at the same time I have a feeling that folks who have been taking photos for years know how to get great photos from old and new cameras. With a phone, you're expect to buy a new one every 2 or 3 years, with cameras, it's more about investing in what you already have. 
+[fn:21] One difference between cameras and smartphones that I learned early on: there's no huge difference between a 2 year old, a 5 year old and even a 10 year old cameras. I'm sure for professional photographers there are some important factors to consider, but at the same time I have a feeling that folks who have been taking photos for years know how to get great photos from old and new cameras. With a phone, you're expect to buy a new one every 2 or 3 years, with cameras, it's more about investing in what you already have. 
 
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: my-new-sonya6000
     :EXPORT_HUGO_PUBLISHDATE: 2019-11-08:
     :END:
+
+
+**** Footnotes
 
 *** PUBLISHED Happpy Thanksgiving
 :PROPERTIES:
@@ -2264,9 +2264,9 @@ My electronic devices (phone, laptop, and desktop) are usually named after the o
 
 Just like the "real" Hedwig, my Desktop is a large (full tower, soon to be full ATX) machine. It is somewhat "confused" about certain things, like the time (I replaced a CMOS battery a couple of times), the state of Windows updates (aren't we all), and in general, its identity. Hedwig's been through Windows, Linux (various distros), and even a full Hackintosh at one point. It's the first computer I built completely from ordered parts, the case, motherboard, PSU, CPU, GPU (all the Us), optical and hard drives. This happened about 6 years ago, before I switched careers to IT.
 
-Since the beginning of December, Hedwig is again a duel-boot machine: Windows and [[https://en.wikipedia.org/wiki/OpenSUSE][openSUSE]] Linux. I decided to switch to openSUSE from Manjaro (which I use on my laptop) because I've been using openSUSE at work on my VM and it has been rock-solid; I also grown to like [[https://en.wikipedia.org/wiki/YaST][YaST]] which helps when I don't remember how to change a setting from the command line. The idea is to eventually throw Windows out completely, and interact with it only in a VM on a full Linux machine. This is something I tried to tackle in the past but failed to do in the days before Emacs and Steam on Linux. Now, with my few favorite games available through Steam[fn:23] and Emacs leaving Windows and Office tools in the dust when it comes to file manipulations and writing, I think I will stay committed.
+Since the beginning of December, Hedwig is again a duel-boot machine: Windows and [[https://en.wikipedia.org/wiki/OpenSUSE][openSUSE]] Linux. I decided to switch to openSUSE from Manjaro (which I use on my laptop) because I've been using openSUSE at work on my VM and it has been rock-solid; I also grown to like [[https://en.wikipedia.org/wiki/YaST][YaST]] which helps when I don't remember how to change a setting from the command line. The idea is to eventually throw Windows out completely, and interact with it only in a VM on a full Linux machine. This is something I tried to tackle in the past but failed to do in the days before Emacs and Steam on Linux. Now, with my few favorite games available through Steam[fn:22] and Emacs leaving Windows and Office tools in the dust when it comes to file manipulations and writing, I think I will stay committed.
 
-But I am writing these lines on my laptop. Hedwig's fresh Hugo installation, which I use for this blog, is not working yet. This is just one example of many: [[https://github.com/jonls/redshift/releases][Redshift]], Linux's trusted version of [[https://justgetflux.com/][f.lux]] (or nightshift, if you speak Apple), [[https://www.veracrypt.fr/en/Home.html][veracrypt]], which is a cross-platform encryption solution I use daily, and various codecs required to watch videos and compress videos[fn:24] with ffmpeg all require special configuration.
+But I am writing these lines on my laptop. Hedwig's fresh Hugo installation, which I use for this blog, is not working yet. This is just one example of many: [[https://github.com/jonls/redshift/releases][Redshift]], Linux's trusted version of [[https://justgetflux.com/][f.lux]] (or nightshift, if you speak Apple), [[https://www.veracrypt.fr/en/Home.html][veracrypt]], which is a cross-platform encryption solution I use daily, and various codecs required to watch videos and compress videos[fn:23] with ffmpeg all require special configuration.
 
 I've grown accustomed to these kinds of workarounds (Manjaro had it's own) on Linux. As much as I love the productivity and stability it brings with it, configuring a machine to work in Linux the way I want it to is never a quick process. In contrast, when I had to restore Hedwig to Windows in the past, all it took was signing into my Microsoft account; withing a minute, all my configurations including the wallpaper was in place. But that's the price you pay for having Microsoft (or Google, or Apple) having a probe up your behind and knowing everything you do. This eerie feeling of "we know what's good for you" is built into every OS, and exists outside of the technology word alone.
 
@@ -2276,11 +2276,11 @@ For now, I find that overall there's little difference in my workflow from Manja
 
 But. While this sounds ideal, I don't think it'll ever happen. That's because I find that I /like/ the little differences in how each machine looks and feels. A small XPS running Tumbleweed, openSUSE's rolling release, with white-on-black theme, neon-colored panel with Late and a top panel for system notifications to imitate a Mac like all the cool kids fits, while Hedwig is far more "responsible" with SUSE's Leap and a traditional black-on-white theme. I need at least a bit of personality on each machine. That's the bit the creative non-conforming dude inside the IT guy in me. Or perhaps I'm just nuts. 
 
+[fn:22] in case you're interested, these four games are currently [[https://en.wikipedia.org/wiki/YaST][Cities Skylines]], [[https://store.steampowered.com/app/231430/Company_of_Heroes_2/][Company of Heroes 2]], [[https://store.steampowered.com/search/?term=oxygen+not+inc][Oxygen not Included]], and [[https://store.steampowered.com/app/262060/Darkest_Dungeon/][Darkest Dungeon]]. Over time (and age, I suppose) I discovered I'm less interested in FPSs and more interested in detailed-oriented games. I all-heatedly recommend you take a good long look at Oxygen not Included, especially if you're reading this blog regularly - it's perfect for problem-solvers who are looking to sync into a fun, cute, but very thought-provoking kind of game.
+
+[fn:23] as [[https://www.reddit.com/r/ffmpeg/comments/e79qv8/maxium_mp4_compression_only_in_opensuse/][I found out]], openSUSE doesn't come with [[https://www.videolan.org/developers/x264.html][libx264]], a codec used to compress videos into mp4 formats. It is so common-place in other distros and programs many (me included) don't even know it exists and does a fantastic job.
+
 **** Footnotes                                                :windows:linux:
-
-[fn:23] in case you're interested, these four games are currently [[https://en.wikipedia.org/wiki/YaST][Cities Skylines]], [[https://store.steampowered.com/app/231430/Company_of_Heroes_2/][Company of Heroes 2]], [[https://store.steampowered.com/search/?term=oxygen+not+inc][Oxygen not Included]], and [[https://store.steampowered.com/app/262060/Darkest_Dungeon/][Darkest Dungeon]]. Over time (and age, I suppose) I discovered I'm less interested in FPSs and more interested in detailed-oriented games. I all-heatedly recommend you take a good long look at Oxygen not Included, especially if you're reading this blog regularly - it's perfect for problem-solvers who are looking to sync into a fun, cute, but very thought-provoking kind of game. 
-
-[fn:24] as [[https://www.reddit.com/r/ffmpeg/comments/e79qv8/maxium_mp4_compression_only_in_opensuse/][I found out]], openSUSE doesn't come with [[https://www.videolan.org/developers/x264.html][libx264]], a codec used to compress videos into mp4 formats. It is so common-place in other distros and programs many (me included) don't even know it exists and does a fantastic job. 
 
 *** PUBLISHED Update                                               :blogging:
 :PROPERTIES:
@@ -2389,21 +2389,23 @@ Here's how it looks like laid out:
 
 [[file:images/2020-01-23_06-22.png]]
 
-You'd notice I use agenda-visible timestamps to express the duration of the project as I work on it. This also means that the project will show at the top of my agenda [fn:25], so I see my in-progress big projects first. When all sub-tasks are done for the projects, I mark the parent task as DONE and move on. 
+You'd notice I use agenda-visible timestamps to express the duration of the project as I work on it. This also means that the project will show at the top of my agenda [fn:24], so I see my in-progress big projects first. When all sub-tasks are done for the projects, I mark the parent task as DONE and move on. 
 
-large projects, ones that can end up taking weeks and months, are too big to fit in my [[https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/][weekly org file]]. Thankfully I don't have too many such projects [fn:26]. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a "Log" sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to "OP: ..." something. I find that calling a large project something like "OP: iMac walk-ins terminator" instead of "Create a consistent guest user-template on office iMac" is more memorable and just plain fun. 
+large projects, ones that can end up taking weeks and months, are too big to fit in my [[https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/][weekly org file]]. Thankfully I don't have too many such projects [fn:25]. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a "Log" sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to "OP: ..." something. I find that calling a large project something like "OP: iMac walk-ins terminator" instead of "Create a consistent guest user-template on office iMac" is more memorable and just plain fun. 
 
 While I have an active journal file, I find that more and more I gravitate toward breaking off journal "chunks" into respective projects I'm working on. This is faster (my thoughts about the project are right there, not in a separate journal that needs to be linked correctly) and easier to retrieve later (instead of thinking "what was it that I did..." staring at a large journal thinking what to search for, I have a project with related thoughts). 
 
 I don't have a clear-cut requirement of switching from multi-level tasks to a full project, nor a point where I switch from writing in my generic journal to starting a log in a specific project, but I'd say it's a mix of how much time I've worked on something (is it been a few weeks? Do I keep getting back to it?) and how complex it is. 
 
+[fn:24] This is done with =(setq org-sort-agenda-notime-is-late nil)=.
+
+[fn:25] This is more a state of mind than a technical limitation. I don't like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I'm absolutely sure I need to have such a project up (for example, if we're working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don't see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it's often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top.
+
+[fn:26] As a barista, I appreciated and getting tips and I've considered adding a tips page to the blog before. Unlike donations, tips are small, meant to be tokens of appreciation of good content and not a way to make serious income out of the website. Unlike subscriptions (like [[https://en.wikipedia.org/wiki/Patreon][Patreon]]), they are one time deals. This will encourage me to work for good content without asking for support too bluntly, which I don't like.
+
 **** Footnotes:
 
-[fn:25] This is done with =(setq org-sort-agenda-notime-is-late nil)=.
-
-[fn:26] This is more a state of mind than a technical limitation. I don't like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I'm absolutely sure I need to have such a project up (for example, if we're working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don't see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it's often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top. 
-
-*** WIP The joy of Taking Photos                           :photography:life:
+*** PUBLISHED The joy of Taking Photos                     :photography:life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200201
@@ -2444,6 +2446,40 @@ Some of you may scuff about Instagram. Why use Facebook's commercial platform on
 
 Let me know what you think, especially if you're a regular reader of this site!
 
+*** WIP Best Tools for the job: Duplicati            :tools:linux:automation:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200212
+    :EXPORT_HUGO_PUBLISHDATE: 2020-02-12:
+    :END:
+
+One of the things I've kept postponing since [[https://joshrollinswrites.com/help-desk-head-desk/20191208/][switching to Linux on my desktop]] has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I've kept postponing the critical need for an online backup too long.
+
+#+hugo: more
+
+I've been a happy [[https://www.backblaze.com/][Backblaze]][fn:27] customer for about half a year, and I used their [[https://www.backblaze.com/cloud-backup.html][full computer backup plan]] on Windows for a flat fee of $60 a year. With Linux though, this plan was no longer an option. It seemed Backblaze was telling me "hey man, now that you're using Linux full time, it's time to wear the big boy's hat and stop using our training wheels. Get serious, or go back to Windows." 
+
+Backblaze's [[https://www.backblaze.com/b2/cloud-storage.html][B2 Backup]] is one of the most affordable (if not /the/ most affordable) deals I've found. I had to create a script that would most likely run with [[http://duplicity.nongnu.org/][Duplicity]], a trusted Linux tool that's been around for a while. After a massive project at work finally ended, I had the time to sit down and try to make it work. I started running into issues though: it seemed like authentication with B2 was rejected due to some known issue, but I couldn't find too much information about fixing it. What I did found though, as I was looking through various help documentations, is a lesser-known FOSS tool: [[https://www.duplicati.com/][Duplicati]]. 
+
+You can tell by the game of words here that Duplicity and Duplicati are related: "The Duplicati project was inspired by Duplicity and had similar functionality until 2008," its team says in the manual, and the philosophy is the same: a free encryption-supported tool for backups. It's not directly available in official depositories (maybe in rolling releases?) due to its beta status, but it's [[https://www.duplicati.com/download][easy enough to download for Debian-based distros]] (this is another example of why [[https://joshrollinswrites.com/help-desk-head-desk/20200108/][switching to Kubuntu]] was a good idea for me). 
+
+Duplicity's GUI is easy enough to understand, almost to the point that their [[https://duplicati.readthedocs.io/en/latest/][manual]] or excellent [[https://www.duplicati.com/articles/Getting-Started/][getting started guide]] are not needed. As it turns out, connection settings for Backblaze's B2 backups come built-in, as well as many other options like Amazon's S3 or box.com. As a matter of fact, the GUI was so simple and intuitive I quickly created different backups for that required different intervals:  
+
+[[file:images/20200212_1.png]]
+
+# add: change from back in time (https://github.com/bit-team/backintime)
+
+With these created, I was looking a my backups differently. No longer one large archive of all my system files, photos, media and org files, but a separate, /purposeful/ and specific jobs for different kind of needs. 
+
+For example, my [[https://joshrollinswrites.com/help-desk-head-desk/20200201/][photos]] do not need to be backed-up every day. That's because I take new photos perhaps once a week (sometimes less unfortunately). My org files are the opposite case: I work with them daily both at work and at home, and the differences are large enough for two daily backups: midday while I'm at work, making progress on my [[https://joshrollinswrites.com/help-desk-head-desk/20200123/][various projects]], and one late at night, after I've recorded my day in the journal and additional events on the agenda. 
+
+Duplicati also comes with [[https://duplicati.readthedocs.io/en/latest/04-using-duplicati-from-the-command-line/][command-line options]] which can be used to automate similar process on different machines (I can upload my photos from my desktop, and then duplicate the process for a similar backup on my raspberry pi, for example) or to save in case you need it in the future. 
+
+It's too early to tell, but Duplicati' approach to backups with its ability to work with b2 out of the box is making the long-trusted [[https://github.com/bit-team/backintime][back-in-time]] obsolete: there's no need to backup to my external with one program and upload to b2 with another; duplicati is perfectly fine backing up what I need to my external as well. 
+
+**** Footnotes
+
+[fn:27] Backblaze is an excellent service/tool in itself. For "regular" home users, they have a simple desktop tool (Mac or Windows) that backs up everything important on the computer (main hard drive and system files) by default, but easy enough to work with if you want to be more granular about your approach, including password-protected encryption. They are aggressively affordable, even more so than Amazon's Glacier. 
 
 
 ** BMC

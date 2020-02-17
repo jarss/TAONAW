@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.62.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "Best Tools for the job: Duplicati",
+    "headline" : "Best Tools for the job: Duplicati",
+    "description" : "\x3cp\x3eOne of the things I\x27ve kept postponing since \x3ca href=\x22https:\/\/joshrollinswrites.com\/help-desk-head-desk\/20191208\/\x22\x3eswitching to Linux on my desktop\x3c\/a\x3e has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I\x27ve kept postponing the critical need for an online backup too long.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-02-12 00:00:00 -0500 EST",
+    "dateModified" : "2020-02-12 00:00:00 -0500 EST",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/20200212\/",
+    "wordCount" : "714",
+    "keywords" : [ "tools","linux","automation","Blog" ]
+}
+</script>
+
+  
+  <title>Best Tools for the job: Duplicati &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Fatface:400,400i,700">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Montserrat|Noticia+Text|PT+Sans:400,400i,700">
+
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+      <p class="lead">
+      Tech, Life, and the Stuff in Between: A blog by <a href="https://joshrollinswrites.com//about">Josh Rollins</a>. 
+      </p>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Popular Topics</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(17)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(8)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(6)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/automation"> automation <small>(5)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(5)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/tools"> tools <small>(5)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/security"> security <small>(4)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/hugo"> hugo <small>(3)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h4><a href="https://joshrollinswrites.com/tags/">All Topics →</a></h4>
+        
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>Best Tools for the job: Duplicati</h1>
+ <time datetime=2020-02-12T00:00:00-0500 class="post-date">2020-02-12  
+
+
+
+    
+      / <a href="https://joshrollinswrites.com/tags/tools/">tools</a>
+      / <a href="https://joshrollinswrites.com/tags/linux/">linux</a>
+      / <a href="https://joshrollinswrites.com/tags/automation/">automation</a>
+</time>
+ <p>One of the things I've kept postponing since <a href="https://joshrollinswrites.com/help-desk-head-desk/20191208/">switching to Linux on my desktop</a> has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I've kept postponing the critical need for an online backup too long.</p>
+<p>I've been a happy <a href="https://www.backblaze.com/">Backblaze</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> customer for about half a year, and I used their <a href="https://www.backblaze.com/cloud-backup.html">full computer backup plan</a> on Windows for a flat fee of $60 a year. With Linux though, this plan was no longer an option. It seemed Backblaze was telling me &ldquo;hey man, now that you're using Linux full time, it's time to wear the big boy's hat and stop using our training wheels. Get serious, or go back to Windows.&rdquo;</p>
+<p>Backblaze's <a href="https://www.backblaze.com/b2/cloud-storage.html">B2 Backup</a> is one of the most affordable (if not <em>the</em> most affordable) deals I've found. I had to create a script that would most likely run with <a href="http://duplicity.nongnu.org/">Duplicity</a>, a trusted Linux tool that's been around for a while. After a massive project at work finally ended, I had the time to sit down and try to make it work. I started running into issues though: it seemed like authentication with B2 was rejected due to some known issue, but I couldn't find too much information about fixing it. What I did found though, as I was looking through various help documentations, is a lesser-known FOSS tool: <a href="https://www.duplicati.com/">Duplicati</a>.</p>
+<p>You can tell by the game of words here that Duplicity and Duplicati are related: &ldquo;The Duplicati project was inspired by Duplicity and had similar functionality until 2008,&rdquo; its team says in the manual, and the philosophy is the same: a free encryption-supported tool for backups. It's not directly available in official depositories (maybe in rolling releases?) due to its beta status, but it's <a href="https://www.duplicati.com/download">easy enough to download for Debian-based distros</a> (this is another example of why <a href="https://joshrollinswrites.com/help-desk-head-desk/20200108/">switching to Kubuntu</a> was a good idea for me).</p>
+<p>Duplicity's GUI is easy enough to understand, almost to the point that their <a href="https://duplicati.readthedocs.io/en/latest/">manual</a> or excellent <a href="https://www.duplicati.com/articles/Getting-Started/">getting started guide</a> are not needed. As it turns out, connection settings for Backblaze's B2 backups come built-in, as well as many other options like Amazon's S3 or box.com. As a matter of fact, the GUI was so simple and intuitive I quickly created different backups for that required different intervals:</p>
+
+
+
+<figure>
+    
+        <img src="https://joshrollinswrites.com/ox-hugo/20200212_1.png"/> </figure>
+
+<p>With these created, I was looking a my backups differently. No longer one large archive of all my system files, photos, media and org files, but a separate, <em>purposeful</em> and specific jobs for different kind of needs.</p>
+<p>For example, my <a href="https://joshrollinswrites.com/help-desk-head-desk/20200201/">photos</a> do not need to be backed-up every day. That's because I take new photos perhaps once a week (sometimes less unfortunately). My org files are the opposite case: I work with them daily both at work and at home, and the differences are large enough for two daily backups: midday while I'm at work, making progress on my <a href="https://joshrollinswrites.com/help-desk-head-desk/20200123/">various projects</a>, and one late at night, after I've recorded my day in the journal and additional events on the agenda.</p>
+<p>Duplicati also comes with <a href="https://duplicati.readthedocs.io/en/latest/04-using-duplicati-from-the-command-line/">command-line options</a> which can be used to automate similar process on different machines (I can upload my photos from my desktop, and then duplicate the process for a similar backup on my raspberry pi, for example) or to save in case you need it in the future.</p>
+<p>It's too early to tell, but Duplicati&rsquo; approach to backups with its ability to work with b2 out of the box is making the long-trusted <a href="https://github.com/bit-team/backintime">back-in-time</a> obsolete: there's no need to backup to my external with one program and upload to b2 with another; duplicati is perfectly fine backing up what I need to my external as well.</p>
+<h2 id="footnotes">Footnotes</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Backblaze is an excellent service/tool in itself. For &ldquo;regular&rdquo; home users, they have a simple desktop tool (Mac or Windows) that backs up everything important on the computer (main hard drive and system files) by default, but easy enough to work with if you want to be more granular about your approach, including password-protected encryption. They are agreesively affordable, even more so than Amazon's Glacier. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>
