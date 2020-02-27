@@ -2,15 +2,12 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title}}</h1></a>
-      <p class="lead">
-      Tech, Life, and the Stuff in Between: A blog by <a href="{{ .Site.BaseURL }}/about">Josh Rollins</a>. 
-      </p>
     </div>
     <nav>
       <ul class="sidebar-nav">
 	<h3>Popular Topics</h3>
 	{{ range $.Site.Taxonomies.tags.ByCount }}
-	{{ if gt .Count 2 }}
+	{{ if gt .Count 4 }}
 	<li>
 	  <a href="/tags/{{ .Name }}"> {{ .Name }} <small>({{ .Count }})</small></a>
 	</li>
@@ -20,8 +17,13 @@
         {{ range .Site.Menus.main -}}
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
         {{- end }}
+	  <h3>About</h3>
+	  <a href="{{ .Site.BaseURL }}/about">Josh Rollins</a>
+	  <a href="{{ .Site.BaseURL }}/taonaw">TAONAW</a>
       </ul>
     </nav>
   </div>
 </aside>
+
+
 

@@ -78,14 +78,14 @@ a {
 
 
 /* We need this so links in footnotes are not red... */
-.footnotes a {
+.footnote-ref a {
     color: #515151;
 }
 
 
 /* ...Only links at the end that takes us back should be red. This is the return text (that takes us back to the post) */
 
-a.footnote-return {
+a.footnotes {
   color: #8B0000;
   text-decoration: none;
   font-size: 1rem;
@@ -96,13 +96,14 @@ a.footnote-return {
 /* This adds space between the list items in the footnotes, to make them more clear */
 
 .footnotes li {
-  margin: 0 0 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 /* This is the anchor link. I have to use important because otherwise the general link takes over. */
 
-.footnote-ref a {
+a.footnote-ref {
   color: #ac4142 !important;
+  text-decoration: none !important;  
   font-size: .75rem !important;  
 }
 

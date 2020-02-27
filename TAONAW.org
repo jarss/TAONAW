@@ -251,7 +251,7 @@ The main technology section. Every project starts here, eventually branching off
     agenda, this looks just like another project I do during the week.
     it fits inside the tasks list and on my phone just the
     same. 
-   
+~   
     I was in for another pleasent surprise: In my agenda, since now I
     seperated the setups to a different file, my category problem
     suddenly disappeared as well. All my laptop setups were shown as
@@ -2446,11 +2446,11 @@ Some of you may scuff about Instagram. Why use Facebook's commercial platform on
 
 Let me know what you think, especially if you're a regular reader of this site!
 
-*** WIP Best Tools for the job: Duplicati            :tools:linux:automation:
+*** PUBLISHED Best Tools for the job: Duplicati      :tools:linux:automation:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200212
-    :EXPORT_HUGO_PUBLISHDATE: 2020-02-12:
+    :EXPORT_HUGO_PUBLISHDATE: 2020-02-14:
     :END:
 
 One of the things I've kept postponing since [[https://joshrollinswrites.com/help-desk-head-desk/20191208/][switching to Linux on my desktop]] has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I've kept postponing the critical need for an online backup too long.
@@ -2481,6 +2481,28 @@ It's too early to tell, but Duplicati' approach to backups with its ability to w
 
 [fn:27] Backblaze is an excellent service/tool in itself. For "regular" home users, they have a simple desktop tool (Mac or Windows) that backs up everything important on the computer (main hard drive and system files) by default, but easy enough to work with if you want to be more granular about your approach, including password-protected encryption. They are aggressively affordable, even more so than Amazon's Glacier. 
 
+*** WIP Thoughts About Ease of Use and Google
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200218
+    :EXPORT_HUGO_PUBLISHDATE: 2020-02-18:
+    :END:
+
+It seems like hating on Google (or Apple, or Amazon, or whatever tech giant) is the hip thing to do these days. I want to raise a couple of points to argue otherwise. 
+
+#+hugo: more 
+
+I've been running Linux full time at home [[https://joshrollinswrites.com/help-desk-head-desk/20191208/][since last December]] and I'm not looking back. I love the level of control I have, the lack of nagging updates with the potential of breaking everything, the transparency in the application I use through command line, and the overall productivity I get out of it. Witht he acception of a few specific applications, I miss nothing from the Windows days. 
+
+But that doesn't mean I can manage my life without Google. Not yet, not anytime soon, and I think that even if I had the choice, I won't really want to. The same is true for Amazon: it's a giant online retailer that chews away on mom-and-pop shops, draining my local business dry while more college folks move in and old ethentic groups move out. Sounds sinitster, but I'm not in a rush to stop using Amazon. As a matter of fact, since I moved to this neighborhood, I started using it even more and I don't think I'm going to stop any time soon.
+
+You could say I'm part of the problem and I won't disagree with you. I rather use Google maps instead of relaying on hand-written instructions. I rather order something online and have it in my hands two days later than to spend half an hour in a messy Riteaid, look for a product they don't carry anymore, and buy a replacement for two bucks more just because I live in New York City. 
+
+There's no lack of smartphones out there that are not made by Google, but there's only one phone that good enough /and/ cheap[fn:28] enough /and/ has consistant security patches /and/ is not one of those 6.5 inches monsters that I can't use comfortably. There are Linux phoen availble, but they are seemingly expensive prototypes which cannot compete with the apps Google Android has.
+
+
+**** Footnotes
+[fn:28] That's the Google Pixel a line, /not/ the Google Pixel flagship line, which seems to be expensive just because Apple can get away with it. 
 
 ** BMC
 :PROPERTIES:
@@ -2512,19 +2534,27 @@ your mom!!!! yes
    :EXPORT_HUGO_LAYOUT: single
    :END:
 
-Josh Rollins is an NYC based self-made-techie who works with humans and machines and enjoys interacting with both. He explores automation, privacy, and affordability in tech, and most of the time finds himself tangled in the blurred lines between the real and the ideal.  
+Josh Rollins is an NYC based self-made-techie who works with humans and machines and enjoys interacting with both. He explores automation, privacy, and affordability in tech. As a result, he often finds himself tangled in the blurred lines of the real and the ideal.  
 
-Rollins has broken his technology - this website included - many times over. While he sees himself disqualified to give any /good/ advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle. 
+Rollins has broken his technology (this website included) many times over. While he feels disqualified of giving any good advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle. 
 
-As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find these days, but he can be reached at jarss at protonmail dot com, [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]].
+As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find, but he can be reached at jarss at protonmail dot com, [[https://www.reddit.com/user/JR121][Reddit]], or [[https://mastodon.technology/web/accounts/115656][Mastodon]].
 
+* TAONAW: The Art of Not Asking Why 
+:PROPERTIES:
+   :EXPORT_HUGO_SECTION: TAONAW
+   :EXPORT_FILE_NAME: _index
+   :EXPORT_HUGO_LAYOUT: single
+   :END:
 
+This website is virtually free to maintain[fn:29]. 
 
+TAONAW is created with [[https://gohugo.io/][Hugo Go]], a free open-source site generator. It is designed and authored on a free Linux OS using [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org-mode]] and [[https://ox-hugo.scripter.co/][ox-hugo]].  Bandwidth is currently supplied free of charge by Github. 
 
+I write posts in my free time because I want to and I enjoy doing so. No one is supporting me, sponsoring me, or otherwise paying me anything to write or create or publish any content. The goal is to keep things this way. 
 
+As a token of appreciation, I do take one-time [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XBBGQRR2CX5EJ&source=url][tips]]. I am also planning on selling some of my [[https://joshrollinswrites.com/help-desk-head-desk/20200201/][photos]] in the future. 
 
+** *Footnotes*
 
-
- 
-
- 
+[fn:29] The domain, joshrollinswrites.com, costs me about $15 and change with per year.

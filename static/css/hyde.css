@@ -175,6 +175,7 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
      font-size: 1.2rem;
      padding-left: -2em;
      border-bottom: dotted .2rem #000;
+     text-align: center;
 
 }
 
