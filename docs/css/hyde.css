@@ -103,9 +103,9 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
   margin-bottom: 2rem;
   padding-right: .5rem;
   padding-bottom: .8rem;
-  font-family: "Righteous", serif;
+  font-family: Righteous;
   font-size: 3.2rem;
-  word-spacing: 2rem;
+  word-spacing: 100rem;
   text-align:  left;
   font-weight: normal;
   line-height: 3rem;
@@ -118,7 +118,7 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
 		   
 		   
 .sidebar-about a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .lead a {
@@ -172,10 +172,14 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
 }
 
 .sidebar-nav h3 {
-     font-size: 1.2rem;
-     padding-left: -2em;
-     border-bottom: dotted .2rem #000;
-     text-align: center;
+    font-family: "Righteous", serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-decoration: dotted;
+    color: #515151;
+    margin-bottom: 0px;
+    padding-left: -2em;
+    text-align: left;
 
 }
 

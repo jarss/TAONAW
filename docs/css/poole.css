@@ -48,9 +48,9 @@ body {
 }
 
 html {
-  font-family: "Noticia Text", Helvetica, Arial, sans-serif;
+  font-family: "Merriweather", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 @media (min-width: 800px) {
   html {
@@ -68,9 +68,9 @@ body {
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
   color: #515151;
-  text-decoration: underline;
-  font-size: 1rem;
-  font-family: "Noticia Text", arial; 
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Merriweather", arial; 
   
 }
 
@@ -85,15 +85,23 @@ a {
 
 /* ...Only links at the end that takes us back should be red. This is the return text (that takes us back to the post) */
 
+
 a.footnotes {
   color: #8B0000;
   text-decoration: none;
   font-size: 1rem;
-  font-family: "Noticia Text", arial; 
+  font-family: "Merriweather", arial; 
   
 }
 
 /* This adds space between the list items in the footnotes, to make them more clear */
+
+.footnotes {
+   font-family: "Merriweather", arial;
+}
+   .footnote[role] {
+   color: #ac4142;        
+   }
 
 .footnotes li {
     margin: 0 0 1rem 0;
@@ -107,6 +115,14 @@ a.footnote-ref {
   font-size: .75rem !important;  
 }
 
+a.footnote-backref {
+  color: #ac4142 !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  font-size: 1rem !important;  
+
+}
+
 /* `:focus` is linked to `:hover` for basic accessibility */
 /*  JRSS: I moved it because I think it looks better without. 
 a:hover,
@@ -115,13 +131,17 @@ a:focus {
 }
 */
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+
+/* If each element is different enough for it's own tag expention (below), then what's the point of having a generic "do this for all" block? Copy the one or two things that are different to each block, and have a better idea of where the CSS coming from later - JR 
+
+  h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
   font-family: "Oswald", arial;
+*/
 }
 h1 {
     font-size: 2.2rem;
@@ -130,6 +150,7 @@ h1 {
     border-color: #eee8d5;
     margin-bottom: -.1rem;
 }
+
 h2 {
   margin-top: 1rem;
   font-size: 1.4rem;
@@ -149,7 +170,7 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: "Noticia Text", arial; 
+  font-family: "Merriweather", arial; 
 }
 
 
@@ -162,7 +183,7 @@ strong {
 ul, ol, dl, {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: "Noticia Text", arial; 
+  font-family: "Merriweather", arial; 
 }
 
 dt {
@@ -171,6 +192,12 @@ dt {
 dd {
   margin-bottom: .5rem;
 }
+
+.posts li {
+    text-transform: capitalize;
+    border-bottom: 1px dotted;
+}
+
 
 /* Misc */
 hr {
@@ -199,9 +226,9 @@ pre {
 }
 code {
   padding: .25em .5em;
-  font-size: 85%;
-  color: #ac4142;
-  background-color: #f9f9f9;
+  font-size: .8rem;
+  color: #8B0000;
+  background-color: #eee;
   border-radius: 3px;
 }
 pre {
@@ -281,7 +308,7 @@ tbody tr:nth-child(odd) th {
 
 .lead {
     font-size: 1rem;
-    font-family: "Noticia Text", arial;
+    font-family: "Merriweather", arial;
     text-align: left;
     font-weight: bold;
     
@@ -361,38 +388,56 @@ tbody tr:nth-child(odd) th {
 }
 
 .post p{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .post p a{
     text-decoration: underline;
     text-decoration-style: solid;
-    font-family: "Noticia Text", arial;
-    font-size: 1rem;
+    font-size: 14px;
+    family: "Merriweather", arial;
     color: #515151;
 }
 
 /* Here is the part for the lists in the posts */
 
 .post li{
-    font-size: 16px;
-    font-family: "Noticia Text", arial;
+    font-size: 14px;
+    font-family: "Merriweather", arial;
     display: list-item;
     color: #515151;
 }
 
 .post .read-more-link a {
-     color: #8B0000;
+    font-family: "PT Sans";
+    font-size: 1rem;
+    text-decoration: none;
+    color: #8B0000;
+    
 }
+
+.post h1{
+    font-family: "Merriweather";
+    text-decoration: none;
+    border-bottom-style: dotted;
+    border-bottom-color: #eee8d5;
+    word-spacing: .3rem;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    margin-bottom: .1rem;
+}
+    
 
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-    font-family: "Montserrat";
+    font-family: "Merriweather";
     text-decoration: none;
-    font-size: 2rem;    
+    word-spacing: .3rem;
+    font-size: 1.7rem;
+    line-height: 1.5rem;
 }
 
 .page-title,
@@ -416,7 +461,7 @@ tbody tr:nth-child(odd) th {
 
 .post .post-date a{
   font-family: "PT Sans";
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: underline;
   color: #8B0000;
 }
@@ -431,7 +476,7 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts {
   padding-left: 0;
-  list-style: none;
+  list-style: Merriweatherne;
 }
 .related-posts h3 {
   margin-top: 0;
@@ -442,7 +487,7 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li a:hover {
   color: #268bd2;
-  text-decoration: none;
+  text-decoration: Merriweatherne;
 }
 .related-posts li a:hover small {
   color: inherit;
@@ -457,7 +502,7 @@ tbody tr:nth-child(odd) th {
  * Pagination
  *
  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
+ * there are Merriweather more previous or next posts to show.
  */
 
 .pagination {
