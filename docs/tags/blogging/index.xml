@@ -6,13 +6,22 @@
     <description>Recent content in blogging on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Update</title>
+      <title>Blog Update 2020-02</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200301/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200301/</guid>
+      <description>&lt;p&gt;I ironed out a couple of CSS issues that popped up since I updated Hugo and implemented a few navigation and new page. Why and how&amp;hellip; Coming up.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>General Update</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20191229/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 -0500</pubDate>
       

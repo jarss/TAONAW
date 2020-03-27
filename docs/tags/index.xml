@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>photography</title>
+      <link>https://joshrollinswrites.com/tags/photography/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogging</title>
+      <link>https://joshrollinswrites.com/tags/blogging/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/blogging/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>life</title>
@@ -57,29 +75,11 @@
     </item>
     
     <item>
-      <title>photography</title>
-      <link>https://joshrollinswrites.com/tags/photography/</link>
-      <pubDate>Tue, 04 Feb 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>orgmode</title>
       <link>https://joshrollinswrites.com/tags/orgmode/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blogging</title>
-      <link>https://joshrollinswrites.com/tags/blogging/</link>
-      <pubDate>Sun, 29 Dec 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/blogging/</guid>
       <description></description>
     </item>
     
