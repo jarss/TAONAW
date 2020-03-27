@@ -2071,77 +2071,6 @@ I'm still not sure how to fit the link to the about section in the sidebar. For 
 
 **** Footnotes
 
-*** CANCELLED Emacs & Org From the Beginning: Part 1
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: back-to-beginnings
-    :EXPORT_HUGO_PUBLISHDATE: 2019-10-18:
-    :END:
-
-intro here
-
-#+hugo: more
-
-**** How to Read the Keys
-
-One of the early realizations that I'm looking into something "weird" happened when I started looking into Emacs key "shortcuts[fn:17]". I came across things like saving (=C-x C-s=) and aborting (=C-g=) and suspected "C" was for control, but got thrown off by execute command (=M-x=). Only after reading more "normal folks" explinations like [[https://masteringemacs.org/book][Mastering Emacs]] I understood this crazines. 
-
-Capital C is indeed the Control key, but capital M turns out to be the [[https://en.wikipedia.org/wiki/Meta_key][Meta key]], which is mostly replaced by the Alt key on a regular PC keyboard of the Command key on a Mac. This means that the above command, =C-x C-s=, means "press Control-X and then press S while still pressing the Control key." That last bit is important, because it's different from =C-x s=, for example, which means "press Control-X, let go, and press s", which will invoke a different command altogether. 
-
-In the beginning, Emacs weird key combinations was the hardest part to get over. It does take time, but after I've dopted these combos and started using them, they started to make more and more sense. Still there are exceptions. For example, I still don't use Emacs's built in move up (=C-p=) or down (=C-n=) and prefer the arrows instead except special cases[fn:18]. 
-
-[fn:17] Back then, pressing keys instead of using the mouse was refered to as "shortcuts." I knew Emacs works directly from the keyboard, but I didn't know how to refer to this odd practice which is second nature now.
-
-[fn:18] Sometimes pressing the up arrow key is taken by another, more familiar function. When I ran shell inside emacs (I don't do that much anymore), pressing =C-p= became important because it would take the cursor and move it inside the text window, /not/ repeat the last command, which is what the up arrow key meant.
-
-**** Overrated: Emacs Built-in Help System
-
-I'm probably going to get a good amount of pushback for this, but I'm just being honest when I say the built-in help system was little to no use to me back when I started using Emacs.
-
-The Emacs built-in tutorial (=C-h t=) is very through and teaches you the basics one step at a time, but I was never the kind of person who would open a thick textbook and start reading cover to cover[fn:19]. Emacs also comes with an extensive help system, and these are some of the pupular combos for it:
-
-=C-h a=: apropos-command: "is there such a thing as [search term] and what does it do?"
-=C-h k=: describe-key: "what does this key do?"
-=C-h f=: describe-function: "what does this function or command do?"
-=C-h v=: describe-veriable: "what does this variable does?" 
-
-But as you can see, you need to at least have a generic idea of what you're looking for in order to get the help you need. 
-
-For instance, if you want to quit a command or escape something, usually by  pressing the "Esc" key anywhere else, you'd be clueless to know it's the =C-g= key combo. You won't know to search for this key combo (=C-h k=) because this is exactly what you're looking for. You won't know what the function is that would cancel a command (is it cancel? escape? quit? and then there are variants of those, like quit-proccess, quit-window...) called, because you have no idea what it is in "Emacs speak". It's not a variable (that much I knew when I started) so =C-h v= is usless here, and even the friendlier "search all" =C-h a= seems to fall short here since you'll be presented with a large list of anything that contains the word "quit" (if that's what you're looking for) in differnent functions and packages, if you have any installed. In short, you'd be lost. 
-
-Having to look up new key-combos like that when I started every single time I wanted to finish a paragraph was terrible, and I believe it's the wrong (and terribly boring) way to learn Emacs. 
-
-So, even with all its good intentions, I didn't use Emacs help system as much as many folks told me I should. Instead I turned to Google and many different forums where folks as confused as me posted these questions. The book I mentioned above also helped a great deal, since Mickey Petersen explains things to you as another /normal/ computer user. I will get back to this point again and again.
-
-[fn:19] This was never the way for me to learn anything, particularly computer stuff. As a matter of fact, this is one of a few big reasons I did not do well in college in computer programming calsses and decided to put computers behind me for later in life.
-
-    :PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: you-are-on-sale
-    :EXPORT_HUGO_PUBLISHDATE: 2019-10-18:
-    :END:
-
-The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greated with all kinds of windows opening on me, intruding on my space, notifying me on updates, of new games sales, of emails... "click me! No! Click me!!" I heard them yell in the back of my head. I put my coffee down and shut my Windows PC off again, shaking my head.
-
-**** This is Where you Should Start
-
-OK, so I explained how to read Emacs' weird key systems and then encouraged you /not/ to  use the built-in help system. Great. Now what?  
-
-Since Emacs' biggest issue when you start are the keys, we want to do something about making the environment more familiar. Again, many veteran Emacsers would yell at me here, and I myself cringe at the thought of using CUA mode these days, but you got to start somewhere familar, and this is a good place. 
-
-CUA mode, AKA Common User Access mode, is what you're probably familiar with in most Word proccessing programs. Control+C to copy, Control+X to cut, Control+v to paste, etc. To turn this on, Click the "Options" menu at the top of the Emacs window (yes, with your mouse...) and check the box next to "Use CUA Keys". Then from the same menu all the way at the botton, click "Save Options" if you want this to be turned on every time you start Emacs. Congradualtions, you've just saved yourself the mental pain of looking for "paste" in Emacs for 20 minutes and then realizing it doesn't exist (in Emacs speak, paste is "yank"). 
-
-Now that you've made Emacs a bit "stupider" to fit your needs (as you become better at Emacs, you'll learn quickly why CUA mode is not that good later on), it's time to tweak yourself a bit for Emacs. 
-
-Look down at your keyboard, at that Caps key. See it? Do you remember when's the last time you've used it? Did you ever wonder why such a useless key is so big and pronouced? Well then, congradulations. Time to kiss it goodbye. From now on, your Caps key will function is a secondary control key. 
-
-Emacs uses the control key a lot. And I mean, a /lot/. Today's modern keyboards are simply not meant for frequent control presses (remember, Emacs was invented back when a Meta key was a thing and "paste" did not exist in the computer user's lexicon). Emacs users developed a terrible condition called "Emacs Pinky." And yes, I can tell you from personal experience (I have smaller hands), it's a real thing. Many Emacs guros wrote pages on avoiding the Emacs pinky ([[http://ergoemacs.org/emacs/emacs_pinky.html][here's a good one]]), but using your Caps key as control is probably one of the eaisest. 
-
-This is easy to do in Linux and Macs, but somewhat tricker in Windows. The best tool I found for that is [[https://docs.microsoft.com/en-us/sysinternals/downloads/ctrl2cap][Ctrl2Cap]]. Take care of this now. Don't be that person who knows better. Don't be me. Just do it. Emacs has very smart ways of turning any words or letter to upper-cases in ways that will blow your socks off later.  
-
-
-**** Footnotes
-
 *** PUBLISHED Too Many Notifications                          :windows:linux:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2282,7 +2211,7 @@ But. While this sounds ideal, I don't think it'll ever happen. That's because I 
 
 **** Footnotes                                                :windows:linux:
 
-*** PUBLISHED Update                                               :blogging:
+*** PUBLISHED General Update                                       :blogging:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20191229
@@ -2518,6 +2447,191 @@ There are areas that require improvement. Again, take my photos. They are very p
 
 [fn:28] That's the Google Pixel *a* line, /not/ the Google Pixel flagship line, which seems to be expensive just because iPhones are expensive. 
 
+*** PUBLISHED Blog Update 2020-02                                  :blogging:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200301
+    :EXPORT_HUGO_PUBLISHDATE: 2020-03-09:
+    :END:
+
+I ironed out a couple of CSS issues that popped up since I updated Hugo and implemented a few navigation and new page. Why and how... Coming up. 
+
+#+hugo: more
+
+**** Posts Fonts, Read More
+Changed to [[https://fonts.google.com/specimen/Merriweather][Merriweahter]]. This font looks better when smaller, which is what I was after. Overall font size was decreased and space between lines increased. This was done to improve how the site looks and to resolve the footnote notation issue, where the footnote indicator pushes the line further up than the rest. The "Read More" link was changed to clear, better looking down arrow, supported by [[https://fontawesome.com/][Font Awesome]].
+
+**** Footnotes Changes
+Footnotes indicators are now smaller and colored in dark red (same as title) to increase visibility despite the smaller size. The footnote back link arrows aws decreased in size and colored red as well. 
+
+**** Sidebar Changes
+The leading text ("a blog by Josh Rollins: Tech, Life, and the Stuff in Between") has been removed: the text just restates the obvious function of the site. A new page was added ([[https://joshrollinswrites.com/taonaw/][TAONAW]]), a link to it and to the about page about me were added now that there's more room. Popular Topics count increased to 5 (only topics that repeat more than 5 times show now, the rest are uner "All Topics"). The font for these sections was changed to [[https://fonts.google.com/specimen/Righteous][Righteous]], same as the title font. 
+
+*** TODO Powershell tutorial 
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200308
+    :EXPORT_HUGO_PUBLISHDATE: 2020-03-08:
+    :END:
+
+This is a short script that I wrote after a day of research at work. I am not a PowerShell expert, not even a rookie, but the need for automating repeated tasks combined with a good dose of curiosity and experience with some Bash automation sure goes a long way. 
+
+The script changes the network adapter's(WiFi, in this case) DNS' settings to specific IP addresses and suffixes to work in a certain domain(s). I will first dump the script here (with comments) and then go in depth and explain the whys and hows. 
+
+#+Hugo: more
+
+First, as what is becoming a tradition, the script itself in all it's glory. Of course, internal IP addresses as well as my work domain have been removed: 
+
+#+BEGIN_src
+<# 
+Comments? 
+
+can have more than one line in here
+#>
+
+# Get the instanceID from our Wi-Fi adapter, the same way it shows in the registry:
+
+$wifi_adapter = (Get-NetAdapter -name "Wi-Fi").instanceID
+
+# Add the DNS suffixes for our DNS settings in registry
+
+Set-Itemproperty -path 'HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters' -Name 'SearchList' -value 'small.domain.com,biggerdomain.com,even.another.domain.com'
+
+# Add the DNS IP addresses to the right interface (Wi-Fi) which we got before. Note to self, need to use " and not ' when using variable in a path
+
+Set-Itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\$wifi_adapter" -Name 'NameServer' -value '10.111.111.111,10.121.121.121,10.131.131.131,10.141.141.141,1.1.1.1,8.8.8.8'
+#+END_src
+
+**** 1
+
+OK, so what's going on here. 
+
+The script starts with a comment. In PowerShell, anything between the ~<#~ and ~#>~ is a comment. Good to explain what the script does, when it was created, etc. 
+
+Then we dive in and start by defining a variable. We're going to use ~$wifi_adapter~ as a dead-simple indication of what this varible is going to contain. The magic start with a few PowerShell commands, which are called Cmdlets[fn:17]. 
+
+Now, note the syntax:
+1. The cmdlet itself is ~Get-NetAdapter~.
+2. We "filter" the results we get from it by using paramater. That's the ~-name~ part. What are we looking for specifically? "Wi-Fi".
+3. Both of these are in parenthasis. That's because the next bit, the instanceID property, takes affect on the result of the /whole/ combination, Get-Netadapter and -name "Wi-Fi" together[fn:18].
+4. Next, we take our expression in the parenthasis, and "filter" it for a single property, instanceID[fn:19]. Why instanceID? We will get into that soon.
+5. Finally, we take the output of this command and store it into our wifi_adapter veriable. 
+
+Whew. That was a lot. You're probably still confused especially because you don't understand yet /why/ we're doing what we're doing here. This part's coming up now. 
+
+**** 2
+
+In order to change a certain way a computer works automatically (via script) we can't use the GUI. Things have to be done in the background, when we're not there. In Windows, the way to make changes is through the [[https://en.wikipedia.org/wiki/Windows_Registry][Windows Registry]]. In brief, the registry is your Window's book of instructions that make it what it is. It's its DNA, in a way. That's why you need to be careful messing with it: you might end up with a mutation that will result in a blue screen of death the next time you reboot. 
+
+I knew I am looking for a certain way to isolate the wifi adapter going in. that's because the DNS changes implemented on this script are usually accessible to us via the GUI in network adapter settings. After a bit of Googling around and looking into the registry, I learned that the way the regsitry identifies network adapters is by their unique instance string. 
+
+In order to manipulate the right adapter with the script, I first had to find it in the registry. In our script, that's done by asking the computer (using PowerShell) "hey, what's the unique ID for the adapter that is named Wi-Fi adapter?" Or, more human like: "What's the Wi-Fi's adapter's unique ID?" Change Wi-Fi to "Ethernet" and you'd get your Ethernet unique ID[fn:31].
+
+**** 3
+
+Now that we understand why we're looking for the adapter's uniqueID and how to find it, the rest of the scrip is pretty straight forward. 
+
+We use the ~Set-Itempropery~ cmdlet to change an item's property. In Powershell, cmdlets are usually structured in a verb-noun way that makes sense. So earlier we wanted to /get/ the instanceID as it is in the regsitry, and now we want to /set/ a property. Which property are we setting? We already know we want to change something in the registry, and that's where the ~-path~ comes in. 
+
+It might be hard to grasp, but the registry is just another folder on your computer, located in  =Windows\system32\config=. When we want to interact with it we usually fire up regedit to view everything, but regedit is just a viewing tool, another GUI that most of us associate so strongly with the resgistry that we think the tool itself is, in fact, the registry. Go ahead and navigate to the path described here using =CD\= and you see what I mean. 
+
+So, we ask powershell to modify an item  called "SearchList" which is inside HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters. You can view it yoursef in goold ol' regedit. What's SearchList? That's the suffixes list for your domains, which we modify with ~-value~. The Suffixes are the last part of a domain, usually what we are used to be .com or .net or whatever, but if you're in a big organization it can be .myorganization.com as well, as your company has subdomains.
+
+I have my suffixes in my original script, this one has sample ones. You'd notice that the domains are seperated by a comma, same way they are seperated in the registry. We don't need our Wi-Fi instanceID here yet, because this part is not related to the adapter; the search list relates to all of them. 
+
+The last part of the script is similar. We use PowerShell to modify a value in the regsitry, but this time it's the specific adapter's DNS IP addresses. We got the value earlier. We start the same w ay here, with Set-Itemproperty, and the path is more specific as we get deeper into the regsitry. Look closely and you'll see our variable from before, wifi_adapter, right there in the path with the $ sign in front of it - which is how we tell PowerShell to throw in the path into the text. Look in your registry with regedit and it will make even more sense. 
+
+Similar to the suffixes from before, the values are IP addresses seperated by commas. You will most likely have internal IP addresses, I just used a few bugous ones - besides the last two. 1.1.1.1 and 8.8.8.8 are cloudflare and Google's DNS, respectively. 
+
+
+[fn:31] Those of you with experience in PowerShell (which is not me, by the way) will probably have a problem with the script relaying only on "Wi-Fi" in the name as a way to identify the right adapter. After all, a computer can have several Wi-Fi adapters. For my specific needs in my work environment, where we get a laptop fresh out of the box and implement this script first, this works. However, I should probably narrow it down further by being more specific and identifying the Wi-Fi adapter that is running (status=up) or other means, like the manufacturer etc. I realized this as I was writing this post. 
+
+[fn:19] The ~Get-NetAdapter~ has /many/ properties. You can view a list of those by running ~Get-NetAdapter | Get-Member -MemberType Property~. Notice that here we run Get-NetAdapter but this time we take the output and pipe it into another cmdlit, [[https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-member?view=powershell-7][Get-Member]], which shows us a list of properties, members and methods. Since we only want properties, we ask it to show us only the type that is a property. Get-Member is a very helpful cmdlet which shows what options you have availble for other cmdlets, in this case, Get-NetAdapter. 
+
+[fn:18] If you're coming from Bash like I do, A similar effect can be achieved by piping: ~Get-NetAdapter -name "Wi-Fi" | Format-List -property "instanceID"~. This, even though looks more complicated, might make sense to you as it did to me. The names in PowerShell are intuitive, so you can guess "Format-List" presents some sort of a list, and you can see that you're looking for a property named "InstanceID". You attach the two parts of the command with a pipe like you'd do in Bash. Read a bit more at step 4 and then come back here, see if this note makes even more sense then.
+
+[fn:17] "A cmdlet is a lightweight command that is used in the Windows PowerShell environment. The Windows PowerShell runtime invokes these cmdlets within the context of automation scripts that are provided at the command line." [[https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7][You can read more about this on the official Micrsofot website]]. 
+
+*** TODO Corona data
+
+#**** How Infectious is it
+In general, infection of pandemics and the like is measured by [[https://en.wikipedia.org/wiki/Basic_reproduction_number][R0]].But R0 is [[https://wwwnc.cdc.gov/eid/article/25/1/17-1901_article][a complex thing]], especially for a developing disease. Basically, the number tells us how many people can one sick person infect. For example, the Coroan's virus currently (last checked [2020-03-16 Mon]) highest R0 is 3.9. This means 4 new people will can get infected. This is the highest rate. The lowest rate is 1.4[fn:32]. It is worth noting that these findings are far from final and the number will flexuate as we learn and experience more[fn:33]. For now, it is estimated the virus is about about twice as contegious as the flu. 
+
+# ***** How Deadly is it
+# Estimating the fatality of COVID-19 (the disease caused by the Corona virus, *Co*-rona *Vi*-rus *D*-isease 20-*19*) is more challanging than estimating how infectious it is. That's because people with severe cases are usually detected first, and those usually have other health-complications made worse by the disease. The [[https://www.nytimes.com/interactive/2020/world/asia/china-coronavirus-contain.html?auth=login-email&login=email#transmission][same article from the NYT]] mentioned above states that 50 out of 44,000 (which is about 2%) died. The [[https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html][CDC reports]] that out of 1,629 cases (at the time of this writing - [2020-03-16 Mon]) 41 died, which is 2.5%. So, if we roughly estimate on this non-finalized data, we can speculate that out of 1000 people, 25 will die. The seasonal flu kills about 1 person out of 1000. 
+
+
+
+# - - -
+
+# There's the issue of Corona being asymptomatic, meaning, a person can tansmit without showing any syptomps. That's a problem because many folks just say "hey, I just have a bit of a cough and/or throat pain, no big deal" and they have it. But, mostly (according to below), this is not the case and most people do fall ill - though how ill, how long, how bad, that's all questionable now. 
+
+
+# #+begin_quote
+# People are thought to be most contagious when they are most symptomatic (the sickest).
+#    Some spread might be possible before people show symptoms; there have been reports of this occurring with this new coronavirus, but this is not thought to be the main way the virus spreads.
+
+#  /[[https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html][CDC: "Can someone spread the virus without being sick?"]]/
+#+end_quote 
+
+# [fn:32] This R0 rate is taken from Wikipedia's article, which took information from four different studies - some  from China, some from the US. 
+
+# [fn:33] The NYTimes [[https://www.nytimes.com/interactive/2020/world/asia/china-coronavirus-contain.html?auth=login-email&login=email#transmission][has real-time updates]] about the situation. The R0 estimate (the NYTimes the R0 to be 2-4, based primaerly on [[https://watermark.silverchair.com/taaa021.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAlkwggJVBgkqhkiG9w0BBwagggJGMIICQgIBADCCAjsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMxkTYb0lYXZwc8fnrAgEQgIICDF2jSbigfuZ3fRp1lOCLN3P48tihu1NmhzfI5PyFpKRqXqIzZrxG1z1Fa-sUVtbFKwU8h2yHpzkPdsUZ_KnCJxG1O4kJUcH0kTSivJKQJPtRgb-gECyBS-g7DOt7XKkbD8YgqB_JF6dAO8Sllx0r-4mpDlTauY9ZJ6HKmbXn7WG5HnEJYWKsGQGunxy56bgc7hK--x-fBbhREZ-c0tk80BU4zQtQwC0pX13aRcnkS72bh7CpXPs6EH7voWv32yPGeBgUkEj-B-YDw5XOw_OqM-AO_ff222zzNEmODphkd-uUOO8xET13rKYWtGF8LvRacHYUs_vjwQFny1Iwqwq1tcw7JEnF33RrLFBfEt5OQ3ZuASI1WPMFP-EtOIg3rK1T6tU0fcDc8KakSMIFIzrOEg1y8Yt9cWFGN7b03eOXj7oZNLZJdGR8XD06DeDdx2vtQFK7sBgyHOVDKKi86tMV3hv8auJYowPsL0b3JgRlt7VFS3jhhTXuq-GVZA8lw9ODSMrT8mpTAkysr4d4O9oEvOLvzpCPkLt-RZx8mWYr3Lz7_ThQnf3vfd3Xkj8ki3Rl8IXm3iEVq0q9gFDmpHr07z7R8kahiRRvzsFAY8_IdBZx3WeFsHhhYNzMehR2L_q9iOo8zOrSY2ImB_qmr2Br52weNOrREgXU6bJoDq_rSDpRvJEIDrXSRNu7m4O1][this study]]. 
+
+*** TODO Coronoa and Logic
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 202003016
+    :EXPORT_HUGO_PUBLISHDATE: 2020-03-22:
+    :END:
+
+Things in TAONAW HQ have been busy. My blog doesn't show it, but I have a long script tutorial waiting to be finished. Due to escalating pandemic, workload has been increasing as we shifted to remote support outside of our regular work hours. Things became more dramatic for me too when my partner told me someone at their workplace has been exposed to Corona, and suddenly I found myself a week at home with only brief visits to the grocery store or for a brisk walk outside.
+
+#+hugo: more
+
+I'm due for a much needed vaction, but there's not much traveling to do right now. Still, having a break from what has become normal 10-hour work day of remote support is a blessing. I've been considering blogging more often through this pandemic, so perhaps this is a good time to talk about a few more personal things. 
+
+When I started this blog, mostly as a developing geeky experiment for Emacs and later Hugo go, I didn't want to involve too many personal details. This still remains the case: I believe most people who end up reading my blog are techies who are not too interested in the personal as much as the technical. Those of you who read between the lines however had their eyebrow raised once or twice because I use through around the term partner, refering to those I live with. I have two partners, and the three of us live together. It is, roughly speaking, a form of [[https://en.wikipedia.org/wiki/Polyamory][polyamory]][fn:34]. There's no particular reason to bring this up now than at any other point besides that it's sometimes relavent to what I write here, and keeping some sort of a "log" through this period definitely falls into this category. I'm not particulalry secretive of my non-monogamous lifestyle, but I also don't advertise it. 
+
+The first days of social-distancing havn't been very sagnificant for me, to be honest. I usually stay away from large groups of people anyway, and I'm know to be one of the guys who leaves the party early. I've been an introvert for as long as I can remember. I also didn't stay stuck at home the etire week: I made sure to go out for walks 
+
+
+[fn:34] A form of it because the term itself has become too loaded with different meanings to different people with the years. The questions of romantic, sexual, or otherwise emotional relationships with people seem to fit or not fit into too many boxes. Overall, I rather use the term non-monogamous. I feel that in this case, describing what I'm not is easier than describing what I am. 
+
+*** WIP TAONAW's First Photography Video                        :photography:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200326
+    :EXPORT_HUGO_PUBLISHDATE: 2020-03-27:
+    :END:
+
+There are currently three unfinished drafts in TAONAW's main org file[fn:36]. It seems as if the [[https://en.wikipedia.org/wiki/Portal:Coronavirus_disease_2019][pandemic]][fn:35] and [[https://en.wikipedia.org/wiki/Social_distancing][social-distancing]] dried out my ideas and ability to express myself. On Tuesday I took a walk into the park and captured some flowers and birds with my camera. As it turned out, the walk outdoors recharged my batteries. I came back home and sat down to finally record my first video about photography. Here are the details about how I did it and why.
+
+#+hugo: more
+
+TAONAW seeks to use free technologies for content, and broadcasting video is another suck example. I was surprised at how easy it was to set up an account and upload the video to https://video.autizmo.xyz, an instant of [[https://en.wikipedia.org/wiki/PeerTube][PeerTube]]. While YouTube and Instagram are unavoidable to reach photography enthusiasts, I'm going to use them only as secondary sources[fn:37]. 
+
+I've created a channel for [[https://video.autizmo.xyz/video-channels/taonaw/videos][TAONAW]] where I plan to keep uploading photograph-related content. There are additional options and information to add to the channel which I need to revisit. I also need to follow up with a YouTube channel, which will work Like with my content on [[https://medium.com/@Josh_Rollins][Medium]], presenting older and selective content. Since I'm not bothered by making a profit out of the videos, much of YouTube's settings do not make a difference to me and I'll just leave them at default. It's a headache next to the simplicity on PeerTube. 
+
+To create the video, I used my [[https://en.wikipedia.org/wiki/Sony_%25CE%25B16000][Sony a6000]], the camera I've been using to take my photos since last October, and [[https://www.amazon.com/gp/product/B005KP473Q/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1][AmazonBasics 60-Inch Tripod]] which I purchased two months ago. Copying the video to [[https://joshrollinswrites.com/help-desk-head-desk/20191208/][Hedwig]], my desktop computer, is a breeze thanks to [[https://en.wikipedia.org/wiki/Gwenview][Gwenview]] which comes with KDE. I Then edited the .mts video file with [[https://en.wikipedia.org/wiki/OpenShot][OpenShot]], cutting ambulances' sirens (I live next to a hospital)  and added comments in text. [[https://en.wikipedia.org/wiki/FFmpeg][FFmpeg]] has been a tool of choice for a couple of years, and I used it here to compress and brighten up the video since I underestimated how dark my room is for the camera (learning from mistakes is the only way to learn). 
+
+The [[https://video.autizmo.xyz/videos/watch/2ecdc35c-ad1d-4bcd-8d92-3df21a117136][resulting video]] is not as bad as I feared, but of course, there's much more to learn. The challenges I've encountered were not technical: the biggest one turned out to be finding a spot that doesn't show the mess in my room; I ended up arranging my photos on my wall. Another was finding what to say: not /lack/ of what to say, but how to say it, how to keep to the point. It is very different than writing a blog post and editing it later. 
+
+I'd love to hear comments, suggestions and general questions about the video and the topic itself.
+
+{{< rawhtml >}}
+<iframe width="560" height="315" src="video.autizmo.xyz/videos/embed/2ecdc35c-ad1d-4bcd-8d92-3df21a117136"></iframe>
+{{< / rawhtml >}}
+
+
+
+**** Footnotes
+[fn:37] I started my photography journey with Instargram, where I still make connections and followers, but going forward I'm planning on giving [[https://pixelfed.social/][Pixelfed]] the main stage.
+
+[fn:36] If you're curious about how my blog is constructed and written with Emacs, look at the About section or read [[https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/][this post]].  
+
+[fn:35] I always like to link to Wikipedia articles when possible, but I find myself at awe at the richness of information happening right now when the members of this dedicated community build a whole subsite inside Wikipedia just about COVID-19. If you haven't yet, please take a look, even if just to see the list of resources and links at the bottom of these articles. So much free and available information.
+
 ** BMC
 :PROPERTIES:
    :EXPORT_HUGO_SECTION: BMC
@@ -2572,3 +2686,6 @@ As a token of appreciation, I do take one-time [[https://www.paypal.com/cgi-bin/
 ** *Footnotes*
 
 [fn:29] The domain, joshrollinswrites.com, costs me about $15 and change with per year.
+
+
+
