@@ -2,7 +2,7 @@
 title = "A new Camera Instead of Pixel4"
 author = ["Josh Rollins"]
 publishDate = 2019-11-08T00:00:00-05:00
-lastmod = 2019-11-20T08:00:48-05:00
+lastmod = 2020-03-27T09:38:26-04:00
 tags = ["photography"]
 draft = false
 +++
@@ -17,7 +17,9 @@ Holding back on the Pixel4 transformed from excitement to "wait, why do I want t
 
 So if all I want is a better camera and to take better photos... Why not just get a good dedicated camera without an $800 phone attached to it?
 
-Within minutes I was already watching a [YouTube Video](https://www.youtube.com/watch?v=9XDQUpLKpaI) about the four different types for digital cameras (by the way, [Dave McKeegan](https://www.youtube.com/channel/UCjYxkqv3N2p1WwjKvbZykvg) has a bunch of very well-made explanatory videos about photography). Hours turned to days as I swallowed everything I could from YouTube and photography websites. When I felt I got an idea of what would work best for me (a generic-purpose mirrorless camera) I posted on Reddit and settled on the [Sony a6000](https://www.dpreview.com/search/?query=sony a6000&product=sony%5Fa6000).
+Within minutes I was already watching a [YouTube Video](https://www.youtube.com/watch?v=9XDQUpLKpaI) about the four different types for digital cameras (by the way, [Dave McKeegan](https://www.youtube.com/channel/UCjYxkqv3N2p1WwjKvbZykvg) has a bunch of very well-made explanatory videos about photography). Hours turned to days as I swallowed everything I could from YouTube and photography websites. When I felt I got an idea of what would work best for me (a generic-purpose mirrorless camera) I posted on Reddit and settled on the [Sony a6000](https://www.dpreview.com/search/?query=sony%20a6000&product=sony%5Fa6000).
+
+{{< figure src="/ox-hugo/20191128.jpg" >}}
 
 My decision was based on a couple of factors:
 
@@ -36,4 +38,4 @@ Three weeks later, I'm happy to report I managed to carry the camera with me to 
 
 ## Footnotes {#footnotes}
 
-[^fn:1]: One difference between cameras and smartphones that I learned early on: there's no huge difference between a 2 year old, a 5 year old and even a 10 year old cameras. I'm sure for professional photographers there are some important factors to consider, but at the same time I have a feeling that folks who have been taking photos for years know how to get great photos from old and new cameras. With a phone, you're expect to buy a new one every 2 or 3 years, with cameras, it's more about investing in what you already have.
+[^fn:1]: One difference between cameras and smartphones that I learned early on: there's no huge difference between a 2 year old, a 5 year old and even a 10 year old cameras. I'm sure for professional photographers there are some important factors to consider, but at the same time I have a feeling that folks who have been taking photos for years know how to get great photos from old and new cameras. With a phone, you're expect to buy a new one every 2 or 3 years, with cameras, it's more about investing in what you already have. :EXPORT\_HUGO\_SECTION: Help Desk Head Desk :EXPORT\_FILE\_NAME: my-new-sonya6000 :EXPORT\_HUGO\_PUBLISHDATE: 2019-11-08:
