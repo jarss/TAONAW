@@ -1,11 +1,12 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+    <img src="title-logo.png">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title}}</h1></a>
     </div>
     <nav>
       <ul class="sidebar-nav">
-	<h3>◾ Popular Topics</h3>
+	<h3>◾ Frequent</h3>
 	{{ range $.Site.Taxonomies.tags.ByCount }}
 	{{ if gt .Count 4 }}
 	<li>

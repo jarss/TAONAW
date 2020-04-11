@@ -64,7 +64,12 @@ html {
   padding: 1rem .1rem;
   color: rgba(0,0,0,.5);
   background-color: #eee8d5;
+}
 
+.sidebar-about img {
+    position: absolute;
+    left: 3.5rem;
+    top: 2.5rem;
 }
 
 
@@ -99,12 +104,12 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
  */
 .sidebar-about h1 {
   color: #8B0000;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  padding-right: .5rem;
-  padding-bottom: .8rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-right: 0rem;
+  padding-bottom: 1rem;
   font-family: Righteous;
-  font-size: 3.2rem;
+  font-size: 3rem;
   word-spacing: 100rem;
   text-align:  left;
   font-weight: normal;
@@ -127,7 +132,9 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
 
 .sidebar-about img {
   width: 50%;
-  margin: 30px;
+  left: 5.5rem;
+  top:  5.2rem;
+
 }
 
 /* Sidebar nav */
