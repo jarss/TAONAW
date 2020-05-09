@@ -2661,11 +2661,11 @@ Since I essentially work for a hospital, I still support our users' machines. 80
 These are some helpful things that keep me going. Writing this post and hopefully using it to interact with more people is another good way to be productive and social during these times. What are some of your tips? 
 
 
-*** WIP Old Software
+*** PUBLISHED Old Software                                      :linux:tools:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200428
-    :EXPORT_HUGO_PUBLISHDATE: 2020-04-08:
+    :EXPORT_HUGO_PUBLISHDATE: 2020-05-09:
     :END:
 
 What do Emacs, SSH, FTP, IRC and ffmpeg have in common? 
