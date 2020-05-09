@@ -17,7 +17,7 @@
       <pubDate>Fri, 14 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200212/</guid>
-      <description>&lt;p&gt;One of the things I&#39;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&#39;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;</description>
+      <description>&lt;p&gt;One of the things I&amp;rsquo;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&amp;rsquo;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,8 +26,8 @@
       <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</guid>
-      <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&#39;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
-&lt;p&gt;My elementary scripts are work in progress. I keep tweaking them as I learn and create new ones. I&#39;d love to hear from experienced scripters just as I&#39;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&amp;rsquo;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
+&lt;p&gt;My elementary scripts are work in progress. I keep tweaking them as I learn and create new ones. I&amp;rsquo;d love to hear from experienced scripters just as I&amp;rsquo;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,8 +36,8 @@
       <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&#39;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&#39;t just me&lt;/a&gt; either.&lt;/p&gt;
-&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&#39;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
+&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</guid>
       <description>&lt;p&gt;At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.&lt;/p&gt;
-&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&#39;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&#39;s many times using the tools you already have.&lt;/p&gt;</description>
+&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&amp;rsquo;s many times using the tools you already have.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -56,7 +56,7 @@
       <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
-      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&#39;ve done to make this work. I hope you&#39;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
     </item>
     
   </channel>

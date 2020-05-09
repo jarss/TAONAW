@@ -2634,7 +2634,7 @@ I'd love to hear comments, suggestions and general questions about the video and
 
 [fn:35] I always like to link to Wikipedia articles when possible, but I find myself at awe at the richness of information happening right now when the members of this dedicated community build a whole subsite inside Wikipedia just about COVID-19. If you haven't yet, please take a look, even if just to see the list of resources and links at the bottom of these articles. So much free and available information.
 
-*** WIP Staying Sane While Social Distancing                           :life:
+*** PUBLISHED Staying Sane While Social Distancing                     :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200329
@@ -2659,6 +2659,37 @@ As an amateur photographer, going outside is a crucial activity. These days I'm 
 Since I essentially work for a hospital, I still support our users' machines. 80% of the work is remote, though we're still required to come to the office and show physical presence on a rotating basis in case IT support is needed on site, which in our case can mean hospital equipment. Working remotely is an interesting challenge in itself, and when I'm not working, I'm playing video games to keep the mind busy and relief stress. There are amazing free deals on all major gaming stores - Steam, Epic, GOG, Humble Bundle. And if you just have a laptop, don't worry, there are quite a few games that will work fine there too and keep your mind busy. I recommend [[https://www.klei.com/games/oxygen-not-included][Oxygen Not Included]] if you like management style gaming that require thinking, [[http://www.darkwoodgame.com/][Darkwood]] if you're into horror, [[https://www.stardewvalley.net/][Stardew Valley]] if you're into something peaceful and relaxing, [[https://thimbleweedpark.com/][Thimbleweed Park]] if you're into old-school point and click quests. All of these are under $30 and offer hours of fun. Other big AAA titles are also inviting right now if you have fellow friend gamers. I recently started playing [[https://store.ubi.com/us/the-division-2/][Division 2]] with my co-workers, online. It's a lot of fun.  
 
 These are some helpful things that keep me going. Writing this post and hopefully using it to interact with more people is another good way to be productive and social during these times. What are some of your tips? 
+
+
+*** WIP Old Software
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200428
+    :EXPORT_HUGO_PUBLISHDATE: 2020-04-08:
+    :END:
+
+What do Emacs, SSH, FTP, IRC and ffmpeg have in common? 
+
+These are all "old" programs[fn:38] that stood the test of time and are still in active usage today. Yes, ffmpeg is maybe not as "old" as Emacs, with its base back in the 1970, and you could argue IRC is barely used next to the giants of social media today, but that doesn’t mean they're not usable. 
+
+#+hugo: more
+
+In fact, not only usable, but often better off than modern software that gravitates more and more toward the cloud. My argument here is not that these old tools should replace the existing popular gaints of today and tomororw. Actually, the fact that they /can't/, the fact that they are "frozen" in time and only work for geeks, is a big part of the benefit. 
+
+Take, for example, [[https://en.wikipedia.org/wiki/Internet_Relay_Chat][IRC]], or internet relay chat. Using IRC requires some know-how of commands like ~/join~ or ~/nick~ and even ~/whois~ that today's users would know nothing about. Modern application such as [[https://slack.com/help/articles/201259356-Use-built-in-slash-commands][Slack]] and the like have similar commands, but these are artificial like plastic plants: a head nod to the past with often the same functionality a mouse click can achieve in GUI. Most users without technical background won't even know these. IRC does not have a CEO behind it; it does not have a single software which is at the mercy of patches and version numbers; it does not have to abide to the whims of its shareholders and change its TOS every couple of months to another confusing legal document no one reads. 
+
+I could pick up a Linux administration book from 2007, and most of it will still be true today. Administrators, or those who think like admins, tend to prefer the proven and stable, not the new-and-flashy. The level of granular control, the options, the out-of-the box availability, the lack of storage space that is required, and of course the no payment associated, add to the stability and familiarity to a package that is hard to defeat. I could use 3 different Linux distros, a Mac and a Windows PC, and I will still trust ffmpeg to work on my video compression and editing more than I would any Adobe product. It's just that there are far better solutions that I found. 
+
+You could argue it's all a matter of taste, and I'd say sure, everything is. I find comfort in the terminal, in typing in commands which show me what I'm about to do, and how. I know that I could type in the same command 5 years from now, even 50, and expect the same thing to happen - if the machine these programs reside in is alive. In turn, this attitude pushes me to learn more of how things work. At first, a regular user might not understand why I spend 2 hours learning how to script something that takes them 3 clicks to accomplish; but later, when the GUI clicking needs to be repeated for 50 or a 100 items, or when they need a new setup which comes with a new workflow, they'd understand.
+
+
+**** Footnotes
+
+[fn:38]: Technically, IRC, ssh and ftp are procols, not software; but the idea I'm driving at is age, stability and usage. ffmpeg is a collection of software and Emacs /is/ a software (in a way, perhaps a collection of packages in itself as well), and the same point can be applied to both of these as well. 
+
+
+
+
 
 
 

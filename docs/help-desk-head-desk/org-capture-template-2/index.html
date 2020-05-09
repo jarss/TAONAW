@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "My Org Capture Templates - Part 2",
     "headline" : "My Org Capture Templates - Part 2",
-    "description" : "\x3cp\x3eI was happy to see part one of this series generated interest on \x3ca href=\x22https:\/\/www.reddit.com\/r\/orgmode\/comments\/agxe8n\/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore\/\x22\x3eReddit\x3c\/a\x3e. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode\x27s complexity: there are so many options, it \x3cem\x3ehas\x3c\/em\x3e to be personalized by its users\x26rsquo; needs. Org-mode is esaily the most personal tool I\x27ve used in a while. Every time I read something Org-mode related somewhere else it\x27s as if I\x27m invited over for a discussion over a cup of coffee.\x3c\/p\x3e",
+    "description" : "\x3cp\x3eI was happy to see part one of this series generated interest on \x3ca href=\x22https:\/\/www.reddit.com\/r\/orgmode\/comments\/agxe8n\/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore\/\x22\x3eReddit\x3c\/a\x3e. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode\x26rsquo;s complexity: there are so many options, it \x3cem\x3ehas\x3c\/em\x3e to be personalized by its users\x26rsquo; needs. Org-mode is esaily the most personal tool I\x26rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it\x26rsquo;s as if I\x26rsquo;m invited over for a discussion over a cup of coffee.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -158,14 +158,14 @@
       / <a href="https://joshrollinswrites.com/tags/orgmode/"> orgmode</a>
       / <a href="https://joshrollinswrites.com/tags/emacs/"> emacs</a>
 </time>
- <p>I was happy to see part one of this series generated interest on <a href="https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/">Reddit</a>. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode's complexity: there are so many options, it <em>has</em> to be personalized by its users&rsquo; needs. Org-mode is esaily the most personal tool I've used in a while. Every time I read something Org-mode related somewhere else it's as if I'm invited over for a discussion over a cup of coffee.</p>
-<p>Speaking of personal, today I'm going to discuss my Journal capture template. I hope you enjoy, and as always, comments are welcome on Reddit (follow me using the links above) at least until I integrate a commenting system on this site.</p>
+ <p>I was happy to see part one of this series generated interest on <a href="https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/">Reddit</a>. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&rsquo;s complexity: there are so many options, it <em>has</em> to be personalized by its users&rsquo; needs. Org-mode is esaily the most personal tool I&rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&rsquo;s as if I&rsquo;m invited over for a discussion over a cup of coffee.</p>
+<p>Speaking of personal, today I&rsquo;m going to discuss my Journal capture template. I hope you enjoy, and as always, comments are welcome on Reddit (follow me using the links above) at least until I integrate a commenting system on this site.</p>
 <h2 id="part-2-the-journal-template">Part 2 - The Journal template</h2>
-<p>First, here's the code:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">j</span><span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Journal</span><span style="color:#e6db74">&#34;</span> entry
-  (file+datetree <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">~/Documents/Personal/journal.org</span><span style="color:#e6db74">&#34;</span>)
+<p>First, here&rsquo;s the code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry
+  (file+datetree <span style="color:#e6db74">&#34;~/Documents/Personal/journal.org&#34;</span>)
 
-  <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">**** %U%?%a </span><span style="color:#e6db74">\n</span><span style="color:#e6db74">&#34;</span> :tree-type week)
+  <span style="color:#e6db74">&#34;**** %U%?%a \n&#34;</span> :tree-type week)
 </code></pre></div><ol>
 <li>For key-press &ldquo;j&rdquo; initiate &ldquo;Journal&rdquo; template, which as follows:</li>
 <li>Go to <code>~/Documents/Personal/journal.org</code> and create a <a href="https://orgmode.org/manual/Template-elements.html#DOCF82">dateree</a> entry there</li>
@@ -175,9 +175,9 @@
 <li>Make this a <em>weekly</em> datetree (the default is a monthly datetree)</li>
 <li>Finish</li>
 </ol>
-<p>I prefer a weekly format in my journal over a monthly format. In fact, the week is a &ldquo;productivity unit&rdquo; which always made sense to me, and this mindset integrates beautifully into Org-mode. In my archive folder, which you saw in part 1, each week has its own <code>.org</code> file (from 1 to 50 something). I don't really need this to make Org-mode work, but there's something assuring in viewing the folder and seeing all the week files.</p>
-<p>The reason the timestamp and the link are condensed together (no space) is because I delete most of the timestamp and just leave the hour. This way the cursor is where I need to start erasing the timestamp from. I haven't found a way yet to create an hourly timestamp only and I don't want to forget to put in the hour, so this is the best solution for now. Why is the hour important? First, personal preference from the past, where I would write the time and the location for each entry. Second, this helps me see a couple of entries in the journal that are about the same event (the title is just the name of the event on my agenda) so that if a certain event is developing and I've journaled about it a couple of times, I can easily see the hour of each entry as a separator.</p>
-<p>Finally, I use a link to connect me back to <code>w[##].org</code> file (week number of the year, as I mentioned above) from which I created the journal entry. In my weekly org files, the incidents or events themselves contain very little details, usually only what is my next action (next thing to do) and a logbook drawer containing the times I worked on a task if I keep track. If I want to discuss something, I create a journal entry for it. I always prefer to leave my thoughts and conclusions in a personal space, separate from the more generic org file which also contains work-related material. The link takes me back to that event or incident, and because the name is the same as the event, I know exactly what I'm referring to.</p>
+<p>I prefer a weekly format in my journal over a monthly format. In fact, the week is a &ldquo;productivity unit&rdquo; which always made sense to me, and this mindset integrates beautifully into Org-mode. In my archive folder, which you saw in part 1, each week has its own <code>.org</code> file (from 1 to 50 something). I don&rsquo;t really need this to make Org-mode work, but there&rsquo;s something assuring in viewing the folder and seeing all the week files.</p>
+<p>The reason the timestamp and the link are condensed together (no space) is because I delete most of the timestamp and just leave the hour. This way the cursor is where I need to start erasing the timestamp from. I haven&rsquo;t found a way yet to create an hourly timestamp only and I don&rsquo;t want to forget to put in the hour, so this is the best solution for now. Why is the hour important? First, personal preference from the past, where I would write the time and the location for each entry. Second, this helps me see a couple of entries in the journal that are about the same event (the title is just the name of the event on my agenda) so that if a certain event is developing and I&rsquo;ve journaled about it a couple of times, I can easily see the hour of each entry as a separator.</p>
+<p>Finally, I use a link to connect me back to <code>w[##].org</code> file (week number of the year, as I mentioned above) from which I created the journal entry. In my weekly org files, the incidents or events themselves contain very little details, usually only what is my next action (next thing to do) and a logbook drawer containing the times I worked on a task if I keep track. If I want to discuss something, I create a journal entry for it. I always prefer to leave my thoughts and conclusions in a personal space, separate from the more generic org file which also contains work-related material. The link takes me back to that event or incident, and because the name is the same as the event, I know exactly what I&rsquo;m referring to.</p>
 
 
 
@@ -185,7 +185,7 @@
     
         <img src="https://joshrollinswrites.com/Org-capture-template-2.1.png"/> </figure>
 
-<p>My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM's capture template, so when I want to capture something in my journal from work, I'm prompted to log into my file server with a password, without saving anything at work.</p>
+<p>My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM&rsquo;s capture template, so when I want to capture something in my journal from work, I&rsquo;m prompted to log into my file server with a password, without saving anything at work.</p>
 <p>This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night.</p>
 </div>
 <hr>

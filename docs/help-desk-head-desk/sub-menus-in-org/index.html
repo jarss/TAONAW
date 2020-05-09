@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "Submenus in org-mode Capture",
     "headline" : "Submenus in org-mode Capture",
-    "description" : "\x3cp\x3e\x3ca href=\x22https:\/\/joshrollinswrites.com\/help-desk-head-desk\/org-capture-in-files\/\x22\x3eIn my last post\x3c\/a\x3e, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn\x27t give it enough exposure in my opinion. Turns out it \x3ca href=\x22https:\/\/irreal.org\/blog\/?p=8161\x22\x3ewasn\x27t just me\x3c\/a\x3e either.\x3c\/p\x3e\n\x3cp\x3eAs I was expanding my checklists and learning more \x26ldquo;trivial\x26rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It\x27s now time to get back to more \x26ldquo;basics\x26rdquo; of org-capture again for some helpful tips.\x3c\/p\x3e",
+    "description" : "\x3cp\x3e\x3ca href=\x22https:\/\/joshrollinswrites.com\/help-desk-head-desk\/org-capture-in-files\/\x22\x3eIn my last post\x3c\/a\x3e, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn\x26rsquo;t give it enough exposure in my opinion. Turns out it \x3ca href=\x22https:\/\/irreal.org\/blog\/?p=8161\x22\x3ewasn\x26rsquo;t just me\x3c\/a\x3e either.\x3c\/p\x3e\n\x3cp\x3eAs I was expanding my checklists and learning more \x26ldquo;trivial\x26rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It\x26rsquo;s now time to get back to more \x26ldquo;basics\x26rdquo; of org-capture again for some helpful tips.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -158,15 +158,15 @@
       / <a href="https://joshrollinswrites.com/tags/orgmode/"> orgmode</a>
       / <a href="https://joshrollinswrites.com/tags/automation/"> automation</a>
 </time>
- <p><a href="https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/">In my last post</a>, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn't give it enough exposure in my opinion. Turns out it <a href="https://irreal.org/blog/?p=8161">wasn't just me</a> either.</p>
-<p>As I was expanding my checklists and learning more &ldquo;trivial&rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It's now time to get back to more &ldquo;basics&rdquo; of org-capture again for some helpful tips.</p>
-<p>When you build your org-mode templates, it's possible to create sub-menus for better organization. Another way to explain it is to think of &ldquo;categories&rdquo; in your capture.</p>
+ <p><a href="https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/">In my last post</a>, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&rsquo;t give it enough exposure in my opinion. Turns out it <a href="https://irreal.org/blog/?p=8161">wasn&rsquo;t just me</a> either.</p>
+<p>As I was expanding my checklists and learning more &ldquo;trivial&rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&rsquo;s now time to get back to more &ldquo;basics&rdquo; of org-capture again for some helpful tips.</p>
+<p>When you build your org-mode templates, it&rsquo;s possible to create sub-menus for better organization. Another way to explain it is to think of &ldquo;categories&rdquo; in your capture.</p>
 <p>Says <a href="https://orgmode.org/manual/Template-elements.html#Template-elements">the manual</a>:</p>
 <blockquote>
 <p>Keys</p>
 <p>The keys that selects the template, as a string, characters only, for example ‘&ldquo;a&rdquo;’, for a template to be selected with a single key, or <strong>‘&ldquo;bt&rdquo;’ for selection with two keys. When using several keys, keys using the same prefix key must be sequential in the list and preceded by a 2-element entry explaining the prefix key</strong>, for example.</p>
 </blockquote>
-<p>The bold part was another part that I had to read several times to understand. I knew there's something different because two letters are used, but my capture template failed to work the first couple of times. I figured it out, and here it is:</p>
+<p>The bold part was another part that I had to read several times to understand. I knew there&rsquo;s something different because two letters are used, but my capture template failed to work the first couple of times. I figured it out, and here it is:</p>
 <pre><code class="language-nil" data-lang="nil"> (setq org-capture-templates
   (quote (
 	  (&quot;s&quot; &quot;Manual Laptop Setups&quot;)
@@ -183,8 +183,8 @@
 	(file+headline &quot;/mnt/veracrypt1/Archive/OhSnap!.org&quot; &quot;SLS-Windows&quot;)
 	(file &quot;/mnt/veracrypt1/Work/setup-SLS-Mac.org&quot;))
 ...
-</code></pre><p>Let's take it piece by piece from the top. Keep in mind this is not the entire template, just the relevant part. If you just copy-paste it, it will fail (it's incomplete).</p>
-<p>First, as soon as I start the capture templates, it seems as if I am starting to create another one <em>inside</em> the first one. That's what the manual means. In my opinion, it stumbles on its own words. Another case where an example (like the above) would go a long way. What I did is basically created a <em>sub-menu</em> for &ldquo;Manual Laptop Setups.&rdquo;</p>
+</code></pre><p>Let&rsquo;s take it piece by piece from the top. Keep in mind this is not the entire template, just the relevant part. If you just copy-paste it, it will fail (it&rsquo;s incomplete).</p>
+<p>First, as soon as I start the capture templates, it seems as if I am starting to create another one <em>inside</em> the first one. That&rsquo;s what the manual means. In my opinion, it stumbles on its own words. Another case where an example (like the above) would go a long way. What I did is basically created a <em>sub-menu</em> for &ldquo;Manual Laptop Setups.&rdquo;</p>
 <p>The result is that when I call org-capture, I get the following:</p>
 <pre><code class="language-nil" data-lang="nil">Select a capture template
 ===========================
@@ -200,9 +200,9 @@ s [d] Staff Dell Laptops
 s [a] Staff Apple Laptops
 s [m] SLS-Mac
 s [w] SLS-Windows
-</code></pre><p>You can see form how the menu looks like that all of these items start with an <code>s</code> but this time without the brackets. The brackets indicate what you can press <em>now</em> after you've already pressed s to get into the sub-menu you're currently in. That is, d for Dell checklist, a for Apple checklist, and so on.</p>
+</code></pre><p>You can see form how the menu looks like that all of these items start with an <code>s</code> but this time without the brackets. The brackets indicate what you can press <em>now</em> after you&rsquo;ve already pressed s to get into the sub-menu you&rsquo;re currently in. That is, d for Dell checklist, a for Apple checklist, and so on.</p>
 <p>Each one of these sub-templates is a checklist based in an org file like I explained in the previous post. The templates are all org files (like <code>setup-SLS-Mac.org</code> for example, the third template) which are nothing but checklists like I pointed out in the previous post.</p>
-<p>This way I can have an entire &ldquo;category&rdquo; of capture templates, with S for setup, without having a long list with letters that won't seem related.</p>
+<p>This way I can have an entire &ldquo;category&rdquo; of capture templates, with S for setup, without having a long list with letters that won&rsquo;t seem related.</p>
 </div>
 <hr>
 <h2>Comments</h2>

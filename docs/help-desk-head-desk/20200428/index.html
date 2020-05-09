@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "Old Software",
+    "headline" : "Old Software",
+    "description" : "\x3cp\x3eWhat do Emacs, SSH, FTP, IRC and ffmpeg have in common?\x3c\/p\x3e\n\x3cp\x3eThese are all \x26ldquo;old\x26rdquo; programs\x3csup id=\x22fnref:1\x22\x3e\x3ca href=\x22#fn:1\x22 class=\x22footnote-ref\x22 role=\x22doc-noteref\x22\x3e1\x3c\/a\x3e\x3c\/sup\x3e that stood the test of time and are still in active usage today. Yes, ffmpeg is maybe not as \x26ldquo;old\x26rdquo; as Emacs, with its base back in the 1970, and you could argue IRC is barely used next to the giants of social media today, but that doesn’t mean they\x26rsquo;re not usable.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-04-08 00:00:00 -0400 EDT",
+    "dateModified" : "2020-04-08 00:00:00 -0400 EDT",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/20200428\/",
+    "wordCount" : "577",
+    "keywords" : [ "Blog" ]
+}
+</script>
+
+  
+  <title>Old Software &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Oswald|Merriweather|PT+Sans:400,400i,700">
+
+
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class="theme-base-0a ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+    <img src="title-logo.png">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>◾ Frequent</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(17)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(8)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(7)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/automation"> automation <small>(5)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/tools"> tools <small>(5)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h4><a href="https://joshrollinswrites.com/tags/">All Topics ►</a></h4>
+        
+	  <h3>◾ About </h3>
+	  <a href="https://joshrollinswrites.com//about">Josh Rollins</a>
+	  <a href="https://joshrollinswrites.com//taonaw">TAONAW</a>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>Old Software</h1>
+ <time datetime=2020-04-08T00:00:00-0400 class="post-date">2020-04-08 
+
+
+
+</time>
+ <p>What do Emacs, SSH, FTP, IRC and ffmpeg have in common?</p>
+<p>These are all &ldquo;old&rdquo; programs<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> that stood the test of time and are still in active usage today. Yes, ffmpeg is maybe not as &ldquo;old&rdquo; as Emacs, with its base back in the 1970, and you could argue IRC is barely used next to the giants of social media today, but that doesn’t mean they&rsquo;re not usable.</p>
+<p>In fact, not only usable, but often better off than modern software that gravitates more and more toward the cloud. My argument here is not that these old tools should replace the existing popular gaints of today and tomororw. Actually, the fact that they <em>can&rsquo;t</em>, the fact that they are &ldquo;frozen&rdquo; in time and only work for geeks, is a big part of the benefit.</p>
+<p>Take, for example, <a href="https://en.wikipedia.org/wiki/Internet%5FRelay%5FChat">IRC</a>, or internet relay chat. Using IRC requires some know-how of commands like <code>/join</code> or <code>/nick</code> and even <code>/whois</code> that today&rsquo;s users would know nothing about. Modern application such as <a href="https://slack.com/help/articles/201259356-Use-built-in-slash-commands">Slack</a> and the like have similar commands, but these are artificial like plastic plants: a head nod to the past with often the same functionality a mouse click can achieve in GUI. Most users without technical background won&rsquo;t even know these. IRC does not have a CEO behind it; it does not have a single software which is at the mercy of patches and version numbers; it does not have to abide to the whims of its shareholders and change its TOS every couple of months to another confusing legal document no one reads.</p>
+<p>I could pick up a Linux administration book from 2007, and most of it will still be true today. Administrators, or those who think like admins, tend to prefer the proven and stable, not the new-and-flashy. The level of granular control, the options, the out-of-the box availability, the lack of storage space that is required, and of course the no payment associated, add to the stability and familiarity to a package that is hard to defeat. I could use 3 different Linux distros, a Mac and a Windows PC, and I will still trust ffmpeg to work on my video compression and editing more than I would any Adobe product. It&rsquo;s just that there are far better solutions that I found.</p>
+<p>You could argue it&rsquo;s all a matter of taste, and I&rsquo;d say sure, everything is. I find comfort in the terminal, in typing in commands which show me what I&rsquo;m about to do, and how. I know that I could type in the same command 5 years from now, even 50, and expect the same thing to happen - if the machine these programs reside in is alive. In turn, this attitude pushes me to learn more of how things work. At first, a regular user might not understand why I spend 2 hours learning how to script something that takes them 3 clicks to accomplish; but later, when the GUI clicking needs to be repeated for 50 or a 100 items, or when they need a new setup which comes with a new workflow, they&rsquo;d understand.</p>
+<h2 id="footnotes">Footnotes</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>: Technically, IRC, ssh and ftp are procols, not software; but the idea I&rsquo;m driving at is age, stability and usage. ffmpeg is a collection of software and Emacs <em>is</em> a software (in a way, perhaps a collection of packages in itself as well), and the same point can be applied to both of these as well. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

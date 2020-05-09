@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.62.0" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "Emacs Windows",
     "headline" : "Emacs Windows",
-    "description" : "\x3cp\x3eIn his 5th Emacs podcast, \x3ca href=\x22https:\/\/emacscast.org\/episode%5F5\/\x22\x3eRakhim\x3c\/a\x3e discusses the difficulties of windows management in Emacs. I agree with him. Emacs\x26rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn\x27t until this podcast that I realized that I\x27m much better off than I used to be.\x3c\/p\x3e",
+    "description" : "\x3cp\x3eIn his 5th Emacs podcast, \x3ca href=\x22https:\/\/emacscast.org\/episode%5F5\/\x22\x3eRakhim\x3c\/a\x3e discusses the difficulties of windows management in Emacs. I agree with him. Emacs\x26rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn\x26rsquo;t until this podcast that I realized that I\x26rsquo;m much better off than I used to be.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -157,18 +157,18 @@
     
       / <a href="https://joshrollinswrites.com/tags/emacs/"> emacs</a>
 </time>
- <p>In his 5th Emacs podcast, <a href="https://emacscast.org/episode%5F5/">Rakhim</a> discusses the difficulties of windows management in Emacs. I agree with him. Emacs&rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn't until this podcast that I realized that I'm much better off than I used to be.</p>
-<p>I don't use any extension that manages windows (unless you consider Ivy's switch buffer, which he uses too. <a href="https://oremacs.com/swiper/">Ivy</a> is awesome). My method is based on bits and pieces I picked up. Here are a couple of lines from my settings.org, which I use to make Emacs&rsquo; windows work better for me.</p>
+ <p>In his 5th Emacs podcast, <a href="https://emacscast.org/episode%5F5/">Rakhim</a> discusses the difficulties of windows management in Emacs. I agree with him. Emacs&rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&rsquo;t until this podcast that I realized that I&rsquo;m much better off than I used to be.</p>
+<p>I don&rsquo;t use any extension that manages windows (unless you consider Ivy&rsquo;s switch buffer, which he uses too. <a href="https://oremacs.com/swiper/">Ivy</a> is awesome). My method is based on bits and pieces I picked up. Here are a couple of lines from my settings.org, which I use to make Emacs&rsquo; windows work better for me.</p>
 <p>First, for my ultra-wide screen at home, it helps to enlarge the default frame size. After a few tests, I found this size satisfying:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq default-frame-alist <span style="color:#f92672">&#39;</span>((width <span style="color:#f92672">.</span> <span style="color:#ae81ff">90</span>) (height <span style="color:#f92672">.</span> <span style="color:#ae81ff">50</span>) (menu-bar-lines <span style="color:#f92672">.</span> <span style="color:#ae81ff">6</span>)))
-</code></pre></div><p>Then, we need to turn on the mouse vertical mouse divider. This will allow us to use the mouse to drag and adjust windows in our frame vertically as well. I actually don't use this as much anymore (the reason is coming up) but this is a basic feature that should be on by default, in my opinion:</p>
+</code></pre></div><p>Then, we need to turn on the mouse vertical mouse divider. This will allow us to use the mouse to drag and adjust windows in our frame vertically as well. I actually don&rsquo;t use this as much anymore (the reason is coming up) but this is a basic feature that should be on by default, in my opinion:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(window-divider-mode <span style="color:#ae81ff">+1</span>)
 </code></pre></div><p>Another basic feature, which I now use everywhere, is the <a href="https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Visual-Line-Mode.html">visual line mode</a>. If you write more than you code on Emacs (which is true in my case) this mode just makes sense.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(global-visual-line-mode <span style="color:#ae81ff">+1</span>)
-</code></pre></div><p>Those are all good and nice, but here's the biggest tip which I stumbled upon a few months back, from <a href="http://ergoemacs.org/emacs/emacs%5Feffective%5Fwindows%5Fmanagement.html">Ergoemacs</a>: just don't use windows. Use frames. Seriously, it's that simple. There are probably many Emacs experts out there with their windows functions and extensions and what not, but let's not reinvent the wheel here. If there's one thing a GUI is good for is to manage windows (or frames in Emacs). They are very easy to move with the mouse, they snap to each other, easy to resize. Besides, Emacs itself splits the frames to Windows often enough. I find that I use C-0 and C-1 very often to get rid of windows I don't need, and I can have them back quickly by switching back to the buffer with Ivy.</p>
+</code></pre></div><p>Those are all good and nice, but here&rsquo;s the biggest tip which I stumbled upon a few months back, from <a href="http://ergoemacs.org/emacs/emacs%5Feffective%5Fwindows%5Fmanagement.html">Ergoemacs</a>: just don&rsquo;t use windows. Use frames. Seriously, it&rsquo;s that simple. There are probably many Emacs experts out there with their windows functions and extensions and what not, but let&rsquo;s not reinvent the wheel here. If there&rsquo;s one thing a GUI is good for is to manage windows (or frames in Emacs). They are very easy to move with the mouse, they snap to each other, easy to resize. Besides, Emacs itself splits the frames to Windows often enough. I find that I use C-0 and C-1 very often to get rid of windows I don&rsquo;t need, and I can have them back quickly by switching back to the buffer with Ivy.</p>
 <p>One of the things that used to drive my bananas when I started using Org was how the agenda and its habit to kill my windows setup. One of the most helpful lines in my settings.org is the following:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq org-agenda-window-setup (quote other-frame))
-</code></pre></div><p>This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It's so fast it's just my muscle memory now.</p>
+</code></pre></div><p>This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It&rsquo;s so fast it&rsquo;s just my muscle memory now.</p>
 </div>
 <hr>
 <h2>Comments</h2>
