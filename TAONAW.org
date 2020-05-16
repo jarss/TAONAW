@@ -2554,52 +2554,6 @@ Similar to the suffixes from before, the values are IP addresses seperated by co
 
 [fn:17] "A cmdlet is a lightweight command that is used in the Windows PowerShell environment. The Windows PowerShell runtime invokes these cmdlets within the context of automation scripts that are provided at the command line." [[https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-overview?view=powershell-7][You can read more about this on the official Micrsofot website]]. 
 
-*** TODO Corona data
-
-#**** How Infectious is it
-In general, infection of pandemics and the like is measured by [[https://en.wikipedia.org/wiki/Basic_reproduction_number][R0]].But R0 is [[https://wwwnc.cdc.gov/eid/article/25/1/17-1901_article][a complex thing]], especially for a developing disease. Basically, the number tells us how many people can one sick person infect. For example, the Coroan's virus currently (last checked [2020-03-16 Mon]) highest R0 is 3.9. This means 4 new people will can get infected. This is the highest rate. The lowest rate is 1.4[fn:32]. It is worth noting that these findings are far from final and the number will flexuate as we learn and experience more[fn:33]. For now, it is estimated the virus is about about twice as contegious as the flu. 
-
-# ***** How Deadly is it
-# Estimating the fatality of COVID-19 (the disease caused by the Corona virus, *Co*-rona *Vi*-rus *D*-isease 20-*19*) is more challanging than estimating how infectious it is. That's because people with severe cases are usually detected first, and those usually have other health-complications made worse by the disease. The [[https://www.nytimes.com/interactive/2020/world/asia/china-coronavirus-contain.html?auth=login-email&login=email#transmission][same article from the NYT]] mentioned above states that 50 out of 44,000 (which is about 2%) died. The [[https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html][CDC reports]] that out of 1,629 cases (at the time of this writing - [2020-03-16 Mon]) 41 died, which is 2.5%. So, if we roughly estimate on this non-finalized data, we can speculate that out of 1000 people, 25 will die. The seasonal flu kills about 1 person out of 1000. 
-
-
-
-# - - -
-
-# There's the issue of Corona being asymptomatic, meaning, a person can tansmit without showing any syptomps. That's a problem because many folks just say "hey, I just have a bit of a cough and/or throat pain, no big deal" and they have it. But, mostly (according to below), this is not the case and most people do fall ill - though how ill, how long, how bad, that's all questionable now. 
-
-
-# #+begin_quote
-# People are thought to be most contagious when they are most symptomatic (the sickest).
-#    Some spread might be possible before people show symptoms; there have been reports of this occurring with this new coronavirus, but this is not thought to be the main way the virus spreads.
-
-#  /[[https://www.cdc.gov/coronavirus/2019-ncov/about/transmission.html][CDC: "Can someone spread the virus without being sick?"]]/
-#+end_quote 
-
-# [fn:32] This R0 rate is taken from Wikipedia's article, which took information from four different studies - some  from China, some from the US. 
-
-# [fn:33] The NYTimes [[https://www.nytimes.com/interactive/2020/world/asia/china-coronavirus-contain.html?auth=login-email&login=email#transmission][has real-time updates]] about the situation. The R0 estimate (the NYTimes the R0 to be 2-4, based primaerly on [[https://watermark.silverchair.com/taaa021.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAlkwggJVBgkqhkiG9w0BBwagggJGMIICQgIBADCCAjsGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMxkTYb0lYXZwc8fnrAgEQgIICDF2jSbigfuZ3fRp1lOCLN3P48tihu1NmhzfI5PyFpKRqXqIzZrxG1z1Fa-sUVtbFKwU8h2yHpzkPdsUZ_KnCJxG1O4kJUcH0kTSivJKQJPtRgb-gECyBS-g7DOt7XKkbD8YgqB_JF6dAO8Sllx0r-4mpDlTauY9ZJ6HKmbXn7WG5HnEJYWKsGQGunxy56bgc7hK--x-fBbhREZ-c0tk80BU4zQtQwC0pX13aRcnkS72bh7CpXPs6EH7voWv32yPGeBgUkEj-B-YDw5XOw_OqM-AO_ff222zzNEmODphkd-uUOO8xET13rKYWtGF8LvRacHYUs_vjwQFny1Iwqwq1tcw7JEnF33RrLFBfEt5OQ3ZuASI1WPMFP-EtOIg3rK1T6tU0fcDc8KakSMIFIzrOEg1y8Yt9cWFGN7b03eOXj7oZNLZJdGR8XD06DeDdx2vtQFK7sBgyHOVDKKi86tMV3hv8auJYowPsL0b3JgRlt7VFS3jhhTXuq-GVZA8lw9ODSMrT8mpTAkysr4d4O9oEvOLvzpCPkLt-RZx8mWYr3Lz7_ThQnf3vfd3Xkj8ki3Rl8IXm3iEVq0q9gFDmpHr07z7R8kahiRRvzsFAY8_IdBZx3WeFsHhhYNzMehR2L_q9iOo8zOrSY2ImB_qmr2Br52weNOrREgXU6bJoDq_rSDpRvJEIDrXSRNu7m4O1][this study]]. 
-
-*** TODO Coronoa and Logic
-:PROPERTIES:
-    :EXPORT_HUGO_SECTION: Help Desk Head Desk
-    :EXPORT_FILE_NAME: 202003016
-    :EXPORT_HUGO_PUBLISHDATE: 2020-03-22:
-    :END:
-
-Things in TAONAW HQ have been busy. My blog doesn't show it, but I have a long script tutorial waiting to be finished. Due to escalating pandemic, workload has been increasing as we shifted to remote support outside of our regular work hours. Things became more dramatic for me too when my partner told me someone at their workplace has been exposed to Corona, and suddenly I found myself a week at home with only brief visits to the grocery store or for a brisk walk outside.
-
-#+hugo: more
-
-I'm due for a much needed vaction, but there's not much traveling to do right now. Still, having a break from what has become normal 10-hour work day of remote support is a blessing. I've been considering blogging more often through this pandemic, so perhaps this is a good time to talk about a few more personal things. 
-
-When I started this blog, mostly as a developing geeky experiment for Emacs and later Hugo go, I didn't want to involve too many personal details. This still remains the case: I believe most people who end up reading my blog are techies who are not too interested in the personal as much as the technical. Those of you who read between the lines however had their eyebrow raised once or twice because I use through around the term partner, refering to those I live with. I have two partners, and the three of us live together. It is, roughly speaking, a form of [[https://en.wikipedia.org/wiki/Polyamory][polyamory]][fn:34]. There's no particular reason to bring this up now than at any other point besides that it's sometimes relavent to what I write here, and keeping some sort of a "log" through this period definitely falls into this category. I'm not particulalry secretive of my non-monogamous lifestyle, but I also don't advertise it. 
-
-The first days of social-distancing havn't been very sagnificant for me, to be honest. I usually stay away from large groups of people anyway, and I'm know to be one of the guys who leaves the party early. I've been an introvert for as long as I can remember. I also didn't stay stuck at home the etire week: I made sure to go out for walks 
-
-
-[fn:34] A form of it because the term itself has become too loaded with different meanings to different people with the years. The questions of romantic, sexual, or otherwise emotional relationships with people seem to fit or not fit into too many boxes. Overall, I rather use the term non-monogamous. I feel that in this case, describing what I'm not is easier than describing what I am. 
-
 *** PUBLISHED TAONAW's First Photography Video                  :photography:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2660,7 +2614,6 @@ Since I essentially work for a hospital, I still support our users' machines. 80
 
 These are some helpful things that keep me going. Writing this post and hopefully using it to interact with more people is another good way to be productive and social during these times. What are some of your tips? 
 
-
 *** PUBLISHED Old Software                                      :linux:tools:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -2690,8 +2643,36 @@ You could argue it's all a matter of taste, and I'd say sure, everything is. I f
 
 
 
+*** WIP D.D.T.C Day 55                                                 :life:
+:PROPERTIES:
+    :EXPORT_HUGO_SECTION: Help Desk Head Desk
+    :EXPORT_FILE_NAME: 20200511
+    :EXPORT_HUGO_PUBLISHDATE: 2020-05-16:
+    :END:
 
+Distancing Due to COVID19, Day 55. What are the effects? 
 
+One that comes to mind immediately is updating this blog. It was left untouched for a month (my last post has been growing mold for a couple of weeks, originally written in April). Other DDTC effects include: working from home and providing support to users remotely, lack of exercise, and "artificial depression," as I call it.
+
+#+hugo: more
+
+For me, distancing started on March 17, after my partner was exposed to a potentially positive COVID19 carrier. After two weeks of socially distancing, my office was already closed with my team working from home. 
+
+I work for a medical center, which means the office has to remain open. We started a one-person-a-day rotation while the rest of us work from home. It was weird to come back to an empty office when it was my turn to be there, but perhaps weirder is the fact that by now, this has become somewhat normal. 
+
+Remote work forced us the gain more experience with different remote-support tools. Connecting to the office computers with VPN and is second nature for us, but it's not that obvious to users who suddenly need all kinds of "required software" that they didn't give a second thought to in the past. Even more challenging is the gray line of "owning" a user's computer once you connect to it to troubleshoot. Most of the users just want their problem dealt with, with little concern about what you're doing on their personal machine after they give you remote access to keyboard and mouse.[fn:32] 
+
+Not everything is work and technology (even though it seems so right now). If you ask me what's the thing I miss the most right now, I'd say the gym. My exercise routine, somewhat trivial before DDTC, has become a concern. Going to the gym used to be a 2 to 3 mornings a week routine. Walking up and downstairs at work to show up in different offices, clinics and labs, used to compliment my exercise as well as walks to the park with my camera. Now, with the majority of these activities almost extinct, I feel sluggish and otherwise "rusty". I can and am still taking walks, but in NYC, these often mean an inconvenient zigzag around people coming in front of you and half-circling groups of teens who still, for god-knows-what-reason (besides being teenagers I guess), insist on yapping loudly with mask-less mouths.
+
+I've never been big on travel, but forcing myself to stay home as much as possible in a NYC-size apartment has a toll. I can't explain exactly what it is besides that everything feels like it has more weight. Something about not being exposed enough to other things, bad or good, outside of this immediate second skin, has made me emotionally numb. I eat less, I sleep more. These symptoms remind me of another state I'm pretty familiar with: depression. The more I stay in, the more sluggish I am. I call this "artificial" depression because I feel it's manufactured, not naturally occurring out of the blue as depression spells can be. The reasons are well known, and as a result, like many artificial things, it has a certain taste "natural" depression does not have. Knowing that I'm choosing to do this to myself for the "better good" seems to lost importance as time passes. You start wondering, what is the better good anyway? Better good to who? For what? 
+
+The biggest cure seems to be to leave the house and, if possible, run around the little nearby park. The running sheds always the numbness and allows me to feel more positive. I've also turned to personal tech projects to keep the mind sharp and things interesting[fn:33]. Let's see what I can come up with.
+
+**** Footnotes
+
+[fn:32] The lines are pretty clear when the device is owned by the organization, but there's a whole post to write about the gray lines of how much is "owned" by the tech when connecting to a user's personal device.
+
+[fn:33] There's a lot to write here as well. For one, I returned to use Windows as my primary OS and use Linux in a VM. This is mostly (again) because of games, but also because of work requirements from home. Other projects include more scripting and automation, and re-thinking my backup system. 
 
 ** BMC
 :PROPERTIES:
