@@ -2643,7 +2643,7 @@ You could argue it's all a matter of taste, and I'd say sure, everything is. I f
 
 
 
-*** WIP D.D.T.C Day 55                                                 :life:
+*** PUBLISHED D.D.T.C Day 55                                           :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200511
@@ -2673,6 +2673,89 @@ The biggest cure seems to be to leave the house and, if possible, run around the
 [fn:32] The lines are pretty clear when the device is owned by the organization, but there's a whole post to write about the gray lines of how much is "owned" by the tech when connecting to a user's personal device.
 
 [fn:33] There's a lot to write here as well. For one, I returned to use Windows as my primary OS and use Linux in a VM. This is mostly (again) because of games, but also because of work requirements from home. Other projects include more scripting and automation, and re-thinking my backup system. 
+*** WIP Mounting an SMB Share on Linux                     :linux:automation:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 20200518
+ :EXPORT_HUGO_PUBLISHDATE: 2020-05-18:
+ :END:
+
+Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers. 
+
+This guide assumes that you have two machines, Windows and Linux, on the same network and same subnet. It also assumes you've already shared the SMB folder with the right security properties: if you need help with this, [[https://support.microsoft.com/en-us/help/4092694/windows-10-file-sharing-over-a-network][look here]] for starters or find other helpful articles like [[https://www.techbout.com/share-files-folders-windows-10-44386/][this one]].
+
+#+hugo: more
+
+Let me start by throwing the /mount/ command at you and then explain what it does. Here it is:
+
+#+begin_src
+sudo mount -t cifs -o user=[your Windows user] //[path/to/smb/mountpoint/
+#+end_src
+
+1. We start with ~sudo~ because mounting requires root permissions.
+2. ~Mount~ is the command to mount a drive.
+3. ~-t~ to tell mount that next we're specifying a /type/ of filesystem.
+4. ~cifs~ is our filesystem[fn:34].
+5. ~-o~ to tell mount that next we're specifying an /option/.
+6. ~user~ is our option, the user is our Windows system user
+7. next we specify the smb host and the path to the folder
+8. last, the mounting point, the folder on Linux where we'll be viewing the files. 
+
+Here's an example: 
+
+#+begin_src
+sudo mount -t cifs -o user=seriousam //192.169.1.12 /media/sserious/space
+#+end_src
+Notice the two things highlighted above: the Windows user (seriousam in our case), which we can find out simply by going to ~C:\User~ in Windows, and the host, which is identified by its private IP address. Depending on how you have your Linux machine set up, I find that it's safer to use an IP address (and use your router's DHCP settings to always give your machines the same IP address so it doesn't change) than the using the machine's host name. 
+
+Mounting this way comes with two annoyances. First, because you have to mount as root (using sudo), only root will have read/write permissions to the folder. You won't be able to download files and save them to the SMB folder without sudo-ing, for example. Second, you will have to mount the share each time you log in and enter the password for your Windows user (the mount command has an "password" option, so you could type it as part of the mount syntax if you'd like).
+
+The better and more acceptable solution is to mount your SMBs in your [[https://en.wikipedia.org/wiki/Fstab][fstab]]. This is where Linux goes to find out what hard drives and partitions you got going among other things (like SMBs) and how to mount them. It might look scary, and for a good reason: mess up your main filesystem SSD, and Linux won't know where to boot from[fn:39].
+
+To edit fstab you'll need sudo like all things that are system-wide and are not in your user folder: ~emacs /etc/fstab~[fn:40] (or use nano, or VIM, or what have you). 
+
+fstab starts with a nice commentary about how to get your UUIDs, which is very important if you're trying to mount a physical disk. the first line of code specifies your main Linux file system's UUID and then under it most likely your swap partition. Remember I told you how you can fail to boot if you mess with your fstab? Stay away from these lines.
+
+Start a new line under the last with a comment that will help you figure out what you were doing in the future, and then specify the following: 
+
+#+begin_src
+//[host ip address/share-folder] [/path/to/mount/point] cifs credentials=/home/sserious/.smbcredentials,uid=1000,gid=1000 0 2
+#+end_src
+
+OK. This looks a bit like the mount command, but what's with all the extra stuff?
+
+1. ~//host ip address/share-folder~ this we already know.
+2. ~/path/to/mount/point~ this we also already know.
+3. ~cifs~ the filesystem. Notice how we don't specify a =-t= for type here, because this part belongs to the mount command which is different than fstab. Take a look (don't touch!) at the Linux disks about: probably ext4 and swap, which might look familiar back from when you installed Linux and defined your partitions.
+4. ~credentials=/home/sserious/.smbcredentials~ uh oh. What's this? fstab needs credentials to mount the share, this we know from the mount command. Since we want fstab to have everything it needs and won't stop us during boot about some lack of access to SMB, we want to automate this process. In this particular case, the credentials are written in a file, .smbcredentials[fn:41]. I will specify what goes in it below.
+5. ~uid=1000,gid=1000~ Remember how we had the problem that the SMB share was mounted by root, which meant no other users can save unto it? This line sets permissions to your "regular" user which most likely has user id of 1000 and group id of 1000. Run ~id -u~ to get your user id and ~id -g~ to get your group id.
+6. ~0 2~ I'm still not 100% clear on these. The first number, which can be 0 or 1, is for dump, the second is for fsck, which can be set to 0, 1, or 2. Dump is a way Linux backs up file, or used to back up files. It is not really used anymore (you'll noticed your main filesystem has a 0 as well) and fsck is the order which Linux will check the disks. Your filesystem has to be 1 (and it is by default) and everything else can be 2. We actually don't really need it for SMB because the disk is located somewhere else, it's a matter of logging in, not checking the files, so we could put 0 there also so it won't be checked at all. 
+
+The .smbcredentials from step 4 looks like this:
+
+#+begin_src
+username=seriousam
+password=password123
+domain=.
+#+end_src
+
+That's it. You now have all you need to mount the SMB share. Make sure you save fstab, restart, and see if you have access to your SMB. 
+
+**** Footnotes
+
+[fn:34] The simple and short explanation is that CIFS is basically SMB. But this is not exactly true. [[https://en.wikipedia.org/wiki/Server_Message_Block#SMB_/_CIFS_/_SMB1][CIFS is a blend of SMB]]. SMB improved with the years, and today we're beyond SMB 3.0 which is developed by Microsoft for Windows, while Linux keeps CIFS which was /also/ improved with the years and the kernel, so it is, in a way, a blend of modern SMB of its own and not the original CIFS from the 80s. Confused? Me too. I'm sure someone who knows more about this could comment and explain. For now, for practicality's sake, we can pretend SMB = CIFS.  
+
+[fn:39] The solution to this, by the way, is to boot up with a live-USB just like you do when you first install Linux, mount the hard drive of the Linux partition you messed up, find the fstab, and fix it -- not that I know anything about messing it up! No sir...
+
+[fn:40] Didn't I just say we need sudo? Why yes. In Emacs you do that by using [[https://www.gnu.org/software/tramp/#Using-su_002c-sudo-and-sg][TRAMP]].
+
+[fn:41] giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user name and password to log into Linux, you're f-ed anyway.
+
+
+
+
+
+
 
 ** BMC
 :PROPERTIES:
@@ -2728,6 +2811,7 @@ As a token of appreciation, I do take one-time [[https://www.paypal.com/cgi-bin/
 ** *Footnotes*
 
 [fn:29] The domain, joshrollinswrites.com, costs me about $15 and change with per year.
+
 
 
 

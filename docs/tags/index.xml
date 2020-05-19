@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>automation</title>
+      <link>https://joshrollinswrites.com/tags/automation/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://joshrollinswrites.com/tags/linux/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/linux/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>life</title>
@@ -17,15 +35,6 @@
       <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://joshrollinswrites.com/tags/linux/</link>
-      <pubDate>Sat, 09 May 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/linux/</guid>
       <description></description>
     </item>
     
@@ -62,15 +71,6 @@
       <pubDate>Sat, 29 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>automation</title>
-      <link>https://joshrollinswrites.com/tags/automation/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/automation/</guid>
       <description></description>
     </item>
     

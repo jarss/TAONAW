@@ -6,10 +6,20 @@
     <description>Recent content in linux on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mounting an SMB Share on Linux</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200518/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200518/</guid>
+      <description>&lt;p&gt;Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.&lt;/p&gt;
+&lt;p&gt;This guide assumes that you have two machines, Windows and Linux, on the same network and same subnet. It also assumes you&amp;rsquo;ve already shared the SMB folder with the right security properties: if you need help with this, &lt;a href=&#34;https://support.microsoft.com/en-us/help/4092694/windows-10-file-sharing-over-a-network&#34;&gt;look here&lt;/a&gt; for starters or find other helpful articles like &lt;a href=&#34;https://www.techbout.com/share-files-folders-windows-10-44386/&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Old Software</title>
