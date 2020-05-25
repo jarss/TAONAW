@@ -6,10 +6,19 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Benefits of Linux on VM</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200522/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200522/</guid>
+      <description>&lt;p&gt;With the majority of work happening from home, I decided to go back to Windows. I was stubborn at start, and continue to host a Windows VM inside Linux, but eventually I acknowledged that I&amp;rsquo;ll a smoother workflow the other way around.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Mounting an SMB Share on Linux</title>
