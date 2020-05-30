@@ -2750,7 +2750,7 @@ That's it. You now have all you need to mount the SMB share. Make sure you save 
 [fn:40] Didn't I just say we need sudo? Why yes. In Emacs you do that by using [[https://www.gnu.org/software/tramp/#Using-su_002c-sudo-and-sg][TRAMP]].
 
 [fn:41] giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user name and password to log into Linux, you're f-ed anyway.
-*** WIP Benefits of Linux on VM                               :linux:windows:
+*** PUBLISHED Benefits of Linux on VM                         :linux:windows:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 20200522
@@ -2791,29 +2791,85 @@ Will things stay this way? Who knows. Knowing how I am, I'll get bored 3 months 
 
 
 [fn:43] VMware has Fusion for Mac and a Linux version as well. I only have limited experience on an underpowered Mac, where Fusion is impossibly slow, and its Linux version leaves much to be desired, so on Linux I dumped it in favor of Virtuabox. It seems to operate best on Windows.
+*** WIP Customizing a Theme for Emacs                         :emacs:orgmode:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 20200528
+ :EXPORT_HUGO_PUBLISHDATE: 2020-05-30:
+ :END:
 
-** BMC
-:PROPERTIES:
-   :EXPORT_HUGO_SECTION: BMC
-   :END:
-*** INTRO
-  :PROPERTIES:
-  :EXPORT_HUGO_SECTION: BMC
-  :EXPORT_FILE_NAME: _index
-  :END:
+What do you do when you are pretty comfortable with your Emacs theme and colors, but there's one thing you have to change? You find the theme and you customize it to your liking. Here's what I did.
 
-**** Buy Me Coffee?
+ #+hugo: more
 
-Here, this should work:
-Test 1 2 3
+When I switched to [[https://joshrollinswrites.com/help-desk-head-desk/20200522/][Debian on a Windows host]] a few weeks ago, I also switched back to darker colors. I looked for a matching Emacs theme and for a while I settled on my go-to [[https://github.com/purcell/color-theme-sanityinc-solarized][sanityinc-solorized]], but it didn't do. I've used it at the office for too long and it just didn't feel right. I also didn't like the newer [[https://github.com/bbatsov/solarized-emacs][solorized]]: the headings change size in org-mode and I find that it breaks the visual harmony of everything else in Emacs. I ended up settling on [[https://emacsthemes.com/themes/gotham-theme.html][Gotham]], with its blueish-green colors and true-black background. The headings are all the same size too, thankfully. 
 
-your mom!!!! yes
+One thing that stood out like a sour thumb though was the org-verbatim color font (that's the format you get between two = signs in org-mode). org-verbatim font was a mild a dark gray, barely visible against the black background. I use org-verbatim to highlight lines of codes and commands, so the barely visible color was the opposite of what I needed.
+
+I didn't want to look up for a new theme, because I am fairly happy with Gotham's colors and simplicity otherwise. Changing a single color in a theme can't be /that/ hard, I thought. I was happy to find out I was right.
+
+downloaded themes from MELPA are saved in ~~/.emacs.d/elpa~. I don't know why elpa and not melpa, but that's what it is. I found the gotham theme folder, and opened gotham-theme.el. 
+
+Right at the top, under the first function definitions, I found the colors of the theme defined under  =(defvar= in hex. It looks like this: 
+
+#+BEGIN_SRC
+(defvar gotham-color-alist
+  `((base0   "#0c1014" ,(if gotham-tty-256-colors "color-232" "black"))
+    (base1   "#11151c" ,(if gotham-tty-256-colors "color-233" "brightblack"))
+    (base2   "#091f2e" ,(if gotham-tty-256-colors "color-17"  "brightgreen"))
+    (base3   "#0a3749" ,(if gotham-tty-256-colors "color-18"  "brightblue"))
+    (base4   "#245361" ,(if gotham-tty-256-colors "color-24"  "brightyellow"))
+    (base5   "#599cab" ,(if gotham-tty-256-colors "color-81"  "brightcyan"))
+    (base6   "#99d1ce" ,(if gotham-tty-256-colors "color-122" "white"))
+    (base7   "#d3ebe9" ,(if gotham-tty-256-colors "color-194" "brightwhite"))
+
+    (red     "#c23127" ,(if gotham-tty-256-colors "color-124" "red"))
+    (orange  "#d26937" ,(if gotham-tty-256-colors "color-166" "brightred"))
+    (yellow  "#edb443" ,(if gotham-tty-256-colors "color-214" "yellow"))
+    (magenta "#888ca6" ,(if gotham-tty-256-colors "color-67"  "brightmagenta"))
+    (violet  "#4e5166" ,(if gotham-tty-256-colors "color-60"  "magenta"))
+    (blue    "#195466" ,(if gotham-tty-256-colors "color-24"  "blue"))
+    (cyan    "#33859e" ,(if gotham-tty-256-colors "color-44"  "cyan"))
+    (green   "#2aa889" ,(if gotham-tty-256-colors "color-78"  "green")))
+  "List of colors the theme consists of.")
+#+END_SRC
+
+Pretty straight forward. Now, how to find the piece of text which color I want to change? At the time I didn't even know it was called org-verbatim. To find out, I went back to org-mode, found the color I wanted to change in the text, placed the mark on it, and used =M-x customize face=. This can customize the font-face right there, but more importantly, it told me what font group the marker's on as its default value. That's how I found out that text is called "org-verbatim." Knowing that I went back to the theme file and looked up for it. 
+
+Searching for org inside the theme brought up the org-mode group inside the .el file, which included quite a few colors, but not what I was looking for. That actually made sense: the definition of org-verbatim was missing from the theme, which meant it inherited the color instead. I am not sure how the hierarchy for these groups works, but it seems like org-verbatim just picked up the generic comment text color that /should/ have a dim, out-of-the-way color. OK then. So, if it's not there, why not add it? 
+
+Looking at how these colors were constructed in the .el file, I saw definitions like these: 
+
+#+BEGIN_SRC
+   (org-sexp-date :foreground cyan)
+   (org-table :foreground violet)
+   (org-time-grid :foreground yellow)
+   (org-todo :foreground red :weight bold)
+   (org-upcoming-deadline :foreground orange)
+#+END_SRC
+
+the colors themselves, like orange or cyan, were defined earlier under the defar part I mentioned above. So, all I had to do is to add this line: 
+
+#+BEGIN_SRC
+   (org-verbatim :foreground yellow)
+#+END_SRC
+
+Instead of re-evaling, I prefer to save the configuration and launch another copy of Emacs, which gives me a fresh copy of the results right next to what I'm working on: 
+
+[[file:images/20200528.png]]
+Take a look: to the left, the frame with the setting before the change; to the right, the setting after the change.
+
+
+# - elfeed: filtering information coming in
+#  - 1-day filter, tag, etc
+#  - downloading and viewing youtubes and MPV (no border)
+# - theme changed, [[https://github.com/wasamasa/gotham-theme][Gotham]]
+#  - changing color for org
+# - Agenda function for ACTIVE projects
 
 
 
-{{< rawhtml >}}
-<style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 22px !important;letter-spacing:0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/I2HmaZYGh"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me Coffee</span></a>
-{{< /rawhtml >}}
+
 
 * About Josh Rollins
    :PROPERTIES:
@@ -2841,7 +2897,15 @@ TAONAW is created with [[https://gohugo.io/][Hugo Go]], a free open-source site 
 
 I write posts in my free time because I want to and I enjoy doing so. No one is supporting me, sponsoring me, or otherwise paying me anything to write or create or publish any content. The goal is to keep things this way. 
 
-As a token of appreciation, I do take one-time [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XBBGQRR2CX5EJ&source=url][tips]]. I am also planning on selling some of my [[https://joshrollinswrites.com/help-desk-head-desk/20200201/][photos]] in the future. 
+If you enjoy what you find here, you can go ahead leave a one-time [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XBBGQRR2CX5EJ&source=url][tip]]. This is not payment: you're tipping me for a service I gave (a post you like), not a service you want to get (asking me to write a post). 
+
+A note about copying/using the code and other parts of this site: 
+I use free tools and free knowledge to build this site, and you are welcome to take and use anything you'd like, /except/ the logo. The logo of the owl and the book was not free and therefore, you may /not/ copy or re-use it. It was created by another artist, who I hired for money. If you want the name, I'll be more than happy to give it to you. Just ask.  
+
+You can also go ahead and copy the content of the posts as well, just please link back to this site. Think is just common courtesy. 
+
+ 
+ 
 
 ** *Footnotes*
 

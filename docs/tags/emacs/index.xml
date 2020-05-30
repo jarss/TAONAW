@@ -6,10 +6,19 @@
     <description>Recent content in emacs on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Customizing a Theme for Emacs</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200528/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200528/</guid>
+      <description>&lt;p&gt;What do you do when you are pretty comfortable with your Emacs theme and colors, but there&amp;rsquo;s one thing you have to change? You find the theme and you customize it to your liking. Here&amp;rsquo;s what I did.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Basic SSH Security</title>

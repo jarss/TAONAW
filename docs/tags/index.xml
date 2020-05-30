@@ -6,10 +6,28 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>emacs</title>
+      <link>https://joshrollinswrites.com/tags/emacs/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orgmode</title>
+      <link>https://joshrollinswrites.com/tags/orgmode/</link>
+      <pubDate>Sat, 30 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
@@ -84,15 +102,6 @@
     </item>
     
     <item>
-      <title>orgmode</title>
-      <link>https://joshrollinswrites.com/tags/orgmode/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>https://joshrollinswrites.com/tags/hugo/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 -0400</pubDate>
@@ -107,15 +116,6 @@
       <pubDate>Sat, 03 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/macos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs</title>
-      <link>https://joshrollinswrites.com/tags/emacs/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
       <description></description>
     </item>
     
