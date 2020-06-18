@@ -2,7 +2,7 @@
 title = "About Josh Rollins"
 author = ["Josh Rollins"]
 layout = "single"
-lastmod = 2020-02-27T07:22:15-05:00
+lastmod = 2020-06-11T08:30:48-04:00
 draft = false
 +++
 

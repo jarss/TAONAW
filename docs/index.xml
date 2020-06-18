@@ -6,10 +6,20 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 09:35:15 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Elfeed to View Videos</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/20200611/</link>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/20200611/</guid>
+      <description>&lt;p&gt;One of the things that makes Emacs stand out is its modes (or &amp;ldquo;plug ins,&amp;rdquo; for those who haven&amp;rsquo;t used Emacs before). The nature of Emacs being open source means that every mode is born out of a need. Nothing is &amp;ldquo;fluff.&amp;rdquo; Every good mode has a good reason to exist. The more people who have the same need, the more customized and refined the mode becomes. Indeed, some of these modes are more supirior than complete softwre packages, which often costs money.&lt;/p&gt;
+&lt;p&gt;Today I want to talk about Elfeed, one of these tools. Elfeed is better than any other RSS feed readers I&amp;rsquo;ve seen. The gif below will show you why:&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Customizing a Theme for Emacs</title>

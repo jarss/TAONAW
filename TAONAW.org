@@ -1261,11 +1261,10 @@ The second time, something similar happened and I got stuck with a specific HTML
 
 First, each event started repeating multiple times on the org file dedicated to syncing. This was because, I think, Org-Gcal works both ways and it pasted to events from Emacs to Google Calendar and then again from Google Calendar to Emacs. I noticed some events started repeating even more than twice. 
 
-Second, and this is a harder issue to fix, is the lack of details I got from events posted from Org-mode. On my agenda, my events have a title completed with a location and a link to that location completed with a tag for the person I'm with. For example, "Breakfast at Tiffany @ [[https://www.nytimes.com/2017/11/11/travel/tiffany-and-co-jewelry-breakfast-audrey-hepburn.html][Tiffany]]      ::Tiffany::" conveniently shows me what I'm doing, where, and with who in online line on my agenda. It's crystal clear, and with quick =C-c C-o= I can check the location, get direction, and later even have a journal link connected to it. When converting to Google calendar event, this would result in a long title with the link's syntax square brackets, the location of the event left blank, and useless timestamp information in the details section. Of course, this is how it's intended to works. While I didn't expect miracles, this did make me realize that "translating org" to Google is not just a technical manner. it's a different /style/ entirely. It is just so much easier to squeeze my Pixel2 (which activates the Assistant if I don't feel saying "hey Google") and say "Create a calendar invite, Dinner at Tiffany at Tiffany Diner with Tiffany today at 8 PM". Google Assistant will usually nail this on the first attempt. This is the /Google style/ and this is what it's really good at doing. If I need minor adjustments, like inviting Tiffany or correct the address, that's pretty easy too with the Android's contextual AI and suggestions. In short, things are more inviting this way than the straight sync the package offers. 
+Second, and this is a harder issue to fix, is the lack of details I got from events posted from Org-mode. On my agenda, my events have a title completed with a location and a link to that location completed with a tag for the person I'm with. For example, "/Breakfast at Tiffany @ [[https://www.nytimes.com/2017/11/11/travel/tiffany-and-co-jewelry-breakfast-audrey-hepburn.html][Tiffany]]      ::Tiffany::/" conveniently shows me what I'm doing, where, and with who in one line on my agenda. It's crystal clear, and with quick =C-c C-o= I can check the location, get direction, and later even have a journal link connected to it. When converting to Google calendar event, this would result in a long title with the link's syntax square brackets, the location of the event left blank, and useless timestamp information in the details section. Of course, this is how it's intended to works. While I didn't expect miracles, this did make me realize that "translating org" to Google is not just a technical manner. it's a different /style/ entirely. It is just so much easier to squeeze my Pixel2 (which activates the Assistant if I don't feel saying "hey Google") and say "Create a calendar invite, Dinner at Tiffany at Tiffany Diner with Tiffany today at 8 PM". Google Assistant will usually nail this on the first attempt. This is the /Google style/ and this is what it's really good at doing. If I need minor adjustments, like inviting Tiffany or correct the address, that's pretty easy too with the Android's contextual AI and suggestions. In short, things are more inviting this way than the straight sync the package offers. 
 
-<br>
-[[file:static/why-gcal-failed.png]]
-<br>
+[[file:images/why-gcal-failed.png]]
+
 This style difference is a pretty big gap to cross. Org-mode is private, quiet, at-my-computer (usually) planning, where Google assistant is not private (Google can say whatever they want). The Calendar, in a weird way, is also not really personal: it's usually intended to share with a different person. What I have on Org-mode is an event. An event can be personal, often enough summed up in my journal with my impressions. The difference is big enough philosophically speaking that I can create the same occurrence twice: once on my Google Calendar, and once in Org. Sure, this is mostly a waste of time. The difference is not always so black-and-white, but it's there. For now, I am creating my Google events manually after creating the Org-mode events.
 
 *** PUBLISHED Switching to Manjaro				      :linux:
@@ -2791,7 +2790,7 @@ Will things stay this way? Who knows. Knowing how I am, I'll get bored 3 months 
 
 
 [fn:43] VMware has Fusion for Mac and a Linux version as well. I only have limited experience on an underpowered Mac, where Fusion is impossibly slow, and its Linux version leaves much to be desired, so on Linux I dumped it in favor of Virtuabox. It seems to operate best on Windows.
-*** WIP Customizing a Theme for Emacs                         :emacs:orgmode:
+*** PUBLISHED Customizing a Theme for Emacs                   :emacs:orgmode:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 20200528
@@ -2866,10 +2865,104 @@ Take a look: to the left, the frame with the setting before the change; to the r
 # - theme changed, [[https://github.com/wasamasa/gotham-theme][Gotham]]
 #  - changing color for org
 # - Agenda function for ACTIVE projects
+*** TODO Remote Work Environment  
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 20200612
+ :EXPORT_HUGO_PUBLISHDATE: 2020-06-11:
+ :END:
+ 
 
 
+ #+hugo: more
+
+# split screen (use image)
+# VM - debian (why is it good, also Suse, also keep it stable not bleeding edge)
+# Always better to leave work in the office, work remote if possible
+# Tools that work on the host: communication, screen capture, remote support
+*** WIP Using Elfeed to View Videos                             :emacs:tools:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 20200611
+ :EXPORT_HUGO_PUBLISHDATE: 2020-06-18:
+ :END:
+ 
+One of the things that makes Emacs stand out is its modes (or "plug ins," for those who haven't used Emacs before). The nature of Emacs being open source means that every mode is born out of a need. Nothing is "fluff." Every good mode has a good reason to exist. The more people who have the same need, the more customized and refined the mode becomes. Indeed, some of these modes are more supirior than complete softwre packages, which often costs money. 
+
+Today I want to talk about Elfeed, one of these tools. Elfeed is better than any other RSS feed readers I've seen. The gif below will show you why:
+
+ #+hugo: more
+
+[[file:images/elfed-view-vids.gif]]
 
 
+**** What's so Good about Elfeed? 
+
+Those of you who are familiar with Emacs and/or Elfeed would probably want to skip this section entirely and go below to my specific tweak. However, if you're thinking of using Elfeed and wonder what's so good about a mere RSS reader, read on. 
+
+First, A quick explination for those of you who're not familiar with Elfeed or Emacs. What you see is a sum of three things: 
+
+1. I open a Window with my RSS feeds, and filter specfically for YouTube channels that were updated in the last week.
+2. Once I locate the feed I want to watch, I browse down to it and hit "v"
+3. A local media player opens and shows me my feed completely free from any YouTube ads or other attention-grabbers I'd find using a full browser.
+
+"Wait, are we still talking about an /RSS/ feed? Doesn't this means we're discussing a geeky way of reading /text/ articles from blogs and such?" 
+
+That's exactly where my earlier point comes in. Elfeed is not an /just/ an RSS feed reader, No. It's an answer to a specific need, or a solution to a problem that exists. What is the problem then? To [[https://nullprogram.com/blog/2013/06/13/][quote its creator]]: 
+
+#+begin_quote
+"Unlike many other feed readers, Elfeed is oriented around entries — the Atom term for articles — rather than feeds. It cares less about where entries came from and more about listing relevant entries for reading."
+#+end_quote
+
+To understand the issue Elfeed's trying to fix, I suggest reading some of [[https://irreal.org/blog/?s=elfeed][Irreal's articles about it]], and [[https://noonker.github.io/posts/2020-04-22-elfeed/][the post that inspired me to give it a try again]]. I had the pleasure of talking to the author of that blog, [[https://github.com/noonker][Noonker]], directly. He had this to say: 
+
+#+begin_quote
+"I consider many modern websites to be abusive and manipulative. They're engineered in such a way to maximize ad dollars by keeping you engaged. They're not designed for people. I really try to minimize my time on these sites and elfeed does a lot to keep me a separated from the manipulative aspects of these sites." 
+#+end_quote
+
+This is exactly what Elfeed is good for. This, I'd argue, is also what Elfeed excels at doing better than any other RSS feeder out there. That's because it's inside my productivity environment already (Emacs). Its filters, customized to give me the exact update I need, are a [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html][bookmark]] away in Emacs (~C-x C-r l~) away. These means that the updates I care about are only 5 keystrokes away, burned into memory. 
+
+Case in point: during these times of COVID19, I used Elfeed to watch Governor Cuomo's (I live in NYC) video feeds without opening my browser and without going to YouTube. Not only Elfeed helped me staying away from YouTube's "Oh! Watch this also!" algorithms and ads, it also made sure this brifing was on my daily news dose, along with the NYC section of the New York Times and new org-mode posts on Reddit[fn:44].
+
+
+**** The Specific YouTube Viewing Fucntion
+
+Noonker generesouly provides his YouTube download function in the post ([[https://noonker.github.io/posts/2020-04-22-elfeed/][here it is again]]). I took the function and manipulated it, after watching [[https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/][Mike Zamansky's]] helpful [[https://www.youtube.com/embed/G1NGNR40lB4][video]]: 
+
+#+begin_src
+(require 'elfeed)
+
+(defun elfeed-v-mpv (url)
+  "Watch a video from URL in MPV"
+  (async-shell-command (format "mpv %s" url)))
+
+(defun elfeed-view-mpv (&optional use-generic-p)
+  "Youtube-feed link"
+  (interactive "P")
+  (let ((entries (elfeed-search-selected)))
+    (cl-loop for entry in entries
+             do (elfeed-untag entry 'unread)
+             when (elfeed-entry-link entry)
+             do (elfeed-v-mpv it))
+    (mapc #'elfeed-search-update-entry entries)
+    (unless (use-region-p) (forward-line))))
+
+(define-key elfeed-search-mode-map (kbd "v") 'elfeed-view-mpv)
+#+end_src 
+
+I was just comfortable enough to manipulate the code a bit after doing some reading on Elisp, but I can't quite explain it fully yet. 
+
+The idea is that there are two functions at play: one that grabs the URL from the feed and store it into a symbol (Elisp spin on what would be a variable in other languages. Well, kind of). It also assigns the shortcut key "v" to view videos, which will work only in Elfeed (so v is free to be used for something else elsewhere).  
+
+To understand better the why and hows, I suggest viewing the video mentioned as well. 
+
+An important part for this function to me is [[https://github.com/mpv-player/mpv][MPV]][fn:45], which immidetly beats ,VLC in minimalizim. I used Plasma's powerful Window manager to have MPV run without a window frame at all, giving it a quick "just the vid please, thanks" interface which further enhanches what I wanted to get from the experience. 
+
+**** Footnotes
+
+[fn:44] There's more to Elfeed's RSS reading philosophy here. Finding relevant RSS feeds is not as simple as going to a big media site and copy down their main RSS feed. This means I'd get every single article, which takes me away from staying on point. RSS feed hunting, as it turns out, is an art form in itself. Not all major website support it fully, and it can be challenging to find (or create) what you need. 
+
+[fn:45] After a week of using MPV, I uninstalled VNC. VNC is OK, but once you try MPV, you stay with it. It is lean and doesn't have the bloatness of VNC, which can do /so many things/ that I just don't need it to do. It works without controls (they come up as you hover over the screen) and encourages you to use keyboard keys to skip, control the volume, etc. It probably deserves a post on its own.
 
 * About Josh Rollins
    :PROPERTIES:

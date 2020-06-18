@@ -2,7 +2,7 @@
 title = "TAONAW: The Art of Not Asking Why"
 author = ["Josh Rollins"]
 layout = "single"
-lastmod = 2020-05-30T09:35:15-04:00
+lastmod = 2020-06-13T07:53:49-04:00
 draft = false
 +++
 
