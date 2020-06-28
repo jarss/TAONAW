@@ -1,7 +1,6 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-    <img src="/title-logo.png">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title}}</h1></a>
     </div>
     <nav>
@@ -19,8 +18,10 @@
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
         {{- end }}
 	  <h3>◾ About </h3>
-	  <a href="{{ .Site.BaseURL }}/about">Josh Rollins</a>
-	  <a href="{{ .Site.BaseURL }}/taonaw">TAONAW</a>
+	    <li>
+	      <a href="{{ .Site.BaseURL }}/about">Josh Rollins</a>
+	      <a href="{{ .Site.BaseURL }}/taonaw">TAONAW</a>
+	    </li>  
       </ul>
     </nav>
   </div>
