@@ -1,4 +1,4 @@
-/*
+b/*
  *  __                  __
  * /\ \                /\ \
  * \ \ \___   __  __   \_\ \     __
@@ -39,136 +39,172 @@
 html {
   font-family: Merriweather, Helvetica, Arial, sans-serif;
 }
+    
+ .sidebar {
+     text-align: left;
+     border-color: rgba(0,0,0,.35);
+     padding: 1rem .1rem;
+     color: rgba(0,0,0,.5);
+     background-color: #eee8d5;
+ } 
 
-@media (min-width: 800px) {
-  html {
-    font-size: 12pt;
-  }
-}
-
-
-/*
- * Sidebar
- *
- * Flexible banner for housing site name, intro, and "footer" content. Starts
- * out above content in mobile and later moves to the side with wider viewports.
- *
- * Changes where added by JR to create the sand colors theme: sidebar color, sidebar a.
- */
-
-.sidebar {
-  text-align: center;
-  border-right-style: ridge;
-  border-width: 1rem;
-  border-color: rgba(0,0,0,.35);
-  padding: 1rem .1rem;
-  color: rgba(0,0,0,.5);
-  background-color: #eee8d5;
-}
-
-.sidebar-about img {
-    position: absolute;
-    left: 3.5rem;
-    top: 2.5rem;
-}
-
-
-/*
- * @media means blow means: "if screen is at least 800px, do the following"
- */
-
-@media (min-width: 800px) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
-    bottom: 0;
-    width: 14rem;
-    text-align: left;
+ .sidebar a {
+     color: rgba(,0,0,.5);
   }
 
-
-/* Sidebar links */
-.sidebar a {
-    color: rgba(0,0,0,.5);
-}
-
-
-
-/* About section 
-Changes included here to use normal weight and capitalize, as I prefer. A few notes: 
-1. word-spacing to force the words to "break" one word per line.
-2. padding to put the line (border) top and bottom in place.
-3. letter-spacing because this font is too close, looks bad without.
- */
-.sidebar-about h1 {
-  color: #8B0000;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  padding-right: 0rem;
-  padding-bottom: 1rem;
-  font-family: Righteous;
-  font-size: 3rem;
-  word-spacing: 100rem;
-  text-align:  left;
-  font-weight: normal;
-  line-height: 3rem;
-  letter-spacing: .1rem;
-  text-transform: capitalize;
-  margin-left: -.5rem;
-  border-top: double .15rem #000;
-  border-bottom: solid .15rem #000;		     
-}
-		   
-		   
-.sidebar-about a {
-    text-decoration: none;
-}
-
-.lead a {
-    text-decoration: underline;
-}
-
-.sidebar-about img {
-  width: 50%;
-  left: 5.5rem;
-  top:  5.2rem;
-
-}
-
-/* Sidebar nav */
+ 
 .sidebar-nav {
-  position: relative;
-  bottom: 0;
-  margin-left: -1em;
-  padding-left: 1em;
-  font-family:"PT Sans";
-  font-size: 1rem;
-  list-style-type: none;
+    margin-left: -1em;
+    padding-left: 1em;
+    list-style-type: none;
+
 }
+
+ img {
+      border-style: solid;
+      border-width: .15em;
+  }
+
+
+.sidebar-nav h3 {
+    font-family: "Righteous", serif;
+    font-weight: normal;
+    color: #515151;
+    margin-bottom: 0em;
+}
+
+
+/*
+links in sidebar for both formats (narrow and wide)
+1. fonts
+2. no underline for links (interferes with the button effect)
+3. padding for top and bottom is 0em, but 1em for right and left.
+
+*/
 
 .sidebar-nav a {
-    display: block;
+  
     font-family: "PT Sans", ariel;
-    font-size: 1rem;
+    font-size: 1em;
     text-decoration: none;
-    padding-left: .2rem;
-    padding-right: .2rem;
+    padding: 0em 1em;
 }
 
 .sidebar-nav a:hover {
     background-color: rgba(0,0,0,.5);
     color: #eee8d5;
 }
+ 
 
+/*
+From here below, style specific for narrow (less than 800px) screens, like phones and tablets.
+*/ 
 
+@media (min-width: 800px) {
+  html {
+      font-size: 12pt;
+  }
 
-.sidebar-nav-item {
-    display: block;
+/*
+For wide view, the sidebar:
+1. 15em wide
+2. It is fixed, so it can show by the side of the posts (content) div
+3. height is 100% so it stretches to the length of the posts div
+*/
+
+  .sidebar {
+      width: 15em;
+      position: fixed;
+      height: 100%;
+      border-right-style: ridge;
+      border-width: 1em;
+  }
+
+/*
+The owl logo is tricky. 
+1. position in percent allows up so use minus, to move a bit above text line. 
+2. size of 3.3 seems to align with the "of" in the logo.
+*/
+  
+  .sidebar h1 {
+      color: #8B0000;
+      padding-bottom: 0em;
+      margin-right: -1em;
+      margin-top: 0em;
+      font-family: Righteous;
+      word-spacing: 100em;
+      line-height: 1em;
+      font-size: 4em;
+      font-weight: normal;
+      text-transform: capitalize;
+      background-image: url("/taonaw_logo.png");
+      background-repeat: no-repeat;
+      background-position: 100% -5%;
+      background-size: 3.3em;
+  }
+  
+ 
+/*
+in wide format:
+1. margin-left makes sure the posts are not under the sidebar
+2. padding to keep it from touching border, top or bottom of windows
+*/
+  
+  .content {
+      margin-left: 15em;
+      padding: 1em;
+  }
+
 }
 
-.sidebar-nav-item:focus {
+@media (max-width: 800px) {
+
+
+    .sidebar h1 {
+	color: #8B0000;
+	margin-top: 0em;
+	padding-top: 0em;
+	padding-bottom: .2em;
+	font-family: Righteous;
+	font-size:  3em;
+	text-align:  center;
+	font-weight: normal;
+	line-height: 3rem;
+	letter-spacing: .1rem;
+	text-transform: capitalize;
+	border-bottom: solid .15rem  rgba(0,0,0,.5);
+    }
+    .sidebar h3 {
+	text-align: center;
+	font-size: 1.5em;
+    }
+    
+    .sidebar-nav li {
+	margin-left: 1em;
+	display: inline-block;
+	padding: .1em .5em;
+    }
+    .sidebar {
+	border-bottom-style: ridge;
+	border-width: 1em;
+	background-image: url("/taonaw_logo.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: 10em;
+    }
+    .sidebar-nav a {
+	font-size: 1em;
+	padding: 0em;
+    }
+    .content {
+	margin: 2em 1em;
+    }
+   
+}
+
+
+/*
+.sidebar-nav-item:focus {the 
   text-decoration: underline;
 }
 
@@ -177,18 +213,7 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
 .sidebar-nav-item.active {
   font-weight: bold;
 }
-
-.sidebar-nav h3 {
-    font-family: "Righteous", serif;
-    font-weight: normal;
-    font-size: 1.2rem;
-    text-decoration: dotted;
-    color: #515151;
-    margin-bottom: 0px;
-    padding-left: -2em;
-    text-align: left;
-
-}
+*/
 
 /* Sticky sidebar
  *
@@ -213,124 +238,10 @@ Changes included here to use normal weight and capitalize, as I prefer. A few no
  * with a 25%-wide `.sidebar`.
  */
 
+/*
 .content {
   padding-top:    1rem;
   padding-bottom: 1rem;
   
 }
-
-@media (min-width: 800px) {
-  .content {
-    margin-left: 14rem;
-    margin-right: 4rem;
-  }
-}
-
-
-
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 800px) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
-}
-
-@media (min-width: 800px) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
-
-
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar  {
-  background-color: #eee8d5;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-
-}
-
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}
+*/

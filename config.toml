@@ -9,14 +9,6 @@ theme = "hyde"
 disqusShortname = "taonaw"
 footnoteReturnLinkContents = "[^ back]"
 
-name = "Hyde"
-license = "MIT"
-licenselink = "https://github.com/spf13/hyde/blob/master/LICENSE.md"
-description = "Just a theme"
-tags = ["blog", "company"]
-features = ["blog", "themes", "disqus"]
-min_version = 0.21
-
 [author]
     name = "Josh Rollins"
     homepage = "joshrollinswrites.com"
@@ -29,7 +21,7 @@ min_version = 0.21
 
 [params]
     description = "A Blog by Josh Rollins: Tech, Life, and the Stuff in Between."
-    themeColor = "theme-base-0a"
+#    themeColor = "theme-base-0a"
 
 [taxonomies]
     tags="tags"

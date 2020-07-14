@@ -1,4 +1,4 @@
-/*
+b/*
  *  __                  __
  * /\ \                /\ \
  * \ \ \___   __  __   \_\ \     __
@@ -29,90 +29,207 @@
  * Global resets
  *
  * Update the foundational and global aspects of the page.
+ * Notice, since we use @media, the size we set here for the font 
+ * will change many elements of the page, since they use 'em' width.
+ * em - size relative to nearst font size
+ * rem - "reset" font size, whatever was set for the whole html
+ * below will effect all rem and the coming ems (until nested).
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Merriweather, Helvetica, Arial, sans-serif;
 }
-@media (min-width: 48em) {
-  html {
-    font-size: 16px;
+    
+ .sidebar {
+     text-align: left;
+     border-color: rgba(0,0,0,.35);
+     padding: 1rem .1rem;
+     color: rgba(0,0,0,.5);
+     background-color: #eee8d5;
+ } 
+
+ .sidebar a {
+     color: rgba(,0,0,.5);
   }
+
+ 
+.sidebar-nav {
+    margin-left: -1em;
+    padding-left: 1em;
+    list-style-type: none;
+
 }
-@media (min-width: 58em) {
-  html {
-    font-size: 20px;
+
+ img {
+      border-style: solid;
+      border-width: .15em;
   }
+
+
+.sidebar-nav h3 {
+    font-family: "Righteous", serif;
+    font-weight: normal;
+    color: #515151;
+    margin-bottom: 0em;
 }
 
 
 /*
- * Sidebar
- *
- * Flexible banner for housing site name, intro, and "footer" content. Starts
- * out above content in mobile and later moves to the side with wider viewports.
- */
+links in sidebar for both formats (narrow and wide)
+1. fonts
+2. no underline for links (interferes with the button effect)
+3. padding for top and bottom is 0em, but 1em for right and left.
 
-.sidebar {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background-color: #202020;
+*/
+
+.sidebar-nav a {
+  
+    font-family: "PT Sans", ariel;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0em 1em;
 }
-@media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem;
-    text-align: left;
+
+.sidebar-nav a:hover {
+    background-color: rgba(0,0,0,.5);
+    color: #eee8d5;
+}
+ 
+
+/*
+From here below, style specific for narrow (less than 800px) screens, like phones and tablets.
+*/ 
+
+@media (min-width: 800px) {
+  html {
+      font-size: 12pt;
   }
+
+/*
+For wide view, the sidebar:
+1. 15em wide
+2. It is fixed, so it can show by the side of the posts (content) div
+3. height is 100% so it stretches to the length of the posts div
+*/
+
+  .sidebar {
+      width: 15em;
+      position: fixed;
+      height: 100%;
+      border-right-style: ridge;
+      border-width: 1em;
+  }
+
+/*
+The owl logo is tricky. 
+1. position in percent allows up so use minus, to move a bit above text line. 
+2. size of 3.3 seems to align with the "of" in the logo.
+*/
+  
+  .sidebar h1 {
+      color: #8B0000;
+      padding-bottom: 0em;
+      margin-right: -1em;
+      margin-top: 0em;
+      font-family: Righteous;
+      word-spacing: 100em;
+      line-height: 1em;
+      font-size: 4em;
+      font-weight: normal;
+      text-transform: capitalize;
+      background-image: url("/taonaw_logo.png");
+      background-repeat: no-repeat;
+      background-position: 100% -5%;
+      background-size: 3.3em;
+  }
+  
+ 
+/*
+in wide format:
+1. margin-left makes sure the posts are not under the sidebar
+2. padding to keep it from touching border, top or bottom of windows
+*/
+  
+  .content {
+      margin-left: 15em;
+      padding: 1em;
+  }
+
 }
 
-/* Sidebar links */
-.sidebar a {
-  color: #fff;
+@media (max-width: 800px) {
+
+
+    .sidebar h1 {
+	color: #8B0000;
+	margin-top: 0em;
+	padding-top: 0em;
+	padding-bottom: .2em;
+	font-family: Righteous;
+	font-size:  3em;
+	text-align:  center;
+	font-weight: normal;
+	line-height: 3rem;
+	letter-spacing: .1rem;
+	text-transform: capitalize;
+	border-bottom: solid .15rem  rgba(0,0,0,.5);
+    }
+    .sidebar h3 {
+	text-align: center;
+	font-size: 1.5em;
+    }
+    
+    .sidebar-nav li {
+	margin-left: 1em;
+	display: inline-block;
+	padding: .1em .5em;
+    }
+    .sidebar {
+	border-bottom-style: ridge;
+	border-width: 1em;
+	background-image: url("/taonaw_logo.png");
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: 10em;
+    }
+    .sidebar-nav a {
+	font-size: 1em;
+	padding: 0em;
+    }
+    .content {
+	margin: 2em 1em;
+    }
+   
 }
 
-/* About section */
-.sidebar-about h1 {
-  color: #fff;
-  margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
-}
 
-/* Sidebar nav */
-.sidebar-nav {
-  padding-left: 0;
-  list-style: none;
-}
-.sidebar-nav-item {
-  display: block;
-}
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+/*
+.sidebar-nav-item:focus {the 
   text-decoration: underline;
 }
+
+
+
 .sidebar-nav-item.active {
   font-weight: bold;
 }
+*/
 
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
  * contents to the bottom of the sidebar in tablets and up.
+ *
+ * 
+ * @media (min-width: 48em) {
+ * .sidebar-sticky {
+ *   position: absolute;
+ *   right:  1rem;
+ *   bottom: 1rem;
+ *   left:   1rem;
+ * }
+ *}
  */
-
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
-}
 
 
 /* Container
@@ -121,130 +238,10 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
+/*
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  
 }
-
-@media (min-width: 48em) {
-  .content {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
-}
-
-
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 48em) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
-
-
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #ac4142;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
-}
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
-}
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}
+*/
