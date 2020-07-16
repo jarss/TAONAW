@@ -2,7 +2,7 @@
 title = "About Josh Rollins"
 author = ["Josh Rollins"]
 layout = "single"
-lastmod = 2020-06-11T08:30:48-04:00
+lastmod = 2020-07-14T13:02:28-04:00
 draft = false
 +++
 
@@ -11,3 +11,5 @@ Josh Rollins is an NYC based self-made-techie who works with humans and machines
 Rollins has broken his technology (this website included) many times over. While he feels disqualified of giving any good advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle.
 
 As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find, but he can be reached at jarss at protonmail dot com, [Reddit](https://www.reddit.com/user/JR121), or [Mastodon](https://mastodon.technology/web/accounts/115656).
+
+h

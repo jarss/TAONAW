@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "Refactoring CSS",
+    "headline" : "Refactoring CSS",
+    "description" : "\x3cp\x3eThere\x26rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you\x26rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I\x26rsquo;ve ever done, but I hope you\x26rsquo;d barely notice anything.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-07-16 00:00:00 -0400 EDT",
+    "dateModified" : "2020-07-16 00:00:00 -0400 EDT",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/2020-07-14\/",
+    "wordCount" : "544",
+    "keywords" : [ "blogging","css","Blog" ]
+}
+</script>
+
+  
+  <title>Refactoring CSS &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Oswald|Merriweather|PT+Sans:400,400i,700">
+
+
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="The Art of Not Asking Why" />
+
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Frequent</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(18)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(11)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(9)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(9)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(8)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/tools"> tools <small>(7)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h4><a href="https://joshrollinswrites.com/tags/">All Topics ►</a></h4>
+        
+	  <h3>About </h3>
+	    <li>
+	      <a href="https://joshrollinswrites.com//about">Josh Rollins</a>
+	    </li>
+	    <li>
+	      <a href="https://joshrollinswrites.com//taonaw">TAONAW</a>
+	    </li>  
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>Refactoring CSS</h1>
+ <time datetime=2020-07-16T00:00:00-0400 class="post-date">2020-07-16 
+
+
+
+    
+      / <a href="https://joshrollinswrites.com/tags/blogging/"> blogging</a>
+      / <a href="https://joshrollinswrites.com/tags/css/"> css</a>
+</time>
+ <p>There&rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you&rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I&rsquo;ve ever done, but I hope you&rsquo;d barely notice anything.</p>
+<p>One of the issues I wanted to fix in TAONAW was the mobile layout. The original theme, <a href="https://themes.gohugo.io/hyde/">Hyde</a>, comes with a narrow theme variant aimed at smartphones and tablets. On TAONAW, it was always a broken mess of inherited CSS rules coming from the wide (desktop screens) variant, which was what I always focused on. The narrow theme became even worse after I had my logo made. The logo covered the sidebar almost completely, making navigating the site on smartphones practically impossible.</p>
+<p>I&rsquo;ve toyed with my CSS here and there, but I knew I need to go deep to fix the narrow theme. The different CSS tricks and hacks I used made the site work through workarounds, but overall, it was still a mess. This week I finally got some time off for serious refactoring<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>When you narrow the browser&rsquo;s window now (go ahead, do it) it will switch to &ldquo;smartphone&rdquo; mode when you reach 800 pixels wide. I tested the site on both my iPhone and Android and the site looks as intended on both<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. The logo, which now fits better on the wide version next to the title, also sits well at the lower right corner on narrow screens. Shrink the screen more and the logo will slide left to accomodate (eventually it will overlap the text of the navigation bar, but I don&rsquo;t believe there&rsquo;s a screen <em>that</em> narrow intended for reading.</p>
+<p>The CSS (in the hyde.css file) code now exhibits common code for both themes at the top, and then under it, the wide version followed by the narrow version. For example, The title font for the site is the same for both themes, so it will be defined at the top; however, the font is a different size on the wide version (<a href="https://www.w3schools.com/CSSref/css%5Funits.asp">4em</a>) than it is on the narrow version (<a href="https://www.w3schools.com/CSSref/css%5Funits.asp">3em</a>). This is one refactoring example of many. I also took out large chunks of unnecessary code that came with the original theme.</p>
+<p>There are many examples I can point out and expand on, but I won&rsquo;t get into these right now. If you&rsquo;re interested, the site and the theme is <a href="https://github.com/jarss/TAONAW">availble to all on github</a>, where it&rsquo;s been since day one. For me, the biggest satisfaction was learning all the new CSS &ldquo;stuff<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>&rdquo; and having an organized CSS I&rsquo;m familiar with to keep fixing and adjusting the site in the future.</p>
+<h2 id="footnotes">Footnotes</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Usually reserved for &ldquo;serious code,&rdquo; after working a couple of hours on CSS, I think the term describes well what I&rsquo;ve done here. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Like other projects of similar size, you only see additional issues after you&rsquo;re done. A few tweaks to the narrow theme still need to be done, but now it will be much easier to get to them. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>When I think of it, CSS is immensely useful. It can be used to present anything (through a form of an HTML page) rather it&rsquo;s my wiki built-in Emacs org-mode or a document following a theme turned into PDF. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

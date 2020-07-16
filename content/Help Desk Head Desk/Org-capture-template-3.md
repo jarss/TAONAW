@@ -2,8 +2,8 @@
 title = "My Org Capture Templates - Part 3"
 author = ["Josh Rollins"]
 publishDate = 2019-02-09T00:00:00-05:00
-lastmod = 2019-07-28T07:43:06-04:00
-tags = ["orgmode", "emacs"]
+lastmod = 2020-07-16T10:24:11-04:00
+tags = ["orgmode", "emacs", "css"]
 draft = false
 +++
 

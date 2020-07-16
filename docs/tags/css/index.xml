@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/tags/css/</link>
+    <description>Recent content in css on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Refactoring CSS</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you&amp;rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I&amp;rsquo;ve ever done, but I hope you&amp;rsquo;d barely notice anything.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Org Capture Templates - Part 3</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
+      <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
+&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

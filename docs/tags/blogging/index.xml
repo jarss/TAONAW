@@ -6,10 +6,19 @@
     <description>Recent content in blogging on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Refactoring CSS</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you&amp;rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I&amp;rsquo;ve ever done, but I hope you&amp;rsquo;d barely notice anything.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Blog Update 2020-02</title>

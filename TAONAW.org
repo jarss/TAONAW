@@ -807,7 +807,7 @@ My journal is another feature of Org-mode that fits my workflow effortlessly. Th
 
 This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night. 
 
-*** PUBLISHED My Org Capture Templates - Part 3               :orgmode:emacs:
+*** PUBLISHED My Org Capture Templates - Part 3           :orgmode:emacs:css:
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_HUGO_PUBLISHDATE: 2019-02-09:
@@ -966,7 +966,8 @@ Org-mode is a huge topic in itself which I've spent hours writing about in other
 
 These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what's on my agenda. To me, that's one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me. 
 
-*** PUBLISHED CSS Updates					   :blogging:
+*** PUBLISHED CSS Updates                                      :blogging:css:
+    SCHEDULED: <2020-07-16 Thu>
  :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: css-updates-1
@@ -2448,7 +2449,7 @@ There are areas that require improvement. Again, take my photos. They are very p
 
 [fn:28] That's the Google Pixel *a* line, /not/ the Google Pixel flagship line, which seems to be expensive just because iPhones are expensive. 
 
-*** PUBLISHED Blog Update 2020-02                                  :blogging:
+*** PUBLISHED Blog Update 2020-02                              :blogging:css:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
     :EXPORT_FILE_NAME: 20200301
@@ -2963,7 +2964,7 @@ An important part for this function to me is [[https://github.com/mpv-player/mpv
 [fn:44] There's more to Elfeed's RSS reading philosophy here. Finding relevant RSS feeds is not as simple as going to a big media site and copy down their main RSS feed. This means I'd get every single article, which takes me away from staying on point. RSS feed hunting, as it turns out, is an art form in itself. Not all major website support it fully, and it can be challenging to find (or create) what you need. 
 
 [fn:45] After a week of using MPV, I uninstalled VNC. VNC is OK, but once you try MPV, you stay with it. It is lean and doesn't have the bloatness of VNC, which can do /so many things/ that I just don't need it to do. It works without controls (they come up as you hover over the screen) and encourages you to use keyboard keys to skip, control the volume, etc. It probably deserves a post on its own.
-*** WIP Standing Desk                                                  :life:
+*** PUBLISHED Standing Desk                                            :life:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 20200622
@@ -3028,6 +3029,34 @@ You're only seeing half of it since my thoughts (under the closed headers) are j
 [fn:47]  That's because sit-stand converters effectively include a stand for the screen. Other converters are essentially just a raised tray on which you also put the screen with the keyboard and mouse; with sit-stands, the screen mounts to the back. Better models include independent raising mechanism. 
 
 [fn:48] Probably another post in itself, an ultra-wide monitor is another must-have in my setup today. It is not as heavy and messy as having two monitors while providing much-needed work space, not to mention good gaming experience (which is horrible on a dual screens in my opinion).
+*** WIP Refactoring CSS                                        :blogging:css:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-07-14
+ :EXPORT_HUGO_PUBLISHDATE: 2020-07-16:
+ :END:
+ 
+There's a popular saying in IT: if you receive no comments about a project you just finished, you know you've done your job right. The latest commit to TAONAW is one of the biggest I've ever done, but I hope you'd barely notice anything. 
+
+ #+hugo: more
+
+One of the issues I wanted to fix in TAONAW was the mobile layout. The original theme, [[https://themes.gohugo.io/hyde/][Hyde]], comes with a narrow theme variant aimed at smartphones and tablets. On TAONAW, it was always a broken mess of inherited CSS rules coming from the wide (desktop screens) variant, which was what I always focused on. The narrow theme became even worse after I had my logo made. The logo covered the sidebar almost completely, making navigating the site on smartphones practically impossible.
+
+I've toyed with my CSS here and there, but I knew I need to go deep to fix the narrow theme. The different CSS tricks and hacks I used made the site work through workarounds, but overall, it was still a mess. This week I finally got some time off for serious refactoring[fn:49]. 
+
+When you narrow the browser's window now (go ahead, do it) it will switch to "smartphone" mode when you reach 800 pixels wide. I tested the site on both my iPhone and Android and the site looks as intended on both[fn:51]. The logo, which now fits better on the wide version next to the title, also sits well at the lower right corner on narrow screens. Shrink the screen more and the logo will slide left to accomodate (eventually it will overlap the text of the navigation bar, but I don't believe there's a screen /that/ narrow intended for reading.
+
+The CSS (in the hyde.css file) code now exhibits common code for both themes at the top, and then under it, the wide version followed by the narrow version. For example, The title font for the site is the same for both themes, so it will be defined at the top; however, the font is a different size on the wide version ([[https://www.w3schools.com/CSSref/css_units.asp][4em]]) than it is on the narrow version ([[https://www.w3schools.com/CSSref/css_units.asp][3em]]). This is one refactoring example of many. I also took out large chunks of unnecessary code that came with the original theme. 
+
+There are many examples I can point out and expand on, but I won't get into these right now. If you're interested, the site and the theme is [[https://github.com/jarss/TAONAW][availble to all on github]], where it's been since day one. For me, the biggest satisfaction was learning all the new CSS "stuff[fn:50]" and having an organized CSS I'm familiar with to keep fixing and adjusting the site in the future.   
+
+**** Footnotes
+
+[fn:49] Usually reserved for "serious code," after working a couple of hours on CSS, I think the term describes well what I've done here.
+
+[fn:51] Like other projects of similar size, you only see additional issues after you're done. A few tweaks to the narrow theme still need to be done, but now it will be much easier to get to them. 
+
+[fn:50] When I think of it, CSS is immensely useful. It can be used to present anything (through a form of an HTML page) rather it's my wiki built-in Emacs org-mode or a document following a theme turned into PDF.
 
 * About Josh Rollins
    :PROPERTIES:
