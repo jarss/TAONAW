@@ -3057,7 +3057,7 @@ There are many examples I can point out and expand on, but I won't get into thes
 
 [fn:50] When I think of it, CSS is immensely useful. It can be used to present anything (through a form of an HTML page) rather it's my wiki built-in Emacs org-mode or a document following a theme turned into PDF.
 
-*** WIP Org-mode Basics Skipped                                     :orgmode:
+*** WIP Back to basics: org-mode agenda                             :orgmode:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-07-16
