@@ -195,9 +195,19 @@ dd {
 
 .posts li {
     text-transform: capitalize;
-    border-bottom: 1px dotted;
 }
 
+figcaption {
+    margin-top: -1.5em;
+    font-family: "pt-sans",arial;
+    font-size: .9em;
+}
+
+@media (max-width: 800px) {
+    ul {
+	padding-left: 0em;
+    }
+}
 
 /* Misc */
 hr {
@@ -281,6 +291,8 @@ img {
   margin: 0 0 1rem;
   border-radius: 5px;
   max-width: 100%;
+  height: auto;
+  
 }
 
 /* Tables */
@@ -423,9 +435,10 @@ tbody tr:nth-child(odd) th {
     border-bottom-style: dotted;
     border-bottom-color: #eee8d5;
     word-spacing: .3rem;
-    font-size: 1.7rem;
-    line-height: 1.5rem;
-    margin-bottom: .1rem;
+    font-size: 2em;
+    line-height: .85em;
+    margin-bottom: .1em;
+    text-transform: capitalize;
 }
     
 

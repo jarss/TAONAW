@@ -6,10 +6,20 @@
     <description>Recent content in orgmode on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org-mode Basics Skipped</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</guid>
+      <description>&lt;p&gt;Since I &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200611/&#34;&gt;set up Elfeed&lt;/a&gt; to suit my needs, I&amp;rsquo;ve been following the org-mode community on Reddit regularly. Many of the questions I see there from newcomers show a rush towards custom-made packages or bits of code without awareness of the powerful built-in features org-mode ships with out of the box.&lt;/p&gt;
+&lt;p&gt;I want to start a short series of &amp;ldquo;back to basics.&amp;rdquo; I hope to show the philosophy behind the certain flow I use as well as the plain and powerful features.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Customizing a Theme for Emacs</title>

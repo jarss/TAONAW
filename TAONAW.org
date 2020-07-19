@@ -215,7 +215,7 @@ The main technology section. Every project starts here, eventually branching off
    
     After re-reading some sections of the manual and watching [[https://www.youtube.com/watch?v%3DoJTwQvgfgMM#t%3D1m20s][Carsten
     Dominik's]] presentation back from 2008, I was reminded of Org-modes
-    original built-in tools. In the lecture, Carsten emphasized [[https://orgmode.org/manual/Column-view.html][Column
+    original built-in tools. In the lecture, Carsten emphasized [[https://org-mode.org/manual/Column-view.html][Column
     View]] in Org. It is something I saw in passing previously, but now
     that I was having a mess on my hands with properties, Column View
     glowed in a welcoming aura. A quick and efficient way to have a
@@ -2642,7 +2642,6 @@ You could argue it's all a matter of taste, and I'd say sure, everything is. I f
 
 
 
-
 *** PUBLISHED D.D.T.C Day 55                                           :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -3029,7 +3028,7 @@ You're only seeing half of it since my thoughts (under the closed headers) are j
 [fn:47]  That's because sit-stand converters effectively include a stand for the screen. Other converters are essentially just a raised tray on which you also put the screen with the keyboard and mouse; with sit-stands, the screen mounts to the back. Better models include independent raising mechanism. 
 
 [fn:48] Probably another post in itself, an ultra-wide monitor is another must-have in my setup today. It is not as heavy and messy as having two monitors while providing much-needed work space, not to mention good gaming experience (which is horrible on a dual screens in my opinion).
-*** WIP Refactoring CSS                                        :blogging:css:
+*** PUBLISHED Refactoring CSS                                  :blogging:css:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-07-14
@@ -3057,6 +3056,58 @@ There are many examples I can point out and expand on, but I won't get into thes
 [fn:51] Like other projects of similar size, you only see additional issues after you're done. A few tweaks to the narrow theme still need to be done, but now it will be much easier to get to them. 
 
 [fn:50] When I think of it, CSS is immensely useful. It can be used to present anything (through a form of an HTML page) rather it's my wiki built-in Emacs org-mode or a document following a theme turned into PDF.
+
+*** WIP Org-mode Basics Skipped                                     :orgmode:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-07-16
+ :EXPORT_HUGO_PUBLISHDATE: 2020-07-19:
+ :END:
+ 
+Since I [[https://joshrollinswrites.com/help-desk-head-desk/20200611/][set up Elfeed]] to suit my needs, I've been following the org-mode community on Reddit regularly. Many of the questions I see there from newcomers show a rush towards custom-made packages or bits of code without awareness of the powerful built-in features org-mode ships with out of the box. 
+
+I want to start a short series of "back to basics." I hope to show the philosophy behind the certain flow I use as well as the plain and powerful features. 
+
+#+hugo: more
+
+**** The Agenda
+
+One of the first things to reconsider, especially to the newcomer, is the agenda. To quote orgmode.org directly:
+
+#+BEGIN_quote
+As its name suggests, the most common use of the agenda is to pull together, from all the agenda files, a daily or weekly schedule or a list of todos. /But the agenda is also a powerful search engine that offers various ways tools for querying both the metadata and the text of org-mode entries. In fact, Org-mode's default agenda view (C-c a a or org-agenda-list) is simply a search tool/ that gathers and displays all org-mode entries with certain types of metadata—timestamps that fall within a given range of dates. 
+#+END_quote
+
+This is probably one of the most overlooked ideas. Everyone knows of the agenda, but many underestimate how powerful it is. A newcomer comes in and asks how to do something that the agenda already provides, and someone will suggest a package from melpa or a bit of code, but the "vanilla" version provides what's needed right out of the box.
+
+Take the concept of the agenda as a search engine, and suddenly many of the built-in powerful commands make sense.  For example, ~C-a s~ for Boolean search or regex through all your .org files, for example[fn:52]. Or ~C-a T~ for a specific Keyword, which I use often for my projects, marked with "ACTIVE" (one simple search and you see a list of your active projects). I use these powerful commands 90% of the time and hardly look anywhere else. I highly recommend the [[https://orgmode.org/worg/org-tutorials/advanced-searching.html][wrog page]] for this, which has a lot of details for searching and helpful examples. 
+
+Organization is important, so let's discuss categories ([[https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/][I wrote about this before]]). The idea is to group certain org files together to reflect one major "life area"[fn:53]. One obvious example, and almost the only one I use, are my personal and work categories. I have a "task" capture template for tasks that I use often and capture into a temp org file. I then refile these tasks under my "Personal" or "Work" headers on my weekly org file. All that is needed is the [[https://orgmode.org/manual/Categories.html][category property]]. Not only this organizes my agenda quickly to work and personal projects and tasks, it's also easy to focus on one category quickly in agenda view by hitting ~<~ when standing over it with the mark. One key press and you see only work-related stuff; one more and you back to see everything. Of course, you need to understand org-capture and use it generously. I've wrote about this a couple of times, if you're interested (look under the [[https://joshrollinswrites.com/tags/orgmode/][orgmode]] tag).
+
+Keywords is another basic feature in org-mode that can do much more for you besides just showing you to-do items. You can use them to help you understand what kind of a task is ahead of you without any additional fancy code. I already mentioned my projects get the "ACTIVE" keyword ([[https://joshrollinswrites.com/help-desk-head-desk/20200123/][I wrote more in depth on it before]]), which is different than just a task that is marked by "TODO". I also have "JOURNAL" and "WIKI" keywords which are pretty self-explanatory. The WIKI one is especially useful if I want to remind myself to document a process I've done. I can later search for all my wiki assignments on the agenda (remember the ~C-a T~ from before?) at the end of the week or during downtime at work and do them all at once. If you find that you're dealing with a /kind/ of a to-do process, consider expanding your keywords. Here are some examples that might be useful for you: "brainstorm", "meet", "discuss", "wait", "pending", etc. The manual suggests (I can't find where now) using keywords for people (such as "John" and "Jane"), if certain tasks require that you delegate what you're doing. Remember that these are searchable and very visual. Use it for your advantage.  
+
+So far, I discussed features that help you search and find things on the agenda, but lets switch gears to productivity philosophy for a minute. Here's a "mindhack" that has been useful to me: stop thinking of scheduling a task as a way of /when/ to do something, but instead, /how important/ is that to-do item. I don't use the agenda priority feature. Instead, I just schedule important things for the early part of the day and things that are less important or optional for later in the afternoon. It's very easy to re-schedule tasks (as easy as standing over it with the mark and using ~>~ as a shortcut). Remember: the agenda is /not/ an agenda. It's a search engine. It's OK to have 20 tasks on it scheduled throughout the day, it doesn't mean you'd get to all of them (and you shouldn't).  
+
+So if you don't use scheduling, how do you know when you actually work on something? Let's bring up another mindhack: clocking in and out of tasks. Many folks say it's overkill or they just forget to clock in when the project starts. Most of the tasks I clock in for, I clock /after the fact/. Why? A few reasons. First, because I schedule tasks as a way of priority, many times it happens that a task I started today I will continue tomorrow. If I clock my time for the task today, it will show on my agenda (press ~l~ to see clocked in items in agenda view) today even though it's scheduled in the future. If I just checked on something quick (say, see if a client has responded to an open ticket, then I see they didn't), I just clock in and out quickly, creating a 0-time instance that still shows on the agenda. This way I know I checked in on the ticket today, even though the task still reads "check on ticket" - which is what I need to do the next day again. By the way, did you know you can clock in by pressing ~I~ and out by pressing ~O~? Place your mark on a task in your agenda view and try it.   
+
+I especially clock in on projects after I'm done working on them for the day. This gives me a good bird eye view at the end of the week to see how much time I spent on a large task. To check how much time you spend and add all the time clocks, stand on tasks header in the org file (meaning, not in the agenda. Hit enter, go into the header and hover over it, and then) and press ~C-c C-x C-d~. It will tell you at the bottom. If you stand on a parent header, this will also show you the sum of the sub-headers, which is useful if you have a big project broken down to assignments (as you should).
+
+What about events that are actually scheduled for a specific time, like meetings or dates or phone calls? Easy. Use timestamps without the "Scheduled:" word in the beginning. You can define a time range also if you write it out like so: ~<2222-07-19 Tue 08:00>-<2222-07-19 Sun 10:00>~. Don't underestimate this. Headers with these timestamps will be colored differently on your agenda, making it easy to distinguish between actual meetings and your scheduled tasks. These are also the kind of events that you can export easily to other calendar apps like Google calendar later on. What I do sometimes is still add a TODO keyword to these events, as an indication that I have a checklist waiting under the header. So if I place a header like "Meeting with the boss" with a TODO on it, I know I have a few items to review before the meeting, or perhaps points to bring up during the meeting. Small details like these can be very helpful. 
+
+There's more to cover but I should leave some things for next time. I hope this is useful also to those of you who's been using org-mode for a while (if so, what did you learn? What can you teach me?)
+
+# More agenda stuff that come to mind:
+ 
+# 1. You can refile and organize a couple of headers by marking the headers on your agenda with "m" and then press B (capital B) for Bulk action which will allow you to schedule and refile many headers at once.
+# 2. You can kill duplicate headers with ~C-k~ from the agenda, which will place them in the kill ring with all of their details.
+# 3. If you stand on a child header and you don't know what parent it belongs to, press ~C-c C-r~ to see the parent header. Also, just standing on a header shows you the complete path to that header with the headers it's under.
+# 4. use regular timestamps (without "Scheduled:" before them) to book events that must happen at a certain time, like meetings. These will usually have a different color on the agenda, showing you what /has/ to happen at a certain time.
+
+**** Footnotes
+
+[fn:52] Think about this for a minute: a full regex search for all your org files. This is so powerful! You can search for something as simple as "Bob's Cafe" to bring up all "Bob's Cafe" results, but you can also use something like ~+Bob -Cafe|-cafe~ to find any org files that have the words Bob *and not* Cafe or cafe (search is case sensitive). You can go full regex with the search too if you want, which might be useful if you're trying to find a specific location you know you visited a year and a half ago and wrote about it in your journal.org file and all you can remember is rambling about the great beer the had but the awful music was horrible, and it was cold, and...You get the point. 
+
+[fn:53] The idea of "life area" is something you need to sit down and define. Categories are not tags, they are meant to be very general. Think of categories as routines or certain "bracket" in your life you spend more than an hour every day during the week. Things like "Work" "Exercise" and "health" make sense, depending on what you use org-mode for; things like "projects" or "vacation to Aruba" do not - these are too specific and would probably be better used as titles, keywords, or perhaps tags.
 
 * About Josh Rollins
    :PROPERTIES:
