@@ -14,7 +14,7 @@
     <item>
       <title>Back to basics: org-mode agenda</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</link>
-      <pubDate>19190-07-07</pubDate>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</guid>
       <description>&lt;p&gt;Since I &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200611/&#34;&gt;set up Elfeed&lt;/a&gt; to suit my needs, I&amp;rsquo;ve been following the org-mode community on Reddit regularly. Many of the questions I see there from newcomers show a rush towards custom-made packages or bits of code without awareness of the powerful built-in features org-mode ships with out of the box.&lt;/p&gt;
@@ -50,7 +50,7 @@
     <item>
       <title>Refactoring CSS</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</link>
-      <pubDate>16160-07-07</pubDate>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you&amp;rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I&amp;rsquo;ve ever done, but I hope you&amp;rsquo;d barely notice anything.&lt;/p&gt;
@@ -79,7 +79,7 @@
     <item>
       <title>Standing Desk</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200622/</link>
-      <pubDate>28280-06-06</pubDate>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200622/</guid>
       <description>&lt;p&gt;At first, I only noticed an increase in back pains. Then there was general restlessness that didn&amp;rsquo;t allow me to concentrate on long-term projects at work. There was a nagging feeling of &amp;ldquo;I miss something&amp;rdquo; coming from my body, not so much my brain. And then, one day at the office during my on-site duty, I pulled up my screen and keyboard to its standing position and it hit me: &lt;em&gt;I need to stand&lt;/em&gt;.&lt;/p&gt;
@@ -146,7 +146,7 @@
     <item>
       <title>Using Elfeed to View Videos</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200611/</link>
-      <pubDate>18180-06-06</pubDate>
+      <pubDate>Thu, 18 Jun 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200611/</guid>
       <description>&lt;p&gt;One of the things that makes Emacs stand out is its modes (or &amp;ldquo;plug ins,&amp;rdquo; for those who haven&amp;rsquo;t used Emacs before). The nature of Emacs being open source means that every mode is born out of a need. Nothing is &amp;ldquo;fluff.&amp;rdquo; Every good mode has a good reason to exist. The more people who have the same need, the more customized and refined the mode becomes. Indeed, some of these modes are more supirior than complete softwre packages, which often costs money.&lt;/p&gt;
@@ -215,7 +215,7 @@
     <item>
       <title>Customizing a Theme for Emacs</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200528/</link>
-      <pubDate>30300-05-05</pubDate>
+      <pubDate>Sat, 30 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200528/</guid>
       <description>&lt;p&gt;What do you do when you are pretty comfortable with your Emacs theme and colors, but there&amp;rsquo;s one thing you have to change? You find the theme and you customize it to your liking. Here&amp;rsquo;s what I did.&lt;/p&gt;
@@ -261,7 +261,7 @@ Take a look: to the left, the frame with the setting before the change; to the r
     <item>
       <title>Benefits of Linux on VM</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200522/</link>
-      <pubDate>25250-05-05</pubDate>
+      <pubDate>Mon, 25 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200522/</guid>
       <description>&lt;p&gt;With the majority of work happening from home, I decided to go back to Windows. I was stubborn at start, and continue to host a Windows VM inside Linux, but eventually I acknowledged that I&amp;rsquo;ll a smoother workflow the other way around.&lt;/p&gt;
@@ -298,7 +298,7 @@ Take a look: to the left, the frame with the setting before the change; to the r
     <item>
       <title>Mounting an SMB Share on Linux</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200518/</link>
-      <pubDate>18180-05-05</pubDate>
+      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200518/</guid>
       <description>&lt;p&gt;Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.&lt;/p&gt;
@@ -361,7 +361,7 @@ domain=.
     <item>
       <title>D.D.T.C Day 55</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200511/</link>
-      <pubDate>16160-05-05</pubDate>
+      <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200511/</guid>
       <description>&lt;p&gt;Distancing Due to COVID19, Day 55. What are the effects?&lt;/p&gt;
@@ -389,7 +389,7 @@ domain=.
     <item>
       <title>Old Software</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200428/</link>
-      <pubDate>9090-05-05</pubDate>
+      <pubDate>Sat, 09 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200428/</guid>
       <description>&lt;p&gt;What do Emacs, SSH, FTP, IRC and ffmpeg have in common?&lt;/p&gt;
@@ -412,7 +412,7 @@ domain=.
     <item>
       <title>Staying Sane While Social Distancing</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200329/</link>
-      <pubDate>29290-03-03</pubDate>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200329/</guid>
       <description>&lt;p&gt;Good morning from New York City, the new epicenter of COVID-19. This morning, I want to share a few tips that helped me cope with social distancing, keep mostly calm, and otherwise remain productive.&lt;/p&gt;
@@ -429,7 +429,7 @@ domain=.
     <item>
       <title>TAONAW&#39;s First Photography Video</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200326/</link>
-      <pubDate>27270-03-03</pubDate>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200326/</guid>
       <description>&lt;p&gt;There are currently three unfinished drafts in TAONAW&amp;rsquo;s main org file&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. It seems as if the &lt;a href=&#34;https://en.wikipedia.org/wiki/Portal:Coronavirus%5Fdisease%5F2019&#34;&gt;pandemic&lt;/a&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Social%5Fdistancing&#34;&gt;social-distancing&lt;/a&gt; dried out my ideas and ability to express myself. On Tuesday I took a walk into the park and captured some flowers and birds with my camera. As it turned out, the walk outdoors recharged my batteries. I came back home and sat down to finally record my first video about photography. Here are the details about how I did it and why.&lt;/p&gt;
@@ -463,7 +463,7 @@ domain=.
     <item>
       <title>Blog Update 2020-02</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200301/</link>
-      <pubDate>9090-03-03</pubDate>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200301/</guid>
       <description>&lt;p&gt;I ironed out a couple of CSS issues that popped up since I updated Hugo and implemented a few navigation and new page. Why and how&amp;hellip; Coming up.&lt;/p&gt;
@@ -478,7 +478,7 @@ domain=.
     <item>
       <title>About Ease of Use vs Indepence</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200218/</link>
-      <pubDate>29290-02-02</pubDate>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200218/</guid>
       <description>&lt;p&gt;It seems like hating on Google (or Apple, or Amazon, or whatever tech giant) is the hip thing to do these days. I want to raise a couple of points to argue otherwise, and explain how I try to find balance in a monopoly-driven world.&lt;/p&gt;
@@ -515,7 +515,7 @@ domain=.
     <item>
       <title>Best Tools for the job: Duplicati</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200212/</link>
-      <pubDate>14140-02-02</pubDate>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200212/</guid>
       <description>&lt;p&gt;One of the things I&amp;rsquo;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&amp;rsquo;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;
@@ -548,7 +548,7 @@ domain=.
     <item>
       <title>The joy of Taking Photos</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200201/</link>
-      <pubDate>4040-02-02</pubDate>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200201/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been enjoying taking photos since October and decided to start recording videos, expanding the way I publish content. As it turns out, recording, editing, and storing videos is not as simple as I thought. The outcome has been holding back on discussing one of my biggest passions these days. I want to change that today.&lt;/p&gt;
@@ -596,7 +596,7 @@ domain=.
     <item>
       <title>How I Tackle Projects With org-mode</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200123/</link>
-      <pubDate>24240-01-01</pubDate>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200123/</guid>
       <description>&lt;p&gt;Over the time I&amp;rsquo;ve been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven&amp;rsquo;t felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I&amp;rsquo;ve discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode.&lt;/p&gt;
@@ -633,7 +633,7 @@ domain=.
     <item>
       <title>Switching to Kubuntu over openSuSE</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200108/</link>
-      <pubDate>8080-01-01</pubDate>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200108/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;After giving openSuSE a try&lt;/a&gt;, I decided to switch to Kubuntu. So far it&amp;rsquo;s been a month or so since the switch, and everything I want works to the point that I havne&amp;rsquo;t booted into Windows once.&lt;/p&gt;
@@ -647,7 +647,7 @@ domain=.
     <item>
       <title>Lessons from a Huge Project at Work</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200103/</link>
-      <pubDate>3030-01-01</pubDate>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200103/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s probably an unwritten rule (and if not, there should be) that the amount of documents needed for a project is roughly equivalent to half the number of people working on the project. Our department alone is about 20 folks, and for a recent big project we need to work with other divisions, so at this point I can&amp;rsquo;t even tell you how many documents we need to keep track of.&lt;/p&gt;
@@ -683,7 +683,7 @@ domain=.
     <item>
       <title>General Update</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20191229/</link>
-      <pubDate>29290-12-12</pubDate>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20191229/</guid>
       <description>&lt;figure&gt;
@@ -699,7 +699,7 @@ domain=.
     <item>
       <title>The Long Goodbye to Windows</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20191208/</link>
-      <pubDate>8080-12-12</pubDate>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20191208/</guid>
       <description>&lt;p&gt;The idea of switching &amp;ldquo;Completely&amp;rdquo; Linux has been in my head since I wrote
@@ -734,7 +734,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Happpy Thanksgiving</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/2019-11-28/</link>
-      <pubDate>28280-11-11</pubDate>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/2019-11-28/</guid>
       <description>&lt;p&gt;My family and I (those of us in the US, that is) have a micro version of Thanksgiving. There&amp;rsquo;s no Turkey (we&amp;rsquo;re not exactly big on meat), there are no large family encounters that break into their homogeneous splinters as time progresses. I usually bring my one partner with me over to my sister&amp;rsquo;s, where we thaw our awkwardness next to the fireplace and watch my little niece run around like a leg-seeking missile, homing to the nearest standing person.&lt;/p&gt;
@@ -749,7 +749,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>A new Camera Instead of Pixel4</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/my-new-sonya6000/</link>
-      <pubDate>8080-11-11</pubDate>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/my-new-sonya6000/</guid>
       <description>&lt;p&gt;When Google was about to officially announce the new Pixel4, I was excited about getting a new phone with an improved camera and enhanced night vision. However, not even a week later, I ended up with a digital camera instead. A few weeks later with my camera, I am happy with my purchase and the new things it brought into my life.&lt;/p&gt;
@@ -788,7 +788,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Too Many Notifications</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/</link>
-      <pubDate>20200-10-10</pubDate>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/</guid>
       <description>&lt;p&gt;The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greeted with windows opening on me notifying me on updates, of new games sales, of emails&amp;hellip; &amp;ldquo;click me! No! Click me!&amp;rdquo; Yeeeesh. I put my coffee down and shut down my Windows PC off again. How did I get to this point again?&lt;/p&gt;
@@ -815,7 +815,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Blog Updates Posts</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-posts/</link>
-      <pubDate>14140-10-10</pubDate>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-posts/</guid>
       <description>&lt;p&gt;As I wrote the &lt;a href=&#34;http://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/&#34;&gt;October Updates&lt;/a&gt; post, I came to realize that having a &amp;ldquo;what&amp;rsquo;s new&amp;rdquo; kind of post regularly is a good idea. Usually, updating one thing causes me to want another change or to break something that worked. These are learning experiences that I believe could be beneficial other bloggers out there (I know they are to me). For those interested, here are some of my thoughts on that.&lt;/p&gt;
@@ -829,7 +829,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Blog Updates: 2019-10</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/</link>
-      <pubDate>12120-10-10</pubDate>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/blog-updates-2/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been fairly active with the website this month, but most of the changes are behind the scenes.&lt;/p&gt;
@@ -872,7 +872,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Tools in Windows</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</link>
-      <pubDate>28280-09-09</pubDate>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/windows-tools/</guid>
       <description>&lt;p&gt;My &lt;a href=&#34;https://open.tube/videos/watch/697084c3-6e9b-435c-b5e2-7647a9d9c30f&#34;&gt;first public video&lt;/a&gt; introduced me to new challanges I didn&amp;rsquo;t face until now. Case in point: displaying milliseconds in VLC. I looked online in various places for a solution with my tools of choice, VLC player and ffmpeg. Workarounds do exist, but not nearly as simple as what exists for me in Windows. This happened to me before. As I was starting to get stuck, I realized that sometimes it&amp;rsquo;s ok not to wrack my head over every single hurdle. This is a reminder for myself, and hopefully save you some time to.&lt;/p&gt;
@@ -907,7 +907,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Scripting in Bash 102</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</link>
-      <pubDate>3030-09-09</pubDate>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</guid>
       <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&amp;rsquo;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
@@ -1033,7 +1033,7 @@ sed -i &amp;quot;1s/^/#+TITLE: Week Starting Monday $init_mon\n/&amp;quot; /medi
     <item>
       <title>Of Journaling</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</link>
-      <pubDate>29290-08-08</pubDate>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;
@@ -1084,7 +1084,7 @@ sed -i &amp;quot;1s/^/#+TITLE: Week Starting Monday $init_mon\n/&amp;quot; /medi
     <item>
       <title>Why do They Use a Mac?</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</link>
-      <pubDate>3030-08-08</pubDate>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</guid>
       <description>&lt;p&gt;Macs are evil. Macs are expensive pieces of toy hardware, which is often not up to par with what&amp;rsquo;s offered on the market (my personal biggest annoyances are the keyboards and the touchpad). Everything you do on a Mac you can do on Linux better&amp;hellip; and so on. If that&amp;rsquo;s true, why are so many professionals in IT environments (which are otherwise Windows-based) use Macs? I want to see if my perspective changed.&lt;/p&gt;
@@ -1098,7 +1098,7 @@ sed -i &amp;quot;1s/^/#+TITLE: Week Starting Monday $init_mon\n/&amp;quot; /medi
     <item>
       <title>Basic SSH Security</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</link>
-      <pubDate>28280-07-07</pubDate>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</guid>
       <description>&lt;p&gt;They say a picture is worth a thousand words:&lt;/p&gt;
@@ -1146,7 +1146,7 @@ where the xxx is the first and second octet of the IP address we want to allow. 
     <item>
       <title>Submenus in org-mode Capture</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</link>
-      <pubDate>14140-07-07</pubDate>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
@@ -1199,7 +1199,7 @@ s [w] SLS-Windows
     <item>
       <title>Org-capture in Files</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</link>
-      <pubDate>6060-07-07</pubDate>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&amp;rsquo;s so much to explain, I can&amp;rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;
@@ -1264,7 +1264,7 @@ s [w] SLS-Windows
     <item>
       <title>Quick Updates: June</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</link>
-      <pubDate>30300-06-06</pubDate>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</guid>
       <description>&lt;p&gt;Even though I don&amp;rsquo;t have any means of tracking how many readers I have on this blog, I can&amp;rsquo;t help but feel a little bit responsible for my audience. This is an attempt to see how a quick &amp;ldquo;here&amp;rsquo;s what&amp;rsquo;s up&amp;rdquo; post while the blog is otherwise idle.&lt;/p&gt;
@@ -1277,7 +1277,7 @@ s [w] SLS-Windows
     <item>
       <title>Of Emacs and Chutzpah</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</link>
-      <pubDate>21210-06-06</pubDate>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</guid>
       <description>&lt;p&gt;Says &lt;a href=&#34;https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments&#34;&gt;Jamie T. Rubin&lt;/a&gt;: &amp;ldquo;As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?&amp;rdquo;&lt;/p&gt;
@@ -1310,7 +1310,7 @@ s [w] SLS-Windows
     <item>
       <title>Orgzly: An Interview</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</link>
-      <pubDate>7070-06-06</pubDate>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve talked about &lt;a href=&#34;http://www.orgzly.com/&#34;&gt;Orgzly&lt;/a&gt; several times on this blog, but I haven&amp;rsquo;t dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly&amp;rsquo;s usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I&amp;rsquo;m happy to present my first interview on this blog.&lt;/p&gt;
@@ -1347,7 +1347,7 @@ s [w] SLS-Windows
     <item>
       <title>Best Tools for the job: Flameshot</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/</link>
-      <pubDate>25250-05-05</pubDate>
+      <pubDate>Sat, 25 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/best-tools-flameshot/</guid>
       <description>&lt;p&gt;Every now and then I discover (or re-discover) a tool in Linux that does exactly what I need it to do. Some examples include ffmpeg, to shrink down my self-recorded webcam journal session while increasing the volume; abcde, to rip a classical music CD to flac and find its exact title and name; youtube-dl, which downloads any video online I need along with aria to speed these downloads, and more.&lt;/p&gt;
@@ -1366,7 +1366,7 @@ s [w] SLS-Windows
     <item>
       <title>Switching to Manjaro</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</link>
-      <pubDate>23230-05-05</pubDate>
+      <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using Linux as my daily driver for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don&amp;rsquo;t think I will ever go back to using either one for my personal data. As a matter of fact, it&amp;rsquo;s Linux which made an appearance at work: without my VM and Org-mode, I would probably be drowning under hips of emails, meeting invites, support tickets, and the constant in-person walk-ins into our work environment. I throw everything I get at Org-mode to keep on top of the couple of tasks I try to tackle each day.&lt;/p&gt;
@@ -1384,7 +1384,7 @@ s [w] SLS-Windows
     <item>
       <title>Why Managing Email in Emacs is not for me</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/mu4e-not-for-me/</link>
-      <pubDate>22220-05-05</pubDate>
+      <pubDate>Wed, 22 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/mu4e-not-for-me/</guid>
       <description>&lt;p&gt;I had &lt;a href=&#34;https://irreal.org/blog/?p=8004&#34;&gt;irreal&amp;rsquo;s post&lt;/a&gt; about &lt;a href=&#34;https://www.reddit.com/r/emacs/comments/bfsck6/mu4e%5Ffor%5Fdummies/&#34;&gt;mu4e for dummies&lt;/a&gt; on my todo list for a week before I decided to give it up. At first, I thought it was because setting the time and following through the guide was too much of a &amp;ldquo;cloud&amp;rdquo; in my head to tackle, so I broke it down. Then, as I looked at the individual components, I realized it&amp;rsquo;s more complicated then technicalities alone.&lt;/p&gt;
@@ -1397,7 +1397,7 @@ s [w] SLS-Windows
     <item>
       <title>Everenote - Behind the Scenes</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</link>
-      <pubDate>18180-05-05</pubDate>
+      <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</guid>
       <description>&lt;p&gt;A few years back, I was an avid user of Evernote. That was a period of information &amp;ldquo;innocence&amp;rdquo; for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files &amp;ndash; though they have been since downloaded and converted from the App&amp;rsquo;s native format.&lt;/p&gt;
@@ -1408,7 +1408,7 @@ s [w] SLS-Windows
     <item>
       <title>Why Gcal Failed</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</link>
-      <pubDate>12120-04-04</pubDate>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</guid>
       <description>&lt;p&gt;I recently tried &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;Org-Gcal&lt;/a&gt; a second time just to turn it off again. I was following the (now slightly outdated) &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;instructions&lt;/a&gt; on &lt;a href=&#34;https://cestlaz.github.io/&#34;&gt;Mike Zamansky&amp;rsquo;s&lt;/a&gt; blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.&lt;/p&gt;
@@ -1432,7 +1432,7 @@ It&amp;rsquo;s an Emacs package that allows Org-mode to sync with Google calenda
     <item>
       <title>Upgrading my Audio Game</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/</link>
-      <pubDate>9090-04-04</pubDate>
+      <pubDate>Tue, 09 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/upgrading-audio-game/</guid>
       <description>&lt;p&gt;After a few months of research, I finally upgraded my Audio system on my PC. As it turns out, it wasn&amp;rsquo;t as expensive as I feared. The renewed interest in music took me in rewarding directions of sound exploration I did not anticipate.&lt;/p&gt;
@@ -1456,7 +1456,7 @@ It&amp;rsquo;s an Emacs package that allows Org-mode to sync with Google calenda
     <item>
       <title>What has Been Going on</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/updates/</link>
-      <pubDate>3030-04-04</pubDate>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/updates/</guid>
       <description>&lt;p&gt;I always dislike it when I read a post explaining why there&amp;rsquo;s been a break in posting. It&amp;rsquo;s usually a sign that the next post will be the last if it will happen at all, and it&amp;rsquo;s always some excuse about being busy, life getting in the way, etc. etc. So I guess now it&amp;rsquo;s my turn to write one of these posts.&lt;/p&gt;
@@ -1469,7 +1469,7 @@ It&amp;rsquo;s an Emacs package that allows Org-mode to sync with Google calenda
     <item>
       <title>About Emotional Exhaustions</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/about_burnouts/</link>
-      <pubDate>9090-03-03</pubDate>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/about_burnouts/</guid>
       <description>&lt;p&gt;This past week has been a good example of emotional exhaustion. Because influences overall productivity, relationships, and health (both mental and physical) I&amp;rsquo;d like to discuss it here.&lt;/p&gt;
@@ -1516,7 +1516,7 @@ I then settled on this definition, from &lt;a href=&#34;https://en.wikipedia.org
     <item>
       <title>Elite Dangerous: Beginning</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/elite-dangerous-beginnings/</link>
-      <pubDate>1010-03-03</pubDate>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/elite-dangerous-beginnings/</guid>
       <description>&lt;p&gt;17:42. Almost time to go home. I&amp;rsquo;ve been trying to hold on a bit longer, to tell myself I should around more before I buy it. Elite is complex, with a steep learning and no real objectives in sight. I was worried it&amp;rsquo;ll be more work after work. So of course, I bought it.&lt;/p&gt;
@@ -1531,7 +1531,7 @@ I then settled on this definition, from &lt;a href=&#34;https://en.wikipedia.org
     <item>
       <title>Password Managers Hacks</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</link>
-      <pubDate>25250-02-02</pubDate>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</guid>
       <description>&lt;p&gt;News that surfaced last week report of a &lt;a href=&#34;https://www.securityevaluators.com/casestudies/password-manager-hacking/&#34;&gt;security flaw&lt;/a&gt; that exists in the most popular password managers out there like LastPass, KeePass, and 1Password among others. Does this mean people should stop using them? No. Will people use this news as yet another excuse not to use password managers? Sure.&lt;/p&gt;
@@ -1549,7 +1549,7 @@ I then settled on this definition, from &lt;a href=&#34;https://en.wikipedia.org
     <item>
       <title>Using Regex for Old macOS Models</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</link>
-      <pubDate>17170-02-02</pubDate>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</guid>
       <description>&lt;p&gt;At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.&lt;/p&gt;
@@ -1592,7 +1592,7 @@ I then settled on this definition, from &lt;a href=&#34;https://en.wikipedia.org
     <item>
       <title>From LastPass to KeePass</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</link>
-      <pubDate>11110-02-02</pubDate>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
@@ -1623,7 +1623,7 @@ I then settled on this definition, from &lt;a href=&#34;https://en.wikipedia.org
     <item>
       <title>My Org Capture Templates - Part 3</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
-      <pubDate>9090-02-02</pubDate>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
       <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
@@ -1666,7 +1666,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>CSS Updates</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</link>
-      <pubDate>2020-02-02</pubDate>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</guid>
       <description>&lt;p&gt;About some CSS Updates&amp;hellip; and why I haven&amp;rsquo;t posted in the last two weeks or so. (Changes are now complete!)&lt;/p&gt;
@@ -1691,7 +1691,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>My Org Capture Templates - Part 2</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</link>
-      <pubDate>21210-01-01</pubDate>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</guid>
       <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;
@@ -1728,7 +1728,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>My Org Capture Templates - Part 1</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</link>
-      <pubDate>17170-01-01</pubDate>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;
@@ -1771,7 +1771,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>Of Subnautica and Fear</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/subnautica-and-fear/</link>
-      <pubDate>16160-01-01</pubDate>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/subnautica-and-fear/</guid>
       <description>&lt;figure&gt;
@@ -1787,7 +1787,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>Apple is a Hardware Second Company</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</link>
-      <pubDate>7070-01-01</pubDate>
+      <pubDate>Mon, 07 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/apple-hardware-second/</guid>
       <description>&lt;p&gt;You don&amp;rsquo;t need to look hard to find the holes in this Emperor&amp;rsquo;s clothes. Apple has been heading downhill for a couple of years, but it&amp;rsquo;s only recently that the public at large started to take notice.&lt;/p&gt;
@@ -1800,7 +1800,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>How I Write Posts for my Blog</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</link>
-      <pubDate>26260-12-12</pubDate>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</guid>
       <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;
@@ -1827,7 +1827,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>About Removing Company Software</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</link>
-      <pubDate>7070-12-12</pubDate>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</guid>
       <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;
@@ -1840,7 +1840,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>Switching to Hugo - Full Time</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</link>
-      <pubDate>5050-12-12</pubDate>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/switching-to-hugo/</guid>
       <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;
@@ -1858,7 +1858,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>AFPS Secure Token Active Directory Problems</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</link>
-      <pubDate>26260-11-11</pubDate>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</guid>
       <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;
@@ -1878,7 +1878,7 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     <item>
       <title>The Hub</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
-      <pubDate>22220-11-11</pubDate>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
       <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;
@@ -1959,7 +1959,7 @@ go to interface options (option 5 in my case, in the middle), and do that.&lt;/p
     <item>
       <title>Desktop Wisdom</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</link>
-      <pubDate>24240-10-10</pubDate>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</guid>
       <description>&lt;p&gt;I asked my coworkers the following question:
@@ -1975,7 +1975,7 @@ go to interface options (option 5 in my case, in the middle), and do that.&lt;/p
     <item>
       <title>Evolvement of Video Journal &amp; Org</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</link>
-      <pubDate>23230-10-10</pubDate>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</guid>
       <description>&lt;p&gt;Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I &lt;a href=&#34;https://jarss.github.io/TAONAW/blog/org-update/&#34;&gt;discussed these&lt;/a&gt; couple of times before: tasks, task notes, and journal.&lt;/p&gt;
@@ -2001,7 +2001,7 @@ go to interface options (option 5 in my case, in the middle), and do that.&lt;/p
     <item>
       <title>Emacs Windows</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</link>
-      <pubDate>13130-10-10</pubDate>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</guid>
       <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;
@@ -2021,7 +2021,7 @@ go to interface options (option 5 in my case, in the middle), and do that.&lt;/p
     <item>
       <title>Hugo - what takes so long?</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</link>
-      <pubDate>4040-10-10</pubDate>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/hugo-beginnings/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;ve bseen following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
@@ -2042,7 +2042,7 @@ go to interface options (option 5 in my case, in the middle), and do that.&lt;/p
     <item>
       <title>Agenda, and the Benfit of Having Multiple Files</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/</link>
-      <pubDate>2020-08-08</pubDate>
+      <pubDate>Thu, 02 Aug 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/</guid>
       <description>&lt;p&gt;I used to write all my tasks, personal and work, into one tasks.org
@@ -2204,7 +2204,7 @@ reflects that now.&lt;/li&gt;
     <item>
       <title>Libre and Clothes</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</link>
-      <pubDate>1010-08-08</pubDate>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</guid>
       <description>&lt;p&gt;When I write, I live in Emacs (with the awesome &lt;a href=&#34;https://github.com/altercation/solarized&#34;&gt;Solorized&lt;/a&gt; theme)

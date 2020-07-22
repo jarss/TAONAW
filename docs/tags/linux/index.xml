@@ -14,7 +14,7 @@
     <item>
       <title>Benefits of Linux on VM</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200522/</link>
-      <pubDate>25250-05-05</pubDate>
+      <pubDate>Mon, 25 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200522/</guid>
       <description>&lt;p&gt;With the majority of work happening from home, I decided to go back to Windows. I was stubborn at start, and continue to host a Windows VM inside Linux, but eventually I acknowledged that I&amp;rsquo;ll a smoother workflow the other way around.&lt;/p&gt;
@@ -51,7 +51,7 @@
     <item>
       <title>Mounting an SMB Share on Linux</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200518/</link>
-      <pubDate>18180-05-05</pubDate>
+      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200518/</guid>
       <description>&lt;p&gt;Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.&lt;/p&gt;
@@ -114,7 +114,7 @@ domain=.
     <item>
       <title>Old Software</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200428/</link>
-      <pubDate>9090-05-05</pubDate>
+      <pubDate>Sat, 09 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200428/</guid>
       <description>&lt;p&gt;What do Emacs, SSH, FTP, IRC and ffmpeg have in common?&lt;/p&gt;
@@ -137,7 +137,7 @@ domain=.
     <item>
       <title>Best Tools for the job: Duplicati</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200212/</link>
-      <pubDate>14140-02-02</pubDate>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200212/</guid>
       <description>&lt;p&gt;One of the things I&amp;rsquo;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&amp;rsquo;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;
@@ -170,7 +170,7 @@ domain=.
     <item>
       <title>Switching to Kubuntu over openSuSE</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200108/</link>
-      <pubDate>8080-01-01</pubDate>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200108/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;After giving openSuSE a try&lt;/a&gt;, I decided to switch to Kubuntu. So far it&amp;rsquo;s been a month or so since the switch, and everything I want works to the point that I havne&amp;rsquo;t booted into Windows once.&lt;/p&gt;
@@ -184,7 +184,7 @@ domain=.
     <item>
       <title>The Long Goodbye to Windows</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20191208/</link>
-      <pubDate>8080-12-12</pubDate>
+      <pubDate>Sun, 08 Dec 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20191208/</guid>
       <description>&lt;p&gt;The idea of switching &amp;ldquo;Completely&amp;rdquo; Linux has been in my head since I wrote
@@ -219,7 +219,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Too Many Notifications</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/</link>
-      <pubDate>20200-10-10</pubDate>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/too-many-notifications/</guid>
       <description>&lt;p&gt;The fan noise that came from my Windows machine finally got on my nerves, so I turned off my PC. I turned it on the next day, not thinking much about anything, my coffee at hand. As soon as I logged in I was greeted with windows opening on me notifying me on updates, of new games sales, of emails&amp;hellip; &amp;ldquo;click me! No! Click me!&amp;rdquo; Yeeeesh. I put my coffee down and shut down my Windows PC off again. How did I get to this point again?&lt;/p&gt;
@@ -246,7 +246,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Why do They Use a Mac?</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</link>
-      <pubDate>3030-08-08</pubDate>
+      <pubDate>Sat, 03 Aug 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/why-admins-use-mac/</guid>
       <description>&lt;p&gt;Macs are evil. Macs are expensive pieces of toy hardware, which is often not up to par with what&amp;rsquo;s offered on the market (my personal biggest annoyances are the keyboards and the touchpad). Everything you do on a Mac you can do on Linux better&amp;hellip; and so on. If that&amp;rsquo;s true, why are so many professionals in IT environments (which are otherwise Windows-based) use Macs? I want to see if my perspective changed.&lt;/p&gt;
@@ -260,7 +260,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Quick Updates: June</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</link>
-      <pubDate>30300-06-06</pubDate>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</guid>
       <description>&lt;p&gt;Even though I don&amp;rsquo;t have any means of tracking how many readers I have on this blog, I can&amp;rsquo;t help but feel a little bit responsible for my audience. This is an attempt to see how a quick &amp;ldquo;here&amp;rsquo;s what&amp;rsquo;s up&amp;rdquo; post while the blog is otherwise idle.&lt;/p&gt;
@@ -273,7 +273,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>Switching to Manjaro</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</link>
-      <pubDate>23230-05-05</pubDate>
+      <pubDate>Thu, 23 May 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/switching-to-manjaro/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using Linux as my daily driver for the last three years. I work with Windows on a daily basis and I support Mac issues all the time, but I don&amp;rsquo;t think I will ever go back to using either one for my personal data. As a matter of fact, it&amp;rsquo;s Linux which made an appearance at work: without my VM and Org-mode, I would probably be drowning under hips of emails, meeting invites, support tickets, and the constant in-person walk-ins into our work environment. I throw everything I get at Org-mode to keep on top of the couple of tasks I try to tackle each day.&lt;/p&gt;
@@ -291,7 +291,7 @@ about &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/too-many
     <item>
       <title>The Hub</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
-      <pubDate>22220-11-11</pubDate>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
       <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;

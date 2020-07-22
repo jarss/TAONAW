@@ -14,7 +14,7 @@
     <item>
       <title>Basic SSH Security</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</link>
-      <pubDate>28280-07-07</pubDate>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</guid>
       <description>&lt;p&gt;They say a picture is worth a thousand words:&lt;/p&gt;
@@ -62,7 +62,7 @@ where the xxx is the first and second octet of the IP address we want to allow. 
     <item>
       <title>Password Managers Hacks</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</link>
-      <pubDate>25250-02-02</pubDate>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/password-manager-hacking/</guid>
       <description>&lt;p&gt;News that surfaced last week report of a &lt;a href=&#34;https://www.securityevaluators.com/casestudies/password-manager-hacking/&#34;&gt;security flaw&lt;/a&gt; that exists in the most popular password managers out there like LastPass, KeePass, and 1Password among others. Does this mean people should stop using them? No. Will people use this news as yet another excuse not to use password managers? Sure.&lt;/p&gt;
@@ -80,7 +80,7 @@ where the xxx is the first and second octet of the IP address we want to allow. 
     <item>
       <title>From LastPass to KeePass</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</link>
-      <pubDate>11110-02-02</pubDate>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/lastpass-to-keepass/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been using LastPass for the last 5 years and been happy with it. I recommended it to friends, family, and co-workers. I tried to sell it through its convenience: once set up, LastPass auto-fills user and password fields, and can even log you into a website directly. LastPass also creates complicated passwords automatically and is available on every major browser, iPhones and Android.&lt;/p&gt;
@@ -111,7 +111,7 @@ where the xxx is the first and second octet of the IP address we want to allow. 
     <item>
       <title>The Hub</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
-      <pubDate>22220-11-11</pubDate>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
       <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;

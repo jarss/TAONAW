@@ -14,7 +14,7 @@
     <item>
       <title>Mounting an SMB Share on Linux</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200518/</link>
-      <pubDate>18180-05-05</pubDate>
+      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200518/</guid>
       <description>&lt;p&gt;Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.&lt;/p&gt;
@@ -77,7 +77,7 @@ domain=.
     <item>
       <title>Best Tools for the job: Duplicati</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200212/</link>
-      <pubDate>14140-02-02</pubDate>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200212/</guid>
       <description>&lt;p&gt;One of the things I&amp;rsquo;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&amp;rsquo;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;
@@ -110,7 +110,7 @@ domain=.
     <item>
       <title>Scripting in Bash 102</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</link>
-      <pubDate>3030-09-09</pubDate>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</guid>
       <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&amp;rsquo;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
@@ -236,7 +236,7 @@ sed -i &amp;quot;1s/^/#+TITLE: Week Starting Monday $init_mon\n/&amp;quot; /medi
     <item>
       <title>Submenus in org-mode Capture</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</link>
-      <pubDate>14140-07-07</pubDate>
+      <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
@@ -289,7 +289,7 @@ s [w] SLS-Windows
     <item>
       <title>Using Regex for Old macOS Models</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</link>
-      <pubDate>17170-02-02</pubDate>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</guid>
       <description>&lt;p&gt;At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.&lt;/p&gt;
@@ -332,7 +332,7 @@ s [w] SLS-Windows
     <item>
       <title>The Hub</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
-      <pubDate>22220-11-11</pubDate>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
       <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;
