@@ -3057,7 +3057,7 @@ There are many examples I can point out and expand on, but I won't get into thes
 
 [fn:50] When I think of it, CSS is immensely useful. It can be used to present anything (through a form of an HTML page) rather it's my wiki built-in Emacs org-mode or a document following a theme turned into PDF.
 
-*** WIP Back to basics: org-mode agenda                             :orgmode:
+*** PUBLISHED Back to basics: org-mode agenda                       :orgmode:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-07-16
@@ -3108,8 +3108,22 @@ There's more to cover but I should leave some things for next time. I hope this 
 [fn:52] Think about this for a minute: a full regex search for all your org files. This is so powerful! You can search for something as simple as "Bob's Cafe" to bring up all "Bob's Cafe" results, but you can also use something like ~+Bob -Cafe|-cafe~ to find any org files that have the words Bob *and not* Cafe or cafe (search is case sensitive). You can go full regex with the search too if you want, which might be useful if you're trying to find a specific location you know you visited a year and a half ago and wrote about it in your journal.org file and all you can remember is rambling about the great beer the had but the awful music was horrible, and it was cold, and...You get the point. 
 
 [fn:53] The idea of "life area" is something you need to sit down and define. Categories are not tags, they are meant to be very general. Think of categories as routines or certain "bracket" in your life you spend more than an hour every day during the week. Things like "Work" "Exercise" and "health" make sense, depending on what you use org-mode for; things like "projects" or "vacation to Aruba" do not - these are too specific and would probably be better used as titles, keywords, or perhaps tags.
+*** WIP Full content in RSS feeds                                      :hugo:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-07-22
+ :EXPORT_HUGO_PUBLISHDATE: 2020-07-22:
+ :END:
+ 
+Those of you who subscribe to this blog via RSS (if you don't you, you [[https://joshrollinswrites.com/index.xml][should]]) should now be able to read full content in RSS. 
 
-* About Josh Rollins
+  #+hugo: more
+ 
+Hugo [[https://gohugo.io/templates/rss/#the-embedded-rss-xml][comes with a default RSS]] [[https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml][template]] that generates RSS for you out of the box. You can create an RSS template in our site's ~/layout/_default/~ directory, just call it rss.xml and use your own code, or if you're like me and just want to change something quick, use the template above and copy-paste the contents from git-hub. 
+
+I did this in order to be able to change the "Summary" default to "Content" toward the end, in this line: ~<description>{{ .Summary | html }}</description>~. This is a nice tip I discovered at [[https://www.godo.dev/tutorials/hugo-full-text-rss/][GODO.DEV]]. 
+
+Next, need to add RSS link at the sidebar for anyone else interested and doesn't know about the blog's RSS. * About Josh Rollins
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: About
    :EXPORT_FILE_NAME: _index
