@@ -16,7 +16,9 @@
 	<h4><a href="/tags/">All Topics ►</a></h4>
         {{ range .Site.Menus.main -}}
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
-        {{- end }}
+          {{- end }}
+      </ul>
+      <ul class="sidebar-nav">
 	  <h3>About </h3>
 	    <li>
 	      <a href="{{ .Site.BaseURL }}/about">Josh Rollins</a>
@@ -24,6 +26,12 @@
 	    <li>
 	      <a href="{{ .Site.BaseURL }}/taonaw">TAONAW</a>
 	    </li>  
+      </ul>
+      <ul class="sidebar-nav">
+	<li>
+	  <a href="http://joshrollinswrites.com/index.xml"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
+	  <i class="fa fa-mastodon"></i>
+	</li>
       </ul>
     </nav>
   </div>

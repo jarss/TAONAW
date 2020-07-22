@@ -6,10 +6,28 @@
     <description>Recent content in hugo on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Oct 2019 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Full content in RSS feeds</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-22/</link>
+      <pubDate>Wed, 22 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-22/</guid>
+      <description>&lt;p&gt;Those of you who subscribe to this blog via RSS (if you don&amp;rsquo;t you, you &lt;a href=&#34;https://joshrollinswrites.com/index.xml&#34;&gt;should&lt;/a&gt;) should now be able to read full content in RSS.&lt;/p&gt;
+&lt;p&gt;Hugo &lt;a href=&#34;https://gohugo.io/templates/rss/#the-embedded-rss-xml&#34;&gt;comes with a default RSS&lt;/a&gt; &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/%5Fdefault/rss.xml&#34;&gt;template&lt;/a&gt; that generates RSS for you out of the box. You can create an RSS template in our site&amp;rsquo;s &lt;code&gt;/layout/_default/&lt;/code&gt; directory, just call it rss.xml and use your own code, or if you&amp;rsquo;re like me and just want to change something quick, use the template above and copy-paste the contents from git-hub.&lt;/p&gt;
+&lt;p&gt;I did this in order to be able to change the &amp;ldquo;Summary&amp;rdquo; default to &amp;ldquo;Content&amp;rdquo; toward the end, in this line: &lt;code&gt;&amp;lt;description&amp;gt;{{ .Summary | html }}&amp;lt;/description&amp;gt;&lt;/code&gt;. This is a nice tip I discovered at &lt;a href=&#34;https://www.godo.dev/tutorials/hugo-full-text-rss/&#34;&gt;GODO.DEV&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next, need to add RSS link at the sidebar for anyone else interested and doesn&amp;rsquo;t know about the blog&amp;rsquo;s RSS. * About Josh Rollins&lt;/p&gt;
+&lt;p&gt;:EXPORT_HUGO_SECTION: About
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_LAYOUT: single&lt;/p&gt;
+&lt;p&gt;Josh Rollins is an NYC based self-made-techie who works with humans and machines and enjoys interacting with both. He explores automation, privacy, and affordability in tech. As a result, he often finds himself tangled in the blurred lines of the real and the ideal.&lt;/p&gt;
+&lt;p&gt;Rollins has broken his technology (this website included) many times over. While he feels disqualified of giving any good advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle.&lt;/p&gt;
+&lt;p&gt;As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find, but he can be reached at jarss at protonmail dot com, &lt;a href=&#34;https://www.reddit.com/user/JR121&#34;&gt;Reddit&lt;/a&gt;, or &lt;a href=&#34;https://mastodon.technology/web/accounts/115656&#34;&gt;Mastodon&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Blog Updates: 2019-10</title>
