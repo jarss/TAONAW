@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "Full content in RSS feeds",
     "headline" : "Full content in RSS feeds",
-    "description" : "\x3cp\x3eThose of you who subscribe to this blog via RSS (if you don\x26rsquo;t you, you \x3ca href=\x22https:\/\/joshrollinswrites.com\/index.xml\x22\x3eshould\x3c\/a\x3e) should now be able to read full content in RSS.\x3c\/p\x3e",
+    "description" : "\x3cp\x3eThose of you who subscribe to this blog via RSS (if you don\x26rsquo;t, you \x3ca href=\x22https:\/\/joshrollinswrites.com\/index.xml\x22\x3eshould\x3c\/a\x3e) should now be able to read full content in RSS.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -30,7 +30,7 @@
     "datePublished": "2020-07-22 00:00:00 -0400 EDT",
     "dateModified" : "2020-07-22 00:00:00 -0400 EDT",
     "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/2020-07-22\/",
-    "wordCount" : "269",
+    "wordCount" : "166",
     "keywords" : [ "hugo","Blog" ]
 }
 </script>
@@ -163,16 +163,10 @@
     
     / <a href="https://joshrollinswrites.com/tags/hugo/"> hugo</a>
 </time>
- <p>Those of you who subscribe to this blog via RSS (if you don&rsquo;t you, you <a href="https://joshrollinswrites.com/index.xml">should</a>) should now be able to read full content in RSS.</p>
-<p>Hugo <a href="https://gohugo.io/templates/rss/#the-embedded-rss-xml">comes with a default RSS</a> <a href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/%5Fdefault/rss.xml">template</a> that generates RSS for you out of the box. You can create an RSS template in our site&rsquo;s <code>/layout/_default/</code> directory, just call it rss.xml and use your own code, or if you&rsquo;re like me and just want to change something quick, use the template above and copy-paste the contents from git-hub.</p>
-<p>I did this in order to be able to change the &ldquo;Summary&rdquo; default to &ldquo;Content&rdquo; toward the end, in this line: <code>&lt;description&gt;{{ .Summary | html }}&lt;/description&gt;</code>. This is a nice tip I discovered at <a href="https://www.godo.dev/tutorials/hugo-full-text-rss/">GODO.DEV</a>.</p>
-<p>Next, need to add RSS link at the sidebar for anyone else interested and doesn&rsquo;t know about the blog&rsquo;s RSS. * About Josh Rollins</p>
-<p>:EXPORT_HUGO_SECTION: About
-:EXPORT_FILE_NAME: _index
-:EXPORT_HUGO_LAYOUT: single</p>
-<p>Josh Rollins is an NYC based self-made-techie who works with humans and machines and enjoys interacting with both. He explores automation, privacy, and affordability in tech. As a result, he often finds himself tangled in the blurred lines of the real and the ideal.</p>
-<p>Rollins has broken his technology (this website included) many times over. While he feels disqualified of giving any good advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle.</p>
-<p>As an individual who shuns Facebook and Twitter, Rollins can be a bit tricky to find, but he can be reached at jarss at protonmail dot com, <a href="https://www.reddit.com/user/JR121">Reddit</a>, or <a href="https://mastodon.technology/web/accounts/115656">Mastodon</a>.</p>
+ <p>Those of you who subscribe to this blog via RSS (if you don&rsquo;t, you <a href="https://joshrollinswrites.com/index.xml">should</a>) should now be able to read full content in RSS.</p>
+<p>Hugo <a href="https://gohugo.io/templates/rss/#the-embedded-rss-xml">comes with a default RSS</a> <a href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/%5Fdefault/rss.xml">template</a> that generates RSS for you out of the box. You can create an RSS template in your site&rsquo;s <code>/layout/_default/</code> directory. Create rss.xml and use your own code, or if you&rsquo;re like me and just want to change something quick, use the template above and copy-paste the contents from git-hub.</p>
+<p>To allow full posts on the RSS feed (default is only the summaries, the bits you see on the main blog page), change the &ldquo;Summary&rdquo; default to &ldquo;Content&rdquo; toward the end, in this line: <code>&lt;description&gt;{{ .Summary | html }}&lt;/description&gt;</code>. This is a nice tip I discovered at <a href="https://www.godo.dev/tutorials/hugo-full-text-rss/">GODO.DEV</a>.</p>
+<p><del>Next, need to add RSS link at the sidebar for anyone else interested and doesn&rsquo;t know about the blog&rsquo;s RSS.</del> This is now done, though rather ugly. Some CSS work and possibly include other links as well.</p>
 </div>
 <hr>
 <h2>Comments</h2>

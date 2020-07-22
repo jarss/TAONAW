@@ -3115,15 +3115,18 @@ There's more to cover but I should leave some things for next time. I hope this 
  :EXPORT_HUGO_PUBLISHDATE: 2020-07-22:
  :END:
  
-Those of you who subscribe to this blog via RSS (if you don't you, you [[https://joshrollinswrites.com/index.xml][should]]) should now be able to read full content in RSS. 
+Those of you who subscribe to this blog via RSS (if you don't, you [[https://joshrollinswrites.com/index.xml][should]]) should now be able to read full content in RSS. 
 
   #+hugo: more
  
-Hugo [[https://gohugo.io/templates/rss/#the-embedded-rss-xml][comes with a default RSS]] [[https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml][template]] that generates RSS for you out of the box. You can create an RSS template in our site's ~/layout/_default/~ directory, just call it rss.xml and use your own code, or if you're like me and just want to change something quick, use the template above and copy-paste the contents from git-hub. 
+Hugo [[https://gohugo.io/templates/rss/#the-embedded-rss-xml][comes with a default RSS]] [[https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml][template]] that generates RSS for you out of the box. You can create an RSS template in your site's ~/layout/_default/~ directory. Create rss.xml and use your own code, or if you're like me and just want to change something quick, use the template above and copy-paste the contents from git-hub. 
 
-I did this in order to be able to change the "Summary" default to "Content" toward the end, in this line: ~<description>{{ .Summary | html }}</description>~. This is a nice tip I discovered at [[https://www.godo.dev/tutorials/hugo-full-text-rss/][GODO.DEV]]. 
+To allow full posts on the RSS feed (default is only the summaries, the bits you see on the main blog page), change the "Summary" default to "Content" toward the end, in this line: ~<description>{{ .Summary | html }}</description>~. This is a nice tip I discovered at [[https://www.godo.dev/tutorials/hugo-full-text-rss/][GODO.DEV]]. 
 
-Next, need to add RSS link at the sidebar for anyone else interested and doesn't know about the blog's RSS. * About Josh Rollins
++Next, need to add RSS link at the sidebar for anyone else interested and doesn't know about the blog's RSS.+ This is now done, though rather ugly. Some CSS work and possibly include other links as well.
+
+
+* About Josh Rollins
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: About
    :EXPORT_FILE_NAME: _index
