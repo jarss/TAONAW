@@ -14,26 +14,122 @@
     <item>
       <title>Using Elfeed to View Videos</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200611/</link>
-      <pubDate>Thu, 18 Jun 2020 00:00:00 -0400</pubDate>
+      <pubDate>18180-06-06</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200611/</guid>
       <description>&lt;p&gt;One of the things that makes Emacs stand out is its modes (or &amp;ldquo;plug ins,&amp;rdquo; for those who haven&amp;rsquo;t used Emacs before). The nature of Emacs being open source means that every mode is born out of a need. Nothing is &amp;ldquo;fluff.&amp;rdquo; Every good mode has a good reason to exist. The more people who have the same need, the more customized and refined the mode becomes. Indeed, some of these modes are more supirior than complete softwre packages, which often costs money.&lt;/p&gt;
-&lt;p&gt;Today I want to talk about Elfeed, one of these tools. Elfeed is better than any other RSS feed readers I&amp;rsquo;ve seen. The gif below will show you why:&lt;/p&gt;</description>
+&lt;p&gt;Today I want to talk about Elfeed, one of these tools. Elfeed is better than any other RSS feed readers I&amp;rsquo;ve seen. The gif below will show you why:&lt;/p&gt;
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/elfed-view-vids.gif&#34;/&gt; &lt;/figure&gt;
+
+&lt;h2 id=&#34;what-s-so-good-about-elfeed&#34;&gt;What&amp;rsquo;s so Good about Elfeed?&lt;/h2&gt;
+&lt;p&gt;Those of you who are familiar with Emacs and/or Elfeed would probably want to skip this section entirely and go below to my specific tweak. However, if you&amp;rsquo;re thinking of using Elfeed and wonder what&amp;rsquo;s so good about a mere RSS reader, read on.&lt;/p&gt;
+&lt;p&gt;First, A quick explination for those of you who&amp;rsquo;re not familiar with Elfeed or Emacs. What you see is a sum of three things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I open a Window with my RSS feeds, and filter specfically for YouTube channels that were updated in the last week.&lt;/li&gt;
+&lt;li&gt;Once I locate the feed I want to watch, I browse down to it and hit &amp;ldquo;v&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;A local media player opens and shows me my feed completely free from any YouTube ads or other attention-grabbers I&amp;rsquo;d find using a full browser.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;ldquo;Wait, are we still talking about an &lt;em&gt;RSS&lt;/em&gt; feed? Doesn&amp;rsquo;t this means we&amp;rsquo;re discussing a geeky way of reading &lt;em&gt;text&lt;/em&gt; articles from blogs and such?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s exactly where my earlier point comes in. Elfeed is not an &lt;em&gt;just&lt;/em&gt; an RSS feed reader, No. It&amp;rsquo;s an answer to a specific need, or a solution to a problem that exists. What is the problem then? To &lt;a href=&#34;https://nullprogram.com/blog/2013/06/13/&#34;&gt;quote its creator&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Unlike many other feed readers, Elfeed is oriented around entries — the Atom term for articles — rather than feeds. It cares less about where entries came from and more about listing relevant entries for reading.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To understand the issue Elfeed&amp;rsquo;s trying to fix, I suggest reading some of &lt;a href=&#34;https://irreal.org/blog/?s=elfeed&#34;&gt;Irreal&amp;rsquo;s articles about it&lt;/a&gt;, and &lt;a href=&#34;https://noonker.github.io/posts/2020-04-22-elfeed/&#34;&gt;the post that inspired me to give it a try again&lt;/a&gt;. I had the pleasure of talking to the author of that blog, &lt;a href=&#34;https://github.com/noonker&#34;&gt;Noonker&lt;/a&gt;, directly. He had this to say:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I consider many modern websites to be abusive and manipulative. They&amp;rsquo;re engineered in such a way to maximize ad dollars by keeping you engaged. They&amp;rsquo;re not designed for people. I really try to minimize my time on these sites and elfeed does a lot to keep me a separated from the manipulative aspects of these sites.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is exactly what Elfeed is good for. This, I&amp;rsquo;d argue, is also what Elfeed excels at doing better than any other RSS feeder out there. That&amp;rsquo;s because it&amp;rsquo;s inside my productivity environment already (Emacs). Its filters, customized to give me the exact update I need, are a &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Bookmarks.html&#34;&gt;bookmark&lt;/a&gt; away in Emacs (&lt;code&gt;C-x C-r l&lt;/code&gt;) away. These means that the updates I care about are only 5 keystrokes away, burned into memory.&lt;/p&gt;
+&lt;p&gt;Case in point: during these times of COVID19, I used Elfeed to watch Governor Cuomo&amp;rsquo;s (I live in NYC) video feeds without opening my browser and without going to YouTube. Not only Elfeed helped me staying away from YouTube&amp;rsquo;s &amp;ldquo;Oh! Watch this also!&amp;rdquo; algorithms and ads, it also made sure this brifing was on my daily news dose, along with the NYC section of the New York Times and new org-mode posts on Reddit&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-specific-youtube-viewing-fucntion&#34;&gt;The Specific YouTube Viewing Fucntion&lt;/h2&gt;
+&lt;p&gt;Noonker generesouly provides his YouTube download function in the post (&lt;a href=&#34;https://noonker.github.io/posts/2020-04-22-elfeed/&#34;&gt;here it is again&lt;/a&gt;). I took the function and manipulated it, after watching &lt;a href=&#34;https://cestlaz.github.io/post/using-emacs-72-customizing-elfeed/&#34;&gt;Mike Zamansky&amp;rsquo;s&lt;/a&gt; helpful &lt;a href=&#34;https://www.youtube.com/embed/G1NGNR40lB4&#34;&gt;video&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(require &#39;elfeed)
+
+(defun elfeed-v-mpv (url)
+  &amp;quot;Watch a video from URL in MPV&amp;quot;
+  (async-shell-command (format &amp;quot;mpv %s&amp;quot; url)))
+
+(defun elfeed-view-mpv (&amp;amp;optional use-generic-p)
+  &amp;quot;Youtube-feed link&amp;quot;
+  (interactive &amp;quot;P&amp;quot;)
+  (let ((entries (elfeed-search-selected)))
+    (cl-loop for entry in entries
+	     do (elfeed-untag entry &#39;unread)
+	     when (elfeed-entry-link entry)
+	     do (elfeed-v-mpv it))
+    (mapc #&#39;elfeed-search-update-entry entries)
+    (unless (use-region-p) (forward-line))))
+
+(define-key elfeed-search-mode-map (kbd &amp;quot;v&amp;quot;) &#39;elfeed-view-mpv)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I was just comfortable enough to manipulate the code a bit after doing some reading on Elisp, but I can&amp;rsquo;t quite explain it fully yet.&lt;/p&gt;
+&lt;p&gt;The idea is that there are two functions at play: one that grabs the URL from the feed and store it into a symbol (Elisp spin on what would be a variable in other languages. Well, kind of). It also assigns the shortcut key &amp;ldquo;v&amp;rdquo; to view videos, which will work only in Elfeed (so v is free to be used for something else elsewhere).&lt;/p&gt;
+&lt;p&gt;To understand better the why and hows, I suggest viewing the video mentioned as well.&lt;/p&gt;
+&lt;p&gt;An important part for this function to me is &lt;a href=&#34;https://github.com/mpv-player/mpv&#34;&gt;MPV&lt;/a&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, which immidetly beats ,VLC in minimalizim. I used Plasma&amp;rsquo;s powerful Window manager to have MPV run without a window frame at all, giving it a quick &amp;ldquo;just the vid please, thanks&amp;rdquo; interface which further enhanches what I wanted to get from the experience.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;There&amp;rsquo;s more to Elfeed&amp;rsquo;s RSS reading philosophy here. Finding relevant RSS feeds is not as simple as going to a big media site and copy down their main RSS feed. This means I&amp;rsquo;d get every single article, which takes me away from staying on point. RSS feed hunting, as it turns out, is an art form in itself. Not all major website support it fully, and it can be challenging to find (or create) what you need. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;After a week of using MPV, I uninstalled VNC. VNC is OK, but once you try MPV, you stay with it. It is lean and doesn&amp;rsquo;t have the bloatness of VNC, which can do &lt;em&gt;so many things&lt;/em&gt; that I just don&amp;rsquo;t need it to do. It works without controls (they come up as you hover over the screen) and encourages you to use keyboard keys to skip, control the volume, etc. It probably deserves a post on its own. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Customizing a Theme for Emacs</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200528/</link>
-      <pubDate>Sat, 30 May 2020 00:00:00 -0400</pubDate>
+      <pubDate>30300-05-05</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200528/</guid>
-      <description>&lt;p&gt;What do you do when you are pretty comfortable with your Emacs theme and colors, but there&amp;rsquo;s one thing you have to change? You find the theme and you customize it to your liking. Here&amp;rsquo;s what I did.&lt;/p&gt;</description>
+      <description>&lt;p&gt;What do you do when you are pretty comfortable with your Emacs theme and colors, but there&amp;rsquo;s one thing you have to change? You find the theme and you customize it to your liking. Here&amp;rsquo;s what I did.&lt;/p&gt;
+&lt;p&gt;When I switched to &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200522/&#34;&gt;Debian on a Windows host&lt;/a&gt; a few weeks ago, I also switched back to darker colors. I looked for a matching Emacs theme and for a while I settled on my go-to &lt;a href=&#34;https://github.com/purcell/color-theme-sanityinc-solarized&#34;&gt;sanityinc-solorized&lt;/a&gt;, but it didn&amp;rsquo;t do. I&amp;rsquo;ve used it at the office for too long and it just didn&amp;rsquo;t feel right. I also didn&amp;rsquo;t like the newer &lt;a href=&#34;https://github.com/bbatsov/solarized-emacs&#34;&gt;solorized&lt;/a&gt;: the headings change size in org-mode and I find that it breaks the visual harmony of everything else in Emacs. I ended up settling on &lt;a href=&#34;https://emacsthemes.com/themes/gotham-theme.html&#34;&gt;Gotham&lt;/a&gt;, with its blueish-green colors and true-black background. The headings are all the same size too, thankfully.&lt;/p&gt;
+&lt;p&gt;One thing that stood out like a sour thumb though was the org-verbatim color font (that&amp;rsquo;s the format you get between two = signs in org-mode). org-verbatim font was a mild a dark gray, barely visible against the black background. I use org-verbatim to highlight lines of codes and commands, so the barely visible color was the opposite of what I needed.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t want to look up for a new theme, because I am fairly happy with Gotham&amp;rsquo;s colors and simplicity otherwise. Changing a single color in a theme can&amp;rsquo;t be &lt;em&gt;that&lt;/em&gt; hard, I thought. I was happy to find out I was right.&lt;/p&gt;
+&lt;p&gt;downloaded themes from MELPA are saved in &lt;code&gt;~/.emacs.d/elpa&lt;/code&gt;. I don&amp;rsquo;t know why elpa and not melpa, but that&amp;rsquo;s what it is. I found the gotham theme folder, and opened gotham-theme.el.&lt;/p&gt;
+&lt;p&gt;Right at the top, under the first function definitions, I found the colors of the theme defined under  &lt;code&gt;(defvar&lt;/code&gt; in hex. It looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(defvar gotham-color-alist
+  `((base0   &amp;quot;#0c1014&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-232&amp;quot; &amp;quot;black&amp;quot;))
+    (base1   &amp;quot;#11151c&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-233&amp;quot; &amp;quot;brightblack&amp;quot;))
+    (base2   &amp;quot;#091f2e&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-17&amp;quot;  &amp;quot;brightgreen&amp;quot;))
+    (base3   &amp;quot;#0a3749&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-18&amp;quot;  &amp;quot;brightblue&amp;quot;))
+    (base4   &amp;quot;#245361&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-24&amp;quot;  &amp;quot;brightyellow&amp;quot;))
+    (base5   &amp;quot;#599cab&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-81&amp;quot;  &amp;quot;brightcyan&amp;quot;))
+    (base6   &amp;quot;#99d1ce&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-122&amp;quot; &amp;quot;white&amp;quot;))
+    (base7   &amp;quot;#d3ebe9&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-194&amp;quot; &amp;quot;brightwhite&amp;quot;))
+
+    (red     &amp;quot;#c23127&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-124&amp;quot; &amp;quot;red&amp;quot;))
+    (orange  &amp;quot;#d26937&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-166&amp;quot; &amp;quot;brightred&amp;quot;))
+    (yellow  &amp;quot;#edb443&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-214&amp;quot; &amp;quot;yellow&amp;quot;))
+    (magenta &amp;quot;#888ca6&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-67&amp;quot;  &amp;quot;brightmagenta&amp;quot;))
+    (violet  &amp;quot;#4e5166&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-60&amp;quot;  &amp;quot;magenta&amp;quot;))
+    (blue    &amp;quot;#195466&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-24&amp;quot;  &amp;quot;blue&amp;quot;))
+    (cyan    &amp;quot;#33859e&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-44&amp;quot;  &amp;quot;cyan&amp;quot;))
+    (green   &amp;quot;#2aa889&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-78&amp;quot;  &amp;quot;green&amp;quot;)))
+  &amp;quot;List of colors the theme consists of.&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Pretty straight forward. Now, how to find the piece of text which color I want to change? At the time I didn&amp;rsquo;t even know it was called org-verbatim. To find out, I went back to org-mode, found the color I wanted to change in the text, placed the mark on it, and used &lt;code&gt;M-x customize face&lt;/code&gt;. This can customize the font-face right there, but more importantly, it told me what font group the marker&amp;rsquo;s on as its default value. That&amp;rsquo;s how I found out that text is called &amp;ldquo;org-verbatim.&amp;rdquo; Knowing that I went back to the theme file and looked up for it.&lt;/p&gt;
+&lt;p&gt;Searching for org inside the theme brought up the org-mode group inside the .el file, which included quite a few colors, but not what I was looking for. That actually made sense: the definition of org-verbatim was missing from the theme, which meant it inherited the color instead. I am not sure how the hierarchy for these groups works, but it seems like org-verbatim just picked up the generic comment text color that &lt;em&gt;should&lt;/em&gt; have a dim, out-of-the-way color. OK then. So, if it&amp;rsquo;s not there, why not add it?&lt;/p&gt;
+&lt;p&gt;Looking at how these colors were constructed in the .el file, I saw definitions like these:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(org-sexp-date :foreground cyan)
+(org-table :foreground violet)
+(org-time-grid :foreground yellow)
+(org-todo :foreground red :weight bold)
+(org-upcoming-deadline :foreground orange)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the colors themselves, like orange or cyan, were defined earlier under the defar part I mentioned above. So, all I had to do is to add this line:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(org-verbatim :foreground yellow)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Instead of re-evaling, I prefer to save the configuration and launch another copy of Emacs, which gives me a fresh copy of the results right next to what I&amp;rsquo;m working on:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/20200528.png&#34; alt=&#34;&#34;&gt;
+Take a look: to the left, the frame with the setting before the change; to the right, the setting after the change.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Basic SSH Security</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 -0400</pubDate>
+      <pubDate>28280-07-07</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/basic-ssh-security/</guid>
       <description>&lt;p&gt;They say a picture is worth a thousand words:&lt;/p&gt;
@@ -44,64 +140,288 @@
     
         &lt;img src=&#34;https://joshrollinswrites.com/basic-ssh-security.png&#34;/&gt; &lt;/figure&gt;
 
-&lt;p&gt;This is my SSH server&amp;rsquo;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;</description>
+&lt;p&gt;This is my SSH server&amp;rsquo;s log, and this looks like a good time to talk about basic ssh server security.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s back up just a bit for the whys and hows.&lt;/p&gt;
+&lt;p&gt;To access my personal org files from work (my journal for example), I use &lt;a href=&#34;https://www.emacswiki.org/emacs/TrampMode&#34;&gt;TRAMP&lt;/a&gt; with SSH. Why SSH? It&amp;rsquo;s rudimentary, supported out of the box, and relatively private. My work and personal tasks meet in my agenda, but I like to keep my personal resources away from work computers just as I prefer to keep work material away from my personal machine. So, I need to have an SSH server up and running. My setup includes a Raspberry Pi (cheap, reliable, good single-function device) as an &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/&#34;&gt;SSH server and Syncthing hub&lt;/a&gt; and a router that has port-forwarding to allow incoming SSH connections.&lt;/p&gt;
+&lt;p&gt;Even though I used a different port than the default 22, it was easy enough for the script kiddie in the picture above to find and identify. This is not hard to do; all you need is nmap. In this case, it seems some of the IPs belong to an Amazon server in the Philippines, so it looks like this particular individual uses an automated environment to find and exploit unprotected users. So far, this sounds like a classic scenario.&lt;/p&gt;
+&lt;p&gt;I set down and decided to implement some basic security configurations I&amp;rsquo;ve should have had in place since day one. None of these are ground-breaking security, and I&amp;rsquo;m not an expert myself, but these are probably a good start.&lt;/p&gt;
+&lt;h2 id=&#34;my-setup&#34;&gt;My Setup&lt;/h2&gt;
+&lt;p&gt;These configurations are available inside &lt;code&gt;/etc/ssh/sshd_config&lt;/code&gt;. I&amp;rsquo;m using OpenSSH server. If you&amp;rsquo;re using my configurations, remember to delete the &amp;ldquo;#&amp;rdquo; at the start of these lines, as they are marked as comments by default.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Port ####&lt;/code&gt;: Specify a port number. Never leave as 22. Go high up, I would personally start at the 8000s. These ports are less likely to be used and script kiddies are less likely to sniff these with their tools. Not exactly ironclad facts, but we need to start somewhere.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ListenAddress&lt;/code&gt;: The idea is to restrict the IP addresses the server will listen to, &lt;em&gt;but this is not where we actually do it (it failed for me)&lt;/em&gt;. Rather, I use it here as a reminder for later. Figure out where you&amp;rsquo;re connecting from and stick to it. You probably don&amp;rsquo;t need to SSH from across the world; for this, there&amp;rsquo;s &lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt; and a laptop. Read more details about my approach here further down.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;LoginGraceTime 20s&lt;/code&gt;: In seconds (as in, 20s) this is how long the server will wait before it closes the connection. Leave low since you&amp;rsquo;re going to copy-paste a long, 30-character password you will never remember from password manager anyway (because you&amp;rsquo;re not going to use an 8-character password, right?? if you do, please stop reading right now and stop using SSH, you&amp;rsquo;ll be better off) and 20 seconds is plenty to do that. You could use a key, however, I chose not to use it for my setup because I keep using different machines (I should probably stop) and I figure I can change my password every other month or so. This is easy enough to do with a password manager.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;PermitRootLogin no&lt;/code&gt;: Never a good idea to log into your ssh as Root, you can always escalate once logged in as a user. Don&amp;rsquo;t let hackers login as root either. I can&amp;rsquo;t think of a good reason to allow root logins.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;MaxAuthTries 2&lt;/code&gt;: Yes, you get two tries to try the password before it locks out. Not clear yet if this lasts until you reset the server or if it&amp;rsquo;s a timeout-based. Either way, since we copy-paste a password, this is good security measure if someone&amp;rsquo;s trying to brute-force their way in from a specific IP address, like in my case.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;ClientAliveCountMax 0&lt;/code&gt; and &lt;code&gt;ClientAliveInterval 600&lt;/code&gt;: these work together, as per &lt;a href=&#34;https://www.thegeekstuff.com/2011/05/openssh-options/&#34;&gt;this article&lt;/a&gt;. The idea is to kill SSH when ideal. Here&amp;rsquo;s how it works: Interval is how long before the server sends a &amp;ldquo;hey, are you there?&amp;rdquo; question. CountMax is how many of these answered questions the server will accept. So, in the above, we are waiting 600 seconds which are 10 minutes, and then the server will send&amp;hellip; nothing, so it will disconnect. It means we&amp;rsquo;ll get kicked off after 10 minutes of inactivity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;restricting-to-certain-ips-only&#34;&gt;Restricting to certain IPs only&lt;/h2&gt;
+&lt;p&gt;In additions to these, I also restricted the allowed IP range as mentioned above. To do that we&amp;rsquo;re using two files, &lt;code&gt;/etc/hosts.deny&lt;/code&gt; and &lt;code&gt;/etc/hosts.allow&lt;/code&gt;. This is discussed &lt;a href=&#34;https://unix.stackexchange.com/questions/406245/limit-ssh-access-to-specific-clients-by-ip-address&#34;&gt;here&lt;/a&gt;, in option 2 (TCP wrappers). The system described here did not work for me as explained, and after reading into the instructions in the files themselves, I got it to work as follows:&lt;/p&gt;
+&lt;p&gt;In the deny file, we add the line &lt;code&gt;sshd: ALL EXCEPT xxx.xxx.&lt;/code&gt;
+where the xxx is the first and second octet of the IP address we want to allow. This is usually good enough to include all IPs from a certain place, but YMMV. In my case, this range specifies a specific office floor in my work site (which is fairly large), which restricts access only to my office floor area. When I tested the connection from my Android, I could not connect using my carrier but I &lt;em&gt;could&lt;/em&gt; connect from work since that&amp;rsquo;s the IP address I specified. This is an awesome technique.&lt;/p&gt;
+&lt;p&gt;Again, this works for me but may not work for you. For one, you might be using a laptop for work and have a wider range of IPs as you move around. For this, I would consider using the laptop itself to store the files and sync with Syncthing. You may also decide to use one machine, in which case you might want to allow all IPs, but use a PGP key, which is much longer to guess than a password and will automatically reject connections trying to guess a password. This is a preferred method to what I use, try to implement it first if you can.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Of Emacs and Chutzpah</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</link>
-      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
+      <pubDate>21210-06-06</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</guid>
       <description>&lt;p&gt;Says &lt;a href=&#34;https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments&#34;&gt;Jamie T. Rubin&lt;/a&gt;: &amp;ldquo;As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;My answer to that, considering the theme of this blog and how I&amp;rsquo;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;</description>
+&lt;p&gt;My answer to that, considering the theme of this blog and how I&amp;rsquo;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;
+&lt;p&gt;Emacs is not accessible for most writers today. Most of them probably never heard of the thing, or any other tools besides Word and, at least the lucky ones, Scrivener. Emacs isn&amp;rsquo;t really known outside of the seriously-geeky folks because it&amp;rsquo;s written by computer geeks for computer geeks. Search for any instructions, tutorials and/or reviews of Emacs, and 99% of the folks you&amp;rsquo;d encounter would be computer programmers. No fiction writers. Chances are that if you put Emacs in front of a writer today, they won&amp;rsquo;t even know how to install the thing, let along use it.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t think people who use Emacs understand how complicated and cumbersome it looks to the average person. They probably think we, Emacs users, are the ones who are crazy.&lt;/p&gt;
+&lt;p&gt;How come Word is so well-known (and usually hated) by writers for all its distractions, while better tools for the job such are barely heard of?&lt;/p&gt;
+&lt;p&gt;For one, you can consider marketing. The advertising Microsoft throws at its products is something the free-source community cannot even start to compete with. For another, you can consider history and reputation. Microsoft Word (and Outlook and Excel and PowerPoint) have been a core component of office software for quite a few years. It is even called, justfully so, &amp;ldquo;Office,&amp;rdquo; because what else would you use in your office?&lt;/p&gt;
+&lt;p&gt;But there&amp;rsquo;s another reason wannabe writers would not find out about Emacs, and if they do, never pick up the habit of using it. It&amp;rsquo;s the same reason wannabe runners won&amp;rsquo;t travel too far out of the gym, or people who wish to meditate won&amp;rsquo;t experiment other techniques beyond the ones they&amp;rsquo;ve learned in a Yoga class.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s nothing wrong with any of the three methods I grossly mashed together here. Running on a treadmill is a very good form of exercise, which can be measured and improved. It allows folks who otherwise won&amp;rsquo;t run because of the weather or time of day to still get their exercise. Likewise, there are writers who have been using Word for their entire professional career. And I can tell you there&amp;rsquo;s a lot to learn from a good yoga meditation class which will supply you with discipline and motivation to continue.&lt;/p&gt;
+&lt;p&gt;However, there&amp;rsquo;s a component missing in all of those. An element of the human spirit that, thinking back, can be described perfectly in one Jewish word I know: Chutzpah. If you&amp;rsquo;re not familiar with the word and just look it up on &lt;a href=&#34;https://en.wikipedia.org/wiki/Chutzpah&#34;&gt;Wikipedia&lt;/a&gt;, for example, you won&amp;rsquo;t quite get it. The definition explained there is audacity, bloated self-esteem, and ego. This is all true, but that&amp;rsquo;s the kind of definition that makes you think of an over-confident obnoxious teenager. That&amp;rsquo;s not what I&amp;rsquo;m talking about. Chutzpah, the way I mean it here, is to dare. To know there&amp;rsquo;s a way hundreds have been doing a certain thing for decades, yet question it. Far too many people don&amp;rsquo;t question things.&lt;/p&gt;
+&lt;p&gt;One of my biggest inspirations to use Emacs and Org-mode was &lt;a href=&#34;https://www.youtube.com/watch?v=FtieBc3KptU&#34;&gt;this YouTube video&lt;/a&gt; by Jay Dixit, a writer who kept saying he&amp;rsquo;s &amp;ldquo;not a programmer&amp;rdquo; and shamelessly admitted to copy code and ask others to write code for him where he needs it. Dixit&amp;rsquo;s  Emacs methods are nothing too special, yet he presented this lecture in front of experience Emacs users (programmers even!) who asked &lt;em&gt;him&lt;/em&gt; questions. Dixit is the kind of writer who dared to wonder about something very specific his software couldn&amp;rsquo;t do, until he encountered Emacs. When he realized there&amp;rsquo;s a &amp;ldquo;bit&amp;rdquo; of a learning curve to Emacs, he didn&amp;rsquo;t think much about it and started learning. Not because he&amp;rsquo;s a masochist, or because he has tons of times, or because he&amp;rsquo;s a genius, but because his desire to write the way &lt;em&gt;he wants to&lt;/em&gt; was bigger than any alternations the comfort of the &amp;ldquo;this-is-how-it-is&amp;rdquo; software offered him. So he dared, persisted, and well, as far as I know, he still uses Emacs today.&lt;/p&gt;
+&lt;p&gt;Not too long ago, &lt;a href=&#34;https://medium.com/@Josh%5FRollins/writing-post-d044aac72d0&#34;&gt;I took my first steps&lt;/a&gt; toward leaving Google Documents, which has been my go-to writing tool for a while. At the time, I haven&amp;rsquo;t even heard of Emacs. Google Docs was very convenient, especially on the Chromebook I had. I&amp;rsquo;ve been using Bullet points in posts for a while (as evident in the post mentioned) and Org-mode was something that &amp;ldquo;clicked&amp;rdquo; loudly in my head, with a few exclamation marks, and I just &lt;em&gt;had&lt;/em&gt; to try it. Did I have Chutzpah? You could say so, I&amp;rsquo;d call it an obsession with writing apps. At the time, you never know. People who keep talking about who daring they are not daring at all.&lt;/p&gt;
+&lt;p&gt;Like many others who use Emacs today, I want it to be more accessible to the public at large. But, also like many other who use Emacs today, I realize that the &amp;ldquo;quest for Emacs&amp;rdquo; is not something you can throw at people through a marketing campaign. There&amp;rsquo;s nothing easy, pretty, or &amp;ldquo;sexy&amp;rdquo; about Emacs. You have to earn using Emacs through  months of careful customization. My current setup, for example, includes these customizations from vanilla Emacs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;My Window size is configured to be bigger than Emac&amp;rsquo;s default for my Ultra-Wide screen&lt;/li&gt;
+&lt;li&gt;I use company-mode to auto-complete words&lt;/li&gt;
+&lt;li&gt;I use Emac&amp;rsquo;s Abrrev (which I customized) to include common words and phrases&lt;/li&gt;
+&lt;li&gt;I write posts in Org-mode and publish directly to GitHub through &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;ox-hugo&lt;/a&gt; and &lt;a href=&#34;https://magit.vc/&#34;&gt;magit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I have &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Visual-Line-Mode.html&#34;&gt;visual lines mode&lt;/a&gt; on&lt;/li&gt;
+&lt;li&gt;There are no icons in my tool bar (though I find the menu itself still useful)&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve added many words to the built-in dictionary&lt;/li&gt;
+&lt;li&gt;custom key shortcuts for spellchecking, refreshing buffer, and others&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And there are more (Ivy, which comes with Swiper&amp;hellip;) and still more to come. I use &lt;em&gt;my&lt;/em&gt; Emacs so much and so often that it&amp;rsquo;s hard to break it apart back to the different pieces that make it. It&amp;rsquo;s memorized by my fingers more than my brain. It&amp;rsquo;s all a careful process of picking and choosing what I want and where I want it.&lt;/p&gt;
+&lt;p&gt;Emacs is not something you give to someone. It&amp;rsquo;s something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I&amp;rsquo;d argue that nothing &lt;em&gt;requires&lt;/em&gt; customization like as Emacs does. that&amp;rsquo;s what makes Emacs a lifetime-long tool, and why (I think) after all these years, it&amp;rsquo;s still given out in a package that is pretty much the same.&lt;/p&gt;
+&lt;p&gt;All of the above is necessary (at least I&amp;rsquo;d like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the &amp;ldquo;writing tools that get in the way of writing.&amp;rdquo; In Emacs, the things that stand in the way of your writing are things you haven&amp;rsquo;t changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is&amp;hellip; You. There cannot be anything else because every single part of Emacs is designed to be broken down to do &lt;em&gt;exactly&lt;/em&gt; what you want it to do.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 3</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
-      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      <pubDate>9090-02-02</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
       <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
-&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
+&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;
+&lt;h2 id=&#34;part-3-the-tasks-template&#34;&gt;Part 3 - The Tasks Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;t&amp;rdquo; initiate &amp;ldquo;ToDo&amp;rdquo; template, which is  as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Archive/OhSnap!.org&lt;/code&gt; and create a headline &amp;ldquo;tasks&amp;rdquo; there.&lt;/li&gt;
+&lt;li&gt;Create a second level header, space, add a TODO keyword, space, Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Add the text &amp;ldquo;&lt;code&gt;SCHEDULED:&lt;/code&gt;&amp;rdquo;, space, and ask for a complete timestamp (date and time).&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To create a regular &amp;ldquo;todo&amp;rdquo; item, I want to have it scheduled right away so it&amp;rsquo;s on my agenda. The word &lt;code&gt;SCHEDULED:&lt;/code&gt; is what initiates the scheduling in Org-mode. On my agenda, I clearly see scheduled tasks, and I try to schedule everything I want to do. Scheduling a task then is my actual &amp;ldquo;To Do&amp;rdquo; trigger, not the TODO keyword.&lt;/p&gt;
+&lt;p&gt;Of course, things often get shifted around. I constantly reschedule things at work. The benefit of scheduling tasks this way is that tasks I haven&amp;rsquo;t done are highlighted for the next day, so I know to revisit it.  That&amp;rsquo;s all there is to this template, it&amp;rsquo;s rather simple.&lt;/p&gt;
+&lt;h2 id=&#34;part-4-the-event-template&#34;&gt;Part 4 - The Event Template&lt;/h2&gt;
+&lt;p&gt;The Event template is probably the first one I created. It changed around quite a bit. This is my go-to personal stuff template which works hand in hand with my journal. Here it is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+       &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;e&amp;rdquo; initiate &amp;ldquo;event&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Event&amp;rdquo; in file &lt;code&gt;&amp;quot;~/Documents/Archive/OhSnap!.org&amp;quot;&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Prompt for a complete active timestamp. New line.&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even simpler than the previous template, this one asks for a complete timestamp (date and time) without a keyword. The active timestamp alone means that this event will show on my agenda, but without the scheduling, it&amp;rsquo;s not highlighted as a task (in my theme, tasks are in green and events are in gray). I use these &amp;ldquo;concrete&amp;rdquo; events for meeting with other people, or something that is happening with other people that are important to me.
+Events usually have an ending time, even if it&amp;rsquo;s speculative. I go back in later to adjust the timeframe.&lt;/p&gt;
+&lt;p&gt;I usually follow the event title with a @ sign and link to the location on Google maps if I can. This creates a nice way for me to reflect back later in my journal, which links to these events. For example, an event could be &amp;ldquo;&lt;code&gt;&amp;lt;2019-01-13 Sun 19:00-21:00&amp;gt; dinner with Marcy @ The Green Inn&lt;/code&gt;&amp;rdquo; and The Green Inn would be a link to the location. A quick &lt;code&gt;C-c o&lt;/code&gt; and the browser opens to the right location, and I can look up directions. The location links also work from Orgzly on my phone, though I&amp;rsquo;m looking into integrating this whole thing with Google Calendar, which should work better.&lt;/p&gt;
+&lt;p&gt;After an event took place, I place the cursor on it in my agenda and initiate the journal capture template, as I explained above. Something I started doing lately is to store the link of the journal entry while there &lt;code&gt;(C-c C-l)&lt;/code&gt;, and then enter a [J] at the end of the title of the event on the agenda, linking to the journal entry. If this works well, I will look into creating a macro or a function to create this journal link automatically. Shouldn&amp;rsquo;t be too hard.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 2</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>21210-01-01</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</guid>
-      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;
+&lt;p&gt;Speaking of personal, today I&amp;rsquo;m going to discuss my Journal capture template. I hope you enjoy, and as always, comments are welcome on Reddit (follow me using the links above) at least until I integrate a commenting system on this site.&lt;/p&gt;
+&lt;h2 id=&#34;part-2-the-journal-template&#34;&gt;Part 2 - The Journal template&lt;/h2&gt;
+&lt;p&gt;First, here&amp;rsquo;s the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;j&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Journal&amp;#34;&lt;/span&gt; entry
+  (file+datetree &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Personal/journal.org&amp;#34;&lt;/span&gt;)
+
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**** %U%?%a \n&amp;#34;&lt;/span&gt; :tree-type week)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;j&amp;rdquo; initiate &amp;ldquo;Journal&amp;rdquo; template, which as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Personal/journal.org&lt;/code&gt; and create a &lt;a href=&#34;https://orgmode.org/manual/Template-elements.html#DOCF82&#34;&gt;dateree&lt;/a&gt; entry there&lt;/li&gt;
+&lt;li&gt;Create a sub header (level 4) under the day header, under the week header, under the year header (a function of datetree, see link above).&lt;/li&gt;
+&lt;li&gt;Enter an inactive timestamp, place cursor right after it, place a link to file you were just in.&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Make this a &lt;em&gt;weekly&lt;/em&gt; datetree (the default is a monthly datetree)&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I prefer a weekly format in my journal over a monthly format. In fact, the week is a &amp;ldquo;productivity unit&amp;rdquo; which always made sense to me, and this mindset integrates beautifully into Org-mode. In my archive folder, which you saw in part 1, each week has its own &lt;code&gt;.org&lt;/code&gt; file (from 1 to 50 something). I don&amp;rsquo;t really need this to make Org-mode work, but there&amp;rsquo;s something assuring in viewing the folder and seeing all the week files.&lt;/p&gt;
+&lt;p&gt;The reason the timestamp and the link are condensed together (no space) is because I delete most of the timestamp and just leave the hour. This way the cursor is where I need to start erasing the timestamp from. I haven&amp;rsquo;t found a way yet to create an hourly timestamp only and I don&amp;rsquo;t want to forget to put in the hour, so this is the best solution for now. Why is the hour important? First, personal preference from the past, where I would write the time and the location for each entry. Second, this helps me see a couple of entries in the journal that are about the same event (the title is just the name of the event on my agenda) so that if a certain event is developing and I&amp;rsquo;ve journaled about it a couple of times, I can easily see the hour of each entry as a separator.&lt;/p&gt;
+&lt;p&gt;Finally, I use a link to connect me back to &lt;code&gt;w[##].org&lt;/code&gt; file (week number of the year, as I mentioned above) from which I created the journal entry. In my weekly org files, the incidents or events themselves contain very little details, usually only what is my next action (next thing to do) and a logbook drawer containing the times I worked on a task if I keep track. If I want to discuss something, I create a journal entry for it. I always prefer to leave my thoughts and conclusions in a personal space, separate from the more generic org file which also contains work-related material. The link takes me back to that event or incident, and because the name is the same as the event, I know exactly what I&amp;rsquo;m referring to.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/Org-capture-template-2.1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM&amp;rsquo;s capture template, so when I want to capture something in my journal from work, I&amp;rsquo;m prompted to log into my file server with a password, without saving anything at work.&lt;/p&gt;
+&lt;p&gt;This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 1</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>17170-01-01</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;
+&lt;p&gt;First, Here&amp;rsquo;s the code for the capture templates I&amp;rsquo;m going to cover:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;INC&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Incidents&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n&amp;#34;&lt;/span&gt;)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;j&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Journal&amp;#34;&lt;/span&gt; entry (file+datetree &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Personal/journal.org&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**** %U%?%a \n&amp;#34;&lt;/span&gt; :tree-type week)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Going into details below, I broke the code down so it makes sense to people starting out with Org-mode in hope this would help new-commers like I was not too long ago. If these steps do not sound right (especially for those of you who know Emacs lisp better than me, which is probably 99% of you&amp;hellip;) please let me know so I can correct and learn. Thanks!&lt;/p&gt;
+&lt;p&gt;Ok, here we go.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-the-inc-template&#34;&gt;Part 1 - The INC Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;INC&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Incidents&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;i&amp;rdquo; initiate &amp;ldquo;INC&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Incidents&amp;rdquo; in file  &lt;code&gt;~/Documents/Archive/#OhSnap!.org&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Create a TODO keyword, space, place cursor here, new line.&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Ticket&amp;rdquo; and ask for input.&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;PIN&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Computer&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Location&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Space, New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I use the above template for ticket creation at work. The file &amp;ldquo;OhSnap.org&amp;rdquo; is my &amp;ldquo;dumping grounds&amp;rdquo; for everything before I sort it out- usually in front of a desktop. This is useful to me because many times I&amp;rsquo;m running around using my phone with &lt;a href=&#34;http://www.orgzly.com&#34;&gt;Orgzly&lt;/a&gt;, a very minimal version of Org-mode. I click the add note widget, speak or write out my note in a few words, and save. Later I add details. (By the way, going on a tangent here: you can use Google Assistant on your phone with Orgzly like any other note taking app: &amp;ldquo;OK Google, make note: buy eggs today&amp;rdquo; - and bam, you have a quick header in your org file.)&lt;/p&gt;
+&lt;p&gt;The properties help me keep my work-related issues organized. I have the ticket number for the issue, which is also the fastest way to find it in our ticketing system. Then I have the person&amp;rsquo;s ID, to quickly identify the person&amp;rsquo;s name and email from the directory if I need to. The computer property is the hostname, so I can remote in or know where it is. Location is helpful because we span over different buildings and even parts of the city. In turn, this also makes Column view beneficial if I want to quickly see all the tickets formatted in a nice table. I don&amp;rsquo;t use it often, but it&amp;rsquo;s there.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t always have all the properties filled in (though I do try to at least have a ticket and a person&amp;rsquo;s name entered), but I do use this template for anything work related. This is because I have a &amp;ldquo;work&amp;rdquo; category property inside the Incident tree, which quickly shows me my work related things on my agenda. This means I can also quickly filter into just work-related stuff if I need to, say, when I show something to my co-workers.&lt;/p&gt;
+&lt;p&gt;Let me expand on that last at the risk of going into a somewhat unrelated tangent: one of the huge things about Org-mode efficiency in my case is the ability to mix work and personal items in the same place. I have different apps, difference accounts, and different devices, and Org-mode is the first place where I&amp;rsquo;m comfortable mixing all of them into one agenda because I still have individual org files. This &lt;em&gt;very&lt;/em&gt; helpful to keep me organized.&lt;/p&gt;
+&lt;p&gt;This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emacs Windows</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</link>
-      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>13130-10-10</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</guid>
-      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In his 5th Emacs podcast, &lt;a href=&#34;https://emacscast.org/episode%5F5/&#34;&gt;Rakhim&lt;/a&gt; discusses the difficulties of windows management in Emacs. I agree with him. Emacs&amp;rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&amp;rsquo;t until this podcast that I realized that I&amp;rsquo;m much better off than I used to be.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t use any extension that manages windows (unless you consider Ivy&amp;rsquo;s switch buffer, which he uses too. &lt;a href=&#34;https://oremacs.com/swiper/&#34;&gt;Ivy&lt;/a&gt; is awesome). My method is based on bits and pieces I picked up. Here are a couple of lines from my settings.org, which I use to make Emacs&amp;rsquo; windows work better for me.&lt;/p&gt;
+&lt;p&gt;First, for my ultra-wide screen at home, it helps to enlarge the default frame size. After a few tests, I found this size satisfying:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq default-frame-alist &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;((width &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;90&lt;/span&gt;) (height &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;) (menu-bar-lines &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;)))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, we need to turn on the mouse vertical mouse divider. This will allow us to use the mouse to drag and adjust windows in our frame vertically as well. I actually don&amp;rsquo;t use this as much anymore (the reason is coming up) but this is a basic feature that should be on by default, in my opinion:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(window-divider-mode &lt;span style=&#34;color:#ae81ff&#34;&gt;+1&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Another basic feature, which I now use everywhere, is the &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Visual-Line-Mode.html&#34;&gt;visual line mode&lt;/a&gt;. If you write more than you code on Emacs (which is true in my case) this mode just makes sense.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(global-visual-line-mode &lt;span style=&#34;color:#ae81ff&#34;&gt;+1&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Those are all good and nice, but here&amp;rsquo;s the biggest tip which I stumbled upon a few months back, from &lt;a href=&#34;http://ergoemacs.org/emacs/emacs%5Feffective%5Fwindows%5Fmanagement.html&#34;&gt;Ergoemacs&lt;/a&gt;: just don&amp;rsquo;t use windows. Use frames. Seriously, it&amp;rsquo;s that simple. There are probably many Emacs experts out there with their windows functions and extensions and what not, but let&amp;rsquo;s not reinvent the wheel here. If there&amp;rsquo;s one thing a GUI is good for is to manage windows (or frames in Emacs). They are very easy to move with the mouse, they snap to each other, easy to resize. Besides, Emacs itself splits the frames to Windows often enough. I find that I use C-0 and C-1 very often to get rid of windows I don&amp;rsquo;t need, and I can have them back quickly by switching back to the buffer with Ivy.&lt;/p&gt;
+&lt;p&gt;One of the things that used to drive my bananas when I started using Org was how the agenda and its habit to kill my windows setup. One of the most helpful lines in my settings.org is the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq org-agenda-window-setup (quote other-frame))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This saved me from going insane. Since I start up my agenda every time I start up my Emacs, this shortcut also effectively creates the other frame for me to work with until I exit Emacs. From there, I can just use the Agenda frame itself to switch to another buffer if I want to. Agenda is also the only place where I do use windows often - when I tab into one of my headers there. I tab into a task, view it, make changes if I want, save, and C-0 to return to full agenda view. It&amp;rsquo;s so fast it&amp;rsquo;s just my muscle memory now.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Libre and Clothes</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 -0400</pubDate>
+      <pubDate>1010-08-08</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</guid>
-      <description>When I write, I live in Emacs (with the awesome Solorized theme) inside Org-Mode.
-With time, I found that Org has already made me more effienet writer and note taker. I write notes in every meeting now, rather it&amp;rsquo;s my &amp;ldquo;turn&amp;rdquo; or not. I write notes as I work, about every solution and every problem I&amp;rsquo;m facing. I write first thing in the morning, usually about org-related thoughts I had as I wake up, over a cup of Sumatra cofee (little almond milk, one pack of sugar).</description>
+      <description>&lt;p&gt;When I write, I live in Emacs (with the awesome &lt;a href=&#34;https://github.com/altercation/solarized&#34;&gt;Solorized&lt;/a&gt; theme)
+inside Org-Mode.&lt;/p&gt;
+&lt;p&gt;With time, I found that Org has already made me more effienet writer
+and note taker. I write notes in every meeting now, rather it&amp;rsquo;s my
+&amp;ldquo;turn&amp;rdquo; or not. I write notes as I work, about every solution and every
+problem I&amp;rsquo;m facing. I write first thing in the morning, usually about
+org-related thoughts I had as I wake up, over a cup of Sumatra cofee
+(little almond milk, one pack of sugar). Quite honestly, Org makes me
+&lt;em&gt;feel&lt;/em&gt; good, because it&amp;rsquo;s transparent. It&amp;rsquo;s an extensions of my
+thoughts, continuing on one long line, uninterrupted, before I stop to
+think a second and relfect one what I was thinking (&lt;code&gt;X-q&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s no pretending in Org. No fancy text, fonts, or even
+images. Style is only applied to function. It&amp;rsquo;s a delicate balance
+which, with the Solirized theme, work extremly well (by the way, the
+&lt;a href=&#34;http://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/&#34;&gt;story of the man who created Solorized&lt;/a&gt; is quite interesting and worth
+reading). There&amp;rsquo;s also an inviting segue here about Linux, which is
+the Org-writing mindset extended into an operating system. But I&amp;rsquo;m
+joyfully digress.&lt;/p&gt;
+&lt;p&gt;Alright then. But every now on then you need to present stuff, and
+this means you need to &amp;ldquo;dress up&amp;rdquo; so other people can talk to you and
+relate. The &amp;ldquo;Normals,&amp;rdquo; so to speak, do not understand my Org
+dedication and often give me concerned looks when I type away, a
+single long line into a blank screen. The purity is empty, the lack of
+buttons and distracting elements feels threatening withough GUI
+guidance. Fine then, I can do fancy schmancy.&lt;/p&gt;
+&lt;p&gt;Most Org-folk I&amp;rsquo;ve read and listened to talk about LaTex. In my case,
+that meant a full installation, which is huge. Over 2GB huge. Not
+worth it for concessional usage, especially since I work in Microsoft
+environment at work, and most people I&amp;rsquo;ll share with will need .docx
+or .ppt format anyway. So for me, &lt;a href=&#34;https://en.wikipedia.org/wiki/OpenDocument&#34;&gt;.odt&lt;/a&gt; seems like a better answer.&lt;/p&gt;
+&lt;p&gt;Two things are needed on my Emacs (version 25.2.1) for that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Download and install Libre Office&lt;/strong&gt;. It comes built in with many
+personal desktop-geared Ubuntu distros, but in my version (Mint) I
+chose to opt out at start. OK, not biggie, full Libre office suite
+is only 100MB, and I can do that. I see myself edit the
+concessional Word file or producing a PDF.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Add the following&lt;/strong&gt; to .emacs to turn on .odt option in the export
+dispatcher:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;`(eval-after-load &amp;quot;org&amp;quot; &#39;(require &#39;ox-odt nil t))`&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now I can create the .dot file, which I can open in Libre Writer I
+just downloaded. Ooof. Hello GUI word proccessing, with weird paper
+screen restrictions look. And the white, the white! It burnsss
+usss&amp;hellip;. But anyway. Overall things look excellent, but if I want to
+change fonts, move around images etc, now I can in a more eyecandy
+format without leaving Linux. Then again, if I really need to produce
+a document, I might as well save my .odt in Writer to a .docx and
+remote remote into my work computer, where Mirosoft reigns
+supreme. Options. We like having them, yes?&lt;/p&gt;
+&lt;p&gt;Even another option I was considering is to use &lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;, which is a
+pretty markdown writer. It comes with &lt;a href=&#34;https://en.wikipedia.org/wiki/Pandoc&#34;&gt;Pandoc&lt;/a&gt;, and can handle Word and
+PDF files. Typora does not exactly feel &amp;ldquo;Linux free&amp;rdquo; to me and seems
+heavily inspired by different &amp;ldquo;minimalist&amp;rdquo; Mac word processing apps,
+if that&amp;rsquo;s your thing. It probably won&amp;rsquo;t show in your distro&amp;rsquo;s and
+require installation from a ppa. I used Typora for a while for
+markdown, but we&amp;rsquo;ve parted ways now.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m curious how this will stand out when I present my notes (since
+I&amp;rsquo;ve became the unofficial note taker at work, for reasons mentioned
+above). But for now, I&amp;rsquo;m more than happy to take off the fancy clothes
+and slide back to my comfortable t-shirt and shorts and write in Org.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

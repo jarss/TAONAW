@@ -14,59 +14,400 @@
     <item>
       <title>Mounting an SMB Share on Linux</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200518/</link>
-      <pubDate>Mon, 18 May 2020 00:00:00 -0400</pubDate>
+      <pubDate>18180-05-05</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200518/</guid>
       <description>&lt;p&gt;Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.&lt;/p&gt;
-&lt;p&gt;This guide assumes that you have two machines, Windows and Linux, on the same network and same subnet. It also assumes you&amp;rsquo;ve already shared the SMB folder with the right security properties: if you need help with this, &lt;a href=&#34;https://support.microsoft.com/en-us/help/4092694/windows-10-file-sharing-over-a-network&#34;&gt;look here&lt;/a&gt; for starters or find other helpful articles like &lt;a href=&#34;https://www.techbout.com/share-files-folders-windows-10-44386/&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;This guide assumes that you have two machines, Windows and Linux, on the same network and same subnet. It also assumes you&amp;rsquo;ve already shared the SMB folder with the right security properties: if you need help with this, &lt;a href=&#34;https://support.microsoft.com/en-us/help/4092694/windows-10-file-sharing-over-a-network&#34;&gt;look here&lt;/a&gt; for starters or find other helpful articles like &lt;a href=&#34;https://www.techbout.com/share-files-folders-windows-10-44386/&#34;&gt;this one&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let me start by throwing the &lt;em&gt;mount&lt;/em&gt; command at you and then explain what it does. Here it is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;sudo mount -t cifs -o user=[your Windows user] //[path/to/smb/mountpoint/
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;We start with &lt;code&gt;sudo&lt;/code&gt; because mounting requires root permissions.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Mount&lt;/code&gt; is the command to mount a drive.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-t&lt;/code&gt; to tell mount that next we&amp;rsquo;re specifying a &lt;em&gt;type&lt;/em&gt; of filesystem.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cifs&lt;/code&gt; is our filesystem&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-o&lt;/code&gt; to tell mount that next we&amp;rsquo;re specifying an &lt;em&gt;option&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;user&lt;/code&gt; is our option, the user is our Windows system user&lt;/li&gt;
+&lt;li&gt;next we specify the smb host and the path to the folder&lt;/li&gt;
+&lt;li&gt;last, the mounting point, the folder on Linux where we&amp;rsquo;ll be viewing the files.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;rsquo;s an example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;sudo mount -t cifs -o user=seriousam //192.169.1.12 /media/sserious/space
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notice the two things highlighted above: the Windows user (seriousam in our case), which we can find out simply by going to &lt;code&gt;C:\User&lt;/code&gt; in Windows, and the host, which is identified by its private IP address. Depending on how you have your Linux machine set up, I find that it&amp;rsquo;s safer to use an IP address (and use your router&amp;rsquo;s DHCP settings to always give your machines the same IP address so it doesn&amp;rsquo;t change) than the using the machine&amp;rsquo;s host name.&lt;/p&gt;
+&lt;p&gt;Mounting this way comes with two annoyances. First, because you have to mount as root (using sudo), only root will have read/write permissions to the folder. You won&amp;rsquo;t be able to download files and save them to the SMB folder without sudo-ing, for example. Second, you will have to mount the share each time you log in and enter the password for your Windows user (the mount command has an &amp;ldquo;password&amp;rdquo; option, so you could type it as part of the mount syntax if you&amp;rsquo;d like).&lt;/p&gt;
+&lt;p&gt;The better and more acceptable solution is to mount your SMBs in your &lt;a href=&#34;https://en.wikipedia.org/wiki/Fstab&#34;&gt;fstab&lt;/a&gt;. This is where Linux goes to find out what hard drives and partitions you got going among other things (like SMBs) and how to mount them. It might look scary, and for a good reason: mess up your main filesystem SSD, and Linux won&amp;rsquo;t know where to boot from&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;To edit fstab you&amp;rsquo;ll need sudo like all things that are system-wide and are not in your user folder: &lt;code&gt;emacs /etc/fstab&lt;/code&gt;&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; (or use nano, or VIM, or what have you).&lt;/p&gt;
+&lt;p&gt;fstab starts with a nice commentary about how to get your UUIDs, which is very important if you&amp;rsquo;re trying to mount a physical disk. the first line of code specifies your main Linux file system&amp;rsquo;s UUID and then under it most likely your swap partition. Remember I told you how you can fail to boot if you mess with your fstab? Stay away from these lines.&lt;/p&gt;
+&lt;p&gt;Start a new line under the last with a comment that will help you figure out what you were doing in the future, and then specify the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;//[host ip address/share-folder] [/path/to/mount/point] cifs credentials=/home/sserious/.smbcredentials,uid=1000,gid=1000 0 2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;OK. This looks a bit like the mount command, but what&amp;rsquo;s with all the extra stuff?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;//host ip address/share-folder&lt;/code&gt; this we already know.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/path/to/mount/point&lt;/code&gt; this we also already know.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cifs&lt;/code&gt; the filesystem. Notice how we don&amp;rsquo;t specify a &lt;code&gt;-t&lt;/code&gt; for type here, because this part belongs to the mount command which is different than fstab. Take a look (don&amp;rsquo;t touch!) at the Linux disks about: probably ext4 and swap, which might look familiar back from when you installed Linux and defined your partitions.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;credentials=/home/sserious/.smbcredentials&lt;/code&gt; uh oh. What&amp;rsquo;s this? fstab needs credentials to mount the share, this we know from the mount command. Since we want fstab to have everything it needs and won&amp;rsquo;t stop us during boot about some lack of access to SMB, we want to automate this process. In this particular case, the credentials are written in a file, .smbcredentials&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;. I will specify what goes in it below.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;uid=1000,gid=1000&lt;/code&gt; Remember how we had the problem that the SMB share was mounted by root, which meant no other users can save unto it? This line sets permissions to your &amp;ldquo;regular&amp;rdquo; user which most likely has user id of 1000 and group id of 1000. Run &lt;code&gt;id -u&lt;/code&gt; to get your user id and &lt;code&gt;id -g&lt;/code&gt; to get your group id.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;0 2&lt;/code&gt; I&amp;rsquo;m still not 100% clear on these. The first number, which can be 0 or 1, is for dump, the second is for fsck, which can be set to 0, 1, or 2. Dump is a way Linux backs up file, or used to back up files. It is not really used anymore (you&amp;rsquo;ll noticed your main filesystem has a 0 as well) and fsck is the order which Linux will check the disks. Your filesystem has to be 1 (and it is by default) and everything else can be 2. We actually don&amp;rsquo;t really need it for SMB because the disk is located somewhere else, it&amp;rsquo;s a matter of logging in, not checking the files, so we could put 0 there also so it won&amp;rsquo;t be checked at all.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The .smbcredentials from step 4 looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;username=seriousam
+password=password123
+domain=.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s it. You now have all you need to mount the SMB share. Make sure you save fstab, restart, and see if you have access to your SMB.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The simple and short explanation is that CIFS is basically SMB. But this is not exactly true. &lt;a href=&#34;https://en.wikipedia.org/wiki/Server%5FMessage%5FBlock#SMB%5F/%5FCIFS%5F/%5FSMB1&#34;&gt;CIFS is a blend of SMB&lt;/a&gt;. SMB improved with the years, and today we&amp;rsquo;re beyond SMB 3.0 which is developed by Microsoft for Windows, while Linux keeps CIFS which was &lt;em&gt;also&lt;/em&gt; improved with the years and the kernel, so it is, in a way, a blend of modern SMB of its own and not the original CIFS from the 80s. Confused? Me too. I&amp;rsquo;m sure someone who knows more about this could comment and explain. For now, for practicality&amp;rsquo;s sake, we can pretend SMB = CIFS. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The solution to this, by the way, is to boot up with a live-USB just like you do when you first install Linux, mount the hard drive of the Linux partition you messed up, find the fstab, and fix it &amp;ndash; not that I know anything about messing it up! No sir&amp;hellip; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Didn&amp;rsquo;t I just say we need sudo? Why yes. In Emacs you do that by using &lt;a href=&#34;https://www.gnu.org/software/tramp/#Using-su%5F002c-sudo-and-sg&#34;&gt;TRAMP&lt;/a&gt;. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user name and password to log into Linux, you&amp;rsquo;re f-ed anyway. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Best Tools for the job: Duplicati</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200212/</link>
-      <pubDate>Fri, 14 Feb 2020 00:00:00 -0500</pubDate>
+      <pubDate>14140-02-02</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200212/</guid>
-      <description>&lt;p&gt;One of the things I&amp;rsquo;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&amp;rsquo;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;</description>
+      <description>&lt;p&gt;One of the things I&amp;rsquo;ve kept postponing since &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20191208/&#34;&gt;switching to Linux on my desktop&lt;/a&gt; has been my backup system. I wrote a script on my raspberry pi to create an encrypted tar achieves of my org files twice a day transfer them over to Hedwig (my desktop), which will then find their way into an online backup provider. Now that I switched to Linux, that system stopped working, and I&amp;rsquo;ve kept postponing the critical need for an online backup too long.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been a happy &lt;a href=&#34;https://www.backblaze.com/&#34;&gt;Backblaze&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; customer for about half a year, and I used their &lt;a href=&#34;https://www.backblaze.com/cloud-backup.html&#34;&gt;full computer backup plan&lt;/a&gt; on Windows for a flat fee of $60 a year. With Linux though, this plan was no longer an option. It seemed Backblaze was telling me &amp;ldquo;hey man, now that you&amp;rsquo;re using Linux full time, it&amp;rsquo;s time to wear the big boy&amp;rsquo;s hat and stop using our training wheels. Get serious, or go back to Windows.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Backblaze&amp;rsquo;s &lt;a href=&#34;https://www.backblaze.com/b2/cloud-storage.html&#34;&gt;B2 Backup&lt;/a&gt; is one of the most affordable (if not &lt;em&gt;the&lt;/em&gt; most affordable) deals I&amp;rsquo;ve found. I had to create a script that would most likely run with &lt;a href=&#34;http://duplicity.nongnu.org/&#34;&gt;Duplicity&lt;/a&gt;, a trusted Linux tool that&amp;rsquo;s been around for a while. After a massive project at work finally ended, I had the time to sit down and try to make it work. I started running into issues though: it seemed like authentication with B2 was rejected due to some known issue, but I couldn&amp;rsquo;t find too much information about fixing it. What I did found though, as I was looking through various help documentations, is a lesser-known FOSS tool: &lt;a href=&#34;https://www.duplicati.com/&#34;&gt;Duplicati&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can tell by the game of words here that Duplicity and Duplicati are related: &amp;ldquo;The Duplicati project was inspired by Duplicity and had similar functionality until 2008,&amp;rdquo; its team says in the manual, and the philosophy is the same: a free encryption-supported tool for backups. It&amp;rsquo;s not directly available in official depositories (maybe in rolling releases?) due to its beta status, but it&amp;rsquo;s &lt;a href=&#34;https://www.duplicati.com/download&#34;&gt;easy enough to download for Debian-based distros&lt;/a&gt; (this is another example of why &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200108/&#34;&gt;switching to Kubuntu&lt;/a&gt; was a good idea for me).&lt;/p&gt;
+&lt;p&gt;Duplicity&amp;rsquo;s GUI is easy enough to understand, almost to the point that their &lt;a href=&#34;https://duplicati.readthedocs.io/en/latest/&#34;&gt;manual&lt;/a&gt; or excellent &lt;a href=&#34;https://www.duplicati.com/articles/Getting-Started/&#34;&gt;getting started guide&lt;/a&gt; are not needed. As it turns out, connection settings for Backblaze&amp;rsquo;s B2 backups come built-in, as well as many other options like Amazon&amp;rsquo;s S3 or box.com. As a matter of fact, the GUI was so simple and intuitive I quickly created different backups for that required different intervals:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/20200212_1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;With these created, I was looking a my backups differently. No longer one large archive of all my system files, photos, media and org files, but a separate, &lt;em&gt;purposeful&lt;/em&gt; and specific jobs for different kind of needs.&lt;/p&gt;
+&lt;p&gt;For example, my &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200201/&#34;&gt;photos&lt;/a&gt; do not need to be backed-up every day. That&amp;rsquo;s because I take new photos perhaps once a week (sometimes less unfortunately). My org files are the opposite case: I work with them daily both at work and at home, and the differences are large enough for two daily backups: midday while I&amp;rsquo;m at work, making progress on my &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200123/&#34;&gt;various projects&lt;/a&gt;, and one late at night, after I&amp;rsquo;ve recorded my day in the journal and additional events on the agenda.&lt;/p&gt;
+&lt;p&gt;Duplicati also comes with &lt;a href=&#34;https://duplicati.readthedocs.io/en/latest/04-using-duplicati-from-the-command-line/&#34;&gt;command-line options&lt;/a&gt; which can be used to automate similar process on different machines (I can upload my photos from my desktop, and then duplicate the process for a similar backup on my raspberry pi, for example) or to save in case you need it in the future.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s too early to tell, but Duplicati&amp;rsquo; approach to backups with its ability to work with b2 out of the box is making the long-trusted &lt;a href=&#34;https://github.com/bit-team/backintime&#34;&gt;back-in-time&lt;/a&gt; obsolete: there&amp;rsquo;s no need to backup to my external with one program and upload to b2 with another; duplicati is perfectly fine backing up what I need to my external as well.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Backblaze is an excellent service/tool in itself. For &amp;ldquo;regular&amp;rdquo; home users, they have a simple desktop tool (Mac or Windows) that backs up everything important on the computer (main hard drive and system files) by default, but easy enough to work with if you want to be more granular about your approach, including password-protected encryption. They are aggressively affordable, even more so than Amazon&amp;rsquo;s Glacier. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Scripting in Bash 102</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</link>
-      <pubDate>Tue, 03 Sep 2019 00:00:00 -0400</pubDate>
+      <pubDate>3030-09-09</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/scripting-basics-1/</guid>
       <description>&lt;p&gt;This is my first attempt at explaining a full (though simple) script I wrote. I always say I&amp;rsquo;m no programmer (or scripter). Despite that, I somehow ended up creating a couple of useful scripts on my Linux machine.&lt;/p&gt;
-&lt;p&gt;My elementary scripts are work in progress. I keep tweaking them as I learn and create new ones. I&amp;rsquo;d love to hear from experienced scripters just as I&amp;rsquo;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;</description>
+&lt;p&gt;My elementary scripts are work in progress. I keep tweaking them as I learn and create new ones. I&amp;rsquo;d love to hear from experienced scripters just as I&amp;rsquo;d love to hear from those of you who never opened Nano before. Feedback is always welcome.&lt;/p&gt;
+&lt;h2 id=&#34;newcomers-few-basic-requirements&#34;&gt;Newcomers: Few Basic Requirements&lt;/h2&gt;
+&lt;p&gt;Before we dive in, a few scripting points to cover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A script is nothing more than a text file containing a list of commands in Bash (Linux&amp;rsquo;s default shell). You can use any text editor you&amp;rsquo;d like to create the file, it doesn&amp;rsquo;t matter. I use &lt;a href=&#34;https://www.gnu.org/software/emacs/&#34;&gt;Emacs&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Speaking text editors: if you use Linux (or a Mac), you have Nano built-in. Just type &amp;ldquo;nano&amp;rdquo; in terminal to bring it up. It has a slight learning curve with its weird key bindings, so &lt;a href=&#34;https://www.lifewire.com/beginners-guide-to-nano-editor-3859002&#34;&gt;Here&amp;rsquo;s a quick guide&lt;/a&gt; to get you started.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In Linux, it doesn&amp;rsquo;t matter what extension your file has. That world belongs to Windows and MacOs. You can save your script as  &amp;ldquo;myfirstscript&amp;rdquo; and it will run fine without an extension.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What &lt;em&gt;is&lt;/em&gt; important though is permissions in Linux, a whole topic in itself. In order to allow a text file to run as an executable chain of commands, you need to permit it to do so. To do this, type in your terminal &amp;ldquo;chmod +x [your script path and name here]&amp;quot;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; to tell Linux this is an executable file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can&amp;rsquo;t just run your script by typing it in your terminal and hit Enter. That&amp;rsquo;s because it&amp;rsquo;s not part of your system&amp;rsquo;s path configuration, which tells Linux where are the scripts and programs you can run are.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; You have to be specific and write out the entire path &amp;ldquo;&lt;code&gt;[path/to/your/script/script here]&lt;/code&gt;&amp;rdquo; or be in the same directory as the script and execute it with &amp;ldquo;&lt;code&gt;./[script name here]&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hopefully the above makes sense. If not, don&amp;rsquo;t worry about it for now, just try to follow the instructions.&lt;/p&gt;
+&lt;h2 id=&#34;the-script&#34;&gt;The Script&lt;/h2&gt;
+&lt;p&gt;OK then, here it is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;#!/bin/bash
+
+filename=w`date +%V_%y`
+init_mon=`date +%Y-%m-%d`
+
+cp /media/pispace/Documents/Archive/weekly-template.org /media/pispace/Documents/Archive/$filename.org
+
+sed -i &amp;quot;1s/^/#+TITLE: Week Starting Monday $init_mon\n/&amp;quot; /media/pispace/Documents/Archive/$filename.org
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Keep in mind that the website layout breaks the source code artificially; the two segments toward the end, the cp and the sed, should be in two long lines. I need to correct this.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll go line by line to explain what it does and hopefully how it works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What does it do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A practical little thing, this script creates a new .org file every week&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; from a template and changes its title to &amp;ldquo;Week Starting Monday [date]&amp;rdquo; where the date is updated based on that week&amp;rsquo;s date.&lt;/p&gt;
+&lt;p&gt;So for example, on 02-09-2019 (at 3:00 AM specifically), my Raspberry Pi created a new org file. The first line in that file, which is the title, reads &amp;ldquo;Week Starting Monday 2019-09-02&amp;rdquo; (I like my dates in a yyyy-mm-dd format).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How does it do it?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ah. Well, this is what this post is about. Let&amp;rsquo;s dive in:&lt;/p&gt;
+&lt;h2 id=&#34;the-shebang&#34;&gt;The Shebang&lt;/h2&gt;
+&lt;p&gt;The very first line, &lt;code&gt;#!/bin/bash&lt;/code&gt;, is called shebang (or hashbang, but shebang seems to be more popular). Every script in Linux should (though there are ways around it, it&amp;rsquo;s just good practice) start with a shebang. What does this cryptic line do? We&amp;rsquo;re just on the first line and it already seems like we need to learn another language!&lt;/p&gt;
+&lt;p&gt;No worries. Everything looks big and scary at first, that&amp;rsquo;s why you break it down to parts you understand.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;#&lt;/code&gt; sign is usually used to enter a comment into your script. This means this line is not meant to be run as a command and should be skipped. When combined with a &lt;code&gt;!&lt;/code&gt; it creates a special combo&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; called the &lt;a href=&#34;https://en.wikipedia.org/wiki/Interpreter%5Fdirective&#34;&gt;interpreter directive&lt;/a&gt;, which tells Linux how to interpret the script we&amp;rsquo;re about to write - or more precisely, where is the interpreter located so the computer can find it and use it to interpret the command.&lt;/p&gt;
+&lt;p&gt;Since we&amp;rsquo;re about to write a script in Bash, we need to tell our computer: &amp;ldquo;OK, this file is written in Bash, here&amp;rsquo;s where you find bash&amp;rdquo; which is exactly what the next part is: &lt;code&gt;/bin/bash&lt;/code&gt;.  this is where bash is, in your &lt;code&gt;/etc/bash&lt;/code&gt; folder. If it was in a folder named giraffe, for example, it would be &lt;code&gt;#!/giraffe/bash&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;variables&#34;&gt;Variables&lt;/h2&gt;
+&lt;p&gt;This is probably one of the most popular phrases used in scripting. A variable (or var for short) is a container for a piece of data, usually called a string (string is one type of data, but for our purposes here let&amp;rsquo;s keep it simple).&lt;/p&gt;
+&lt;p&gt;Our script contains two variables: &lt;em&gt;filename&lt;/em&gt; and &lt;em&gt;init-mon&lt;/em&gt;. It makes sense if you look at how it&amp;rsquo;s written: &lt;code&gt;filename=[something...]&lt;/code&gt; and &lt;code&gt;init_mon=[something...]&lt;/code&gt;, like saying &lt;code&gt;my_name=Josh-Rollins&lt;/code&gt;, for example.&lt;/p&gt;
+&lt;p&gt;In Bash, as soon as we place a &lt;code&gt;=&lt;/code&gt; after a name like that, Bash knows this is a variable. Simple. OK, so what exactly goes into these containers? We&amp;rsquo;re going to find out.&lt;/p&gt;
+&lt;p&gt;By the way, you can define variables anywhere in the script (as long as it&amp;rsquo;s before you use them, of course), but it&amp;rsquo;s considered good practice to write them at the beginning of the script.&lt;/p&gt;
+&lt;h2 id=&#34;the-date-command-and-reading-the-manual&#34;&gt;The Date Command, and Reading the Manual&lt;/h2&gt;
+&lt;p&gt;This is our first command. If you copy &lt;code&gt;date +%V_%y&lt;/code&gt; and run it in your terminal, you&amp;rsquo;d get a number, an underscore, and another number. If I type this today (which happens to be September 3, 2019), I&amp;rsquo;d get &amp;ldquo;36_19&amp;rdquo;. Did you notice the plus sign before the options (these are the letters with the percent sign)? it&amp;rsquo;s important: in the manual, it says to use a plus sign when specifying a specific format to display.&lt;/p&gt;
+&lt;p&gt;We know a command named &amp;ldquo;date&amp;rdquo; is probably giving us date related output, and I just gave you today&amp;rsquo;s date&amp;hellip; can you guess what this command does? What are these numbers?&lt;/p&gt;
+&lt;p&gt;To be sure, let&amp;rsquo;s run the manual command (man) for the date command. Type &amp;ldquo;man date&amp;rdquo; in your terminal. This is the manual for the date command (most commands in Linux come with a manual, isn&amp;rsquo;t this awesome?)&lt;/p&gt;
+&lt;p&gt;The most important bits of info to get from the manual are the name and the synopsis. The name tells us what the command does right there: &amp;ldquo;print or set the system date and time&amp;rdquo;, and then the description which is the same thing. Go ahead and run &amp;ldquo;date&amp;rdquo; without any format options (that is, without the &amp;ldquo;+%&amp;rdquo; something) part and see what it prints out by default; you&amp;rsquo;d notice it&amp;rsquo;s the same as specified under the &amp;ldquo;Synopsis&amp;rdquo; part of the manual.&lt;/p&gt;
+&lt;p&gt;In our case, we use the date command with specific formatting options. In the manual for the command, scroll down to &amp;ldquo;Format&amp;rdquo; to find these. Do you see how many options the date command has? You can print out the current century or even the number of seconds since the beginning of 1970&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;. The options used in the script, %V and %y, give out the week number in the year and the year&amp;rsquo;s last two digits. The underscore in between is nothing but a separator that will later show in the file name, to get the following format: [week number]_[year&amp;rsquo;s two digits], which gets us something like &amp;ldquo;12_19.org&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;The other variable, init_mon, is another way to get output from the date command. Go ahead and try to figure out the options used on your own this time. Why do I need this second date? We will find out shortly.&lt;/p&gt;
+&lt;h2 id=&#34;the-copy-command-and-using-variables&#34;&gt;The Copy Command and Using Variables&lt;/h2&gt;
+&lt;p&gt;the next line starts with &amp;ldquo;cp&amp;rdquo;. This is simply us writing out a command, nothing fancy. cp stands for copy in Linux, a command that copies files and directories. Don&amp;rsquo;t take my word for it, check the manual!&lt;/p&gt;
+&lt;p&gt;The command then says to copy my weekly org template (I talked about org files as templates &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;previously&lt;/a&gt;) from the origin directory to the destination directory (this format, of writing the origin location first, space, target location, is also noted in the manual. You have to follow this order), as a file named&amp;hellip; &amp;ldquo;filename&amp;rdquo;.org. And filename is the name of our variable, from earlier. We tell Bash we want to use the data in a variable (remember, it&amp;rsquo;s just a container) by writing a dollar sign in front of the name of the variable we want to use. I added &amp;ldquo;.org&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;7&lt;/a&gt;&lt;/sup&gt;&amp;rdquo; at the end because - you got it - this is going to be a .org file.&lt;/p&gt;
+&lt;h2 id=&#34;the-sed-command&#34;&gt;The sed Command&lt;/h2&gt;
+&lt;p&gt;The sed command stands for &amp;ldquo;stream editor&amp;rdquo;. This is one powerful command, which I&amp;rsquo;m only scratching the surface of here. It allows you to manipulate text in all kinds of ways, but probably one of it&amp;rsquo;s most popular usages (as in this script) is to substitute a piece of text with another piece (in Bashspeak, we call these strings)&lt;/p&gt;
+&lt;p&gt;We call the command, sed, with option &lt;code&gt;-i&lt;/code&gt; which tells it not to produce output. Basically &amp;ldquo;just do it, don&amp;rsquo;t show me.&amp;rdquo; This is because we don&amp;rsquo;t want to see the replacement on the screen, we just want to manipulate the text.&lt;/p&gt;
+&lt;p&gt;The rest looks a bit crazy, but hang on, it makes sense:&lt;/p&gt;
+&lt;h3 id=&#34;sed-using-quotation-marks&#34;&gt;sed: Using Quotation Marks&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;re going to use the quotation marks to include our entire stream and options (you can see it ends at the very end of the line). It&amp;rsquo;s our way of telling the script to take &amp;ldquo;this&amp;rdquo; where &amp;ldquo;this&amp;rdquo; is everything included in quotation lines&lt;sup id=&#34;fnref:8&#34;&gt;&lt;a href=&#34;#fn:8&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;8&lt;/a&gt;&lt;/sup&gt;. We need to use it here because our substation includes spaces, and these usually interpret as a workflow instruction. Remember the cp command, and how it uses space to differentiate between the origin and the target? Well, something similar happens in sed, so if we just include spaces without the quotation marks, sed will do something else.&lt;/p&gt;
+&lt;h3 id=&#34;sed-selecting-the-right-text&#34;&gt;sed: Selecting the Right Text&lt;/h3&gt;
+&lt;p&gt;Next, we have &lt;code&gt;1s/&lt;/code&gt;. This is actually two in one combo. &lt;code&gt;1&lt;/code&gt; for first line and &lt;code&gt;s&lt;/code&gt; which tells sed we want to do a substitution. Then we have a forward slash which is how we tell sed this is the expression we want to replace. In other words, we are selecting the text from here going forward, until the next forward slash.&lt;/p&gt;
+&lt;p&gt;Now wait a second. Didn&amp;rsquo;t we already use quotation marks to tell sed what parts we want to work with? Kind of. Not really. The quotation marks acted as a wrapper for the whole expression, the text we want to replace (which is missing in this script, I will talk about this in a second), the text we want to replace with, variables&amp;hellip; the whole shebang (sorry, couldn&amp;rsquo;t resist). See, quotation marks work in Bash as &amp;ldquo;wrappers&amp;rdquo; as they do here. The forward slash, on the other hand, is specific for the expressions &lt;em&gt;inside&lt;/em&gt; the command here, sed.&lt;/p&gt;
+&lt;p&gt;Think about it like a sandwich: when you order one you get it in a wrapping paper and a plastic bag. You don&amp;rsquo;t eat those, that&amp;rsquo;s just how you carry it home. Once you take it out, you still have a sandwich, and this sandwich includes the good stuff inside. The quotation marks are the plastic bag and the wrapping paper, while the slashes represent the slices of the bread. you eat those, they are part of the &amp;ldquo;food&amp;rdquo; command, the bag and paper are not. Both act as wrappers, but for different purposes.&lt;/p&gt;
+&lt;p&gt;The last part of selecting the text is the caret (&lt;code&gt;^&lt;/code&gt;) sign. This is a regex expression (short for &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular%5Fexpression&#34;&gt;&amp;ldquo;regular expression&amp;rdquo;&lt;/a&gt;) which says &amp;ldquo;go to the very first part of the line&amp;rdquo;. Regex expressions are a whole world of their own, a powerful way to explain text strings to the computer. I explored &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/&#34;&gt;a bit of regex&lt;/a&gt; earlier if you&amp;rsquo;re interested. It&amp;rsquo;s a good example to show when this comes in handy. Combined with the &lt;code&gt;1s&lt;/code&gt; from earlier, it tells sed to select the first line, at the beginning.&lt;/p&gt;
+&lt;h3 id=&#34;sed-replacing-text-and-placing-in-a-file&#34;&gt;sed: Replacing Text and Placing in a File&lt;/h3&gt;
+&lt;p&gt;Above, we went over how to direct sed to the right text we want it to replace, but we didn&amp;rsquo;t tell it what to replace, and what to replace with. This is what&amp;rsquo;s coming up next.&lt;/p&gt;
+&lt;p&gt;Remember how forward slashes represent the pieces of the sandwich for the sed command? These are called &lt;a href=&#34;https://en.wikipedia.org/wiki/Delimiter&#34;&gt;delimiters&lt;/a&gt;. Sed substitution defines our sandwich like so: &amp;ldquo;replace &lt;code&gt;/this/&lt;/code&gt; with &lt;code&gt;/this/&lt;/code&gt;.&amp;rdquo; The syntax looks like &lt;code&gt;/this/this/&lt;/code&gt;. The first part tells sed what&amp;rsquo;s getting replaced, the second part what it&amp;rsquo;s replaced with.&lt;/p&gt;
+&lt;p&gt;In our script above, we told sed to replace the text with nothing at the beginning of the line (there&amp;rsquo;s nothing there after the &lt;code&gt;^&lt;/code&gt; sign) with &amp;ldquo;&lt;code&gt;#+TITLE: Week Starting Monday $init_mon\n/&lt;/code&gt;&amp;rdquo;. Because we specified nothing as what we want to replace, sed will simply replace the whole line. It won&amp;rsquo;t search for anything specific. And to make sure it starts right at the beginning of that line, we specified the carot from before.&lt;/p&gt;
+&lt;p&gt;If you use org-mode like me, you&amp;rsquo;d recognize this bit of text: it&amp;rsquo;s org-mode&amp;rsquo;s syntax for specifying a title for an org file. So, our sed goes to the very beginning of the very first line and replaces the entire line there with the &amp;ldquo;#TITLE&amp;hellip;&amp;rdquo; line.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;d recall from before, where I discussed variables, what the dollar sign is: we&amp;rsquo;re calling our &lt;code&gt;init-mon&lt;/code&gt; variable here, which contains the full date every Monday: The title is &amp;ldquo;Week Starting Monday &amp;quot; and then the date as I explained above.&lt;/p&gt;
+&lt;p&gt;Then, we have a special bit of regex again after we finished the replacing job (the forward slash after the variable): &lt;code&gt;\n&lt;/code&gt;. This means, &amp;ldquo;start a new line please&amp;rdquo; - just like pressing enter on your keyboard. And&amp;hellip; done, we just finished our sandwich, wrappers and all.&lt;/p&gt;
+&lt;p&gt;Finally, we have space (it&amp;rsquo;s a new line) which specifies the target of the whole sed command. This is where I specify the file where this line of text should be added. In our case, the file we copied from our template above. So the sed command takes a generic line in the template that is served as a title holder (I simply typed in &amp;ldquo;#+TITLE: Week Starting Monday &amp;mdash;-&amp;rdquo; but it could have said &amp;ldquo;pink rabbit&amp;rdquo; or simply nothing, doesn&amp;rsquo;t matter, since this entire line is replaced) and replaces it with what we&amp;rsquo;ve done here.&lt;/p&gt;
+&lt;h3 id=&#34;sed-more-about-the-sed-command&#34;&gt;sed: More About the sed Command&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve used different sources when I wrote this post, and I&amp;rsquo;d just like to mention a few in case you&amp;rsquo;re curious and want to go down the many rabbit holes of this awesome and complex command.&lt;/p&gt;
+&lt;p&gt;First, there&amp;rsquo;s the &lt;a href=&#34;https://www.gnu.org/software/sed/manual/sed.pdf&#34;&gt;GNU manual for this command&lt;/a&gt; which goes beyond the man page. Just so you get an idea, it&amp;rsquo;s .5MB of a PDF file with almost 40 pages. Don&amp;rsquo;t say I didn&amp;rsquo;t warn you.&lt;/p&gt;
+&lt;p&gt;Then there&amp;rsquo;s &lt;a href=&#34;https://www.grymoire.com/Unix/Sed.html#TOC&#34;&gt;this excellent tutorial&lt;/a&gt; that came up first in a search. It&amp;rsquo;s long and thorough, with a touch of sense of humor. A bit more advanced.&lt;/p&gt;
+&lt;p&gt;If you want to read up more about regex, &lt;a href=&#34;https://www.rexegg.com/regex-quickstart.html&#34;&gt;I found this as a helpful reminder&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And then you can always use stackoverflow for specific questions such as &amp;ldquo;&lt;a href=&#34;https://stackoverflow.com/questions/18527365/what-does-sed-i-option-do&#34;&gt;What does sed -i option do?&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;That&amp;rsquo;s it. If you followed along, you probably wondered where&amp;rsquo;s the part that automates the whole thing, so I get it every Monday. The way it is now, I have to remember to run the script every week. What&amp;rsquo;s the point in that? I mentioned in the footnotes, the automotive part is cron, and it will be discussed next time.&lt;/p&gt;
+&lt;p&gt;You may have more questions now than you had before reading the post. That&amp;rsquo;s a good thing - you now have specific questions which are more likely to give you specific answers. I hope to get many of these questions myself so I can update and modify the post to help more folks. Linux and Bash is a wonderful thing. You get all this power to automate and create things completely for free. I spent over a week writing this post, and one of the reasons is that I kept getting distracted by &amp;ldquo;why is that?&amp;rdquo; and then looking for answers. The research is one part of the fun, sharing it is another.&lt;/p&gt;
+&lt;p&gt;Thank you for reading!&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;If you ever write scripts to execute in Mac or Windows (say, in another program) you&amp;rsquo;ll notice these files has a &amp;ldquo;.sh&amp;rdquo; extension. But again, in Linux, this doesn&amp;rsquo;t matter. Later you will notice that the script creates a file with a .org extension. What&amp;rsquo;s this hypocrisy you ask? It has to do with the way Emacs is built. Emacs can open &lt;em&gt;any&lt;/em&gt; file, but org-mode files (this is the &amp;ldquo;plug-in&amp;rdquo; in Emacs that opens org files) are identified by .org extension for sake of convenience. You can include a special line in a file that would tell Emacs this is an org-mode file as well, but using .org is just more natural. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;strong&gt;chmod&lt;/strong&gt; (change file mode) is a powerful and important command in Linux, outside of the scope of this post. You should check the manual for it (you should know how if you read through this post). This will take you down a rabbit hole regarding Linux file permissions, and you can &lt;a href=&#34;https://devconnected.com/linux-file-permissions-complete-guide/&#34;&gt;read more about it&lt;/a&gt; here (one of many links available). Wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/File%5Fsystem%5Fpermissions#Traditional%5FUnix%5Fpermissions&#34;&gt;also has a good section&lt;/a&gt; to get you started. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The path in Linux is a variable (you&amp;rsquo;ll learn about those in a bit) which contains all the directories where your Linux knows to finds scripts and commands. OK, but what does that mean? I can&amp;rsquo;t get into it here (because I&amp;rsquo;ll never get to publish this post) but enough to say that the script you&amp;rsquo;re writing is not a part of the &amp;ldquo;Linux default&amp;rdquo; commands package, so Linux doesn&amp;rsquo;t know it&amp;rsquo;s a command. Imagine telling a person who never shook hands before to just &amp;ldquo;shake hands.&amp;rdquo; You&amp;rsquo;d have to explain it, and then that person could remember how to shake hands. Linux&amp;rsquo;s way to remember how to shake hands (in this example) is to add it to the list of directories that include such constrictions. This list is the path. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Automating tasks in Linux are done by a different component, called cron. It takes a specific set of instructions written out in a string and translates it to a specific time loop (for me when using this script, on Monday, 3AM, every week). Cron is something I hope to expand on in a future post. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This special combo is called a &amp;ldquo;magic number&amp;rdquo;, a unique value in ASCII that the computer understands as a direct command. I am not sure how many magic numbers like these exist. Sounds like something interesting to find out. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Turns out that this date (1/1/1970) is known as &amp;ldquo;The Unix &lt;a href=&#34;https://en.wikipedia.org/wiki/Epoch%5F(computing)&#34;&gt;Epoch&lt;/a&gt;.&amp;rdquo; A quick search led me to this &lt;a href=&#34;https://stackoverflow.com/questions/2533563/why-are-dates-calculated-from-january-1st-1970&#34;&gt;this discussion&lt;/a&gt;. Turns out such dates are common in the computing world&amp;hellip; read and learn! &lt;a href=&#34;#fnref:6&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;When scripting, certain special characters (like our $ above) are reserved. This means that if we wanted to call our variable &amp;ldquo;$usd&amp;rdquo; for example, we couldn&amp;rsquo;t. There are certain ways to tell Bash we want to use the character as a character, not as a &amp;ldquo;special signal.&amp;rdquo; As a matter of fact, the period in my .org is a bit dangerous because the period also has a special meaning. I should have typed out something more specific telling Bash the period here is meant as just a period, not a signal &amp;ndash; but at this point I&amp;rsquo;m not sure how the syntax would look like. I&amp;rsquo;m learning these things myself, after all. &lt;a href=&#34;#fnref:7&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:8&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Those of you who look carefully might find yourself asking, &amp;ldquo;OK, but the quotation marks &lt;em&gt;include&lt;/em&gt; the command syntax, not just the text we want to use, what&amp;rsquo;s up with that? Why isn&amp;rsquo;t it &lt;code&gt;1s/^/&amp;quot;#+TITLE: Week Starting...&lt;/code&gt;&amp;rdquo;? And I have a good answer: I don&amp;rsquo;t know. It doesn&amp;rsquo;t make sense to me either at the moment, but in all documentation I find, this is how the syntax works. &lt;a href=&#34;#fnref:8&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Submenus in org-mode Capture</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
+      <pubDate>14140-07-07</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
-&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
+&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;
+&lt;p&gt;When you build your org-mode templates, it&amp;rsquo;s possible to create sub-menus for better organization. Another way to explain it is to think of &amp;ldquo;categories&amp;rdquo; in your capture.&lt;/p&gt;
+&lt;p&gt;Says &lt;a href=&#34;https://orgmode.org/manual/Template-elements.html#Template-elements&#34;&gt;the manual&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Keys&lt;/p&gt;
+&lt;p&gt;The keys that selects the template, as a string, characters only, for example ‘&amp;ldquo;a&amp;rdquo;’, for a template to be selected with a single key, or &lt;strong&gt;‘&amp;ldquo;bt&amp;rdquo;’ for selection with two keys. When using several keys, keys using the same prefix key must be sequential in the list and preceded by a 2-element entry explaining the prefix key&lt;/strong&gt;, for example.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The bold part was another part that I had to read several times to understand. I knew there&amp;rsquo;s something different because two letters are used, but my capture template failed to work the first couple of times. I figured it out, and here it is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt; (setq org-capture-templates
+  (quote (
+	  (&amp;quot;s&amp;quot; &amp;quot;Manual Laptop Setups&amp;quot;)
+	  (&amp;quot;sd&amp;quot; &amp;quot;Staff Dell Laptops&amp;quot; entry
+	  (file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;Staff Dells&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-dells.org&amp;quot;))
+	(&amp;quot;sa&amp;quot; &amp;quot;Staff Apple Laptops&amp;quot; entry
+	  (file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;Staff MacBooks&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-macs.org&amp;quot;))
+	  (&amp;quot;sm&amp;quot; &amp;quot;SLS-Mac&amp;quot; entry
+	(file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;SLS-Mac&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-SLS-Mac.org&amp;quot;))
+	(&amp;quot;sw&amp;quot; &amp;quot;SLS-Windows&amp;quot; entry
+	(file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;SLS-Windows&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-SLS-Mac.org&amp;quot;))
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Let&amp;rsquo;s take it piece by piece from the top. Keep in mind this is not the entire template, just the relevant part. If you just copy-paste it, it will fail (it&amp;rsquo;s incomplete).&lt;/p&gt;
+&lt;p&gt;First, as soon as I start the capture templates, it seems as if I am starting to create another one &lt;em&gt;inside&lt;/em&gt; the first one. That&amp;rsquo;s what the manual means. In my opinion, it stumbles on its own words. Another case where an example (like the above) would go a long way. What I did is basically created a &lt;em&gt;sub-menu&lt;/em&gt; for &amp;ldquo;Manual Laptop Setups.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The result is that when I call org-capture, I get the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Select a capture template
+===========================
+
+[s]... Manual Laptop Setups...
+[i] INC (my incident template)
+[e] Event (my event and journal template)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I have more templates going down, but I want you to look at the very first one. That &lt;code&gt;[s]&lt;/code&gt; with the three dots after it indicates pressing &lt;code&gt;s&lt;/code&gt; will take me to a sub-menu of the capture template, which looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Select a capture template
+===========================
+
+s [d] Staff Dell Laptops
+s [a] Staff Apple Laptops
+s [m] SLS-Mac
+s [w] SLS-Windows
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can see form how the menu looks like that all of these items start with an &lt;code&gt;s&lt;/code&gt; but this time without the brackets. The brackets indicate what you can press &lt;em&gt;now&lt;/em&gt; after you&amp;rsquo;ve already pressed s to get into the sub-menu you&amp;rsquo;re currently in. That is, d for Dell checklist, a for Apple checklist, and so on.&lt;/p&gt;
+&lt;p&gt;Each one of these sub-templates is a checklist based in an org file like I explained in the previous post. The templates are all org files (like &lt;code&gt;setup-SLS-Mac.org&lt;/code&gt; for example, the third template) which are nothing but checklists like I pointed out in the previous post.&lt;/p&gt;
+&lt;p&gt;This way I can have an entire &amp;ldquo;category&amp;rdquo; of capture templates, with S for setup, without having a long list with letters that won&amp;rsquo;t seem related.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Using Regex for Old macOS Models</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 -0500</pubDate>
+      <pubDate>17170-02-02</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/finding-non-macos14-compatible-macs/</guid>
       <description>&lt;p&gt;At work, we are a small team serving a very large gorup of clients. Because of that, automation is very importnat. It is impossible to get to each client directly, and we constantly have our plates full with other projects, walk-ins and general maintanance.&lt;/p&gt;
-&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&amp;rsquo;s many times using the tools you already have.&lt;/p&gt;</description>
+&lt;p&gt;One project that was recently brought up was detecting and replacing old company-owned Macs that are out of warranty and cannot be upgraded to Apple&amp;rsquo;s newest macOS, which at the time of this writing is &lt;a href=&#34;https://itunes.apple.com/us/app/macos-mojave/id1398502828&#34;&gt;macOS Mojavi (10.14)&lt;/a&gt;. the idea is to locate these machines and retire them. To do such projects, we use system managment tool, KACE. KACE used to belong to Dell, and is still mostly used for Windows machines (it is most usefuls on Dells, obviously) but in this line of work it&amp;rsquo;s many times using the tools you already have.&lt;/p&gt;
+&lt;h2 id=&#34;identifying-macos-10-dot-14-minimum-requirements&#34;&gt;Identifying macOS 10.14 minimum requirements&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s Apple&amp;rsquo;s official &lt;a href=&#34;https://support.apple.com/en-us/HT201475&#34;&gt;compatible model list&lt;/a&gt;, which contains models by their release date in a buyer-friendly format, such as &amp;ldquo;MacBook Air introduced in mid 2012 or later.&amp;rdquo; The problem is that this imibgious description doesn&amp;rsquo;t work with  systme management tools, which use the specific  model identifiers (as it should). Given the popularity of Macs, however, it&amp;rsquo;s not hard to find a list of the model identifiers matched with Apple&amp;rsquo;s official list. Here&amp;rsquo;s EveryMac.com&amp;rsquo;s &lt;a href=&#34;https://everymac.com/mac-answers/macos-mojave-faq/macos-mojave-1014-compatible-macs-system-requirements.html&#34;&gt;compatible model identifer list&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Using the above list, we can use this &lt;a href=&#34;https://everymac.com/systems/by%5Fcapability/mac-specs-by-machine-model-machine-id.html&#34;&gt;full list&lt;/a&gt; from the same site to fine the first model identifier that will &lt;em&gt;not&lt;/em&gt; work for macOS10.14. This model would be the newest model on our &amp;ldquo;non-compatible list&amp;rdquo;. We need to find each model of the different major Mac families.&lt;/p&gt;
+&lt;h2 id=&#34;loading-it-into-kace&#34;&gt;Loading it into KACE:&lt;/h2&gt;
+&lt;p&gt;KACE lists model identifiers under &amp;ldquo;System Model&amp;rdquo;. It the case here, we are looking at a MacBook Pro 14,2 (which is mid 2017, according to the list above). This is the key we will use to create our filter:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/mnt/hgfs/Space/hallway/finding-non-macos14-compatible-macs2.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;One of KACE&amp;rsquo;s killer features is its smart lables, which allows us to build very detailed filters to profile hardware. Smart labels comb through the entire inventory and capture devices that fit our desired filter. There is a basic wizard built into KACE which allows us to create basic labels, but if we need to dive in deeper we need to use Regex or straight up SQL.&lt;/p&gt;
+&lt;p&gt;To create the smart label, I used &lt;a href=&#34;https://www.itninja.com/blog/view/using-regex-in-smart-labels-to-find-lower-versioned-software-w-java-example&#34;&gt;this helpful article&lt;/a&gt;. I suspect KACE&amp;rsquo;s Regex is nothing special, but this was my first time trying to get my hands dirty with it. It was fun! Here&amp;rsquo;s what it looks like:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/mnt/hgfs/Space/hallway/finding-non-macos14-compatible-macs1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;As we can see, the filter uses conditions for eahc one of the six family models. Let&amp;rsquo;s take a look at &lt;code&gt;^(MacBookAir[1-4],)&lt;/code&gt; as an example, keep in mind how the System Model (above) looks like.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Our complete Regex statement needs to be included inside a parenthesis&lt;/li&gt;
+&lt;li&gt;Going back, we use &lt;code&gt;^&lt;/code&gt; as a starting point. It declares that this is the start of the string, and nothing should come before it.&lt;/li&gt;
+&lt;li&gt;We spell out &lt;code&gt;MacBookAir&lt;/code&gt; because that&amp;rsquo;s just the text string of the model.&lt;/li&gt;
+&lt;li&gt;Next, square brackets call a range of numbers; in this case, 1 through 4. This goes back to the minimum requirement mentioned previously. Using our lists above, we know that the lowest compatible MacBook Air model for 10.14 is MacBook Air 5,1. This means MacBook Air 4,2 is the first &lt;em&gt;non-compatible&lt;/em&gt; Mac we need to capture. This is why any Model Identifiers that include 4,2 and below (4,1 3,2 3,1 etc.)&lt;/li&gt;
+&lt;li&gt;the comman after the number range is just a text string, as we have it in the System Model field in KACE.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;creating-the-report&#34;&gt;Creating the report&lt;/h2&gt;
+&lt;p&gt;KACE has the ability to create an automatic report for machiens that answer specific creteria. The reports also come with a built in filter and a wizard, even though not as customizable as the one in smart labels.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s generally a good idea to create a report that is based on a smart label because the smart label can be applied to other actions in KACE. For example, if we&amp;rsquo;d like to later send an alert to the users of these old Macs, telling them to come to IT with their Macs for inspection. Smart Labels also work immidetly with KACE&amp;rsquo;s databse, where reports are built only from new results, meaning we need to wait for Macs to connect and update on KACE before we see results. If someone has a work Mac they generally keep at home and don&amp;rsquo;t connect to our network, we will wait a long time before we know about it.&lt;/p&gt;
+&lt;p&gt;in KACE reporting tools, there&amp;rsquo;s an option to base the report directly on a Smart Label, which is what we&amp;rsquo;ll do here. I won&amp;rsquo;t cover the report in this post, but it&amp;rsquo;s important to mention that while the smart label is good to &lt;em&gt;capture&lt;/em&gt; the information, the report is much better at &lt;em&gt;presenting&lt;/em&gt; it. Use the report to specifiy things like the user&amp;rsquo;s full name, last login to KACE, IP address, etc. The report can also be created as a CSV or HTML file among others, and can be emailed.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The Hub</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</link>
-      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      <pubDate>22220-11-11</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry-pi-org-hub/</guid>
-      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;
+&lt;h2 id=&#34;buying-the-raspberry-pi-dot&#34;&gt;Buying the Raspberry Pi.&lt;/h2&gt;
+&lt;p&gt;For the setup I describe here, you need the RP itself, a power source, an SD card, a USB case for 2.5 inch HDD, and the HDD itself. You&amp;rsquo;ll also need an Ethernet cord for this setup. If you don&amp;rsquo;t have one, go grab yourself a &lt;a href=&#34;https://www.amazon.com/AmazonBasics-RJ45-Cat-6-Ethernet-Patch-Cable-5-Feet-1-5-Meters/dp/B00N2VILDM/ref=lp%5F9938478011%5F1%5F1?s=pc&amp;amp;ie=UTF8&amp;amp;qid=1542991619&amp;amp;sr=1-1&#34;&gt;CAT6 cord Amazon Basics&lt;/a&gt; cable, it&amp;rsquo;s always good to have one around.&lt;/p&gt;
+&lt;p&gt;For the RP, you better off getting a package similar to &lt;a href=&#34;https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/ref=sr%5F1%5Ffkmr0%5F2?s=electronics&amp;amp;ie=UTF8&amp;amp;qid=1541986065&amp;amp;sr=1-2-fkmr0&amp;amp;keywords=canakit+raspberry+pi+3+b++sd+card&#34;&gt;this one&lt;/a&gt;. You could probably get something slightly cheaper by getting all the parts yourself, but not by much. Better to have everything you need at once without worrying about forgetting something. I didn&amp;rsquo;t get the above package with the SD card, so I had to wait a couple of days for another order to come in.&lt;/p&gt;
+&lt;p&gt;The HDD I had laying around already, so I got &lt;a href=&#34;https://www.amazon.com/gp/product/B01M08LCXW/ref=oh%5Faui%5Fdetailpage%5Fo00%5Fs00?ie=UTF8&amp;amp;psc=1&#34;&gt;this case&lt;/a&gt; for it. 8 bucks.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-the-rp&#34;&gt;Setting up the RP&lt;/h2&gt;
+&lt;p&gt;First, we&amp;rsquo;re going to set up the SD card to run our RP.&lt;/p&gt;
+&lt;p&gt;Before we jump in, a note about my setup: I have Linux in a VM inside a Windows host. As it turns out, having Windows an alt-tab away (or in my case, ctrl+alt+left arrow away) can be very useful.&lt;/p&gt;
+&lt;p&gt;If switch between Windows programs and Linux commands without mentioning it, that&amp;rsquo;s because this setup comes naturally to me at this point. I&amp;rsquo;ve been working this way (office and home) for almost four years, minusaa half a year of dual-booting with Linux-Mint as my daily OS. There&amp;rsquo;s a whole story here about the switch to Linux and back, but that&amp;rsquo;s for another time.&lt;/p&gt;
+&lt;p&gt;OK! Enough chatter. Let&amp;rsquo;s get on with it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download &lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian&lt;/a&gt; (zip file).&lt;/li&gt;
+&lt;li&gt;Format the SD to FAT32&lt;/li&gt;
+&lt;li&gt;Unzip, and write the image to the SD using &lt;a href=&#34;https://sourceforge.net/projects/win32diskimager/&#34;&gt;Win32 diskimager&lt;/a&gt; or Underbootin. For me, the first option is better when I deal with SD cards and my USB-SD adapter, YMMV.&lt;/li&gt;
+&lt;li&gt;Create an empty file (no extension) on the SD root called SSH.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That last part is important. Creating the file (in windows, just create a new text file, rename to SSH and delete the extension) is what tells our RP to open port 22 for SSH.&lt;/p&gt;
+&lt;p&gt;Then you insert the SD card and power the RP up. Log into your router to find the RP&amp;rsquo;s IP address.  This is why you need to Ethernet connection for. You won&amp;rsquo;t be able to access the RP with WiFi for this.&lt;/p&gt;
+&lt;p&gt;Go ahead and SSH into the RP as pi: &lt;code&gt;ssh pi@[RP IP address here]&lt;/code&gt;. your default password is raspberry.&lt;/p&gt;
+&lt;p&gt;Once in, you want to sudo into  RP config tool: &lt;code&gt;sudo raspi-config&lt;/code&gt;. The setup tool is straightforward enough, but I found that remoting into the pi itself with VNC (coming up) is more convenient, so the only option we really care about now is to turn VNC on:
+go to interface options (option 5 in my case, in the middle), and do that.&lt;/p&gt;
+&lt;p&gt;Save, get out, and then download &lt;a href=&#34;https://www.realvnc.com/en/connect/download/vnc/linux/&#34;&gt;RealVNC&lt;/a&gt;. I downloaded it for Linux because that&amp;rsquo;s what I use to SSH and setup my Pi. It&amp;rsquo;s also where later I will setup Syncthing (coming up), so it made sense. RealVNC is the recommended option for RPs. it&amp;rsquo;s easy to install and run, and supports VNCing with a password, which is what you need for the RP. As a bonus, it automatically creates nice thumbnails of the last logins (IP addresses) which can be useful.&lt;/p&gt;
+&lt;p&gt;With RealVNC, go ahead and connect to the RP using the same IP address and default password. The Raspbian will jump on you right away telling you need to change your default password and a bunch of other things. and that&amp;rsquo;s all good. Follow these screens, and after updates are downloaded, &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; restart just yet.&lt;/p&gt;
+&lt;p&gt;You might have noticed you&amp;rsquo;re working in a tiny little screen. Let&amp;rsquo;s change that quickly by going to the preferences (click on the RP icon at the top left), then Raspberry Pi Configurations. Under resolution, choose something that works well for you. for my ultra wide screen, 1920x1080 was good enough to work in. Now you can restart. If you changed your password (you should have!) leave RealVNC on and it will inform you the password is wrong (because you changed it). All good, log in.&lt;/p&gt;
+&lt;h2 id=&#34;a-note-about-passwords-and-password-generators&#34;&gt;A note about passwords and password generators&lt;/h2&gt;
+&lt;p&gt;If you use a password manager (my favorite on Linux now is xpass, LastPass is another), I strongly recommend to copy-paste your password in plaintext somewhere first, then copy it to the RP password-change field, and click the eye icon to reveal it. &lt;em&gt;Make sure what you pasted is the same thing you think you pasted&lt;/em&gt;. In my case, I messed this up twice and had to image my SD card all over again. Yes, &lt;a href=&#34;https://howtoraspberrypi.com/recover-password-raspberry-pi/&#34;&gt;there&amp;rsquo;s a technique to reset up the password by booting into the root shell&lt;/a&gt;, but this didn&amp;rsquo;t work for me. And besides, it&amp;rsquo;s annoying and requires to physically connect a screen and keyboard to the RP.&lt;/p&gt;
+&lt;p&gt;Because my RP is set up for SSH with a password for now, I made a random 32 character password for it. copy-paste is not a choice.&lt;/p&gt;
+&lt;h2 id=&#34;encrypting-the-hdd&#34;&gt;Encrypting the HDD&lt;/h2&gt;
+&lt;p&gt;I chose to use a separate HDD for a couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I can take it with me if I need to and mount to another machine&lt;/li&gt;
+&lt;li&gt;I have unused HDDs laying around from computer repairs. In my case, the HDD is 500GB, more than enough for text files and occasional pictures I use in Org-mode.&lt;/li&gt;
+&lt;li&gt;If the HDD dies, I still have a functional RP with the OS on the SD card.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The encryption tool of choice for me ended up being LUKS, the same thing that encrypts Linux machines at startup. Actually, my first choice was &lt;a href=&#34;https://www.veracrypt.fr/en/Downloads.html&#34;&gt;VeryCrypt&lt;/a&gt;. It comes with a convenient GUI and better options to handle containers. As it turns out, there&amp;rsquo;s no updated version for ARM (which is what the RP is), and I&amp;rsquo;d have to compile from source. Possible, but not worth it for now.&lt;/p&gt;
+&lt;p&gt;VNC into your RP.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, Install cryptsetup on the RP (apt-get). This is the LUKS suite.&lt;/li&gt;
+&lt;li&gt;Figure out the USB-connected drive: &lt;code&gt;sudo fdisk -l&lt;/code&gt;. this will show you where&amp;rsquo;s your hdd in /dev. In my case, it was in /dev/sda (not sda1, etc.)&lt;/li&gt;
+&lt;li&gt;Format with LUKS:  &lt;code&gt;cryptsetup luksFormat /dev/[drive]&lt;/code&gt; the default option was fine for me, but be aware that LUKS comes with many options if you so desire. When formatting, it should ask for a passphrase, so give it one. Then it should start doing its thing.&lt;/li&gt;
+&lt;li&gt;When done, verify your drive is encrypted with  &lt;code&gt;cryptsetup luksDump /dev/[drive]&lt;/code&gt;. You should see information about the encryption, along with the first key (LUKS can hold up to eight keys) and its hash. This means we&amp;rsquo;re all good so far.&lt;/li&gt;
+&lt;li&gt;Now, create a mount point for your drive. for me, out of habit of using Mint, that was /media/pimount. So: &lt;code&gt;sudo mkdir /media/pimount&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;This is where things get a bit hazy since I&amp;rsquo;m writing this from memory. We need to open the encrypted drive with &lt;code&gt;cryptsetup luksOpen /dev/mapper/[drive name] [mounting point name]&lt;/code&gt;. Notice we have &lt;strong&gt;mapper&lt;/strong&gt; in the path after dev now. that&amp;rsquo;s how LUKS work. The encryption is not being done on &lt;em&gt;dev&lt;/em&gt;[drive] itself. I&amp;rsquo;m not sure why (I&amp;rsquo;m sure there&amp;rsquo;s some Linux file system reason behind it), so feel free to educate me.&lt;/li&gt;
+&lt;li&gt;Now, we need to format the drive with the file system of our choice. In my case, ext4. I believe this can also be done for FAT32 or even NTFS if you want to access your drive from Windows, but I haven&amp;rsquo;t tested that. To format, you can download Gparted, which is good to have in general. However, this is easy to do with &lt;code&gt;mkfs.ext4 /dev/[name]&lt;/code&gt;. In fact, that&amp;rsquo;s exactly what Gparted would do for you anyway.&lt;/li&gt;
+&lt;li&gt;Mount the freshly formatted drive: &lt;code&gt;mount /dev/mapper/[name] /media/[name]&lt;/code&gt;  If we have &amp;ldquo;show mounted drives&amp;rdquo; option on the desktop in RP, it should show now. As a matter of fact, it&amp;rsquo;s a good idea to enable this (right click on the RP desktop).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Before you start putting stuff on your HDD, it&amp;rsquo;s a good idea to restart and practice mounting the drive again (step 6 and 8; you don&amp;rsquo;t need to format again!). Then do it again. The unmount command is umount (no n), or you can simply restart the Pi.  There&amp;rsquo;s a way to automate this using fstab, but messing your fstab could screw up your RP as it happened to me. I figured I never plan on really turning off the thing, so I will just keep doing it manually. Now, if someone happens to just grab your HDD and walk away, it will need to be mounter and decrypted.&lt;/p&gt;
+&lt;h2 id=&#34;syncthing-setup&#34;&gt;Syncthing setup&lt;/h2&gt;
+&lt;p&gt;To me, &lt;a href=&#34;https://en.wikipedia.org/wiki/Syncthing&#34;&gt;Syncthing&lt;/a&gt; is the best solution for all my file-syncing needs. It works without a hitch until you need to change something tiny and meaningless. Then all hell breaks loose. I don&amp;rsquo;t understand why that is, but I learned to accept it as a fact of life at this point.&lt;/p&gt;
+&lt;p&gt;During this RP weekend setup, I had to change my Syncthing setup so that the RP will become the central hub. What happened was a fruitless night of trying to figure out why Syncthing stopped syncing and  an messy Monday at work. It was such a bad setback, in fact, that I decided to create a process dubbed &amp;ldquo;downfall&amp;rdquo; for future cases just like this one when I can&amp;rsquo;t use Org-mode at work. Yes, not having Syncthing basically means I can&amp;rsquo;t use Org. But I digress&amp;hellip; The important lesson here is this:&lt;/p&gt;
+&lt;p&gt;don&amp;rsquo;t mess with Syncthing. Set it up, make sure it works, and &lt;em&gt;don&amp;rsquo;t touch it&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As intimidating as this sounds, Syncthing actually has a pretty simple setup process. Here&amp;rsquo;s the plan:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/hub.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;The different colors represent the different folders in syncthing. To me these are personal, work, utilities (this is the only folder that does not have org files), and archive.&lt;/p&gt;
+&lt;p&gt;I use four devices, three daily, one (laptop) once in a while. The home VM, which is my main productivity box, gets everything. So does the laptop, it&amp;rsquo;s meant to be used as my home away from home. My work VM (OpenSuse Linux) only contains work org files and the archive. On the phone, I skip media-heavy folders like DnD and some classical music flac files to save space.&lt;/p&gt;
+&lt;p&gt;The setup process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Syncthing on RP (apt-get).&lt;/li&gt;
+&lt;li&gt;Choose the first device to sync. Add the RP&amp;rsquo;s ID to its Syncthing.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wait&lt;/em&gt; for RP to acknowledge the device. Approve.&lt;/li&gt;
+&lt;li&gt;From the connecting device, share the folders you want to sync with the RP.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wait&lt;/em&gt; for RP to acknowledge folders. Approve each, choose path.&lt;/li&gt;
+&lt;li&gt;Verify the sync work by altering the files a bit.&lt;/li&gt;
+&lt;li&gt;Choose the second device to sync&amp;hellip; repeat step 3-5.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, folders that common to a couple of devices should be added first from one device (as stated above) with the RP, and then add that folder to the &lt;em&gt;other&lt;/em&gt; device. Device_A &amp;ndash;&amp;gt; RP &amp;ndash;&amp;gt; Device_B. This ensures you&amp;rsquo;re sharing the same folder (same folder ID) and not creating duplicates. The reason you&amp;rsquo;re doing it this way and not just sharing from one device to another is because you don&amp;rsquo;t want the other devices to see each other; they should only &amp;ldquo;see&amp;rdquo; the RP. The RP is the only device that needs to see all of them. Fewer complications means Syncthing works better and faster. Remember what I said earlier: don&amp;rsquo;t play with it, keep it simple and it will work. Complicate it, and you&amp;rsquo;ll spend hours trying to figure out what&amp;rsquo;s wrong.&lt;/p&gt;
+&lt;p&gt;So for example, if I first sync my home VM and share the &amp;ldquo;work&amp;rdquo; folder to the RP, after I&amp;rsquo;m done and verify the sync work, I am connecting the work VM to the RP, wait until it&amp;rsquo;s recognized, and then send the work folder (which is now synced between home VM and RP) &lt;em&gt;to&lt;/em&gt; the work VM.&lt;/p&gt;</description>
     </item>
     
   </channel>

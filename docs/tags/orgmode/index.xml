@@ -14,180 +14,855 @@
     <item>
       <title>Back to basics: org-mode agenda</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</link>
-      <pubDate>Sun, 19 Jul 2020 00:00:00 -0400</pubDate>
+      <pubDate>19190-07-07</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</guid>
       <description>&lt;p&gt;Since I &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200611/&#34;&gt;set up Elfeed&lt;/a&gt; to suit my needs, I&amp;rsquo;ve been following the org-mode community on Reddit regularly. Many of the questions I see there from newcomers show a rush towards custom-made packages or bits of code without awareness of the powerful built-in features org-mode ships with out of the box.&lt;/p&gt;
-&lt;p&gt;I want to start a short series of &amp;ldquo;back to basics.&amp;rdquo; I hope to show the philosophy behind the certain flow I use as well as the plain and powerful features.&lt;/p&gt;</description>
+&lt;p&gt;I want to start a short series of &amp;ldquo;back to basics.&amp;rdquo; I hope to show the philosophy behind the certain flow I use as well as the plain and powerful features.&lt;/p&gt;
+&lt;h2 id=&#34;the-agenda&#34;&gt;The Agenda&lt;/h2&gt;
+&lt;p&gt;One of the first things to reconsider, especially to the newcomer, is the agenda. To quote orgmode.org directly:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As its name suggests, the most common use of the agenda is to pull together, from all the agenda files, a daily or weekly schedule or a list of todos. &lt;em&gt;But the agenda is also a powerful search engine that offers various ways tools for querying both the metadata and the text of org-mode entries. In fact, Org-mode&amp;rsquo;s default agenda view (C-c a a or org-agenda-list) is simply a search tool&lt;/em&gt; that gathers and displays all org-mode entries with certain types of metadata—timestamps that fall within a given range of dates.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is probably one of the most overlooked ideas. Everyone knows of the agenda, but many underestimate how powerful it is. A newcomer comes in and asks how to do something that the agenda already provides, and someone will suggest a package from melpa or a bit of code, but the &amp;ldquo;vanilla&amp;rdquo; version provides what&amp;rsquo;s needed right out of the box.&lt;/p&gt;
+&lt;p&gt;Take the concept of the agenda as a search engine, and suddenly many of the built-in powerful commands make sense.  For example, &lt;code&gt;C-a s&lt;/code&gt; for Boolean search or regex through all your .org files, for example&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Or &lt;code&gt;C-a T&lt;/code&gt; for a specific Keyword, which I use often for my projects, marked with &amp;ldquo;ACTIVE&amp;rdquo; (one simple search and you see a list of your active projects). I use these powerful commands 90% of the time and hardly look anywhere else. I highly recommend the &lt;a href=&#34;https://orgmode.org/worg/org-tutorials/advanced-searching.html&#34;&gt;wrog page&lt;/a&gt; for this, which has a lot of details for searching and helpful examples.&lt;/p&gt;
+&lt;p&gt;Organization is important, so let&amp;rsquo;s discuss categories (&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/&#34;&gt;I wrote about this before&lt;/a&gt;). The idea is to group certain org files together to reflect one major &amp;ldquo;life area&amp;rdquo;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. One obvious example, and almost the only one I use, are my personal and work categories. I have a &amp;ldquo;task&amp;rdquo; capture template for tasks that I use often and capture into a temp org file. I then refile these tasks under my &amp;ldquo;Personal&amp;rdquo; or &amp;ldquo;Work&amp;rdquo; headers on my weekly org file. All that is needed is the &lt;a href=&#34;https://orgmode.org/manual/Categories.html&#34;&gt;category property&lt;/a&gt;. Not only this organizes my agenda quickly to work and personal projects and tasks, it&amp;rsquo;s also easy to focus on one category quickly in agenda view by hitting &lt;code&gt;&amp;lt;&lt;/code&gt; when standing over it with the mark. One key press and you see only work-related stuff; one more and you back to see everything. Of course, you need to understand org-capture and use it generously. I&amp;rsquo;ve wrote about this a couple of times, if you&amp;rsquo;re interested (look under the &lt;a href=&#34;https://joshrollinswrites.com/tags/orgmode/&#34;&gt;orgmode&lt;/a&gt; tag).&lt;/p&gt;
+&lt;p&gt;Keywords is another basic feature in org-mode that can do much more for you besides just showing you to-do items. You can use them to help you understand what kind of a task is ahead of you without any additional fancy code. I already mentioned my projects get the &amp;ldquo;ACTIVE&amp;rdquo; keyword (&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200123/&#34;&gt;I wrote more in depth on it before&lt;/a&gt;), which is different than just a task that is marked by &amp;ldquo;TODO&amp;rdquo;. I also have &amp;ldquo;JOURNAL&amp;rdquo; and &amp;ldquo;WIKI&amp;rdquo; keywords which are pretty self-explanatory. The WIKI one is especially useful if I want to remind myself to document a process I&amp;rsquo;ve done. I can later search for all my wiki assignments on the agenda (remember the &lt;code&gt;C-a T&lt;/code&gt; from before?) at the end of the week or during downtime at work and do them all at once. If you find that you&amp;rsquo;re dealing with a &lt;em&gt;kind&lt;/em&gt; of a to-do process, consider expanding your keywords. Here are some examples that might be useful for you: &amp;ldquo;brainstorm&amp;rdquo;, &amp;ldquo;meet&amp;rdquo;, &amp;ldquo;discuss&amp;rdquo;, &amp;ldquo;wait&amp;rdquo;, &amp;ldquo;pending&amp;rdquo;, etc. The manual suggests (I can&amp;rsquo;t find where now) using keywords for people (such as &amp;ldquo;John&amp;rdquo; and &amp;ldquo;Jane&amp;rdquo;), if certain tasks require that you delegate what you&amp;rsquo;re doing. Remember that these are searchable and very visual. Use it for your advantage.&lt;/p&gt;
+&lt;p&gt;So far, I discussed features that help you search and find things on the agenda, but lets switch gears to productivity philosophy for a minute. Here&amp;rsquo;s a &amp;ldquo;mindhack&amp;rdquo; that has been useful to me: stop thinking of scheduling a task as a way of &lt;em&gt;when&lt;/em&gt; to do something, but instead, &lt;em&gt;how important&lt;/em&gt; is that to-do item. I don&amp;rsquo;t use the agenda priority feature. Instead, I just schedule important things for the early part of the day and things that are less important or optional for later in the afternoon. It&amp;rsquo;s very easy to re-schedule tasks (as easy as standing over it with the mark and using &lt;code&gt;&amp;gt;&lt;/code&gt; as a shortcut). Remember: the agenda is &lt;em&gt;not&lt;/em&gt; an agenda. It&amp;rsquo;s a search engine. It&amp;rsquo;s OK to have 20 tasks on it scheduled throughout the day, it doesn&amp;rsquo;t mean you&amp;rsquo;d get to all of them (and you shouldn&amp;rsquo;t).&lt;/p&gt;
+&lt;p&gt;So if you don&amp;rsquo;t use scheduling, how do you know when you actually work on something? Let&amp;rsquo;s bring up another mindhack: clocking in and out of tasks. Many folks say it&amp;rsquo;s overkill or they just forget to clock in when the project starts. Most of the tasks I clock in for, I clock &lt;em&gt;after the fact&lt;/em&gt;. Why? A few reasons. First, because I schedule tasks as a way of priority, many times it happens that a task I started today I will continue tomorrow. If I clock my time for the task today, it will show on my agenda (press &lt;code&gt;l&lt;/code&gt; to see clocked in items in agenda view) today even though it&amp;rsquo;s scheduled in the future. If I just checked on something quick (say, see if a client has responded to an open ticket, then I see they didn&amp;rsquo;t), I just clock in and out quickly, creating a 0-time instance that still shows on the agenda. This way I know I checked in on the ticket today, even though the task still reads &amp;ldquo;check on ticket&amp;rdquo; - which is what I need to do the next day again. By the way, did you know you can clock in by pressing &lt;code&gt;I&lt;/code&gt; and out by pressing &lt;code&gt;O&lt;/code&gt;? Place your mark on a task in your agenda view and try it.&lt;/p&gt;
+&lt;p&gt;I especially clock in on projects after I&amp;rsquo;m done working on them for the day. This gives me a good bird eye view at the end of the week to see how much time I spent on a large task. To check how much time you spend and add all the time clocks, stand on tasks header in the org file (meaning, not in the agenda. Hit enter, go into the header and hover over it, and then) and press &lt;code&gt;C-c C-x C-d&lt;/code&gt;. It will tell you at the bottom. If you stand on a parent header, this will also show you the sum of the sub-headers, which is useful if you have a big project broken down to assignments (as you should).&lt;/p&gt;
+&lt;p&gt;What about events that are actually scheduled for a specific time, like meetings or dates or phone calls? Easy. Use timestamps without the &amp;ldquo;Scheduled:&amp;rdquo; word in the beginning. You can define a time range also if you write it out like so: &lt;code&gt;&amp;lt;2222-07-19 Tue 08:00&amp;gt;-&amp;lt;2222-07-19 Sun 10:00&amp;gt;&lt;/code&gt;. Don&amp;rsquo;t underestimate this. Headers with these timestamps will be colored differently on your agenda, making it easy to distinguish between actual meetings and your scheduled tasks. These are also the kind of events that you can export easily to other calendar apps like Google calendar later on. What I do sometimes is still add a TODO keyword to these events, as an indication that I have a checklist waiting under the header. So if I place a header like &amp;ldquo;Meeting with the boss&amp;rdquo; with a TODO on it, I know I have a few items to review before the meeting, or perhaps points to bring up during the meeting. Small details like these can be very helpful.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s more to cover but I should leave some things for next time. I hope this is useful also to those of you who&amp;rsquo;s been using org-mode for a while (if so, what did you learn? What can you teach me?)&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Think about this for a minute: a full regex search for all your org files. This is so powerful! You can search for something as simple as &amp;ldquo;Bob&amp;rsquo;s Cafe&amp;rdquo; to bring up all &amp;ldquo;Bob&amp;rsquo;s Cafe&amp;rdquo; results, but you can also use something like &lt;code&gt;+Bob -Cafe|-cafe&lt;/code&gt; to find any org files that have the words Bob &lt;strong&gt;and not&lt;/strong&gt; Cafe or cafe (search is case sensitive). You can go full regex with the search too if you want, which might be useful if you&amp;rsquo;re trying to find a specific location you know you visited a year and a half ago and wrote about it in your journal.org file and all you can remember is rambling about the great beer the had but the awful music was horrible, and it was cold, and&amp;hellip;You get the point. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The idea of &amp;ldquo;life area&amp;rdquo; is something you need to sit down and define. Categories are not tags, they are meant to be very general. Think of categories as routines or certain &amp;ldquo;bracket&amp;rdquo; in your life you spend more than an hour every day during the week. Things like &amp;ldquo;Work&amp;rdquo; &amp;ldquo;Exercise&amp;rdquo; and &amp;ldquo;health&amp;rdquo; make sense, depending on what you use org-mode for; things like &amp;ldquo;projects&amp;rdquo; or &amp;ldquo;vacation to Aruba&amp;rdquo; do not - these are too specific and would probably be better used as titles, keywords, or perhaps tags. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Customizing a Theme for Emacs</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200528/</link>
-      <pubDate>Sat, 30 May 2020 00:00:00 -0400</pubDate>
+      <pubDate>30300-05-05</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200528/</guid>
-      <description>&lt;p&gt;What do you do when you are pretty comfortable with your Emacs theme and colors, but there&amp;rsquo;s one thing you have to change? You find the theme and you customize it to your liking. Here&amp;rsquo;s what I did.&lt;/p&gt;</description>
+      <description>&lt;p&gt;What do you do when you are pretty comfortable with your Emacs theme and colors, but there&amp;rsquo;s one thing you have to change? You find the theme and you customize it to your liking. Here&amp;rsquo;s what I did.&lt;/p&gt;
+&lt;p&gt;When I switched to &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/20200522/&#34;&gt;Debian on a Windows host&lt;/a&gt; a few weeks ago, I also switched back to darker colors. I looked for a matching Emacs theme and for a while I settled on my go-to &lt;a href=&#34;https://github.com/purcell/color-theme-sanityinc-solarized&#34;&gt;sanityinc-solorized&lt;/a&gt;, but it didn&amp;rsquo;t do. I&amp;rsquo;ve used it at the office for too long and it just didn&amp;rsquo;t feel right. I also didn&amp;rsquo;t like the newer &lt;a href=&#34;https://github.com/bbatsov/solarized-emacs&#34;&gt;solorized&lt;/a&gt;: the headings change size in org-mode and I find that it breaks the visual harmony of everything else in Emacs. I ended up settling on &lt;a href=&#34;https://emacsthemes.com/themes/gotham-theme.html&#34;&gt;Gotham&lt;/a&gt;, with its blueish-green colors and true-black background. The headings are all the same size too, thankfully.&lt;/p&gt;
+&lt;p&gt;One thing that stood out like a sour thumb though was the org-verbatim color font (that&amp;rsquo;s the format you get between two = signs in org-mode). org-verbatim font was a mild a dark gray, barely visible against the black background. I use org-verbatim to highlight lines of codes and commands, so the barely visible color was the opposite of what I needed.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t want to look up for a new theme, because I am fairly happy with Gotham&amp;rsquo;s colors and simplicity otherwise. Changing a single color in a theme can&amp;rsquo;t be &lt;em&gt;that&lt;/em&gt; hard, I thought. I was happy to find out I was right.&lt;/p&gt;
+&lt;p&gt;downloaded themes from MELPA are saved in &lt;code&gt;~/.emacs.d/elpa&lt;/code&gt;. I don&amp;rsquo;t know why elpa and not melpa, but that&amp;rsquo;s what it is. I found the gotham theme folder, and opened gotham-theme.el.&lt;/p&gt;
+&lt;p&gt;Right at the top, under the first function definitions, I found the colors of the theme defined under  &lt;code&gt;(defvar&lt;/code&gt; in hex. It looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(defvar gotham-color-alist
+  `((base0   &amp;quot;#0c1014&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-232&amp;quot; &amp;quot;black&amp;quot;))
+    (base1   &amp;quot;#11151c&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-233&amp;quot; &amp;quot;brightblack&amp;quot;))
+    (base2   &amp;quot;#091f2e&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-17&amp;quot;  &amp;quot;brightgreen&amp;quot;))
+    (base3   &amp;quot;#0a3749&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-18&amp;quot;  &amp;quot;brightblue&amp;quot;))
+    (base4   &amp;quot;#245361&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-24&amp;quot;  &amp;quot;brightyellow&amp;quot;))
+    (base5   &amp;quot;#599cab&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-81&amp;quot;  &amp;quot;brightcyan&amp;quot;))
+    (base6   &amp;quot;#99d1ce&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-122&amp;quot; &amp;quot;white&amp;quot;))
+    (base7   &amp;quot;#d3ebe9&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-194&amp;quot; &amp;quot;brightwhite&amp;quot;))
+
+    (red     &amp;quot;#c23127&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-124&amp;quot; &amp;quot;red&amp;quot;))
+    (orange  &amp;quot;#d26937&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-166&amp;quot; &amp;quot;brightred&amp;quot;))
+    (yellow  &amp;quot;#edb443&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-214&amp;quot; &amp;quot;yellow&amp;quot;))
+    (magenta &amp;quot;#888ca6&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-67&amp;quot;  &amp;quot;brightmagenta&amp;quot;))
+    (violet  &amp;quot;#4e5166&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-60&amp;quot;  &amp;quot;magenta&amp;quot;))
+    (blue    &amp;quot;#195466&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-24&amp;quot;  &amp;quot;blue&amp;quot;))
+    (cyan    &amp;quot;#33859e&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-44&amp;quot;  &amp;quot;cyan&amp;quot;))
+    (green   &amp;quot;#2aa889&amp;quot; ,(if gotham-tty-256-colors &amp;quot;color-78&amp;quot;  &amp;quot;green&amp;quot;)))
+  &amp;quot;List of colors the theme consists of.&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Pretty straight forward. Now, how to find the piece of text which color I want to change? At the time I didn&amp;rsquo;t even know it was called org-verbatim. To find out, I went back to org-mode, found the color I wanted to change in the text, placed the mark on it, and used &lt;code&gt;M-x customize face&lt;/code&gt;. This can customize the font-face right there, but more importantly, it told me what font group the marker&amp;rsquo;s on as its default value. That&amp;rsquo;s how I found out that text is called &amp;ldquo;org-verbatim.&amp;rdquo; Knowing that I went back to the theme file and looked up for it.&lt;/p&gt;
+&lt;p&gt;Searching for org inside the theme brought up the org-mode group inside the .el file, which included quite a few colors, but not what I was looking for. That actually made sense: the definition of org-verbatim was missing from the theme, which meant it inherited the color instead. I am not sure how the hierarchy for these groups works, but it seems like org-verbatim just picked up the generic comment text color that &lt;em&gt;should&lt;/em&gt; have a dim, out-of-the-way color. OK then. So, if it&amp;rsquo;s not there, why not add it?&lt;/p&gt;
+&lt;p&gt;Looking at how these colors were constructed in the .el file, I saw definitions like these:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(org-sexp-date :foreground cyan)
+(org-table :foreground violet)
+(org-time-grid :foreground yellow)
+(org-todo :foreground red :weight bold)
+(org-upcoming-deadline :foreground orange)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;the colors themselves, like orange or cyan, were defined earlier under the defar part I mentioned above. So, all I had to do is to add this line:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(org-verbatim :foreground yellow)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Instead of re-evaling, I prefer to save the configuration and launch another copy of Emacs, which gives me a fresh copy of the results right next to what I&amp;rsquo;m working on:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/20200528.png&#34; alt=&#34;&#34;&gt;
+Take a look: to the left, the frame with the setting before the change; to the right, the setting after the change.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How I Tackle Projects With org-mode</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200123/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 -0500</pubDate>
+      <pubDate>24240-01-01</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200123/</guid>
-      <description>&lt;p&gt;Over the time I&amp;rsquo;ve been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven&amp;rsquo;t felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I&amp;rsquo;ve discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Over the time I&amp;rsquo;ve been using org-mode, a natural process of project management has emerged. For the first time in my adult life, I haven&amp;rsquo;t felt the need to switch systems of productivity. I even enjoy looking at my projects nowadays, a list of organized notes, tasks, and information. I&amp;rsquo;ve discussed projects here before, but not in this detail. I hope this would be beneficial to others, especially those new to org-mode.&lt;/p&gt;
+&lt;p&gt;This system is rather simple and straight forward, without many bells and whistles. To understand it though, I need to first discuss my methodology in org-mode.&lt;/p&gt;
+&lt;p&gt;Most tasks are created in one of two ways: through a capture template on my desktop (either at home or at work), or through a tap on the &amp;ldquo;+&amp;rdquo; on my &lt;a href=&#34;http://www.orgzly.com/help&#34;&gt;Orgzly widget&lt;/a&gt; on my phone. I&amp;rsquo;ve discussed both of these a couple of times on my blog under the &lt;a href=&#34;https://joshrollinswrites.com/tags/orgmode/&#34;&gt;org-mode tag&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A task is usually nothing more than a quick reminder (&amp;ldquo;pick up clothes from the dry cleaner&amp;rdquo;). Sometimes, especially at work, a task can become more complex: (&amp;ldquo;Create a consistent guest user-template on office iMac&amp;rdquo;) which then develops sub-tasks (&amp;ldquo;Auto-launch Safari: ticket creation page&amp;rdquo;) and (&amp;ldquo;log user out within 5 minutes of inactivity&amp;rdquo;) and (&amp;ldquo;Keep same wallpaper for all guest log-ins&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;When this happens, my method is to switch the first task&amp;rsquo;s &lt;a href=&#34;https://orgmode.org/manual/Workflow-states.html#Workflow-states&#34;&gt;Keyword&lt;/a&gt; (which is now the parent task) from &lt;code&gt;TODO&lt;/code&gt; to &lt;code&gt;ACTIVE&lt;/code&gt;  and remove the &amp;ldquo;Scheduled&amp;rdquo; property. Then, I create a sub-task under it (&amp;ldquo;Auto-launch Safari: ticket creation page&amp;rdquo;) and &lt;em&gt;that&lt;/em&gt; sub-tasks gets its own &amp;ldquo;Scheduled&amp;rdquo; property.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how it looks like laid out:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/2020-01-23_06-22.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;You&amp;rsquo;d notice I use agenda-visible timestamps to express the duration of the project as I work on it. This also means that the project will show at the top of my agenda &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, so I see my in-progress big projects first. When all sub-tasks are done for the projects, I mark the parent task as DONE and move on.&lt;/p&gt;
+&lt;p&gt;large projects, ones that can end up taking weeks and months, are too big to fit in my &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/&#34;&gt;weekly org file&lt;/a&gt;. Thankfully I don&amp;rsquo;t have too many such projects &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. When such a large project takes place, I do two additional things. First, I create an independent org file for the project. Second, I create a &amp;ldquo;Log&amp;rdquo; sub-tree at the very top of the project, before all the other TODOs, which is used as a journal for that project. The log sub-tree is broken down by non-agenda timestamps and brief titles, explaining my thoughts and methods as I work through the project. I also take a second look at the title of the project, which is often just the very first task that started it, and change it to &amp;ldquo;OP: &amp;hellip;&amp;rdquo; something. I find that calling a large project something like &amp;ldquo;OP: iMac walk-ins terminator&amp;rdquo; instead of &amp;ldquo;Create a consistent guest user-template on office iMac&amp;rdquo; is more memorable and just plain fun.&lt;/p&gt;
+&lt;p&gt;While I have an active journal file, I find that more and more I gravitate toward breaking off journal &amp;ldquo;chunks&amp;rdquo; into respective projects I&amp;rsquo;m working on. This is faster (my thoughts about the project are right there, not in a separate journal that needs to be linked correctly) and easier to retrieve later (instead of thinking &amp;ldquo;what was it that I did&amp;hellip;&amp;rdquo; staring at a large journal thinking what to search for, I have a project with related thoughts).&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t have a clear-cut requirement of switching from multi-level tasks to a full project, nor a point where I switch from writing in my generic journal to starting a log in a specific project, but I&amp;rsquo;d say it&amp;rsquo;s a mix of how much time I&amp;rsquo;ve worked on something (is it been a few weeks? Do I keep getting back to it?) and how complex it is.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes:&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This is done with &lt;code&gt;(setq org-sort-agenda-notime-is-late nil)&lt;/code&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This is more a state of mind than a technical limitation. I don&amp;rsquo;t like having large projects weighing down on my agenda because these often get stuck as I wait on other people and little progress is made. If I&amp;rsquo;m absolutely sure I need to have such a project up (for example, if we&amp;rsquo;re working on a large-scale migration at work), I try to adjust the timestamps on my agenda so I don&amp;rsquo;t see the project all the time and rather have a sub-task as a reminder to check in on something again. I find that it&amp;rsquo;s often better mentally to have a clear agenda, knowing that I have a task set to check-in on something within 24 or 48 hours than to constantly see all my TODOs stuck in red at the top. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Lessons from a Huge Project at Work</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/20200103/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 -0500</pubDate>
+      <pubDate>3030-01-01</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/20200103/</guid>
       <description>&lt;p&gt;There&amp;rsquo;s probably an unwritten rule (and if not, there should be) that the amount of documents needed for a project is roughly equivalent to half the number of people working on the project. Our department alone is about 20 folks, and for a recent big project we need to work with other divisions, so at this point I can&amp;rsquo;t even tell you how many documents we need to keep track of.&lt;/p&gt;
-&lt;p&gt;Usually, I use org-mode for everything. But this time I was foolish enough not to&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;Usually, I use org-mode for everything. But this time I was foolish enough not to&amp;hellip;&lt;/p&gt;
+&lt;p&gt;In the beginning, there was one email and one spreadsheet. The spreadsheet was a list of inventory items that needed to be tested; the email contained a generic workflow for the testing that needed to be done.&lt;/p&gt;
+&lt;p&gt;Problems started when I tested the workflow and found it to be flawed for our work environment. That meant I had to communicate it to the department in charge of that workflow, going through the appropriate channels. Communication, as it usually happens when there are many people involved, failed. I should have picked on the inevitable signals right then as I have many times in the past, but I didn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;Instead of creating notes for myself in org-mode about what I encountered, why there is a problem, what&amp;rsquo;s my workaround, who are the people I need to contact and when to expect an answer, I just brought the issue up in a meeting and otherwise kept to my own devices.&lt;/p&gt;
+&lt;p&gt;We have many collaboration tools at our disposal at work. A note in Onenote or a reminder in Outlook Calendar could have helped, perhaps a follow-up in one of our generic project spreadsheets which describes roles and issues. The problem with all of these is that they are collaborative tools which we have been over-using already.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not saying there&amp;rsquo;s anything wrong with teamwork or collaboration. I work in a unit of people, and we all count on each other. Integrating a new large product into our environment which we know close to nothing about has to include other people who understand it. Communication needs to happen so we can discuss the problems and find solutions.&lt;/p&gt;
+&lt;p&gt;The choice of what to collaborate however, what tools to use, how to communicate and when, that&amp;rsquo;s where there&amp;rsquo;s a problem. that&amp;rsquo;s because one person is used to emails, while another prefers phone calls; I like org-mode while one of my teammates still prefers to write by hand; management likes meetings and generic timelines while we prefer workflows and specific solutions. You can&amp;rsquo;t have one source of communication used by 20 people and have 20 people 100% satisfied with it. &lt;em&gt;You&lt;/em&gt; are the only person who should organize &lt;em&gt;your&lt;/em&gt; stuff, and it is up to you to bring your points to the agreed-upon public medium, whatever it is.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why there should always a draft before there&amp;rsquo;s a report, an agenda before a meeting, an outline before an essay. No one should have access to your notes because if they do, they immodestly become &amp;ldquo;contaminated&amp;rdquo; by their thought process.&lt;/p&gt;
+&lt;p&gt;I should have used org-mode and I didn&amp;rsquo;t. So, here is a reminder for myself, and perhaps for you, too. My workflow for dealing with big projects, in steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Create a task: this is the start of any actionable item, often before I know it&amp;rsquo;s going to turn into a project.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Look at the task and realize it needs to be broken further down: The breakdown can happen as I work on it or before I start; either way I record what needs to be done or was done in sub-tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The main task changes its keyword from &amp;ldquo;TODO&amp;rdquo; to &amp;ldquo;ACTIVE&amp;rdquo;, this means to me it&amp;rsquo;s a project. It does no longer has scheduled time, but timestamps which I stretch from day to day or week to week, as I work on it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the project is very large or involves a lot of people and meetings, I usually create another sub-tree without a keyword called &amp;ldquo;log&amp;rdquo; and keep it on top. This log contains non-agenda dates of when each entry was entered.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If a project contains a log and several sub-tasks, I will create a separate org file just for it. This will keep it in context and possibly can be used later to export should I need it to.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Usually, my projects end at step 3. I later go in and change from &amp;ldquo;ACTIVE&amp;rdquo; to &amp;ldquo;DONE&amp;rdquo; when the project is finished. Steps 4 and 5 are reserved for larger projects which are usually measured in months, not weeks.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Of Journaling</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 -0400</pubDate>
+      <pubDate>29290-08-08</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-journaling/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve kept a journal (though infrequently) since my early 20s. A thick notebook with a table of contents on its first two pages made of a long list of dates. At the time, life was too chaotic to keep the habit uninterrupted. I&amp;rsquo;m not sure at what point I converted to digital form, but I flirted with digital journaling for years before it became my primary method of keeping a journal&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Interestingly, the old paper journals are the ones that survived and moved homes with me (for the most part) while the digital ones are lost somewhere in the cloud.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; I&amp;rsquo;ve tried many different applications, more than I can remember. My thoughts are spread across Google, Microsoft Evernote and Apple products, some defunct and cannot be restored. My journal today, in org-mode, is resistant to that - at least, that&amp;rsquo;s my hope. I enjoy keeping a journal here, on the same platform I use for blogging and organizing my day.&lt;/p&gt;
+&lt;p&gt;Compared to a written notebook, a digital journal offers a couple of big benefits:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;I can read my notes: my handwriting is horrible. English and Latin letters are not what I grew up writing (my early journals in my native language are not exactly neat either). This used to be a problem: Combined with spelling mistakes I&amp;rsquo;ve had early on, my writing was often a serious deciphering challenge. Digital text obviously fixes this issue.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I Can write more: I have more room to write and I don&amp;rsquo;t struggle with turning the notebook around to fit sentences into corners. My hand gets tired writing for long period of times, especially if I get excited or angry and press harder on the paper. I can also type faster than writing by hand and fit much more content in.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Organization and storage: this is a bit of a contradiction since I said earlier I lost my old digital journals. This is now fixed though. Digital notes are more organized (I save mine by week number in a year, more about this coming up). As for safe storage, my journal is now backed up in several locations and can be restored if needed. The same is not true for my physical journals which can get damaged.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But&amp;hellip; I do I miss journaling on paper sometimes. Paper journals are 100% personal. The choice of a notebook, the way it ages and shows daily usage, the handwriting, cards/stickies/photos shoved and glued between its pages &amp;ndash; things you can touch and smell &amp;ndash; these are irreplaceable in a digital format.&lt;/p&gt;
+&lt;p&gt;For their birthday, I got my partner (who loves scribbling down their thoughts) a pack of limited-edition &lt;a href=&#34;https://fieldnotesbrand.com/limited-editions&#34;&gt;Field Notes&lt;/a&gt; with a couple of Parker pens. I was skeptical of the small size of these things at first, but my partner&amp;rsquo;s thrilled with these. They write vertically and horizontally (and other ways which make sense only to them); they add tables to organize their planning for vacations; the fact that you need a magnifying glass to see some of their side notes makes the whole thing look even better somehow. It&amp;rsquo;s a small package of pure personality, and it reflects my partner perfectly. I, on the other hand, used graph-paper notebooks for my journals for as long as I can remember because it just made sense. I used to align pictures with the blue guidelines when I pasted them in back in my paper-journaling days. These journals reflected my personality just the same.&lt;/p&gt;
+&lt;p&gt;I miss having something personal and &lt;em&gt;un&lt;/em&gt;-technological in my life, especially as an IT professional. There are many ways I can explore un-technology, but I just like writing. Sometimes I just miss the feeling of the pen, and I have the itch to just sketch something quickly, without opening a dedicated program or having a specific goal in mind.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how my journal looks like today:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/2019-08-29.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;As I was preparing this post (which took forever for other reasons&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;) I went through several of my former posts. The overall &amp;ldquo;feel&amp;rdquo; of the journal is very welcoming. In org-mode each entry is folded neatly into its day, which is folded into its week number, which in turn is folded into its year. The whole journal, easily the largest file among my personal text files, looks like 10 lines of text when it&amp;rsquo;s first opened. You can see this effect above, where the entry on Monday is on a fourth level (you can&amp;rsquo;t see the year in the picture, which is the first level).&lt;/p&gt;
+&lt;p&gt;To be honest, I wouldn&amp;rsquo;t recommend org-mode to journaling newbies or for those unfamiliar with Emacs already; it&amp;rsquo;s like going to a culinary school to learn how to make a simple salad. There are far simpler software for this purpose, and if you want to pick on the habit of journaling in general, I would recommend a notebook first.&lt;/p&gt;
+&lt;p&gt;For me, a person who uses org-mode on a day-to-day basis to keep track of tasks and writing this blog, this is a no-brainer. It looks fantastic and functions even better.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Today I cringe at the thought that my most personal notes are buried somewhere deep in a company&amp;rsquo;s server. Back then, I didn&amp;rsquo;t know better. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Many writing applications come with spell-checking options which can be highly distracting. This is a habit that I believe started with Word&amp;rsquo;s red zigzag. It forces you to stop your train of thought and focus on the mistakes highlighted in angry red. Emacs doesn&amp;rsquo;t have this problem. Spell-checking takes place only after I highlight a segment of my text and ask for to spellcheck. Having spellchecking separate from the writing process is important! I didn&amp;rsquo;t realize how disturbing this can be before transitioning to org-mode. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;These being mostly lack of sleep, insomnia of some sort. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>Submenus in org-mode Capture</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</link>
-      <pubDate>Sun, 14 Jul 2019 00:00:00 -0400</pubDate>
+      <pubDate>14140-07-07</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/sub-menus-in-org/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/&#34;&gt;In my last post&lt;/a&gt;, I discussed how I (finally) found out that I can use entire org files as capture templates. This is a basic feature that works out of the box, but the org-mode manual doesn&amp;rsquo;t give it enough exposure in my opinion. Turns out it &lt;a href=&#34;https://irreal.org/blog/?p=8161&#34;&gt;wasn&amp;rsquo;t just me&lt;/a&gt; either.&lt;/p&gt;
-&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;</description>
+&lt;p&gt;As I was expanding my checklists and learning more &amp;ldquo;trivial&amp;rdquo; org-capture features, I discovered more useful things, but ran out of time to write about them. It&amp;rsquo;s now time to get back to more &amp;ldquo;basics&amp;rdquo; of org-capture again for some helpful tips.&lt;/p&gt;
+&lt;p&gt;When you build your org-mode templates, it&amp;rsquo;s possible to create sub-menus for better organization. Another way to explain it is to think of &amp;ldquo;categories&amp;rdquo; in your capture.&lt;/p&gt;
+&lt;p&gt;Says &lt;a href=&#34;https://orgmode.org/manual/Template-elements.html#Template-elements&#34;&gt;the manual&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Keys&lt;/p&gt;
+&lt;p&gt;The keys that selects the template, as a string, characters only, for example ‘&amp;ldquo;a&amp;rdquo;’, for a template to be selected with a single key, or &lt;strong&gt;‘&amp;ldquo;bt&amp;rdquo;’ for selection with two keys. When using several keys, keys using the same prefix key must be sequential in the list and preceded by a 2-element entry explaining the prefix key&lt;/strong&gt;, for example.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The bold part was another part that I had to read several times to understand. I knew there&amp;rsquo;s something different because two letters are used, but my capture template failed to work the first couple of times. I figured it out, and here it is:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt; (setq org-capture-templates
+  (quote (
+	  (&amp;quot;s&amp;quot; &amp;quot;Manual Laptop Setups&amp;quot;)
+	  (&amp;quot;sd&amp;quot; &amp;quot;Staff Dell Laptops&amp;quot; entry
+	  (file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;Staff Dells&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-dells.org&amp;quot;))
+	(&amp;quot;sa&amp;quot; &amp;quot;Staff Apple Laptops&amp;quot; entry
+	  (file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;Staff MacBooks&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-macs.org&amp;quot;))
+	  (&amp;quot;sm&amp;quot; &amp;quot;SLS-Mac&amp;quot; entry
+	(file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;SLS-Mac&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-SLS-Mac.org&amp;quot;))
+	(&amp;quot;sw&amp;quot; &amp;quot;SLS-Windows&amp;quot; entry
+	(file+headline &amp;quot;/mnt/veracrypt1/Archive/OhSnap!.org&amp;quot; &amp;quot;SLS-Windows&amp;quot;)
+	(file &amp;quot;/mnt/veracrypt1/Work/setup-SLS-Mac.org&amp;quot;))
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Let&amp;rsquo;s take it piece by piece from the top. Keep in mind this is not the entire template, just the relevant part. If you just copy-paste it, it will fail (it&amp;rsquo;s incomplete).&lt;/p&gt;
+&lt;p&gt;First, as soon as I start the capture templates, it seems as if I am starting to create another one &lt;em&gt;inside&lt;/em&gt; the first one. That&amp;rsquo;s what the manual means. In my opinion, it stumbles on its own words. Another case where an example (like the above) would go a long way. What I did is basically created a &lt;em&gt;sub-menu&lt;/em&gt; for &amp;ldquo;Manual Laptop Setups.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The result is that when I call org-capture, I get the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Select a capture template
+===========================
+
+[s]... Manual Laptop Setups...
+[i] INC (my incident template)
+[e] Event (my event and journal template)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I have more templates going down, but I want you to look at the very first one. That &lt;code&gt;[s]&lt;/code&gt; with the three dots after it indicates pressing &lt;code&gt;s&lt;/code&gt; will take me to a sub-menu of the capture template, which looks like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;Select a capture template
+===========================
+
+s [d] Staff Dell Laptops
+s [a] Staff Apple Laptops
+s [m] SLS-Mac
+s [w] SLS-Windows
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can see form how the menu looks like that all of these items start with an &lt;code&gt;s&lt;/code&gt; but this time without the brackets. The brackets indicate what you can press &lt;em&gt;now&lt;/em&gt; after you&amp;rsquo;ve already pressed s to get into the sub-menu you&amp;rsquo;re currently in. That is, d for Dell checklist, a for Apple checklist, and so on.&lt;/p&gt;
+&lt;p&gt;Each one of these sub-templates is a checklist based in an org file like I explained in the previous post. The templates are all org files (like &lt;code&gt;setup-SLS-Mac.org&lt;/code&gt; for example, the third template) which are nothing but checklists like I pointed out in the previous post.&lt;/p&gt;
+&lt;p&gt;This way I can have an entire &amp;ldquo;category&amp;rdquo; of capture templates, with S for setup, without having a long list with letters that won&amp;rsquo;t seem related.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Org-capture in Files</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</link>
-      <pubDate>Sat, 06 Jul 2019 00:00:00 -0400</pubDate>
+      <pubDate>6060-07-07</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-in-files/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&amp;rsquo;s so much to explain, I can&amp;rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there&amp;rsquo;s so much to explain, I can&amp;rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.&lt;/p&gt;
+&lt;h2 id=&#34;why-a-file-as-a-capture-template&#34;&gt;Why a File as a Capture Template?&lt;/h2&gt;
+&lt;p&gt;Why do I need a template based in a file? To understand that, I need to explain some of the work I do as a help desk person in a large organization.&lt;/p&gt;
+&lt;p&gt;Among other things, my work includes prepping desktop and laptop computers. For the most part, this is done from an image, and all software that is not included is installed remotely from our SMA. However, there are still many cases where the automation fails or does not apply and hands-on deployment is needed. Some scenarios include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BYOD devices, which need to be evaluated and prepared for our environment.&lt;/li&gt;
+&lt;li&gt;Macbooks, which we can&amp;rsquo;t automate yet for political-human reasons.&lt;/li&gt;
+&lt;li&gt;Replacements of old computers, which come in different models and different usage (and abuse) scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These scenarios are complex but similar: a natural perfect place to use checklists. We&amp;rsquo;re a big company, and many times I find that checklists are half of the job. Communication with clients, managers, purchasing staff, as well as getting the right information from everyone and documenting it, is also a big part of the checklist. The difference between a job that was done with a checklist and one that was done without is so obvious that my checklists have been adopted throughout the team and I was asked several times to guide others (especially newcomers) because of &amp;ldquo;my&amp;rdquo; organization. I find this humorous because if you know me, you&amp;rsquo;d know I&amp;rsquo;ve always been &lt;em&gt;far&lt;/em&gt; from organized. It&amp;rsquo;s all org-mode, to which I&amp;rsquo;m very thankful.&lt;/p&gt;
+&lt;p&gt;In the past, I&amp;rsquo;ve had a long checklist &amp;ldquo;template&amp;rdquo; in a header in &amp;ldquo;setups.org&amp;rdquo; file which I used to copy-paste into new projects. The idea of having a file as a template for capture occurred to me in the past, but because I&amp;rsquo;ve never seen a real-world example and didn&amp;rsquo;t see a clear reference to it in the manual, I dismissed the idea as wishful thinking.&lt;/p&gt;
+&lt;h2 id=&#34;why-finding-the-answer-took-so-long&#34;&gt;Why Finding the Answer Took so Long?&lt;/h2&gt;
+&lt;p&gt;I asked about using other org files as templates on Reddit in the past to, but didn&amp;rsquo;t get answers. I believe that&amp;rsquo;s because folks didn&amp;rsquo;t understand what I&amp;rsquo;m asking exactly. And that, in turn, was because I didn&amp;rsquo;t know what I was looking for exactly. After all, if I had a more concrete idea, I&amp;rsquo;d probably read this in Org manual for what it was:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;template&lt;/p&gt;
+&lt;p&gt;The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. &lt;strong&gt;The string with escapes may be loaded from a template file, using the special syntax ‘(file &amp;ldquo;template filename&amp;rdquo;)’.&lt;/strong&gt; See below for more details.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This little paragraph of text can be found about half a page down &lt;a href=&#34;https://orgmode.org/manual/Template-elements.html#Template-elements&#34;&gt;in the manual&lt;/a&gt;. I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn&amp;rsquo;t know I can use a &lt;em&gt;file&lt;/em&gt; as a template just from reading it. But why?&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s no clear statement that says you can load a capture from a file; rather, it states that &amp;ldquo;&lt;em&gt;the string with escapes&lt;/em&gt; may be loaded from a file&amp;hellip;&amp;quot;. To me, this means that I can include my template&amp;rsquo;s definition in a separate file instead of specifying it in my init file. For example, here&amp;rsquo;s a code from my template:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;  (&amp;quot;j&amp;quot; &amp;quot;Journal&amp;quot; entry (file+datetree &amp;quot;~/Documents/Work/Setups.org&amp;quot;)
+&amp;quot;**** %&amp;lt;%H:%M&amp;gt; about %a \n%?&amp;quot; :tree-type week)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;So, if for some reason I wouldn&amp;rsquo;t want the &lt;em&gt;above snippet&lt;/em&gt; in my init file, I could throw it into a different dedicated file. I didn&amp;rsquo;t bother with it because I&amp;rsquo;m comfortable with having my capture template &lt;em&gt;&amp;ldquo;string with escapes&amp;rdquo;&lt;/em&gt; where it is. Further, the manual says &amp;ldquo;see below for more details,&amp;rdquo; and there aren&amp;rsquo;t really any. There are only details about what is referred to as &amp;ldquo;string with escapes.&amp;rdquo; There&amp;rsquo;s nothing that tells me I can have my &lt;em&gt;whole&lt;/em&gt; template, huge checklist and all, in another file. And, as far as I know, there&amp;rsquo;s no other reference to files as template anywhere in the manual. So I just figured this cannot be done, unless I want to specify a whole checklist in the string above, such as &lt;code&gt;[ ] checklist item one /n [ ] checklist item two /n&lt;/code&gt; and so forth. I also didn&amp;rsquo;t know how to tell org-capture to reserve the indent for the sub-lists I needed for some of the items on my complex checklists. This looked very cumbersome to do inside the code itself when I already had an org file with the checklist to copy-paste from.&lt;/p&gt;
+&lt;p&gt;But there was a note somewhere in my journal that said I&amp;rsquo;ve seen someone pulling a template from a file. I wrote down that I &lt;em&gt;know&lt;/em&gt; it is possible. So two weeks ago I went looking around for this elusive option again, with a somewhat different attitude - I figured that if I find nothing, at least I&amp;rsquo;ll learn other people&amp;rsquo;s work around and could find a way to get what I want.&lt;/p&gt;
+&lt;h2 id=&#34;how-i-finally-found-the-solution&#34;&gt;How I Finally Found the Solution&lt;/h2&gt;
+&lt;p&gt;I searched online more aggressively this time, using different queries. I managed to find a couple of questions related to org-mode in emacs.stackexchange.com that were not directly related to my issue but had the following lines in the code (I cut out the paths as they do not matter here)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;(&amp;quot;j&amp;quot; &amp;quot;Journal&amp;quot; entry (file+datetree &amp;quot;...&amp;quot;)
+(file &amp;quot;...&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;And then, I found &lt;a href=&#34;https://emacsnyc.org/assets/documents/how-i-use-org-capture-and-stuff.pdf&#34;&gt;this talk&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/yonkeltron&#34;&gt;Jonathan E. Magen&lt;/a&gt;. Of particular interest was slide 6. Right there, in front of me, the title was &amp;ldquo;Template stored in file,&amp;rdquo; and below it, a very simple &lt;em&gt;example&lt;/em&gt; that tells org-mode to read the template&amp;rsquo;s content from a file. It was as it is in the manual, but this time, the slide was very specific, tell me: &amp;ldquo;this is how you tell org to read from a file.&amp;rdquo; It was that simple. So simple that it was right under my nose the whole time, but I kept missing it because there was no clear example or scenario; it was another option that was mentioned briefly as a head nod, and here, someone finally pointed a finger it at for me. So, this was true. Org-mode &lt;em&gt;can&lt;/em&gt; read templates from other org files.&lt;/p&gt;
+&lt;p&gt;I wrote the code as I understood it from the examples I found and added &lt;code&gt;(file &amp;quot;~/Documents/Personal/journal-tmpl.org&amp;quot;)&lt;/code&gt; to the code above instead of that &amp;ldquo;string with escapes&amp;rdquo;, and got an error: &lt;code&gt;org-capture: Capture template ‘j’: Template is not a valid Org entry or tree&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I saw this in the past, I remembered. Somehow I did get this far before. However, when I saw this error then, it was yet another proof I couldn&amp;rsquo;t use org files as templates. After all, journal-tmpl.org was a good org file that opens otherwise, just not through capture. The conclusion &lt;em&gt;then&lt;/em&gt; was, wrongly, that capture can&amp;rsquo;t do it.&lt;/p&gt;
+&lt;p&gt;Now, through the eyes of someone who&amp;rsquo;s looking at workarounds, my attitude was different. Org-mode, I knew, (or Emacs for that matter) should open &lt;em&gt;any&lt;/em&gt; file if I tell it to, even if an mp4 or a JPEG file. I would see gibberish on my screen, yes, but it would open. It follows then that if I see this error, it means that capture &lt;em&gt;should&lt;/em&gt; work, and what I wrote &lt;em&gt;does&lt;/em&gt; tell it to open the template from a file, but something in this file specifically is wrong. Suddenly, this error became an encouragement that I am headed in the right direction. The error was telling me, &amp;ldquo;hey, I want to do this for you, but your file is messed up, sorry.&amp;rdquo; What I should have asked folks should have been &amp;ldquo;what&amp;rsquo;s wrong with my org template file&amp;rdquo; and paste the code in Reddit, but I didn&amp;rsquo;t know to ask that. Now, that I finally knew what the real problem was, I was in the right mindset to work it out. And work it out I did.&lt;/p&gt;
+&lt;p&gt;As it turns out (for reasons &lt;del&gt;I&amp;rsquo;m still trying to&lt;/del&gt; I do understand now), my regular org file started with certain options like &lt;code&gt;#+TITLE:&lt;/code&gt; and &lt;code&gt;#+TODO:&lt;/code&gt; with several headers already nested inside of it failed to work. However, if I simplify the file down to the headers I want and the checklist itself, it did work. The reason for that, I know now, is exactly what the manual said all along: &amp;ldquo;&lt;strong&gt;this is a string with escape codes&lt;/strong&gt;, which will be replaced depending on time and context of the capture call&amp;hellip;&amp;rdquo; Org-capture needs specifically org-capture syntax to work with, and the org-mode options at the top of the file specified above are not org-&lt;em&gt;capture&lt;/em&gt; syntax; they are &lt;em&gt;org-mode&lt;/em&gt; syntax. I need to get them out of the way and feed org-capture org-capture syntax, just like I did in my init. As a matter of fact, as I now know, I can specify the entire syntax (or &amp;ldquo;strings with escapes&amp;rdquo;) under my first header and it will work just fine. I don&amp;rsquo;t even need to specify it in my init. Yes, this is what the manual said. But no, this is not what it said to &lt;em&gt;me&lt;/em&gt;. I just couldn&amp;rsquo;t see it.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-it-look-like&#34;&gt;What Does it Look Like?&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of one of my org files templates. Notice how the very first thing is the header itself. Turns out it &lt;em&gt;must&lt;/em&gt; be the first thing in org-capture syntax. Then the second line specifies what the template does just like it did in my init. Finally, the checklist itself:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;* Setup Proccess [0%]
+%^{Ticket}p %^{ID}p %^{Computer}p
+- [ ] Rename (SLS-ID-MAC)
+- [ ] Check OS Updates
+- [ ] Encryption
+- [ ] A/V
+  - [ ] Install
+  - [ ] Manage (overwrite XML file)
+- [ ] SMA
+- [ ] Restart
+- [ ] WiFi
+- [ ] VPN
+- [ ] Another App
+  - [ ] Install
+  - [ ] Test
+  - [ ] Test w/ VPN
+- [ ] Asset Registration
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The header has a percentage that changes as I fill in the checklist items. This allows me to see how close I am to be done straight from the agenda view. The second line tells org-capture to prompt me for properties for the ticket number, ID number of the person, and the computer name. Then I have a blank list ahead of me, which I can fill up according to whatever is already done.&lt;/p&gt;
+&lt;p&gt;This particular list is summoned by a very similar line like the one I have above regarding my journal. I just have a different file specified (say mac-checklist.org instead of journal-tmpl.org&lt;/p&gt;
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;The result is four checklists I&amp;rsquo;m now working with and tweaking to perfection, summoned directly from org-capture. Because I was now encouraged to work with different checklists all in one place, that meant I needed to look for a way to have &amp;ldquo;submenus&amp;rdquo; inside org-capture; that is, to tell org I want to capture a checklist, and it should then take me to a checklist capture menu, and then I wanted to choose one of my checklists. From there, I also learned of more org-mode capture options that completely changed how I saw my org-capture usage to the point of re-inventing it in my workflow. This is too much to include in one post, so I hope to specify on that soon. For now, the big lesson I learned, and I hope anyone who every starts using org-mode is this:&lt;/p&gt;
+&lt;p&gt;If you think something is possible, it probably is. One way or another, it is. Rather behind a few paragraphs of code or a mysterious hint in a manual, it&amp;rsquo;s worth exploring with an open mind. And for those of you who used org-mode for years, especially from a programming background, I hope this post serves to show that some of us struggle not with the code, but lack of good, clear examples. We need a story, a scenario, a &lt;em&gt;reason&lt;/em&gt; to explore. Please give us more.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Quick Updates: June</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</link>
-      <pubDate>Sun, 30 Jun 2019 00:00:00 -0400</pubDate>
+      <pubDate>30300-06-06</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/quick-updates-june/</guid>
       <description>&lt;p&gt;Even though I don&amp;rsquo;t have any means of tracking how many readers I have on this blog, I can&amp;rsquo;t help but feel a little bit responsible for my audience. This is an attempt to see how a quick &amp;ldquo;here&amp;rsquo;s what&amp;rsquo;s up&amp;rdquo; post while the blog is otherwise idle.&lt;/p&gt;
-&lt;p&gt;So, a few quick updates about what&amp;rsquo;s coming up:&lt;/p&gt;</description>
+&lt;p&gt;So, a few quick updates about what&amp;rsquo;s coming up:&lt;/p&gt;
+&lt;p&gt;I discovered I can use .org files as templates for capture. This opens the possibilities to create highly complex templates, like checklists with several headers, accessible from capture. It took me a year(!) to finally figure out even though it&amp;rsquo;s dead simple. I want to discuss why this took so long, and how Org-manual could use more visual examples. I also want to discuss how I use these checklists at work, and why they&amp;rsquo;re useful.&lt;/p&gt;
+&lt;p&gt;As a result of the above, I am also changing my workflow in org-mode, or precisely, how I&amp;rsquo;m using my files. I&amp;rsquo;ve decided to scale back from my &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/&#34;&gt;multi-file approach&lt;/a&gt; and use only two or three major files, and I&amp;rsquo;m in the process of testing this.&lt;/p&gt;
+&lt;p&gt;Mike Elgan writes &lt;a href=&#34;https://www.computerworld.com/article/3405559/google-needs-to-pull-itself-together.html&#34;&gt;about Google products that should be merged&lt;/a&gt;, and it made me remember how I used to have the same issues until I switched over to Linux and Emacs. People who use Linux have it better in terms of productivity. I want to discuss why.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Of Emacs and Chutzpah</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</link>
-      <pubDate>Fri, 21 Jun 2019 00:00:00 -0400</pubDate>
+      <pubDate>21210-06-06</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/of-writing/</guid>
       <description>&lt;p&gt;Says &lt;a href=&#34;https://www.jamierubin.net/2019/06/13/writing-in-the-digital-age-an-introduction/#comments&#34;&gt;Jamie T. Rubin&lt;/a&gt;: &amp;ldquo;As a writer, I naturally want to spend my time writing. More and more I see tools getting in the way of writing. If that wasn’t the case, why do so many tools now add a “focus” or “distraction-free” mode? What choices can I make to simplify my writing ecosystem?&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;My answer to that, considering the theme of this blog and how I&amp;rsquo;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;</description>
+&lt;p&gt;My answer to that, considering the theme of this blog and how I&amp;rsquo;m writing it,  is obvious. But the question is going deeper than that, and so should be the answer.&lt;/p&gt;
+&lt;p&gt;Emacs is not accessible for most writers today. Most of them probably never heard of the thing, or any other tools besides Word and, at least the lucky ones, Scrivener. Emacs isn&amp;rsquo;t really known outside of the seriously-geeky folks because it&amp;rsquo;s written by computer geeks for computer geeks. Search for any instructions, tutorials and/or reviews of Emacs, and 99% of the folks you&amp;rsquo;d encounter would be computer programmers. No fiction writers. Chances are that if you put Emacs in front of a writer today, they won&amp;rsquo;t even know how to install the thing, let along use it.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t think people who use Emacs understand how complicated and cumbersome it looks to the average person. They probably think we, Emacs users, are the ones who are crazy.&lt;/p&gt;
+&lt;p&gt;How come Word is so well-known (and usually hated) by writers for all its distractions, while better tools for the job such are barely heard of?&lt;/p&gt;
+&lt;p&gt;For one, you can consider marketing. The advertising Microsoft throws at its products is something the free-source community cannot even start to compete with. For another, you can consider history and reputation. Microsoft Word (and Outlook and Excel and PowerPoint) have been a core component of office software for quite a few years. It is even called, justfully so, &amp;ldquo;Office,&amp;rdquo; because what else would you use in your office?&lt;/p&gt;
+&lt;p&gt;But there&amp;rsquo;s another reason wannabe writers would not find out about Emacs, and if they do, never pick up the habit of using it. It&amp;rsquo;s the same reason wannabe runners won&amp;rsquo;t travel too far out of the gym, or people who wish to meditate won&amp;rsquo;t experiment other techniques beyond the ones they&amp;rsquo;ve learned in a Yoga class.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s nothing wrong with any of the three methods I grossly mashed together here. Running on a treadmill is a very good form of exercise, which can be measured and improved. It allows folks who otherwise won&amp;rsquo;t run because of the weather or time of day to still get their exercise. Likewise, there are writers who have been using Word for their entire professional career. And I can tell you there&amp;rsquo;s a lot to learn from a good yoga meditation class which will supply you with discipline and motivation to continue.&lt;/p&gt;
+&lt;p&gt;However, there&amp;rsquo;s a component missing in all of those. An element of the human spirit that, thinking back, can be described perfectly in one Jewish word I know: Chutzpah. If you&amp;rsquo;re not familiar with the word and just look it up on &lt;a href=&#34;https://en.wikipedia.org/wiki/Chutzpah&#34;&gt;Wikipedia&lt;/a&gt;, for example, you won&amp;rsquo;t quite get it. The definition explained there is audacity, bloated self-esteem, and ego. This is all true, but that&amp;rsquo;s the kind of definition that makes you think of an over-confident obnoxious teenager. That&amp;rsquo;s not what I&amp;rsquo;m talking about. Chutzpah, the way I mean it here, is to dare. To know there&amp;rsquo;s a way hundreds have been doing a certain thing for decades, yet question it. Far too many people don&amp;rsquo;t question things.&lt;/p&gt;
+&lt;p&gt;One of my biggest inspirations to use Emacs and Org-mode was &lt;a href=&#34;https://www.youtube.com/watch?v=FtieBc3KptU&#34;&gt;this YouTube video&lt;/a&gt; by Jay Dixit, a writer who kept saying he&amp;rsquo;s &amp;ldquo;not a programmer&amp;rdquo; and shamelessly admitted to copy code and ask others to write code for him where he needs it. Dixit&amp;rsquo;s  Emacs methods are nothing too special, yet he presented this lecture in front of experience Emacs users (programmers even!) who asked &lt;em&gt;him&lt;/em&gt; questions. Dixit is the kind of writer who dared to wonder about something very specific his software couldn&amp;rsquo;t do, until he encountered Emacs. When he realized there&amp;rsquo;s a &amp;ldquo;bit&amp;rdquo; of a learning curve to Emacs, he didn&amp;rsquo;t think much about it and started learning. Not because he&amp;rsquo;s a masochist, or because he has tons of times, or because he&amp;rsquo;s a genius, but because his desire to write the way &lt;em&gt;he wants to&lt;/em&gt; was bigger than any alternations the comfort of the &amp;ldquo;this-is-how-it-is&amp;rdquo; software offered him. So he dared, persisted, and well, as far as I know, he still uses Emacs today.&lt;/p&gt;
+&lt;p&gt;Not too long ago, &lt;a href=&#34;https://medium.com/@Josh%5FRollins/writing-post-d044aac72d0&#34;&gt;I took my first steps&lt;/a&gt; toward leaving Google Documents, which has been my go-to writing tool for a while. At the time, I haven&amp;rsquo;t even heard of Emacs. Google Docs was very convenient, especially on the Chromebook I had. I&amp;rsquo;ve been using Bullet points in posts for a while (as evident in the post mentioned) and Org-mode was something that &amp;ldquo;clicked&amp;rdquo; loudly in my head, with a few exclamation marks, and I just &lt;em&gt;had&lt;/em&gt; to try it. Did I have Chutzpah? You could say so, I&amp;rsquo;d call it an obsession with writing apps. At the time, you never know. People who keep talking about who daring they are not daring at all.&lt;/p&gt;
+&lt;p&gt;Like many others who use Emacs today, I want it to be more accessible to the public at large. But, also like many other who use Emacs today, I realize that the &amp;ldquo;quest for Emacs&amp;rdquo; is not something you can throw at people through a marketing campaign. There&amp;rsquo;s nothing easy, pretty, or &amp;ldquo;sexy&amp;rdquo; about Emacs. You have to earn using Emacs through  months of careful customization. My current setup, for example, includes these customizations from vanilla Emacs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;My Window size is configured to be bigger than Emac&amp;rsquo;s default for my Ultra-Wide screen&lt;/li&gt;
+&lt;li&gt;I use company-mode to auto-complete words&lt;/li&gt;
+&lt;li&gt;I use Emac&amp;rsquo;s Abrrev (which I customized) to include common words and phrases&lt;/li&gt;
+&lt;li&gt;I write posts in Org-mode and publish directly to GitHub through &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;ox-hugo&lt;/a&gt; and &lt;a href=&#34;https://magit.vc/&#34;&gt;magit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I have &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Visual-Line-Mode.html&#34;&gt;visual lines mode&lt;/a&gt; on&lt;/li&gt;
+&lt;li&gt;There are no icons in my tool bar (though I find the menu itself still useful)&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve added many words to the built-in dictionary&lt;/li&gt;
+&lt;li&gt;custom key shortcuts for spellchecking, refreshing buffer, and others&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And there are more (Ivy, which comes with Swiper&amp;hellip;) and still more to come. I use &lt;em&gt;my&lt;/em&gt; Emacs so much and so often that it&amp;rsquo;s hard to break it apart back to the different pieces that make it. It&amp;rsquo;s memorized by my fingers more than my brain. It&amp;rsquo;s all a careful process of picking and choosing what I want and where I want it.&lt;/p&gt;
+&lt;p&gt;Emacs is not something you give to someone. It&amp;rsquo;s something they have to take and make their own. While veteran users of Word (or any writing software, or actually almost any software) could probably say they could make it their own as well, I&amp;rsquo;d argue that nothing &lt;em&gt;requires&lt;/em&gt; customization like as Emacs does. that&amp;rsquo;s what makes Emacs a lifetime-long tool, and why (I think) after all these years, it&amp;rsquo;s still given out in a package that is pretty much the same.&lt;/p&gt;
+&lt;p&gt;All of the above is necessary (at least I&amp;rsquo;d like to think so) to answer how Emacs, with all its hundreds (if not thousands) customization options is not one of the &amp;ldquo;writing tools that get in the way of writing.&amp;rdquo; In Emacs, the things that stand in the way of your writing are things you haven&amp;rsquo;t changed or tweaked yet. In other words, the only thing that stands between you and your writing in Emacs is&amp;hellip; You. There cannot be anything else because every single part of Emacs is designed to be broken down to do &lt;em&gt;exactly&lt;/em&gt; what you want it to do.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Orgzly: An Interview</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</link>
-      <pubDate>Fri, 07 Jun 2019 00:00:00 -0400</pubDate>
+      <pubDate>7070-06-06</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/orgzly-neven-interview/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve talked about &lt;a href=&#34;http://www.orgzly.com/&#34;&gt;Orgzly&lt;/a&gt; several times on this blog, but I haven&amp;rsquo;t dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly&amp;rsquo;s usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I&amp;rsquo;m happy to present my first interview on this blog.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve talked about &lt;a href=&#34;http://www.orgzly.com/&#34;&gt;Orgzly&lt;/a&gt; several times on this blog, but I haven&amp;rsquo;t dedicated a full post to it yet until now. Instead of describing my workflow again or just praising Orgzly&amp;rsquo;s usefulness in a repeated manner, I thought it would be interesting to reach out to its creator and ask a couple of questions instead. To my delight, he was happy to reply! I&amp;rsquo;m happy to present my first interview on this blog.&lt;/p&gt;
+&lt;p&gt;First, for those of you who are not familiar with Orgzly, a quick intro. Those of you who are, just skip the next paragraph.&lt;/p&gt;
+&lt;p&gt;Org-mode, as awesome as it is, has one glaring problem which keeps many users from using it all day: it&amp;rsquo;s inability to be mobile. Org-mode is built into Emacs, which in turn is built into Linux (or, with some alternations, into macOS). This means you can&amp;rsquo;t take Org-mode with you on the go. For Android, Org-mode&amp;rsquo;s official tool was &lt;a href=&#34;https://github.com/matburt/mobileorg-android&#34;&gt;MobileOrg&lt;/a&gt;, which is no longer active. While workarounds exist, it&amp;rsquo;s probably safe to say the only Android tool worth your time out there is Orgzly. As I mentioned several times before, it was actually Orgzly that got me into Org-mode and then into Emacs. I use Orgzly every day, all day. It is easily the main reason why Org-mode is even an option for me at work: it is what allows me to access my agenda and todo&amp;rsquo;s with all their details on my running-around routine.&lt;/p&gt;
+&lt;p&gt;With this out of the way, let&amp;rsquo;s turn to the creator of Orgzly: Neven.&lt;/p&gt;
+&lt;p&gt;Neven prefers not to talk too much about himself but agreed to tell us he&amp;rsquo;s a software engineer working for a company in the US. His experience comes mostly from working with Java. Below, my questions in italic, his answers in the texts under.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Orgzly seem to answer a very specific niche: Android Org-mode users on the go. Are these the people you&amp;rsquo;re trying to reach?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The project was born from the need to have org files on my Android phone. MobileOrg was the only app available I could find, but I had a hard time setting it up and getting used to it. Initially, I started writing a web app, in Rails. But too many little things bothered me, it felt hackish and clunky. So eventually, I started playing with Android. I never wrote anything for it before, but since I use it, it seemed like the best alternative. Orgzly literally grew from the &amp;ldquo;hello, world&amp;rdquo; app, while I was learning to program for Android. So my first goal was to have an easy-to-use Android app for org files, yet powerful enough to be able to do the majority of work in it.&lt;/p&gt;
+&lt;p&gt;Having Org-mode users as the app&amp;rsquo;s early adopters was very useful, as they know what they want and how they want it. It was also a motivator for me. But I had non-Org-mode users in mind right from the start. Even with huge competition in the field of task apps, I thought it would be useful for the quality of Orgzly to make it tempting for those users as well and see what suggestions they&amp;rsquo;d have on improving it. It&amp;rsquo;s easy to get stuck writing for the very specific type of mostly tech-savvy users and end up with a hard-to-use app. Orgzly was made to support more formats to store the notebooks in - not just org files - from day one.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;As an Org-mode user, how does Orgzly help you with your personal workflow?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When I got a job years ago, I needed a way to track all the projects and the little tasks I was working on. I never had a real need for that before, so I started using a simple spreadsheet (I used OpenOffice, which was popular at the time).  Occasionally I gave random software or productivity apps a go, looking to improve my system. Eventually I tried Org-mode (after about a year or so) and never looked back. At the time I was a Vim user, but because Org-mode became such an important part of my workflow, I eventually switched to Emacs. It was way more convenient for me, as I became a heavy Org-mode user.&lt;/p&gt;
+&lt;p&gt;Nowadays I use Org-mode for pretty much everything: Orgzly-related work, day job-related projects, and personal tasks. Anything from new Orgzly repository type support to buying fruits at the store, really.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Can we expand on that? We Org-mode folk love hearing about other people&amp;rsquo;s methods and hacks&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t do anything too crazy. I used to store the majority of my tasks in three big org files (Orgzly.org, work.org, and personal.org) with different states, tags and properties. Search speed became an issue for me in Org-mode, mainly when filtering by planning times and properties, so now I have two files per area: one for active tasks and one for some day/maybe (a la GTD) stuff. I also have a separate Inbox.org file (again taken from GTD, the method I&amp;rsquo;m trying to follow as much as I can in Org-mode). This seems to be working particularly well with a mobile app such as Orgzly, since you don&amp;rsquo;t want to spend too much time thinking where and how to store some idea or a task when you&amp;rsquo;re on the go.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What do you hope Org-mode users get out of Orgzly? What about the non-Org users you mentioned?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For Org-mode users, my goal is that they feel as comfortable and efficient in Orgzly as much as they do in Org-mode. This is obviously a huge goal and the app has still a long way to go for that to happen, but I think it&amp;rsquo;s a useful goal to have since it helps to improve the quality of the app.&lt;/p&gt;
+&lt;p&gt;As for Non-Org-mode users, they should be able to use the app easily, without the underlying format of notebooks or any Org-mode-specific features getting in their way. They shouldn&amp;rsquo;t need to know what Org-mode even is, but if they learn about it through Orgzly, great.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What makes Orgzly different than the other task and productivity apps out there then?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Considering the number of apps out there, it&amp;rsquo;s pretty hard to stand out. Having notebooks in plain text and being able to sync them anywhere would be the main advantage I guess. Syncing is currently done through Orgzly&amp;rsquo;s Directory repository, and Dropbox is still the only way to do that directly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Do you get any help developing the app? How much work and time do you put into it? Orgzly doesn&amp;rsquo;t have any ads or any other form of contribution, is that something you are looking into?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I try to work on Orgzly as much as I can, but I don&amp;rsquo;t do it nearly as much as I&amp;rsquo;d like to. It&amp;rsquo;s not always easy to find the time between my day job and personal projects. There are periods when I have a lot of free time to work on Orgzly, and there are times when I can barely get on top of my emails. Contribution on GitHub is great, especially small and tested pull requests which I can just merge immediately. There have been some larger projects done too. For example, there is a Git repository support currently in progress which I&amp;rsquo;m barely involved in, which is great. As for Orgzly monetization, my plan is to implement in-app purchases for the version in Google Play. (&lt;em&gt;note: Orgzly is available in Google Play store and in the free &lt;a href=&#34;https://www.f-droid.org/&#34;&gt;F-Droid store&lt;/a&gt; - J.R.&lt;/em&gt;) I never considered adding ads (I do not like seeing them in apps). I considered accepting donations, but I prefer trying to have a long-term steady income instead, eventually.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Neven, thank you so much for agreeing to do this FAQ. Please keep up the excellent work!!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Thank you!
+-Neven&lt;/p&gt;
+&lt;h2 id=&#34;a-couple-of-concluding-remarks&#34;&gt;A Couple of Concluding Remarks&lt;/h2&gt;
+&lt;p&gt;I have a few additional thoughts to share after heading from Neven:&lt;/p&gt;
+&lt;p&gt;First, It was intriguing to hear the Neven&amp;rsquo;s opinion about non-tech and non-Org users. In a way, he looks up to them as inspiration: the more they can use the app, the better the app is. This makes me think about the Org-mode and Emacs manual. It is very detailed, very informative, yet in the beginning it served me as a last resort only. That&amp;rsquo;s because it feels the Emacs was written from the &amp;ldquo;inside&amp;rdquo; by people who understand programming and Linux. Because of that I often couldn&amp;rsquo;t find what I was looking for and ended up Googling basic questions. I didn&amp;rsquo;t know what to ask. Today, when I have a better understanding of what I need, I can use the manual more often. But Orgzly was not created this way. I started using Orgzly before I started using Emacs, and one of the reasons for that was because it made sense from the start. The manual was intuitive, made sense, and &lt;em&gt;small&lt;/em&gt;. I think Neven is on to something very important here.&lt;/p&gt;
+&lt;p&gt;Second, I find that a couple of hacks really help me work around Orgzly&amp;rsquo;s limitation. It is, after all, just an &amp;ldquo;Org-mode&amp;rdquo; light. It might be useful to highlight some of these here again:&lt;/p&gt;
+&lt;p&gt;Neven said that in a mobile app, you don&amp;rsquo;t want to think much about what information you capture and where to put it. This is something I very much agree with. I have Orgzly&amp;rsquo;s agenda widget on my screen for my tasks for the day, which a quick tap away from projects I&amp;rsquo;m working on at any given moment (since I go back to my office to refile and organized between tasks). The widget has a plus sign at the corner which quickly launches a new note in my default &amp;ldquo;inbox&amp;rdquo; org file. When I create a note, I often don&amp;rsquo;t type. Instead, I tap the microphone on my Android&amp;rsquo;s keyboard and dictate what I need. Even if the translation is 100%, it&amp;rsquo;s close enough that I know what I wanted to say when I&amp;rsquo;m in front of a computer. This is so quick it&amp;rsquo;s often &lt;em&gt;better&lt;/em&gt; than using org-capture. When the note saves, it is automatically scheduled as a todo item on my agenda to the same day (an option in Orgzly) so that it&amp;rsquo;s in front of my face on the agenda and I can refile and schedule it as needed and don&amp;rsquo;t forget about it.&lt;/p&gt;
+&lt;p&gt;The second thing is &lt;a href=&#34;https://syncthing.net/&#34;&gt;Syncthing&lt;/a&gt;. Neven mentioned Dropbox, which works fine, but for the more privacy and space-aware folks out there, Syncthing is a godsend. I &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/raspberry%5Fpi%5Forg%5Fhub/&#34;&gt;wrote about it in length before&lt;/a&gt;, so I won&amp;rsquo;t get into my system here. If Orgzly is what allows me to work with Org-mode everywhere, Syncthing is the glue that makes it possible. An update on my phone from the field will show up in a second on my VM at work and my Linux box at home, and vice versa.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Everenote - Behind the Scenes</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
+      <pubDate>18180-05-05</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/everenote-behind-the-scenes/</guid>
-      <description>&lt;p&gt;A few years back, I was an avid user of Evernote. That was a period of information &amp;ldquo;innocence&amp;rdquo; for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files &amp;ndash; though they have been since downloaded and converted from the App&amp;rsquo;s native format.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A few years back, I was an avid user of Evernote. That was a period of information &amp;ldquo;innocence&amp;rdquo; for me, before I knew much about Linux and switched careers to IT. Back then, Evernote was an amazing discovery. It was the first serious digital (and, to be honest, analog as well) system I built. I remember many nights where I drifted off to sleep thinking about how to tag and achieve my information in it. To this day I have plenty of memories stored away in its achieve files &amp;ndash; though they have been since downloaded and converted from the App&amp;rsquo;s native format.&lt;/p&gt;
+&lt;p&gt;This morning, YouTube&amp;rsquo;s algorithm picked up &lt;a href=&#34;https://www.youtube.com/watch?v=5rNUpXYCcrA&#34;&gt;a video from Evernote&lt;/a&gt; and threw it my way as a suggestion. It&amp;rsquo;s a short introduction to a promised upcoming series from Evernote, called Behind the Scenes. Introduced directly by Evernote&amp;rsquo;s current CEO, Ian Small, this seems to be an honest attempt to &amp;ldquo;take us behind the scenes&amp;hellip; and show us what [Evernote] is working on.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Evernote is a for-profit company with a product that is very different than org-mode. While I have no desire or need to switch from org in the near future, it would be interesting to see what kind of challenges the makers of a popular note-taking app come up with. Who knows, perhaps I could learn a thing or two.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Why Gcal Failed</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</link>
-      <pubDate>Fri, 12 Apr 2019 00:00:00 -0400</pubDate>
+      <pubDate>12120-04-04</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/why-gcal-failed/</guid>
-      <description>&lt;p&gt;I recently tried &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;Org-Gcal&lt;/a&gt; a second time just to turn it off again. I was following the (now slightly outdated) &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;instructions&lt;/a&gt; on &lt;a href=&#34;https://cestlaz.github.io/&#34;&gt;Mike Zamansky&amp;rsquo;s&lt;/a&gt; blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I recently tried &lt;a href=&#34;https://github.com/myuhe/org-gcal.el&#34;&gt;Org-Gcal&lt;/a&gt; a second time just to turn it off again. I was following the (now slightly outdated) &lt;a href=&#34;https://cestlaz.github.io/posts/using-emacs-26-gcal/&#34;&gt;instructions&lt;/a&gt; on &lt;a href=&#34;https://cestlaz.github.io/&#34;&gt;Mike Zamansky&amp;rsquo;s&lt;/a&gt; blog and managed to get it working this time, but I found the end result messy and cumbersome. This is mostly because of how I use org and my agenda to quickly get a view of what I need, not really a reflection on the tool itself. It made me understand how different the methodology of Google calendar and Org-mode are.&lt;/p&gt;
+&lt;p&gt;First, what exactly is Org-Gcal?
+It&amp;rsquo;s an Emacs package that allows Org-mode to sync with Google calendar. Unlike other solutions, Org-Gcal works both ways, so you can create an event on Google calendar and have it show on your Org agenda, and vice versa.&lt;/p&gt;
+&lt;p&gt;As much as I enjoy Org-mode, it&amp;rsquo;s hard to eliminate Google calendar usage completely for a few reasons. First, Google calendar is a smart and mature product that is integrated into Android. Your Google Assistant, if you use it, can quickly create an event for you complete with location and invitations sent to contacts with a simple voice request. If you let it, the assistant can read what&amp;rsquo;s on your screen and suggest an event, build routines for you, and quickly save important dates and reminders. Further, as an owner of a Google Home, it&amp;rsquo;s nice to ask about your agenda for the day and be reminded of your meetings and tasks. Google Calendar is also a tool that quickly works with others, whether they use an Android device or an iPhone. an invitation via email is usually a seamless affair.&lt;/p&gt;
+&lt;p&gt;When I attempted Org-Gcal for the first time, I got stuck with my Google account authorization token. I use two different Google accounts on a regular basis, and I ended up requesting access on the wrong account. When I discovered that issue I retraced my steps but got stuck somewhere in the middle. I wasn&amp;rsquo;t able to get to the point of asking for another token from the other account, so I didn&amp;rsquo;t manage to authorize the right account, and I gave up for a bit.&lt;/p&gt;
+&lt;p&gt;The second time, something similar happened and I got stuck with a specific HTML error that ended up leading to that wrong token. This time, after digging around a bit, I found where Org-Gcal stores that token (in &lt;code&gt;~/.emacs.d/org-gcal/.org-gcal-token&lt;/code&gt;) and deleted it. This caused Org-Gcal to ask for a new token, which I was now able to provide it with. Since I was following the instructions mentioned above, the setup came with two hooks to cause automatic sync with Google calendar whenever I saved my agenda or org file. I soon started seeing my events live, and then I&amp;rsquo;ve experienced a couple of issues.&lt;/p&gt;
+&lt;p&gt;First, each event started repeating multiple times on the org file dedicated to syncing. This was because, I think, Org-Gcal works both ways and it pasted to events from Emacs to Google Calendar and then again from Google Calendar to Emacs. I noticed some events started repeating even more than twice.&lt;/p&gt;
+&lt;p&gt;Second, and this is a harder issue to fix, is the lack of details I got from events posted from Org-mode. On my agenda, my events have a title completed with a location and a link to that location completed with a tag for the person I&amp;rsquo;m with. For example, &amp;ldquo;&lt;em&gt;Breakfast at Tiffany @ &lt;a href=&#34;https://www.nytimes.com/2017/11/11/travel/tiffany-and-co-jewelry-breakfast-audrey-hepburn.html&#34;&gt;Tiffany&lt;/a&gt;      ::Tiffany::&lt;/em&gt;&amp;rdquo; conveniently shows me what I&amp;rsquo;m doing, where, and with who in one line on my agenda. It&amp;rsquo;s crystal clear, and with quick &lt;code&gt;C-c C-o&lt;/code&gt; I can check the location, get direction, and later even have a journal link connected to it. When converting to Google calendar event, this would result in a long title with the link&amp;rsquo;s syntax square brackets, the location of the event left blank, and useless timestamp information in the details section. Of course, this is how it&amp;rsquo;s intended to works. While I didn&amp;rsquo;t expect miracles, this did make me realize that &amp;ldquo;translating org&amp;rdquo; to Google is not just a technical manner. it&amp;rsquo;s a different &lt;em&gt;style&lt;/em&gt; entirely. It is just so much easier to squeeze my Pixel2 (which activates the Assistant if I don&amp;rsquo;t feel saying &amp;ldquo;hey Google&amp;rdquo;) and say &amp;ldquo;Create a calendar invite, Dinner at Tiffany at Tiffany Diner with Tiffany today at 8 PM&amp;rdquo;. Google Assistant will usually nail this on the first attempt. This is the &lt;em&gt;Google style&lt;/em&gt; and this is what it&amp;rsquo;s really good at doing. If I need minor adjustments, like inviting Tiffany or correct the address, that&amp;rsquo;s pretty easy too with the Android&amp;rsquo;s contextual AI and suggestions. In short, things are more inviting this way than the straight sync the package offers.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/why-gcal-failed.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;This style difference is a pretty big gap to cross. Org-mode is private, quiet, at-my-computer (usually) planning, where Google assistant is not private (Google can say whatever they want). The Calendar, in a weird way, is also not really personal: it&amp;rsquo;s usually intended to share with a different person. What I have on Org-mode is an event. An event can be personal, often enough summed up in my journal with my impressions. The difference is big enough philosophically speaking that I can create the same occurrence twice: once on my Google Calendar, and once in Org. Sure, this is mostly a waste of time. The difference is not always so black-and-white, but it&amp;rsquo;s there. For now, I am creating my Google events manually after creating the Org-mode events.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 3</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
-      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      <pubDate>9090-02-02</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
       <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
-&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
+&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;
+&lt;h2 id=&#34;part-3-the-tasks-template&#34;&gt;Part 3 - The Tasks Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;t&amp;rdquo; initiate &amp;ldquo;ToDo&amp;rdquo; template, which is  as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Archive/OhSnap!.org&lt;/code&gt; and create a headline &amp;ldquo;tasks&amp;rdquo; there.&lt;/li&gt;
+&lt;li&gt;Create a second level header, space, add a TODO keyword, space, Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Add the text &amp;ldquo;&lt;code&gt;SCHEDULED:&lt;/code&gt;&amp;rdquo;, space, and ask for a complete timestamp (date and time).&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To create a regular &amp;ldquo;todo&amp;rdquo; item, I want to have it scheduled right away so it&amp;rsquo;s on my agenda. The word &lt;code&gt;SCHEDULED:&lt;/code&gt; is what initiates the scheduling in Org-mode. On my agenda, I clearly see scheduled tasks, and I try to schedule everything I want to do. Scheduling a task then is my actual &amp;ldquo;To Do&amp;rdquo; trigger, not the TODO keyword.&lt;/p&gt;
+&lt;p&gt;Of course, things often get shifted around. I constantly reschedule things at work. The benefit of scheduling tasks this way is that tasks I haven&amp;rsquo;t done are highlighted for the next day, so I know to revisit it.  That&amp;rsquo;s all there is to this template, it&amp;rsquo;s rather simple.&lt;/p&gt;
+&lt;h2 id=&#34;part-4-the-event-template&#34;&gt;Part 4 - The Event Template&lt;/h2&gt;
+&lt;p&gt;The Event template is probably the first one I created. It changed around quite a bit. This is my go-to personal stuff template which works hand in hand with my journal. Here it is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+       &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;e&amp;rdquo; initiate &amp;ldquo;event&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Event&amp;rdquo; in file &lt;code&gt;&amp;quot;~/Documents/Archive/OhSnap!.org&amp;quot;&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Prompt for a complete active timestamp. New line.&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even simpler than the previous template, this one asks for a complete timestamp (date and time) without a keyword. The active timestamp alone means that this event will show on my agenda, but without the scheduling, it&amp;rsquo;s not highlighted as a task (in my theme, tasks are in green and events are in gray). I use these &amp;ldquo;concrete&amp;rdquo; events for meeting with other people, or something that is happening with other people that are important to me.
+Events usually have an ending time, even if it&amp;rsquo;s speculative. I go back in later to adjust the timeframe.&lt;/p&gt;
+&lt;p&gt;I usually follow the event title with a @ sign and link to the location on Google maps if I can. This creates a nice way for me to reflect back later in my journal, which links to these events. For example, an event could be &amp;ldquo;&lt;code&gt;&amp;lt;2019-01-13 Sun 19:00-21:00&amp;gt; dinner with Marcy @ The Green Inn&lt;/code&gt;&amp;rdquo; and The Green Inn would be a link to the location. A quick &lt;code&gt;C-c o&lt;/code&gt; and the browser opens to the right location, and I can look up directions. The location links also work from Orgzly on my phone, though I&amp;rsquo;m looking into integrating this whole thing with Google Calendar, which should work better.&lt;/p&gt;
+&lt;p&gt;After an event took place, I place the cursor on it in my agenda and initiate the journal capture template, as I explained above. Something I started doing lately is to store the link of the journal entry while there &lt;code&gt;(C-c C-l)&lt;/code&gt;, and then enter a [J] at the end of the title of the event on the agenda, linking to the journal entry. If this works well, I will look into creating a macro or a function to create this journal link automatically. Shouldn&amp;rsquo;t be too hard.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 2</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>21210-01-01</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</guid>
-      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;
+&lt;p&gt;Speaking of personal, today I&amp;rsquo;m going to discuss my Journal capture template. I hope you enjoy, and as always, comments are welcome on Reddit (follow me using the links above) at least until I integrate a commenting system on this site.&lt;/p&gt;
+&lt;h2 id=&#34;part-2-the-journal-template&#34;&gt;Part 2 - The Journal template&lt;/h2&gt;
+&lt;p&gt;First, here&amp;rsquo;s the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;j&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Journal&amp;#34;&lt;/span&gt; entry
+  (file+datetree &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Personal/journal.org&amp;#34;&lt;/span&gt;)
+
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**** %U%?%a \n&amp;#34;&lt;/span&gt; :tree-type week)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;j&amp;rdquo; initiate &amp;ldquo;Journal&amp;rdquo; template, which as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Personal/journal.org&lt;/code&gt; and create a &lt;a href=&#34;https://orgmode.org/manual/Template-elements.html#DOCF82&#34;&gt;dateree&lt;/a&gt; entry there&lt;/li&gt;
+&lt;li&gt;Create a sub header (level 4) under the day header, under the week header, under the year header (a function of datetree, see link above).&lt;/li&gt;
+&lt;li&gt;Enter an inactive timestamp, place cursor right after it, place a link to file you were just in.&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Make this a &lt;em&gt;weekly&lt;/em&gt; datetree (the default is a monthly datetree)&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I prefer a weekly format in my journal over a monthly format. In fact, the week is a &amp;ldquo;productivity unit&amp;rdquo; which always made sense to me, and this mindset integrates beautifully into Org-mode. In my archive folder, which you saw in part 1, each week has its own &lt;code&gt;.org&lt;/code&gt; file (from 1 to 50 something). I don&amp;rsquo;t really need this to make Org-mode work, but there&amp;rsquo;s something assuring in viewing the folder and seeing all the week files.&lt;/p&gt;
+&lt;p&gt;The reason the timestamp and the link are condensed together (no space) is because I delete most of the timestamp and just leave the hour. This way the cursor is where I need to start erasing the timestamp from. I haven&amp;rsquo;t found a way yet to create an hourly timestamp only and I don&amp;rsquo;t want to forget to put in the hour, so this is the best solution for now. Why is the hour important? First, personal preference from the past, where I would write the time and the location for each entry. Second, this helps me see a couple of entries in the journal that are about the same event (the title is just the name of the event on my agenda) so that if a certain event is developing and I&amp;rsquo;ve journaled about it a couple of times, I can easily see the hour of each entry as a separator.&lt;/p&gt;
+&lt;p&gt;Finally, I use a link to connect me back to &lt;code&gt;w[##].org&lt;/code&gt; file (week number of the year, as I mentioned above) from which I created the journal entry. In my weekly org files, the incidents or events themselves contain very little details, usually only what is my next action (next thing to do) and a logbook drawer containing the times I worked on a task if I keep track. If I want to discuss something, I create a journal entry for it. I always prefer to leave my thoughts and conclusions in a personal space, separate from the more generic org file which also contains work-related material. The link takes me back to that event or incident, and because the name is the same as the event, I know exactly what I&amp;rsquo;m referring to.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/Org-capture-template-2.1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM&amp;rsquo;s capture template, so when I want to capture something in my journal from work, I&amp;rsquo;m prompted to log into my file server with a password, without saving anything at work.&lt;/p&gt;
+&lt;p&gt;This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 1</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>17170-01-01</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-1/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;
+&lt;p&gt;First, Here&amp;rsquo;s the code for the capture templates I&amp;rsquo;m going to cover:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;INC&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Incidents&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n&amp;#34;&lt;/span&gt;)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;j&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Journal&amp;#34;&lt;/span&gt; entry (file+datetree &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Personal/journal.org&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**** %U%?%a \n&amp;#34;&lt;/span&gt; :tree-type week)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Going into details below, I broke the code down so it makes sense to people starting out with Org-mode in hope this would help new-commers like I was not too long ago. If these steps do not sound right (especially for those of you who know Emacs lisp better than me, which is probably 99% of you&amp;hellip;) please let me know so I can correct and learn. Thanks!&lt;/p&gt;
+&lt;p&gt;Ok, here we go.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-the-inc-template&#34;&gt;Part 1 - The INC Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;INC&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Incidents&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;i&amp;rdquo; initiate &amp;ldquo;INC&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Incidents&amp;rdquo; in file  &lt;code&gt;~/Documents/Archive/#OhSnap!.org&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Create a TODO keyword, space, place cursor here, new line.&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Ticket&amp;rdquo; and ask for input.&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;PIN&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Computer&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Location&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Space, New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I use the above template for ticket creation at work. The file &amp;ldquo;OhSnap.org&amp;rdquo; is my &amp;ldquo;dumping grounds&amp;rdquo; for everything before I sort it out- usually in front of a desktop. This is useful to me because many times I&amp;rsquo;m running around using my phone with &lt;a href=&#34;http://www.orgzly.com&#34;&gt;Orgzly&lt;/a&gt;, a very minimal version of Org-mode. I click the add note widget, speak or write out my note in a few words, and save. Later I add details. (By the way, going on a tangent here: you can use Google Assistant on your phone with Orgzly like any other note taking app: &amp;ldquo;OK Google, make note: buy eggs today&amp;rdquo; - and bam, you have a quick header in your org file.)&lt;/p&gt;
+&lt;p&gt;The properties help me keep my work-related issues organized. I have the ticket number for the issue, which is also the fastest way to find it in our ticketing system. Then I have the person&amp;rsquo;s ID, to quickly identify the person&amp;rsquo;s name and email from the directory if I need to. The computer property is the hostname, so I can remote in or know where it is. Location is helpful because we span over different buildings and even parts of the city. In turn, this also makes Column view beneficial if I want to quickly see all the tickets formatted in a nice table. I don&amp;rsquo;t use it often, but it&amp;rsquo;s there.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t always have all the properties filled in (though I do try to at least have a ticket and a person&amp;rsquo;s name entered), but I do use this template for anything work related. This is because I have a &amp;ldquo;work&amp;rdquo; category property inside the Incident tree, which quickly shows me my work related things on my agenda. This means I can also quickly filter into just work-related stuff if I need to, say, when I show something to my co-workers.&lt;/p&gt;
+&lt;p&gt;Let me expand on that last at the risk of going into a somewhat unrelated tangent: one of the huge things about Org-mode efficiency in my case is the ability to mix work and personal items in the same place. I have different apps, difference accounts, and different devices, and Org-mode is the first place where I&amp;rsquo;m comfortable mixing all of them into one agenda because I still have individual org files. This &lt;em&gt;very&lt;/em&gt; helpful to keep me organized.&lt;/p&gt;
+&lt;p&gt;This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How I Write Posts for my Blog</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</link>
-      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
+      <pubDate>26260-12-12</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting-a-post/</guid>
-      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;
+&lt;h2 id=&#34;using-the-journal&#34;&gt;Using the Journal&lt;/h2&gt;
+&lt;p&gt;I usually create an event on my agenda and then write a journal entry about that specific event. This could mean several entries a day for different events, or on the other hand, only a few entries a month. This event-to-journal approach is helpful because it prevents me from writing too much at once and it keeps me focused.&lt;/p&gt;
+&lt;p&gt;Pictures are another thing. I&amp;rsquo;ve created a script that automatically resizes and labels photos from my phone to streamline the process. Pictures are useful on two levels: first, it&amp;rsquo;s a personal visual to decorate what I&amp;rsquo;m writing and makes it more memorable; second, the &lt;a href=&#34;https://duckduckgo.com/?q=undo+org-capture-kill&amp;amp;t=lm&amp;amp;ia=web&#34;&gt;geolocation&lt;/a&gt; in the photo and the name of the file serves as a way for me to know where I&amp;rsquo;ve been specifically and at what time, very useful for a quick reality &amp;ldquo;bookmark&amp;rdquo; so I can refer to it later when I write. For example, I will take a picture of pies in a pie shop, and later I will title the post &amp;ldquo;2018-12-24, 16:04 @ Big Pie Shoppe,&amp;rdquo; and the place name would be a link to Google Maps showing me that location.&lt;/p&gt;
+&lt;p&gt;Because the journal contains personal things which are usually not immediately shareable or worth blogging about, I have a basic rule of thumb: I blog about experiences that happened at least a month ago. This allows some emotional distance from something I wrote about too impulsively in my journal and might want to reconsider. It also allows me to think of the event in question more like a story as I reflect on it. which makes the post more interesting to read. The idea is that if I have a good story to share, it can wait a month or even more and still be good.&lt;/p&gt;
+&lt;h2 id=&#34;making-an-outline&#34;&gt;Making an Outline&lt;/h2&gt;
+&lt;p&gt;For me, making a basic outline is crucial. The outline is also a good tool to keep the post in a digestible length, something in the neighborhood of 500-700 words. An Outline is nothing more than a bunch of bullet points which I expand on as I write. I do write longer posts, but these are usually more of the technical, instruction-like texts.&lt;/p&gt;
+&lt;p&gt;Another good thing about outlining is that it allows me to finish a post before I run out of &amp;ldquo;creative juice.&amp;rdquo; I write for about 40 minutes (give or take), and when I feel I&amp;rsquo;m done, it&amp;rsquo;s easy to get up and do something else. I return later to my draft to shape it into something worth reading, look for typos and grammar issues, and get it ready for posting.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/drafting_a_post.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;h2 id=&#34;my-tools-hugo-and-org-mode&#34;&gt;My Tools: Hugo and Org-mode&lt;/h2&gt;
+&lt;p&gt;I started looking into &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; about three months ago as a replacement for WordPress. For non-programmers and people who are new to Git and GitHub (like I was), Hugo is not easy to pick up. I can&amp;rsquo;t recommend Hugo to folks who just want to start writing; it&amp;rsquo;s just too damn complicated. For me, as a techie and as a person on the lookout for a low-cost, reliable and secure solution, Hugo is excellent to learn and use. My website hosting is completely free, and the writing is integrated seamlessly into my journal, my calendar, and my tasks. It works well, but &lt;a href=&#34;https://joshrollinswrites.com/blogging/hugo-beginnings/&#34;&gt;it was &lt;em&gt;not&lt;/em&gt; easy to get there&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Org-mode is a huge topic in itself which I&amp;rsquo;ve spent hours writing about in other places. Speaking from a blogging perspective, I use a &amp;ldquo;bridging&amp;rdquo; piece called &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;Ox-hugo&lt;/a&gt; which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I&amp;rsquo;m talking about, here&amp;rsquo;s a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc.&lt;/p&gt;
+&lt;p&gt;These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what&amp;rsquo;s on my agenda. To me, that&amp;rsquo;s one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Evolvement of Video Journal &amp; Org</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</link>
-      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>23230-10-10</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/video-journal-evolved/</guid>
-      <description>&lt;p&gt;Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I &lt;a href=&#34;https://jarss.github.io/TAONAW/blog/org-update/&#34;&gt;discussed these&lt;/a&gt; couple of times before: tasks, task notes, and journal.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Over time, my videos definitely got smaller. This is because I got used to Org in different areas of recording my thoughts. I &lt;a href=&#34;https://jarss.github.io/TAONAW/blog/org-update/&#34;&gt;discussed these&lt;/a&gt; couple of times before: tasks, task notes, and journal.&lt;/p&gt;
+&lt;p&gt;My tasks do rarely contain sub-tasks anymore. This is odd because sub-tasking was one of the reasons that got me into Org-mode initially. Over time I found that I rather leave notes to myself about where I left off and what needs to be done instead of using actual tasks.&lt;/p&gt;
+&lt;p&gt;Task notes are usually brief (one paragraph with 3 to 5 lines) and are always timestamped with most recent on top. This quickly lets me know where I stopped a task and why. Interestingly, I use it also to indicate general mundane errands, like grocery shopping. In such cases, I can also include a checklist.&lt;/p&gt;
+&lt;p&gt;The journal is a different story. This is where I let myself spill the beans. I took a long break from using a journal because I felt there&amp;rsquo;s so much recording done on a keyboard, and I wanted a quicker way to record my thoughts.&lt;/p&gt;
+&lt;p&gt;But recording my thoughts was inconvenient. I had to take a break from my workflow, record a video, name it, compress it, and save it. It required that I&amp;rsquo;ll find a quiet corner - nearly impossible to do during my day - to record for a few minutes. So out of necessity, I started to include more text in my task notes. Eventually, I felt they become too long, too personal, and just too heavy. I needed a separation and going back to my journal felt natural.&lt;/p&gt;
+&lt;p&gt;I find that typing is just slow enough to make me process what I&amp;rsquo;m thinking. I can edit what I&amp;rsquo;m trying to say, which means I can rethink of a better way of describing it. To prevent myself from going on and on, I journal on specific events only, never an entire day. My capture template takes the link of my event and makes it the title, and then continue to discuss only that event.&lt;/p&gt;
+&lt;p&gt;Yesterday, I noticed something interesting: with time, my rambling on videos was reduced from going on an on for an hour plus or so (and multiple videos) to shorter segments. Here&amp;rsquo;s a visual:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/videojournalevolved_1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Above: over time, my clips become shorter&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Finally, last weekend, I reached the conclusion that my written journal is just &lt;em&gt;better&lt;/em&gt; at keeping track of my experiences. Since I re-created the way I save my achieve files now, it also means the links from the journal org file to the org and the events is never broken: I just have to make sure to refile an event from my &amp;ldquo;oh snap&amp;rdquo; thought-dump org into the current week org file, and I&amp;rsquo;m good.&lt;/p&gt;
+&lt;p&gt;I still record a short &amp;ldquo;weekly summary&amp;rdquo; on weekends, and now I find I&amp;rsquo;m actually looking forward to it. These are now 10-20 minutes long videos in which I briefly go through my agenda and logged events and explain what happened while my memories of this week are still fresh. I then give the week a &amp;ldquo;theme&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This works as a way for me to remember what happened far in the future if I want to reflect on my experiences but not looking for something specific, or not sure what it is. It&amp;rsquo;s also a good way to reflect on the major events of the week after I had a weekend to slow down and process. It works.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Agenda, and the Benfit of Having Multiple Files</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/</link>
-      <pubDate>Thu, 02 Aug 2018 00:00:00 -0400</pubDate>
+      <pubDate>2020-08-08</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/agenda-multiple-files/</guid>
-      <description>I used to write all my tasks, personal and work, into one tasks.org file.
-On Sunday night, this was good. I had 5 tasks on my list, and I was ready to start my work week. But it didn&amp;rsquo;t take long (two days actually) for tasks.org to become monster.org. It didn&amp;rsquo;t happen because of the number of tasks, which I kept (more or less) under control. It happened because of the size of the projects I was working on.</description>
+      <description>&lt;p&gt;I used to write all my tasks, personal and work, into one tasks.org
+file.&lt;/p&gt;
+&lt;p&gt;On Sunday night, this was good. I had 5 tasks on my list, and I was
+ready to start my work week. But it didn&amp;rsquo;t take long (two days
+actually) for tasks.org to become monster.org. It didn&amp;rsquo;t happen
+because of the number of tasks, which I kept (more or less) under
+control. It happened because of the size of the projects I was
+working on. Setting up computers, encryption, and even elementary
+personal stuff like paying my bills; each task naturally grew to
+sub-tasks, and those in turn had their own notes and lists.&lt;/p&gt;
+&lt;p&gt;My initial solution to that was to create a &amp;ldquo;Details&amp;rdquo; heading for
+the projects. It contained time rangers I worked on a project
+(entered manually), and links to other sources I needed. This kept
+extra information out of the way when I didn&amp;rsquo;t need it. This caused
+two issues. First, I now had &amp;ldquo;Details&amp;rdquo; showing on my agenda, since
+my time-range was directly under that header. Second, things
+quickly got out of control on my Android phone with Orgzly. That&amp;rsquo;s
+because Orgzly does not fold seondary headings. I had to deal with
+walls of texts which I had to scroll through before I got to the most
+recent ToDo items.&lt;/p&gt;
+&lt;p&gt;As I was scratching my head at this, work and life continued. My
+tasks list grew each day - No, each couple of hours. Interruptions
+kept coming in, obscure urgent new projects oppoped up while older
+ones from previous weeks resurfaced. My list was quickly overtaken
+by work stuff, while personal projects remained in the background,
+often pushed down the list and out of view.&lt;/p&gt;
+&lt;p&gt;Realizing that I can&amp;rsquo;t handle just viewing my tasks.org on my phone
+anymore (toward the end of the week, I could barely do it even in
+Emacs) I started using the tool I should have used more from the
+beginning: The agenda.&lt;/p&gt;
+&lt;h2 id=&#34;the-agenda&#34;&gt;The Agenda&lt;/h2&gt;
+&lt;p&gt;The agenda view changed everything. Opened from everywhere with a
+quick key combo, it enabled me to see everything that I need to
+do. This is thanks to one thing that survived through the mess was
+my method of &lt;em&gt;scheduling&lt;/em&gt; assignments I intended to work on that
+day or in the next couple of hours. I picked this habit from one of
+the old Org tutorials floating around, which I cannot find right
+now. Scheduling means I still had a wall of ToDo items in
+tasks.org, but I only scheduled up to 5 things I intended to work
+on. I am only human, after all. Scheduling showed me what I wanted
+to do, and ToDo keywords showed me assignments that I haven&amp;rsquo;t yet
+scheduled, but need to at some point. I could view both
+comfortably from the agenda view with &lt;code&gt;C-c a n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This proved to be effective not only in Emacs, but also in Orgzly,
+on my phone. Thanks to the &amp;ldquo;Scheduled&amp;rdquo; search, I now also have a
+widget on my homescreen, an affective todo list. There&amp;rsquo;s even a
+check button to check off Items on this widget, which marks them as
+&amp;ldquo;done.&amp;rdquo; Orgzly also does a good job at creating customized
+searches, so that I can specifically see what is scheduled for
+today vs what is scheduled for the next 3 days, or week. I can have
+another filter showing me my unscheduled ToDos as well, in case I
+want to start working on them. What a wonderful thing.&lt;/p&gt;
+&lt;p&gt;Working with the agenda, I realized I&amp;rsquo;m faster than before. At
+work, the first thing I do after I launch Emacs is to get into
+agenda view. From there, it is much faster to &amp;ldquo;tab in&amp;rdquo; to whatever
+task I need. This replaced my need for &lt;code&gt;C-x C-r&lt;/code&gt;, recentf,
+since now I was not only in the file I need, but also in the
+&lt;em&gt;section&lt;/em&gt; I need. Even better: &lt;code&gt;C-x n s&lt;/code&gt; can be used then to &amp;ldquo;zoom
+in&amp;rdquo; to the task at hand, blocking out the long list of other items.&lt;/p&gt;
+&lt;p&gt;In agenda, I was also able to quickly see tags and categories, edit
+properties, and most importantly, quickly schedule ToDos. As the
+agenda became my bread and butter, another small issue surfaced:
+the category property. Since I still used one file, I used the category
+property to differentiate between personal and work tasks. On the
+agenda, each schedule task was placed in a &amp;ldquo;Tasks&amp;rdquo; category by
+default, since that was the file I was using. Even when I did
+assigned a category from the agenda, I still had to do so for a child
+header (I thought these are supposed to be inharied, but this
+didn&amp;rsquo;t seem to work). This may sound like aesthetics, but being
+able to filter out all personal/work tasks can be very handy.&lt;/p&gt;
+&lt;p&gt;I was also thinking of my issue of having multiple values for one
+property. This was a problem I was trying to solve for the last
+several weeks. As an example, consider a task of setting up several
+computers, where extra information such as serial numbers and
+models is needed. Up to that point, I had a header nested inside my
+task.org file, like &amp;ldquo;set up 4 computers.&amp;rdquo; I used the custom
+property &lt;code&gt;:Serials:&lt;/code&gt; followed by the serial numbers for set-up
+tasks: &lt;code&gt;:Serials: 1111 2222 3333 4444&lt;/code&gt; etc. This didnt&amp;rsquo; work well,
+since Org considered the &lt;em&gt;whole&lt;/em&gt; thing, including spaces, as the
+value of the property &amp;ldquo;Serials.&amp;rdquo; I could still search, using Swiper
+(Ivy is one of the first things I install), for the serial as text,
+but anything that has to do with properties as functions did not
+work. I asked about this in reddit and in IRC several times, but
+could not find a satisfactory solution to breaking down properties
+that way. Someone, at one point, offered a rather complicated
+function &amp;ndash; but I kept feeling this was a too common of an issue to
+be overlooked like that. Something more fundemental was off in the
+way I was working with Org, but I didn&amp;rsquo;t know what it was. So I
+decided to &amp;ldquo;go back&amp;rdquo; and reflect again on how Org was meant to work
+originally.&lt;/p&gt;
+&lt;p&gt;After re-reading some sections of the manual and watching &lt;a href=&#34;https://www.youtube.com/watch?v%3DoJTwQvgfgMM#t%3D1m20s&#34;&gt;Carsten
+Dominik&amp;rsquo;s&lt;/a&gt; presentation back from 2008, I was reminded of Org-modes
+original built-in tools. In the lecture, Carsten emphasized &lt;a href=&#34;https://orgmode.org/manual/Column-view.html&#34;&gt;Column
+View&lt;/a&gt; in Org. It is something I saw in passing previously, but now
+that I was having a mess on my hands with properties, Column View
+glowed in a welcoming aura. A quick and efficient way to have a
+table of the computers&amp;rsquo; serial numbers (or users, or model&amp;hellip;)
+right next to the header, in a comfortable layout? I needed this. I
+could set columns per header, if I wanted to, which meant more
+fiddling around with the specific laptop-setup task in my old
+method. Or&amp;hellip; I could just have a set-up dedicated org file which will
+already have the column view for laptop-set up built in with the
+properties&amp;hellip; Wait a minute.&lt;/p&gt;
+&lt;h2 id=&#34;using-multiple-org-files&#34;&gt;Using Multiple Org Files&lt;/h2&gt;
+&lt;p&gt;That was it. Everything I learned to this point came together in a
+torrent of thoughts. The solution to the properties problem was to
+have dedicated org files for each big project. After all, that&amp;rsquo;s
+&lt;em&gt;exactly&lt;/em&gt; what the agenda was made for: to be used as the &amp;ldquo;glue&amp;rdquo;
+between them. This was why I was supposed to use agenda in the
+first place! As long as I had a task scheduled, it didn&amp;rsquo;t matter
+what file it was in. All I need to do is to tab in, just like I did
+with tasks.org. The idea of having a list of tasks in one file was
+so ingrained in my head from all the apps I used in the past, I was
+blind to see what was under my nose.&lt;/p&gt;
+&lt;p&gt;With the realization of needing to break tasks back to different
+files came the realization that I am probably squeezing too much
+data into one org file. After all, setting up laptops as a task is
+a &lt;em&gt;project&lt;/em&gt; in itself. It should include a heading for &lt;em&gt;each&lt;/em&gt;
+laptop, along with a checklist of steps I do for each, with a log
+describing different issues I am having in the process. From the
+agenda, this looks just like another project I do during the week.
+it fits inside the tasks list and on my phone just the
+same.&lt;/p&gt;
+&lt;p&gt;I was in for another pleasent surprise: In my agenda, since now I
+seperated the setups to a different file, my category problem
+suddenly disappeared as well. All my laptop setups were shown as
+&amp;ldquo;setups&amp;rdquo; as a category, because this is the file they are
+in. Wow. So this is what happens when you stop fighting something and
+start using it the way it was meant to be used.&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve been using the system above for almost a week now (this post has
+been a week in the making). Here are some ideas about what&amp;rsquo;s next.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;del&gt;adoptive capture template for tickets&lt;/del&gt; this was done this morning!  I
+now have a capture template that automatically prompts me for the
+properties needed for each ticket I need to work on. It is then filed
+as a ToDo task in my weekly &amp;ldquo;tasks.org&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Should Figure out what to use tags for: work in progress. While categories
+have their place, tags are more fluid. For now, it seems like I&amp;rsquo;m
+gravitating toward creating &amp;ldquo;mind keywords&amp;rdquo; of certain topics or
+terms that I&amp;rsquo;m familiar with. These, in turn, should be good for
+searches since I think in these terms when I&amp;rsquo;m looking for
+something. For example, a task flagged with my boss&amp;rsquo;s name tells me
+this is a task he&amp;rsquo;s viewing actively, or a &amp;ldquo;wiki&amp;rdquo; tag tells me
+there&amp;rsquo;s some good info stored in the notes of the tasks that I
+should probably store for later.&lt;/li&gt;
+&lt;li&gt;Learn to trust the system. It&amp;rsquo;s &lt;em&gt;hard&lt;/em&gt; to let myself create tasks
+in different files. I still need my weekly &amp;ldquo;mind-dump&amp;rdquo; of a place
+where I throw in quick captures and tasks that are not big enough
+for their own file, but I should stop thinking of it as my weekly
+list of things I&amp;rsquo;m doing, since it&amp;rsquo;s misleading. The agenda is what
+reflects that now.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
     <item>
       <title>Libre and Clothes</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 -0400</pubDate>
+      <pubDate>1010-08-08</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/libre-and-clothes/</guid>
-      <description>When I write, I live in Emacs (with the awesome Solorized theme) inside Org-Mode.
-With time, I found that Org has already made me more effienet writer and note taker. I write notes in every meeting now, rather it&amp;rsquo;s my &amp;ldquo;turn&amp;rdquo; or not. I write notes as I work, about every solution and every problem I&amp;rsquo;m facing. I write first thing in the morning, usually about org-related thoughts I had as I wake up, over a cup of Sumatra cofee (little almond milk, one pack of sugar).</description>
+      <description>&lt;p&gt;When I write, I live in Emacs (with the awesome &lt;a href=&#34;https://github.com/altercation/solarized&#34;&gt;Solorized&lt;/a&gt; theme)
+inside Org-Mode.&lt;/p&gt;
+&lt;p&gt;With time, I found that Org has already made me more effienet writer
+and note taker. I write notes in every meeting now, rather it&amp;rsquo;s my
+&amp;ldquo;turn&amp;rdquo; or not. I write notes as I work, about every solution and every
+problem I&amp;rsquo;m facing. I write first thing in the morning, usually about
+org-related thoughts I had as I wake up, over a cup of Sumatra cofee
+(little almond milk, one pack of sugar). Quite honestly, Org makes me
+&lt;em&gt;feel&lt;/em&gt; good, because it&amp;rsquo;s transparent. It&amp;rsquo;s an extensions of my
+thoughts, continuing on one long line, uninterrupted, before I stop to
+think a second and relfect one what I was thinking (&lt;code&gt;X-q&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s no pretending in Org. No fancy text, fonts, or even
+images. Style is only applied to function. It&amp;rsquo;s a delicate balance
+which, with the Solirized theme, work extremly well (by the way, the
+&lt;a href=&#34;http://observer.com/2015/02/meet-the-man-behind-solarized-the-most-important-color-scheme-in-computer-history/&#34;&gt;story of the man who created Solorized&lt;/a&gt; is quite interesting and worth
+reading). There&amp;rsquo;s also an inviting segue here about Linux, which is
+the Org-writing mindset extended into an operating system. But I&amp;rsquo;m
+joyfully digress.&lt;/p&gt;
+&lt;p&gt;Alright then. But every now on then you need to present stuff, and
+this means you need to &amp;ldquo;dress up&amp;rdquo; so other people can talk to you and
+relate. The &amp;ldquo;Normals,&amp;rdquo; so to speak, do not understand my Org
+dedication and often give me concerned looks when I type away, a
+single long line into a blank screen. The purity is empty, the lack of
+buttons and distracting elements feels threatening withough GUI
+guidance. Fine then, I can do fancy schmancy.&lt;/p&gt;
+&lt;p&gt;Most Org-folk I&amp;rsquo;ve read and listened to talk about LaTex. In my case,
+that meant a full installation, which is huge. Over 2GB huge. Not
+worth it for concessional usage, especially since I work in Microsoft
+environment at work, and most people I&amp;rsquo;ll share with will need .docx
+or .ppt format anyway. So for me, &lt;a href=&#34;https://en.wikipedia.org/wiki/OpenDocument&#34;&gt;.odt&lt;/a&gt; seems like a better answer.&lt;/p&gt;
+&lt;p&gt;Two things are needed on my Emacs (version 25.2.1) for that:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Download and install Libre Office&lt;/strong&gt;. It comes built in with many
+personal desktop-geared Ubuntu distros, but in my version (Mint) I
+chose to opt out at start. OK, not biggie, full Libre office suite
+is only 100MB, and I can do that. I see myself edit the
+concessional Word file or producing a PDF.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Add the following&lt;/strong&gt; to .emacs to turn on .odt option in the export
+dispatcher:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;`(eval-after-load &amp;quot;org&amp;quot; &#39;(require &#39;ox-odt nil t))`&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now I can create the .dot file, which I can open in Libre Writer I
+just downloaded. Ooof. Hello GUI word proccessing, with weird paper
+screen restrictions look. And the white, the white! It burnsss
+usss&amp;hellip;. But anyway. Overall things look excellent, but if I want to
+change fonts, move around images etc, now I can in a more eyecandy
+format without leaving Linux. Then again, if I really need to produce
+a document, I might as well save my .odt in Writer to a .docx and
+remote remote into my work computer, where Mirosoft reigns
+supreme. Options. We like having them, yes?&lt;/p&gt;
+&lt;p&gt;Even another option I was considering is to use &lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;, which is a
+pretty markdown writer. It comes with &lt;a href=&#34;https://en.wikipedia.org/wiki/Pandoc&#34;&gt;Pandoc&lt;/a&gt;, and can handle Word and
+PDF files. Typora does not exactly feel &amp;ldquo;Linux free&amp;rdquo; to me and seems
+heavily inspired by different &amp;ldquo;minimalist&amp;rdquo; Mac word processing apps,
+if that&amp;rsquo;s your thing. It probably won&amp;rsquo;t show in your distro&amp;rsquo;s and
+require installation from a ppa. I used Typora for a while for
+markdown, but we&amp;rsquo;ve parted ways now.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m curious how this will stand out when I present my notes (since
+I&amp;rsquo;ve became the unofficial note taker at work, for reasons mentioned
+above). But for now, I&amp;rsquo;m more than happy to take off the fancy clothes
+and slide back to my comfortable t-shirt and shorts and write in Org.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

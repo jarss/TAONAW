@@ -14,20 +14,73 @@
     <item>
       <title>Refactoring CSS</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 -0400</pubDate>
+      <pubDate>16160-07-07</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-07-14/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you&amp;rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I&amp;rsquo;ve ever done, but I hope you&amp;rsquo;d barely notice anything.&lt;/p&gt;</description>
+      <description>&lt;p&gt;There&amp;rsquo;s a popular saying in IT: if you receive no comments about a project you just finished, you know you&amp;rsquo;ve done your job right. The latest commit to TAONAW is one of the biggest I&amp;rsquo;ve ever done, but I hope you&amp;rsquo;d barely notice anything.&lt;/p&gt;
+&lt;p&gt;One of the issues I wanted to fix in TAONAW was the mobile layout. The original theme, &lt;a href=&#34;https://themes.gohugo.io/hyde/&#34;&gt;Hyde&lt;/a&gt;, comes with a narrow theme variant aimed at smartphones and tablets. On TAONAW, it was always a broken mess of inherited CSS rules coming from the wide (desktop screens) variant, which was what I always focused on. The narrow theme became even worse after I had my logo made. The logo covered the sidebar almost completely, making navigating the site on smartphones practically impossible.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve toyed with my CSS here and there, but I knew I need to go deep to fix the narrow theme. The different CSS tricks and hacks I used made the site work through workarounds, but overall, it was still a mess. This week I finally got some time off for serious refactoring&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;When you narrow the browser&amp;rsquo;s window now (go ahead, do it) it will switch to &amp;ldquo;smartphone&amp;rdquo; mode when you reach 800 pixels wide. I tested the site on both my iPhone and Android and the site looks as intended on both&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The logo, which now fits better on the wide version next to the title, also sits well at the lower right corner on narrow screens. Shrink the screen more and the logo will slide left to accomodate (eventually it will overlap the text of the navigation bar, but I don&amp;rsquo;t believe there&amp;rsquo;s a screen &lt;em&gt;that&lt;/em&gt; narrow intended for reading.&lt;/p&gt;
+&lt;p&gt;The CSS (in the hyde.css file) code now exhibits common code for both themes at the top, and then under it, the wide version followed by the narrow version. For example, The title font for the site is the same for both themes, so it will be defined at the top; however, the font is a different size on the wide version (&lt;a href=&#34;https://www.w3schools.com/CSSref/css%5Funits.asp&#34;&gt;4em&lt;/a&gt;) than it is on the narrow version (&lt;a href=&#34;https://www.w3schools.com/CSSref/css%5Funits.asp&#34;&gt;3em&lt;/a&gt;). This is one refactoring example of many. I also took out large chunks of unnecessary code that came with the original theme.&lt;/p&gt;
+&lt;p&gt;There are many examples I can point out and expand on, but I won&amp;rsquo;t get into these right now. If you&amp;rsquo;re interested, the site and the theme is &lt;a href=&#34;https://github.com/jarss/TAONAW&#34;&gt;availble to all on github&lt;/a&gt;, where it&amp;rsquo;s been since day one. For me, the biggest satisfaction was learning all the new CSS &amp;ldquo;stuff&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&amp;rdquo; and having an organized CSS I&amp;rsquo;m familiar with to keep fixing and adjusting the site in the future.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Usually reserved for &amp;ldquo;serious code,&amp;rdquo; after working a couple of hours on CSS, I think the term describes well what I&amp;rsquo;ve done here. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Like other projects of similar size, you only see additional issues after you&amp;rsquo;re done. A few tweaks to the narrow theme still need to be done, but now it will be much easier to get to them. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;When I think of it, CSS is immensely useful. It can be used to present anything (through a form of an HTML page) rather it&amp;rsquo;s my wiki built-in Emacs org-mode or a document following a theme turned into PDF. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
     </item>
     
     <item>
       <title>My Org Capture Templates - Part 3</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
-      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      <pubDate>9090-02-02</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</guid>
       <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
-&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;</description>
+&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;
+&lt;h2 id=&#34;part-3-the-tasks-template&#34;&gt;Part 3 - The Tasks Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;t&amp;rdquo; initiate &amp;ldquo;ToDo&amp;rdquo; template, which is  as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Archive/OhSnap!.org&lt;/code&gt; and create a headline &amp;ldquo;tasks&amp;rdquo; there.&lt;/li&gt;
+&lt;li&gt;Create a second level header, space, add a TODO keyword, space, Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Add the text &amp;ldquo;&lt;code&gt;SCHEDULED:&lt;/code&gt;&amp;rdquo;, space, and ask for a complete timestamp (date and time).&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To create a regular &amp;ldquo;todo&amp;rdquo; item, I want to have it scheduled right away so it&amp;rsquo;s on my agenda. The word &lt;code&gt;SCHEDULED:&lt;/code&gt; is what initiates the scheduling in Org-mode. On my agenda, I clearly see scheduled tasks, and I try to schedule everything I want to do. Scheduling a task then is my actual &amp;ldquo;To Do&amp;rdquo; trigger, not the TODO keyword.&lt;/p&gt;
+&lt;p&gt;Of course, things often get shifted around. I constantly reschedule things at work. The benefit of scheduling tasks this way is that tasks I haven&amp;rsquo;t done are highlighted for the next day, so I know to revisit it.  That&amp;rsquo;s all there is to this template, it&amp;rsquo;s rather simple.&lt;/p&gt;
+&lt;h2 id=&#34;part-4-the-event-template&#34;&gt;Part 4 - The Event Template&lt;/h2&gt;
+&lt;p&gt;The Event template is probably the first one I created. It changed around quite a bit. This is my go-to personal stuff template which works hand in hand with my journal. Here it is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+       &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;e&amp;rdquo; initiate &amp;ldquo;event&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Event&amp;rdquo; in file &lt;code&gt;&amp;quot;~/Documents/Archive/OhSnap!.org&amp;quot;&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Prompt for a complete active timestamp. New line.&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even simpler than the previous template, this one asks for a complete timestamp (date and time) without a keyword. The active timestamp alone means that this event will show on my agenda, but without the scheduling, it&amp;rsquo;s not highlighted as a task (in my theme, tasks are in green and events are in gray). I use these &amp;ldquo;concrete&amp;rdquo; events for meeting with other people, or something that is happening with other people that are important to me.
+Events usually have an ending time, even if it&amp;rsquo;s speculative. I go back in later to adjust the timeframe.&lt;/p&gt;
+&lt;p&gt;I usually follow the event title with a @ sign and link to the location on Google maps if I can. This creates a nice way for me to reflect back later in my journal, which links to these events. For example, an event could be &amp;ldquo;&lt;code&gt;&amp;lt;2019-01-13 Sun 19:00-21:00&amp;gt; dinner with Marcy @ The Green Inn&lt;/code&gt;&amp;rdquo; and The Green Inn would be a link to the location. A quick &lt;code&gt;C-c o&lt;/code&gt; and the browser opens to the right location, and I can look up directions. The location links also work from Orgzly on my phone, though I&amp;rsquo;m looking into integrating this whole thing with Google Calendar, which should work better.&lt;/p&gt;
+&lt;p&gt;After an event took place, I place the cursor on it in my agenda and initiate the journal capture template, as I explained above. Something I started doing lately is to store the link of the journal entry while there &lt;code&gt;(C-c C-l)&lt;/code&gt;, and then enter a [J] at the end of the title of the event on the agenda, linking to the journal entry. If this works well, I will look into creating a macro or a function to create this journal link automatically. Shouldn&amp;rsquo;t be too hard.&lt;/p&gt;</description>
     </item>
     
   </channel>
