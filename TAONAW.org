@@ -3108,7 +3108,7 @@ There's more to cover but I should leave some things for next time. I hope this 
 [fn:52] Think about this for a minute: a full regex search for all your org files. This is so powerful! You can search for something as simple as "Bob's Cafe" to bring up all "Bob's Cafe" results, but you can also use something like ~+Bob -Cafe|-cafe~ to find any org files that have the words Bob *and not* Cafe or cafe (search is case sensitive). You can go full regex with the search too if you want, which might be useful if you're trying to find a specific location you know you visited a year and a half ago and wrote about it in your journal.org file and all you can remember is rambling about the great beer the had but the awful music was horrible, and it was cold, and...You get the point. 
 
 [fn:53] The idea of "life area" is something you need to sit down and define. Categories are not tags, they are meant to be very general. Think of categories as routines or certain "bracket" in your life you spend more than an hour every day during the week. Things like "Work" "Exercise" and "health" make sense, depending on what you use org-mode for; things like "projects" or "vacation to Aruba" do not - these are too specific and would probably be better used as titles, keywords, or perhaps tags.
-*** WIP Full content in RSS feeds                                      :hugo:
+*** PUBLISHED Full content in RSS feeds                                :hugo:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-07-22
@@ -3124,6 +3124,148 @@ Hugo [[https://gohugo.io/templates/rss/#the-embedded-rss-xml][comes with a defau
 To allow full posts on the RSS feed (default is only the summaries, the bits you see on the main blog page), change the "Summary" default to "Content" toward the end, in this line: ~<description>{{ .Summary | html }}</description>~. This is a nice tip I discovered at [[https://www.godo.dev/tutorials/hugo-full-text-rss/][GODO.DEV]]. 
 
 +Next, need to add RSS link at the sidebar for anyone else interested and doesn't know about the blog's RSS.+ This is now done, though rather ugly. Some CSS work and possibly include other links as well.
+*** TODO Keeping a healthy routine during COVID19                      :self:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-07-23
+ :EXPORT_HUGO_PUBLISHDATE: 2020-07-23:
+ :END:
+
+It's been four months since COVID-19 started for me. I've been working from home, which means far less exercise than usual, especially with gyms closed in the city. Thankfully, I have a system that helps me to keep soemwhat active, and today I want to share it with you.  
+
+ #+hugo: more
+
+Nothing I'm going to tell you here is going to be ground breaking. I'm pretty sure I picked up bits and pieces of ideas I've heard in various places and glued them together to something that makes sense to me. Still, or perhaps because of that, it's pretty effective without being too obnoxious. 
+
+**** The Elements
+
+At some point in my life, I started basing what I consider to be healthy or wholesome living with the "elements". Those are Sleep, Exercise, Nutrion, and Meditation. I believe that if I do these four right, I can remain mostly healthy mentally and physically. Over time I developed exercises and routines for each one. 
+
+For sleep, the goal for me is 6.5 hours a night. I often sleep less (my avrage is around 5.5) and I try to make it up with a nap (20 minutes or so) when possible, usually in the afternoons. This doesn't always work, and there's no such thing as making up for lost sleep, but when I do take one of those powernaps I usually have energy for round two of productivity. 
+
+Exercise is the most complex, but the invidual exercises are simple. Running/jogging is probably the main one, followed by other classic ones like push-ups and crunches. As I got older, I made sure to add stretches and/or yoga poses into the mix. This sounds a lot, but in reality it isn't. It's really a mixed bag of things that keep me moving. I would proabably be more affective if I was to follow a specific list of exercises, and I'm working on that. Routine is the single most important things here.  
+
+For food, the rule of thumb is to keep it as simple as possible. If a food item has ingridients I don't understand or can't pronounce, I try to stay away from it. Of course, everything today has preservents and sugar (it's crazy how there's sugar in almost everything!), but I try my best. For example, I'd go to Subway to get a grilled chicken sandwhich where I choose what to put into it than a "signature sandwich" somewhere. I choose fresh vegtible where possible over anything that was frozen, proccessed, etc. These days I work in a large medical facility, which makes eating healtheir easier. Water is my main drink of choice, seconded only by coffee (I have 2 cups a day, 3 at most). 
+
+The most elusive element in the list is meditation. I often struggle to remember or slow down and simply sit down and breath. I have a very specific breath tecnique involving counting which helps. Usually 2 minutes of that help a whole lot and I can tell the difference; these days I'm pushing for 5 minute sagments. 
+
+**** Score System
+
+The score system is what makes everything moving during COVID-19. It's what keeps me motivated and allows me to impove. Here is how it works: 
+
+Every morning I get up and the first thing I do is go (as the coffee is brewing) is to go to my journal and write about yesterday's elements. One short paragraph for each. I reflect on what I did, and I give myself a score. For example, if I do my pushups, I get 1 point. If I eat home-made salad, that's also a 1. But if I decided to party and have pizza with beer that day, I'd give myself a -1. Then I add them all up and see. Some things give me more points; for example, running which is very challanging (especially in this heat) is worth 3 points. Each exercise individually though is half a point. The system is dynamic and I change it according to what I need to improve on. For example, if going to bed at the right time has been working out for a couple of weeks, it's time to move on and not give myself a point for it, and try to focous on sleeping more or taking my naps which will give me that point going forward.  
+
+Right now, an OK day is 3 points, a good day is 4, an excellent is 5, and a burnout (bad) is 6. I try to not go too crazy, becayse too much means the next day or the day after that I will not have the motivation to do as much. Aiming at the same rate of 3 or 4 points every day is the main goal for now as a healthy routine, which is the primary goal. 
+
+**** The Fitbit advantage 
+
+I'm not getting any money for saying this. One of the things that really help me keep track of my sleeping habits and exercise has been my fitbit which I actually haven't used a whole lot before COVID-19. When I went to the gym, I'd let it detect exercises automatically and never bothered with it too much. Now though, where an apportunity for an exercise means skipping the elevator and taking ths stairs, it's really helpful to see when I was active and for how long. 
+
+My Fitbit Ionic is also great at detecting when I fall asleep, and I find that it's accurate withing 5-10 minutes range at most. This helps me see how long I slept and if I should think of napping or not. There are planty of similar devices on the market, including Apple's iWatch and Android Wear made by different companies. I think it really comes in handy if you're like me and you need to be dynamic but still have a routine. 
+
+**** The only point is to get better
+
+When I started picking up on running again I was miles (literally) behind what I used to be able to do in the past. I couldn't even finish a single mile, I was constantly out of breath, and I was very discouraged. The score system helps, but only if you use it to reinforce the main goal: to get better. 
+
+If all you can do is 10 pushups, then you start there. Any good coach on earth would tell you there. 10 pushups a day this week means 12 pushups next week. And if you can't do pushups at all and have to use your knees, do that, and your goal would be to get to pushups.
+
+At any given point, your goal is the horizon: It's just as hard to go from 10 pushups to 50 as it is from 200 to 500. That's because it's all relative to what you can do. Score yourself honestly and you'll make progress. Always keep going, and when you look back you'll be amazed at what you've done. Just keep doing it, and build your routine. 
+*** TODO Back to basics 2: 
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-07-25
+ :EXPORT_HUGO_PUBLISHDATE: 2020-07-25:
+ :END:
+ 
+To really get back to the basics, we need to go beyond org-mode and into Emacs. And in order to get into Emacs, we need to talk a bit about Linux. And in order to talk about Linux, we need to talk about the philosophy of Linux. This is a whole lot to discuss, and I won't even scratch the surface of anything, really. What I'm going to discuss here is /my/ purely non-objective opinions that lead me down this path.
+
+# # this is a post about prodcutivity, change intro to reflect. 
+
+#+hugo: more
+
+Think of your productivity as a spear. The spear of productivity. The whole spear is Linux. Emacs then is the spearhead. At the tip, the sharpest point, is org-mode, the tool of tools:
+
+[[file:images/2020-07-25.png]]
+{{< rawhtml >}}
+<figcaption>The Linux spear of productivity</figcaption>
+{{< / rawhtml >}} 
+
+**** The Spear: Linux
+
+Linux, like the speark, is lean and sable. You can lean on it for your work. As a person who uses macOS, Windows and Linux on a daily basis, my experience is that only Linux is predictable and stable (Windows is the worse offender) but also minimal and customizable (macOS is generally harder to customize). 
+
+This is important because your productivity starts with your environment: a clean desktop, no extra notifiction popping at you from all direction, and the ability to change how it looks and acts exactly the way you want it. I use [[https://en.wikipedia.org/wiki/KDE_Plasma_5][KDE's plasma desktop environment]], which is the most popular today for Linux. It "borrows" tools from macOS and Windows (macOS' hot corners + Window's start menu, for example). 
+
+My path into Linux precedes my quest into Emacs org-mode by a few good years, and I'm happy it did. I can't imagine emacs in another enviornment, though for some folks, it works well inside macOS (I haven't heard from anyone who actually /likes/ emacs in Windows - they set it up with it because they have to). 
+
+Without getting into the deep technical here just yet, here are some of the features I appriciate about Linux for my productivity environment: 
+
+- Minimal interface with applications that offer as little "fluff" as possible
+- Once you download an app and use it, it's yours:
+  - No forced updates that will break it (macOS Catalina)
+  - No payments and subscriptions (Office 365, Adobe)
+- When you learn and use the command line, the workflow is the same for decades
+- Plays well with other systems, Windows or macOS. Opposite is not as true.
+- Set it and forget it: scripts to automate your workflow will work for years.
+- Cheap: you can afford the best tools and can learn to use them. 
+
+**** Spearhead: Emacs
+
+In the past, I used to consider my non-coding background as a disadvantage when slow sank into Emacs. But code can be learned. Philosophy needs to be discovered. 
+
+Emacs is 
+
+
+ - If Linux is the prodcutivity environemnt, Emacs is the swiss-knife for everything almost done in it. 
+
+ - Org-mode is what pulled me to Emacs, the tip of the spear of Emacs. 
+
+ # **** Footnotes
+*** WIP Of Emacs and Rabbit Holes 
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-08-08
+ :EXPORT_HUGO_PUBLISHDATE: 2020-08-08:
+ :END:
+I [[https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/][mentioned]] a "back to basics series for org-mod, but I got stuck. I thought this would be a good chance to record webcasts, especially for newcomers, but recording videos turned out to be harder than I thought for various reasons. I gave up for now, after almost 10 failed attempts.[fn:55] With this out of the way, I got pulled into another area of interest that seems to be everywhere in org-mode circles these days: Zettelkasten. Something clicked.
+   
+#+hugo: more
+
+**** Zettel... Who? 
+
+Instead of giving you a half-baked explanation, go [[https://en.wikipedia.org/wiki/Zettelkasten][here]]. Read what the original thing is about, and then search online to get an idea of some of the implications, including [[https://github.com/org-roam/org-roam#start-of-content][org-roam]]. Done..? OK. Now I recommend Karl Voit's [[https://karl-voit.at/2020/06/14/Zettelkasten-concerns/][excellent post about the topic]], which I find myself agreeing with. Now you're where I was about a week ago when I did the research. 
+
+**** How to Not Go Back To Basics
+
+One of the products that seem to be everywhere is [[https://github.com/org-roam/org-roam][org-roam]]. Org-roam is based on roam, which is based on a digital implementation of Zettelkasten. It is becoming very popular in the last couple of months, enough for folks to try and embrace Emacs just because of it. Indeed, some of the popular videos out there show how to set up and work with Doom Emacs (Doom Emacs seems to be the shiny new things these days also) set up with this new Zettelkasten method and org-roam. 
+
+Call me an old fart (I find that I refer myself as old fart more and more these days. I think it's starting to grow on me), But I refuse to drink the Koolaid. I've looked into the videos and the images, compared with what I could learn of the original method (which was analog: based on paper index cards) and realized that essentially the entire system is /already/ potentially implemented in org-mode. The quick setups and videos seem to be directed to newcomers who did not org-mode for long and look for a magic bullet for their productivity problems. I know because I used to look for such magic bullets myself, and Emacs org-mode is the last application in a long list of such products. 
+
+So instead of trying to implement org-roam, I decided to take Zettelkasten apart, see what makes it work, and implement it into my existing workflow in org-mode instead.  
+
+****  Emacs org-mode Wiki, ZK Style
+
+After researching Zettelkasten for the last few days, I came up with the following strength in this system: 
+
+1. The original system was implemented on index cards. It forced Luhmann (essentially Zettelkasten's prophet) to keep his notes short. Keeping short notes is good:
+   1. It reinforces bullet points and focus
+   2. It helps to retrieve information: a glimpse instead of pages of text.
+2. Tags were not used (as far as I can tell) needed: too vague[fn:54].
+3. Instead of tags, related ideas (notes) are connected by links
+4. The links are bi-directional: A ► B and A ► B.  
+
+After writing my conclusions down, I had the idea of what I should do about my going back to basics series. 
+
+Instead of recording new videos or writing new posts from my current point of view today, I can go back to [[http://helpdeskheadesk.net/][my old wiki]] from the days when I started my quest. Originally more of a learning experiment with AWS, it contains a few helpful links and tips about learning org-mode Emacs from a point of view of someone who didn't even know what it was. 
+
+With what I learned of Zettelkasten, I hope to re-create it using the already existing text in org-mode. The short entries of the wiki are already constructed in a form of index cards. Now I have the chance to practice organizing knowledge with my existing tools using the few points I learned from my research.
+
+**** Footnotes
+
+[fn:55] It also occurred to me that a talking-head kind of thing (where you see the person's talking to you in the corner with the main content being the big screen) doesn't really feel "me." I've always been more of a writer, and when there's a need for a visual, animated or not, I have the tools for that. I think I'll leave a web series to those who feel more using them.
+
+[fn:54] org-roam does use tags, and org-mode definitely has them. While I believe that as a rule of thumb tags should not be used, they /can/ be helpful if they're specific enough. This can be tricky.
+
 
 
 * About Josh Rollins

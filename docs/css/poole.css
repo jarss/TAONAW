@@ -199,8 +199,8 @@ dd {
 
 figcaption {
     margin-top: -1.5em;
-    font-family: "pt-sans",arial;
-    font-size: .9em;
+    margin-left: .5em;
+    font-size: .8em;
 }
 
 @media (max-width: 800px) {

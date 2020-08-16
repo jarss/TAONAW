@@ -6,10 +6,53 @@
     <description>Recent content on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Of Emacs and Rabbit Holes</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-08-08/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-08-08/</guid>
+      <description>&lt;p&gt;I &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/&#34;&gt;mentioned&lt;/a&gt; a &amp;ldquo;back to basics series for org-mod, but I got stuck. I thought this would be a good chance to record webcasts, especially for newcomers, but recording videos turned out to be harder than I thought for various reasons. I gave up for now, after almost 10 failed attempts.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; With this out of the way, I got pulled into another area of interest that seems to be everywhere in org-mode circles these days: Zettelkasten. Something clicked.&lt;/p&gt;
+&lt;h2 id=&#34;zettel-dot-dot-dot-who&#34;&gt;Zettel&amp;hellip; Who?&lt;/h2&gt;
+&lt;p&gt;Instead of giving you a half-baked explanation, go &lt;a href=&#34;https://en.wikipedia.org/wiki/Zettelkasten&#34;&gt;here&lt;/a&gt;. Read what the original thing is about, and then search online to get an idea of some of the implications, including &lt;a href=&#34;https://github.com/org-roam/org-roam#start-of-content&#34;&gt;org-roam&lt;/a&gt;. Done..? OK. Now I recommend Karl Voit&amp;rsquo;s &lt;a href=&#34;https://karl-voit.at/2020/06/14/Zettelkasten-concerns/&#34;&gt;excellent post about the topic&lt;/a&gt;, which I find myself agreeing with. Now you&amp;rsquo;re where I was about a week ago when I did the research.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-not-go-back-to-basics&#34;&gt;How to Not Go Back To Basics&lt;/h2&gt;
+&lt;p&gt;One of the products that seem to be everywhere is &lt;a href=&#34;https://github.com/org-roam/org-roam&#34;&gt;org-roam&lt;/a&gt;. Org-roam is based on roam, which is based on a digital implementation of Zettelkasten. It is becoming very popular in the last couple of months, enough for folks to try and embrace Emacs just because of it. Indeed, some of the popular videos out there show how to set up and work with Doom Emacs (Doom Emacs seems to be the shiny new things these days also) set up with this new Zettelkasten method and org-roam.&lt;/p&gt;
+&lt;p&gt;Call me an old fart (I find that I refer myself as old fart more and more these days. I think it&amp;rsquo;s starting to grow on me), But I refuse to drink the Koolaid. I&amp;rsquo;ve looked into the videos and the images, compared with what I could learn of the original method (which was analog: based on paper index cards) and realized that essentially the entire system is &lt;em&gt;already&lt;/em&gt; potentially implemented in org-mode. The quick setups and videos seem to be directed to newcomers who did not org-mode for long and look for a magic bullet for their productivity problems. I know because I used to look for such magic bullets myself, and Emacs org-mode is the last application in a long list of such products.&lt;/p&gt;
+&lt;p&gt;So instead of trying to implement org-roam, I decided to take Zettelkasten apart, see what makes it work, and implement it into my existing workflow in org-mode instead.&lt;/p&gt;
+&lt;h2 id=&#34;emacs-org-mode-wiki-zk-style&#34;&gt;Emacs org-mode Wiki, ZK Style&lt;/h2&gt;
+&lt;p&gt;After researching Zettelkasten for the last few days, I came up with the following strength in this system:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The original system was implemented on index cards. It forced Luhmann (essentially Zettelkasten&amp;rsquo;s prophet) to keep his notes short. Keeping short notes is good:
+&lt;ol&gt;
+&lt;li&gt;It reinforces bullet points and focus&lt;/li&gt;
+&lt;li&gt;It helps to retrieve information: a glimpse instead of pages of text.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Tags were not used (as far as I can tell) needed: too vague&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;Instead of tags, related ideas (notes) are connected by links&lt;/li&gt;
+&lt;li&gt;The links are bi-directional: A ► B and A ► B.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After writing my conclusions down, I had the idea of what I should do about my going back to basics series.&lt;/p&gt;
+&lt;p&gt;Instead of recording new videos or writing new posts from my current point of view today, I can go back to &lt;a href=&#34;http://helpdeskheadesk.net/&#34;&gt;my old wiki&lt;/a&gt; from the days when I started my quest. Originally more of a learning experiment with AWS, it contains a few helpful links and tips about learning org-mode Emacs from a point of view of someone who didn&amp;rsquo;t even know what it was.&lt;/p&gt;
+&lt;p&gt;With what I learned of Zettelkasten, I hope to re-create it using the already existing text in org-mode. The short entries of the wiki are already constructed in a form of index cards. Now I have the chance to practice organizing knowledge with my existing tools using the few points I learned from my research.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;It also occurred to me that a talking-head kind of thing (where you see the person&amp;rsquo;s talking to you in the corner with the main content being the big screen) doesn&amp;rsquo;t really feel &amp;ldquo;me.&amp;rdquo; I&amp;rsquo;ve always been more of a writer, and when there&amp;rsquo;s a need for a visual, animated or not, I have the tools for that. I think I&amp;rsquo;ll leave a web series to those who feel more using them. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;org-roam does use tags, and org-mode definitely has them. While I believe that as a rule of thumb tags should not be used, they &lt;em&gt;can&lt;/em&gt; be helpful if they&amp;rsquo;re specific enough. This can be tricky. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
+    </item>
     
     <item>
       <title>Full content in RSS feeds</title>

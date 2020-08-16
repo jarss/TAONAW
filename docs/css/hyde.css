@@ -60,6 +60,15 @@ html {
 
 }
 
+.sidebar-icons li {
+    padding: .5em;
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
  img {
       border-style: solid;
       border-width: .15em;
