@@ -3,18 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
+    <lastmod>2020-08-16T14:06:39-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2020-08-16T07:12:39-04:00</lastmod>
+    <lastmod>2020-08-26T06:00:15-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-08-08/</loc>
-    <lastmod>2020-08-16T07:12:39-04:00</lastmod>
+    <lastmod>2020-08-16T14:06:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
+    <lastmod>2020-08-16T14:06:39-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/</loc>
+    <lastmod>2020-08-26T06:00:15-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2020-08-16T07:12:39-04:00</lastmod>
+    <lastmod>2020-08-26T06:00:15-04:00</lastmod>
   </url>
   
   <url>
@@ -28,6 +43,16 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-07-23/</loc>
+    <lastmod>2020-08-26T06:00:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/self/</loc>
+    <lastmod>2020-08-26T06:00:15-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-07-22/</loc>
     <lastmod>2020-07-22T09:35:26-04:00</lastmod>
   </url>
@@ -38,17 +63,7 @@
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2020-07-22T09:35:26-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/</loc>
-    <lastmod>2020-07-19T08:54:07-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
     <lastmod>2020-07-19T08:54:07-04:00</lastmod>
   </url>
   
@@ -75,11 +90,6 @@
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/20200622/</loc>
     <lastmod>2020-07-18T13:26:46-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/emacs/</loc>
-    <lastmod>2020-07-17T22:45:01-04:00</lastmod>
   </url>
   
   <url>

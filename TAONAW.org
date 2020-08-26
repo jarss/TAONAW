@@ -2641,7 +2641,6 @@ You could argue it's all a matter of taste, and I'd say sure, everything is. I f
 [fn:38]: Technically, IRC, ssh and ftp are procols, not software; but the idea I'm driving at is age, stability and usage. ffmpeg is a collection of software and Emacs /is/ a software (in a way, perhaps a collection of packages in itself as well), and the same point can be applied to both of these as well. 
 
 
-
 *** PUBLISHED D.D.T.C Day 55                                           :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -3124,52 +3123,53 @@ Hugo [[https://gohugo.io/templates/rss/#the-embedded-rss-xml][comes with a defau
 To allow full posts on the RSS feed (default is only the summaries, the bits you see on the main blog page), change the "Summary" default to "Content" toward the end, in this line: ~<description>{{ .Summary | html }}</description>~. This is a nice tip I discovered at [[https://www.godo.dev/tutorials/hugo-full-text-rss/][GODO.DEV]]. 
 
 +Next, need to add RSS link at the sidebar for anyone else interested and doesn't know about the blog's RSS.+ This is now done, though rather ugly. Some CSS work and possibly include other links as well.
-*** TODO Keeping a healthy routine during COVID19                      :self:
+*** WIP Keeping a healthy routine during COVID19                       :self:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-07-23
  :EXPORT_HUGO_PUBLISHDATE: 2020-07-23:
  :END:
 
-It's been four months since COVID-19 started for me. I've been working from home, which means far less exercise than usual, especially with gyms closed in the city. Thankfully, I have a system that helps me to keep soemwhat active, and today I want to share it with you.  
+It's been four months since COVID-19 started for me. I've been working from home, which means far less exercise than usual, especially with gyms closed in the city. Thankfully, I have a system that helps me to keep somewhat active, and today I want to share it with you.  
 
  #+hugo: more
 
-Nothing I'm going to tell you here is going to be ground breaking. I'm pretty sure I picked up bits and pieces of ideas I've heard in various places and glued them together to something that makes sense to me. Still, or perhaps because of that, it's pretty effective without being too obnoxious. 
+Nothing I'm going to tell you here is going to be groundbreaking. I'm pretty sure I picked up bits and pieces of ideas I've heard in various places and glued them together to something that makes sense to me. Still, or perhaps because of that, it's pretty effective without being too obnoxious. 
 
 **** The Elements
 
-At some point in my life, I started basing what I consider to be healthy or wholesome living with the "elements". Those are Sleep, Exercise, Nutrion, and Meditation. I believe that if I do these four right, I can remain mostly healthy mentally and physically. Over time I developed exercises and routines for each one. 
+At some point in my life, I started basing what I consider to be healthy or wholesome living with the "elements". Those are Sleep, Exercise, Nutrition, and Meditation. I believe that if I practice these four disciplines I can remain mostly healthy: mentally and physically.  
 
-For sleep, the goal for me is 6.5 hours a night. I often sleep less (my avrage is around 5.5) and I try to make it up with a nap (20 minutes or so) when possible, usually in the afternoons. This doesn't always work, and there's no such thing as making up for lost sleep, but when I do take one of those powernaps I usually have energy for round two of productivity. 
+For sleep, my goal is 6.5 hours a night. I often sleep less (my average is about 5.5 hours) so I try to make it up with a nap (20 minutes or so) when possible, usually in the afternoons. This doesn't always work, but when I take one of these power-naps I'm usually able to be healthy afterward.
 
-Exercise is the most complex, but the invidual exercises are simple. Running/jogging is probably the main one, followed by other classic ones like push-ups and crunches. As I got older, I made sure to add stretches and/or yoga poses into the mix. This sounds a lot, but in reality it isn't. It's really a mixed bag of things that keep me moving. I would proabably be more affective if I was to follow a specific list of exercises, and I'm working on that. Routine is the single most important things here.  
+"Exercise" is an umbrella term for several exercise routines I picked up with the years. The idea, especially during COVID, is to keep things simple. I try to jog around a nearby playground at least once a week (goal is twice), will keeping push-ups, crunches, squats, dips, etc. at home in periods of 10-15 minutes. I try to  include stretches and/or yoga poses as well. This sounds like a lot, but I just do a few of these each time. Keeping up a routine is the single most important thing here.  
 
-For food, the rule of thumb is to keep it as simple as possible. If a food item has ingridients I don't understand or can't pronounce, I try to stay away from it. Of course, everything today has preservents and sugar (it's crazy how there's sugar in almost everything!), but I try my best. For example, I'd go to Subway to get a grilled chicken sandwhich where I choose what to put into it than a "signature sandwich" somewhere. I choose fresh vegtible where possible over anything that was frozen, proccessed, etc. These days I work in a large medical facility, which makes eating healtheir easier. Water is my main drink of choice, seconded only by coffee (I have 2 cups a day, 3 at most). 
+As for food, I keep things as simple as possible. If a food item has ingredients I don't understand or can't pronounce, I try to stay away from it. Everything today has preservative, stabilizers, acids, and of course, sugar (it's crazy how there's sugar in almost everything!) but I try my best. For example, I choose fresh vegetables where possible over anything frozen, processed, etc. I work in a large medical facility, which makes eating healthier somewhat easier. Water is my main drink of choice, seconded only by coffee and tea. 
 
-The most elusive element in the list is meditation. I often struggle to remember or slow down and simply sit down and breath. I have a very specific breath tecnique involving counting which helps. Usually 2 minutes of that help a whole lot and I can tell the difference; these days I'm pushing for 5 minute sagments. 
+The most elusive element in the list is meditation. I often struggle to remember to slow down and just breathe. I have a very specific breath technique involving counting which helps. I'm pushing to keep a routine of 5 minutes a day. 
 
-**** Score System
+**** My Scoring System
 
-The score system is what makes everything moving during COVID-19. It's what keeps me motivated and allows me to impove. Here is how it works: 
+The scoring system is what makes everything move during COVID-19. It's what keeps me motivated and allows me to improve. Here is how it works: 
 
-Every morning I get up and the first thing I do is go (as the coffee is brewing) is to go to my journal and write about yesterday's elements. One short paragraph for each. I reflect on what I did, and I give myself a score. For example, if I do my pushups, I get 1 point. If I eat home-made salad, that's also a 1. But if I decided to party and have pizza with beer that day, I'd give myself a -1. Then I add them all up and see. Some things give me more points; for example, running which is very challanging (especially in this heat) is worth 3 points. Each exercise individually though is half a point. The system is dynamic and I change it according to what I need to improve on. For example, if going to bed at the right time has been working out for a couple of weeks, it's time to move on and not give myself a point for it, and try to focous on sleeping more or taking my naps which will give me that point going forward.  
+Every morning I get up, the first thing I do is to make fresh coffee. Then, as its brewing, I go to my journal and write about yesterday's elements. I reflect on what was done and give myself a score. For example, if I do my push-ups, I get 1 point. If I eat home-made salad, that's also a 1. But if I decided to party and have pizza with beer that day, I'd give myself a -1. Some things give more points: running is challenging (especially in this heat) so it's worth 3 points, while each set of push-ups is half a point. The system is dynamic and I change it according to what I need to work on. For example, if going to bed at the right time has been working out for a couple of weeks, it's time to move on and get points for, say, taking these power-naps I mentioned above.  
 
-Right now, an OK day is 3 points, a good day is 4, an excellent is 5, and a burnout (bad) is 6. I try to not go too crazy, becayse too much means the next day or the day after that I will not have the motivation to do as much. Aiming at the same rate of 3 or 4 points every day is the main goal for now as a healthy routine, which is the primary goal. 
+Right now, an OK day is 3 points, a good day is 4, an excellent is 5. I try to not go too crazy because too much means the next day or the day after that I will not have the motivation to do much. Aiming at the same rate of 3 or 4 points every day is the main goal for now as a healthy routine. 
 
 **** The Fitbit advantage 
 
-I'm not getting any money for saying this. One of the things that really help me keep track of my sleeping habits and exercise has been my fitbit which I actually haven't used a whole lot before COVID-19. When I went to the gym, I'd let it detect exercises automatically and never bothered with it too much. Now though, where an apportunity for an exercise means skipping the elevator and taking ths stairs, it's really helpful to see when I was active and for how long. 
+My Fitbit Ionic has never been more useful to me. When I went to the gym before COVID, I'd let it detect exercises automatically and never bothered with it too much. Now though, where an opportunity for an exercise means skipping the elevator and taking the stairs, it's really helpful to see when I was active and for how long. 
 
-My Fitbit Ionic is also great at detecting when I fall asleep, and I find that it's accurate withing 5-10 minutes range at most. This helps me see how long I slept and if I should think of napping or not. There are planty of similar devices on the market, including Apple's iWatch and Android Wear made by different companies. I think it really comes in handy if you're like me and you need to be dynamic but still have a routine. 
+The Ionic is also pretty good at detecting when I fall asleep and for how long. I find that it's accurate within 5-10 minutes. It's useful if you're like me and you need to be dynamic but still have a routine. 
 
 **** The only point is to get better
 
-When I started picking up on running again I was miles (literally) behind what I used to be able to do in the past. I couldn't even finish a single mile, I was constantly out of breath, and I was very discouraged. The score system helps, but only if you use it to reinforce the main goal: to get better. 
+When I started picking up on running again I was way behind what I used to be able to do in the past. I couldn't even finish a single mile, I was constantly out of breath, and I was very discouraged. The scoring system helps, but only if you use it to reinforce the main goal: to get better. 
 
-If all you can do is 10 pushups, then you start there. Any good coach on earth would tell you there. 10 pushups a day this week means 12 pushups next week. And if you can't do pushups at all and have to use your knees, do that, and your goal would be to get to pushups.
+If all you can do is 10 push-ups, then start there. Any good coach on earth would tell you the same. 10 push-ups a day this week means 12 push-ups next week. Whatever you do, is better than doing nothing. That little you do will slowly build up and develop your routine. 
 
-At any given point, your goal is the horizon: It's just as hard to go from 10 pushups to 50 as it is from 200 to 500. That's because it's all relative to what you can do. Score yourself honestly and you'll make progress. Always keep going, and when you look back you'll be amazed at what you've done. Just keep doing it, and build your routine. 
+It's just as hard to go from 10 push-ups to 50 as it is from 200 to 500. That's because it's all relative to what you can do. If I score my results honestly, I see I'm making progress. 
+
 *** TODO Back to basics 2: 
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -3221,11 +3221,11 @@ Emacs is
  - Org-mode is what pulled me to Emacs, the tip of the spear of Emacs. 
 
  # **** Footnotes
-*** WIP Of Emacs and Rabbit Holes 
+*** PUBLISHED Of Emacs and Rabbit Holes                       :orgmode:emacs:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-08-08
- :EXPORT_HUGO_PUBLISHDATE: 2020-08-08:
+ :EXPORT_HUGO_PUBLISHDATE: 2020-08-16:
  :END:
 I [[https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/][mentioned]] a "back to basics series for org-mod, but I got stuck. I thought this would be a good chance to record webcasts, especially for newcomers, but recording videos turned out to be harder than I thought for various reasons. I gave up for now, after almost 10 failed attempts.[fn:55] With this out of the way, I got pulled into another area of interest that seems to be everywhere in org-mode circles these days: Zettelkasten. Something clicked.
    
@@ -3243,7 +3243,7 @@ Call me an old fart (I find that I refer myself as old fart more and more these 
 
 So instead of trying to implement org-roam, I decided to take Zettelkasten apart, see what makes it work, and implement it into my existing workflow in org-mode instead.  
 
-****  Emacs org-mode Wiki, ZK Style
+**** Emacs org-mode Wiki, ZK Style
 
 After researching Zettelkasten for the last few days, I came up with the following strength in this system: 
 

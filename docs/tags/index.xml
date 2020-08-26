@@ -6,10 +6,37 @@
     <description>Recent content in Tags on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>emacs</title>
+      <link>https://joshrollinswrites.com/tags/emacs/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orgmode</title>
+      <link>https://joshrollinswrites.com/tags/orgmode/</link>
+      <pubDate>Sun, 16 Aug 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self</title>
+      <link>https://joshrollinswrites.com/tags/self/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/tags/self/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>hugo</title>
@@ -17,15 +44,6 @@
       <pubDate>Wed, 22 Jul 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>orgmode</title>
-      <link>https://joshrollinswrites.com/tags/orgmode/</link>
-      <pubDate>Sun, 19 Jul 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/orgmode/</guid>
       <description></description>
     </item>
     
@@ -53,15 +71,6 @@
       <pubDate>Sun, 28 Jun 2020 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/tags/life/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>emacs</title>
-      <link>https://joshrollinswrites.com/tags/emacs/</link>
-      <pubDate>Thu, 18 Jun 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://joshrollinswrites.com/tags/emacs/</guid>
       <description></description>
     </item>
     
