@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "Help Desk Head Desk",
+    "name" : "Mounting an SMB Share on Linux",
+    "headline" : "Mounting an SMB Share on Linux",
+    "description" : "\x3cp\x3eMounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.\x3c\/p\x3e\n\x3cp\x3eThis guide assumes that you have two machines, Windows and Linux, on the same network and same subnet. It also assumes you\x26rsquo;ve already shared the SMB folder with the right security properties: if you need help with this, \x3ca href=\x22https:\/\/support.microsoft.com\/en-us\/help\/4092694\/windows-10-file-sharing-over-a-network\x22\x3elook here\x3c\/a\x3e for starters or find other helpful articles like \x3ca href=\x22https:\/\/www.techbout.com\/share-files-folders-windows-10-44386\/\x22\x3ethis one\x3c\/a\x3e.\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-05-18 00:00:00 -0400 EDT",
+    "dateModified" : "2020-05-18 00:00:00 -0400 EDT",
+    "url" : "https:\/\/joshrollinswrites.com\/help-desk-head-desk\/20200518\/",
+    "wordCount" : "1173",
+    "keywords" : [ "linux","automation","Blog" ]
+}
+</script>
+
+  
+  <title>Mounting an SMB Share on Linux &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Oswald|Merriweather|PT+Sans:400,400i,700">
+
+
+
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Frequent</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(19)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(11)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(9)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(9)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(8)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/tools"> tools <small>(7)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h4><a href="https://joshrollinswrites.com/tags/">All Topics ►</a></h4>
+        
+      </ul>
+      <ul class="sidebar-nav">
+	  <h3>About </h3>
+	    <li>
+	      <a href="https://joshrollinswrites.com//about">Josh Rollins</a>
+	    </li>
+	    <li>
+	      <a href="https://joshrollinswrites.com//taonaw">TAONAW</a>
+	    </li>
+      </ul>
+      <ul class="sidebar-icons">
+	<li>
+	  <a href="http://joshrollinswrites.com/index.xml"><i class="fa fa-rss-square fa-lg" aria-hidden="true"></i></a>
+	</li>
+	<li>
+	  <a href="https://mastodon.technology/@jrss"><i class="fab fa-mastodon fa-lg"></i></a>
+	</li>
+	<li>
+	  <a href="https://www.reddit.com/user/JR121"><i class="fab fa-reddit-alien fa-lg"></i></a>
+	</li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>Mounting an SMB Share on Linux</h1>
+ <time datetime=2020-05-18T00:00:00-0400 class="post-date">2020-05-18 
+
+
+
+    
+    / <a href="https://joshrollinswrites.com/tags/linux/"> linux</a>
+    / <a href="https://joshrollinswrites.com/tags/automation/"> automation</a>
+</time>
+ <p>Mounting SMB shares to Linux machines (or VMs) is an important skill for anyone using Linux. It can be quite confusing, especially for newcomers.</p>
+<p>This guide assumes that you have two machines, Windows and Linux, on the same network and same subnet. It also assumes you&rsquo;ve already shared the SMB folder with the right security properties: if you need help with this, <a href="https://support.microsoft.com/en-us/help/4092694/windows-10-file-sharing-over-a-network">look here</a> for starters or find other helpful articles like <a href="https://www.techbout.com/share-files-folders-windows-10-44386/">this one</a>.</p>
+<p>Let me start by throwing the <em>mount</em> command at you and then explain what it does. Here it is:</p>
+<pre><code class="language-nil" data-lang="nil">sudo mount -t cifs -o user=[your Windows user] //[path/to/smb/mountpoint/
+</code></pre><ol>
+<li>We start with <code>sudo</code> because mounting requires root permissions.</li>
+<li><code>Mount</code> is the command to mount a drive.</li>
+<li><code>-t</code> to tell mount that next we&rsquo;re specifying a <em>type</em> of filesystem.</li>
+<li><code>cifs</code> is our filesystem<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
+<li><code>-o</code> to tell mount that next we&rsquo;re specifying an <em>option</em>.</li>
+<li><code>user</code> is our option, the user is our Windows system user</li>
+<li>next we specify the smb host and the path to the folder</li>
+<li>last, the mounting point, the folder on Linux where we&rsquo;ll be viewing the files.</li>
+</ol>
+<p>Here&rsquo;s an example:</p>
+<pre><code class="language-nil" data-lang="nil">sudo mount -t cifs -o user=seriousam //192.169.1.12 /media/sserious/space
+</code></pre><p>Notice the two things highlighted above: the Windows user (seriousam in our case), which we can find out simply by going to <code>C:\User</code> in Windows, and the host, which is identified by its private IP address. Depending on how you have your Linux machine set up, I find that it&rsquo;s safer to use an IP address (and use your router&rsquo;s DHCP settings to always give your machines the same IP address so it doesn&rsquo;t change) than the using the machine&rsquo;s host name.</p>
+<p>Mounting this way comes with two annoyances. First, because you have to mount as root (using sudo), only root will have read/write permissions to the folder. You won&rsquo;t be able to download files and save them to the SMB folder without sudo-ing, for example. Second, you will have to mount the share each time you log in and enter the password for your Windows user (the mount command has an &ldquo;password&rdquo; option, so you could type it as part of the mount syntax if you&rsquo;d like).</p>
+<p>The better and more acceptable solution is to mount your SMBs in your <a href="https://en.wikipedia.org/wiki/Fstab">fstab</a>. This is where Linux goes to find out what hard drives and partitions you got going among other things (like SMBs) and how to mount them. It might look scary, and for a good reason: mess up your main filesystem SSD, and Linux won&rsquo;t know where to boot from<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p>To edit fstab you&rsquo;ll need sudo like all things that are system-wide and are not in your user folder: <code>emacs /etc/fstab</code><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> (or use nano, or VIM, or what have you).</p>
+<p>fstab starts with a nice commentary about how to get your UUIDs, which is very important if you&rsquo;re trying to mount a physical disk. the first line of code specifies your main Linux file system&rsquo;s UUID and then under it most likely your swap partition. Remember I told you how you can fail to boot if you mess with your fstab? Stay away from these lines.</p>
+<p>Start a new line under the last with a comment that will help you figure out what you were doing in the future, and then specify the following:</p>
+<pre><code class="language-nil" data-lang="nil">//[host ip address/share-folder] [/path/to/mount/point] cifs credentials=/home/sserious/.smbcredentials,uid=1000,gid=1000 0 2
+</code></pre><p>OK. This looks a bit like the mount command, but what&rsquo;s with all the extra stuff?</p>
+<ol>
+<li><code>//host ip address/share-folder</code> this we already know.</li>
+<li><code>/path/to/mount/point</code> this we also already know.</li>
+<li><code>cifs</code> the filesystem. Notice how we don&rsquo;t specify a <code>-t</code> for type here, because this part belongs to the mount command which is different than fstab. Take a look (don&rsquo;t touch!) at the Linux disks about: probably ext4 and swap, which might look familiar back from when you installed Linux and defined your partitions.</li>
+<li><code>credentials=/home/sserious/.smbcredentials</code> uh oh. What&rsquo;s this? fstab needs credentials to mount the share, this we know from the mount command. Since we want fstab to have everything it needs and won&rsquo;t stop us during boot about some lack of access to SMB, we want to automate this process. In this particular case, the credentials are written in a file, .smbcredentials<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. I will specify what goes in it below.</li>
+<li><code>uid=1000,gid=1000</code> Remember how we had the problem that the SMB share was mounted by root, which meant no other users can save unto it? This line sets permissions to your &ldquo;regular&rdquo; user which most likely has user id of 1000 and group id of 1000. Run <code>id -u</code> to get your user id and <code>id -g</code> to get your group id.</li>
+<li><code>0 2</code> I&rsquo;m still not 100% clear on these. The first number, which can be 0 or 1, is for dump, the second is for fsck, which can be set to 0, 1, or 2. Dump is a way Linux backs up file, or used to back up files. It is not really used anymore (you&rsquo;ll noticed your main filesystem has a 0 as well) and fsck is the order which Linux will check the disks. Your filesystem has to be 1 (and it is by default) and everything else can be 2. We actually don&rsquo;t really need it for SMB because the disk is located somewhere else, it&rsquo;s a matter of logging in, not checking the files, so we could put 0 there also so it won&rsquo;t be checked at all.</li>
+</ol>
+<p>The .smbcredentials from step 4 looks like this:</p>
+<pre><code class="language-nil" data-lang="nil">username=seriousam
+password=password123
+domain=.
+</code></pre><p>That&rsquo;s it. You now have all you need to mount the SMB share. Make sure you save fstab, restart, and see if you have access to your SMB.</p>
+<h2 id="footnotes">Footnotes</h2>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The simple and short explanation is that CIFS is basically SMB. But this is not exactly true. <a href="https://en.wikipedia.org/wiki/Server%5FMessage%5FBlock#SMB%5F/%5FCIFS%5F/%5FSMB1">CIFS is a blend of SMB</a>. SMB improved with the years, and today we&rsquo;re beyond SMB 3.0 which is developed by Microsoft for Windows, while Linux keeps CIFS which was <em>also</em> improved with the years and the kernel, so it is, in a way, a blend of modern SMB of its own and not the original CIFS from the 80s. Confused? Me too. I&rsquo;m sure someone who knows more about this could comment and explain. For now, for practicality&rsquo;s sake, we can pretend SMB = CIFS. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>The solution to this, by the way, is to boot up with a live-USB just like you do when you first install Linux, mount the hard drive of the Linux partition you messed up, find the fstab, and fix it &ndash; not that I know anything about messing it up! No sir&hellip; <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Didn&rsquo;t I just say we need sudo? Why yes. In Emacs you do that by using <a href="https://www.gnu.org/software/tramp/#Using-su%5F002c-sudo-and-sg">TRAMP</a>. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user name and password to log into Linux, you&rsquo;re f-ed anyway. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

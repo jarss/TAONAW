@@ -1769,13 +1769,13 @@ To be honest, I wouldn't recommend org-mode to journaling newbies or for those u
 
 For me, a person who uses org-mode on a day-to-day basis to keep track of tasks and writing this blog, this is a no-brainer. It looks fantastic and functions even better.  
 
-**** Footnotes
-
 [fn:1] Today I cringe at the thought that my most personal notes are buried somewhere deep in a company's server. Back then, I didn't know better.
 
 [fn:2] Many writing applications come with spell-checking options which can be highly distracting. This is a habit that I believe started with Word's red zigzag. It forces you to stop your train of thought and focus on the mistakes highlighted in angry red. Emacs doesn't have this problem. Spell-checking takes place only after I highlight a segment of my text and ask for to spellcheck. Having spellchecking separate from the writing process is important! I didn't realize how disturbing this can be before transitioning to org-mode.
 
 [fn:3] These being mostly lack of sleep, insomnia of some sort.
+
+**** Footnotes
 
 *** PUBLISHED Scripting in Bash 102				 :automation:
 :PROPERTIES:
@@ -2640,6 +2640,7 @@ You could argue it's all a matter of taste, and I'd say sure, everything is. I f
 
 [fn:38]: Technically, IRC, ssh and ftp are procols, not software; but the idea I'm driving at is age, stability and usage. ffmpeg is a collection of software and Emacs /is/ a software (in a way, perhaps a collection of packages in itself as well), and the same point can be applied to both of these as well. 
 
+
 *** PUBLISHED D.D.T.C Day 55                                           :life:
 :PROPERTIES:
     :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -3122,52 +3123,52 @@ Hugo [[https://gohugo.io/templates/rss/#the-embedded-rss-xml][comes with a defau
 To allow full posts on the RSS feed (default is only the summaries, the bits you see on the main blog page), change the "Summary" default to "Content" toward the end, in this line: ~<description>{{ .Summary | html }}</description>~. This is a nice tip I discovered at [[https://www.godo.dev/tutorials/hugo-full-text-rss/][GODO.DEV]]. 
 
 +Next, need to add RSS link at the sidebar for anyone else interested and doesn't know about the blog's RSS.+ This is now done, though rather ugly. Some CSS work and possibly include other links as well.
-*** PUBLISHED Keeping a healthy routine during COVID19		       :self:
+*** TODO Keeping a healthy routine during COVID19                      :self:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-07-23
  :EXPORT_HUGO_PUBLISHDATE: 2020-07-23:
  :END:
 
-It's been four months since COVID-19 started for me. I've been working from home, which means far less exercise than usual, especially with gyms closed in the city. Thankfully, I have a system that helps me to keep somewhat active, and today I want to share it with you.  
+It's been four months since COVID-19 started for me. I've been working from home, which means far less exercise than usual, especially with gyms closed in the city. Thankfully, I have a system that helps me to keep soemwhat active, and today I want to share it with you.  
 
  #+hugo: more
 
-Nothing I'm going to tell you here is going to be groundbreaking. I'm pretty sure I picked up bits and pieces of ideas I've heard in various places and glued them together to something that makes sense to me. Still, or perhaps because of that, it's pretty effective without being too obnoxious. 
+Nothing I'm going to tell you here is going to be ground breaking. I'm pretty sure I picked up bits and pieces of ideas I've heard in various places and glued them together to something that makes sense to me. Still, or perhaps because of that, it's pretty effective without being too obnoxious. 
 
 **** The Elements
 
-At some point in my life, I started basing what I consider to be healthy or wholesome living with the "elements". Those are Sleep, Exercise, Nutrition, and Meditation. I believe that if I practice these four disciplines I can remain mostly healthy: mentally and physically.  
+At some point in my life, I started basing what I consider to be healthy or wholesome living with the "elements". Those are Sleep, Exercise, Nutrion, and Meditation. I believe that if I practice these four diciplines I can remain mostly healthy: mentally and physically.  
 
-For sleep, my goal is 6.5 hours a night. I often sleep less (my average is about 5.5 hours) so I try to make it up with a nap (20 minutes or so) when possible, usually in the afternoons. This doesn't always work, but when I take one of these power-naps I'm usually able to be healthy afterward.
+For sleep, my goal is 6.5 hours a night. I often sleep less (my avrage is about 5.5 hours) so I try to make it up with a nap (20 minutes or so) when possible, usually in the afternoons. This doesn't always work, but when I take one of these powernaps I'm usually able to be healthy afterwards.
 
-"Exercise" is an umbrella term for several exercise routines I picked up with the years. The idea, especially during COVID, is to keep things simple. I try to jog around a nearby playground at least once a week (goal is twice), will keeping push-ups, crunches, squats, dips, etc. at home in periods of 10-15 minutes. I try to  include stretches and/or yoga poses as well. This sounds like a lot, but I just do a few of these each time. Keeping up a routine is the single most important thing here.  
+"Exercise" is an umbrella-term for several exercise routines I picked up with the years. The idea, especially during COVID, is to keep things simple. I try to jog around a nearby playground at least once a week (goal is twice), will keeping pushups, crunches, squats, dips etc. at home in periods of 10-15 minutes. I try to  include tretches and/or yoga poses as well. This sounds like a lot, but I just do a few of these each time. Keeping up a routine is the single most important things here.  
 
-As for food, I keep things as simple as possible. If a food item has ingredients I don't understand or can't pronounce, I try to stay away from it. Everything today has preservative, stabilizers, acids, and of course, sugar (it's crazy how there's sugar in almost everything!) but I try my best. For example, I choose fresh vegetables where possible over anything frozen, processed, etc. I work in a large medical facility, which makes eating healthier somewhat easier. Water is my main drink of choice, seconded only by coffee and tea. 
+As for food, I keep things as simple as possible. If a food item has ingridients I don't understand or can't pronounce, I try to stay away from it. Of course, everything today has preservents, stabiolizers, acids, and of course, sugar (it's crazy how there's sugar in almost everything!) but I try my best. For example, I choose fresh vegtible where possible over anything that was frozen, proccessed, etc. I work in a large medical facility, which makes eating healtheir somewhat easier. Water is my main drink of choice, seconded only by coffee and tea. 
 
-The most elusive element in the list is meditation. I often struggle to remember to slow down and just breathe. I have a very specific breath technique involving counting which helps. I'm pushing to keep a routine of 5 minutes a day. 
+The most elusive element in the list is meditation. I often struggle to remember to slow down and just breath. I have a very specific breath tecnique involving counting which helps. I'm pushing to keep a routine of 5 minute a day. 
 
-**** My Scoring System
+**** Score System
 
-The scoring system is what makes everything move during COVID-19. It's what keeps me motivated and allows me to improve. Here is how it works: 
+The score system is what makes everything move during COVID-19. It's what keeps me motivated and allows me to impove. Here is how it works: 
 
-Every morning I get up, the first thing I do is to make fresh coffee. Then, as its brewing, I go to my journal and write about yesterday's elements. I reflect on what was done and give myself a score. For example, if I do my push-ups, I get 1 point. If I eat home-made salad, that's also a 1. But if I decided to party and have pizza with beer that day, I'd give myself a -1. Some things give more points: running is challenging (especially in this heat) so it's worth 3 points, while each set of push-ups is half a point. The system is dynamic and I change it according to what I need to work on. For example, if going to bed at the right time has been working out for a couple of weeks, it's time to move on and get points for, say, taking these power-naps I mentioned above.  
+Every morning I get up, the first thing I do is to make fresh coffee. Then, as its brewing, I go to my journal and write about yesterday's elements. I reflect on what was done and give myself a score. For example, if I do my pushups, I get 1 point. If I eat home-made salad, that's also a 1. But if I decided to party and have pizza with beer that day, I'd give myself a -1. Some things give more points: running is challanging (especially in this heat) so it's worth 3 points, while each set of pushups is half a point. The system is dynamic and I change it according to what I need to work on. For example, if going to bed at the right time has been working out for a couple of weeks, it's time to move on and get points for, say, taking these powernaps I mentioned above.  
 
-Right now, an OK day is 3 points, a good day is 4, an excellent is 5. I try to not go too crazy because too much means the next day or the day after that I will not have the motivation to do much. Aiming at the same rate of 3 or 4 points every day is the main goal for now as a healthy routine. 
+Right now, an OK day is 3 points, a good day is 4, an excellent is 5. I try to not go too crazy, because too much means the next day or the day after that I will not have the motivation to do much. Aiming at the same rate of 3 or 4 points every day is the main goal for now as a healthy routine. 
 
 **** The Fitbit advantage 
 
-My Fitbit Ionic has never been more useful to me. When I went to the gym before COVID, I'd let it detect exercises automatically and never bothered with it too much. Now though, where an opportunity for an exercise means skipping the elevator and taking the stairs, it's really helpful to see when I was active and for how long. 
+My Fitbit Ionic has never been more useful to me. When I went to the gym before COVID, I'd let it detect exercises automatically and never bothered with it too much. Now though, where an apportunity for an exercise means skipping the elevator and taking ths stairs, it's really helpful to see when I was active and for how long. 
 
-The Ionic is also pretty good at detecting when I fall asleep and for how long. I find that it's accurate within 5-10 minutes. It's useful if you're like me and you need to be dynamic but still have a routine. 
+The Ionic is also pretty good at detecting when I fall asleep and for how long. I find that it's accurate within 5-10 minutes. I think it really comes in handy if you're like me and you need to be dynamic but still have a routine. 
 
 **** The only point is to get better
 
-When I started picking up on running again I was way behind what I used to be able to do in the past. I couldn't even finish a single mile, I was constantly out of breath, and I was very discouraged. The scoring system helps, but only if you use it to reinforce the main goal: to get better. 
+When I started picking up on running again I was way behind what I used to be able to do in the past. I couldn't even finish a single mile, I was constantly out of breath, and I was very discouraged. The score system helps, but only if you use it to reinforce the main goal: to get better. 
 
-If all you can do is 10 push-ups, then start there. Any good coach on earth would tell you the same. 10 push-ups a day this week means 12 push-ups next week. Whatever you do, is better than doing nothing. That little you do will slowly build up and develop your routine. 
+If all you can do is 10 pushups, then start there. Any good coach on earth would tell you the same. 10 pushups a day this week means 12 pushups next week. Whatever you do, is better than doing nothing. That little you do will slowly build up and develop your routine. 
 
-It's just as hard to go from 10 push-ups to 50 as it is from 200 to 500. That's because it's all relative to what you can do. If I score my results honestly, I see I'm making progress. 
+It's just as hard to go from 10 pushups to 50 as it is from 200 to 500. That's because it's all relative to what you can do. If I score my resolts honestly, I see I'm making progress. 
 
 *** TODO Back to basics 2: 
  :PROPERTIES:
@@ -3264,55 +3265,8 @@ With what I learned of Zettelkasten, I hope to re-create it using the already ex
 [fn:55] It also occurred to me that a talking-head kind of thing (where you see the person's talking to you in the corner with the main content being the big screen) doesn't really feel "me." I've always been more of a writer, and when there's a need for a visual, animated or not, I have the tools for that. I think I'll leave a web series to those who feel more using them.
 
 [fn:54] org-roam does use tags, and org-mode definitely has them. While I believe that as a rule of thumb tags should not be used, they /can/ be helpful if they're specific enough. This can be tricky.
-*** WIP My Impressions of The Pixel 4a                        :tools:android:
- :PROPERTIES:
- :EXPORT_HUGO_SECTION: Help Desk Head Desk
- :EXPORT_FILE_NAME: 2020-08-27
- :EXPORT_HUGO_PUBLISHDATE: 2020-08-31:
- :END:
 
-I've received my new Pixel 4a a Friday before last and after a week I can say this with confidence: this is the best smartphone Google ever made. I also hope it will be the last phone I buy from Google. 
 
-#+hugo: more
-
-If you want to read more about the Pixel4a, There are plenty reviews on the web, both written and videos (here's a recent in-depth one [[https://arstechnica.com/gadgets/2020/08/google-pixel-4a-review-the-simple-basic-reasonable-google-phone/][arstechnica]], and a quick visual one from [[https://www.youtube.com/watch?v=wAuiV0B-Yvw][the Verge]]). Instead, here I'm going to focus on why I find this phone so good. 
-
-**** Hardware: The Phone
-
-Let's start from the obvious: the price. At $350, Google is back where I think it has always been best: supplying top tech at a price that doesn't twists people arms. At hard times like this, with folks losing their jobs, this is a welcome change from the $800 plust flagships.
-
-The Pixel 4a is not a statement of class like the iPhone, and it's far from delivering the latest and greatest. That's fine, because you don't /need/ the latest and greatest, you just need a damn smartphone. The iPhone 8 Plus, which I have for work, still sells for about $500 today[fn:57]. 
-
-The iPhone 8 Plus has always been too big and too heavy for me, yet somehow the screen on it is /smaller/ than the one on the Pixel 4a. This makes a big difference for me. The Pixel doesn't fall out of my hand when I pick it up like the iPhone 8 plus does. I can reach the corners of the screen without doing crazy hands acrobatics. It doesn't stick out of my pocket for everyone on the street to see. It fits nicely into my pouch when I go for a run. These may look like insignificant details, but the overall experience is liberating.
-
-As a bonus, the pixel comes with an earphone jack. I can carry my flac files with me on the phone and listen to my higher-end earphones at the office now, especially since the phone has twice the space than my old Pixel2. The Bluetooth headphones are good for meetings and streaming music, but if I want to get lost in some good stuff, I need an audio cable[fn:58]. It's also nice to plug in my good set and charge my phone at the same time when I'm at my computer.
-
-[[file:images/2020-08-28.png]]
-{{< rawhtml >}}
-<figcaption>iPhone 8 Plus and Pixel 4a side by side</figcaption>
-{{< / rawhtml >}} 
-
-...And That's it. Yes, I know the Pixel 4a is all about the camera, the better battery life, lack of better water resistance, Android sucks/rules, whatever. Doesn't matter to me. One more thing. While I don't particularly care about looks, the Pixel /looks/ good. The edge-to-edge screen without bezels, the crisp image, the [[https://store.google.com/us/product/pixel_4a_fabric_case][fabric cases]] to match, it puts the iPhone in perspective.
-
-**** The software (Android)
-
-Android 10 is part of what makes the pixel 4a so great. I used to marvel at Google's utilitarian vanilla Android and scoffed at anything that wasn't pure android experience. Now, after a couple of years in IT working with Android, iOS, macOS, Windows, and of course Linux, I'm moving forward. Or perhaps (depends on your view) backward. 
-
-It's called [[https://grapheneos.org/][GrapheneOS]]. A mobile OS that is meant to strip the Pixel out of what makes it Google. One of a kind mobile OS, built on top of Android, meant for privacy and security geeks who want a smartphone that doesn't call back to the mothership. I want to wipe this phone clean and see if I can live without Google on me all the time. 
-
-But I'm cheating. I still have my iPhone. I've decided that all the apps that need to "spy" on me can be on my work phone. Bank app? I don't mind if my job, which pays my salary, sees my bank statements. Google Maps? If I travel, I can't leave work completely behind anyway. Phone calls? I barely call people anymore and most of my contacts are on iPhone, so I don't mind using Facetime. Everything truly personal however will live on the Pixel: my org notes in Orgzly, my contacts on Signal[fn:56], my media, passwords, etc. 
-
-Right now, this is mostly a challenge I want to take. I still have my old Pixel 2, and I'm planning to use it first as a "demo" version to see how this works out - or fails. By the time I'm done I believe GrapheneOS will already have a working Pixel 4a version. 
-
-Why? Well, why not? This blog is called the art of not asking why, after all.   
-
-**** Footnotes
-
-[fn:57] This price came up for a refurbished iPhone 8+ on Apple's website. 
-
-[fn:58] Interestingly, I find that I don't need my amplifier when I connect directly to the jack. With the USB-C dangle, which looks horrible and prevents me from charging the phone at the same time (so it slowly runs out of juice), I need to use an AMP as well. So imaging this: heavy audio cable from the headset, into the adapter, into the AMP, into the phone. I want to say there's a slight difference in sound quality without the amp, but I don't have a professional-grade headset to detect that sort of thing. 
-
-[fn:56] This will be tricky since Signal is not exactly open source, +but I'm aware there's a way to install the APK anyway+. Actually, Signal puts out their APK directly on the website. 
 
 * About Josh Rollins
    :PROPERTIES:
