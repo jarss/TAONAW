@@ -2746,7 +2746,7 @@ That's it. You now have all you need to mount the SMB share. Make sure you save 
 
 [fn:40] Didn't I just say we need sudo? Why yes. In Emacs you do that by using [[https://www.gnu.org/software/tramp/#Using-su_002c-sudo-and-sg][TRAMP]].
 
-[fn:41] giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user name and password to log into Linux, you're f-ed anyway.
+[fn:41] giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user namhe and password to log into Linux, you're f-ed anyway.
 *** PUBLISHED Benefits of Linux on VM                         :linux:windows:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
@@ -3264,7 +3264,7 @@ With what I learned of Zettelkasten, I hope to re-create it using the already ex
 [fn:55] It also occurred to me that a talking-head kind of thing (where you see the person's talking to you in the corner with the main content being the big screen) doesn't really feel "me." I've always been more of a writer, and when there's a need for a visual, animated or not, I have the tools for that. I think I'll leave a web series to those who feel more using them.
 
 [fn:54] org-roam does use tags, and org-mode definitely has them. While I believe that as a rule of thumb tags should not be used, they /can/ be helpful if they're specific enough. This can be tricky.
-*** WIP My Impressions of The Pixel 4a                        :tools:android:
+*** PUBLISHED My Impressions of The Pixel 4a		      :tools:android:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-08-27
@@ -3314,13 +3314,61 @@ Why? Well, why not? This blog is called the art of not asking why, after all.
 
 [fn:56] This will be tricky since Signal is not exactly open source, +but I'm aware there's a way to install the APK anyway+. Actually, Signal puts out their APK directly on the website. 
 
+*** WIP Org-mode and Zettelkasten                             :orgmode:tools:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-09-09
+ :EXPORT_HUGO_PUBLISHDATE: 2020-09-21:
+ :END:
+
+After almost two months of [[https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/][thinking of the idea]], I decided to give up the idea of a newcomer's wiki to org based on Zettelkasten. I might revisit Zettelkasten in the future, but I don't want to be bound by arbitrary time constraint of a project.   
+
+  #+hugo: more
+
+**** (Not) Fixing my Wiki 
+
+As of now, my wiki is a single org-mode file containing approximately 50 headers, and those are often broken into sub-headers with instructions and examples. All in all, I probably have some 100 headers to go through. Giving each one of these a hierarchical [[https://orgmode.org/manual/Internal-Links.html][custom ID]] (as Zettelkasten dictates) is a huge time suck which isn't justified for my workflow. 
+
+Another problem: the wiki org file is somewhat broken and needs fixing. At one point I thought it was a good idea to sort the headers alphabetically and I did not use the right org-mode sorting technique. The result was that certain segments and headers got mixed. I can read one topic and suddenly an unrelated paragraph appears out of order. Since this issue is nested deep into topics I don't read on a regular basis it's hard to locate and find. I haven't discovered this issue weeks (or maybe even months) after it happened, so restoring from backup wasn't an option. 
+
+Yet there are still more organizational problems. The images of the wiki are nested in a sub-directory and lack a good naming convention which needs to be fixed before I attempt to fix image links from absolute paths to relative paths, which is needed for me to view the wiki on my phone. 
+
+
+Finally, another issue is my writing style: Parts of the wiki are personal and written in first person, journal like, while others built through a template that is meant for public viewing. Writing a wiki for readers means a lot of rewriting.    
+
+Some of these issues I am fixing slowly while others are simply not worth it. I am not going to finish rewriting my wiki any time soon
+
+**** Perspective in Bullet Points 
+
+After wracking my brains trying to adjust my org-mode system to fit a bit better to Zettelkasten I realized something: I don't /need/ Zettelkasten, it's just a collection of ideas that seem cool to implement. As it always turns out for me, org-mode is designed to do exactly what I need it to do with minimal modifications. 
+
+Zettelkasten, at least originally, doesn't place much importance on the order of headers or the hierarchy as long as there is one in place. As long as you have headers and sub-headers, all inter-connected in relationships to one another, you're fine. Part of the beauty of this system is that you don't need to worry where you place a new concept in the system, you just do, and you connect it to your existing ideas in your network. 
+
+This is a good philosophy, and one which I disagree with. 
+
+My hierarchy is crucial and my headers reflect categories that make sense to me. For example, my wiki is divided to roughly 4 major categories: work tech, personal tech, personal stuff (non-tech), and the security plus exam. That last part is mostly in the past now, just collection of notes I may or may not find use for. Then, each of the sub-headers usually reflects a specific program (if in tech) which helps me narrow the issue down further. From there, it's usually easy enough to search through my notes with [[https://www.emacswiki.org/emacs/OccurMode][Occur]] or [[https://github.com/abo-abo/swiper][Swiper]], depending on how fuzzy I need the search to be. 
+
+Say I need to reflect on something like capture templates syntax in org-mode.  I know this falls under personal tech category (the "crazy" dude at work, with a weird organizational system no one else uses..? Yep, that's me) so right away I narrowed it down to 25% of the wiki. That's a lot. Emacs is a huge topic in the wiki under personal tech, which is the first place I'll look. Then, because org-mode also contains several headers, I'll locate org-mode and go there. If I can't see the capture header at this point, I'll search under the org-mode header for something like "capture" or "capture template" (one space) which, in Swiper, is regex search that is similar to the boolean "capture AND template". I'll have what I need in a second.
+
+What about something more vague? Say my boss asks me to find out if a few failing hard drives are under warranty. I know I need to get the hard drives' serial numbers using a script I used a while back, but I don't remember anything else. OK, no problem: it's probably going to be under work related category, and then, I'll just search for "hard drive serial". Turns out there are no results, but I know for sure I wrote about it. I look at the search, and I remember I almost never write out "hard drive" but hd or hdd. I try again and bingo, I find "get HDD serial". It's under work related, which I knew, and under Powershell. Aha, of course it was Powershell! Now I remember. I find the script, and even more, there's a journal reference (in the wiki, it just says "see more in the journal" with the word journal being a link, nothing fancy). Now I have the technical and, if I want, I know to look at my journal org file (which is even bigger than my wiki) around that date to see my reflections on the topic. 
+
+I also have "see so and so" links which lead to other area of the wiki, something I implemented before I've heard of Zettelkasten and continue to use where needed, not because I'm supposed to or because the system I use says so. In other words, I kind of used Zettelkasten before I even know what it was. Creating such links, by the way, doesn't require anything fancy like org-roam or even custom links: a simple =C-c l= grabs the link of the header you're on, and =C-c C-l= would suggest pasting it for you automatically. This is org-mode usage 101, straight out of the box, no package needed. In case these links break, as they do in a dynamic wiki, the broken link usually offers enough hints for me to re-link it. This doesn't happen often enough to worry beyond a manual fix when needed. 
+
+**** There are Many Other Great Sources
+
+So far, I've discussed how I don't want to modify my wiki and that I don't really need Zettelkasten to find stuff. The other thing is, there's little need for yet another "noob guide" for people new to Emacs. Most chances are that they won't find this blog anyway, not when they start. Google's SEO is a science that I don't want a part of really. If someone lands on this blog it's probably because of my rambling on mastodon or reddit trying to help out folks, and that's fine. Certain posts are more popular than others, and I like to see what folks find useful.
+
+There are wonderful web casts, blogs, and even books directed at new users. Like with anything else in life, there's no magic bullet. Org-Mode is a huge system inside even a bigger one, Emacs. Many times I think the problem folks are trying to fix with packages and add ons are not the result of lack of options, but lack of knowledge of the options they already have. 
+
+I'm not trying to be harsh, but as a person who chased different organizational apps for about 10 years himself, switching from one to the other, I know this to be true for me. I know better than to convince folks to try something else: anyone who works in IT would tell you one of the hardest parts if to fight old users' habits, as ineffective and insecure as they may be. you want to try Zettelkasten and org-roam? Then by all means, go ahead. It's a good system. Just remember: at the end of the day /you/ are the person who needs to organize your information, no matter what tool you use, be it paper index card which don't come with amazing regex searches, or a complete database that comes with its own search capabilities. You're in charge. I'm just here rambling. 
+
 * About Josh Rollins
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: About
    :EXPORT_FILE_NAME: _index
    :EXPORT_HUGO_LAYOUT: single
    :END:
-
+ 
 Josh Rollins is an NYC based self-made-techie who works with humans and machines and enjoys interacting with both. He explores automation, privacy, and affordability in tech. As a result, he often finds himself tangled in the blurred lines of the real and the ideal.  
 
 Rollins has broken his technology (this website included) many times over. While he feels disqualified of giving any good advice, he enjoys doing so just the same. With whatever spare time he has left, Rollins tries to upgrade himself and lead a semi-healthy somewhat sane lifestyle. 

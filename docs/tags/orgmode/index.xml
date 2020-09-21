@@ -6,10 +6,37 @@
     <description>Recent content in orgmode on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org-mode and Zettelkasten</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-09-09/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-09-09/</guid>
+      <description>&lt;p&gt;After almost two months of &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/&#34;&gt;thinking of the idea&lt;/a&gt;, I decided to give up the idea of a newcomer&amp;rsquo;s wiki to org based on Zettelkasten. I might revisit Zettelkasten in the future, but I don&amp;rsquo;t want to be bound by arbitrary time constraint of a project.&lt;/p&gt;
+&lt;h2 id=&#34;not--fixing-my-wiki&#34;&gt;(Not) Fixing my Wiki&lt;/h2&gt;
+&lt;p&gt;As of now, my wiki is a single org-mode file containing approximately 50 headers, and those are often broken into sub-headers with instructions and examples. All in all, I probably have some 100 headers to go through. Giving each one of these a hierarchical &lt;a href=&#34;https://orgmode.org/manual/Internal-Links.html&#34;&gt;custom ID&lt;/a&gt; (as Zettelkasten dictates) is a huge time suck which isn&amp;rsquo;t justified for my workflow.&lt;/p&gt;
+&lt;p&gt;Another problem: the wiki org file is somewhat broken and needs fixing. At one point I thought it was a good idea to sort the headers alphabetically and I did not use the right org-mode sorting technique. The result was that certain segments and headers got mixed. I can read one topic and suddenly an unrelated paragraph appears out of order. Since this issue is nested deep into topics I don&amp;rsquo;t read on a regular basis it&amp;rsquo;s hard to locate and find. I haven&amp;rsquo;t discovered this issue weeks (or maybe even months) after it happened, so restoring from backup wasn&amp;rsquo;t an option.&lt;/p&gt;
+&lt;p&gt;Yet there are still more organizational problems. The images of the wiki are nested in a sub-directory and lack a good naming convention which needs to be fixed before I attempt to fix image links from absolute paths to relative paths, which is needed for me to view the wiki on my phone.&lt;/p&gt;
+&lt;p&gt;Finally, another issue is my writing style: Parts of the wiki are personal and written in first person, journal like, while others built through a template that is meant for public viewing. Writing a wiki for readers means a lot of rewriting.&lt;/p&gt;
+&lt;p&gt;Some of these issues I am fixing slowly while others are simply not worth it. I am not going to finish rewriting my wiki any time soon&lt;/p&gt;
+&lt;h2 id=&#34;perspective-in-bullet-points&#34;&gt;Perspective in Bullet Points&lt;/h2&gt;
+&lt;p&gt;After wracking my brains trying to adjust my org-mode system to fit a bit better to Zettelkasten I realized something: I don&amp;rsquo;t &lt;em&gt;need&lt;/em&gt; Zettelkasten, it&amp;rsquo;s just a collection of ideas that seem cool to implement. As it always turns out for me, org-mode is designed to do exactly what I need it to do with minimal modifications.&lt;/p&gt;
+&lt;p&gt;Zettelkasten, at least originally, doesn&amp;rsquo;t place much importance on the order of headers or the hierarchy as long as there is one in place. As long as you have headers and sub-headers, all inter-connected in relationships to one another, you&amp;rsquo;re fine. Part of the beauty of this system is that you don&amp;rsquo;t need to worry where you place a new concept in the system, you just do, and you connect it to your existing ideas in your network.&lt;/p&gt;
+&lt;p&gt;This is a good philosophy, and one which I disagree with.&lt;/p&gt;
+&lt;p&gt;My hierarchy is crucial and my headers reflect categories that make sense to me. For example, my wiki is divided to roughly 4 major categories: work tech, personal tech, personal stuff (non-tech), and the security plus exam. That last part is mostly in the past now, just collection of notes I may or may not find use for. Then, each of the sub-headers usually reflects a specific program (if in tech) which helps me narrow the issue down further. From there, it&amp;rsquo;s usually easy enough to search through my notes with &lt;a href=&#34;https://www.emacswiki.org/emacs/OccurMode&#34;&gt;Occur&lt;/a&gt; or &lt;a href=&#34;https://github.com/abo-abo/swiper&#34;&gt;Swiper&lt;/a&gt;, depending on how fuzzy I need the search to be.&lt;/p&gt;
+&lt;p&gt;Say I need to reflect on something like capture templates syntax in org-mode.  I know this falls under personal tech category (the &amp;ldquo;crazy&amp;rdquo; dude at work, with a weird organizational system no one else uses..? Yep, that&amp;rsquo;s me) so right away I narrowed it down to 25% of the wiki. That&amp;rsquo;s a lot. Emacs is a huge topic in the wiki under personal tech, which is the first place I&amp;rsquo;ll look. Then, because org-mode also contains several headers, I&amp;rsquo;ll locate org-mode and go there. If I can&amp;rsquo;t see the capture header at this point, I&amp;rsquo;ll search under the org-mode header for something like &amp;ldquo;capture&amp;rdquo; or &amp;ldquo;capture template&amp;rdquo; (one space) which, in Swiper, is regex search that is similar to the boolean &amp;ldquo;capture AND template&amp;rdquo;. I&amp;rsquo;ll have what I need in a second.&lt;/p&gt;
+&lt;p&gt;What about something more vague? Say my boss asks me to find out if a few failing hard drives are under warranty. I know I need to get the hard drives&amp;rsquo; serial numbers using a script I used a while back, but I don&amp;rsquo;t remember anything else. OK, no problem: it&amp;rsquo;s probably going to be under work related category, and then, I&amp;rsquo;ll just search for &amp;ldquo;hard drive serial&amp;rdquo;. Turns out there are no results, but I know for sure I wrote about it. I look at the search, and I remember I almost never write out &amp;ldquo;hard drive&amp;rdquo; but hd or hdd. I try again and bingo, I find &amp;ldquo;get HDD serial&amp;rdquo;. It&amp;rsquo;s under work related, which I knew, and under Powershell. Aha, of course it was Powershell! Now I remember. I find the script, and even more, there&amp;rsquo;s a journal reference (in the wiki, it just says &amp;ldquo;see more in the journal&amp;rdquo; with the word journal being a link, nothing fancy). Now I have the technical and, if I want, I know to look at my journal org file (which is even bigger than my wiki) around that date to see my reflections on the topic.&lt;/p&gt;
+&lt;p&gt;I also have &amp;ldquo;see so and so&amp;rdquo; links which lead to other area of the wiki, something I implemented before I&amp;rsquo;ve heard of Zettelkasten and continue to use where needed, not because I&amp;rsquo;m supposed to or because the system I use says so. In other words, I kind of used Zettelkasten before I even know what it was. Creating such links, by the way, doesn&amp;rsquo;t require anything fancy like org-roam or even custom links: a simple &lt;code&gt;C-c l&lt;/code&gt; grabs the link of the header you&amp;rsquo;re on, and &lt;code&gt;C-c C-l&lt;/code&gt; would suggest pasting it for you automatically. This is org-mode usage 101, straight out of the box, no package needed. In case these links break, as they do in a dynamic wiki, the broken link usually offers enough hints for me to re-link it. This doesn&amp;rsquo;t happen often enough to worry beyond a manual fix when needed.&lt;/p&gt;
+&lt;h2 id=&#34;there-are-many-other-great-sources&#34;&gt;There are Many Other Great Sources&lt;/h2&gt;
+&lt;p&gt;So far, I&amp;rsquo;ve discussed how I don&amp;rsquo;t want to modify my wiki and that I don&amp;rsquo;t really need Zettelkasten to find stuff. The other thing is, there&amp;rsquo;s little need for yet another &amp;ldquo;noob guide&amp;rdquo; for people new to Emacs. Most chances are that they won&amp;rsquo;t find this blog anyway, not when they start. Google&amp;rsquo;s SEO is a science that I don&amp;rsquo;t want a part of really. If someone lands on this blog it&amp;rsquo;s probably because of my rambling on mastodon or reddit trying to help out folks, and that&amp;rsquo;s fine. Certain posts are more popular than others, and I like to see what folks find useful.&lt;/p&gt;
+&lt;p&gt;There are wonderful web casts, blogs, and even books directed at new users. Like with anything else in life, there&amp;rsquo;s no magic bullet. Org-Mode is a huge system inside even a bigger one, Emacs. Many times I think the problem folks are trying to fix with packages and add ons are not the result of lack of options, but lack of knowledge of the options they already have.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not trying to be harsh, but as a person who chased different organizational apps for about 10 years himself, switching from one to the other, I know this to be true for me. I know better than to convince folks to try something else: anyone who works in IT would tell you one of the hardest parts if to fight old users&amp;rsquo; habits, as ineffective and insecure as they may be. you want to try Zettelkasten and org-roam? Then by all means, go ahead. It&amp;rsquo;s a good system. Just remember: at the end of the day &lt;em&gt;you&lt;/em&gt; are the person who needs to organize your information, no matter what tool you use, be it paper index card which don&amp;rsquo;t come with amazing regex searches, or a complete database that comes with its own search capabilities. You&amp;rsquo;re in charge. I&amp;rsquo;m just here rambling.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Of Emacs and Rabbit Holes</title>
@@ -498,6 +525,49 @@ It&amp;rsquo;s an Emacs package that allows Org-mode to sync with Google calenda
     
     <item>
       <title>My Org Capture Templates - Part 3</title>
+      <link>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</guid>
+      <description>&lt;p&gt;I took a long unplanned break from writing about my Templates because of the &lt;a href=&#34;https://joshrollinswrites.com/blogging/css-updates-1/&#34;&gt;CSS changes&lt;/a&gt; I worked on and the complications with Magit. I&amp;rsquo;m happy to say these are now behind me, and that I gained another grain of confidence using Magit and knowing git, but this is a post for yet another time.&lt;/p&gt;
+&lt;p&gt;Since the last two templates are rather short, I&amp;rsquo;m putting them both here together. Here we go:&lt;/p&gt;
+&lt;h2 id=&#34;part-3-the-tasks-template&#34;&gt;Part 3 - The Tasks Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;t&amp;rdquo; initiate &amp;ldquo;ToDo&amp;rdquo; template, which is  as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Archive/OhSnap!.org&lt;/code&gt; and create a headline &amp;ldquo;tasks&amp;rdquo; there.&lt;/li&gt;
+&lt;li&gt;Create a second level header, space, add a TODO keyword, space, Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Add the text &amp;ldquo;&lt;code&gt;SCHEDULED:&lt;/code&gt;&amp;rdquo;, space, and ask for a complete timestamp (date and time).&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To create a regular &amp;ldquo;todo&amp;rdquo; item, I want to have it scheduled right away so it&amp;rsquo;s on my agenda. The word &lt;code&gt;SCHEDULED:&lt;/code&gt; is what initiates the scheduling in Org-mode. On my agenda, I clearly see scheduled tasks, and I try to schedule everything I want to do. Scheduling a task then is my actual &amp;ldquo;To Do&amp;rdquo; trigger, not the TODO keyword.&lt;/p&gt;
+&lt;p&gt;Of course, things often get shifted around. I constantly reschedule things at work. The benefit of scheduling tasks this way is that tasks I haven&amp;rsquo;t done are highlighted for the next day, so I know to revisit it.  That&amp;rsquo;s all there is to this template, it&amp;rsquo;s rather simple.&lt;/p&gt;
+&lt;h2 id=&#34;part-4-the-event-template&#34;&gt;Part 4 - The Event Template&lt;/h2&gt;
+&lt;p&gt;The Event template is probably the first one I created. It changed around quite a bit. This is my go-to personal stuff template which works hand in hand with my journal. Here it is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+       &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;e&amp;rdquo; initiate &amp;ldquo;event&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Event&amp;rdquo; in file &lt;code&gt;&amp;quot;~/Documents/Archive/OhSnap!.org&amp;quot;&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Place cursor here. New line.&lt;/li&gt;
+&lt;li&gt;Prompt for a complete active timestamp. New line.&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Even simpler than the previous template, this one asks for a complete timestamp (date and time) without a keyword. The active timestamp alone means that this event will show on my agenda, but without the scheduling, it&amp;rsquo;s not highlighted as a task (in my theme, tasks are in green and events are in gray). I use these &amp;ldquo;concrete&amp;rdquo; events for meeting with other people, or something that is happening with other people that are important to me.
+Events usually have an ending time, even if it&amp;rsquo;s speculative. I go back in later to adjust the timeframe.&lt;/p&gt;
+&lt;p&gt;I usually follow the event title with a @ sign and link to the location on Google maps if I can. This creates a nice way for me to reflect back later in my journal, which links to these events. For example, an event could be &amp;ldquo;&lt;code&gt;&amp;lt;2019-01-13 Sun 19:00-21:00&amp;gt; dinner with Marcy @ The Green Inn&lt;/code&gt;&amp;rdquo; and The Green Inn would be a link to the location. A quick &lt;code&gt;C-c o&lt;/code&gt; and the browser opens to the right location, and I can look up directions. The location links also work from Orgzly on my phone, though I&amp;rsquo;m looking into integrating this whole thing with Google Calendar, which should work better.&lt;/p&gt;
+&lt;p&gt;After an event took place, I place the cursor on it in my agenda and initiate the journal capture template, as I explained above. Something I started doing lately is to store the link of the journal entry while there &lt;code&gt;(C-c C-l)&lt;/code&gt;, and then enter a [J] at the end of the title of the event on the agenda, linking to the journal entry. If this works well, I will look into creating a macro or a function to create this journal link automatically. Shouldn&amp;rsquo;t be too hard.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Org Capture Templates - Part 3</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 -0500</pubDate>
       
@@ -541,6 +611,43 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     
     <item>
       <title>My Org Capture Templates - Part 2</title>
+      <link>https://joshrollinswrites.com/emacsorg/org-capture-template-2/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-2/</guid>
+      <description>&lt;p&gt;I was happy to see part one of this series generated interest on &lt;a href=&#34;https://www.reddit.com/r/orgmode/comments/agxe8n/my%5Forgmode%5Ftemplates%5Fpart%5Fone%5Fany%5Finterest%5Fin%5Fmore/&#34;&gt;Reddit&lt;/a&gt;. One of the things I love about Org-mode (and Emacs) is this passion among its user and the thirst to learn more from each other. I believe one of the major reasons for that is Org-mode&amp;rsquo;s complexity: there are so many options, it &lt;em&gt;has&lt;/em&gt; to be personalized by its users&amp;rsquo; needs. Org-mode is esaily the most personal tool I&amp;rsquo;ve used in a while. Every time I read something Org-mode related somewhere else it&amp;rsquo;s as if I&amp;rsquo;m invited over for a discussion over a cup of coffee.&lt;/p&gt;
+&lt;p&gt;Speaking of personal, today I&amp;rsquo;m going to discuss my Journal capture template. I hope you enjoy, and as always, comments are welcome on Reddit (follow me using the links above) at least until I integrate a commenting system on this site.&lt;/p&gt;
+&lt;h2 id=&#34;part-2-the-journal-template&#34;&gt;Part 2 - The Journal template&lt;/h2&gt;
+&lt;p&gt;First, here&amp;rsquo;s the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;j&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Journal&amp;#34;&lt;/span&gt; entry
+  (file+datetree &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Personal/journal.org&amp;#34;&lt;/span&gt;)
+
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**** %U%?%a \n&amp;#34;&lt;/span&gt; :tree-type week)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;j&amp;rdquo; initiate &amp;ldquo;Journal&amp;rdquo; template, which as follows:&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;~/Documents/Personal/journal.org&lt;/code&gt; and create a &lt;a href=&#34;https://orgmode.org/manual/Template-elements.html#DOCF82&#34;&gt;dateree&lt;/a&gt; entry there&lt;/li&gt;
+&lt;li&gt;Create a sub header (level 4) under the day header, under the week header, under the year header (a function of datetree, see link above).&lt;/li&gt;
+&lt;li&gt;Enter an inactive timestamp, place cursor right after it, place a link to file you were just in.&lt;/li&gt;
+&lt;li&gt;New line&lt;/li&gt;
+&lt;li&gt;Make this a &lt;em&gt;weekly&lt;/em&gt; datetree (the default is a monthly datetree)&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I prefer a weekly format in my journal over a monthly format. In fact, the week is a &amp;ldquo;productivity unit&amp;rdquo; which always made sense to me, and this mindset integrates beautifully into Org-mode. In my archive folder, which you saw in part 1, each week has its own &lt;code&gt;.org&lt;/code&gt; file (from 1 to 50 something). I don&amp;rsquo;t really need this to make Org-mode work, but there&amp;rsquo;s something assuring in viewing the folder and seeing all the week files.&lt;/p&gt;
+&lt;p&gt;The reason the timestamp and the link are condensed together (no space) is because I delete most of the timestamp and just leave the hour. This way the cursor is where I need to start erasing the timestamp from. I haven&amp;rsquo;t found a way yet to create an hourly timestamp only and I don&amp;rsquo;t want to forget to put in the hour, so this is the best solution for now. Why is the hour important? First, personal preference from the past, where I would write the time and the location for each entry. Second, this helps me see a couple of entries in the journal that are about the same event (the title is just the name of the event on my agenda) so that if a certain event is developing and I&amp;rsquo;ve journaled about it a couple of times, I can easily see the hour of each entry as a separator.&lt;/p&gt;
+&lt;p&gt;Finally, I use a link to connect me back to &lt;code&gt;w[##].org&lt;/code&gt; file (week number of the year, as I mentioned above) from which I created the journal entry. In my weekly org files, the incidents or events themselves contain very little details, usually only what is my next action (next thing to do) and a logbook drawer containing the times I worked on a task if I keep track. If I want to discuss something, I create a journal entry for it. I always prefer to leave my thoughts and conclusions in a personal space, separate from the more generic org file which also contains work-related material. The link takes me back to that event or incident, and because the name is the same as the event, I know exactly what I&amp;rsquo;m referring to.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/Org-capture-template-2.1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM&amp;rsquo;s capture template, so when I want to capture something in my journal from work, I&amp;rsquo;m prompted to log into my file server with a password, without saving anything at work.&lt;/p&gt;
+&lt;p&gt;This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Org Capture Templates - Part 2</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 -0500</pubDate>
       
@@ -574,6 +681,49 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
 
 &lt;p&gt;My journal is another feature of Org-mode that fits my workflow effortlessly. The notion that I keep entries around events rather than just a daily or a semi-daily habit works well and behooves me to write my thoughts down often. At the same time, the journal file is kept in a personal folder that is not synced to my work VM. I use TRAMP inside my work VM&amp;rsquo;s capture template, so when I want to capture something in my journal from work, I&amp;rsquo;m prompted to log into my file server with a password, without saving anything at work.&lt;/p&gt;
 &lt;p&gt;This privacy barrier may sound cumbersome, but once working, I almost never have to tweak with it. This kind of privacy and separation of my personal files from the cloud help me sleep better at night.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Org Capture Templates - Part 1</title>
+      <link>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mastodon.social/@emsenn&#34;&gt;emsenn&lt;/a&gt; &lt;a href=&#34;https://mastodon.social/@emsenn/101387457090836368&#34;&gt;asked&lt;/a&gt; Org-mode users for their day-to-day capture templates in the &lt;a href=&#34;https://mastodon.technology&#34;&gt;technology Mastodon&lt;/a&gt; (which you should join and follow if you haven&amp;rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&amp;rsquo;m starting to edit out details because the post is getting too long. So instead, I&amp;rsquo;m going to explain each template at a time. Hopefully you find this interesting!&lt;/p&gt;
+&lt;p&gt;First, Here&amp;rsquo;s the code for the capture templates I&amp;rsquo;m going to cover:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;INC&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Incidents&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n&amp;#34;&lt;/span&gt;)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;j&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Journal&amp;#34;&lt;/span&gt; entry (file+datetree &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Personal/journal.org&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;**** %U%?%a \n&amp;#34;&lt;/span&gt; :tree-type week)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;t&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ToDo&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Tasks&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n SCHEDULED: %^T \n&amp;#34;&lt;/span&gt;)
+(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;e&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt; entry (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Event&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** %? \n %^T \n&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Going into details below, I broke the code down so it makes sense to people starting out with Org-mode in hope this would help new-commers like I was not too long ago. If these steps do not sound right (especially for those of you who know Emacs lisp better than me, which is probably 99% of you&amp;hellip;) please let me know so I can correct and learn. Thanks!&lt;/p&gt;
+&lt;p&gt;Ok, here we go.&lt;/p&gt;
+&lt;h2 id=&#34;part-1-the-inc-template&#34;&gt;Part 1 - The INC Template&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;i&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;INC&amp;#34;&lt;/span&gt; entry
+  (file+headline &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/Documents/Archive/OhSnap!.org&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Incidents&amp;#34;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;** TODO %? \n
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;For key-press &amp;ldquo;i&amp;rdquo; initiate &amp;ldquo;INC&amp;rdquo; template as follows:&lt;/li&gt;
+&lt;li&gt;Create a headline &amp;ldquo;Incidents&amp;rdquo; in file  &lt;code&gt;~/Documents/Archive/#OhSnap!.org&lt;/code&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;As a second level header. Create a TODO keyword, space, place cursor here, new line.&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Ticket&amp;rdquo; and ask for input.&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;PIN&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Computer&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Create Property &amp;ldquo;Location&amp;rdquo; and ask for input&lt;/li&gt;
+&lt;li&gt;Space, New line&lt;/li&gt;
+&lt;li&gt;Finish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I use the above template for ticket creation at work. The file &amp;ldquo;OhSnap.org&amp;rdquo; is my &amp;ldquo;dumping grounds&amp;rdquo; for everything before I sort it out- usually in front of a desktop. This is useful to me because many times I&amp;rsquo;m running around using my phone with &lt;a href=&#34;http://www.orgzly.com&#34;&gt;Orgzly&lt;/a&gt;, a very minimal version of Org-mode. I click the add note widget, speak or write out my note in a few words, and save. Later I add details. (By the way, going on a tangent here: you can use Google Assistant on your phone with Orgzly like any other note taking app: &amp;ldquo;OK Google, make note: buy eggs today&amp;rdquo; - and bam, you have a quick header in your org file.)&lt;/p&gt;
+&lt;p&gt;The properties help me keep my work-related issues organized. I have the ticket number for the issue, which is also the fastest way to find it in our ticketing system. Then I have the person&amp;rsquo;s ID, to quickly identify the person&amp;rsquo;s name and email from the directory if I need to. The computer property is the hostname, so I can remote in or know where it is. Location is helpful because we span over different buildings and even parts of the city. In turn, this also makes Column view beneficial if I want to quickly see all the tickets formatted in a nice table. I don&amp;rsquo;t use it often, but it&amp;rsquo;s there.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t always have all the properties filled in (though I do try to at least have a ticket and a person&amp;rsquo;s name entered), but I do use this template for anything work related. This is because I have a &amp;ldquo;work&amp;rdquo; category property inside the Incident tree, which quickly shows me my work related things on my agenda. This means I can also quickly filter into just work-related stuff if I need to, say, when I show something to my co-workers.&lt;/p&gt;
+&lt;p&gt;Let me expand on that last at the risk of going into a somewhat unrelated tangent: one of the huge things about Org-mode efficiency in my case is the ability to mix work and personal items in the same place. I have different apps, difference accounts, and different devices, and Org-mode is the first place where I&amp;rsquo;m comfortable mixing all of them into one agenda because I still have individual org files. This &lt;em&gt;very&lt;/em&gt; helpful to keep me organized.&lt;/p&gt;
+&lt;p&gt;This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -670,6 +820,42 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
 &lt;p&gt;Finally, last weekend, I reached the conclusion that my written journal is just &lt;em&gt;better&lt;/em&gt; at keeping track of my experiences. Since I re-created the way I save my achieve files now, it also means the links from the journal org file to the org and the events is never broken: I just have to make sure to refile an event from my &amp;ldquo;oh snap&amp;rdquo; thought-dump org into the current week org file, and I&amp;rsquo;m good.&lt;/p&gt;
 &lt;p&gt;I still record a short &amp;ldquo;weekly summary&amp;rdquo; on weekends, and now I find I&amp;rsquo;m actually looking forward to it. These are now 10-20 minutes long videos in which I briefly go through my agenda and logged events and explain what happened while my memories of this week are still fresh. I then give the week a &amp;ldquo;theme&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;This works as a way for me to remember what happened far in the future if I want to reflect on my experiences but not looking for something specific, or not sure what it is. It&amp;rsquo;s also a good way to reflect on the major events of the week after I had a weekend to slow down and process. It works.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Org Update</title>
+      <link>https://joshrollinswrites.com/emacsorg/org-update/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/emacsorg/org-update/</guid>
+      <description>&lt;p&gt;It’s been a while since I blogged about my Org activities. Overall, not a lot has changed from my latest setup. Setting up a new site on GitHub with Hugo kept me fairly busy, away from hacking away at Emacs.&lt;/p&gt;
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/OrgUpdate_1.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;h2 id=&#34;lighter-agenda-no-sub-tasks&#34;&gt;Lighter Agenda: No Sub-Tasks&lt;/h2&gt;
+&lt;p&gt;So, looking at my agenda sometimes less is more. I don’t rush to include every single detail in my agenda anymore, especially at work, becuase it’s redundant. We have a ticketing system that we &lt;em&gt;have&lt;/em&gt; to use, and the details are constantly updated by different team members. Because of that, updating technical details for myself again under each heading is not that appealing.&lt;/p&gt;
+&lt;p&gt;But I do still include notes. Just differently. I start notes with an inactive timestamp and describe where I left off. In other words, exactly what the subtask used to do. So I don’t bother with many sub-tasks anymore. The benefit of one heading is better visual organization. I get a nice Logbook which includes all the time I spent on the project, my notes are more streamlined and easy to find. It also clears the agenda from the clutter of subtasks that sometimes don’t make sense to me anymore because I forgot the big picture already. I also grew more comfortable with changing the header wordings of the task to better reflect what is the big picture I just mentioned. Since I keep short notes of where I left off with the most recent one at the top, it’s easy to see what’s going on.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/OrgUpdate_2.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;Sometimes I would even copy-paste from the ticket straight into Org just to remind myself what was done; other times I include references to other people and cases; yet other times, if I have to vent about something, there’s a link to my journal (more on that later).&lt;/p&gt;
+&lt;p&gt;A fun sidenote: Orgzly, my companion Andoird App, &lt;a href=&#34;http://www.orgzly.com/changelog&#34;&gt;now has the ability&lt;/a&gt; to start with Org headings collapsed. This means that when I’m on the go, I can open specifically the task on hand and view my notes which I often update just before I get up to do something.&lt;/p&gt;
+&lt;p&gt;A little test here. And here.&lt;/p&gt;
+&lt;h2 id=&#34;keeping-track-of-time-without-going-nuts&#34;&gt;Keeping Track Of Time Without Going Nuts&lt;/h2&gt;
+&lt;p&gt;The Logbook contains estimated times. I almost never get to close a clock on a task once I started, because I almost never get the chance to keep working on one thing before I am called away, or have to do a prerequisite. Other times, I simply forget to start the clock. I estimate how much time I worked on something when I’m back at my desk. Now, since I don’t bother with sub-tasks and separate clocking times for these, it means I need to expend my agenda to view my logs (l in agenda view). This allows me to see the time I spent working on a certain task, even though it is marked as done later, sometimes even days (or weeks) later. This way I know when the whole task was finished, and I can see when (and for how long) I was working on it.&lt;/p&gt;
+&lt;p&gt;All of that said, most of my tasks don&amp;rsquo;t get logged with a clock. That’s because many of them are simple tasks or just interruptions when I am asked a question or something similar. I should overall though get in the habit of logging tasks in retro-respect to see where my time went.&lt;/p&gt;
+&lt;p&gt;Another area I stopped worrying as much about are which org files in my archive my headers go to when I refile. This was a mouthful so let me explain.&lt;/p&gt;
+&lt;p&gt;My system is based on a weekly review. Every week has its own .org file. In the past, filenames used to specify a date range like &lt;code&gt;08102018_15102018.org&lt;/code&gt;, for example. This caused me complications because I seldom had the chance to summarize and finish my week Sunday and start a clean slate Monday. Many times I wanted to conclude an .org file on a Friday after work or didn’t get the chance to do so until Monday or even Tuesday. Besides, this whole week range thing is redundant because you can always list files by dates anyway (to see when it was last modified).&lt;/p&gt;
+&lt;p&gt;On the other hand, since I started using my journal again, which is based on weeks rather than months, it made more sense to name the files after the number of the weeks. For instance, this week is w41.org, last week was w40.org, etc. My journal tells me what week I’m on if I ever need to reflect, the file name is very clear and obvious and there’s no room for confusion. My weekly summaries will always be based on their respective &lt;code&gt;&amp;lt;number&amp;gt;.org&lt;/code&gt;, even if I summarize a month later.&lt;/p&gt;
+&lt;p&gt;In the past, I refiled events and tasks depending on what week they were to take place. If I was planning a vacation four weeks in advance, for example, I would open a new file for that week and place the event there. This lead to all kinds of problems when I worked on projects that stretched over more than just a weekly period. Let’s say I take a vacation from Friday to Monday of next week. Now what, which file do I choose? At the time, I opted for the completion date. But, this too wasn’t simple. Because certain projects (especially at work) could last even months, or re-surface from the past. That would mean I would have to move them to the appropriate week and think about what “done” really means. One day thinking about it out loud, I just started laughing at myself: “dude,” I said, as I like to refer anyone for some reason, “what are you doing? Org takes care of all of that for you automatically! That’s what’s the Agenda is for!” Who cares if I placed a project in week 20 or week 30, I don’t ever search it that way or know where it comes from anyway, I just see it on the agenda or search for it with the agenda anyway &lt;code&gt;(C-a s)&lt;/code&gt;. That’s what it’s for. So I stopped caring about that, and events now naturally fall into the week I created them.&lt;/p&gt;
+&lt;h2 id=&#34;the-journal-revisited&#34;&gt;The Journal Revisited&lt;/h2&gt;
+&lt;p&gt;I don’t use the journal as much as I used to when I had it earlier this year. I find that I use it capture experiences and emotions more than technical notes. For the later, I now have an org file called “wiki” which I keep organized as it grows further. The journal is good to keep moods and mental “patterns” I can look into on my weekly review. For this, I also use tags. This is a good exercise that allows me to recognize mental “traps” I get into more often than not.&lt;/p&gt;
+&lt;p&gt;The journal works nicely with my weekly reviews, which are essentially weekly videos I make reading back from my agenda and journal. With time, these became more of a personal “summary of summaries” where I highlight my week tasks and review, usually for a 10-minute segment or so. I keep these in a well-compressed mp4 format on an SD card (&lt;a href=&#34;https://ffmpeg.org/&#34;&gt;FFMPEG&lt;/a&gt; is awesome for that) and I can easily use one SSD for an entire year and still have additional room. I am now starting to name the videos based on the same weekly theme that I use for my weekly agenda files and journal.&lt;/p&gt;</description>
     </item>
     
     <item>

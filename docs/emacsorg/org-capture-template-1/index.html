@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="//gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/joshrollinswrites.com\/"
+    },
+    "articleSection" : "EmacsOrg",
+    "name" : "My Org Capture Templates - Part 1",
+    "headline" : "My Org Capture Templates - Part 1",
+    "description" : "\x3cp\x3e\x3ca href=\x22https:\/\/mastodon.social\/@emsenn\x22\x3eemsenn\x3c\/a\x3e \x3ca href=\x22https:\/\/mastodon.social\/@emsenn\/101387457090836368\x22\x3easked\x3c\/a\x3e Org-mode users for their day-to-day capture templates in the \x3ca href=\x22https:\/\/mastodon.technology\x22\x3etechnology Mastodon\x3c\/a\x3e (which you should join and follow if you haven\x26rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I\x26rsquo;m starting to edit out details because the post is getting too long. So instead, I\x26rsquo;m going to explain each template at a time. Hopefully you find this interesting!\x3c\/p\x3e",
+    "inLanguage" : "en-US",
+    "author" : "joshrollinswrites.comJosh Rollins",
+    "creator" : "joshrollinswrites.comJosh Rollins",
+    "publisher": "joshrollinswrites.comJosh Rollins",
+    "accountablePerson" : "joshrollinswrites.comJosh Rollins",
+    "copyrightHolder" : "joshrollinswrites.comJosh Rollins",
+    "copyrightYear" : "2019",
+    "datePublished": "2019-01-17 00:00:00 -0500 EST",
+    "dateModified" : "2019-01-17 00:00:00 -0500 EST",
+    "url" : "https:\/\/joshrollinswrites.com\/emacsorg\/org-capture-template-1\/",
+    "wordCount" : "727",
+    "keywords" : [ "orgmode","emacs","Blog" ]
+}
+</script>
+
+  
+  <title>My Org Capture Templates - Part 1 &middot; The Art of Not Asking Why</title>
+
+  
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://joshrollinswrites.com/css/hyde.css">
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous|Oswald|Merriweather|PT+Sans:400,400i,700">
+
+
+
+ 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/v4-shims.css">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://joshrollinswrites.com/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://joshrollinswrites.com/favicon.png">
+
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://joshrollinswrites.com/"><h1>The Art of Not Asking Why</h1></a>
+    </div>
+    <nav>
+      <ul class="sidebar-nav">
+	<h3>Frequent</h3>
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/orgmode"> orgmode <small>(25)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/emacs"> emacs <small>(13)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/blogging"> blogging <small>(11)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/life"> life <small>(11)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/linux"> linux <small>(11)</small></a>
+	</li>
+	
+	
+	
+	<li>
+	  <a href="https://joshrollinswrites.com/tags/tools"> tools <small>(9)</small></a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<h4><a href="https://joshrollinswrites.com/tags/">All Topics ►</a></h4>
+        
+      </ul>
+      <ul class="sidebar-nav">
+	  <h3>About </h3>
+	    <li>
+	      <a href="https://joshrollinswrites.com//about">Josh Rollins</a>
+	    </li>
+	    <li>
+	      <a href="https://joshrollinswrites.com//taonaw">TAONAW</a>
+	    </li>
+      </ul>
+      <ul class="sidebar-icons">
+	<li>
+	  <a href="http://joshrollinswrites.com/index.xml"><i class="fa fa-rss-square fa-lg" aria-hidden="true"></i></a>
+	</li>
+	<li>
+	  <a href="https://mastodon.technology/@jrss"><i class="fab fa-mastodon fa-lg"></i></a>
+	</li>
+	<li>
+	  <a href="https://www.reddit.com/user/JR121"><i class="fab fa-reddit-alien fa-lg"></i></a>
+	</li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+
+
+
+    <main class="content container">
+    <div class="post">
+  <h1>My Org Capture Templates - Part 1</h1>
+ <time datetime=2019-01-17T00:00:00-0500 class="post-date">2019-01-17 
+
+
+
+    
+    / <a href="https://joshrollinswrites.com/tags/orgmode/"> orgmode</a>
+    / <a href="https://joshrollinswrites.com/tags/emacs/"> emacs</a>
+</time>
+ <p><a href="https://mastodon.social/@emsenn">emsenn</a> <a href="https://mastodon.social/@emsenn/101387457090836368">asked</a> Org-mode users for their day-to-day capture templates in the <a href="https://mastodon.technology">technology Mastodon</a> (which you should join and follow if you haven&rsquo;t yet). I was happy to reply and figured it would be intesting to dig into my capture templates. I started writing this post explaining all of my templates, but then realized I&rsquo;m starting to edit out details because the post is getting too long. So instead, I&rsquo;m going to explain each template at a time. Hopefully you find this interesting!</p>
+<p>First, Here&rsquo;s the code for the capture templates I&rsquo;m going to cover:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;i&#34;</span> <span style="color:#e6db74">&#34;INC&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Documents/Archive/OhSnap!.org&#34;</span> <span style="color:#e6db74">&#34;Incidents&#34;</span>)
+<span style="color:#e6db74">&#34;** TODO %? \n  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n&#34;</span>)
+(<span style="color:#e6db74">&#34;j&#34;</span> <span style="color:#e6db74">&#34;Journal&#34;</span> entry (file+datetree <span style="color:#e6db74">&#34;~/Documents/Personal/journal.org&#34;</span>)
+<span style="color:#e6db74">&#34;**** %U%?%a \n&#34;</span> :tree-type week)
+(<span style="color:#e6db74">&#34;t&#34;</span> <span style="color:#e6db74">&#34;ToDo&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Documents/Archive/OhSnap!.org&#34;</span> <span style="color:#e6db74">&#34;Tasks&#34;</span>)
+<span style="color:#e6db74">&#34;** TODO %? \n SCHEDULED: %^T \n&#34;</span>)
+(<span style="color:#e6db74">&#34;e&#34;</span> <span style="color:#e6db74">&#34;Event&#34;</span> entry (file+headline <span style="color:#e6db74">&#34;~/Documents/Archive/OhSnap!.org&#34;</span> <span style="color:#e6db74">&#34;Event&#34;</span>)
+<span style="color:#e6db74">&#34;** %? \n %^T \n&#34;</span>)
+</code></pre></div><p>Going into details below, I broke the code down so it makes sense to people starting out with Org-mode in hope this would help new-commers like I was not too long ago. If these steps do not sound right (especially for those of you who know Emacs lisp better than me, which is probably 99% of you&hellip;) please let me know so I can correct and learn. Thanks!</p>
+<p>Ok, here we go.</p>
+<h2 id="part-1-the-inc-template">Part 1 - The INC Template</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#e6db74">&#34;i&#34;</span> <span style="color:#e6db74">&#34;INC&#34;</span> entry
+  (file+headline <span style="color:#e6db74">&#34;~/Documents/Archive/OhSnap!.org&#34;</span> <span style="color:#e6db74">&#34;Incidents&#34;</span>)
+
+<span style="color:#e6db74">&#34;** TODO %? \n
+</span><span style="color:#e6db74">  %^{Ticket}p %^{PIN}p %^{Computer}p %^{Location}p \n
+</span><span style="color:#e6db74">&#34;</span>)
+</code></pre></div><ol>
+<li>For key-press &ldquo;i&rdquo; initiate &ldquo;INC&rdquo; template as follows:</li>
+<li>Create a headline &ldquo;Incidents&rdquo; in file  <code>~/Documents/Archive/#OhSnap!.org</code>&hellip;</li>
+<li>&hellip;As a second level header. Create a TODO keyword, space, place cursor here, new line.</li>
+<li>Create Property &ldquo;Ticket&rdquo; and ask for input.</li>
+<li>Create Property &ldquo;PIN&rdquo; and ask for input</li>
+<li>Create Property &ldquo;Computer&rdquo; and ask for input</li>
+<li>Create Property &ldquo;Location&rdquo; and ask for input</li>
+<li>Space, New line</li>
+<li>Finish</li>
+</ol>
+<p>I use the above template for ticket creation at work. The file &ldquo;OhSnap.org&rdquo; is my &ldquo;dumping grounds&rdquo; for everything before I sort it out- usually in front of a desktop. This is useful to me because many times I&rsquo;m running around using my phone with <a href="http://www.orgzly.com">Orgzly</a>, a very minimal version of Org-mode. I click the add note widget, speak or write out my note in a few words, and save. Later I add details. (By the way, going on a tangent here: you can use Google Assistant on your phone with Orgzly like any other note taking app: &ldquo;OK Google, make note: buy eggs today&rdquo; - and bam, you have a quick header in your org file.)</p>
+<p>The properties help me keep my work-related issues organized. I have the ticket number for the issue, which is also the fastest way to find it in our ticketing system. Then I have the person&rsquo;s ID, to quickly identify the person&rsquo;s name and email from the directory if I need to. The computer property is the hostname, so I can remote in or know where it is. Location is helpful because we span over different buildings and even parts of the city. In turn, this also makes Column view beneficial if I want to quickly see all the tickets formatted in a nice table. I don&rsquo;t use it often, but it&rsquo;s there.</p>
+<p>I don&rsquo;t always have all the properties filled in (though I do try to at least have a ticket and a person&rsquo;s name entered), but I do use this template for anything work related. This is because I have a &ldquo;work&rdquo; category property inside the Incident tree, which quickly shows me my work related things on my agenda. This means I can also quickly filter into just work-related stuff if I need to, say, when I show something to my co-workers.</p>
+<p>Let me expand on that last at the risk of going into a somewhat unrelated tangent: one of the huge things about Org-mode efficiency in my case is the ability to mix work and personal items in the same place. I have different apps, difference accounts, and different devices, and Org-mode is the first place where I&rsquo;m comfortable mixing all of them into one agenda because I still have individual org files. This <em>very</em> helpful to keep me organized.</p>
+<p>This concludes part 1. As you can see I went into other areas that are not directly related to the template itself. Let me know what you think, and if you want me to expand further! Thanks for reading.</p>
+</div>
+<hr>
+<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "taonaw" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+
+    
+  </body>
+</html>

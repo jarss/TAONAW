@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberry-pi on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/tags/raspberry-pi/</link>
+    <description>Recent content in raspberry-pi on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Hub</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</guid>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;
+&lt;h2 id=&#34;buying-the-raspberry-pi-dot&#34;&gt;Buying the Raspberry Pi.&lt;/h2&gt;
+&lt;p&gt;For the setup I describe here, you need the RP itself, a power source, an SD card, a USB case for 2.5 inch HDD, and the HDD itself. You&amp;rsquo;ll also need an Ethernet cord for this setup. If you don&amp;rsquo;t have one, go grab yourself a &lt;a href=&#34;https://www.amazon.com/AmazonBasics-RJ45-Cat-6-Ethernet-Patch-Cable-5-Feet-1-5-Meters/dp/B00N2VILDM/ref=lp%5F9938478011%5F1%5F1?s=pc&amp;amp;ie=UTF8&amp;amp;qid=1542991619&amp;amp;sr=1-1&#34;&gt;CAT6 cord Amazon Basics&lt;/a&gt; cable, it&amp;rsquo;s always good to have one around.&lt;/p&gt;
+&lt;p&gt;For the RP, you better off getting a package similar to &lt;a href=&#34;https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/ref=sr%5F1%5Ffkmr0%5F2?s=electronics&amp;amp;ie=UTF8&amp;amp;qid=1541986065&amp;amp;sr=1-2-fkmr0&amp;amp;keywords=canakit+raspberry+pi+3+b%252B+sd+card&#34;&gt;this one&lt;/a&gt;. You could probably get something slightly cheaper by getting all the parts yourself, but not by much. Better to have everything you need at once without worrying about forgetting something. I didn&amp;rsquo;t get the above package with the SD card, so I had to wait a couple of days for another order to come in.&lt;/p&gt;
+&lt;p&gt;The HDD I had laying around already, so I got &lt;a href=&#34;https://www.amazon.com/gp/product/B01M08LCXW/ref=oh%5Faui%5Fdetailpage%5Fo00%5Fs00?ie=UTF8&amp;amp;psc=1&#34;&gt;this case&lt;/a&gt; for it. 8 bucks.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-the-rp&#34;&gt;Setting up the RP&lt;/h2&gt;
+&lt;p&gt;First, we&amp;rsquo;re going to set up the SD card to run our RP.&lt;/p&gt;
+&lt;p&gt;Before we jump in, a note about my setup: I have Linux in a VM inside a Windows host. As it turns out, having Windows an alt-tab away (or in my case, ctrl+alt+left arrow away) can be very useful.&lt;/p&gt;
+&lt;p&gt;If switch between Windows programs and Linux commands without mentioning it, that&amp;rsquo;s because this setup comes naturally to me at this point. I&amp;rsquo;ve been working this way (office and home) for almost four years, minusaa half a year of dual-booting with Linux-Mint as my daily OS. There&amp;rsquo;s a whole story here about the switch to Linux and back, but that&amp;rsquo;s for another time.&lt;/p&gt;
+&lt;p&gt;OK! Enough chatter. Let&amp;rsquo;s get on with it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download &lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian&lt;/a&gt; (zip file).&lt;/li&gt;
+&lt;li&gt;Format the SD to FAT32&lt;/li&gt;
+&lt;li&gt;Unzip, and write the image to the SD using &lt;a href=&#34;https://sourceforge.net/projects/win32diskimager/&#34;&gt;Win32 diskimager&lt;/a&gt; or Underbootin. For me, the first option is better when I deal with SD cards and my USB-SD adapter, YMMV.&lt;/li&gt;
+&lt;li&gt;Create an empty file (no extension) on the SD root called SSH.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That last part is important. Creating the file (in windows, just create a new text file, rename to SSH and delete the extension) is what tells our RP to open port 22 for SSH.&lt;/p&gt;
+&lt;p&gt;Then you insert the SD card and power the RP up. Log into your router to find the RP&amp;rsquo;s IP address.  This is why you need to Ethernet connection for. You won&amp;rsquo;t be able to access the RP with WiFi for this.&lt;/p&gt;
+&lt;p&gt;Go ahead and SSH into the RP as pi: &lt;code&gt;ssh pi@[RP IP address here]&lt;/code&gt;. your default password is raspberry.&lt;/p&gt;
+&lt;p&gt;Once in, you want to sudo into  RP config tool: &lt;code&gt;sudo raspi-config&lt;/code&gt;. The setup tool is straightforward enough, but I found that remoting into the pi itself with VNC (coming up) is more convenient, so the only option we really care about now is to turn VNC on:
+go to interface options (option 5 in my case, in the middle), and do that.&lt;/p&gt;
+&lt;p&gt;Save, get out, and then download &lt;a href=&#34;https://www.realvnc.com/en/connect/download/vnc/linux/&#34;&gt;RealVNC&lt;/a&gt;. I downloaded it for Linux because that&amp;rsquo;s what I use to SSH and setup my Pi. It&amp;rsquo;s also where later I will setup Syncthing (coming up), so it made sense. RealVNC is the recommended option for RPs. it&amp;rsquo;s easy to install and run, and supports VNCing with a password, which is what you need for the RP. As a bonus, it automatically creates nice thumbnails of the last logins (IP addresses) which can be useful.&lt;/p&gt;
+&lt;p&gt;With RealVNC, go ahead and connect to the RP using the same IP address and default password. The Raspbian will jump on you right away telling you need to change your default password and a bunch of other things. and that&amp;rsquo;s all good. Follow these screens, and after updates are downloaded, &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; restart just yet.&lt;/p&gt;
+&lt;p&gt;You might have noticed you&amp;rsquo;re working in a tiny little screen. Let&amp;rsquo;s change that quickly by going to the preferences (click on the RP icon at the top left), then Raspberry Pi Configurations. Under resolution, choose something that works well for you. for my ultra wide screen, 1920x1080 was good enough to work in. Now you can restart. If you changed your password (you should have!) leave RealVNC on and it will inform you the password is wrong (because you changed it). All good, log in.&lt;/p&gt;
+&lt;h2 id=&#34;a-note-about-passwords-and-password-generators&#34;&gt;A note about passwords and password generators&lt;/h2&gt;
+&lt;p&gt;If you use a password manager (my favorite on Linux now is xpass, LastPass is another), I strongly recommend to copy-paste your password in plaintext somewhere first, then copy it to the RP password-change field, and click the eye icon to reveal it. &lt;em&gt;Make sure what you pasted is the same thing you think you pasted&lt;/em&gt;. In my case, I messed this up twice and had to image my SD card all over again. Yes, &lt;a href=&#34;https://howtoraspberrypi.com/recover-password-raspberry-pi/&#34;&gt;there&amp;rsquo;s a technique to reset up the password by booting into the root shell&lt;/a&gt;, but this didn&amp;rsquo;t work for me. And besides, it&amp;rsquo;s annoying and requires to physically connect a screen and keyboard to the RP.&lt;/p&gt;
+&lt;p&gt;Because my RP is set up for SSH with a password for now, I made a random 32 character password for it. copy-paste is not a choice.&lt;/p&gt;
+&lt;h2 id=&#34;encrypting-the-hdd&#34;&gt;Encrypting the HDD&lt;/h2&gt;
+&lt;p&gt;I chose to use a separate HDD for a couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I can take it with me if I need to and mount to another machine&lt;/li&gt;
+&lt;li&gt;I have unused HDDs laying around from computer repairs. In my case, the HDD is 500GB, more than enough for text files and occasional pictures I use in Org-mode.&lt;/li&gt;
+&lt;li&gt;If the HDD dies, I still have a functional RP with the OS on the SD card.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The encryption tool of choice for me ended up being LUKS, the same thing that encrypts Linux machines at startup. Actually, my first choice was &lt;a href=&#34;https://www.veracrypt.fr/en/Downloads.html&#34;&gt;VeryCrypt&lt;/a&gt;. It comes with a convenient GUI and better options to handle containers. As it turns out, there&amp;rsquo;s no updated version for ARM (which is what the RP is), and I&amp;rsquo;d have to compile from source. Possible, but not worth it for now.&lt;/p&gt;
+&lt;p&gt;VNC into your RP.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, Install cryptsetup on the RP (apt-get). This is the LUKS suite.&lt;/li&gt;
+&lt;li&gt;Figure out the USB-connected drive: &lt;code&gt;sudo fdisk -l&lt;/code&gt;. this will show you where&amp;rsquo;s your hdd in /dev. In my case, it was in /dev/sda (not sda1, etc.)&lt;/li&gt;
+&lt;li&gt;Format with LUKS:  &lt;code&gt;cryptsetup luksFormat /dev/[drive]&lt;/code&gt; the default option was fine for me, but be aware that LUKS comes with many options if you so desire. When formatting, it should ask for a passphrase, so give it one. Then it should start doing its thing.&lt;/li&gt;
+&lt;li&gt;When done, verify your drive is encrypted with  &lt;code&gt;cryptsetup luksDump /dev/[drive]&lt;/code&gt;. You should see information about the encryption, along with the first key (LUKS can hold up to eight keys) and its hash. This means we&amp;rsquo;re all good so far.&lt;/li&gt;
+&lt;li&gt;Now, create a mount point for your drive. for me, out of habit of using Mint, that was /media/pimount. So: &lt;code&gt;sudo mkdir /media/pimount&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;This is where things get a bit hazy since I&amp;rsquo;m writing this from memory. We need to open the encrypted drive with &lt;code&gt;cryptsetup luksOpen /dev/mapper/[drive name] [mounting point name]&lt;/code&gt;. Notice we have &lt;strong&gt;mapper&lt;/strong&gt; in the path after dev now. that&amp;rsquo;s how LUKS work. The encryption is not being done on &lt;em&gt;dev&lt;/em&gt;[drive] itself. I&amp;rsquo;m not sure why (I&amp;rsquo;m sure there&amp;rsquo;s some Linux file system reason behind it), so feel free to educate me.&lt;/li&gt;
+&lt;li&gt;Now, we need to format the drive with the file system of our choice. In my case, ext4. I believe this can also be done for FAT32 or even NTFS if you want to access your drive from Windows, but I haven&amp;rsquo;t tested that. To format, you can download Gparted, which is good to have in general. However, this is easy to do with &lt;code&gt;mkfs.ext4 /dev/[name]&lt;/code&gt;. In fact, that&amp;rsquo;s exactly what Gparted would do for you anyway.&lt;/li&gt;
+&lt;li&gt;Mount the freshly formatted drive: &lt;code&gt;mount /dev/mapper/[name] /media/[name]&lt;/code&gt;  If we have &amp;ldquo;show mounted drives&amp;rdquo; option on the desktop in RP, it should show now. As a matter of fact, it&amp;rsquo;s a good idea to enable this (right click on the RP desktop).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Before you start putting stuff on your HDD, it&amp;rsquo;s a good idea to restart and practice mounting the drive again (step 6 and 8; you don&amp;rsquo;t need to format again!). Then do it again. The unmount command is umount (no n), or you can simply restart the Pi.  There&amp;rsquo;s a way to automate this using fstab, but messing your fstab could screw up your RP as it happened to me. I figured I never plan on really turning off the thing, so I will just keep doing it manually. Now, if someone happens to just grab your HDD and walk away, it will need to be mounter and decrypted.&lt;/p&gt;
+&lt;h2 id=&#34;syncthing-setup&#34;&gt;Syncthing setup&lt;/h2&gt;
+&lt;p&gt;To me, &lt;a href=&#34;https://en.wikipedia.org/wiki/Syncthing&#34;&gt;Syncthing&lt;/a&gt; is the best solution for all my file-syncing needs. It works without a hitch until you need to change something tiny and meaningless. Then all hell breaks loose. I don&amp;rsquo;t understand why that is, but I learned to accept it as a fact of life at this point.&lt;/p&gt;
+&lt;p&gt;During this RP weekend setup, I had to change my Syncthing setup so that the RP will become the central hub. What happened was a fruitless night of trying to figure out why Syncthing stopped syncing and  an messy Monday at work. It was such a bad setback, in fact, that I decided to create a process dubbed &amp;ldquo;downfall&amp;rdquo; for future cases just like this one when I can&amp;rsquo;t use Org-mode at work. Yes, not having Syncthing basically means I can&amp;rsquo;t use Org. But I digress&amp;hellip; The important lesson here is this:&lt;/p&gt;
+&lt;p&gt;don&amp;rsquo;t mess with Syncthing. Set it up, make sure it works, and &lt;em&gt;don&amp;rsquo;t touch it&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As intimidating as this sounds, Syncthing actually has a pretty simple setup process. Here&amp;rsquo;s the plan:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/hub.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;The different colors represent the different folders in syncthing. To me these are personal, work, utilities (this is the only folder that does not have org files), and archive.&lt;/p&gt;
+&lt;p&gt;I use four devices, three daily, one (laptop) once in a while. The home VM, which is my main productivity box, gets everything. So does the laptop, it&amp;rsquo;s meant to be used as my home away from home. My work VM (OpenSuse Linux) only contains work org files and the archive. On the phone, I skip media-heavy folders like DnD and some classical music flac files to save space.&lt;/p&gt;
+&lt;p&gt;The setup process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Syncthing on RP (apt-get).&lt;/li&gt;
+&lt;li&gt;Choose the first device to sync. Add the RP&amp;rsquo;s ID to its Syncthing.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wait&lt;/em&gt; for RP to acknowledge the device. Approve.&lt;/li&gt;
+&lt;li&gt;From the connecting device, share the folders you want to sync with the RP.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wait&lt;/em&gt; for RP to acknowledge folders. Approve each, choose path.&lt;/li&gt;
+&lt;li&gt;Verify the sync work by altering the files a bit.&lt;/li&gt;
+&lt;li&gt;Choose the second device to sync&amp;hellip; repeat step 3-5.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, folders that common to a couple of devices should be added first from one device (as stated above) with the RP, and then add that folder to the &lt;em&gt;other&lt;/em&gt; device. Device_A &amp;ndash;&amp;gt; RP &amp;ndash;&amp;gt; Device_B. This ensures you&amp;rsquo;re sharing the same folder (same folder ID) and not creating duplicates. The reason you&amp;rsquo;re doing it this way and not just sharing from one device to another is because you don&amp;rsquo;t want the other devices to see each other; they should only &amp;ldquo;see&amp;rdquo; the RP. The RP is the only device that needs to see all of them. Fewer complications means Syncthing works better and faster. Remember what I said earlier: don&amp;rsquo;t play with it, keep it simple and it will work. Complicate it, and you&amp;rsquo;ll spend hours trying to figure out what&amp;rsquo;s wrong.&lt;/p&gt;
+&lt;p&gt;So for example, if I first sync my home VM and share the &amp;ldquo;work&amp;rdquo; folder to the RP, after I&amp;rsquo;m done and verify the sync work, I am connecting the work VM to the RP, wait until it&amp;rsquo;s recognized, and then send the work folder (which is now synced between home VM and RP) &lt;em&gt;to&lt;/em&gt; the work VM.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

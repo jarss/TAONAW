@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writing on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/tags/writing/</link>
+    <description>Recent content in writing on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Dec 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How I Write Posts for my Blog</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</guid>
+      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;
+&lt;h2 id=&#34;using-the-journal&#34;&gt;Using the Journal&lt;/h2&gt;
+&lt;p&gt;I usually create an event on my agenda and then write a journal entry about that specific event. This could mean several entries a day for different events, or on the other hand, only a few entries a month. This event-to-journal approach is helpful because it prevents me from writing too much at once and it keeps me focused.&lt;/p&gt;
+&lt;p&gt;Pictures are another thing. I&amp;rsquo;ve created a script that automatically resizes and labels photos from my phone to streamline the process. Pictures are useful on two levels: first, it&amp;rsquo;s a personal visual to decorate what I&amp;rsquo;m writing and makes it more memorable; second, the &lt;a href=&#34;https://duckduckgo.com/?q=undo+org-capture-kill&amp;amp;t=lm&amp;amp;ia=web&#34;&gt;geolocation&lt;/a&gt; in the photo and the name of the file serves as a way for me to know where I&amp;rsquo;ve been specifically and at what time, very useful for a quick reality &amp;ldquo;bookmark&amp;rdquo; so I can refer to it later when I write. For example, I will take a picture of pies in a pie shop, and later I will title the post &amp;ldquo;2018-12-24, 16:04 @ Big Pie Shoppe,&amp;rdquo; and the place name would be a link to Google Maps showing me that location.&lt;/p&gt;
+&lt;p&gt;Because the journal contains personal things which are usually not immediately shareable or worth blogging about, I have a basic rule of thumb: I blog about experiences that happened at least a month ago. This allows some emotional distance from something I wrote about too impulsively in my journal and might want to reconsider. It also allows me to think of the event in question more like a story as I reflect on it. which makes the post more interesting to read. The idea is that if I have a good story to share, it can wait a month or even more and still be good.&lt;/p&gt;
+&lt;h2 id=&#34;making-an-outline&#34;&gt;Making an Outline&lt;/h2&gt;
+&lt;p&gt;For me, making a basic outline is crucial. The outline is also a good tool to keep the post in a digestible length, something in the neighborhood of 500-700 words. An Outline is nothing more than a bunch of bullet points which I expand on as I write. I do write longer posts, but these are usually more of the technical, instruction-like texts.&lt;/p&gt;
+&lt;p&gt;Another good thing about outlining is that it allows me to finish a post before I run out of &amp;ldquo;creative juice.&amp;rdquo; I write for about 40 minutes (give or take), and when I feel I&amp;rsquo;m done, it&amp;rsquo;s easy to get up and do something else. I return later to my draft to shape it into something worth reading, look for typos and grammar issues, and get it ready for posting.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/drafting_a_post.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;h2 id=&#34;my-tools-hugo-and-org-mode&#34;&gt;My Tools: Hugo and Org-mode&lt;/h2&gt;
+&lt;p&gt;I started looking into &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; about three months ago as a replacement for WordPress. For non-programmers and people who are new to Git and GitHub (like I was), Hugo is not easy to pick up. I can&amp;rsquo;t recommend Hugo to folks who just want to start writing; it&amp;rsquo;s just too damn complicated. For me, as a techie and as a person on the lookout for a low-cost, reliable and secure solution, Hugo is excellent to learn and use. My website hosting is completely free, and the writing is integrated seamlessly into my journal, my calendar, and my tasks. It works well, but &lt;a href=&#34;https://joshrollinswrites.com/blogging/hugo-beginnings/&#34;&gt;it was &lt;em&gt;not&lt;/em&gt; easy to get there&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Org-mode is a huge topic in itself which I&amp;rsquo;ve spent hours writing about in other places. Speaking from a blogging perspective, I use a &amp;ldquo;bridging&amp;rdquo; piece called &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;Ox-hugo&lt;/a&gt; which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I&amp;rsquo;m talking about, here&amp;rsquo;s a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc.&lt;/p&gt;
+&lt;p&gt;These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what&amp;rsquo;s on my agenda. To me, that&amp;rsquo;s one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

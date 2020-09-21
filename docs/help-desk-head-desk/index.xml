@@ -6,10 +6,37 @@
     <description>Recent content in Help Desk Head Desks on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/help-desk-head-desk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Org-mode and Zettelkasten</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-09-09/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-09-09/</guid>
+      <description>&lt;p&gt;After almost two months of &lt;a href=&#34;https://joshrollinswrites.com/help-desk-head-desk/2020-07-16/&#34;&gt;thinking of the idea&lt;/a&gt;, I decided to give up the idea of a newcomer&amp;rsquo;s wiki to org based on Zettelkasten. I might revisit Zettelkasten in the future, but I don&amp;rsquo;t want to be bound by arbitrary time constraint of a project.&lt;/p&gt;
+&lt;h2 id=&#34;not--fixing-my-wiki&#34;&gt;(Not) Fixing my Wiki&lt;/h2&gt;
+&lt;p&gt;As of now, my wiki is a single org-mode file containing approximately 50 headers, and those are often broken into sub-headers with instructions and examples. All in all, I probably have some 100 headers to go through. Giving each one of these a hierarchical &lt;a href=&#34;https://orgmode.org/manual/Internal-Links.html&#34;&gt;custom ID&lt;/a&gt; (as Zettelkasten dictates) is a huge time suck which isn&amp;rsquo;t justified for my workflow.&lt;/p&gt;
+&lt;p&gt;Another problem: the wiki org file is somewhat broken and needs fixing. At one point I thought it was a good idea to sort the headers alphabetically and I did not use the right org-mode sorting technique. The result was that certain segments and headers got mixed. I can read one topic and suddenly an unrelated paragraph appears out of order. Since this issue is nested deep into topics I don&amp;rsquo;t read on a regular basis it&amp;rsquo;s hard to locate and find. I haven&amp;rsquo;t discovered this issue weeks (or maybe even months) after it happened, so restoring from backup wasn&amp;rsquo;t an option.&lt;/p&gt;
+&lt;p&gt;Yet there are still more organizational problems. The images of the wiki are nested in a sub-directory and lack a good naming convention which needs to be fixed before I attempt to fix image links from absolute paths to relative paths, which is needed for me to view the wiki on my phone.&lt;/p&gt;
+&lt;p&gt;Finally, another issue is my writing style: Parts of the wiki are personal and written in first person, journal like, while others built through a template that is meant for public viewing. Writing a wiki for readers means a lot of rewriting.&lt;/p&gt;
+&lt;p&gt;Some of these issues I am fixing slowly while others are simply not worth it. I am not going to finish rewriting my wiki any time soon&lt;/p&gt;
+&lt;h2 id=&#34;perspective-in-bullet-points&#34;&gt;Perspective in Bullet Points&lt;/h2&gt;
+&lt;p&gt;After wracking my brains trying to adjust my org-mode system to fit a bit better to Zettelkasten I realized something: I don&amp;rsquo;t &lt;em&gt;need&lt;/em&gt; Zettelkasten, it&amp;rsquo;s just a collection of ideas that seem cool to implement. As it always turns out for me, org-mode is designed to do exactly what I need it to do with minimal modifications.&lt;/p&gt;
+&lt;p&gt;Zettelkasten, at least originally, doesn&amp;rsquo;t place much importance on the order of headers or the hierarchy as long as there is one in place. As long as you have headers and sub-headers, all inter-connected in relationships to one another, you&amp;rsquo;re fine. Part of the beauty of this system is that you don&amp;rsquo;t need to worry where you place a new concept in the system, you just do, and you connect it to your existing ideas in your network.&lt;/p&gt;
+&lt;p&gt;This is a good philosophy, and one which I disagree with.&lt;/p&gt;
+&lt;p&gt;My hierarchy is crucial and my headers reflect categories that make sense to me. For example, my wiki is divided to roughly 4 major categories: work tech, personal tech, personal stuff (non-tech), and the security plus exam. That last part is mostly in the past now, just collection of notes I may or may not find use for. Then, each of the sub-headers usually reflects a specific program (if in tech) which helps me narrow the issue down further. From there, it&amp;rsquo;s usually easy enough to search through my notes with &lt;a href=&#34;https://www.emacswiki.org/emacs/OccurMode&#34;&gt;Occur&lt;/a&gt; or &lt;a href=&#34;https://github.com/abo-abo/swiper&#34;&gt;Swiper&lt;/a&gt;, depending on how fuzzy I need the search to be.&lt;/p&gt;
+&lt;p&gt;Say I need to reflect on something like capture templates syntax in org-mode.  I know this falls under personal tech category (the &amp;ldquo;crazy&amp;rdquo; dude at work, with a weird organizational system no one else uses..? Yep, that&amp;rsquo;s me) so right away I narrowed it down to 25% of the wiki. That&amp;rsquo;s a lot. Emacs is a huge topic in the wiki under personal tech, which is the first place I&amp;rsquo;ll look. Then, because org-mode also contains several headers, I&amp;rsquo;ll locate org-mode and go there. If I can&amp;rsquo;t see the capture header at this point, I&amp;rsquo;ll search under the org-mode header for something like &amp;ldquo;capture&amp;rdquo; or &amp;ldquo;capture template&amp;rdquo; (one space) which, in Swiper, is regex search that is similar to the boolean &amp;ldquo;capture AND template&amp;rdquo;. I&amp;rsquo;ll have what I need in a second.&lt;/p&gt;
+&lt;p&gt;What about something more vague? Say my boss asks me to find out if a few failing hard drives are under warranty. I know I need to get the hard drives&amp;rsquo; serial numbers using a script I used a while back, but I don&amp;rsquo;t remember anything else. OK, no problem: it&amp;rsquo;s probably going to be under work related category, and then, I&amp;rsquo;ll just search for &amp;ldquo;hard drive serial&amp;rdquo;. Turns out there are no results, but I know for sure I wrote about it. I look at the search, and I remember I almost never write out &amp;ldquo;hard drive&amp;rdquo; but hd or hdd. I try again and bingo, I find &amp;ldquo;get HDD serial&amp;rdquo;. It&amp;rsquo;s under work related, which I knew, and under Powershell. Aha, of course it was Powershell! Now I remember. I find the script, and even more, there&amp;rsquo;s a journal reference (in the wiki, it just says &amp;ldquo;see more in the journal&amp;rdquo; with the word journal being a link, nothing fancy). Now I have the technical and, if I want, I know to look at my journal org file (which is even bigger than my wiki) around that date to see my reflections on the topic.&lt;/p&gt;
+&lt;p&gt;I also have &amp;ldquo;see so and so&amp;rdquo; links which lead to other area of the wiki, something I implemented before I&amp;rsquo;ve heard of Zettelkasten and continue to use where needed, not because I&amp;rsquo;m supposed to or because the system I use says so. In other words, I kind of used Zettelkasten before I even know what it was. Creating such links, by the way, doesn&amp;rsquo;t require anything fancy like org-roam or even custom links: a simple &lt;code&gt;C-c l&lt;/code&gt; grabs the link of the header you&amp;rsquo;re on, and &lt;code&gt;C-c C-l&lt;/code&gt; would suggest pasting it for you automatically. This is org-mode usage 101, straight out of the box, no package needed. In case these links break, as they do in a dynamic wiki, the broken link usually offers enough hints for me to re-link it. This doesn&amp;rsquo;t happen often enough to worry beyond a manual fix when needed.&lt;/p&gt;
+&lt;h2 id=&#34;there-are-many-other-great-sources&#34;&gt;There are Many Other Great Sources&lt;/h2&gt;
+&lt;p&gt;So far, I&amp;rsquo;ve discussed how I don&amp;rsquo;t want to modify my wiki and that I don&amp;rsquo;t really need Zettelkasten to find stuff. The other thing is, there&amp;rsquo;s little need for yet another &amp;ldquo;noob guide&amp;rdquo; for people new to Emacs. Most chances are that they won&amp;rsquo;t find this blog anyway, not when they start. Google&amp;rsquo;s SEO is a science that I don&amp;rsquo;t want a part of really. If someone lands on this blog it&amp;rsquo;s probably because of my rambling on mastodon or reddit trying to help out folks, and that&amp;rsquo;s fine. Certain posts are more popular than others, and I like to see what folks find useful.&lt;/p&gt;
+&lt;p&gt;There are wonderful web casts, blogs, and even books directed at new users. Like with anything else in life, there&amp;rsquo;s no magic bullet. Org-Mode is a huge system inside even a bigger one, Emacs. Many times I think the problem folks are trying to fix with packages and add ons are not the result of lack of options, but lack of knowledge of the options they already have.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not trying to be harsh, but as a person who chased different organizational apps for about 10 years himself, switching from one to the other, I know this to be true for me. I know better than to convince folks to try something else: anyone who works in IT would tell you one of the hardest parts if to fight old users&amp;rsquo; habits, as ineffective and insecure as they may be. you want to try Zettelkasten and org-roam? Then by all means, go ahead. It&amp;rsquo;s a good system. Just remember: at the end of the day &lt;em&gt;you&lt;/em&gt; are the person who needs to organize your information, no matter what tool you use, be it paper index card which don&amp;rsquo;t come with amazing regex searches, or a complete database that comes with its own search capabilities. You&amp;rsquo;re in charge. I&amp;rsquo;m just here rambling.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>My Impressions of The Pixel 4a</title>
@@ -477,7 +504,7 @@ domain=.
 &lt;p&gt;Didn&amp;rsquo;t I just say we need sudo? Why yes. In Emacs you do that by using &lt;a href=&#34;https://www.gnu.org/software/tramp/#Using-su%5F002c-sudo-and-sg&#34;&gt;TRAMP&lt;/a&gt;. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user name and password to log into Linux, you&amp;rsquo;re f-ed anyway. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;giving out a user name and password in plaintext in a file sounds like a terrible idea. However, since you encrypt your entire hard drive (which you better do) or your VM, the assumption is that if someone went around your hard drive encryption and found your user namhe and password to log into Linux, you&amp;rsquo;re f-ed anyway. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;</description>
@@ -1950,11 +1977,51 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
     </item>
     
     <item>
+      <title>How I Write Posts for my Blog</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</guid>
+      <description>&lt;p&gt;Even though it doesn&amp;rsquo;t show on this blog (yet), I&amp;rsquo;ve been blogging since I got into college, more than a decade ago. Blogging is an activity that combines a couple of passions for me: writing, technology. and visual creativity. My process hasn&amp;rsquo;t changed much over the years, and the tools I taught myself to use help me maintaining my routine. This is a quick explanation of its main components.&lt;/p&gt;
+&lt;h2 id=&#34;using-the-journal&#34;&gt;Using the Journal&lt;/h2&gt;
+&lt;p&gt;I usually create an event on my agenda and then write a journal entry about that specific event. This could mean several entries a day for different events, or on the other hand, only a few entries a month. This event-to-journal approach is helpful because it prevents me from writing too much at once and it keeps me focused.&lt;/p&gt;
+&lt;p&gt;Pictures are another thing. I&amp;rsquo;ve created a script that automatically resizes and labels photos from my phone to streamline the process. Pictures are useful on two levels: first, it&amp;rsquo;s a personal visual to decorate what I&amp;rsquo;m writing and makes it more memorable; second, the &lt;a href=&#34;https://duckduckgo.com/?q=undo+org-capture-kill&amp;amp;t=lm&amp;amp;ia=web&#34;&gt;geolocation&lt;/a&gt; in the photo and the name of the file serves as a way for me to know where I&amp;rsquo;ve been specifically and at what time, very useful for a quick reality &amp;ldquo;bookmark&amp;rdquo; so I can refer to it later when I write. For example, I will take a picture of pies in a pie shop, and later I will title the post &amp;ldquo;2018-12-24, 16:04 @ Big Pie Shoppe,&amp;rdquo; and the place name would be a link to Google Maps showing me that location.&lt;/p&gt;
+&lt;p&gt;Because the journal contains personal things which are usually not immediately shareable or worth blogging about, I have a basic rule of thumb: I blog about experiences that happened at least a month ago. This allows some emotional distance from something I wrote about too impulsively in my journal and might want to reconsider. It also allows me to think of the event in question more like a story as I reflect on it. which makes the post more interesting to read. The idea is that if I have a good story to share, it can wait a month or even more and still be good.&lt;/p&gt;
+&lt;h2 id=&#34;making-an-outline&#34;&gt;Making an Outline&lt;/h2&gt;
+&lt;p&gt;For me, making a basic outline is crucial. The outline is also a good tool to keep the post in a digestible length, something in the neighborhood of 500-700 words. An Outline is nothing more than a bunch of bullet points which I expand on as I write. I do write longer posts, but these are usually more of the technical, instruction-like texts.&lt;/p&gt;
+&lt;p&gt;Another good thing about outlining is that it allows me to finish a post before I run out of &amp;ldquo;creative juice.&amp;rdquo; I write for about 40 minutes (give or take), and when I feel I&amp;rsquo;m done, it&amp;rsquo;s easy to get up and do something else. I return later to my draft to shape it into something worth reading, look for typos and grammar issues, and get it ready for posting.&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/drafting_a_post.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;h2 id=&#34;my-tools-hugo-and-org-mode&#34;&gt;My Tools: Hugo and Org-mode&lt;/h2&gt;
+&lt;p&gt;I started looking into &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; about three months ago as a replacement for WordPress. For non-programmers and people who are new to Git and GitHub (like I was), Hugo is not easy to pick up. I can&amp;rsquo;t recommend Hugo to folks who just want to start writing; it&amp;rsquo;s just too damn complicated. For me, as a techie and as a person on the lookout for a low-cost, reliable and secure solution, Hugo is excellent to learn and use. My website hosting is completely free, and the writing is integrated seamlessly into my journal, my calendar, and my tasks. It works well, but &lt;a href=&#34;https://joshrollinswrites.com/blogging/hugo-beginnings/&#34;&gt;it was &lt;em&gt;not&lt;/em&gt; easy to get there&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Org-mode is a huge topic in itself which I&amp;rsquo;ve spent hours writing about in other places. Speaking from a blogging perspective, I use a &amp;ldquo;bridging&amp;rdquo; piece called &lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;Ox-hugo&lt;/a&gt; which translates what I write in Org-mode to Hugo. If you have absolutely no idea what I&amp;rsquo;m talking about, here&amp;rsquo;s a way to think of it: Hugo is the publishing platform (think of it as WordPress), and Org-mode is the writing tool (think of it as - shiver - Word or Google Docs). Ox-hugo is what copy-pastes from Word/Google Docs to WordPress, complete with links, formatting, headers, etc.&lt;/p&gt;
+&lt;p&gt;These tools keep my writing easy and natural. What I write on my blog looks the same as what I write in my journal which looks the same as what&amp;rsquo;s on my agenda. To me, that&amp;rsquo;s one of the things that allows me to write much more frequently than ever before in a distraction-free environment. The complete opposite of MS Word, if you ask me.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>About Removing Company Software</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</guid>
+      <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;
+&lt;p&gt;A few days ago, A client gave me her under-performing BYOD laptop for general cleanup before switching it back for strictly personal use. She knew about the different bits of software we install because she asked me when she first brought it in. She was curious and worried about her privacy and she got the full story from me. I have no doubt that the conversation was motivating enough for her to come back for a cleanup &amp;ndash; and for the right reasons. I dare hope that she sought me out specifically to clean her laptop because she trusted me a bit more after that conversation.&lt;/p&gt;
+&lt;p&gt;How many people leave us with their personal laptop without ever bothering checking in with us to make sure our software is removed? A few of them will take the time to wipe their laptops, but so many more, the majority for sure, will never bother.&lt;/p&gt;
+&lt;p&gt;Among our most intrusive software is an Anti Virus client that dials home to our management environment and an inventory management software that gives us full details about the hardware and software installed on the device. We also effectively have root privileges on BYOD devices, basically a backdoor on their system.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s nothing unique about what we do. The same practices are followed by virtually every respectful IT company that deals with BYODs. Nothing we do have sinister intentions, and I trust everyone on my team not to abuse root privileges on BYOD devices which are often one of the most personal things a person owns. But that doesn&amp;rsquo;t mean our clients should just trust us blindly.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Removing Company Software</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</guid>
       <description>&lt;p&gt;When someone asks what we install on their personal devices (BYOD laptops), I usually give them the abridged version. People rarely care about details. Every now and then though, someone is a bit concerned and asks for more information. Stuff like why do we need software that tells us details about their hardware, how do we use it, and of course, if we can view their personal data. My answer to that last question is &amp;ldquo;we can if we want to.&amp;rdquo; It bothers me this question comes only from so few individuals.&lt;/p&gt;
 &lt;p&gt;A few days ago, A client gave me her under-performing BYOD laptop for general cleanup before switching it back for strictly personal use. She knew about the different bits of software we install because she asked me when she first brought it in. She was curious and worried about her privacy and she got the full story from me. I have no doubt that the conversation was motivating enough for her to come back for a cleanup &amp;ndash; and for the right reasons. I dare hope that she sought me out specifically to clean her laptop because she trusted me a bit more after that conversation.&lt;/p&gt;
 &lt;p&gt;How many people leave us with their personal laptop without ever bothering checking in with us to make sure our software is removed? A few of them will take the time to wipe their laptops, but so many more, the majority for sure, will never bother.&lt;/p&gt;
@@ -1978,6 +2045,44 @@ Events usually have an ending time, even if it&amp;rsquo;s speculative. I go bac
 &lt;p&gt;I&amp;rsquo;m also not entirely happy with the blog hosted on GitHub, which is now owned by Microsoft. It&amp;rsquo;s no difference than Tumblr being bought out by Yahoo. I need to move to an actual host with a more liberal point of view about sexual content. Unfortunately, in this world of ours, this means I&amp;rsquo;m looking for a host that is OK with Pornography. They have to include everything in one blanket statement so it&amp;rsquo;s easy to sort out in courts, in case someone gets offended. But I&amp;rsquo;m not going to go down that hole right now, there&amp;rsquo;s a whole lot of it, more than enough, on the internet right now with people freaking out about Tumblr.&lt;/p&gt;
 &lt;p&gt;So what&amp;rsquo;s the solution&amp;hellip;?&lt;/p&gt;
 &lt;p&gt;I believe AWS (Amazon hosting service) might be it for now. I find it hard to believe they&amp;rsquo;d bother chasing me if I mention a sexual encounter or show a picture of a breast. Still, even AWS is not a safe haven. Hmmm.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Switching to Hugo - Full Time</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/switching_2_hugo_ft/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/switching_2_hugo_ft/</guid>
+      <description>&lt;p&gt;PayPal informed me that the host of my WordPress blog is charging me for another $80 or so for the next year. The very next day, tumblr &lt;a href=&#34;https://tumblr.zendesk.com/hc/en-us/articles/231885248-Sensitive-content&#34;&gt;decided to shoot itself in the head&lt;/a&gt; (rather than the leg, if you ask me). It was good to be reminded to not trust cloud services for creative content - like my blog.&lt;/p&gt;
+&lt;h2 id=&#34;the-issues-with-my-host&#34;&gt;The Issues With my Host&lt;/h2&gt;
+&lt;p&gt;My current host sucks. My WordPress blog continuously goes offline, so much so that I had to mute the alerts I got because they overwhelmed my inbox. My connection issues never got resolved.&lt;/p&gt;
+&lt;p&gt;Another major issue with that website was the lack of https (this is not my host fault, actually, it&amp;rsquo;s just yet another thing you need to buy) and the constant spam I got on the website. People would go to my link and find a totally different website trying to sell them something. That issue was not resolved either.&lt;/p&gt;
+&lt;p&gt;There were other technical issues, from WordPress not functioning right due to database corruptions (the host had an automatic set up process), to my domain not being resolved correctly. In the past, such issues would die out in the first month or two when I switch to a new host &amp;ndash; but not this time. This time, as soon as I got the notification of renewal from PayPal, I immediately asked for cancellation.&lt;/p&gt;
+&lt;h2 id=&#34;more-work-to-be-done&#34;&gt;More Work to be Done&lt;/h2&gt;
+&lt;p&gt;There&amp;rsquo;s a lot more work to do on this website. I am still not happy with it, and I believe my WordPress blog overall looked better still. But it is up to me to make this place better with my own set of growing skills. CSS, ox-Hugo, Go, and of course, the quality (and quantity) what I write matter.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also not entirely happy with the blog hosted on GitHub, which is now owned by Microsoft. It&amp;rsquo;s no difference than Tumblr being bought out by Yahoo. I need to move to an actual host with a more liberal point of view about sexual content. Unfortunately, in this world of ours, this means I&amp;rsquo;m looking for a host that is OK with Pornography. They have to include everything in one blanket statement so it&amp;rsquo;s easy to sort out in courts, in case someone gets offended. But I&amp;rsquo;m not going to go down that hole right now, there&amp;rsquo;s a whole lot of it, more than enough, on the internet right now with people freaking out about Tumblr.&lt;/p&gt;
+&lt;p&gt;So what&amp;rsquo;s the solution&amp;hellip;?&lt;/p&gt;
+&lt;p&gt;I believe AWS (Amazon hosting service) might be it for now. I find it hard to believe they&amp;rsquo;d bother chasing me if I mention a sexual encounter or show a picture of a breast. Still, even AWS is not a safe haven. Hmmm.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AFPS Secure Token Active Directory Problems</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</guid>
+      <description>&lt;p&gt;Most chances are, you won&amp;rsquo;t even hear about Secure Token unless you happen to manage Macs for your company. Secure Token seems to be only an issue with Active Directory.&lt;/p&gt;
+&lt;p&gt;Because Apple doesn&amp;rsquo;t talk much about Secure Token, I suggest you read about it on &lt;a href=&#34;https://derflounder.wordpress.com/2018/01/20/secure-token-and-filevault-on-apple-file-system/&#34;&gt;Der Flounder&lt;/a&gt;. There&amp;rsquo;s a pretty good explanation of what it does and why.&lt;/p&gt;
+&lt;p&gt;My story begins with the delivery of an iMac. It usually takes me 1.5 hours to prep a Mac from start to finish since we don&amp;rsquo;t have a working image yet; that&amp;rsquo;s a whole issue in itself. The prepped iMac gets to the user bound to the domain so all they have to do is log in. I then connect them to their user&amp;rsquo;s share drive (as a startup item so they always have it) and see if they need access to any printers that we don&amp;rsquo;t have on the server, There is usually at least one.&lt;/p&gt;
+&lt;p&gt;I have to log in first (as the iMac&amp;rsquo;s admin) to unlock FileVault. So far, so good. Then, using the fast switching menu, I get back to the login screen and ask the user to log in using their domain credentials. On AFPS, like the one here, I get the Security Token window. Mo problem. I put in the admin credentials, the user is approved, and after adding said printers and share drive, we restart to make sure everything is in working order.&lt;/p&gt;
+&lt;p&gt;Last week though, it didn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;The user that I just authenticated was not on the login screen. My admin account was there, my test account was there, his account&amp;hellip; nope. This was odd since I knew we just went through authenticated with the secure token. I logged into my admin account and check the security settings since I know it will tell me if anyone is not allowed to log in because of FileVault&amp;hellip; but nothing. I ran &lt;code&gt;fdesetup list&lt;/code&gt;, which shows the list of approved FileVault users, and sure enough, he was there.&lt;/p&gt;
+&lt;p&gt;In the next couple of days, I&amp;rsquo;ve had a couple of users log into this iMac to test. I also had the user log into a different iMac, one that I set up a week previously using the exact same procedure. Everyone could sign in and &lt;em&gt;stay&lt;/em&gt; approved (they&amp;rsquo;d show up after approved with the secure token and restart) on the iMac besides this one person. On the other iMac, we ran into the same issue with this user. The problem then was with the account.&lt;/p&gt;
+&lt;p&gt;Because I saw the user log in and out so many times and checked the users list, I noticed something odd: the user&amp;rsquo;s name was omitted. There was nothing at the top right corner (fast switching) and in the list of users, the icon for a user showed up without a name. I&amp;rsquo;ve never seen anything like that before on a mac.&lt;/p&gt;
+&lt;p&gt;Back at my desk I looked into the account and couldn&amp;rsquo;t find anything odd at first. I even copied the account to create another test user&amp;hellip; and then I saw it: the Display Name field for that user was blank for some reason. The Display Name field in AD is populated automatically when a new user is created, but not here.&lt;/p&gt;
+&lt;p&gt;Today I managed to do final testing. I repeated the same test: signed in with admin, gave my test user with the blank Display Name field access with secure token, and restarted. Sure enough, the test user could not be seen on the login screen. Only after my admin account was signed in the test user was able to sign in as well.&lt;/p&gt;
+&lt;p&gt;As soon as I populated the Display Name field and logged in again, everything worked. The name showed up, and the secure token remained.&lt;/p&gt;
+&lt;p&gt;The conclusion: macOS pulls the user&amp;rsquo;s name field from &amp;ldquo;Display Name&amp;rdquo; in AD. And it &lt;em&gt;needs&lt;/em&gt; this name for the secure token. Without it, it doesn&amp;rsquo;t work. the secure token is tied to the display name of the user, not the user account itself&amp;hellip; or at least, not completely.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2082,11 +2187,108 @@ go to interface options (option 5 in my case, in the middle), and do that.&lt;/p
     </item>
     
     <item>
+      <title>The Hub</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</guid>
+      <description>&lt;p&gt;Having a consisted, stable server for my org files has been on my mind for a while. I bought a Raspberry PI (RP) to serve as a file server to be used as a &amp;ldquo;hub&amp;rdquo; that will always be on and host these files. This is a description of the setup of what I&amp;rsquo;ve done to make this work. I hope you&amp;rsquo;d find this useful! Feel free to contact me with any questions.&lt;/p&gt;
+&lt;h2 id=&#34;buying-the-raspberry-pi-dot&#34;&gt;Buying the Raspberry Pi.&lt;/h2&gt;
+&lt;p&gt;For the setup I describe here, you need the RP itself, a power source, an SD card, a USB case for 2.5 inch HDD, and the HDD itself. You&amp;rsquo;ll also need an Ethernet cord for this setup. If you don&amp;rsquo;t have one, go grab yourself a &lt;a href=&#34;https://www.amazon.com/AmazonBasics-RJ45-Cat-6-Ethernet-Patch-Cable-5-Feet-1-5-Meters/dp/B00N2VILDM/ref=lp%5F9938478011%5F1%5F1?s=pc&amp;amp;ie=UTF8&amp;amp;qid=1542991619&amp;amp;sr=1-1&#34;&gt;CAT6 cord Amazon Basics&lt;/a&gt; cable, it&amp;rsquo;s always good to have one around.&lt;/p&gt;
+&lt;p&gt;For the RP, you better off getting a package similar to &lt;a href=&#34;https://www.amazon.com/CanaKit-Raspberry-Complete-Starter-Kit/dp/B01C6Q2GSY/ref=sr%5F1%5Ffkmr0%5F2?s=electronics&amp;amp;ie=UTF8&amp;amp;qid=1541986065&amp;amp;sr=1-2-fkmr0&amp;amp;keywords=canakit+raspberry+pi+3+b%252B+sd+card&#34;&gt;this one&lt;/a&gt;. You could probably get something slightly cheaper by getting all the parts yourself, but not by much. Better to have everything you need at once without worrying about forgetting something. I didn&amp;rsquo;t get the above package with the SD card, so I had to wait a couple of days for another order to come in.&lt;/p&gt;
+&lt;p&gt;The HDD I had laying around already, so I got &lt;a href=&#34;https://www.amazon.com/gp/product/B01M08LCXW/ref=oh%5Faui%5Fdetailpage%5Fo00%5Fs00?ie=UTF8&amp;amp;psc=1&#34;&gt;this case&lt;/a&gt; for it. 8 bucks.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-the-rp&#34;&gt;Setting up the RP&lt;/h2&gt;
+&lt;p&gt;First, we&amp;rsquo;re going to set up the SD card to run our RP.&lt;/p&gt;
+&lt;p&gt;Before we jump in, a note about my setup: I have Linux in a VM inside a Windows host. As it turns out, having Windows an alt-tab away (or in my case, ctrl+alt+left arrow away) can be very useful.&lt;/p&gt;
+&lt;p&gt;If switch between Windows programs and Linux commands without mentioning it, that&amp;rsquo;s because this setup comes naturally to me at this point. I&amp;rsquo;ve been working this way (office and home) for almost four years, minusaa half a year of dual-booting with Linux-Mint as my daily OS. There&amp;rsquo;s a whole story here about the switch to Linux and back, but that&amp;rsquo;s for another time.&lt;/p&gt;
+&lt;p&gt;OK! Enough chatter. Let&amp;rsquo;s get on with it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download &lt;a href=&#34;https://www.raspberrypi.org/downloads/raspbian/&#34;&gt;Raspbian&lt;/a&gt; (zip file).&lt;/li&gt;
+&lt;li&gt;Format the SD to FAT32&lt;/li&gt;
+&lt;li&gt;Unzip, and write the image to the SD using &lt;a href=&#34;https://sourceforge.net/projects/win32diskimager/&#34;&gt;Win32 diskimager&lt;/a&gt; or Underbootin. For me, the first option is better when I deal with SD cards and my USB-SD adapter, YMMV.&lt;/li&gt;
+&lt;li&gt;Create an empty file (no extension) on the SD root called SSH.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That last part is important. Creating the file (in windows, just create a new text file, rename to SSH and delete the extension) is what tells our RP to open port 22 for SSH.&lt;/p&gt;
+&lt;p&gt;Then you insert the SD card and power the RP up. Log into your router to find the RP&amp;rsquo;s IP address.  This is why you need to Ethernet connection for. You won&amp;rsquo;t be able to access the RP with WiFi for this.&lt;/p&gt;
+&lt;p&gt;Go ahead and SSH into the RP as pi: &lt;code&gt;ssh pi@[RP IP address here]&lt;/code&gt;. your default password is raspberry.&lt;/p&gt;
+&lt;p&gt;Once in, you want to sudo into  RP config tool: &lt;code&gt;sudo raspi-config&lt;/code&gt;. The setup tool is straightforward enough, but I found that remoting into the pi itself with VNC (coming up) is more convenient, so the only option we really care about now is to turn VNC on:
+go to interface options (option 5 in my case, in the middle), and do that.&lt;/p&gt;
+&lt;p&gt;Save, get out, and then download &lt;a href=&#34;https://www.realvnc.com/en/connect/download/vnc/linux/&#34;&gt;RealVNC&lt;/a&gt;. I downloaded it for Linux because that&amp;rsquo;s what I use to SSH and setup my Pi. It&amp;rsquo;s also where later I will setup Syncthing (coming up), so it made sense. RealVNC is the recommended option for RPs. it&amp;rsquo;s easy to install and run, and supports VNCing with a password, which is what you need for the RP. As a bonus, it automatically creates nice thumbnails of the last logins (IP addresses) which can be useful.&lt;/p&gt;
+&lt;p&gt;With RealVNC, go ahead and connect to the RP using the same IP address and default password. The Raspbian will jump on you right away telling you need to change your default password and a bunch of other things. and that&amp;rsquo;s all good. Follow these screens, and after updates are downloaded, &lt;em&gt;don&amp;rsquo;t&lt;/em&gt; restart just yet.&lt;/p&gt;
+&lt;p&gt;You might have noticed you&amp;rsquo;re working in a tiny little screen. Let&amp;rsquo;s change that quickly by going to the preferences (click on the RP icon at the top left), then Raspberry Pi Configurations. Under resolution, choose something that works well for you. for my ultra wide screen, 1920x1080 was good enough to work in. Now you can restart. If you changed your password (you should have!) leave RealVNC on and it will inform you the password is wrong (because you changed it). All good, log in.&lt;/p&gt;
+&lt;h2 id=&#34;a-note-about-passwords-and-password-generators&#34;&gt;A note about passwords and password generators&lt;/h2&gt;
+&lt;p&gt;If you use a password manager (my favorite on Linux now is xpass, LastPass is another), I strongly recommend to copy-paste your password in plaintext somewhere first, then copy it to the RP password-change field, and click the eye icon to reveal it. &lt;em&gt;Make sure what you pasted is the same thing you think you pasted&lt;/em&gt;. In my case, I messed this up twice and had to image my SD card all over again. Yes, &lt;a href=&#34;https://howtoraspberrypi.com/recover-password-raspberry-pi/&#34;&gt;there&amp;rsquo;s a technique to reset up the password by booting into the root shell&lt;/a&gt;, but this didn&amp;rsquo;t work for me. And besides, it&amp;rsquo;s annoying and requires to physically connect a screen and keyboard to the RP.&lt;/p&gt;
+&lt;p&gt;Because my RP is set up for SSH with a password for now, I made a random 32 character password for it. copy-paste is not a choice.&lt;/p&gt;
+&lt;h2 id=&#34;encrypting-the-hdd&#34;&gt;Encrypting the HDD&lt;/h2&gt;
+&lt;p&gt;I chose to use a separate HDD for a couple of reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I can take it with me if I need to and mount to another machine&lt;/li&gt;
+&lt;li&gt;I have unused HDDs laying around from computer repairs. In my case, the HDD is 500GB, more than enough for text files and occasional pictures I use in Org-mode.&lt;/li&gt;
+&lt;li&gt;If the HDD dies, I still have a functional RP with the OS on the SD card.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The encryption tool of choice for me ended up being LUKS, the same thing that encrypts Linux machines at startup. Actually, my first choice was &lt;a href=&#34;https://www.veracrypt.fr/en/Downloads.html&#34;&gt;VeryCrypt&lt;/a&gt;. It comes with a convenient GUI and better options to handle containers. As it turns out, there&amp;rsquo;s no updated version for ARM (which is what the RP is), and I&amp;rsquo;d have to compile from source. Possible, but not worth it for now.&lt;/p&gt;
+&lt;p&gt;VNC into your RP.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, Install cryptsetup on the RP (apt-get). This is the LUKS suite.&lt;/li&gt;
+&lt;li&gt;Figure out the USB-connected drive: &lt;code&gt;sudo fdisk -l&lt;/code&gt;. this will show you where&amp;rsquo;s your hdd in /dev. In my case, it was in /dev/sda (not sda1, etc.)&lt;/li&gt;
+&lt;li&gt;Format with LUKS:  &lt;code&gt;cryptsetup luksFormat /dev/[drive]&lt;/code&gt; the default option was fine for me, but be aware that LUKS comes with many options if you so desire. When formatting, it should ask for a passphrase, so give it one. Then it should start doing its thing.&lt;/li&gt;
+&lt;li&gt;When done, verify your drive is encrypted with  &lt;code&gt;cryptsetup luksDump /dev/[drive]&lt;/code&gt;. You should see information about the encryption, along with the first key (LUKS can hold up to eight keys) and its hash. This means we&amp;rsquo;re all good so far.&lt;/li&gt;
+&lt;li&gt;Now, create a mount point for your drive. for me, out of habit of using Mint, that was /media/pimount. So: &lt;code&gt;sudo mkdir /media/pimount&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;This is where things get a bit hazy since I&amp;rsquo;m writing this from memory. We need to open the encrypted drive with &lt;code&gt;cryptsetup luksOpen /dev/mapper/[drive name] [mounting point name]&lt;/code&gt;. Notice we have &lt;strong&gt;mapper&lt;/strong&gt; in the path after dev now. that&amp;rsquo;s how LUKS work. The encryption is not being done on &lt;em&gt;dev&lt;/em&gt;[drive] itself. I&amp;rsquo;m not sure why (I&amp;rsquo;m sure there&amp;rsquo;s some Linux file system reason behind it), so feel free to educate me.&lt;/li&gt;
+&lt;li&gt;Now, we need to format the drive with the file system of our choice. In my case, ext4. I believe this can also be done for FAT32 or even NTFS if you want to access your drive from Windows, but I haven&amp;rsquo;t tested that. To format, you can download Gparted, which is good to have in general. However, this is easy to do with &lt;code&gt;mkfs.ext4 /dev/[name]&lt;/code&gt;. In fact, that&amp;rsquo;s exactly what Gparted would do for you anyway.&lt;/li&gt;
+&lt;li&gt;Mount the freshly formatted drive: &lt;code&gt;mount /dev/mapper/[name] /media/[name]&lt;/code&gt;  If we have &amp;ldquo;show mounted drives&amp;rdquo; option on the desktop in RP, it should show now. As a matter of fact, it&amp;rsquo;s a good idea to enable this (right click on the RP desktop).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Before you start putting stuff on your HDD, it&amp;rsquo;s a good idea to restart and practice mounting the drive again (step 6 and 8; you don&amp;rsquo;t need to format again!). Then do it again. The unmount command is umount (no n), or you can simply restart the Pi.  There&amp;rsquo;s a way to automate this using fstab, but messing your fstab could screw up your RP as it happened to me. I figured I never plan on really turning off the thing, so I will just keep doing it manually. Now, if someone happens to just grab your HDD and walk away, it will need to be mounter and decrypted.&lt;/p&gt;
+&lt;h2 id=&#34;syncthing-setup&#34;&gt;Syncthing setup&lt;/h2&gt;
+&lt;p&gt;To me, &lt;a href=&#34;https://en.wikipedia.org/wiki/Syncthing&#34;&gt;Syncthing&lt;/a&gt; is the best solution for all my file-syncing needs. It works without a hitch until you need to change something tiny and meaningless. Then all hell breaks loose. I don&amp;rsquo;t understand why that is, but I learned to accept it as a fact of life at this point.&lt;/p&gt;
+&lt;p&gt;During this RP weekend setup, I had to change my Syncthing setup so that the RP will become the central hub. What happened was a fruitless night of trying to figure out why Syncthing stopped syncing and  an messy Monday at work. It was such a bad setback, in fact, that I decided to create a process dubbed &amp;ldquo;downfall&amp;rdquo; for future cases just like this one when I can&amp;rsquo;t use Org-mode at work. Yes, not having Syncthing basically means I can&amp;rsquo;t use Org. But I digress&amp;hellip; The important lesson here is this:&lt;/p&gt;
+&lt;p&gt;don&amp;rsquo;t mess with Syncthing. Set it up, make sure it works, and &lt;em&gt;don&amp;rsquo;t touch it&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As intimidating as this sounds, Syncthing actually has a pretty simple setup process. Here&amp;rsquo;s the plan:&lt;/p&gt;
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://joshrollinswrites.com/hub.png&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;The different colors represent the different folders in syncthing. To me these are personal, work, utilities (this is the only folder that does not have org files), and archive.&lt;/p&gt;
+&lt;p&gt;I use four devices, three daily, one (laptop) once in a while. The home VM, which is my main productivity box, gets everything. So does the laptop, it&amp;rsquo;s meant to be used as my home away from home. My work VM (OpenSuse Linux) only contains work org files and the archive. On the phone, I skip media-heavy folders like DnD and some classical music flac files to save space.&lt;/p&gt;
+&lt;p&gt;The setup process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Syncthing on RP (apt-get).&lt;/li&gt;
+&lt;li&gt;Choose the first device to sync. Add the RP&amp;rsquo;s ID to its Syncthing.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wait&lt;/em&gt; for RP to acknowledge the device. Approve.&lt;/li&gt;
+&lt;li&gt;From the connecting device, share the folders you want to sync with the RP.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wait&lt;/em&gt; for RP to acknowledge folders. Approve each, choose path.&lt;/li&gt;
+&lt;li&gt;Verify the sync work by altering the files a bit.&lt;/li&gt;
+&lt;li&gt;Choose the second device to sync&amp;hellip; repeat step 3-5.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now, folders that common to a couple of devices should be added first from one device (as stated above) with the RP, and then add that folder to the &lt;em&gt;other&lt;/em&gt; device. Device_A &amp;ndash;&amp;gt; RP &amp;ndash;&amp;gt; Device_B. This ensures you&amp;rsquo;re sharing the same folder (same folder ID) and not creating duplicates. The reason you&amp;rsquo;re doing it this way and not just sharing from one device to another is because you don&amp;rsquo;t want the other devices to see each other; they should only &amp;ldquo;see&amp;rdquo; the RP. The RP is the only device that needs to see all of them. Fewer complications means Syncthing works better and faster. Remember what I said earlier: don&amp;rsquo;t play with it, keep it simple and it will work. Complicate it, and you&amp;rsquo;ll spend hours trying to figure out what&amp;rsquo;s wrong.&lt;/p&gt;
+&lt;p&gt;So for example, if I first sync my home VM and share the &amp;ldquo;work&amp;rdquo; folder to the RP, after I&amp;rsquo;m done and verify the sync work, I am connecting the work VM to the RP, wait until it&amp;rsquo;s recognized, and then send the work folder (which is now synced between home VM and RP) &lt;em&gt;to&lt;/em&gt; the work VM.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Desktop Wisdom</title>
       <link>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</link>
       <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</guid>
+      <description>&lt;p&gt;I asked my coworkers the following question:
+&amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chris (age:25, years in the job:3)&lt;/strong&gt;: &amp;ldquo;There are a lot, and I mean a &lt;em&gt;lot&lt;/em&gt;, stupid people in the world.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nick (age:28, years in the job:10)&lt;/strong&gt;: &amp;ldquo;You got to have a lot of patience&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dave (age:63, years in the job:30)&lt;/strong&gt;: &amp;ldquo;You&amp;rsquo;re only as good as the last person you&amp;rsquo;ve helped&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Myself (years in the job:3)&lt;/strong&gt;: &amp;ldquo;If it was really to &amp;lsquo;just work&amp;rsquo;, we&amp;rsquo;d be out of a job&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;When looking at the nature of the job and the experience each one of us had, these facts make a lot of sense.&lt;/p&gt;
+&lt;p&gt;Chris is the youngest, very bright, and after money. He&amp;rsquo;s tired of users forgetting to check the power cable or not knowing how to reset their computers before calling. Nick is a chill guy who never seems to get upset. He is used to the boss demanding things and he exercises every day, which definitely help to take out aggravations. Dave has seen it all in this job and been through a couple of management changes. His other favorite sentence is &amp;ldquo;tomorrow is another day.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Desktop Wisdom</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</guid>
       <description>&lt;p&gt;I asked my coworkers the following question:
 &amp;ldquo;What is the one truth, in a sentence, you&amp;rsquo;ve learned from being in a help desk position&amp;rdquo;? Here are the answers.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Chris (age:25, years in the job:3)&lt;/strong&gt;: &amp;ldquo;There are a lot, and I mean a &lt;em&gt;lot&lt;/em&gt;, stupid people in the world.&amp;rdquo;&lt;/p&gt;

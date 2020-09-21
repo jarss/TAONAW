@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/tags/git/</link>
+    <description>Recent content in git on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS Updates</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/css-updates-1/</guid>
+      <description>&lt;p&gt;About some CSS Updates&amp;hellip; and why I haven&amp;rsquo;t posted in the last two weeks or so. (Changes are now complete!)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

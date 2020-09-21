@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bloggings on The Art of Not Asking Why</title>
+    <link>https://joshrollinswrites.com/blogging/</link>
+    <description>Recent content in Bloggings on The Art of Not Asking Why</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://joshrollinswrites.com/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo - what takes so long?</title>
+      <link>https://joshrollinswrites.com/blogging/hugo-beginnings/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/blogging/hugo-beginnings/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;ve bseen following me online for the last month or so (especially on reddit) you&amp;rsquo;d know I&amp;rsquo;ve been engaged in shifting away from WordPress and into the world &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

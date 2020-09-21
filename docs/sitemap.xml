@@ -3,32 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
+    <lastmod>2020-09-21T08:59:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-09-09/</loc>
+    <lastmod>2020-09-21T08:59:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
+    <lastmod>2020-09-21T08:59:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/</loc>
+    <lastmod>2020-09-21T08:59:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/</loc>
+    <lastmod>2020-09-21T08:59:37-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/tools/</loc>
+    <lastmod>2020-09-21T08:59:37-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/tags/android/</loc>
     <lastmod>2020-09-01T08:46:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://joshrollinswrites.com/help-desk-head-desk/</loc>
-    <lastmod>2020-09-01T08:46:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-08-27/</loc>
-    <lastmod>2020-09-01T08:46:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/</loc>
-    <lastmod>2020-09-01T08:46:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/</loc>
-    <lastmod>2020-09-01T08:46:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/tools/</loc>
     <lastmod>2020-09-01T08:46:00-04:00</lastmod>
   </url>
   
@@ -39,11 +49,6 @@
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/2020-08-08/</loc>
-    <lastmod>2020-08-16T14:06:39-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://joshrollinswrites.com/tags/orgmode/</loc>
     <lastmod>2020-08-16T14:06:39-04:00</lastmod>
   </url>
   
@@ -124,7 +129,7 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/linux/</loc>
-    <lastmod>2020-05-25T16:51:01-04:00</lastmod>
+    <lastmod>2020-09-13T01:39:52-04:00</lastmod>
   </url>
   
   <url>
@@ -134,12 +139,12 @@
   
   <url>
     <loc>https://joshrollinswrites.com/tags/automation/</loc>
-    <lastmod>2020-05-18T21:48:49-04:00</lastmod>
+    <lastmod>2020-09-13T01:39:52-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/20200518/</loc>
-    <lastmod>2020-05-18T21:48:49-04:00</lastmod>
+    <lastmod>2020-09-13T01:39:52-04:00</lastmod>
   </url>
   
   <url>
@@ -353,8 +358,23 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/jrl/updates/</loc>
+    <lastmod>2019-05-22T19:03:46-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/about_burnouts/</loc>
     <lastmod>2019-10-11T20:07:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/jrl/about_burnouts/</loc>
+    <lastmod>2019-04-04T07:24:16-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/selfimprovement/</loc>
+    <lastmod>2019-04-04T07:24:16-04:00</lastmod>
   </url>
   
   <url>
@@ -365,6 +385,11 @@
   <url>
     <loc>https://joshrollinswrites.com/tags/games/</loc>
     <lastmod>2019-10-03T07:04:57-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/jrl/</loc>
+    <lastmod>2019-02-27T08:45:42-05:00</lastmod>
   </url>
   
   <url>
@@ -383,6 +408,16 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/emacsorg/</loc>
+    <lastmod>2019-02-23T23:30:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-3/</loc>
+    <lastmod>2019-02-23T23:29:30-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-3/</loc>
     <lastmod>2020-07-16T10:24:11-04:00</lastmod>
   </url>
@@ -393,8 +428,18 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-2/</loc>
+    <lastmod>2019-02-23T23:29:26-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/org-capture-template-2/</loc>
     <lastmod>2019-07-28T07:43:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/emacsorg/org-capture-template-1/</loc>
+    <lastmod>2019-02-23T23:29:22-05:00</lastmod>
   </url>
   
   <url>
@@ -423,8 +468,23 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/drafting_a_post/</loc>
+    <lastmod>2019-02-23T23:29:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/writing/</loc>
+    <lastmod>2019-02-23T23:29:47-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/remove-company-software/</loc>
     <lastmod>2019-07-28T07:17:25-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/remove_company_software/</loc>
+    <lastmod>2019-02-23T23:29:56-05:00</lastmod>
   </url>
   
   <url>
@@ -433,8 +493,28 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/switching_2_hugo_ft/</loc>
+    <lastmod>2019-02-23T23:29:45-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</loc>
+    <lastmod>2019-02-23T23:29:59-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/macos-secure-token-trouble/</loc>
     <lastmod>2019-10-03T07:02:56-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/network/</loc>
+    <lastmod>2019-02-23T23:30:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/raspberry-pi/</loc>
+    <lastmod>2019-02-23T23:30:02-05:00</lastmod>
   </url>
   
   <url>
@@ -443,8 +523,43 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/raspberry_pi_org_hub/</loc>
+    <lastmod>2019-02-23T23:30:02-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/jrl/some_things/</loc>
+    <lastmod>2018-12-09T09:48:31-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/</loc>
+    <lastmod>2019-02-23T23:29:42-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/desktopwisdom/</loc>
+    <lastmod>2018-10-24T08:36:30-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/desktop-wisdom/</loc>
     <lastmod>2019-10-03T07:02:04-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/help-desk-head-desk/desktopwisdom/</loc>
+    <lastmod>2019-02-24T22:45:16-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/tags/support/</loc>
+    <lastmod>2019-02-24T22:45:16-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/video_journal_evolved/</loc>
+    <lastmod>2018-10-23T08:44:27-04:00</lastmod>
   </url>
   
   <url>
@@ -453,8 +568,43 @@
   </url>
   
   <url>
+    <loc>https://joshrollinswrites.com/blog/of_people_and_money/</loc>
+    <lastmod>2018-10-23T08:45:12-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/jrl/of_people_and_money/</loc>
+    <lastmod>2018-12-09T09:48:22-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://joshrollinswrites.com/help-desk-head-desk/emacs-windows-managment/</loc>
     <lastmod>2019-07-28T07:18:21-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/emacs-windows-managment/</loc>
+    <lastmod>2018-10-23T08:24:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/org-update/</loc>
+    <lastmod>2018-10-16T17:47:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/emacsorg/org-update/</loc>
+    <lastmod>2019-02-23T23:30:15-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blog/hugo-beginnings/</loc>
+    <lastmod>2018-10-16T22:52:10-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://joshrollinswrites.com/blogging/hugo-beginnings/</loc>
+    <lastmod>2019-02-23T23:29:42-05:00</lastmod>
   </url>
   
   <url>
