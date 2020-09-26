@@ -6,10 +6,54 @@
     <description>Recent content in linux on The Art of Not Asking Why</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2020 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2020 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://joshrollinswrites.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My XCFE Experiment Works Out</title>
+      <link>https://joshrollinswrites.com/help-desk-head-desk/2020-09-23/</link>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://joshrollinswrites.com/help-desk-head-desk/2020-09-23/</guid>
+      <description>&lt;p&gt;KDE&amp;rsquo;s Plasma desktop environment has been my go-to on whatever Linux distro I use: Xubuntu, openSUSE, Manjaro, and now Debian. As I keep favoring terminal and Emacs over GUI, Plasma desktop is becoming more of a habit than necessity. I decided to dump KDE altogether and give XCFE another try with a new laptop build. Here&amp;rsquo;s what I have to say after a couple of weeks.&lt;/p&gt;
+&lt;p&gt;Open any &amp;ldquo;Linux porn&amp;rdquo; (hey, I didn&amp;rsquo;t come up with the concept) reddit or hashtag on twitter, and you&amp;rsquo;ll realize two things: all the cool kids use KDE, and all the cool kids try to make their Linux laptop look as close to a Mac as possible. I&amp;rsquo;m more of a grumpy IT guy than a cool kid, so I never bought into this camp to begin with.&lt;/p&gt;
+&lt;p&gt;After I got Debian working on an XPS 13 I had laying around&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, It only took a day with KDE to have me go &amp;ldquo;Oh yeah, I wanted to try XCFE&amp;hellip;&amp;rdquo; and dump the whole thing. These were my main grudges.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;KDE Wallet, a tool that&amp;rsquo;s supposed to help with credentials, was the only way to save my WiFi password. When disabled, I had to re-type my wifi password every time I reactivated the laptop (from hibernation as well). There are different tips online, like deactivation wallet (fails) or give all users permissions to the WiFi in the adapter&amp;rsquo;s GUI setting (also fails). I just hate that no one asked me if and how I want to save my passwords, this feels too much like a Microsoft trick.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I don&amp;rsquo;t need KDE Wallet, I use KeepPassXC. But you know what else I don&amp;rsquo;t need? KMail, Akregator, Konversation, KTorrent, Konqueror, Kontact,  and the list goes on. Some of these apps are easy to remove, some&amp;hellip; not so much. But why do I need to uninstall anything? I understand these are good apps, I understand they are helpful and give you that &amp;ldquo;streamline fluid experience&amp;rdquo; or whatever sexy words you want to use, I don&amp;rsquo;t care. No thank you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This one is definitely a pet-peeve: time format. KDE&amp;rsquo;s time management system is coded with Qt&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; which doesn&amp;rsquo;t follow the standard time flags you&amp;rsquo;d use elsewhere. I&amp;rsquo;ve lived in the US for most of my life at this point, but I&amp;rsquo;ll never get used to the ridiculous time recording system here. I record dates in a yyyy-mm-dd format, and I use a 24-hours digital clock. It makes sense, It always has, and it always will. The fact that I can&amp;rsquo;t change that simple thing and have a different time format while keeping my locale inside the US is driving me crazy. The only way to (kind of) fix this is to dive deep into KDE&amp;rsquo;s individual settings for the lock screen, then the splash screen, and then into the different widgets, and change them all. Because this is the locale, it can mess things up for apt and other installations, so I just learned to live with a thorn at my side.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With XCFE there&amp;rsquo;s barely any software I don&amp;rsquo;t need. I still need to uninstall the Libre Office suite, but that&amp;rsquo;s about it. The wifi works without me needing to enter the passphrase every single time, and time is showing in a sane manner by default. I already have a 24 hour clock with a yyyy-mm-dd date &lt;em&gt;and&lt;/em&gt; a week number (my preferred time unit to measure projects and progress) on my top panel.&lt;/p&gt;
+&lt;p&gt;The lower panel is where you&amp;rsquo;ll find the only feature I happily &amp;ldquo;stole&amp;rdquo; from macOS: &lt;a href=&#34;https://github.com/ricotz/plank&#34;&gt;Plank&lt;/a&gt;, which imitates macOS&amp;rsquo;s genie-affect when hovering over the app icons at the lower panel, with active apps having a bright dot under them. I find that it makes more sense to use Plank on a small screen, where the otherwise normal panel will make the icons to small to see clearly.&lt;/p&gt;
+&lt;p&gt;XCFE comes with options that still allow me to customize its appearance the way I want it to be. Right now I have a dark central theme with my window manager that does away with XCFE outdated original version at the top right, a half-transparent panel at the top that gives only minimal information, and even a little owl icon for the launcher, just for kicks.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://joshrollinswrites.com/ox-hugo/2020-09-23.png&#34; alt=&#34;&#34;&gt;
+
+
+&lt;figcaption&gt;My XCFE environemnt&lt;/figcaption&gt;
+
+&lt;/p&gt;
+&lt;p&gt;Not everything is perfect of course, and I still need to implement a few tweaks. Some of the system icons, for example, cannot be replaced by the themes I downloaded and look even more out of place now next to the modern looking ones. KDE had a pretty simple way to have the Caps Lock key work as control, which is one of the first thing I do on any machine I use Emacs on, but it&amp;rsquo;s not as easy on XCFE. The language indicator at the panel doesn&amp;rsquo;t seem to work, or not work right, and I can&amp;rsquo;t use it to switch languages (keyboard shortcut works though). These are things I will need too look into to fix or get used to, but overall I think XCFE looks fine on the laptop.&lt;/p&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;This wasn&amp;rsquo;t easy. Debian doesn&amp;rsquo;t &amp;ldquo;like&amp;rdquo; proprietary firmware, like the kind that is needed for the XPS&amp;rsquo;s NIC, which means you don&amp;rsquo;t get wifi out of the box, you have to work for it. There was another issue with grub getting lost somewhere in the boot partitions which required re-installation from a live USB, two things that would probably discourage users from using Debian and run back to Ubuntu. Most users who choose Debian though are slow and patient folks who enjoy learning how things work and spend time on IRC channels, which ended up working in my favor. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I am not an expert on this, but I looked into changing the lock screen and login time formats and it requires tweaking configuration files deep inside KDE&amp;rsquo;s folders. This never worked fully: I was able to get the lock screen time or the logon screen time corrected, but never both. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
+    </item>
     
     <item>
       <title>Benefits of Linux on VM</title>
