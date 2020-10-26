@@ -3361,7 +3361,7 @@ So far, I've discussed how I don't want to modify my wiki and that I don't reall
 There are wonderful web casts, blogs, and even books directed at new users. Like with anything else in life, there's no magic bullet. Org-Mode is a huge system inside even a bigger one, Emacs. Many times I think the problem folks are trying to fix with packages and add ons are not the result of lack of options, but lack of knowledge of the options they already have. 
 
 I'm not trying to be harsh, but as a person who chased different organizational apps for about 10 years himself, switching from one to the other, I know this to be true for me. I know better than to convince folks to try something else: anyone who works in IT would tell you one of the hardest parts if to fight old users' habits, as ineffective and insecure as they may be. you want to try Zettelkasten and org-roam? Then by all means, go ahead. It's a good system. Just remember: at the end of the day /you/ are the person who needs to organize your information, no matter what tool you use, be it paper index card which don't come with amazing regex searches, or a complete database that comes with its own search capabilities. You're in charge. I'm just here rambling. 
-*** WIP My XCFE Experiment Works Out                                  :linux:
+*** PUBLISHED My XCFE Experiment Works Out                            :linux:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-09-23
@@ -3400,7 +3400,58 @@ Not everything is perfect of course, and I still need to implement a few tweaks.
 [fn:59] This wasn't easy. Debian doesn't "like" proprietary firmware, like the kind that is needed for the XPS's NIC, which means you don't get wifi out of the box, you have to work for it. There was another issue with grub getting lost somewhere in the boot partitions which required re-installation from a live USB, two things that would probably discourage users from using Debian and run back to Ubuntu. Most users who choose Debian though are slow and patient folks who enjoy learning how things work and spend time on IRC channels, which ended up working in my favor.
 
 [fn:60] I am not an expert on this, but I looked into changing the lock screen and login time formats and it requires tweaking configuration files deep inside KDE's folders. This never worked fully: I was able to get the lock screen time or the logon screen time corrected, but never both. 
+*** WIP privacy                                                     :privacy:
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-10-07
+ :EXPORT_HUGO_PUBLISHDATE: 2020-10-26:
+ :END:
 
+When I started researching privacy more seriously, I didn't know what I was looking at is the face of a forlorn, desolate path that seems to go nowhere. I picked it up as a challenge, and within a few days, it became clear that privacy is, unfortunately, a journey of hard sacrifices to make. 
+
+  #+hugo: more
+
+I asked for help on Reddit's [[https://www.reddit.com/r/privacy/][privacy community]] and I was blocked from posting because my freshly-created account specifically for this purpose was too suspicious. It was just one stop of many I've made in the last two months. Article after article from Medium to Lifehacker was filled with begginer tips like "use VPN," or "search with Duck Duck Go." As I kept digging deeper, looking for more specifics and advanced techniques, the more it seemed that the internet I use every day suddenly had an end. A wall.
+
+[[file:images/2020-10-26.gif]]
+
+Everything on the screen had a dictated sense of purpose. I was supposed to follow the "good" answers laid in front of me: buy a visa gift card with your credit card; submit your phone number to get a discount; surrender your verified email address to chat with an agent. Not a single website gave additional options. Everywhere I looked, I had to give up a piece of my privacy or to lie and hope for the best. I chose the latter option whenever I could. The feeling that I'm doing something wrong intensified. 
+
+Then there's the loneliness. I haven't logged into Facebook for years, living with most of my friends and past co-workers behind. I've stopped using Twitter last year, and with it, I stopped following trends and celebrities in my industry. Most recently, I stopped using Instagram and lost touch with those who liked my photos, a window to the outside world especially during the pandemic. On the other hand, getting in touch with me became more difficult since I insist on less popular apps that no one wants to download. When I try to explain why, it often feels like I'm speaking a different language even with those close to me the most.  
+
+This seems to be the price for privacy. I am almost at a breaking point and I've only started. I understand now why there so little /real/ information about true privacy: Those who stay out of the familiar platforms live in the shadows by default. It's not that they try to hide, they just do what they can do to not to sell their lives away, which means they can't reach us or we them. You can't Google them up, friend them on Facebook, Follow them on Twitter... So they don't exist to us, automatically-suspected criminal of the dark web. 
+
+So much of what we do, what we /are/, is not even ours to share but instead borrowed, hosted somewhere unknown to us, supplied only if we sign an agreement to give it up. And we don't care to know. After all, when was the last time you read Facebook's TOS? Twitter's? Gmail's? Apple's? Instagram's?
+
+I wish I could tell you this is all just a cheap Matrix ripoff. I wish I could go see a therapist who'd assure me I'm exaggerating. The problem is is that I /am/ better. I can't unlearn what I've learned, unread what I've read. Instead, I'm figuring out how to bend the rules just enough to be more than a sheepish user. 
+
+
+
+
+ # {{< rawhtml >}}
+
+# <figcaption>image caption text here</figcaption>
+# {{< / rawhtml >}} 
+
+ # **** Footnotes
+*** TODO Macs and Privacy
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 20201022
+ :EXPORT_HUGO_PUBLISHDATE: 2020-10-22:
+ :END:
+At work, a big migration project had us working around the clock transfering users' data from their local accounts to remote management by JAMF and support by us. Working closely with these users and seeing  
+
+  #+hugo: more
+ - Apple brings good security & service by default to non-techies
+ - Apple provides good hardware and software for techies (programmers)
+ - Apple ties mobile and mac together, good combo. 
+ # {{< rawhtml >}}
+
+# <figcaption>image caption text here</figcaption>
+# {{< / rawhtml >}} 
+
+ # **** Footnotes
 * About Josh Rollins
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: About
