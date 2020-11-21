@@ -3400,7 +3400,7 @@ Not everything is perfect of course, and I still need to implement a few tweaks.
 [fn:59] This wasn't easy. Debian doesn't "like" proprietary firmware, like the kind that is needed for the XPS's NIC, which means you don't get wifi out of the box, you have to work for it. There was another issue with grub getting lost somewhere in the boot partitions which required re-installation from a live USB, two things that would probably discourage users from using Debian and run back to Ubuntu. Most users who choose Debian though are slow and patient folks who enjoy learning how things work and spend time on IRC channels, which ended up working in my favor.
 
 [fn:60] I am not an expert on this, but I looked into changing the lock screen and login time formats and it requires tweaking configuration files deep inside KDE's folders. This never worked fully: I was able to get the lock screen time or the logon screen time corrected, but never both. 
-*** WIP privacy                                                     :privacy:
+*** PUBLISHED privacy                                               :privacy:
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
  :EXPORT_FILE_NAME: 2020-10-07
@@ -3434,24 +3434,115 @@ I wish I could tell you this is all just a cheap Matrix ripoff. I wish I could g
 # {{< / rawhtml >}} 
 
  # **** Footnotes
-*** TODO Macs and Privacy
+*** TODO Not Writing About Privacy 
  :PROPERTIES:
  :EXPORT_HUGO_SECTION: Help Desk Head Desk
- :EXPORT_FILE_NAME: 20201022
- :EXPORT_HUGO_PUBLISHDATE: 2020-10-22:
+ :EXPORT_FILE_NAME: 2020-11-10
+ :EXPORT_HUGO_PUBLISHDATE: 2020-11-10:
  :END:
-At work, a big migration project had us working around the clock transfering users' data from their local accounts to remote management by JAMF and support by us. Working closely with these users and seeing  
-
+ - intro 
   #+hugo: more
- - Apple brings good security & service by default to non-techies
- - Apple provides good hardware and software for techies (programmers)
- - Apple ties mobile and mac together, good combo. 
+
+Whenever I start writing about privacy I feel negative. It's a complex feeling. Part of it is the nagging feeling that I'm doing something "wrong" or even "illegal." Years of social conditioning about how we shouldn't have nothing to hide or sneaking around safeguards companies put out there to, partially, protect us from "hackers" has borrowed deep into my brain. There's a good world, an ignorant world, a world padded by walls made by companies whose services we depend on day in and day out, and I don't want to undo this feelings on this blog. 
+
+There's also the depressing lonely part of it, a deep pit that I don't like to dwell in. There aren't many outside sources that really lay out how to do things from a to z. Everything I've discovered and continue to learn is a collection of tips and guides baked into my own recpie, and no-one's comming for dinner. These sorts of stragedies cannot be discussessed publically, but this forum /is/ public, and I want to keep it this way. Discussing with others is important to me. 
+
+ - It feels wrong as in "illegal" and depressing
+
+Then there's the part that TAONAW is not a good example of annoyimity. While I created this blog under an alias and the account his hosted on a seperate account on Github, it wasn't meant to shielf my privacy. It was created to create a writing environment with emphasis on productivity. 
+
+If I ever create a true privacy pulic document, then it fits that it would be as private as I could get it, a result of the studies I've done so far. TAONAW is not this place, and it shouldn't be this place for the reasons I expressed above. 
+
+ - It's not private, this blog isn't
+
+Learning didn't take me down a clear path. It has been a challange of picking up hints and finding up breadcumbs. It is a fluid skill that I have to keep learning as I go, keeping me on my toes. It is diffiuclt, challanging, depressing, pressuring. You can't just learn it, you have to earn it, as a reult of conditioning your own mind. This is not something I can express in writing. Only those who are really obsessed with the idea find the holes they're looking for, and to hand them out on a platter just goes against one of its primary principles. Tou have to be a bit crazy to find some of these things, and that sort of crazy need to be experienced first hand. 
+
+ - It's a certain right of passage. I had to discover it myself, so should you.
  # {{< rawhtml >}}
 
 # <figcaption>image caption text here</figcaption>
 # {{< / rawhtml >}} 
 
  # **** Footnotes
+*** TODO Privacy: Getting Expendable Accounts 
+ :PROPERTIES:
+ :EXPORT_HUGO_SECTION: Help Desk Head Desk
+ :EXPORT_FILE_NAME: 2020-10-29
+ :EXPORT_HUGO_PUBLISHDATE: 2020-11-15:
+ :END:
+
+It took me some time to write my  [[https://joshrollinswrites.com/help-desk-head-desk/2020-10-07/][previous post about privacy]]. It took twice as long to publish this one. The methods below are not illegal, yet, as you read through them, you might get the feeling they might be. One of the questions that may rise would probably be "but why would I go to such extremes?" 
+
+You don't have a choice. Not if you trouly want a blank slant. What I've written here is an introduction to an introducation. As I'm discovering techniques I write down what I'm learning and implementing the stragedies as I go. 
+
+#+hugo: more
+
+*** Alternate email (easy)
+
+This is probably the easiest one to attain. A throw-away email (aka burner email) for a limited time is excellent when you want to register for an online service. Considering the amount of junk we all get in our email acounts, it's probably a good idea to always use one[fn:61]. 
+
+One popular service is [[https://maildrop.cc/][maildrop]], but its popularity is also its weakness. Most services block it and will not allow an email from the .cc domain. Maildrop does not create unique email addresses either, so anyone fishing for popular email addresses on this service might end up with your emails. Don't be that person who creates a "screwtwitter@maildrop.cc" account, because chances are it will be found quickly. 
+
+Another service and long time favorite of mine has been [[http://www.fakemailgenerator.com/#/jourrapide.com/Toont1952/][fake mail generator]], which creates legitimate looking email with different domains. This website yeilds mixed results; some online services work fine with it while other block emails address generated. It is quick to use however and can produce better results than maildrop.  
+
+Another popular website I've had high success rate with is [[https://temp-mail.org/en/][temp mail]]. This one seem to generate a unique email address each time including a domain, and it filters bots with a captcha (if you're behind a VPN, expect it to test you with an annoying "find all the airplanes" kind of thing) so it seems to be more resiliant to be blocked by online services. The problem with this one is that you can't go back to an email you've used. Each email exists only as long as the browser is open. If you're locked out of an account you've used this service with, you're out of luck. 
+
+*** Alternate Google/Facebook/Twitter Account (medium difficulty) 
+
+While alternamte email address is easy, creating account with one of the big ones out there (Google, Facebook, Twitter etc.) is not nearly as easy. These services are designed to detect bots and spammers, and they place privacy seekers in the same bracket. Simply put, if you're trying to hide your identity by using a VPN, changing your MAC address and logging from different locations, expect a high level of faliure. You're going to have a hard time. 
+
+I'm going to focus on Google here since this has been a primary target in my research. Creating a new account from a computer is not that easy, and it seems that Google filters users based on operating systems as well as IP addresses. For example, I could not create a new Google account on my Debian VM without phone verification, but creating one from ChromeOS was easy. 
+
+Google will end up insisting on a phone number sooner or  later. always asked me for a phone nunber for varification, and unless I wanted to give it my real one or a Google Voice number (which also points to me through the legitimate Google account its registered with) it failed to work, even with a valid VoIP number that works for calls and texting otherwise. As it turns out, [[https://freecarrierlookup.com/][it's quite easy to filter out VoIP numbers vs. carrier phone numbers]]. To my surprise, even "landlines" (since the vast majority of these are also VoIP these days) are disqualified. Google, as well as Apple, Twitter, Facebook and the big other ones are interested specifically in your cellphone number. With one exception. 
+
+When you use a mobile device[fn:62] to create a Google account, Google lets you go ahead without a valid phone number. This is by design: after all, if you never had a cellphone before, how are you supposed to get one? The solution then is to use a mobile device from a legitimate, non VPN-protected WiFi. Your local Best Buy, Target, WalMart etc. are perfect for this. Just approach the new Android phone section with confidence and create an account using the phone's browser (do not attempt to register a Google Account with the OS or with the actual apps. This will not work, as the device does not have a sim and is stuck in "demo" mode). Be prepared that the helpful sales persons will be interested in what you're doing, so be swift and confident. After all, they're just doing their job. Make sure you switch between phone, alternate between different apps like the camera or youtube, and basically don't look suspcious. 
+
+
+
+
+
+*** A (good) alternate phone number (hard)
+
+Getting a /good/ alternate phone number is hard. There are services out there that will give you a free-to-use VoIP for voice calls and text outside of Google Voice (a favoriate one is [[https://www.textnow.com/][text now]], which allows you to create account with Facebook, Apple or Google accounts), but it seems Google Voice numbers are better than others. I got to this conclusion after some services who did not allow me to register with my text now number were fine accepting a freshly created Google Voice. 
+
+But getting a Google Voice number is harder than getting almost any other account, including Google. I was able to even open a Facebook account without a number verification, but this seems to be impossible to do with Google Voice[fn:63]. 
+
+In order for Google Voice to grant you a number it must be verified with another number to which it will send a verification code. When I tried that with my text now number, I got the verification code, both in text and in a phone call, but the code failed to register back with Google Voice - it seems Google Voice simply ignored it. I tried to register with Google Voice off VPN and other large public WiFis but without success. The nature of this lack of authentication, where Google Voice simply "ignores" my input, have me believe that I need to keep trying with different WiFi's. 
+
+Up until now my Google Voice number is tied to my real phone, and that means apps I use it with can track it back to me. 
+
+*** Methodology
+
+I wrote the above headers from easiest to hardest based on my experience. This is also the order I believe these alternative accounts should be created to remain anonnymous: 
+
+1. Create a Google Account from an Android phone that you do not own (or perhaps a virtual one).
+
+2. Open the Google account from a WiFi you do not own (such as a public WiFi in a public library, or a coffee shop). Do not use VPN. Change your laptop's Mac address if possible (this is known as spoofing, pretty easy to do). Send some emails to people who you don't know (this sounds crazy but it helps "baking" the account and make it more authentic. Remember that Gmail scans your emails for ads, this will help ensure it all looks valid). 
+
+3. Now from behind a VPN (and possibly TOR browser, depending on your level of paranoia) Use the Gmail account associated with this account to register with services such as Twitter, Facebook and text now. Keep in mind Google will probably throw a bunch of capchas at you and you /might/ loose your account at this point. 
+
+4. Authenticate the Twitter and Facebook accounts with the number from text now, if possible. If they don't accept it at one point, they might accept it at another - this has been my experience with Twitter a couple of times. 
+
+5. Try to "upgrade" the text now account with Google Voice if possible using the same Google account you have.
+
+
+ 
+
+ # {{< rawhtml >}}
+
+# <figcaption>image caption text here</figcaption>
+# {{< / rawhtml >}} 
+
+
+*** Footnotes
+
+[fn:61] Keep in mind that burner emails are highly unprotected and should not be used long term. If you don't use a password manager like Keepass or LastPass, this would be another good time to consider: not only it will generate a strong password, it will also save the random email address you just recieved for future usage. Another adventage of the password manager is that you can use it to also create a random unique user name. As humans, we like patterns, and you'd be surprised how those random names you come up with are actually not random at all. 
+
+[fn:62] In my attempts to run an Android VM I was still encountering difficulties, probably because I was still behind a VPN. For privacy sake, I didn't want to use a public WiFi near my home. Technically speaking though, I think you could get a number if you were to use your naked WiFi and an android VM - but that defeats the purpse...
+
+[fn:63] Interestingly and Fortunately, one of the best apps is fine reciving Text Now authentication: Signal. I was able to register a new account with signal using the Text Now number, which means my Signal identity is not tied to any of my real accounts. If you use Singal this way from an Android VM, you can affectively have a  truly anonymous and encrypted communications (you can download and installed the apk from the Signal website, no need to go through the Play Store)
+  
+
 * About Josh Rollins
    :PROPERTIES:
    :EXPORT_HUGO_SECTION: About

@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.76.5" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Blog",
     "name" : "Emacs Windows Managment",
     "headline" : "Emacs Windows Managment",
-    "description" : "\u003cp\u003eIn his 5th Emacs podcast, \u003ca href=\u0022https:\/\/emacscast.org\/episode%5F5\/\u0022\u003eRakhim\u003c\/a\u003e discusses the difficulties of windows management in Emacs. I agree with him. Emacs\u0027 Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn\u0026rsquo;t until this podcast that I realized that I\u0026rsquo;m much better off than I used to be.\u003c\/p\u003e",
+    "description" : "\x3cp\x3eIn his 5th Emacs podcast, \x3ca href=\x22https:\/\/emacscast.org\/episode%5F5\/\x22\x3eRakhim\x3c\/a\x3e discusses the difficulties of windows management in Emacs. I agree with him. Emacs\x26rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn\x26rsquo;t until this podcast that I realized that I\x26rsquo;m much better off than I used to be.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -181,8 +181,8 @@
 
 
 </time>
- <p>In his 5th Emacs podcast, <a href="https://emacscast.org/episode%5F5/">Rakhim</a> discusses the difficulties of windows management in Emacs. I agree with him. Emacs' Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&rsquo;t until this podcast that I realized that I&rsquo;m much better off than I used to be.</p>
-<p>I don&rsquo;t use any extension that manages windows (unless you consider Ivy&rsquo;s switch buffer, which he uses too. <a href="https://oremacs.com/swiper/">Ivy</a> is awesome). My method is based on bits and pieces I picked up. Here are a couple of lines from my settings.org, which I use to make Emacs' windows work better for me.</p>
+ <p>In his 5th Emacs podcast, <a href="https://emacscast.org/episode%5F5/">Rakhim</a> discusses the difficulties of windows management in Emacs. I agree with him. Emacs&rsquo; Windows are a pain. It was probably one of the longest pet peeves I had with the program, and it wasn&rsquo;t until this podcast that I realized that I&rsquo;m much better off than I used to be.</p>
+<p>I don&rsquo;t use any extension that manages windows (unless you consider Ivy&rsquo;s switch buffer, which he uses too. <a href="https://oremacs.com/swiper/">Ivy</a> is awesome). My method is based on bits and pieces I picked up. Here are a couple of lines from my settings.org, which I use to make Emacs&rsquo; windows work better for me.</p>
 <p>First, for my ultra-wide screen at home, it helps to enlarge the default frame size. After a few tests, I found this size satisfying:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq default-frame-alist <span style="color:#f92672">&#39;</span>((width <span style="color:#f92672">.</span> <span style="color:#ae81ff">90</span>) (height <span style="color:#f92672">.</span> <span style="color:#ae81ff">50</span>) (menu-bar-lines <span style="color:#f92672">.</span> <span style="color:#ae81ff">6</span>)))
 </code></pre></div><p>Then, we need to turn on the mouse vertical mouse divider. This will allow us to use the mouse to drag and adjust windows in our frame vertically as well. I actually don&rsquo;t use this as much anymore (the reason is coming up) but this is a basic feature that should be on by default, in my opinion:</p>

@@ -3,7 +3,7 @@
 <head>
   <link href="//gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.76.5" />
+  <meta name="generator" content="Hugo 0.70.0" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     "articleSection" : "Help Desk Head Desk",
     "name" : "Org-capture in Files",
     "headline" : "Org-capture in Files",
-    "description" : "\u003cp\u003eI\u0026rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there\u0026rsquo;s so much to explain, I can\u0026rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.\u003c\/p\u003e",
+    "description" : "\x3cp\x3eI\x26rsquo;ve been pretty busy org-mode-ly speaking. There is a lot to say, and as I was writing my post, more ideas occurred to me that behooved me to stop writing and experiment more, which lead to more interesting results, which meant I ran out of time to write about the results. When I finally returned to my post this morning, I realized there\x26rsquo;s so much to explain, I can\x26rsquo;t include it all in one go. Here you go, part one of my latest adventure in org-mode: org-capture from org files.\x3c\/p\x3e",
     "inLanguage" : "en-US",
     "author" : "joshrollinswrites.comJosh Rollins",
     "creator" : "joshrollinswrites.comJosh Rollins",
@@ -201,7 +201,7 @@
 <p>The template for creating the capture item. If you leave this empty, an appropriate default template will be used. Otherwise this is a string with escape codes, which will be replaced depending on time and context of the capture call. <strong>The string with escapes may be loaded from a template file, using the special syntax ‘(file &ldquo;template filename&rdquo;)’.</strong> See below for more details.</p>
 </blockquote>
 <p>This little paragraph of text can be found about half a page down <a href="https://orgmode.org/manual/Template-elements.html#Template-elements">in the manual</a>. I read the capture part of the manual probably 20 times or more at this point, and I still feel I wouldn&rsquo;t know I can use a <em>file</em> as a template just from reading it. But why?</p>
-<p>There&rsquo;s no clear statement that says you can load a capture from a file; rather, it states that &ldquo;<em>the string with escapes</em> may be loaded from a file&hellip;&rdquo;. To me, this means that I can include my template&rsquo;s definition in a separate file instead of specifying it in my init file. For example, here&rsquo;s a code from my template:</p>
+<p>There&rsquo;s no clear statement that says you can load a capture from a file; rather, it states that &ldquo;<em>the string with escapes</em> may be loaded from a file&hellip;&quot;. To me, this means that I can include my template&rsquo;s definition in a separate file instead of specifying it in my init file. For example, here&rsquo;s a code from my template:</p>
 <pre><code class="language-nil" data-lang="nil">  (&quot;j&quot; &quot;Journal&quot; entry (file+datetree &quot;~/Documents/Work/Setups.org&quot;)
 &quot;**** %&lt;%H:%M&gt; about %a \n%?&quot; :tree-type week)
 </code></pre><p>So, if for some reason I wouldn&rsquo;t want the <em>above snippet</em> in my init file, I could throw it into a different dedicated file. I didn&rsquo;t bother with it because I&rsquo;m comfortable with having my capture template <em>&ldquo;string with escapes&rdquo;</em> where it is. Further, the manual says &ldquo;see below for more details,&rdquo; and there aren&rsquo;t really any. There are only details about what is referred to as &ldquo;string with escapes.&rdquo; There&rsquo;s nothing that tells me I can have my <em>whole</em> template, huge checklist and all, in another file. And, as far as I know, there&rsquo;s no other reference to files as template anywhere in the manual. So I just figured this cannot be done, unless I want to specify a whole checklist in the string above, such as <code>[ ] checklist item one /n [ ] checklist item two /n</code> and so forth. I also didn&rsquo;t know how to tell org-capture to reserve the indent for the sub-lists I needed for some of the items on my complex checklists. This looked very cumbersome to do inside the code itself when I already had an org file with the checklist to copy-paste from.</p>
